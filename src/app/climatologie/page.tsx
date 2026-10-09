@@ -2,20 +2,10 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import temperatureSpectrum from "../../../plage-spectre-temperature.json";
 import WeatherCountdown from "@/components/weather-countdown";
 import AnimatedClimateTable from "@/components/animated-climate-table";
 import ClimateClassificationTable from "@/components/climate-classification-table";
 import WeatherBackgroundEffectsWrapper from "@/components/WeatherBackgroundEffectsWrapper";
-
-type TemperatureEntry = {
-  "TempÃ©rature (Â°C)": number;
-  "TempÃ©rature (Â°F)": number;
-  "Hex fond": string;
-  "Hex texte": string;
-  "AperÃ§u": string;
-  "Style CSS": string;
-};
 
 const months = ['Jan', 'FÃ©v', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'AoÃ»t', 'Sep', 'Oct', 'Nov', 'DÃ©c', 'AnnÃ©e'];
 
@@ -38,26 +28,56 @@ const climateData = {
   avgUvIndex: [3, 5, 8, 9, 11, 12, 11, 10, 9, 7, 5, 4, 8]
 };
 
+// Inline temperature color scale (replaces large JSON file)
 const getTempStyle = (temp: number) => {
-  // Find the closest temperature entry
-  let closestEntry: TemperatureEntry | undefined;
-  let minDiff = Infinity;
-
-  for (const entry of temperatureSpectrum as TemperatureEntry[]) {
-    const diff = Math.abs(entry["TempÃ©rature (Â°C)"] - temp);
-    if (diff < minDiff) {
-      minDiff = diff;
-      closestEntry = entry;
-    }
+  // Clamp temp to -30 to +50°C range
+  const clampedTemp = Math.max(-30, Math.min(50, temp));
+  
+  // Normalize to 0-1 range (-30°C = 0, 50°C = 1)
+  const ratio = (clampedTemp + 30) / 80;
+  
+  // Color gradient: Blue (-30) -> Cyan -> Green -> Yellow -> Orange -> Red (50)
+  let red: number, green: number, blue: number;
+  
+  if (ratio <= 0.25) {
+    // Blue to Cyan (-30 to -10)
+    const r = ratio / 0.25;
+    red = 0;
+    green = Math.round(255 * r);
+    blue = 255;
+  } else if (ratio <= 0.5) {
+    // Cyan to Green (-10 to 10)
+    const r = (ratio - 0.25) / 0.25;
+    red = 0;
+    green = 255;
+    blue = Math.round(255 * (1 - r));
+  } else if (ratio <= 0.75) {
+    // Green to Yellow (10 to 30)
+    const r = (ratio - 0.5) / 0.25;
+    red = Math.round(255 * r);
+    green = 255;
+    blue = 0;
+  } else {
+    // Yellow to Red (30 to 50)
+    const r = (ratio - 0.75) / 0.25;
+    red = 255;
+    green = Math.round(255 * (1 - r));
+    blue = 0;
   }
-
-  if (closestEntry) {
-    return {
-      backgroundColor: closestEntry["Hex fond"],
-      color: closestEntry["Hex texte"],
-    };
-  }
-  return {};
+  
+  // Convert to hex
+  const rHex = red.toString(16).padStart(2, '0').toUpperCase();
+  const gHex = green.toString(16).padStart(2, '0').toUpperCase();
+  const bHex = blue.toString(16).padStart(2, '0').toUpperCase();
+  
+  // Determine text color: white if dark background, black if light
+  const luminance = (0.299 * red + 0.587 * green + 0.114 * blue);
+  const textColor = luminance < 128 ? 'FFFFFF' : '000000';
+  
+  return {
+    backgroundColor: `#${rHex}${gHex}${bHex}`,
+    color: `#${textColor}`,
+  };
 };
 
 const getPrecipitationStyle = (mm: number) => {
