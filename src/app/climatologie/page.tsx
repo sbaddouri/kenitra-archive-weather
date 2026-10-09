@@ -2,7 +2,7 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import temperatureSpectrum from "../../../plage et spectre de tempÃ©rature.json";
+import temperatureSpectrum from "../../../plage-spectre-temperature.json";
 import WeatherCountdown from "@/components/weather-countdown";
 import AnimatedClimateTable from "@/components/animated-climate-table";
 import ClimateClassificationTable from "@/components/climate-classification-table";
