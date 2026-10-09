@@ -1,50 +1,19 @@
-{
-  "success": true,
-  "date": "2026-10-07T20:11:39.555Z",
-  "message": "Données mises à jour avec succès (2026-09-06 à 2026-10-06), 31 jours mis à jour",
-  "initialStartDate": "2026-09-06",
-  "initialEndDate": "2026-10-06",
-  "finalStartDate": "2026-09-06",
-  "finalEndDate": "2026-10-06",
-  "attempts": 0,
-  "daysUpdated": [
-    "2026-09-06",
-    "2026-09-07",
-    "2026-09-08",
-    "2026-09-09",
-    "2026-09-10",
-    "2026-09-11",
-    "2026-09-12",
-    "2026-09-13",
-    "2026-09-14",
-    "2026-09-15",
-    "2026-09-16",
-    "2026-09-17",
-    "2026-09-18",
-    "2026-09-19",
-    "2026-09-20",
-    "2026-09-21",
-    "2026-09-22",
-    "2026-09-23",
-    "2026-09-24",
-    "2026-09-25",
-    "2026-09-26",
-    "2026-09-27",
-    "2026-09-28",
-    "2026-09-29",
-    "2026-09-30",
-    "2026-10-01",
-    "2026-10-02",
-    "2026-10-03",
-    "2026-10-04",
-    "2026-10-05",
-    "2026-10-06"
-  ],
-  "missingDays": [],
-  "attemptDetails": [
-    {
-      "date": "2026-10-06",
-      "success": true
-    }
-  ]
+﻿{
+    "message":  "DonnÃ©es rÃ©initialisÃ©es - structure vide prÃªte pour KÃ©nitra",
+    "date":  "2026-10-09T22:38:04.370Z",
+    "attempts":  0,
+    "daysUpdated":  [
+
+                    ],
+    "finalStartDate":  "",
+    "missingDays":  [
+
+                    ],
+    "success":  false,
+    "attemptDetails":  [
+
+                       ],
+    "initialEndDate":  "2026-10-31",
+    "finalEndDate":  "",
+    "initialStartDate":  "1940-01-01"
 }

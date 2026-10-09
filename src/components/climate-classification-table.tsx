@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
@@ -7,9 +7,9 @@ import TiltCard from "./3d-tilt-card";
 
 const climateData = [
   {
-    system: "Köppen",
+    system: "KÃ¶ppen",
     code: "BSh / BSk / BWh",
-    description: "Climat steppe semi-aride chaud / Climat steppe semi-aride froide / Climat désertique chaud",
+    description: "Climat steppe semi-aride chaud / Climat steppe semi-aride froide / Climat dÃ©sertique chaud",
     icon: <Cloud className="w-8 h-8 text-orange-500" />,
     gradient: "from-orange-50 via-amber-50 to-yellow-50 dark:from-orange-900/30 dark:via-amber-900/30 dark:to-yellow-900/30",
     borderColor: "border-orange-300 dark:border-orange-700"
@@ -17,7 +17,7 @@ const climateData = [
   {
     system: "Trewartha",
     code: "BS",
-    description: "Climat semi-aride chaud à steppe",
+    description: "Climat semi-aride chaud Ã  steppe",
     icon: <Sun className="w-8 h-8 text-yellow-500" />,
     gradient: "from-yellow-50 via-orange-50 to-amber-50 dark:from-yellow-900/30 dark:via-orange-900/30 dark:to-amber-900/30",
     borderColor: "border-yellow-300 dark:border-yellow-700"
@@ -40,8 +40,8 @@ const climateData = [
   },
   {
     system: "Thornthwaite",
-    code: "C1 B’2 (semi-aride mésothermique)",
-    description: "Climat semi-aride, mésithermique",
+    code: "C1 Bâ€™2 (semi-aride mÃ©sothermique)",
+    description: "Climat semi-aride, mÃ©sithermique",
     icon: <Droplets className="w-8 h-8 text-blue-500" />,
     gradient: "from-blue-50 via-cyan-50 to-sky-50 dark:from-blue-900/30 dark:via-cyan-900/30 dark:to-sky-900/30",
     borderColor: "border-blue-300 dark:border-blue-700"
@@ -49,7 +49,7 @@ const climateData = [
   {
     system: "Neef",
     code: "AhT",
-    description: "Climat semi-aride subtropical continental ou Aride chaud à hiver tempéré",
+    description: "Climat semi-aride subtropical continental ou Aride chaud Ã  hiver tempÃ©rÃ©",
     icon: <CloudFog className="w-8 h-8 text-gray-500" />,
     gradient: "from-gray-50 via-orange-50 to-amber-50 dark:from-gray-900/30 dark:via-orange-900/30 dark:to-amber-900/30",
     borderColor: "border-gray-300 dark:border-gray-700"
@@ -57,11 +57,11 @@ const climateData = [
 ];
 
 const martonneData = {
-  name: "Indice d'aridité de Martonne",
+  name: "Indice d'ariditÃ© de Martonne",
   value: "8,06",
-  description: "Climat aride à limite semi-aride",
+  description: "Climat aride Ã  limite semi-aride",
   formula: "I = P / (T + 10)",
-  details: "P = 233 mm, T = 18,9 °C"
+  details: "P = 233 mm, T = 18,9 Â°C"
 };
 
 export default function ClimateClassificationTable() {
@@ -123,7 +123,7 @@ export default function ClimateClassificationTable() {
           Classifications Climatiques
         </h2>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Découvrir comment Guercif est classé selon les principaux systèmes de classification climatique mondiaux
+          DÃ©couvrir comment KÃ©nitra est classÃ© selon les principaux systÃ¨mes de classification climatique mondiaux
         </p>
       </motion.div>
 
@@ -236,3 +236,4 @@ export default function ClimateClassificationTable() {
     </motion.div>
   );
 }
+

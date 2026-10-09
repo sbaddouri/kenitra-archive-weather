@@ -1,166 +1,152 @@
-# Commandes de Déploiement Vercel pour l'année 2000
+# Commandes de Déploiement Vercel pour Kénitra Weather Archive
 
-## Résumé des changements
-✅ **Année 2000 ajoutée avec succès** :
-- 366 jours de données quotidiennes (année bissextile)
-- 366 fichiers de données horaires  
-- 8784 heures de données exactes d'Open-Meteo
-- Modèle utilisé : `best_match` (comme spécifié)
-- **Aucune approximation ni arrondi** - valeurs exactes de l'API
+## Résumé du projet
+✅ **Kénitra Weather Archive** - Archives climatologiques complètes de Kénitra, Gharb-Chrarda-Béni Hssen, Maroc
+- Données de Janvier 1940 à Octobre 2026 (structure vide prête pour récupération)
+- Coordonnées GPS : 34.300616413859444, -6.599642231879808
+- Modèle utilisé : `best_match` (ERA5 reanalysis via Open-Meteo)
+- Timezone : Africa/Casablanca
 
-## Vérifications effectuées
-1. ✅ API Open-Meteo supporte l'année 2000
-2. ✅ Toutes les données ont été récupérées (366/366 jours)
-3. ✅ Intégrité des données validée
-4. ✅ Années 2001-2026 restées intactes
-5. ✅ Structure des dossiers créée correctement
-
-## Commandes à exécuter pour le déploiement manuel
+## Commandes à exécuter pour le déploiement
 
 ### 1. Vérifier l'état actuel du projet
 ```powershell
 # Se positionner dans le dossier du projet
-cd c:\Users\sofia\Desktop\guercifarchiveweather
+cd c:\Users\sofia\Desktop\kenitraarchiveweather
 
 # Vérifier les fichiers modifiés
 git status
 
-# Vérifier que l'année 2000 est présente
-dir data\daily\2000
-dir data\hourly\2000
+# Vérifier la structure des données (années 1940-2026, mois 01-12 / 01-10 pour 2026)
+dir data\daily
+dir data\hourly
 
-# Compter le nombre total d'années (devrait être 27)
+# Compter le nombre total d'années (devrait être 87 : 1940-2026)
 (dir data\daily).Count
 ```
 
-### 2. Ajouter les nouveaux fichiers au git
+### 2. Ajouter les fichiers au git
 ```powershell
-# Ajouter tous les fichiers de l'année 2000
-git add data/daily/2000/*
-git add data/hourly/2000/*
+# Ajouter tous les fichiers de structure
+git add data/daily/*
+git add data/hourly/*
+git add data/last-update-status.json
 
-# Ajouter les nouveaux scripts
-git add scripts/fetch-year-2000.ts
-git add scripts/verify-2000-data.ts
+# Ajouter les scripts mis à jour
+git add scripts/fetch-weather.ts
+git add scripts/fetch-year-*.ts
+git add scripts/verify-*.ts
+
+# Ajouter les fichiers de configuration mis à jour
+git add package.json
+git add next.config.ts
+git add src/app/layout.tsx
+git add src/app/page.tsx
+git add src/app/radar/page.tsx
+git add src/app/records-absolus/page.tsx
+git add README.md
 
 # Vérifier ce qui sera commité
 git status
 ```
 
-### 3. Créer un commit pour l'année 2000
+### 3. Créer un commit pour la migration vers Kénitra
 ```powershell
 # Créer un commit descriptif
-git commit -m "feat: ajout de l'année 2000 complète avec données exactes Open-Meteo
+git commit -m "feat: migration complète vers Kénitra
 
-- Ajout de 366 jours de données météorologiques
-- Données exactes sans approximation ni arrondi
-- Utilisation du modèle 'best_match'
-- Préservation des années existantes 2001-2026
-- Vérification d'intégrité réussie"
+- Changement de coordonnées GPS : 34.300616, -6.599642 (Kénitra)
+- Suppression de toutes les données Open-Meteo Guercif
+- Conservation structure vide 1940-2026 pour nouvelles données Kénitra
+- Mise à jour routes : /guercif → /kenitra
+- Mise à jour package.json, layout, page, radar, records
+- Nettoyage Vercel (.vercel, .env.local, .vercelignore)
+- Suppression dossier data-backup
+- Prêt pour nouveau repo GitHub Kénitra"
 ```
 
-### 4. Pousser les changements sur GitHub
+### 4. Pousser les changements sur GitHub (nouveau repo)
 ```powershell
-# Pousser sur la branche main
-git push origin main
+# Changer le remote vers le NOUVEAU repo GitHub Kénitra
+# (Remplacez par l'URL de votre nouveau repo)
+git remote set-url origin https://github.com/sbaddouri/kenitra-archive-weather.git
 
-# OU si vous préférez une branche séparée
-git checkout -b add-year-2000
-git push -u origin add-year-2000
+# Pousser sur la branche main
+git push -u origin main
 ```
 
-### 5. Déployer sur Vercel
+### 5. Déployer sur Vercel (nouveau projet)
 
 #### Option A : Déploiement automatique via GitHub (recommandé)
-Si votre projet est connecté à Vercel avec GitHub :
-1. Les changements seront automatiquement déployés après le push sur GitHub
-2. Vérifiez le déploiement sur : https://vercel.com/{votre-compte}/guercifarchiveweather
-3. Le site sera mis à jour à : https://guercifarchiveweather.vercel.app
+1. Allez sur https://vercel.com/new
+2. Importez le nouveau repo `kenitra-archive-weather`
+3. Vercel détectera automatiquement Next.js
+4. Le site sera déployé à : https://kenitraarchiveweather.vercel.app
 
 #### Option B : Déploiement manuel via CLI Vercel
 ```powershell
 # Installer Vercel CLI si ce n'est pas déjà fait
 npm i -g vercel
 
-# Se connecter à Vercel (si nécessaire)
+# Se connecter à Vercel
 vercel login
 
-# Déployer en production
+# Déployer en production (créera un nouveau projet)
 vercel --prod
-
-# OU pour un déploiement de prévisualisation
-vercel
 ```
 
-### 6. Vérifier le déploiement
+### 6. Configurer GitHub Actions
+Une fois le repo créé sur GitHub :
+1. Allez dans Settings > Secrets and variables > Actions
+2. Aucune secret n'est requis (utilise GITHUB_TOKEN automatique)
+3. Le workflow `.github/workflows/update-weather.yml` s'exécutera automatiquement chaque jour à 8h UTC
+
+### 7. Vérifier le déploiement
 ```powershell
 # Vérifier que le site fonctionne
-curl https://guercifarchiveweather.vercel.app
+curl https://kenitraarchiveweather.vercel.app
 
-# Vérifier l'API des données
-curl https://guercifarchiveweather.vercel.app/api/weather/2000
-
-# Tester une date spécifique
-curl https://guercifarchiveweather.vercel.app/api/weather/2000/01/01
+# Vérifier l'API des données (structure vide)
+curl https://kenitraarchiveweather.vercel.app/api/weather/1940
 ```
 
 ## Validation du déploiement
 
 Après déploiement, vérifiez que :
+1. **Le site charge correctement** : https://kenitraarchiveweather.vercel.app
+2. **Le titre affiche "Kénitra Weather Archive"**
+3. **Les routes fonctionnent** : /climatologie, /radar, /rapport-scientifique, /archives
+4. **La structure de données est vide** (prête pour récupération Open-Meteo Kénitra)
+5. **Le radar pointe vers Kénitra** (coordonnées 34.3006, -6.5996)
 
-1. **Le site charge correctement** : https://guercifarchiveweather.vercel.app
-2. **L'année 2000 est disponible** dans le sélecteur d'années
-3. **Les données sont cohérentes** :
-   - Température du 1er janvier 2000 : 2.1°C → 11.7°C
-   - Température du 29 février 2000 : 6.4°C → 20.8°C
-   - Température du 31 décembre 2000 : 8.9°C → 15.7°C
-4. **Les autres années sont toujours accessibles** (2001-2026)
-
-## Données techniques
-
-### Scripts disponibles
-- `scripts/fetch-year-2000.ts` : Récupère les données de 2000
-- `scripts/verify-2000-data.ts` : Vérifie l'intégrité des données
-- `test-2000-api.ts` : Test de connexion à l'API (peut être supprimé)
-
-### Structure des données
+## Structure des données (vide, prête pour Kénitra)
 ```
 data/
 ├── daily/
-│   ├── 2000/      # NOUVEAU - Année bissextile
-│   │   ├── 01/    # Janvier (31 jours)
-│   │   ├── 02/    # Février (29 jours - bissextile)
-│   │   ├── ...    # Mars à Décembre
-│   │   └── 12/
-│   ├── 2001/      # EXISTANT - Intact
-│   ├── ...        # 2002-2026 - Intacts
-│   └── 2026/
+│   ├── 1940/ ... 2025/  # 12 mois chacun (01-12)
+│   └── 2026/            # 10 mois (01-10, jusqu'à Octobre 2026)
 └── hourly/
-    ├── 2000/      # NOUVEAU - Données horaires
-    └── ...        # Années existantes
+    ├── 1940/ ... 2025/  # 12 mois chacun
+    └── 2026/            # 10 mois
 ```
 
-### Points d'API
-- `/api/weather/2000` : Données annuelles 2000
-- `/api/weather/2000/{mois}` : Données mensuelles
-- `/api/weather/2000/{mois}/{jour}` : Données journalières
+## Scripts disponibles pour récupération données Kénitra
+- `scripts/fetch-weather.ts` : Récupération incrémentale quotidienne (pour GitHub Actions)
+- `scripts/fetch-year-YYYY.ts` : Récupération année par année (1940-2026)
+- `scripts/verify-YYYY-data.ts` : Vérification d'intégrité par année
 
-## Dépannage
+## Points importants
+- ✅ **Coordonnées Kénitra** : 34.300616413859444, -6.599642231879808
+- ✅ **Timezone** : Africa/Casablanca
+- ✅ **Modèle Best Match** : ERA5 reanalysis
+- ✅ **Structure vide 1940-2026** : Prête pour population via GitHub Actions
+- ✅ **Routes mises à jour** : `/kenitra` au lieu de `/guercif`
+- ✅ **Vercel dissocié** : Nouveau projet à créer
+- ✅ **GitHub remote** : À pointer vers nouveau repo `kenitra-archive-weather`
 
-### Si le déploiement échoue
-1. Vérifier les logs Vercel : https://vercel.com/{compte}/guercifarchiveweather/deployments
-2. Vérifier que `next.config.ts` est correctement configuré
-3. S'assurer que toutes les dépendances sont installées : `npm install`
-
-### Si les données ne s'affichent pas
-1. Vérifier que les fichiers JSON sont valides
-2. Tester l'API localement : `npm run dev`
-3. Vérifier les permissions des fichiers
-
-## Notes importantes
-- ✅ **Données exactes** : Pas d'approximation, pas d'arrondi
-- ✅ **Modèle Best Match** : Comme spécifié dans la requête
-- ✅ **Années existantes** : 2001-2026 non modifiées
-- ✅ **Structure identique** : Même format que les autres années
-
-Le site sera mis à jour avec l'année 2000 disponible immédiatement après le déploiement.
+## Prochaines étapes après déploiement
+1. Créer le repo GitHub `kenitra-archive-weather`
+2. Pousser le code sur ce nouveau repo
+3. Créer le projet Vercel lié à ce repo
+4. Laisser GitHub Actions peupler les données jour par jour (démarre à 1940)
+5. Ou lancer manuellement les scripts `fetch-year-YYYY.ts` pour remplir plus vite

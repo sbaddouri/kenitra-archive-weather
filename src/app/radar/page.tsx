@@ -8,9 +8,9 @@ export default function RadarPage() {
     <div className="space-y-8">
       <WeatherCountdown />
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold">Radar Météorologique - Guercif</h1>
+        <h1 className="text-3xl font-bold">Radar Météorologique - Kénitra</h1>
         <p className="text-muted-foreground">
-          Radar météorologique officiel de Meteo et Radar, couvrant un rayon de 100 km autour de Guercif.
+          Radar météorologique officiel de Meteo et Radar, couvrant un rayon de 100 km autour de Kénitra.
         </p>
       </div>
 
@@ -18,8 +18,8 @@ export default function RadarPage() {
         <CardContent className="p-0">
           <div className="relative w-full" style={{ height: "80vh", minHeight: "650px" }}>
             <iframe
-              src="https://www.meteoetradar.com/carte-meteo/guercif/11346395?center=34.2257,-3.3536&placemark=34.2257,-3.3536&layer=wr"
-              title="Radar Météorologique Guercif"
+              src="https://www.meteoetradar.com/carte-meteo/kenitra/11346395?center=34.3006,-6.5996&placemark=34.3006,-6.5996&layer=wr"
+              title="Radar Météorologique Kénitra"
               className="w-full h-full border-0"
               allowFullScreen
               loading="lazy"

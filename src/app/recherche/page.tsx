@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -15,7 +15,7 @@ export default function SearchPage() {
     e.preventDefault();
     if (date) {
       const [year, month, day] = date.split("-");
-      router.push(`/climatologie/jour/${year}/${month}/${day}/guercif`);
+      router.push(`/climatologie/jour/${year}/${month}/${day}/kenitra`);
     }
   };
 
@@ -23,14 +23,14 @@ export default function SearchPage() {
     <div className="max-w-md mx-auto py-12 space-y-8">
       <div className="text-center space-y-2">
         <h1 className="text-3xl font-bold">Rechercher une date</h1>
-        <p className="text-muted-foreground">Accédez aux archives météo de Guercif pour n'importe quel jour.</p>
+        <p className="text-muted-foreground">AccÃ©dez aux archives mÃ©tÃ©o de KÃ©nitra pour n'importe quel jour.</p>
       </div>
 
       <Card>
         <CardContent className="pt-6">
           <form onSubmit={handleSearch} className="space-y-4">
             <div className="space-y-2">
-              <label htmlFor="date" className="text-sm font-medium">Sélectionnez une date</label>
+              <label htmlFor="date" className="text-sm font-medium">SÃ©lectionnez une date</label>
               <input 
                 type="date" 
                 id="date"
@@ -49,11 +49,12 @@ export default function SearchPage() {
 
       <div className="grid grid-cols-2 gap-4">
         {[2026, 2025, 2024, 2023, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004, 2003, 2002, 2001].map(year => (
-          <Button key={year} variant="outline" onClick={() => router.push(`/climatologie/annee/${year}/guercif`)}>
-            Année {year}
+          <Button key={year} variant="outline" onClick={() => router.push(`/climatologie/annee/${year}/kenitra`)}>
+            AnnÃ©e {year}
           </Button>
         ))}
       </div>
     </div>
   );
 }
+

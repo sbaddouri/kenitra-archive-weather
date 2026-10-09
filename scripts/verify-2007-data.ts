@@ -2,8 +2,8 @@ import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
 
-const LAT = 34.2257;
-const LON = -3.3536;
+const LAT = 34.300616413859444;
+const LON = -6.599642231879808;
 const TIMEZONE = 'Africa/Casablanca';
 const MODEL = 'best_match';
 const YEAR = 2007;
@@ -140,3 +140,4 @@ verify2007Data().catch(err => {
   console.error(err);
   process.exit(1);
 });
+

@@ -1,23 +1,23 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+﻿import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import temperatureSpectrum from "../../../plage et spectre de température.json";
+import temperatureSpectrum from "../../../plage et spectre de tempÃ©rature.json";
 import WeatherCountdown from "@/components/weather-countdown";
 import AnimatedClimateTable from "@/components/animated-climate-table";
 import ClimateClassificationTable from "@/components/climate-classification-table";
 import WeatherBackgroundEffectsWrapper from "@/components/WeatherBackgroundEffectsWrapper";
 
 type TemperatureEntry = {
-  "Température (°C)": number;
-  "Température (°F)": number;
+  "TempÃ©rature (Â°C)": number;
+  "TempÃ©rature (Â°F)": number;
   "Hex fond": string;
   "Hex texte": string;
-  "Aperçu": string;
+  "AperÃ§u": string;
   "Style CSS": string;
 };
 
-const months = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc', 'Année'];
+const months = ['Jan', 'FÃ©v', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'AoÃ»t', 'Sep', 'Oct', 'Nov', 'DÃ©c', 'AnnÃ©e'];
 
 const climateData = {
   recordHigh: [27.6, 32.9, 35.6, 39.9, 41.5, 44.6, 46.6, 46.3, 43.8, 38.4, 32.3, 29.8, 46.6],
@@ -44,7 +44,7 @@ const getTempStyle = (temp: number) => {
   let minDiff = Infinity;
 
   for (const entry of temperatureSpectrum as TemperatureEntry[]) {
-    const diff = Math.abs(entry["Température (°C)"] - temp);
+    const diff = Math.abs(entry["TempÃ©rature (Â°C)"] - temp);
     if (diff < minDiff) {
       minDiff = diff;
       closestEntry = entry;
@@ -71,12 +71,12 @@ const getPrecipitationStyle = (mm: number) => {
   if (clampedMm <= 30) {
     // 0-30mm: From #FFFFFF (255,255) to #D0D0FF (208,208)
     const ratio = clampedMm / 30;
-    red = Math.round(255 - ratio * 47); // 255 → 208
+    red = Math.round(255 - ratio * 47); // 255 â†’ 208
     green = red;
   } else {
     // 30-300mm: From #D0D0FF (208,208) to #0000FF (0,0)
     const ratio = (clampedMm - 30) / (300 - 30);
-    red = Math.round(208 - ratio * 208); // 208 → 0
+    red = Math.round(208 - ratio * 208); // 208 â†’ 0
     green = red;
   }
   
@@ -128,8 +128,8 @@ export default function ClimatologiePage() {
       <WeatherBackgroundEffectsWrapper />
       <WeatherCountdown />
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold">Climatologie de Guercif</h1>
-        <p className="text-muted-foreground">Données climatiques moyennes et records pour la ville de Guercif (1940–present).</p>
+        <h1 className="text-3xl font-bold">Climatologie de KÃ©nitra</h1>
+        <p className="text-muted-foreground">DonnÃ©es climatiques moyennes et records pour la ville de KÃ©nitra (1940â€“present).</p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -138,85 +138,85 @@ export default function ClimatologiePage() {
             <CardTitle>Profil Climatique</CardTitle>
           </CardHeader>
           <CardContent className="prose dark:prose-invert max-w-none">
-            <h3 className="mt-6 mb-4"><strong>1. Position de Guercif dans le système climatique marocain :</strong></h3>
+            <h3 className="mt-6 mb-4"><strong>1. Position de KÃ©nitra dans le systÃ¨me climatique marocain :</strong></h3>
             <p>
-              Guercif appartient au Maroc oriental intérieur, dans le couloir de la Moulouya et dans le bassin de Guercif, à l’interface des influences rifaines, atlasiques et sahariennes. C’est précisément cette position de charnière qui donne à son climat sa personnalité : ni véritable méditerranéen maritime, ni saharien absolu, mais un climat intérieur très sec, très ensoleillé, fortement continentalisé, à dominante semi-aride à tendance aride, avec une saisonnalité des pluies de type méditerranéen dégradé. Le Maroc est globalement commandé par la latitude, l’effet de continentalité, l’influence méditerranéenne, l’Atlantique, le courant froid des Canaries, l’orographie du Rif et de l’Atlas, et les intrusions sahariennes ; dans l’Oriental intérieur, ces facteurs ne s’annulent pas, ils se superposent.
+              KÃ©nitra appartient au Maroc oriental intÃ©rieur, dans le couloir de la Moulouya et dans le bassin de KÃ©nitra, Ã  lâ€™interface des influences rifaines, atlasiques et sahariennes. Câ€™est prÃ©cisÃ©ment cette position de charniÃ¨re qui donne Ã  son climat sa personnalitÃ© : ni vÃ©ritable mÃ©diterranÃ©en maritime, ni saharien absolu, mais un climat intÃ©rieur trÃ¨s sec, trÃ¨s ensoleillÃ©, fortement continentalisÃ©, Ã  dominante semi-aride Ã  tendance aride, avec une saisonnalitÃ© des pluies de type mÃ©diterranÃ©en dÃ©gradÃ©. Le Maroc est globalement commandÃ© par la latitude, lâ€™effet de continentalitÃ©, lâ€™influence mÃ©diterranÃ©enne, lâ€™Atlantique, le courant froid des Canaries, lâ€™orographie du Rif et de lâ€™Atlas, et les intrusions sahariennes ; dans lâ€™Oriental intÃ©rieur, ces facteurs ne sâ€™annulent pas, ils se superposent.
             </p>
             <p>
-              Autrement dit, Guercif est une ville d’intérieur, protégée des effets régulateurs marins les plus francs, mais pas coupée des grandes circulations atlantiques et méditerranéennes. Elle reçoit peu d’eau, beaucoup de soleil, de fortes amplitudes thermiques, et subit des contrastes saisonniers bien plus nets que les façades littorales du Maroc. C’est un climat où l’énergie radiative domine, où l’évaporation potentielle est très forte, et où l’eau est la variable limitante majeure pendant une grande partie de l’année.
+              Autrement dit, KÃ©nitra est une ville dâ€™intÃ©rieur, protÃ©gÃ©e des effets rÃ©gulateurs marins les plus francs, mais pas coupÃ©e des grandes circulations atlantiques et mÃ©diterranÃ©ennes. Elle reÃ§oit peu dâ€™eau, beaucoup de soleil, de fortes amplitudes thermiques, et subit des contrastes saisonniers bien plus nets que les faÃ§ades littorales du Maroc. Câ€™est un climat oÃ¹ lâ€™Ã©nergie radiative domine, oÃ¹ lâ€™Ã©vaporation potentielle est trÃ¨s forte, et oÃ¹ lâ€™eau est la variable limitante majeure pendant une grande partie de lâ€™annÃ©e.
             </p>
             
-            <h3 className="mt-6 mb-4"><strong>2. Lecture synthétique de votre tableau climatique :</strong></h3>
+            <h3 className="mt-6 mb-4"><strong>2. Lecture synthÃ©tique de votre tableau climatique :</strong></h3>
             <p>
-              À partir de votre tableau, le signal climatique de fond est très clair :
+              Ã€ partir de votre tableau, le signal climatique de fond est trÃ¨s clair :
             </p>
             <AnimatedClimateTable />
             <p>
-              Le trait fondamental n’est donc pas seulement “été chaud / hiver doux”, formulation beaucoup trop pauvre ; le trait fondamental est : sécheresse structurelle + forte continentalité thermique + insolation remarquable + grande variabilité interannuelle des pluies + risque simultané de gel radiatif hivernal et de canicule estivale.
+              Le trait fondamental nâ€™est donc pas seulement â€œÃ©tÃ© chaud / hiver douxâ€, formulation beaucoup trop pauvre ; le trait fondamental est : sÃ©cheresse structurelle + forte continentalitÃ© thermique + insolation remarquable + grande variabilitÃ© interannuelle des pluies + risque simultanÃ© de gel radiatif hivernal et de canicule estivale.
             </p>
 
-            <h3 className="mt-6 mb-4"><strong>3. Régime thermique : un climat plus continental qu’on ne l’imagine :</strong></h3>
+            <h3 className="mt-6 mb-4"><strong>3. RÃ©gime thermique : un climat plus continental quâ€™on ne lâ€™imagine :</strong></h3>
             <p>
-              Thermiquement, Guercif présente une amplitude annuelle marquée. La moyenne journalière passe de 10,0 °C en janvier à 28,9 °C en août, soit près de 19 °C d’écart. La moyenne des maximales quotidiennes grimpe de 15,3 °C en janvier à 36,2 °C en juillet ; les minimales moyennes passent de 4,6 °C en janvier à 21,8 °C en août. Cela traduit un climat intérieur, très éloigné du lissage thermique côtier.
+              Thermiquement, KÃ©nitra prÃ©sente une amplitude annuelle marquÃ©e. La moyenne journaliÃ¨re passe de 10,0 Â°C en janvier Ã  28,9 Â°C en aoÃ»t, soit prÃ¨s de 19 Â°C dâ€™Ã©cart. La moyenne des maximales quotidiennes grimpe de 15,3 Â°C en janvier Ã  36,2 Â°C en juillet ; les minimales moyennes passent de 4,6 Â°C en janvier Ã  21,8 Â°C en aoÃ»t. Cela traduit un climat intÃ©rieur, trÃ¨s Ã©loignÃ© du lissage thermique cÃ´tier.
             </p>
             <p>
-              Plus encore, la chaleur n’est pas seulement “forte”, elle est structurellement durable. Dès mai, la maximale moyenne atteint 26,8 °C, puis 31,8 °C en juin, 36,2 °C en juillet, 36,0 °C en août, et 30,8 °C encore en septembre. La saison chaude est donc longue, intense, et énergétiquement dominante. Elle ne se limite pas à deux mois, elle s’étire en pratique de la fin du printemps au début de l’automne.
+              Plus encore, la chaleur nâ€™est pas seulement â€œforteâ€, elle est structurellement durable. DÃ¨s mai, la maximale moyenne atteint 26,8 Â°C, puis 31,8 Â°C en juin, 36,2 Â°C en juillet, 36,0 Â°C en aoÃ»t, et 30,8 Â°C encore en septembre. La saison chaude est donc longue, intense, et Ã©nergÃ©tiquement dominante. Elle ne se limite pas Ã  deux mois, elle sâ€™Ã©tire en pratique de la fin du printemps au dÃ©but de lâ€™automne.
             </p>
             <p>
-              Inversement, l’hiver n’est pas rigoureusement froid en moyenne, mais il est suffisamment continental pour permettre des nuits froides et des gelées. Avec 4,6 °C de minimale moyenne en janvier et un record absolu à -8,5 °C, on n’est pas du tout dans un climat tropical doux d’hiver. Guercif possède un hiver modeste en durée, mais réel en capacité de refroidissement nocturne. Les nuits calmes, sèches, à ciel clair, favorisent des pertes radiatives très efficaces et des inversions thermiques, surtout en contexte de bassin et de drainage d’air froid.
+              Inversement, lâ€™hiver nâ€™est pas rigoureusement froid en moyenne, mais il est suffisamment continental pour permettre des nuits froides et des gelÃ©es. Avec 4,6 Â°C de minimale moyenne en janvier et un record absolu Ã  -8,5 Â°C, on nâ€™est pas du tout dans un climat tropical doux dâ€™hiver. KÃ©nitra possÃ¨de un hiver modeste en durÃ©e, mais rÃ©el en capacitÃ© de refroidissement nocturne. Les nuits calmes, sÃ¨ches, Ã  ciel clair, favorisent des pertes radiatives trÃ¨s efficaces et des inversions thermiques, surtout en contexte de bassin et de drainage dâ€™air froid.
             </p>
             <p>
-              Le résultat pratique est le suivant : journées estivales très chaudes, nuits hivernales capables de décrocher franchement, ce qui est exactement la signature d’un climat intérieur semi-aride continentalisé.
-            </p>
-
-            <h3 className="mt-6 mb-4"><strong>4. L’été de Guercif : chaleur sèche, ciel ouvert, rayonnement brutal :</strong></h3>
-            <p>
-              L’été guercifi n’est pas seulement chaud ; il est radiatif. Avec 318 h de soleil en juin, 347,2 h en juillet, 322,4 h en août et un pourcentage d’ensoleillement possible de 72 à 78 % sur cette période, l’atmosphère estivale est dominée par la subsidence, la stabilité et la faiblesse de la nébulosité. Cela signifie : fort flux solaire, échauffement rapide des surfaces, températures de sol élevées, assèchement accéléré des horizons superficiels, et forte évapotranspiration potentielle.
-            </p>
-            <p>
-              L’humidité relative moyenne tombe à 40 % en juin, 36 % en juillet et 39 % en août. C’est une information capitale. Une chaleur à 36 °C avec 36–40 % d’humidité n’est pas une chaleur maritime lourde ; c’est une chaleur sèche, plus “brûlante” que moite, avec refroidissement nocturne encore possible hors épisodes de vent chaud persistant. Le point de rosée moyen, qui ne dépasse qu’environ 13 °C au cœur de l’été, confirme que l’air est chaud mais rarement franchement tropical. C’est un été d’air sec, pas un été de lourdeur humide.
-            </p>
-            <p>
-              L’indice UV culmine à 12 en juin et reste à 11 en juillet. Cela situe Guercif dans un contexte de rayonnement ultraviolet très fort à extrême en saison chaude. En termes biométéorologiques, cela implique stress radiatif, dessiccation foliaire accrue, et exposition solaire sévère pour l’humain comme pour les cultures.
+              Le rÃ©sultat pratique est le suivant : journÃ©es estivales trÃ¨s chaudes, nuits hivernales capables de dÃ©crocher franchement, ce qui est exactement la signature dâ€™un climat intÃ©rieur semi-aride continentalisÃ©.
             </p>
 
-            <h3 className="mt-6 mb-4"><strong>5. Le régime pluviométrique : peu de pluie, peu de jours de pluie, mais des pluies parfois efficaces et parfois violentes :</strong></h3>
+            <h3 className="mt-6 mb-4"><strong>4. Lâ€™Ã©tÃ© de KÃ©nitra : chaleur sÃ¨che, ciel ouvert, rayonnement brutal :</strong></h3>
             <p>
-              Le cumul annuel de 233 mm est faible. Mais il faut aller plus loin que ce chiffre. Le plus important est la répartition et la fréquence.
+              Lâ€™Ã©tÃ© KÃ©nitrai nâ€™est pas seulement chaud ; il est radiatif. Avec 318 h de soleil en juin, 347,2 h en juillet, 322,4 h en aoÃ»t et un pourcentage dâ€™ensoleillement possible de 72 Ã  78 % sur cette pÃ©riode, lâ€™atmosphÃ¨re estivale est dominÃ©e par la subsidence, la stabilitÃ© et la faiblesse de la nÃ©bulositÃ©. Cela signifie : fort flux solaire, Ã©chauffement rapide des surfaces, tempÃ©ratures de sol Ã©levÃ©es, assÃ¨chement accÃ©lÃ©rÃ© des horizons superficiels, et forte Ã©vapotranspiration potentielle.
             </p>
             <p>
-              Sur vos données, la pluie se concentre surtout entre l’automne, l’hiver et le printemps. De juin à septembre, le total n’est que de 33 mm. À l’inverse, d’octobre à mai, on recueille environ 200 mm, soit l’essentiel du budget annuel. Cela signe une saison sèche estivale nette, conforme à un rythme méditerranéen, mais sur un fond nettement plus sec que le littoral.
+              Lâ€™humiditÃ© relative moyenne tombe Ã  40 % en juin, 36 % en juillet et 39 % en aoÃ»t. Câ€™est une information capitale. Une chaleur Ã  36 Â°C avec 36â€“40 % dâ€™humiditÃ© nâ€™est pas une chaleur maritime lourde ; câ€™est une chaleur sÃ¨che, plus â€œbrÃ»lanteâ€ que moite, avec refroidissement nocturne encore possible hors Ã©pisodes de vent chaud persistant. Le point de rosÃ©e moyen, qui ne dÃ©passe quâ€™environ 13 Â°C au cÅ“ur de lâ€™Ã©tÃ©, confirme que lâ€™air est chaud mais rarement franchement tropical. Câ€™est un Ã©tÃ© dâ€™air sec, pas un Ã©tÃ© de lourdeur humide.
             </p>
             <p>
-              Cependant, Guercif ne présente pas exactement un simple maximum hivernal océanique. Le Maroc oriental intérieur, dans la Moulouya, est justement connu pour un régime à maximum printanier ou printano-hivernal, parfois qualifié de régime “moulouyen”, lié à l’échauffement plus rapide des terres continentales et au développement de pluies convectives à l’est de l’Atlas. Votre tableau le montre bien : mars et novembre sont à 30 mm, avril à 27 mm, mai à 23 mm ; l’axe mars–mai est très actif par rapport au cœur de l’hiver.
-            </p>
-            <p>
-              Les pluies sont en outre peu fréquentes : 34 jours par an avec au moins 1 mm. Cela signifie que le climat n’est pas seulement sec en cumul, il l’est aussi en occurrence. Le système hydrique repose donc sur un petit nombre d’épisodes, parfois modérés, parfois concentrés, parfois convectifs. C’est précisément ce type de climat qui alterne longues périodes de sécheresse atmosphérique et épisodes pluvieux ponctuellement efficaces, voire brutaux.
-            </p>
-            <p>
-              Les travaux sur la Moulouya montrent d’ailleurs une forte irrégularité spatio-temporelle des pluies, avec plusieurs échelles de variabilité, notamment un mode dominant de 4 à 8 ans, et rappellent que les crues de l’oued Moulouya et de ses affluents menacent des villes comme Guercif. Le paradoxe des climats semi-arides apparaît ici pleinement : peu de pluie en moyenne, mais un vrai risque d’averses intenses et de crues rapides.
+              Lâ€™indice UV culmine Ã  12 en juin et reste Ã  11 en juillet. Cela situe KÃ©nitra dans un contexte de rayonnement ultraviolet trÃ¨s fort Ã  extrÃªme en saison chaude. En termes biomÃ©tÃ©orologiques, cela implique stress radiatif, dessiccation foliaire accrue, et exposition solaire sÃ©vÃ¨re pour lâ€™humain comme pour les cultures.
             </p>
 
-            <h3 className="mt-6 mb-4"><strong>6. Hygrométrie et point de rosée : la vraie signature psychrométrique de Guercif :</strong></h3>
+            <h3 className="mt-6 mb-4"><strong>5. Le rÃ©gime pluviomÃ©trique : peu de pluie, peu de jours de pluie, mais des pluies parfois efficaces et parfois violentes :</strong></h3>
             <p>
-              Vos valeurs d’humidité relative et de point de rosée sont particulièrement instructives, et elles sont trop souvent ignorées dans les descriptions climatiques banales.
+              Le cumul annuel de 233 mm est faible. Mais il faut aller plus loin que ce chiffre. Le plus important est la rÃ©partition et la frÃ©quence.
             </p>
             <p>
-              En hiver, l’humidité relative moyenne de 61 à 69 % s’accompagne de points de rosée autour de 4 à 5 °C. Cela donne une sensation d’air frais mais pas saturé, souvent calme, parfois brumeux ou humide en matinée si l’inversion se met en place, mais sans l’omniprésence d’un air littoral humide.
+              Sur vos donnÃ©es, la pluie se concentre surtout entre lâ€™automne, lâ€™hiver et le printemps. De juin Ã  septembre, le total nâ€™est que de 33 mm. Ã€ lâ€™inverse, dâ€™octobre Ã  mai, on recueille environ 200 mm, soit lâ€™essentiel du budget annuel. Cela signe une saison sÃ¨che estivale nette, conforme Ã  un rythme mÃ©diterranÃ©en, mais sur un fond nettement plus sec que le littoral.
             </p>
             <p>
-              Au printemps, l’humidité recule progressivement de 55 % en mars à 46 % en mai. Cela correspond à la mise en régime du séchage atmosphérique et des surfaces.
+              Cependant, KÃ©nitra ne prÃ©sente pas exactement un simple maximum hivernal ocÃ©anique. Le Maroc oriental intÃ©rieur, dans la Moulouya, est justement connu pour un rÃ©gime Ã  maximum printanier ou printano-hivernal, parfois qualifiÃ© de rÃ©gime â€œmoulouyenâ€, liÃ© Ã  lâ€™Ã©chauffement plus rapide des terres continentales et au dÃ©veloppement de pluies convectives Ã  lâ€™est de lâ€™Atlas. Votre tableau le montre bien : mars et novembre sont Ã  30 mm, avril Ã  27 mm, mai Ã  23 mm ; lâ€™axe marsâ€“mai est trÃ¨s actif par rapport au cÅ“ur de lâ€™hiver.
             </p>
             <p>
-              En été, la combinaison 36–40 % d’humidité relative et points de rosée autour de 11 à 13 °C indique une chaleur sèche, à forte capacité évaporative. En d’autres termes, la transpiration et l’évaporation fonctionnent très bien tant que l’eau est disponible ; mais justement, l’eau manque. Pour la végétation, ce couple “rayonnement fort + chaleur + faible humidité + longue saison sèche” est beaucoup plus contraignant que la seule valeur de température.
+              Les pluies sont en outre peu frÃ©quentes : 34 jours par an avec au moins 1 mm. Cela signifie que le climat nâ€™est pas seulement sec en cumul, il lâ€™est aussi en occurrence. Le systÃ¨me hydrique repose donc sur un petit nombre dâ€™Ã©pisodes, parfois modÃ©rÃ©s, parfois concentrÃ©s, parfois convectifs. Câ€™est prÃ©cisÃ©ment ce type de climat qui alterne longues pÃ©riodes de sÃ©cheresse atmosphÃ©rique et Ã©pisodes pluvieux ponctuellement efficaces, voire brutaux.
             </p>
             <p>
-              En automne, l’humidité remonte, signe de la réactivation progressive des circulations perturbées et d’une baisse de la capacité desséchante de l’air.
+              Les travaux sur la Moulouya montrent dâ€™ailleurs une forte irrÃ©gularitÃ© spatio-temporelle des pluies, avec plusieurs Ã©chelles de variabilitÃ©, notamment un mode dominant de 4 Ã  8 ans, et rappellent que les crues de lâ€™oued Moulouya et de ses affluents menacent des villes comme KÃ©nitra. Le paradoxe des climats semi-arides apparaÃ®t ici pleinement : peu de pluie en moyenne, mais un vrai risque dâ€™averses intenses et de crues rapides.
             </p>
 
-            <h3 className="mt-6 mb-4"><strong>7. Insolation, nébulosité et bilan radiatif :</strong></h3>
+            <h3 className="mt-6 mb-4"><strong>6. HygromÃ©trie et point de rosÃ©e : la vraie signature psychromÃ©trique de KÃ©nitra :</strong></h3>
             <p>
-              Avec plus de 3 130 heures de soleil par an, Guercif appartient clairement au domaine très ensoleillé du Maroc intérieur. Ce n’est pas anecdotique : l’ensoleillement est ici une variable structurante, pas une simple commodité.
+              Vos valeurs dâ€™humiditÃ© relative et de point de rosÃ©e sont particuliÃ¨rement instructives, et elles sont trop souvent ignorÃ©es dans les descriptions climatiques banales.
+            </p>
+            <p>
+              En hiver, lâ€™humiditÃ© relative moyenne de 61 Ã  69 % sâ€™accompagne de points de rosÃ©e autour de 4 Ã  5 Â°C. Cela donne une sensation dâ€™air frais mais pas saturÃ©, souvent calme, parfois brumeux ou humide en matinÃ©e si lâ€™inversion se met en place, mais sans lâ€™omniprÃ©sence dâ€™un air littoral humide.
+            </p>
+            <p>
+              Au printemps, lâ€™humiditÃ© recule progressivement de 55 % en mars Ã  46 % en mai. Cela correspond Ã  la mise en rÃ©gime du sÃ©chage atmosphÃ©rique et des surfaces.
+            </p>
+            <p>
+              En Ã©tÃ©, la combinaison 36â€“40 % dâ€™humiditÃ© relative et points de rosÃ©e autour de 11 Ã  13 Â°C indique une chaleur sÃ¨che, Ã  forte capacitÃ© Ã©vaporative. En dâ€™autres termes, la transpiration et lâ€™Ã©vaporation fonctionnent trÃ¨s bien tant que lâ€™eau est disponible ; mais justement, lâ€™eau manque. Pour la vÃ©gÃ©tation, ce couple â€œrayonnement fort + chaleur + faible humiditÃ© + longue saison sÃ¨cheâ€ est beaucoup plus contraignant que la seule valeur de tempÃ©rature.
+            </p>
+            <p>
+              En automne, lâ€™humiditÃ© remonte, signe de la rÃ©activation progressive des circulations perturbÃ©es et dâ€™une baisse de la capacitÃ© dessÃ©chante de lâ€™air.
+            </p>
+
+            <h3 className="mt-6 mb-4"><strong>7. Insolation, nÃ©bulositÃ© et bilan radiatif :</strong></h3>
+            <p>
+              Avec plus de 3 130 heures de soleil par an, KÃ©nitra appartient clairement au domaine trÃ¨s ensoleillÃ© du Maroc intÃ©rieur. Ce nâ€™est pas anecdotique : lâ€™ensoleillement est ici une variable structurante, pas une simple commoditÃ©.
             </p>
             <p>
               Un ensoleillement de cette ampleur signifie :
@@ -224,19 +224,19 @@ export default function ClimatologiePage() {
             <ul className="list-none pl-0 space-y-3">
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 dark:text-blue-400 font-bold text-xl leading-5 flex-shrink-0">o</span>
-                <span>bilan radiatif positif très puissant au printemps et en été ;</span>
+                <span>bilan radiatif positif trÃ¨s puissant au printemps et en Ã©tÃ© ;</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 dark:text-blue-400 font-bold text-xl leading-5 flex-shrink-0">o</span>
-                <span>réchauffement diurne rapide des sols et des basses couches ;</span>
+                <span>rÃ©chauffement diurne rapide des sols et des basses couches ;</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 dark:text-blue-400 font-bold text-xl leading-5 flex-shrink-0">o</span>
-                <span>forte capacité convective au printemps quand de l’air plus froid d’altitude vient survoler une surface déjà chauffée ;</span>
+                <span>forte capacitÃ© convective au printemps quand de lâ€™air plus froid dâ€™altitude vient survoler une surface dÃ©jÃ  chauffÃ©e ;</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 dark:text-blue-400 font-bold text-xl leading-5 flex-shrink-0">o</span>
-                <span>amplitude thermique diurne souvent bien marquée ;</span>
+                <span>amplitude thermique diurne souvent bien marquÃ©e ;</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 dark:text-blue-400 font-bold text-xl leading-5 flex-shrink-0">o</span>
@@ -244,81 +244,81 @@ export default function ClimatologiePage() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 dark:text-blue-400 font-bold text-xl leading-5 flex-shrink-0">o</span>
-                <span>charge thermique importante sur les cultures, les bâtiments et les organismes.</span>
+                <span>charge thermique importante sur les cultures, les bÃ¢timents et les organismes.</span>
               </li>
             </ul>
             <p>
-              Quand on met en regard cet ensoleillement avec la faiblesse pluviométrique, l’interprétation est sans ambiguïté : Guercif fonctionne comme un climat à surplus d’énergie mais à déficit hydrique.
+              Quand on met en regard cet ensoleillement avec la faiblesse pluviomÃ©trique, lâ€™interprÃ©tation est sans ambiguÃ¯tÃ© : KÃ©nitra fonctionne comme un climat Ã  surplus dâ€™Ã©nergie mais Ã  dÃ©ficit hydrique.
             </p>
 
-            <h3 className="mt-6 mb-4"><strong>8. Configuration terrestre et effets de site : bassin, couloir, drainage et ombre pluviométrique :</strong></h3>
+            <h3 className="mt-6 mb-4"><strong>8. Configuration terrestre et effets de site : bassin, couloir, drainage et ombre pluviomÃ©trique :</strong></h3>
             <p>
-              La géographie régionale explique énormément. Le climat de Guercif ne se comprend pas seulement par sa latitude, mais par sa situation de bassin/couloir intérieur dans l’ensemble de la Moulouya, au contact de reliefs qui filtrent, dévient et modulent les flux.
+              La gÃ©ographie rÃ©gionale explique Ã©normÃ©ment. Le climat de KÃ©nitra ne se comprend pas seulement par sa latitude, mais par sa situation de bassin/couloir intÃ©rieur dans lâ€™ensemble de la Moulouya, au contact de reliefs qui filtrent, dÃ©vient et modulent les flux.
             </p>
             <p>
-              L’orographie marocaine joue un rôle majeur dans l’organisation des pluies. Le Rif et les chaînes atlasiques perturbent la pénétration des masses d’air humides, créent des contrastes spatiaux très forts, et favorisent à l’est intérieur des conditions plus sèches par continentalité et effet d’abri relatif. À l’échelle du Maroc oriental intérieur, les terres se réchauffent rapidement, ce qui favorise au printemps les développements convectifs, mais l’effet global du relief reste celui d’une réduction de l’apport humide régulier par rapport aux façades plus exposées.
+              Lâ€™orographie marocaine joue un rÃ´le majeur dans lâ€™organisation des pluies. Le Rif et les chaÃ®nes atlasiques perturbent la pÃ©nÃ©tration des masses dâ€™air humides, crÃ©ent des contrastes spatiaux trÃ¨s forts, et favorisent Ã  lâ€™est intÃ©rieur des conditions plus sÃ¨ches par continentalitÃ© et effet dâ€™abri relatif. Ã€ lâ€™Ã©chelle du Maroc oriental intÃ©rieur, les terres se rÃ©chauffent rapidement, ce qui favorise au printemps les dÃ©veloppements convectifs, mais lâ€™effet global du relief reste celui dâ€™une rÃ©duction de lâ€™apport humide rÃ©gulier par rapport aux faÃ§ades plus exposÃ©es.
             </p>
             <p>
-              À l’échelle locale, cette configuration favorise aussi les inversions nocturnes : l’air froid plus dense glisse vers les bas-fonds, s’y accumule, et accentue les minimales au petit matin lors des nuits calmes et dégagées. C’est l’une des raisons pour lesquelles une zone horticole moyenne relativement douce peut tout de même enregistrer des gelées fortes et des poches froides.
+              Ã€ lâ€™Ã©chelle locale, cette configuration favorise aussi les inversions nocturnes : lâ€™air froid plus dense glisse vers les bas-fonds, sâ€™y accumule, et accentue les minimales au petit matin lors des nuits calmes et dÃ©gagÃ©es. Câ€™est lâ€™une des raisons pour lesquelles une zone horticole moyenne relativement douce peut tout de mÃªme enregistrer des gelÃ©es fortes et des poches froides.
             </p>
 
-            <h3 className="mt-6 mb-4"><strong>9. Dynamiques atmosphériques à grande échelle : ce qui fait vraiment le temps à Guercif :</strong></h3>
+            <h3 className="mt-6 mb-4"><strong>9. Dynamiques atmosphÃ©riques Ã  grande Ã©chelle : ce qui fait vraiment le temps Ã  KÃ©nitra :</strong></h3>
             <p>
-              Le Maroc est commandé alternativement par des situations anticycloniques subtropicales et par des séquences perturbées d’origine atlantique/méditerranéenne. Quand l’extension de l’anticyclone des Açores s’étire vers le Maroc, l’atmosphère se stabilise, la subsidence domine, la convection profonde est inhibée et les perturbations des moyennes latitudes sont refoulées ou affaiblies. Ce type de configuration entretient les séquences sèches, y compris pendant la saison supposée humide.
+              Le Maroc est commandÃ© alternativement par des situations anticycloniques subtropicales et par des sÃ©quences perturbÃ©es dâ€™origine atlantique/mÃ©diterranÃ©enne. Quand lâ€™extension de lâ€™anticyclone des AÃ§ores sâ€™Ã©tire vers le Maroc, lâ€™atmosphÃ¨re se stabilise, la subsidence domine, la convection profonde est inhibÃ©e et les perturbations des moyennes latitudes sont refoulÃ©es ou affaiblies. Ce type de configuration entretient les sÃ©quences sÃ¨ches, y compris pendant la saison supposÃ©e humide.
             </p>
             <p>
-              À l’inverse, les épisodes pluvieux significatifs sont associés à des circulations cycloniques, à des talwegs d’altitude, et à des dépressions positionnées à l’ouest ou au nord-ouest du Maroc, capables d’advecter de l’air humide de secteurs ouest, nord-ouest ou sud-ouest. Ce sont ces situations qui redonnent de l’instabilité, permettent la cyclogenèse secondaire ou la convection organisée, et apportent les pluies utiles.
+              Ã€ lâ€™inverse, les Ã©pisodes pluvieux significatifs sont associÃ©s Ã  des circulations cycloniques, Ã  des talwegs dâ€™altitude, et Ã  des dÃ©pressions positionnÃ©es Ã  lâ€™ouest ou au nord-ouest du Maroc, capables dâ€™advecter de lâ€™air humide de secteurs ouest, nord-ouest ou sud-ouest. Ce sont ces situations qui redonnent de lâ€™instabilitÃ©, permettent la cyclogenÃ¨se secondaire ou la convection organisÃ©e, et apportent les pluies utiles.
             </p>
             <p>
-              Pour le bassin de Guercif, des travaux récents soulignent également le rôle combiné des dépressions atlantiques, des dépressions méditerranéennes, des rivières atmosphériques comme apporteurs d’humidité, ainsi que l’influence des régimes zonaux, méridiens et de blocage. Le relief local module ensuite la répartition fine des quantités.
+              Pour le bassin de KÃ©nitra, des travaux rÃ©cents soulignent Ã©galement le rÃ´le combinÃ© des dÃ©pressions atlantiques, des dÃ©pressions mÃ©diterranÃ©ennes, des riviÃ¨res atmosphÃ©riques comme apporteurs dâ€™humiditÃ©, ainsi que lâ€™influence des rÃ©gimes zonaux, mÃ©ridiens et de blocage. Le relief local module ensuite la rÃ©partition fine des quantitÃ©s.
             </p>
 
             <h3 className="mt-6 mb-4"><strong>10. Les saisons :</strong></h3>
             <h4 className="mt-4 mb-3"><strong>Hiver :</strong></h4>
             <p>
-              L’hiver guercifi est une saison fraîche, modérément humide à l’échelle locale mais pauvre en pluies à l’échelle absolue. Les perturbations peuvent circuler, mais elles n’arrosent pas avec la régularité d’un climat océanisé. Le ciel clair entre deux épisodes favorise de fortes pertes radiatives nocturnes ; d’où les gelées possibles, parfois sévères. Les journées restent souvent lumineuses et relativement tempérées. C’est un hiver d’alternance : passages perturbés modestes, puis longues accalmies stables.
+              Lâ€™hiver KÃ©nitrai est une saison fraÃ®che, modÃ©rÃ©ment humide Ã  lâ€™Ã©chelle locale mais pauvre en pluies Ã  lâ€™Ã©chelle absolue. Les perturbations peuvent circuler, mais elles nâ€™arrosent pas avec la rÃ©gularitÃ© dâ€™un climat ocÃ©anisÃ©. Le ciel clair entre deux Ã©pisodes favorise de fortes pertes radiatives nocturnes ; dâ€™oÃ¹ les gelÃ©es possibles, parfois sÃ©vÃ¨res. Les journÃ©es restent souvent lumineuses et relativement tempÃ©rÃ©es. Câ€™est un hiver dâ€™alternance : passages perturbÃ©s modestes, puis longues accalmies stables.
             </p>
             <h4 className="mt-4 mb-3"><strong>Printemps :</strong></h4>
             <p>
-              Le printemps est la saison charnière la plus intéressante. Le réchauffement des terres devient rapide, l’atmosphère peut gagner en instabilité, et la région de la Moulouya montre volontiers un maximum pluviométrique relatif à cette saison. C’est la saison des contrastes : belles journées lumineuses, vent parfois agité, épisodes convectifs, averses orageuses, grêle ponctuelle possible, et démarrage franc de la sécheresse de surface dès que les pluies cessent.
+              Le printemps est la saison charniÃ¨re la plus intÃ©ressante. Le rÃ©chauffement des terres devient rapide, lâ€™atmosphÃ¨re peut gagner en instabilitÃ©, et la rÃ©gion de la Moulouya montre volontiers un maximum pluviomÃ©trique relatif Ã  cette saison. Câ€™est la saison des contrastes : belles journÃ©es lumineuses, vent parfois agitÃ©, Ã©pisodes convectifs, averses orageuses, grÃªle ponctuelle possible, et dÃ©marrage franc de la sÃ©cheresse de surface dÃ¨s que les pluies cessent.
             </p>
-            <h4 className="mt-4 mb-3"><strong>Été :</strong></h4>
+            <h4 className="mt-4 mb-3"><strong>Ã‰tÃ© :</strong></h4>
             <p>
-              L’été est long, très chaud, très sec, très lumineux. La subsidence subtropicale domine, les pluies deviennent anecdotiques, l’humidité chute, les sols se vident, la végétation non irriguée entre en stress marqué. Les épisodes de vent chaud continental peuvent faire bondir les températures vers les extrêmes. Le chergui, vent d’est à sud-est chaud, sec et poussiéreux, est l’une des expressions les plus typiques de cette dynamique maroco-saharienne.
+              Lâ€™Ã©tÃ© est long, trÃ¨s chaud, trÃ¨s sec, trÃ¨s lumineux. La subsidence subtropicale domine, les pluies deviennent anecdotiques, lâ€™humiditÃ© chute, les sols se vident, la vÃ©gÃ©tation non irriguÃ©e entre en stress marquÃ©. Les Ã©pisodes de vent chaud continental peuvent faire bondir les tempÃ©ratures vers les extrÃªmes. Le chergui, vent dâ€™est Ã  sud-est chaud, sec et poussiÃ©reux, est lâ€™une des expressions les plus typiques de cette dynamique maroco-saharienne.
             </p>
             <h4 className="mt-4 mb-3"><strong>Automne :</strong></h4>
             <p>
-              L’automne marque la reprise potentielle de l’activité pluviogène, mais sur des sols souvent desséchés et parfois encroûtés. C’est une saison météorologiquement délicate : les premières perturbations peuvent être bénéfiques, mais les épisodes intenses de courte durée peuvent produire ruissellement rapide et crues. Dans les régions semi-arides, ce n’est pas la quantité annuelle qui suffit à caractériser le risque ; c’est aussi l’intensité des événements.
+              Lâ€™automne marque la reprise potentielle de lâ€™activitÃ© pluviogÃ¨ne, mais sur des sols souvent dessÃ©chÃ©s et parfois encroÃ»tÃ©s. Câ€™est une saison mÃ©tÃ©orologiquement dÃ©licate : les premiÃ¨res perturbations peuvent Ãªtre bÃ©nÃ©fiques, mais les Ã©pisodes intenses de courte durÃ©e peuvent produire ruissellement rapide et crues. Dans les rÃ©gions semi-arides, ce nâ€™est pas la quantitÃ© annuelle qui suffit Ã  caractÃ©riser le risque ; câ€™est aussi lâ€™intensitÃ© des Ã©vÃ©nements.
             </p>
 
-            <h3 className="mt-6 mb-4"><strong>11. Extrêmes thermiques :</strong></h3>
+            <h3 className="mt-6 mb-4"><strong>11. ExtrÃªmes thermiques :</strong></h3>
             <p>
-              Votre série est très parlante : record absolu de 46,6 °C et record absolu de -8,5 °C. L’amplitude absolue atteint donc 55,1 °C. C’est énorme, et cela signe une continentalité réelle.
+              Votre sÃ©rie est trÃ¨s parlante : record absolu de 46,6 Â°C et record absolu de -8,5 Â°C. Lâ€™amplitude absolue atteint donc 55,1 Â°C. Câ€™est Ã©norme, et cela signe une continentalitÃ© rÃ©elle.
             </p>
             <p>
-              Cette amplitude est rendue possible par quatre facteurs principaux : ciel souvent dégagé, air souvent sec, éloignement modéré des influences maritimes régulatrices, et topographie favorable à l’accumulation d’air froid en hiver tout en laissant s’exprimer les advections brûlantes en été.
+              Cette amplitude est rendue possible par quatre facteurs principaux : ciel souvent dÃ©gagÃ©, air souvent sec, Ã©loignement modÃ©rÃ© des influences maritimes rÃ©gulatrices, et topographie favorable Ã  lâ€™accumulation dâ€™air froid en hiver tout en laissant sâ€™exprimer les advections brÃ»lantes en Ã©tÃ©.
             </p>
             <p>
-              Climatologiquement, cela veut dire qu’il ne faut jamais résumer Guercif par “hiver doux”. Un hiver de moyenne douce n’empêche nullement des décrochages sévères. De même, un été “moyen” à 36 °C de maximale n’empêche pas des pointes exceptionnellement hautes lors des advections sahariennes.
+              Climatologiquement, cela veut dire quâ€™il ne faut jamais rÃ©sumer KÃ©nitra par â€œhiver douxâ€. Un hiver de moyenne douce nâ€™empÃªche nullement des dÃ©crochages sÃ©vÃ¨res. De mÃªme, un Ã©tÃ© â€œmoyenâ€ Ã  36 Â°C de maximale nâ€™empÃªche pas des pointes exceptionnellement hautes lors des advections sahariennes.
             </p>
 
-            <h3 className="mt-6 mb-4"><strong>12. Zone de rusticité USDA :</strong></h3>
+            <h3 className="mt-6 mb-4"><strong>12. Zone de rusticitÃ© USDA :</strong></h3>
             <p>
-              La carte USDA repose non pas sur la température record absolue, mais sur la moyenne des minima extrêmes annuels hivernaux. Le système USDA fonctionne par zones de 10 °F, subdivisées en demi-zones de 5 °F. La zone 10a correspond à une moyenne annuelle des extrêmes minimaux comprise entre 30 et 35 °F, soit -1,1 à +1,7 °C.
+              La carte USDA repose non pas sur la tempÃ©rature record absolue, mais sur la moyenne des minima extrÃªmes annuels hivernaux. Le systÃ¨me USDA fonctionne par zones de 10 Â°F, subdivisÃ©es en demi-zones de 5 Â°F. La zone 10a correspond Ã  une moyenne annuelle des extrÃªmes minimaux comprise entre 30 et 35 Â°F, soit -1,1 Ã  +1,7 Â°C.
             </p>
             <p>
-              Or votre tableau donne une moyenne minimum annuelle de -1,07 °C, soit pratiquement la borne inférieure de 10a. Donc oui : Guercif peut être classé en USDA 10a.
+              Or votre tableau donne une moyenne minimum annuelle de -1,07 Â°C, soit pratiquement la borne infÃ©rieure de 10a. Donc oui : KÃ©nitra peut Ãªtre classÃ© en USDA 10a.
             </p>
             <p>
-              Mais le point capital, que beaucoup ratent, est le suivant : USDA 10a ne veut pas dire absence de gel sévère. Cela signifie seulement que la moyenne des minima extrêmes annuels se place dans cette tranche. Le record de -8,5 °C montre qu’en situation exceptionnelle, Guercif peut sortir très nettement de la “douceur moyenne” de la zone 10a. Le système USDA lui-même rappelle d’ailleurs que les microclimats, le vent, l’humidité, la topographie, la durée du froid et l’exposition modifient fortement le risque réel.
+              Mais le point capital, que beaucoup ratent, est le suivant : USDA 10a ne veut pas dire absence de gel sÃ©vÃ¨re. Cela signifie seulement que la moyenne des minima extrÃªmes annuels se place dans cette tranche. Le record de -8,5 Â°C montre quâ€™en situation exceptionnelle, KÃ©nitra peut sortir trÃ¨s nettement de la â€œdouceur moyenneâ€ de la zone 10a. Le systÃ¨me USDA lui-mÃªme rappelle dâ€™ailleurs que les microclimats, le vent, lâ€™humiditÃ©, la topographie, la durÃ©e du froid et lâ€™exposition modifient fortement le risque rÃ©el.
             </p>
             <p>
-              En langage horticole sérieux, je dirais donc ceci : Guercif est 10a en moyenne climatologique, mais avec un risque ponctuel de comportement local de type 9b, voire plus froid dans les poches radiatives et lors des décrochages exceptionnels. C’est une nuance essentielle.
+              En langage horticole sÃ©rieux, je dirais donc ceci : KÃ©nitra est 10a en moyenne climatologique, mais avec un risque ponctuel de comportement local de type 9b, voire plus froid dans les poches radiatives et lors des dÃ©crochages exceptionnels. Câ€™est une nuance essentielle.
             </p>
 
             <h3 className="mt-6 mb-4"><strong>13. Le vrai diagnostic climatique :</strong></h3>
             <p>
-              Guercif présente un climat intérieur du Maroc oriental à dominante semi-aride fortement continentalisée, à nette sécheresse estivale, pluviométrie faible et irrégulière, très forte insolation, fortes chaleurs estivales, refroidissements nocturnes hivernaux marqués, épisodes de gel possibles, influence synoptique combinée des dorsales subtropicales, des talwegs atlantiques et méditerranéens, et modulation locale importante par le relief et le bassin de la Moulouya.
+              KÃ©nitra prÃ©sente un climat intÃ©rieur du Maroc oriental Ã  dominante semi-aride fortement continentalisÃ©e, Ã  nette sÃ©cheresse estivale, pluviomÃ©trie faible et irrÃ©guliÃ¨re, trÃ¨s forte insolation, fortes chaleurs estivales, refroidissements nocturnes hivernaux marquÃ©s, Ã©pisodes de gel possibles, influence synoptique combinÃ©e des dorsales subtropicales, des talwegs atlantiques et mÃ©diterranÃ©ens, et modulation locale importante par le relief et le bassin de la Moulouya.
             </p>
           </CardContent>
         </Card>
@@ -338,17 +338,17 @@ export default function ClimatologiePage() {
               </TableHeader>
               <TableBody>
                 <TableRow>
-                  <TableCell>Température Max</TableCell>
-                  <TableCell className="text-red-500 font-bold">46.6°C</TableCell>
+                  <TableCell>TempÃ©rature Max</TableCell>
+                  <TableCell className="text-red-500 font-bold">46.6Â°C</TableCell>
                   <TableCell>10 juillet 2023</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell>Température Min</TableCell>
-                  <TableCell className="text-blue-500 font-bold">-8.5°C</TableCell>
+                  <TableCell>TempÃ©rature Min</TableCell>
+                  <TableCell className="text-blue-500 font-bold">-8.5Â°C</TableCell>
                   <TableCell>8 janvier 1965</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell>Précipitations (24h)</TableCell>
+                  <TableCell>PrÃ©cipitations (24h)</TableCell>
                   <TableCell className="text-cyan-500 font-bold">85 mm</TableCell>
                   <TableCell>Novembre 2014</TableCell>
                 </TableRow>
@@ -362,7 +362,7 @@ export default function ClimatologiePage() {
 
       <Card className="overflow-x-auto">
         <CardHeader>
-          <CardTitle>Données Climatiques Détaillées (1940–2025)</CardTitle>
+          <CardTitle>DonnÃ©es Climatiques DÃ©taillÃ©es (1940â€“2025)</CardTitle>
         </CardHeader>
         <CardContent className="p-0">
           <div className="overflow-x-auto">
@@ -380,70 +380,70 @@ export default function ClimatologiePage() {
               <TableBody>
                 {/* Record High */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Record haut °C (°F)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Record haut Â°C (Â°F)</TableCell>
                   {climateData.recordHigh.map((v, i) => (
                     <TableCell key={i} className="text-center border-r border-black last:border-r-0" style={getTempStyle(v)}>
-                      {v}° ({Math.round(v * 9/5 + 32)}°F)
+                      {v}Â° ({Math.round(v * 9/5 + 32)}Â°F)
                     </TableCell>
                   ))}
                 </TableRow>
                 {/* Mean Maximum */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Moyenne max °C (°F)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Moyenne max Â°C (Â°F)</TableCell>
                   {climateData.meanMax.map((v, i) => (
                     <TableCell key={i} className="text-center border-r border-black last:border-r-0" style={getTempStyle(v)}>
-                      {v}° ({Math.round(v * 9/5 + 32)}°F)
+                      {v}Â° ({Math.round(v * 9/5 + 32)}Â°F)
                     </TableCell>
                   ))}
                 </TableRow>
                 {/* Mean Daily Maximum */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Moyenne quotidienne max °C (°F)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Moyenne quotidienne max Â°C (Â°F)</TableCell>
                   {climateData.meanDailyMax.map((v, i) => (
                     <TableCell key={i} className="text-center border-r border-black last:border-r-0" style={getTempStyle(v)}>
-                      {v}° ({Math.round(v * 9/5 + 32)}°F)
+                      {v}Â° ({Math.round(v * 9/5 + 32)}Â°F)
                     </TableCell>
                   ))}
                 </TableRow>
                 {/* Daily Mean */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Moyenne quotidienne °C (°F)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Moyenne quotidienne Â°C (Â°F)</TableCell>
                   {climateData.dailyMean.map((v, i) => (
                     <TableCell key={i} className="text-center border-r border-black last:border-r-0" style={getTempStyle(v)}>
-                      {v}° ({Math.round(v * 9/5 + 32)}°F)
+                      {v}Â° ({Math.round(v * 9/5 + 32)}Â°F)
                     </TableCell>
                   ))}
                 </TableRow>
                 {/* Mean Daily Minimum */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Moyenne quotidienne min °C (°F)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Moyenne quotidienne min Â°C (Â°F)</TableCell>
                   {climateData.meanDailyMin.map((v, i) => (
                     <TableCell key={i} className="text-center border-r border-black last:border-r-0" style={getTempStyle(v)}>
-                      {v}° ({Math.round(v * 9/5 + 32)}°F)
+                      {v}Â° ({Math.round(v * 9/5 + 32)}Â°F)
                     </TableCell>
                   ))}
                 </TableRow>
                 {/* Mean Minimum */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Moyenne min °C (°F)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Moyenne min Â°C (Â°F)</TableCell>
                   {climateData.meanMin.map((v, i) => (
                     <TableCell key={i} className="text-center border-r border-black last:border-r-0" style={getTempStyle(v)}>
-                      {v}° ({Math.round(v * 9/5 + 32)}°F)
+                      {v}Â° ({Math.round(v * 9/5 + 32)}Â°F)
                     </TableCell>
                   ))}
                 </TableRow>
                 {/* Record Low */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Record bas °C (°F)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Record bas Â°C (Â°F)</TableCell>
                   {climateData.recordLow.map((v, i) => (
                     <TableCell key={i} className="text-center border-r border-black last:border-r-0" style={getTempStyle(v)}>
-                      {v}° ({Math.round(v * 9/5 + 32)}°F)
+                      {v}Â° ({Math.round(v * 9/5 + 32)}Â°F)
                     </TableCell>
                   ))}
                 </TableRow>
                 {/* Average Precipitation */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Précipitations moy. mm (pouces)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">PrÃ©cipitations moy. mm (pouces)</TableCell>
                   {climateData.avgPrecipitation.map((v, i) => {
                     // Pour la valeur annuelle, on utilise la moyenne mensuelle pour calculer la couleur
                     const valueForColor = i === 12 ? v / 12 : v;
@@ -465,7 +465,7 @@ export default function ClimatologiePage() {
                 </TableRow>
                 {/* Average Precipitation Days */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Jours de précip. (≥ 1 mm)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Jours de prÃ©cip. (â‰¥ 1 mm)</TableCell>
                   {climateData.avgPrecipitationDays.map((v, i) => (
                     <TableCell key={i} className="text-center bg-indigo-100 border-r border-black last:border-r-0">
                       {v}
@@ -483,7 +483,7 @@ export default function ClimatologiePage() {
                 </TableRow>
                 {/* Average Relative Humidity */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Humidité relative moy. (%)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">HumiditÃ© relative moy. (%)</TableCell>
                   {climateData.avgRelativeHumidity.map((v, i) => (
                     <TableCell key={i} className={`text-center border-r border-black last:border-r-0 ${getColorClass('humidity', v)}`}>
                       {v}
@@ -492,10 +492,10 @@ export default function ClimatologiePage() {
                 </TableRow>
                 {/* Average Dew Point */}
                 <TableRow className="border-b border-black">
-                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Point de rosée moy. °C (°F)</TableCell>
+                  <TableCell className="bg-gray-50 dark:bg-gray-900 sticky left-0 z-10 font-semibold border-r border-black">Point de rosÃ©e moy. Â°C (Â°F)</TableCell>
                   {climateData.avgDewPoint.map((v, i) => (
                     <TableCell key={i} className="text-center border-r border-black last:border-r-0" style={getTempStyle(v)}>
-                      {v}° ({Math.round(v * 9/5 + 32)}°F)
+                      {v}Â° ({Math.round(v * 9/5 + 32)}Â°F)
                     </TableCell>
                   ))}
                 </TableRow>
@@ -538,7 +538,7 @@ export default function ClimatologiePage() {
         </CardHeader>
         <CardContent>
           <ol className="list-decimal pl-5 space-y-1">
-            <li>Données climatiques basées sur les records historiques de 1940 à 2025, compilées à partir de diverses sources météorologiques internationales.</li>
+            <li>DonnÃ©es climatiques basÃ©es sur les records historiques de 1940 Ã  2025, compilÃ©es Ã  partir de diverses sources mÃ©tÃ©orologiques internationales.</li>
             <li>Open-Meteo</li>
             <li>Visual Crossing</li>
             <li>Climate-Data.org</li>
@@ -548,9 +548,10 @@ export default function ClimatologiePage() {
 
       <div className="text-center">
         <Link href="/archives">
-          <Button size="lg">Explorer les données par année</Button>
+          <Button size="lg">Explorer les donnÃ©es par annÃ©e</Button>
         </Link>
       </div>
     </div>
   );
 }
+

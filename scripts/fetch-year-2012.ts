@@ -9,8 +9,8 @@ import {
   convertOfficialSunshineToMinutes
 } from '../src/lib/weather-colors';
 
-const LAT = 34.2257;
-const LON = -3.3536;
+const LAT = 34.300616413859444;
+const LON = -6.599642231879808;
 const TIMEZONE = 'Africa/Casablanca';
 const MODEL = 'best_match';
 const YEAR = 2012;
@@ -139,3 +139,4 @@ fetchAndSaveYear2012().catch(err => {
   console.error('[ERROR]', err);
   process.exit(1);
 });
+

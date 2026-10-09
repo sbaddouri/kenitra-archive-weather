@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import WeatherCountdown from '@/components/weather-countdown';
 
 export default function RapportScientifiquePage() {
@@ -6,72 +6,72 @@ export default function RapportScientifiquePage() {
     <div className="space-y-8">
       <WeatherCountdown />
       <div className="space-y-4">
-        <h1 className="text-3xl font-bold">RAPPORT SCIENTIFIQUE DE CLIMATOLOGIE COMPARÉE MONDIALE</h1>
+        <h1 className="text-3xl font-bold">RAPPORT SCIENTIFIQUE DE CLIMATOLOGIE COMPARÃ‰E MONDIALE</h1>
         <div className="space-y-2 text-lg">
-          <h2 className="text-xl font-semibold">Analogues climatiques planétaires du bassin de Guercif</h2>
-          <p>Province de Guercif, Région de l’Oriental, Royaume du Maroc</p>
-          <p>Étude bioclimatique, agroclimatique, écophysiologique et biogéographique exhaustive</p>
-          <p>Auteur du rapport : Cabinet international de climatologie comparée</p>
-          <p>Objet : Identification exhaustive des analogues climatiques mondiaux de la station de Guercif (34°13′N, 3°21′W, ~370 m d’altitude)</p>
-          <p>Méthodologie : Comparaison multi-classificatoire (Köppen-Geiger, Trewartha, Emberger, UNESCO-FAO, USDA, AHS), analyse multi-paramétrique (52 variables climatologiques), correction saisonnière hémisphérique, analyse écophysiologique par espèce indicatrice.</p>
-          <p>Longueur : Rapport intégral non abrégé.</p>
+          <h2 className="text-xl font-semibold">Analogues climatiques planÃ©taires du bassin de KÃ©nitra</h2>
+          <p>Province de KÃ©nitra, RÃ©gion de lâ€™Oriental, Royaume du Maroc</p>
+          <p>Ã‰tude bioclimatique, agroclimatique, Ã©cophysiologique et biogÃ©ographique exhaustive</p>
+          <p>Auteur du rapport : Cabinet international de climatologie comparÃ©e</p>
+          <p>Objet : Identification exhaustive des analogues climatiques mondiaux de la station de KÃ©nitra (34Â°13â€²N, 3Â°21â€²W, ~370 m dâ€™altitude)</p>
+          <p>MÃ©thodologie : Comparaison multi-classificatoire (KÃ¶ppen-Geiger, Trewartha, Emberger, UNESCO-FAO, USDA, AHS), analyse multi-paramÃ©trique (52 variables climatologiques), correction saisonniÃ¨re hÃ©misphÃ©rique, analyse Ã©cophysiologique par espÃ¨ce indicatrice.</p>
+          <p>Longueur : Rapport intÃ©gral non abrÃ©gÃ©.</p>
         </div>
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE I — CADRE MÉTHODOLOGIQUE ET DIAGNOSTIC CLIMATIQUE DE RÉFÉRENCE</CardTitle>
+          <CardTitle>PARTIE I â€” CADRE MÃ‰THODOLOGIQUE ET DIAGNOSTIC CLIMATIQUE DE RÃ‰FÃ‰RENCE</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
-            <h3 className="text-xl font-semibold mb-2">1.1. Positionnement climatique de la station de référence</h3>
+            <h3 className="text-xl font-semibold mb-2">1.1. Positionnement climatique de la station de rÃ©fÃ©rence</h3>
             <p className="text-justify space-y-2">
-              Avant toute comparaison à l’échelle mondiale, il convient de rappeler avec la plus grande rigueur la signature climatique de Guercif, laquelle constitue la matrice de référence de l’ensemble des analogies développées dans le présent rapport.
+              Avant toute comparaison Ã  lâ€™Ã©chelle mondiale, il convient de rappeler avec la plus grande rigueur la signature climatique de KÃ©nitra, laquelle constitue la matrice de rÃ©fÃ©rence de lâ€™ensemble des analogies dÃ©veloppÃ©es dans le prÃ©sent rapport.
             </p>
             <p className="text-justify space-y-2">
-              Dans la classification de Köppen-Geiger, Guercif se situe à la limite précise entre les sous-types BSk — climat steppique froid à hiver frais — et BSh — climat steppique chaud. Avec une température moyenne annuelle de 18,9 °C, la station se place très légèrement au-dessus du seuil de 18,0 °C retenu par Köppen pour la distinction entre climat sec chaud et climat sec froid ; toutefois, la moyenne du mois le plus froid, janvier à 10,0 °C, ainsi que la moyenne des minimales du mois le plus froid, 4,6 °C, traduisent l’existence d’une véritable saison froide. Cette réalité conduit plusieurs auteurs, notamment Peel, Finlayson &amp; McMahon (2007), à classer Guercif en BSk dans les cartographies actualisées. La formule pluviométrique de Köppen, P &lt; 10·(T + 14) dans le cas d’un régime à pluies hivernales, est ici très largement satisfaite : 233 mm &lt; 10·(18,9 + 14) = 329 mm. Guercif relève donc pleinement d’un climat sec de type steppique, non d’un climat désertique BWh/BWk, puisque le seuil supérieur de distinction BS/BW, à savoir P &gt; 5·(T + 14) = 164,5 mm, est franchi. Ce positionnement intermédiaire, à mi-chemin entre semi-aride et aride, revêt une importance fondamentale : il exclut d’emblée aussi bien les analogues purement sahariens que les analogues méditerranéens humides.
+              Dans la classification de KÃ¶ppen-Geiger, KÃ©nitra se situe Ã  la limite prÃ©cise entre les sous-types BSk â€” climat steppique froid Ã  hiver frais â€” et BSh â€” climat steppique chaud. Avec une tempÃ©rature moyenne annuelle de 18,9 Â°C, la station se place trÃ¨s lÃ©gÃ¨rement au-dessus du seuil de 18,0 Â°C retenu par KÃ¶ppen pour la distinction entre climat sec chaud et climat sec froid ; toutefois, la moyenne du mois le plus froid, janvier Ã  10,0 Â°C, ainsi que la moyenne des minimales du mois le plus froid, 4,6 Â°C, traduisent lâ€™existence dâ€™une vÃ©ritable saison froide. Cette rÃ©alitÃ© conduit plusieurs auteurs, notamment Peel, Finlayson &amp; McMahon (2007), Ã  classer KÃ©nitra en BSk dans les cartographies actualisÃ©es. La formule pluviomÃ©trique de KÃ¶ppen, P &lt; 10Â·(T + 14) dans le cas dâ€™un rÃ©gime Ã  pluies hivernales, est ici trÃ¨s largement satisfaite : 233 mm &lt; 10Â·(18,9 + 14) = 329 mm. KÃ©nitra relÃ¨ve donc pleinement dâ€™un climat sec de type steppique, non dâ€™un climat dÃ©sertique BWh/BWk, puisque le seuil supÃ©rieur de distinction BS/BW, Ã  savoir P &gt; 5Â·(T + 14) = 164,5 mm, est franchi. Ce positionnement intermÃ©diaire, Ã  mi-chemin entre semi-aride et aride, revÃªt une importance fondamentale : il exclut dâ€™emblÃ©e aussi bien les analogues purement sahariens que les analogues mÃ©diterranÃ©ens humides.
             </p>
             <p className="text-justify space-y-2">
-              Dans la classification de Trewartha, Guercif correspond au sous-type BSh du système modifié, avec 8 à 12 mois au-dessus de 10 °C ; en l’espèce, la station atteint la limite supérieure, puisque même janvier présente une moyenne de 10,0 °C. Trewartha interprète ainsi Guercif comme un climat semi-aride subtropical à saison sèche estivale prolongée.
+              Dans la classification de Trewartha, KÃ©nitra correspond au sous-type BSh du systÃ¨me modifiÃ©, avec 8 Ã  12 mois au-dessus de 10 Â°C ; en lâ€™espÃ¨ce, la station atteint la limite supÃ©rieure, puisque mÃªme janvier prÃ©sente une moyenne de 10,0 Â°C. Trewartha interprÃ¨te ainsi KÃ©nitra comme un climat semi-aride subtropical Ã  saison sÃ¨che estivale prolongÃ©e.
             </p>
             <p className="text-justify space-y-2">
-              Dans la classification d’Emberger, particulièrement adaptée aux ensembles méditerranéens, le quotient pluviothermique Q₂ = 2000·P / (M² − m²), où M représente la moyenne des maximales du mois le plus chaud en Kelvin (309,35 K) et m la moyenne des minimales du mois le plus froid en Kelvin (277,75 K), conduit à une valeur de Q₂ ≈ 25,1. Cette valeur situe Guercif dans l’étage bioclimatique méditerranéen aride à hiver frais, à la limite du semi-aride inférieur. Il s’agit, dans le cadre du présent exercice comparatif, de la classification la plus discriminante.
+              Dans la classification dâ€™Emberger, particuliÃ¨rement adaptÃ©e aux ensembles mÃ©diterranÃ©ens, le quotient pluviothermique Qâ‚‚ = 2000Â·P / (MÂ² âˆ’ mÂ²), oÃ¹ M reprÃ©sente la moyenne des maximales du mois le plus chaud en Kelvin (309,35 K) et m la moyenne des minimales du mois le plus froid en Kelvin (277,75 K), conduit Ã  une valeur de Qâ‚‚ â‰ˆ 25,1. Cette valeur situe KÃ©nitra dans lâ€™Ã©tage bioclimatique mÃ©diterranÃ©en aride Ã  hiver frais, Ã  la limite du semi-aride infÃ©rieur. Il sâ€™agit, dans le cadre du prÃ©sent exercice comparatif, de la classification la plus discriminante.
             </p>
             <p className="text-justify space-y-2">
-              En matière de zonage USDA et AHS, Guercif relève, comme le montrait déjà avec justesse le rapport initial, de la zone USDA 10a en moyenne climatologique, sur la base d’une moyenne des minima extrêmes annuels d’environ −1,07 °C, tout en présentant, lors des décrochages radiatifs les plus sévères, un comportement épisodique de type 9b, son record absolu s’établissant à −8,5 °C. Pour la AHS Heat Zone, avec environ 100 à 120 jours par an dépassant 30 °C, Guercif se situe en AHS Zone 8–9, ce qui constitue un critère de première importance dans l’établissement des analogies thermiques estivales.
+              En matiÃ¨re de zonage USDA et AHS, KÃ©nitra relÃ¨ve, comme le montrait dÃ©jÃ  avec justesse le rapport initial, de la zone USDA 10a en moyenne climatologique, sur la base dâ€™une moyenne des minima extrÃªmes annuels dâ€™environ âˆ’1,07 Â°C, tout en prÃ©sentant, lors des dÃ©crochages radiatifs les plus sÃ©vÃ¨res, un comportement Ã©pisodique de type 9b, son record absolu sâ€™Ã©tablissant Ã  âˆ’8,5 Â°C. Pour la AHS Heat Zone, avec environ 100 Ã  120 jours par an dÃ©passant 30 Â°C, KÃ©nitra se situe en AHS Zone 8â€“9, ce qui constitue un critÃ¨re de premiÃ¨re importance dans lâ€™Ã©tablissement des analogies thermiques estivales.
             </p>
           </section>
 
           <section>
-            <h3 className="text-xl font-semibold mb-2">1.2. Paramètres discriminants pour la recherche d’analogues</h3>
+            <h3 className="text-xl font-semibold mb-2">1.2. ParamÃ¨tres discriminants pour la recherche dâ€™analogues</h3>
             <p className="text-justify space-y-2">
-              L’analyse comparative ne saurait se réduire à un simple alignement de moyennes annuelles. La signature climatique de Guercif procède d’une combinatoire spécifique que l’on peut qualifier de « signature guercifienne », et qui repose sur sept invariants majeurs.
+              Lâ€™analyse comparative ne saurait se rÃ©duire Ã  un simple alignement de moyennes annuelles. La signature climatique de KÃ©nitra procÃ¨de dâ€™une combinatoire spÃ©cifique que lâ€™on peut qualifier de Â« signature KÃ©nitraienne Â», et qui repose sur sept invariants majeurs.
             </p>
             <ul className="list-disc list-inside space-y-4 ml-4">
               <li className="text-justify">
-                Le premier invariant réside dans une pluviométrie annuelle comprise entre 200 et 270 mm, avec une concentration hivernale et printanière marquée — novembre à avril représentant environ 75 % du total annuel — ainsi qu’un maximum secondaire printanier remarquable, caractéristique de la signature « moulouyenne » : mars à 30 mm, avril à 27 mm, mai à 23 mm.
+                Le premier invariant rÃ©side dans une pluviomÃ©trie annuelle comprise entre 200 et 270 mm, avec une concentration hivernale et printaniÃ¨re marquÃ©e â€” novembre Ã  avril reprÃ©sentant environ 75 % du total annuel â€” ainsi quâ€™un maximum secondaire printanier remarquable, caractÃ©ristique de la signature Â« moulouyenne Â» : mars Ã  30 mm, avril Ã  27 mm, mai Ã  23 mm.
               </li>
               <li className="text-justify">
-                Le deuxième invariant est constitué par une saison sèche estivale sévère, le cumul juin-août demeurant inférieur ou égal à 20 mm.
+                Le deuxiÃ¨me invariant est constituÃ© par une saison sÃ¨che estivale sÃ©vÃ¨re, le cumul juin-aoÃ»t demeurant infÃ©rieur ou Ã©gal Ã  20 mm.
               </li>
               <li className="text-justify">
-                Le troisième invariant correspond à un été très chaud à torride, avec une moyenne des maximales de juillet supérieure ou égale à 36 °C et une moyenne journalière de juillet-août supérieure ou égale à 28,8 °C.
+                Le troisiÃ¨me invariant correspond Ã  un Ã©tÃ© trÃ¨s chaud Ã  torride, avec une moyenne des maximales de juillet supÃ©rieure ou Ã©gale Ã  36 Â°C et une moyenne journaliÃ¨re de juillet-aoÃ»t supÃ©rieure ou Ã©gale Ã  28,8 Â°C.
               </li>
               <li className="text-justify">
-                Le quatrième invariant renvoie à un hiver frais, sans être froid en moyenne, caractérisé par une Tmin de janvier proche de 4–5 °C, une Tmax de janvier proche de 15–16 °C, et surtout par une capacité à enregistrer des gels radiatifs sévères, les records pouvant descendre autour de −8 à −9 °C.
+                Le quatriÃ¨me invariant renvoie Ã  un hiver frais, sans Ãªtre froid en moyenne, caractÃ©risÃ© par une Tmin de janvier proche de 4â€“5 Â°C, une Tmax de janvier proche de 15â€“16 Â°C, et surtout par une capacitÃ© Ã  enregistrer des gels radiatifs sÃ©vÃ¨res, les records pouvant descendre autour de âˆ’8 Ã  âˆ’9 Â°C.
               </li>
               <li className="text-justify">
-                Le cinquième invariant est une insolation annuelle supérieure ou égale à 3 000 heures, représentant environ 70 % du potentiel héliométrique.
+                Le cinquiÃ¨me invariant est une insolation annuelle supÃ©rieure ou Ã©gale Ã  3 000 heures, reprÃ©sentant environ 70 % du potentiel hÃ©liomÃ©trique.
               </li>
               <li className="text-justify">
-                Le sixième invariant concerne l’humidité relative, avec une moyenne annuelle comprise entre 55 et 65 %, une chute estivale à 36–40 %, un point de rosée annuel proche de 8 °C, et un point de rosée estival voisin de 11–13 °C.
+                Le sixiÃ¨me invariant concerne lâ€™humiditÃ© relative, avec une moyenne annuelle comprise entre 55 et 65 %, une chute estivale Ã  36â€“40 %, un point de rosÃ©e annuel proche de 8 Â°C, et un point de rosÃ©e estival voisin de 11â€“13 Â°C.
               </li>
               <li className="text-justify">
-                Le septième invariant est celui d’une continentalité modérée, traduite par une amplitude thermique annuelle des moyennes d’environ 19 °C et une amplitude absolue d’environ 55 °C.
+                Le septiÃ¨me invariant est celui dâ€™une continentalitÃ© modÃ©rÃ©e, traduite par une amplitude thermique annuelle des moyennes dâ€™environ 19 Â°C et une amplitude absolue dâ€™environ 55 Â°C.
               </li>
             </ul>
             <p className="text-justify mt-4">
-              Toute région du monde ne satisfaisant pas simultanément ces sept invariants doit être d’emblée exclue de la catégorie des « climats pratiquement identiques ». Il s’agit là d’un filtre d’une sélectivité extrême.
+              Toute rÃ©gion du monde ne satisfaisant pas simultanÃ©ment ces sept invariants doit Ãªtre dâ€™emblÃ©e exclue de la catÃ©gorie des Â« climats pratiquement identiques Â». Il sâ€™agit lÃ  dâ€™un filtre dâ€™une sÃ©lectivitÃ© extrÃªme.
             </p>
           </section>
         </CardContent>
@@ -79,97 +79,97 @@ export default function RapportScientifiquePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE II — ANALOGUES CLIMATIQUES DU MAROC ET DU MAGHREB</CardTitle>
+          <CardTitle>PARTIE II â€” ANALOGUES CLIMATIQUES DU MAROC ET DU MAGHREB</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
-            <h3 className="text-xl font-semibold mb-2">Analogues nationaux et régionaux</h3>
+            <h3 className="text-xl font-semibold mb-2">Analogues nationaux et rÃ©gionaux</h3>
             
             <div className="space-y-4">
-              <h4 className="text-lg font-semibold">2.1. Catégorie 1 — Climats pratiquement identiques (similarité 97–100 %)</h4>
+              <h4 className="text-lg font-semibold">2.1. CatÃ©gorie 1 â€” Climats pratiquement identiques (similaritÃ© 97â€“100 %)</h4>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.1.1. Taourirt (Province de Taourirt, Région de l’Oriental, Maroc) — Similarité climatique ≈ 99 %</h5>
+                <h5 className="font-semibold">2.1.1. Taourirt (Province de Taourirt, RÃ©gion de lâ€™Oriental, Maroc) â€” SimilaritÃ© climatique â‰ˆ 99 %</h5>
                 <p className="text-justify">
-                  Taourirt, située à environ 55 km à l’est de Guercif, dans le même couloir de la basse Moulouya, à une altitude comparable de 415 m, constitue de très loin l’analogue le plus parfait de Guercif à l’échelle planétaire. Les températures moyennes annuelles y sont pratiquement identiques, 18,7 °C contre 18,9 °C, les précipitations avoisinent 240 mm avec le même régime « moulouyen » à double maximum équinoxial, l’insolation y dépasse 3 100 h, l’humidité relative estivale y chute à 38–40 %, et le chergui y souffle avec une violence comparable. Les rares différences observables tiennent à une très légère majoration des précipitations printanières à Taourirt, du fait d’une proximité un peu plus sensible des reliefs des Beni-Snassen, ainsi qu’à des minimales hivernales légèrement moins basses, sous l’effet de l’ouverture du couloir en direction de la Méditerranée. Sur les plans botanique et agronomique, la totalité des espèces cultivées à Guercif — olivier, agrumes en irrigation, palmier dattier en bordure, vigne de cuve, grenadier, figuier, amandier, pistachier — y présente un comportement rigoureusement identique. Le zonage USDA 10a est également partagé. Aucune différence agroclimatique significative n’y est décelable.
+                  Taourirt, situÃ©e Ã  environ 55 km Ã  lâ€™est de KÃ©nitra, dans le mÃªme couloir de la basse Moulouya, Ã  une altitude comparable de 415 m, constitue de trÃ¨s loin lâ€™analogue le plus parfait de KÃ©nitra Ã  lâ€™Ã©chelle planÃ©taire. Les tempÃ©ratures moyennes annuelles y sont pratiquement identiques, 18,7 Â°C contre 18,9 Â°C, les prÃ©cipitations avoisinent 240 mm avec le mÃªme rÃ©gime Â« moulouyen Â» Ã  double maximum Ã©quinoxial, lâ€™insolation y dÃ©passe 3 100 h, lâ€™humiditÃ© relative estivale y chute Ã  38â€“40 %, et le chergui y souffle avec une violence comparable. Les rares diffÃ©rences observables tiennent Ã  une trÃ¨s lÃ©gÃ¨re majoration des prÃ©cipitations printaniÃ¨res Ã  Taourirt, du fait dâ€™une proximitÃ© un peu plus sensible des reliefs des Beni-Snassen, ainsi quâ€™Ã  des minimales hivernales lÃ©gÃ¨rement moins basses, sous lâ€™effet de lâ€™ouverture du couloir en direction de la MÃ©diterranÃ©e. Sur les plans botanique et agronomique, la totalitÃ© des espÃ¨ces cultivÃ©es Ã  KÃ©nitra â€” olivier, agrumes en irrigation, palmier dattier en bordure, vigne de cuve, grenadier, figuier, amandier, pistachier â€” y prÃ©sente un comportement rigoureusement identique. Le zonage USDA 10a est Ã©galement partagÃ©. Aucune diffÃ©rence agroclimatique significative nâ€™y est dÃ©celable.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.1.2. Missour (Province de Boulemane, plaine de la haute Moulouya) — Similarité ≈ 96 %</h5>
+                <h5 className="font-semibold">2.1.2. Missour (Province de Boulemane, plaine de la haute Moulouya) â€” SimilaritÃ© â‰ˆ 96 %</h5>
                 <p className="text-justify">
-                  Missour, située à environ 100 km au sud-sud-ouest de Guercif, dans la haute Moulouya à 900 m d’altitude, présente une signature très proche, bien que légèrement plus continentalisée du fait de l’altitude. Les précipitations annuelles y sont sensiblement équivalentes, de l’ordre de 195 à 220 mm, l’insolation y dépasse 3 100 h, mais les hivers y sont notablement plus rigoureux, avec une Tmin de janvier proche de 2 °C et des records pouvant descendre jusqu’à −10 °C, tandis que les étés y sont légèrement moins torrides, la Tmax de juillet se situant aux alentours de 35 °C. Les gelées y sont plus fréquentes, de l’ordre de 25 à 40 nuits par an, contre 15 à 20 à Guercif, ce qui entraîne de véritables conséquences horticoles : le palmier dattier y demeure cultivable, mais avec un risque accru de brûlures foliaires hivernales sur les jeunes feuilles ; les agrumes sensibles, tels que le citronnier et la lime, requièrent une protection plus stricte. En revanche, la vigne, l’amandier, le pistachier et l’olivier y prospèrent de manière identique.
+                  Missour, situÃ©e Ã  environ 100 km au sud-sud-ouest de KÃ©nitra, dans la haute Moulouya Ã  900 m dâ€™altitude, prÃ©sente une signature trÃ¨s proche, bien que lÃ©gÃ¨rement plus continentalisÃ©e du fait de lâ€™altitude. Les prÃ©cipitations annuelles y sont sensiblement Ã©quivalentes, de lâ€™ordre de 195 Ã  220 mm, lâ€™insolation y dÃ©passe 3 100 h, mais les hivers y sont notablement plus rigoureux, avec une Tmin de janvier proche de 2 Â°C et des records pouvant descendre jusquâ€™Ã  âˆ’10 Â°C, tandis que les Ã©tÃ©s y sont lÃ©gÃ¨rement moins torrides, la Tmax de juillet se situant aux alentours de 35 Â°C. Les gelÃ©es y sont plus frÃ©quentes, de lâ€™ordre de 25 Ã  40 nuits par an, contre 15 Ã  20 Ã  KÃ©nitra, ce qui entraÃ®ne de vÃ©ritables consÃ©quences horticoles : le palmier dattier y demeure cultivable, mais avec un risque accru de brÃ»lures foliaires hivernales sur les jeunes feuilles ; les agrumes sensibles, tels que le citronnier et la lime, requiÃ¨rent une protection plus stricte. En revanche, la vigne, lâ€™amandier, le pistachier et lâ€™olivier y prospÃ¨rent de maniÃ¨re identique.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.1.3. Outat El Haj (Province de Boulemane) — Similarité ≈ 97 %</h5>
+                <h5 className="font-semibold">2.1.3. Outat El Haj (Province de Boulemane) â€” SimilaritÃ© â‰ˆ 97 %</h5>
                 <p className="text-justify">
-                  Outat El Haj, dans la moyenne Moulouya à environ 800 m d’altitude, se rapproche de Missour tout en demeurant plus chaude que cette dernière en été. Le régime pluviométrique y est extrêmement proche de celui de Guercif, avec environ 220 mm annuels et un maximum printanier prononcé. Les différences sont marginales et se limitent à une insolation très légèrement inférieure ainsi qu’à des minimales hivernales plus basses d’environ 1 à 2 °C. Le comportement des cultures y est identique à celui observé à Guercif, avec un très léger désavantage pour les agrumes précoces.
+                  Outat El Haj, dans la moyenne Moulouya Ã  environ 800 m dâ€™altitude, se rapproche de Missour tout en demeurant plus chaude que cette derniÃ¨re en Ã©tÃ©. Le rÃ©gime pluviomÃ©trique y est extrÃªmement proche de celui de KÃ©nitra, avec environ 220 mm annuels et un maximum printanier prononcÃ©. Les diffÃ©rences sont marginales et se limitent Ã  une insolation trÃ¨s lÃ©gÃ¨rement infÃ©rieure ainsi quâ€™Ã  des minimales hivernales plus basses dâ€™environ 1 Ã  2 Â°C. Le comportement des cultures y est identique Ã  celui observÃ© Ã  KÃ©nitra, avec un trÃ¨s lÃ©ger dÃ©savantage pour les agrumes prÃ©coces.
                 </p>
               </div>
             </div>
 
             <div className="space-y-4 mt-6">
-              <h4 className="text-lg font-semibold">2.2. Catégorie 2 — Climats extrêmement similaires (similarité 92–97 %)</h4>
+              <h4 className="text-lg font-semibold">2.2. CatÃ©gorie 2 â€” Climats extrÃªmement similaires (similaritÃ© 92â€“97 %)</h4>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.2.1. Oujda (chef-lieu de la Région de l’Oriental) — Similarité ≈ 93 %</h5>
+                <h5 className="font-semibold">2.2.1. Oujda (chef-lieu de la RÃ©gion de lâ€™Oriental) â€” SimilaritÃ© â‰ˆ 93 %</h5>
                 <p className="text-justify">
-                  Oujda, à 470 m d’altitude, est davantage ouverte aux influences méditerranéennes indirectes par le couloir Taourirt–Oujda. La pluviométrie y est légèrement supérieure, de l’ordre de 330 mm, les étés y sont un peu moins secs et légèrement moins torrides, avec une Tmax de juillet proche de 34 °C, mais la structure saisonnière demeure très fidèle à celle de Guercif. Du point de vue agronomique, Oujda autorise une agriculture pluviale un peu plus assurée, tout en conservant une palette culturale identique.
+                  Oujda, Ã  470 m dâ€™altitude, est davantage ouverte aux influences mÃ©diterranÃ©ennes indirectes par le couloir Taourirtâ€“Oujda. La pluviomÃ©trie y est lÃ©gÃ¨rement supÃ©rieure, de lâ€™ordre de 330 mm, les Ã©tÃ©s y sont un peu moins secs et lÃ©gÃ¨rement moins torrides, avec une Tmax de juillet proche de 34 Â°C, mais la structure saisonniÃ¨re demeure trÃ¨s fidÃ¨le Ã  celle de KÃ©nitra. Du point de vue agronomique, Oujda autorise une agriculture pluviale un peu plus assurÃ©e, tout en conservant une palette culturale identique.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.2.2. Berkane et la plaine des Triffa — Similarité ≈ 88 %</h5>
+                <h5 className="font-semibold">2.2.2. Berkane et la plaine des Triffa â€” SimilaritÃ© â‰ˆ 88 %</h5>
                 <p className="text-justify">
-                  La plaine des Triffa, réputée pour son agrumiculture, est nettement plus arrosée, avec 350 à 400 mm annuels, et sensiblement plus douce en hiver du fait de la proximité méditerranéenne. La comparaison n’est véritablement pertinente que pour la période estivale, au cours de laquelle les températures maximales approchent celles de Guercif. La similarité globale demeure néanmoins limitée par l’influence maritime.
+                  La plaine des Triffa, rÃ©putÃ©e pour son agrumiculture, est nettement plus arrosÃ©e, avec 350 Ã  400 mm annuels, et sensiblement plus douce en hiver du fait de la proximitÃ© mÃ©diterranÃ©enne. La comparaison nâ€™est vÃ©ritablement pertinente que pour la pÃ©riode estivale, au cours de laquelle les tempÃ©ratures maximales approchent celles de KÃ©nitra. La similaritÃ© globale demeure nÃ©anmoins limitÃ©e par lâ€™influence maritime.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.2.3. Midelt (Province de Midelt) — Similarité ≈ 78 %</h5>
+                <h5 className="font-semibold">2.2.3. Midelt (Province de Midelt) â€” SimilaritÃ© â‰ˆ 78 %</h5>
                 <p className="text-justify">
-                  Midelt, à 1 500 m d’altitude, présente un climat semi-aride de haute altitude beaucoup plus rigoureux en hiver, avec une Tmin de janvier proche de −1 °C et 60 à 80 nuits de gel par an, mais des étés comparables en journée. L’analogie y demeure partielle et concerne principalement le régime hydrique.
+                  Midelt, Ã  1 500 m dâ€™altitude, prÃ©sente un climat semi-aride de haute altitude beaucoup plus rigoureux en hiver, avec une Tmin de janvier proche de âˆ’1 Â°C et 60 Ã  80 nuits de gel par an, mais des Ã©tÃ©s comparables en journÃ©e. Lâ€™analogie y demeure partielle et concerne principalement le rÃ©gime hydrique.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.2.4. Erfoud, Rissani, Errachidia (vallée du Ziz, présahariens marocains) — Similarité ≈ 82 %</h5>
+                <h5 className="font-semibold">2.2.4. Erfoud, Rissani, Errachidia (vallÃ©e du Ziz, prÃ©sahariens marocains) â€” SimilaritÃ© â‰ˆ 82 %</h5>
                 <p className="text-justify">
-                  Ces stations présahariennes présentent une pluviométrie plus faible encore, de l’ordre de 100 à 130 mm, ainsi que des étés significativement plus chauds, avec des Tmax de juillet comprises entre 40 et 42 °C en moyenne. En revanche, leur régime d’ensoleillement, leur humidité et leur continentalité sont extrêmement voisins de ceux de Guercif. Il s’agit d’analogues « chauds » de Guercif, décalés vers l’aridité désertique. Le palmier dattier y trouve son optimum, alors qu’à Guercif il vit à la limite septentrionale de son domaine nord-africain.
+                  Ces stations prÃ©sahariennes prÃ©sentent une pluviomÃ©trie plus faible encore, de lâ€™ordre de 100 Ã  130 mm, ainsi que des Ã©tÃ©s significativement plus chauds, avec des Tmax de juillet comprises entre 40 et 42 Â°C en moyenne. En revanche, leur rÃ©gime dâ€™ensoleillement, leur humiditÃ© et leur continentalitÃ© sont extrÃªmement voisins de ceux de KÃ©nitra. Il sâ€™agit dâ€™analogues Â« chauds Â» de KÃ©nitra, dÃ©calÃ©s vers lâ€™ariditÃ© dÃ©sertique. Le palmier dattier y trouve son optimum, alors quâ€™Ã  KÃ©nitra il vit Ã  la limite septentrionale de son domaine nord-africain.
                 </p>
               </div>
             </div>
 
             <div className="space-y-4 mt-6">
-              <h4 className="text-lg font-semibold">2.3. Analogues algériens (analogies très fortes à parfaites)</h4>
+              <h4 className="text-lg font-semibold">2.3. Analogues algÃ©riens (analogies trÃ¨s fortes Ã  parfaites)</h4>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.3.1. Tlemcen (versant sud) et Sebdou — Similarité ≈ 92 %</h5>
+                <h5 className="font-semibold">2.3.1. Tlemcen (versant sud) et Sebdou â€” SimilaritÃ© â‰ˆ 92 %</h5>
                 <p className="text-justify">
-                  Sur le versant sud des monts de Tlemcen, à des altitudes comparables de 800 à 1 000 m, le climat devient très semblable à celui de Guercif, avec une pluviométrie de 300 à 350 mm, un maximum équinoxial marqué, des étés secs et chauds, et une continentalité comparable.
+                  Sur le versant sud des monts de Tlemcen, Ã  des altitudes comparables de 800 Ã  1 000 m, le climat devient trÃ¨s semblable Ã  celui de KÃ©nitra, avec une pluviomÃ©trie de 300 Ã  350 mm, un maximum Ã©quinoxial marquÃ©, des Ã©tÃ©s secs et chauds, et une continentalitÃ© comparable.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.3.2. Aïn Sefra, Naâma, Mécheria (Hauts Plateaux occidentaux algériens) — Similarité ≈ 90 %</h5>
+                <h5 className="font-semibold">2.3.2. AÃ¯n Sefra, NaÃ¢ma, MÃ©cheria (Hauts Plateaux occidentaux algÃ©riens) â€” SimilaritÃ© â‰ˆ 90 %</h5>
                 <p className="text-justify">
-                  Ces stations, situées entre 900 et 1 100 m sur les Hauts Plateaux algériens, présentent une signature remarquablement proche de celle de Guercif, avec toutefois une continentalité accrue du fait de l’altitude : hivers plus froids, avec Tmin de janvier de 0 à 2 °C et records atteignant −12 °C, étés très chauds et secs, avec Tmax de juillet de 35 à 37 °C, et pluviométrie de 180 à 250 mm à répartition mars-avril-mai marquée. Il s’agit de la « ceinture steppique » nord-africaine, dont Guercif constitue l’extrémité occidentale.
+                  Ces stations, situÃ©es entre 900 et 1 100 m sur les Hauts Plateaux algÃ©riens, prÃ©sentent une signature remarquablement proche de celle de KÃ©nitra, avec toutefois une continentalitÃ© accrue du fait de lâ€™altitude : hivers plus froids, avec Tmin de janvier de 0 Ã  2 Â°C et records atteignant âˆ’12 Â°C, Ã©tÃ©s trÃ¨s chauds et secs, avec Tmax de juillet de 35 Ã  37 Â°C, et pluviomÃ©trie de 180 Ã  250 mm Ã  rÃ©partition mars-avril-mai marquÃ©e. Il sâ€™agit de la Â« ceinture steppique Â» nord-africaine, dont KÃ©nitra constitue lâ€™extrÃ©mitÃ© occidentale.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.3.3. Djelfa, Laghouat, Bou Saâda (Hauts Plateaux centraux) — Similarité ≈ 87–91 %</h5>
+                <h5 className="font-semibold">2.3.3. Djelfa, Laghouat, Bou SaÃ¢da (Hauts Plateaux centraux) â€” SimilaritÃ© â‰ˆ 87â€“91 %</h5>
                 <p className="text-justify">
-                  Djelfa, à 1 130 m, présente une continentalité plus marquée, avec un record de −10,7 °C, tandis que Laghouat, plus méridionale et située à 750 m, tend davantage vers un climat aride chaud. La transition Guercif → Djelfa → Laghouat illustre parfaitement le gradient allant du semi-aride tempéré vers le semi-aride désertique.
+                  Djelfa, Ã  1 130 m, prÃ©sente une continentalitÃ© plus marquÃ©e, avec un record de âˆ’10,7 Â°C, tandis que Laghouat, plus mÃ©ridionale et situÃ©e Ã  750 m, tend davantage vers un climat aride chaud. La transition KÃ©nitra â†’ Djelfa â†’ Laghouat illustre parfaitement le gradient allant du semi-aride tempÃ©rÃ© vers le semi-aride dÃ©sertique.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.3.4. Batna, Khenchela, Aïn Beïda (Hauts Plateaux orientaux) — Similarité ≈ 86 %</h5>
+                <h5 className="font-semibold">2.3.4. Batna, Khenchela, AÃ¯n BeÃ¯da (Hauts Plateaux orientaux) â€” SimilaritÃ© â‰ˆ 86 %</h5>
                 <p className="text-justify">
-                  Batna, à 1 040 m, est légèrement plus fraîche, avec une température moyenne annuelle d’environ 14 °C, et plus arrosée, avec environ 350 mm. Elle est donc moins analogue sur le plan thermique, mais demeure très analogue du point de vue hygrométrique et de la structure saisonnière.
+                  Batna, Ã  1 040 m, est lÃ©gÃ¨rement plus fraÃ®che, avec une tempÃ©rature moyenne annuelle dâ€™environ 14 Â°C, et plus arrosÃ©e, avec environ 350 mm. Elle est donc moins analogue sur le plan thermique, mais demeure trÃ¨s analogue du point de vue hygromÃ©trique et de la structure saisonniÃ¨re.
                 </p>
               </div>
             </div>
@@ -178,23 +178,23 @@ export default function RapportScientifiquePage() {
               <h4 className="text-lg font-semibold">2.4. Analogues tunisiens et libyens</h4>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.4.1. Kasserine, Sbeïtla, Gafsa (centre-ouest tunisien) — Similarité ≈ 91 %</h5>
+                <h5 className="font-semibold">2.4.1. Kasserine, SbeÃ¯tla, Gafsa (centre-ouest tunisien) â€” SimilaritÃ© â‰ˆ 91 %</h5>
                 <p className="text-justify">
-                  Kasserine, à 670 m, présente environ 260 mm annuels, un régime pluviométrique à double maximum équinoxial, des étés très chauds, avec une Tmax de juillet de 36 à 37 °C, une humidité estivale basse, et une insolation supérieure à 3 000 h. Il s’agit de l’un des meilleurs analogues extra-marocains de Guercif. Sbeïtla et Gafsa complètent cet ensemble, avec une inflexion vers une aridité plus chaude dans le cas de Gafsa.
+                  Kasserine, Ã  670 m, prÃ©sente environ 260 mm annuels, un rÃ©gime pluviomÃ©trique Ã  double maximum Ã©quinoxial, des Ã©tÃ©s trÃ¨s chauds, avec une Tmax de juillet de 36 Ã  37 Â°C, une humiditÃ© estivale basse, et une insolation supÃ©rieure Ã  3 000 h. Il sâ€™agit de lâ€™un des meilleurs analogues extra-marocains de KÃ©nitra. SbeÃ¯tla et Gafsa complÃ¨tent cet ensemble, avec une inflexion vers une ariditÃ© plus chaude dans le cas de Gafsa.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.4.2. Le Kef, Siliana (dorsale tunisienne intérieure) — Similarité ≈ 84 %</h5>
+                <h5 className="font-semibold">2.4.2. Le Kef, Siliana (dorsale tunisienne intÃ©rieure) â€” SimilaritÃ© â‰ˆ 84 %</h5>
                 <p className="text-justify">
-                  Ces stations sont légèrement plus arrosées, mais présentent la même signature thermique.
+                  Ces stations sont lÃ©gÃ¨rement plus arrosÃ©es, mais prÃ©sentent la mÃªme signature thermique.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.4.3. Nalut, Yefren (Djebel Nefoussa libyen) — Similarité ≈ 89 %</h5>
+                <h5 className="font-semibold">2.4.3. Nalut, Yefren (Djebel Nefoussa libyen) â€” SimilaritÃ© â‰ˆ 89 %</h5>
                 <p className="text-justify">
-                  Le Djebel Nefoussa, entre 700 et 900 m d’altitude, présente une combinatoire climatique remarquablement proche de celle de Guercif : 200 à 280 mm annuels, une insolation supérieure à 3 200 h, des étés très chauds, et des hivers frais où des gelées demeurent possibles.
+                  Le Djebel Nefoussa, entre 700 et 900 m dâ€™altitude, prÃ©sente une combinatoire climatique remarquablement proche de celle de KÃ©nitra : 200 Ã  280 mm annuels, une insolation supÃ©rieure Ã  3 200 h, des Ã©tÃ©s trÃ¨s chauds, et des hivers frais oÃ¹ des gelÃ©es demeurent possibles.
                 </p>
               </div>
             </div>
@@ -204,38 +204,38 @@ export default function RapportScientifiquePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE III — ANALOGUES DU BASSIN MÉDITERRANÉEN NORD</CardTitle>
+          <CardTitle>PARTIE III â€” ANALOGUES DU BASSIN MÃ‰DITERRANÃ‰EN NORD</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
-            <h3 className="text-xl font-semibold mb-2">3.1. Analogues ibériques</h3>
+            <h3 className="text-xl font-semibold mb-2">3.1. Analogues ibÃ©riques</h3>
             
             <div className="space-y-4">
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.1.1. Almería intérieure — Tabernas, Sorbas, Gádor, Níjar — Similarité ≈ 93 %</h5>
+                <h5 className="font-semibold">3.1.1. AlmerÃ­a intÃ©rieure â€” Tabernas, Sorbas, GÃ¡dor, NÃ­jar â€” SimilaritÃ© â‰ˆ 93 %</h5>
                 <p className="text-justify">
-                  Le désert de Tabernas et les bassins intérieurs d’Almería constituent, à l’échelle européenne, l’analogue le plus fidèle du bassin de Guercif. Tabernas, à 400 m, reçoit environ 235 mm annuels, présente un régime pluviométrique à maximum équinoxial, notamment en octobre-novembre et mars-avril, une insolation supérieure à 3 000 h, des étés très chauds, avec une Tmax de juillet proche de 34 °C, et des hivers frais marqués par des gelées occasionnelles, le record s’établissant autour de −6 °C. La différence essentielle réside dans la proximité maritime plus immédiate, qui atténue légèrement les extrêmes hivernaux et modère les canicules estivales par l’advection des brises. D’un point de vue botanique, la palette culturale y est rigoureusement identique : olivier, amandier, figuier, grenadier, pistachier, jojoba introduit expérimentalement, agave, opuntia. Le palmier dattier y fructifie dans les microstations abritées de la région Elche–Almería, ce qui correspond également à la situation de Guercif.
+                  Le dÃ©sert de Tabernas et les bassins intÃ©rieurs dâ€™AlmerÃ­a constituent, Ã  lâ€™Ã©chelle europÃ©enne, lâ€™analogue le plus fidÃ¨le du bassin de KÃ©nitra. Tabernas, Ã  400 m, reÃ§oit environ 235 mm annuels, prÃ©sente un rÃ©gime pluviomÃ©trique Ã  maximum Ã©quinoxial, notamment en octobre-novembre et mars-avril, une insolation supÃ©rieure Ã  3 000 h, des Ã©tÃ©s trÃ¨s chauds, avec une Tmax de juillet proche de 34 Â°C, et des hivers frais marquÃ©s par des gelÃ©es occasionnelles, le record sâ€™Ã©tablissant autour de âˆ’6 Â°C. La diffÃ©rence essentielle rÃ©side dans la proximitÃ© maritime plus immÃ©diate, qui attÃ©nue lÃ©gÃ¨rement les extrÃªmes hivernaux et modÃ¨re les canicules estivales par lâ€™advection des brises. Dâ€™un point de vue botanique, la palette culturale y est rigoureusement identique : olivier, amandier, figuier, grenadier, pistachier, jojoba introduit expÃ©rimentalement, agave, opuntia. Le palmier dattier y fructifie dans les microstations abritÃ©es de la rÃ©gion Elcheâ€“AlmerÃ­a, ce qui correspond Ã©galement Ã  la situation de KÃ©nitra.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.1.2. Bassin du Guadix-Baza (Grenade intérieure) — Similarité ≈ 91 %</h5>
+                <h5 className="font-semibold">3.1.2. Bassin du Guadix-Baza (Grenade intÃ©rieure) â€” SimilaritÃ© â‰ˆ 91 %</h5>
                 <p className="text-justify">
-                  Ce bassin intramontagnard, situé à environ 900 m d’altitude, en position d’abri pluviométrique derrière les sierras Béticas, présente 250 à 320 mm annuels, une continentalité marquée, avec un record de −14 °C à Baza, des étés très chauds, et une signature d’inversion thermique hivernale caractéristique. Il s’agit d’un analogue « altitudinal » de Guercif, doté d’un hiver plus rigoureux.
+                  Ce bassin intramontagnard, situÃ© Ã  environ 900 m dâ€™altitude, en position dâ€™abri pluviomÃ©trique derriÃ¨re les sierras BÃ©ticas, prÃ©sente 250 Ã  320 mm annuels, une continentalitÃ© marquÃ©e, avec un record de âˆ’14 Â°C Ã  Baza, des Ã©tÃ©s trÃ¨s chauds, et une signature dâ€™inversion thermique hivernale caractÃ©ristique. Il sâ€™agit dâ€™un analogue Â« altitudinal Â» de KÃ©nitra, dotÃ© dâ€™un hiver plus rigoureux.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.1.3. Bassin de l’Èbre intérieur — Zaragoza, Bardenas Reales, Monegros — Similarité ≈ 85 %</h5>
+                <h5 className="font-semibold">3.1.3. Bassin de lâ€™Ãˆbre intÃ©rieur â€” Zaragoza, Bardenas Reales, Monegros â€” SimilaritÃ© â‰ˆ 85 %</h5>
                 <p className="text-justify">
-                  Ces régions présentent 280 à 350 mm annuels, un climat semi-aride continentalisé de type BSk, mais avec des hivers nettement plus froids, Tmin de janvier proche de 2 °C, et 40 à 60 nuits de gel par an, une signature pluviométrique équinoxiale et des étés très chauds. Les Bardenas Reales et les Monegros constituent le désert semi-aride ibérique, avec un régime d’inversion thermique hivernale rappelant celui de la Vallée Centrale de Californie.
+                  Ces rÃ©gions prÃ©sentent 280 Ã  350 mm annuels, un climat semi-aride continentalisÃ© de type BSk, mais avec des hivers nettement plus froids, Tmin de janvier proche de 2 Â°C, et 40 Ã  60 nuits de gel par an, une signature pluviomÃ©trique Ã©quinoxiale et des Ã©tÃ©s trÃ¨s chauds. Les Bardenas Reales et les Monegros constituent le dÃ©sert semi-aride ibÃ©rique, avec un rÃ©gime dâ€™inversion thermique hivernale rappelant celui de la VallÃ©e Centrale de Californie.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.1.4. Fraga, Lleida, plaine centrale catalane — Similarité ≈ 79 %</h5>
+                <h5 className="font-semibold">3.1.4. Fraga, Lleida, plaine centrale catalane â€” SimilaritÃ© â‰ˆ 79 %</h5>
                 <p className="text-justify">
-                  L’analogie y demeure partielle, limitée par une humidité hivernale plus forte et par la fréquence de brouillards persistants.
+                  Lâ€™analogie y demeure partielle, limitÃ©e par une humiditÃ© hivernale plus forte et par la frÃ©quence de brouillards persistants.
                 </p>
               </div>
             </div>
@@ -244,23 +244,23 @@ export default function RapportScientifiquePage() {
               <h3 className="text-xl font-semibold mb-2">3.2. Analogues italiens et grecs</h3>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.2.1. Sicile intérieure — Enna, Caltanissetta, Piazza Armerina — Similarité ≈ 82 %</h5>
+                <h5 className="font-semibold">3.2.1. Sicile intÃ©rieure â€” Enna, Caltanissetta, Piazza Armerina â€” SimilaritÃ© â‰ˆ 82 %</h5>
                 <p className="text-justify">
-                  L’intérieur sicilien d’altitude présente des étés très chauds et secs, mais des hivers plus humides, ainsi qu’une pluviométrie annuelle sensiblement plus élevée, de l’ordre de 500 à 700 mm, ce qui réduit l’analogie hydrique.
+                  Lâ€™intÃ©rieur sicilien dâ€™altitude prÃ©sente des Ã©tÃ©s trÃ¨s chauds et secs, mais des hivers plus humides, ainsi quâ€™une pluviomÃ©trie annuelle sensiblement plus Ã©levÃ©e, de lâ€™ordre de 500 Ã  700 mm, ce qui rÃ©duit lâ€™analogie hydrique.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.2.2. Crète intérieure — Similarité ≈ 78 %</h5>
+                <h5 className="font-semibold">3.2.2. CrÃ¨te intÃ©rieure â€” SimilaritÃ© â‰ˆ 78 %</h5>
                 <p className="text-justify">
-                  L’analogie y demeure partielle.
+                  Lâ€™analogie y demeure partielle.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.2.3. Chypre intérieure — Nicosie, Athienou — Similarité ≈ 84 %</h5>
+                <h5 className="font-semibold">3.2.3. Chypre intÃ©rieure â€” Nicosie, Athienou â€” SimilaritÃ© â‰ˆ 84 %</h5>
                 <p className="text-justify">
-                  Nicosie présente environ 320 mm annuels, une saison sèche estivale marquée, une insolation élevée, mais des hivers plus doux et plus humides.
+                  Nicosie prÃ©sente environ 320 mm annuels, une saison sÃ¨che estivale marquÃ©e, une insolation Ã©levÃ©e, mais des hivers plus doux et plus humides.
                 </p>
               </div>
             </div>
@@ -269,16 +269,16 @@ export default function RapportScientifiquePage() {
               <h3 className="text-xl font-semibold mb-2">3.3. Analogues turcs</h3>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.3.1. Konya, Karapınar, Karaman (plateau anatolien central intérieur) — Similarité ≈ 83 %</h5>
+                <h5 className="font-semibold">3.3.1. Konya, KarapÄ±nar, Karaman (plateau anatolien central intÃ©rieur) â€” SimilaritÃ© â‰ˆ 83 %</h5>
                 <p className="text-justify">
-                  Konya, à 1 020 m, reçoit environ 320 mm annuels avec un régime équinoxial. La continentalité y est toutefois beaucoup plus marquée qu’à Guercif, avec une Tmin de janvier proche de −4 °C et des records atteignant −26 °C, de sorte que l’analogie est surtout estivale et hygrométrique.
+                  Konya, Ã  1 020 m, reÃ§oit environ 320 mm annuels avec un rÃ©gime Ã©quinoxial. La continentalitÃ© y est toutefois beaucoup plus marquÃ©e quâ€™Ã  KÃ©nitra, avec une Tmin de janvier proche de âˆ’4 Â°C et des records atteignant âˆ’26 Â°C, de sorte que lâ€™analogie est surtout estivale et hygromÃ©trique.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.3.2. Şanlıurfa, Mardin, Diyarbakır (Anatolie du Sud-Est) — Similarité ≈ 86 %</h5>
+                <h5 className="font-semibold">3.3.2. ÅžanlÄ±urfa, Mardin, DiyarbakÄ±r (Anatolie du Sud-Est) â€” SimilaritÃ© â‰ˆ 86 %</h5>
                 <p className="text-justify">
-                  Şanlıurfa, à 550 m, reçoit environ 460 mm, mais présente des étés extrêmement chauds, avec une Tmax de juillet voisine de 39 °C, et un régime pluviométrique concentré sur l’hiver et le printemps. L’analogie estivale y est très forte, l’analogie hivernale sensiblement moins satisfaisante, les hivers étant plus rigoureux.
+                  ÅžanlÄ±urfa, Ã  550 m, reÃ§oit environ 460 mm, mais prÃ©sente des Ã©tÃ©s extrÃªmement chauds, avec une Tmax de juillet voisine de 39 Â°C, et un rÃ©gime pluviomÃ©trique concentrÃ© sur lâ€™hiver et le printemps. Lâ€™analogie estivale y est trÃ¨s forte, lâ€™analogie hivernale sensiblement moins satisfaisante, les hivers Ã©tant plus rigoureux.
                 </p>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function RapportScientifiquePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE IV — ANALOGUES DU PROCHE ET MOYEN-ORIENT</CardTitle>
+          <CardTitle>PARTIE IV â€” ANALOGUES DU PROCHE ET MOYEN-ORIENT</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
@@ -296,30 +296,30 @@ export default function RapportScientifiquePage() {
             
             <div className="space-y-4">
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">4.1.1. Alep intérieure, Homs, Hama (Syrie centre-nord) — Similarité ≈ 88 %</h5>
+                <h5 className="font-semibold">4.1.1. Alep intÃ©rieure, Homs, Hama (Syrie centre-nord) â€” SimilaritÃ© â‰ˆ 88 %</h5>
                 <p className="text-justify">
-                  Ces stations présentent 300 à 380 mm annuels, un régime pluviométrique méditerranéen à maximum hivernal marqué, des étés secs et chauds, avec des Tmax de juillet de 35 à 37 °C, ainsi que des hivers frais où les gelées occasionnelles demeurent possibles. La signature agronomique y est presque parfaite : olivier, pistachier de haute qualité, amandier, vigne, grenadier.
+                  Ces stations prÃ©sentent 300 Ã  380 mm annuels, un rÃ©gime pluviomÃ©trique mÃ©diterranÃ©en Ã  maximum hivernal marquÃ©, des Ã©tÃ©s secs et chauds, avec des Tmax de juillet de 35 Ã  37 Â°C, ainsi que des hivers frais oÃ¹ les gelÃ©es occasionnelles demeurent possibles. La signature agronomique y est presque parfaite : olivier, pistachier de haute qualitÃ©, amandier, vigne, grenadier.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">4.1.2. Amman, Madaba (plateau jordanien) — Similarité ≈ 87 %</h5>
+                <h5 className="font-semibold">4.1.2. Amman, Madaba (plateau jordanien) â€” SimilaritÃ© â‰ˆ 87 %</h5>
                 <p className="text-justify">
-                  Amman, à 780 m, reçoit environ 275 mm, présente une saison sèche estivale absolue, des étés chauds mais tempérés par l’altitude, avec une Tmax de juillet proche de 32 °C, et des hivers frais. L’analogie est très forte, sauf en ce qui concerne l’intensité estivale, plus modérée qu’à Guercif.
+                  Amman, Ã  780 m, reÃ§oit environ 275 mm, prÃ©sente une saison sÃ¨che estivale absolue, des Ã©tÃ©s chauds mais tempÃ©rÃ©s par lâ€™altitude, avec une Tmax de juillet proche de 32 Â°C, et des hivers frais. Lâ€™analogie est trÃ¨s forte, sauf en ce qui concerne lâ€™intensitÃ© estivale, plus modÃ©rÃ©e quâ€™Ã  KÃ©nitra.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">4.1.3. Bekaa nord — Baalbek, Hermel — Similarité ≈ 89 %</h5>
+                <h5 className="font-semibold">4.1.3. Bekaa nord â€” Baalbek, Hermel â€” SimilaritÃ© â‰ˆ 89 %</h5>
                 <p className="text-justify">
-                  La Bekaa septentrionale libanaise, à environ 1 100 m d’altitude, reçoit 200 à 350 mm annuels selon les secteurs, avec un régime pluviométrique typiquement méditerranéen. Les étés y sont très chauds et secs, l’insolation extrêmement forte, et la continentalité marquée. Il s’agit de l’un des meilleurs analogues levantins.
+                  La Bekaa septentrionale libanaise, Ã  environ 1 100 m dâ€™altitude, reÃ§oit 200 Ã  350 mm annuels selon les secteurs, avec un rÃ©gime pluviomÃ©trique typiquement mÃ©diterranÃ©en. Les Ã©tÃ©s y sont trÃ¨s chauds et secs, lâ€™insolation extrÃªmement forte, et la continentalitÃ© marquÃ©e. Il sâ€™agit de lâ€™un des meilleurs analogues levantins.
                 </p>
               </div>
 
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">4.1.4. Steppe syrienne intérieure — Palmyre, Deir ez-Zor — Similarité ≈ 82 %</h5>
+                <h5 className="font-semibold">4.1.4. Steppe syrienne intÃ©rieure â€” Palmyre, Deir ez-Zor â€” SimilaritÃ© â‰ˆ 82 %</h5>
                 <p className="text-justify">
-                  L’analogie y est forte sur le plan estival, moins satisfaisante sur le plan hivernal, les hivers étant plus froids et plus brefs.
+                  Lâ€™analogie y est forte sur le plan estival, moins satisfaisante sur le plan hivernal, les hivers Ã©tant plus froids et plus brefs.
                 </p>
               </div>
             </div>
@@ -328,41 +328,41 @@ export default function RapportScientifiquePage() {
               <h3 className="text-xl font-semibold mb-2">4.2. Analogues iraniens</h3>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">4.2.1. Piémont du Zagros — Kermanshah, Khorramabad, Ilam — Similarité ≈ 85 %</h5>
+                <h5 className="font-semibold">4.2.1. PiÃ©mont du Zagros â€” Kermanshah, Khorramabad, Ilam â€” SimilaritÃ© â‰ˆ 85 %</h5>
                 <p className="text-justify">
-                  Kermanshah, à 1 320 m, reçoit environ 450 mm, mais présente une saison sèche estivale absolue et une insolation très élevée. L’analogie demeure partielle, en raison d’un excès pluviométrique et d’une continentalité accrue.
+                  Kermanshah, Ã  1 320 m, reÃ§oit environ 450 mm, mais prÃ©sente une saison sÃ¨che estivale absolue et une insolation trÃ¨s Ã©levÃ©e. Lâ€™analogie demeure partielle, en raison dâ€™un excÃ¨s pluviomÃ©trique et dâ€™une continentalitÃ© accrue.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">4.2.2. Plateau iranien central — Yazd, Kerman, Isfahan intérieure — Similarité ≈ 80 %</h5>
+                <h5 className="font-semibold">4.2.2. Plateau iranien central â€” Yazd, Kerman, Isfahan intÃ©rieure â€” SimilaritÃ© â‰ˆ 80 %</h5>
                 <p className="text-justify">
-                  Ces stations basculent vers le semi-aride désertique, voire le désert froid, de type BWk, avec 60 à 130 mm annuels. L’analogie porte sur la structure thermique et hygrométrique, non sur la pluviométrie.
+                  Ces stations basculent vers le semi-aride dÃ©sertique, voire le dÃ©sert froid, de type BWk, avec 60 Ã  130 mm annuels. Lâ€™analogie porte sur la structure thermique et hygromÃ©trique, non sur la pluviomÃ©trie.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">4.2.3. Shiraz — Similarité ≈ 84 %</h5>
+                <h5 className="font-semibold">4.2.3. Shiraz â€” SimilaritÃ© â‰ˆ 84 %</h5>
                 <p className="text-justify">
-                  Shiraz, à 1 500 m, reçoit environ 340 mm et présente une signature méditerranéenne d’altitude, avec des étés très chauds et secs et des hivers frais. L’analogie y demeure forte.
+                  Shiraz, Ã  1 500 m, reÃ§oit environ 340 mm et prÃ©sente une signature mÃ©diterranÃ©enne dâ€™altitude, avec des Ã©tÃ©s trÃ¨s chauds et secs et des hivers frais. Lâ€™analogie y demeure forte.
                 </p>
               </div>
             </div>
             
             <div className="space-y-4 mt-6">
-              <h3 className="text-xl font-semibold mb-2">4.3. Analogues d’Asie centrale</h3>
+              <h3 className="text-xl font-semibold mb-2">4.3. Analogues dâ€™Asie centrale</h3>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">4.3.1. Tachkent, Samarcande, Boukhara (Ouzbékistan) — Similarité ≈ 76 %</h5>
+                <h5 className="font-semibold">4.3.1. Tachkent, Samarcande, Boukhara (OuzbÃ©kistan) â€” SimilaritÃ© â‰ˆ 76 %</h5>
                 <p className="text-justify">
-                  La continentalité y est beaucoup plus marquée, avec des hivers pouvant atteindre −20 °C. L’analogie estivale est forte ; l’analogie hivernale, faible.
+                  La continentalitÃ© y est beaucoup plus marquÃ©e, avec des hivers pouvant atteindre âˆ’20 Â°C. Lâ€™analogie estivale est forte ; lâ€™analogie hivernale, faible.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">4.3.2. Douchanbé (Tadjikistan) — Similarité ≈ 78 %</h5>
+                <h5 className="font-semibold">4.3.2. DouchanbÃ© (Tadjikistan) â€” SimilaritÃ© â‰ˆ 78 %</h5>
                 <p className="text-justify">
-                  L’analogie y demeure modérée.
+                  Lâ€™analogie y demeure modÃ©rÃ©e.
                 </p>
               </div>
             </div>
@@ -372,130 +372,130 @@ export default function RapportScientifiquePage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE V — ANALOGUES AMÉRICAINS</CardTitle>
+          <CardTitle>PARTIE V â€” ANALOGUES AMÃ‰RICAINS</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
-            <h3 className="text-xl font-semibold mb-2">5.1. Californie et Grand Bassin — analyse détaillée</h3>
+            <h3 className="text-xl font-semibold mb-2">5.1. Californie et Grand Bassin â€” analyse dÃ©taillÃ©e</h3>
             
             <div className="space-y-4">
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.1.1. Bakersfield (Vallée Centrale de Californie) — Similarité ≈ 84 %</h5>
+                <h5 className="font-semibold">5.1.1. Bakersfield (VallÃ©e Centrale de Californie) â€” SimilaritÃ© â‰ˆ 84 %</h5>
                 <p className="text-justify">
-                  Comme le soulignait avec pertinence le rapport initial, Bakersfield doit être mentionnée en priorité, malgré son statut d’analogue imparfait. Les convergences sont substantielles : classification Köppen BSk, précipitations annuelles de l’ordre de 165 à 170 mm, ce qui rend Bakersfield plus sèche que Guercif mais dans le même ordre de grandeur, régime pluviométrique à concentration hivernale avec novembre à mars représentant environ 85 % du total, étés extrêmement chauds, avec une Tmax de juillet proche de 36 à 37 °C, comparable à celle de Guercif, insolation annuelle proche de 3 200 h, et humidité estivale basse.
+                  Comme le soulignait avec pertinence le rapport initial, Bakersfield doit Ãªtre mentionnÃ©e en prioritÃ©, malgrÃ© son statut dâ€™analogue imparfait. Les convergences sont substantielles : classification KÃ¶ppen BSk, prÃ©cipitations annuelles de lâ€™ordre de 165 Ã  170 mm, ce qui rend Bakersfield plus sÃ¨che que KÃ©nitra mais dans le mÃªme ordre de grandeur, rÃ©gime pluviomÃ©trique Ã  concentration hivernale avec novembre Ã  mars reprÃ©sentant environ 85 % du total, Ã©tÃ©s extrÃªmement chauds, avec une Tmax de juillet proche de 36 Ã  37 Â°C, comparable Ã  celle de KÃ©nitra, insolation annuelle proche de 3 200 h, et humiditÃ© estivale basse.
                 </p>
                 <p className="text-justify">
-                  Toutefois, plusieurs différences majeures interdisent d’accorder à Bakersfield une similarité supérieure.
+                  Toutefois, plusieurs diffÃ©rences majeures interdisent dâ€™accorder Ã  Bakersfield une similaritÃ© supÃ©rieure.
                 </p>
                 <p className="text-justify">
-                  Premièrement, l’hiver bakersfieldien est marqué par le célèbre brouillard de Tule, phénomène de brouillard radiatif d’inversion caractéristique de la Vallée Centrale, résultant de l’accumulation d’air humide et froid dans la cuvette californienne, piégé sous une couche d’inversion souvent persistante durant plusieurs jours, voire plusieurs semaines. Ce brouillard, absent à Guercif, transforme radicalement l’ambiance hivernale : humidité relative diurne dépassant 90 % pendant des semaines entières, ensoleillement hivernal effectif fortement réduit, Bakersfield ne recevant qu’environ 60 % du possible en décembre-janvier, contre 66 à 68 % à Guercif, ainsi qu’un point de rosée hivernal plus élevé.
+                  PremiÃ¨rement, lâ€™hiver bakersfieldien est marquÃ© par le cÃ©lÃ¨bre brouillard de Tule, phÃ©nomÃ¨ne de brouillard radiatif dâ€™inversion caractÃ©ristique de la VallÃ©e Centrale, rÃ©sultant de lâ€™accumulation dâ€™air humide et froid dans la cuvette californienne, piÃ©gÃ© sous une couche dâ€™inversion souvent persistante durant plusieurs jours, voire plusieurs semaines. Ce brouillard, absent Ã  KÃ©nitra, transforme radicalement lâ€™ambiance hivernale : humiditÃ© relative diurne dÃ©passant 90 % pendant des semaines entiÃ¨res, ensoleillement hivernal effectif fortement rÃ©duit, Bakersfield ne recevant quâ€™environ 60 % du possible en dÃ©cembre-janvier, contre 66 Ã  68 % Ã  KÃ©nitra, ainsi quâ€™un point de rosÃ©e hivernal plus Ã©levÃ©.
                 </p>
                 <p className="text-justify">
-                  Deuxièmement, l’inversion thermique hivernale y est beaucoup plus marquée, la Vallée Centrale constituant un piège topographique très fermé, encadré par la Sierra Nevada à l’est et les Coast Ranges à l’ouest, tandis que le bassin de Guercif demeure plus ouvert et plus ventilé, notamment sous l’action du chergui et des advections perturbées.
+                  DeuxiÃ¨mement, lâ€™inversion thermique hivernale y est beaucoup plus marquÃ©e, la VallÃ©e Centrale constituant un piÃ¨ge topographique trÃ¨s fermÃ©, encadrÃ© par la Sierra Nevada Ã  lâ€™est et les Coast Ranges Ã  lâ€™ouest, tandis que le bassin de KÃ©nitra demeure plus ouvert et plus ventilÃ©, notamment sous lâ€™action du chergui et des advections perturbÃ©es.
                 </p>
                 <p className="text-justify">
-                  Troisièmement, les records de froid hivernaux sont légèrement moins sévères à Bakersfield, de l’ordre de −5 à −6 °C, qu’à Guercif, où le record absolu s’établit à −8,5 °C, bien que la fréquence des gelées soit comparable.
+                  TroisiÃ¨mement, les records de froid hivernaux sont lÃ©gÃ¨rement moins sÃ©vÃ¨res Ã  Bakersfield, de lâ€™ordre de âˆ’5 Ã  âˆ’6 Â°C, quâ€™Ã  KÃ©nitra, oÃ¹ le record absolu sâ€™Ã©tablit Ã  âˆ’8,5 Â°C, bien que la frÃ©quence des gelÃ©es soit comparable.
                 </p>
                 <p className="text-justify">
-                  Quatrièmement, ces différences ont des conséquences précises sur le plan botanique et agronomique. Phoenix dactylifera est cultivé commercialement dans la Coachella Valley, analogue thermique estival de Guercif, mais pas dans la Vallée Centrale de Bakersfield, car les brouillards persistants et l’humidité hivernale favorisent les maladies cryptogamiques, notamment Graphiola phoenicis, et compromettent la maturation parfaite des dattes. À Guercif, en revanche, la clarté et la sécheresse hivernales autorisent la culture du dattier dans les stations abritées. Les agrumes prospèrent à Bakersfield — oranger, mandarinier, pomelo — avec d’excellents rendements sous irrigation. À Guercif, ils demeurent également cultivables, mais avec une vigueur moindre en raison de la pluviométrie plus faible et d’une aridité estivale plus sèche. L’olivier, l’amandier, le pistachier, la vigne et le grenadier se comportent, quant à eux, de manière quasi identique dans les deux régions.
+                  QuatriÃ¨mement, ces diffÃ©rences ont des consÃ©quences prÃ©cises sur le plan botanique et agronomique. Phoenix dactylifera est cultivÃ© commercialement dans la Coachella Valley, analogue thermique estival de KÃ©nitra, mais pas dans la VallÃ©e Centrale de Bakersfield, car les brouillards persistants et lâ€™humiditÃ© hivernale favorisent les maladies cryptogamiques, notamment Graphiola phoenicis, et compromettent la maturation parfaite des dattes. Ã€ KÃ©nitra, en revanche, la clartÃ© et la sÃ©cheresse hivernales autorisent la culture du dattier dans les stations abritÃ©es. Les agrumes prospÃ¨rent Ã  Bakersfield â€” oranger, mandarinier, pomelo â€” avec dâ€™excellents rendements sous irrigation. Ã€ KÃ©nitra, ils demeurent Ã©galement cultivables, mais avec une vigueur moindre en raison de la pluviomÃ©trie plus faible et dâ€™une ariditÃ© estivale plus sÃ¨che. Lâ€™olivier, lâ€™amandier, le pistachier, la vigne et le grenadier se comportent, quant Ã  eux, de maniÃ¨re quasi identique dans les deux rÃ©gions.
                 </p>
                 <p className="text-justify">
-                  En conclusion, Bakersfield constitue un analogue estival de très haute qualité, mais un analogue hivernal médiocre en raison du complexe brouillard-humidité-inversion. Sa similarité globale doit donc être plafonnée à ≈ 84 %.
-                </p>
-              </div>
-              
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.1.2. Coachella Valley — Indio, Palm Springs, Mecca — Similarité ≈ 79 %</h5>
-                <p className="text-justify">
-                  La Coachella Valley bascule vers le désert chaud BWh, avec environ 80 mm annuels seulement et des étés extrêmement chauds, les Tmax de juillet y atteignant ≈ 42 °C. L’analogie y est estivale forte, hivernale correcte, et pluviométriquement faible. Il s’agit d’un analogue « chaud et sec » de Guercif, décalé vers l’aridité désertique. Le dattier y trouve son optimum planétaire.
+                  En conclusion, Bakersfield constitue un analogue estival de trÃ¨s haute qualitÃ©, mais un analogue hivernal mÃ©diocre en raison du complexe brouillard-humiditÃ©-inversion. Sa similaritÃ© globale doit donc Ãªtre plafonnÃ©e Ã  â‰ˆ 84 %.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.1.3. Fresno, Merced, Modesto, Sacramento sud — Similarité ≈ 82 %</h5>
+                <h5 className="font-semibold">5.1.2. Coachella Valley â€” Indio, Palm Springs, Mecca â€” SimilaritÃ© â‰ˆ 79 %</h5>
                 <p className="text-justify">
-                  Ces stations constituent des analogues comparables à Bakersfield, mais avec un été légèrement moins torride.
+                  La Coachella Valley bascule vers le dÃ©sert chaud BWh, avec environ 80 mm annuels seulement et des Ã©tÃ©s extrÃªmement chauds, les Tmax de juillet y atteignant â‰ˆ 42 Â°C. Lâ€™analogie y est estivale forte, hivernale correcte, et pluviomÃ©triquement faible. Il sâ€™agit dâ€™un analogue Â« chaud et sec Â» de KÃ©nitra, dÃ©calÃ© vers lâ€™ariditÃ© dÃ©sertique. Le dattier y trouve son optimum planÃ©taire.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.1.4. Reno, Fallon, Fernley (Nevada occidental) — Similarité ≈ 85 %</h5>
+                <h5 className="font-semibold">5.1.3. Fresno, Merced, Modesto, Sacramento sud â€” SimilaritÃ© â‰ˆ 82 %</h5>
                 <p className="text-justify">
-                  Ces stations du Grand Bassin, situées entre 1 300 et 1 400 m, présentent un climat steppique BSk classique, avec 180 à 200 mm annuels, une forte insolation, une humidité basse, des étés chauds et secs, et des hivers frais à froids. Leur signature est très proche de celle de Guercif, bien qu’accompagnée d’une continentalité accrue par l’altitude.
+                  Ces stations constituent des analogues comparables Ã  Bakersfield, mais avec un Ã©tÃ© lÃ©gÃ¨rement moins torride.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.1.5. Winnemucca, Elko (Nevada nord) — Similarité ≈ 76 %</h5>
+                <h5 className="font-semibold">5.1.4. Reno, Fallon, Fernley (Nevada occidental) â€” SimilaritÃ© â‰ˆ 85 %</h5>
                 <p className="text-justify">
-                  Les hivers y sont trop froids pour permettre une analogie complète.
-                </p>
-              </div>
-            </div>
-            
-            <div className="space-y-4 mt-6">
-              <h3 className="text-xl font-semibold mb-2">5.2. Grand Sud-Ouest américain</h3>
-              
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.2.1. Albuquerque (Nouveau-Mexique) — Similarité ≈ 82 %</h5>
-                <p className="text-justify">
-                  Albuquerque, à 1 620 m, reçoit environ 240 mm annuels, présente une insolation supérieure à 3 400 h, des étés chauds, avec une Tmax de juillet proche de 32 °C, et des hivers frais. La différence majeure réside dans le régime pluviométrique : Albuquerque connaît un maximum estival de mousson nord-américaine, en juillet-août, absolument opposé au régime méditerranéen de Guercif. Cette inversion pluviométrique constitue un obstacle structurel à une analogie parfaite.
+                  Ces stations du Grand Bassin, situÃ©es entre 1 300 et 1 400 m, prÃ©sentent un climat steppique BSk classique, avec 180 Ã  200 mm annuels, une forte insolation, une humiditÃ© basse, des Ã©tÃ©s chauds et secs, et des hivers frais Ã  froids. Leur signature est trÃ¨s proche de celle de KÃ©nitra, bien quâ€™accompagnÃ©e dâ€™une continentalitÃ© accrue par lâ€™altitude.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.2.2. El Paso, Las Cruces, Roswell (Nouveau-Mexique / Texas) — Similarité ≈ 78 %</h5>
+                <h5 className="font-semibold">5.1.5. Winnemucca, Elko (Nevada nord) â€” SimilaritÃ© â‰ˆ 76 %</h5>
                 <p className="text-justify">
-                  La même remarque s’impose concernant le régime de mousson estivale.
-                </p>
-              </div>
-              
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.2.3. Phoenix, Tucson (Arizona) — Similarité ≈ 72 %</h5>
-                <p className="text-justify">
-                  Ces stations sont trop chaudes et soumises à un régime de mousson estivale.
+                  Les hivers y sont trop froids pour permettre une analogie complÃ¨te.
                 </p>
               </div>
             </div>
             
             <div className="space-y-4 mt-6">
-              <h3 className="text-xl font-semibold mb-2">5.3. Amérique latine</h3>
+              <h3 className="text-xl font-semibold mb-2">5.2. Grand Sud-Ouest amÃ©ricain</h3>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.3.1. Vallée de Mexico intérieure — non analogue</h5>
+                <h5 className="font-semibold">5.2.1. Albuquerque (Nouveau-Mexique) â€” SimilaritÃ© â‰ˆ 82 %</h5>
                 <p className="text-justify">
-                  La vallée de Mexico intérieure ne saurait être retenue comme analogue, en raison de son climat tropical de haute altitude.
+                  Albuquerque, Ã  1 620 m, reÃ§oit environ 240 mm annuels, prÃ©sente une insolation supÃ©rieure Ã  3 400 h, des Ã©tÃ©s chauds, avec une Tmax de juillet proche de 32 Â°C, et des hivers frais. La diffÃ©rence majeure rÃ©side dans le rÃ©gime pluviomÃ©trique : Albuquerque connaÃ®t un maximum estival de mousson nord-amÃ©ricaine, en juillet-aoÃ»t, absolument opposÃ© au rÃ©gime mÃ©diterranÃ©en de KÃ©nitra. Cette inversion pluviomÃ©trique constitue un obstacle structurel Ã  une analogie parfaite.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.3.2. Nord du Mexique — Chihuahua, Saltillo, Monterrey intérieure — Similarité ≈ 78 %</h5>
+                <h5 className="font-semibold">5.2.2. El Paso, Las Cruces, Roswell (Nouveau-Mexique / Texas) â€” SimilaritÃ© â‰ˆ 78 %</h5>
                 <p className="text-justify">
-                  Chihuahua, à 1 440 m, présente environ 385 mm annuels avec un maximum estival de mousson. L’analogie thermique y demeure moyenne.
+                  La mÃªme remarque sâ€™impose concernant le rÃ©gime de mousson estivale.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.3.3. Vallées argentines — Mendoza, San Juan, La Rioja — Similarité ≈ 90 % (avec inversion saisonnière)</h5>
+                <h5 className="font-semibold">5.2.3. Phoenix, Tucson (Arizona) â€” SimilaritÃ© â‰ˆ 72 %</h5>
                 <p className="text-justify">
-                  Mendoza, à 827 m, constitue, à l’échelle de l’hémisphère Sud, l’un des meilleurs analogues de Guercif. Après correction saisonnière — janvier ↔ juillet, juillet ↔ janvier — on obtient une structure remarquablement instructive. Les précipitations annuelles, de l’ordre de 220 mm, sont proches des 233 mm de Guercif. Le régime pluviométrique, en revanche, présente un maximum estival austral, de décembre à mars, ce qui, après inversion, correspondrait à juin-septembre : une différence structurelle fondamentale apparaît donc ici, Mendoza relevant d’un régime à maximum estival austral, tandis que Guercif relève d’un régime à maximum équinoxial-hivernal. Cette divergence, souvent négligée, réduit la similarité à environ 82 % si l’on pondère strictement le régime des pluies. Sur le plan thermique, les Tmax du mois le plus chaud austral, c’est-à-dire janvier, atteignent environ 32 °C, contre 36,2 °C à Guercif ; les hivers austraux, avec des Tmin de juillet proches de 3 °C, sont en revanche comparables. L’insolation, l’humidité et la continentalité sont très proches.
+                  Ces stations sont trop chaudes et soumises Ã  un rÃ©gime de mousson estivale.
                 </p>
+              </div>
+            </div>
+            
+            <div className="space-y-4 mt-6">
+              <h3 className="text-xl font-semibold mb-2">5.3. AmÃ©rique latine</h3>
+              
+              <div className="space-y-3 ml-4">
+                <h5 className="font-semibold">5.3.1. VallÃ©e de Mexico intÃ©rieure â€” non analogue</h5>
                 <p className="text-justify">
-                  San Juan, à 600 m, est plus chaude et plus sèche, avec 90 mm annuels, se rapprochant davantage de la Coachella Valley que de Guercif. La Rioja constitue un excellent analogue, avec 350 mm et un climat semi-aride subtropical. L’ensemble du Cuyo argentin représente une grande région viticole et oléicole, exactement comme le Maroc oriental pourrait le devenir. Le comportement de la vigne, de l’olivier, du pistachier, de l’amandier et du grenadier y est rigoureusement analogue à celui observé à Guercif.
+                  La vallÃ©e de Mexico intÃ©rieure ne saurait Ãªtre retenue comme analogue, en raison de son climat tropical de haute altitude.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.3.4. Vallées chiliennes intérieures — Copiapó, Vallenar, Ovalle — Similarité ≈ 80 % (avec inversion saisonnière)</h5>
+                <h5 className="font-semibold">5.3.2. Nord du Mexique â€” Chihuahua, Saltillo, Monterrey intÃ©rieure â€” SimilaritÃ© â‰ˆ 78 %</h5>
                 <p className="text-justify">
-                  Ces stations présentent un climat semi-aride à hivers frais et étés secs, mais avec une pluviométrie plus faible, inférieure à 100 mm pour Copiapó et proche de 130 mm pour Ovalle. L’analogie thermique y est correcte, l’analogie hydrique plus limitée.
+                  Chihuahua, Ã  1 440 m, prÃ©sente environ 385 mm annuels avec un maximum estival de mousson. Lâ€™analogie thermique y demeure moyenne.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">5.3.5. Vallées péruviennes intérieures — Arequipa — Similarité ≈ 70 %</h5>
+                <h5 className="font-semibold">5.3.3. VallÃ©es argentines â€” Mendoza, San Juan, La Rioja â€” SimilaritÃ© â‰ˆ 90 % (avec inversion saisonniÃ¨re)</h5>
                 <p className="text-justify">
-                  L’altitude y est trop importante et le climat sensiblement différent.
+                  Mendoza, Ã  827 m, constitue, Ã  lâ€™Ã©chelle de lâ€™hÃ©misphÃ¨re Sud, lâ€™un des meilleurs analogues de KÃ©nitra. AprÃ¨s correction saisonniÃ¨re â€” janvier â†” juillet, juillet â†” janvier â€” on obtient une structure remarquablement instructive. Les prÃ©cipitations annuelles, de lâ€™ordre de 220 mm, sont proches des 233 mm de KÃ©nitra. Le rÃ©gime pluviomÃ©trique, en revanche, prÃ©sente un maximum estival austral, de dÃ©cembre Ã  mars, ce qui, aprÃ¨s inversion, correspondrait Ã  juin-septembre : une diffÃ©rence structurelle fondamentale apparaÃ®t donc ici, Mendoza relevant dâ€™un rÃ©gime Ã  maximum estival austral, tandis que KÃ©nitra relÃ¨ve dâ€™un rÃ©gime Ã  maximum Ã©quinoxial-hivernal. Cette divergence, souvent nÃ©gligÃ©e, rÃ©duit la similaritÃ© Ã  environ 82 % si lâ€™on pondÃ¨re strictement le rÃ©gime des pluies. Sur le plan thermique, les Tmax du mois le plus chaud austral, câ€™est-Ã -dire janvier, atteignent environ 32 Â°C, contre 36,2 Â°C Ã  KÃ©nitra ; les hivers austraux, avec des Tmin de juillet proches de 3 Â°C, sont en revanche comparables. Lâ€™insolation, lâ€™humiditÃ© et la continentalitÃ© sont trÃ¨s proches.
+                </p>
+                <p className="text-justify">
+                  San Juan, Ã  600 m, est plus chaude et plus sÃ¨che, avec 90 mm annuels, se rapprochant davantage de la Coachella Valley que de KÃ©nitra. La Rioja constitue un excellent analogue, avec 350 mm et un climat semi-aride subtropical. Lâ€™ensemble du Cuyo argentin reprÃ©sente une grande rÃ©gion viticole et olÃ©icole, exactement comme le Maroc oriental pourrait le devenir. Le comportement de la vigne, de lâ€™olivier, du pistachier, de lâ€™amandier et du grenadier y est rigoureusement analogue Ã  celui observÃ© Ã  KÃ©nitra.
+                </p>
+              </div>
+              
+              <div className="space-y-3 ml-4">
+                <h5 className="font-semibold">5.3.4. VallÃ©es chiliennes intÃ©rieures â€” CopiapÃ³, Vallenar, Ovalle â€” SimilaritÃ© â‰ˆ 80 % (avec inversion saisonniÃ¨re)</h5>
+                <p className="text-justify">
+                  Ces stations prÃ©sentent un climat semi-aride Ã  hivers frais et Ã©tÃ©s secs, mais avec une pluviomÃ©trie plus faible, infÃ©rieure Ã  100 mm pour CopiapÃ³ et proche de 130 mm pour Ovalle. Lâ€™analogie thermique y est correcte, lâ€™analogie hydrique plus limitÃ©e.
+                </p>
+              </div>
+              
+              <div className="space-y-3 ml-4">
+                <h5 className="font-semibold">5.3.5. VallÃ©es pÃ©ruviennes intÃ©rieures â€” Arequipa â€” SimilaritÃ© â‰ˆ 70 %</h5>
+                <p className="text-justify">
+                  Lâ€™altitude y est trop importante et le climat sensiblement diffÃ©rent.
                 </p>
               </div>
             </div>
@@ -505,25 +505,25 @@ export default function RapportScientifiquePage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE VI — ANALOGUES DE L’HÉMISPHÈRE SUD</CardTitle>
+          <CardTitle>PARTIE VI â€” ANALOGUES DE Lâ€™HÃ‰MISPHÃˆRE SUD</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
-            <h3 className="text-xl font-semibold mb-2">Afrique australe et Océanie</h3>
+            <h3 className="text-xl font-semibold mb-2">Afrique australe et OcÃ©anie</h3>
             
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">6.1. Afrique du Sud</h4>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">6.1.1. Karoo — Beaufort West, Prince Albert, Oudtshoorn — Similarité ≈ 78–85 %</h5>
+                <h5 className="font-semibold">6.1.1. Karoo â€” Beaufort West, Prince Albert, Oudtshoorn â€” SimilaritÃ© â‰ˆ 78â€“85 %</h5>
                 <p className="text-justify">
-                  Le Karoo sud-africain, et plus particulièrement le Little Karoo (Klein Karoo), constitue l’un des rares analogues sud-africains de Guercif. Oudtshoorn, à 300 m, reçoit environ 250 mm annuels, présente une insolation très élevée, des étés chauds, les Tmax de janvier-février austral atteignant environ 32 °C, ce qui correspond à juillet-août dans l’hémisphère Nord, ainsi que des hivers frais avec gelées occasionnelles. Toutefois, le régime pluviométrique du Karoo est plus dispersé sur l’année, avec des pluies convectives estivales durant décembre-mars austral, ce qui le distingue du régime hivernal méditerranéen de Guercif. Après correction saisonnière, la structure thermique est très fidèle, mais le régime hydrique reste divergent.
+                  Le Karoo sud-africain, et plus particuliÃ¨rement le Little Karoo (Klein Karoo), constitue lâ€™un des rares analogues sud-africains de KÃ©nitra. Oudtshoorn, Ã  300 m, reÃ§oit environ 250 mm annuels, prÃ©sente une insolation trÃ¨s Ã©levÃ©e, des Ã©tÃ©s chauds, les Tmax de janvier-fÃ©vrier austral atteignant environ 32 Â°C, ce qui correspond Ã  juillet-aoÃ»t dans lâ€™hÃ©misphÃ¨re Nord, ainsi que des hivers frais avec gelÃ©es occasionnelles. Toutefois, le rÃ©gime pluviomÃ©trique du Karoo est plus dispersÃ© sur lâ€™annÃ©e, avec des pluies convectives estivales durant dÃ©cembre-mars austral, ce qui le distingue du rÃ©gime hivernal mÃ©diterranÃ©en de KÃ©nitra. AprÃ¨s correction saisonniÃ¨re, la structure thermique est trÃ¨s fidÃ¨le, mais le rÃ©gime hydrique reste divergent.
                 </p>
                 <p className="text-justify">
-                  Beaufort West, à 850 m, est plus continentale et plus proche du régime steppique semi-aride.
+                  Beaufort West, Ã  850 m, est plus continentale et plus proche du rÃ©gime steppique semi-aride.
                 </p>
                 <p className="text-justify">
-                  Sur le plan botanique, le Karoo est réputé pour ses cultures de vigne, d’olivier, d’amandier, de grenadier, ainsi que pour l’élevage historique de l’autruche, particulièrement adapté à la sécheresse. La palette agronomique y est très voisine de celle envisageable à Guercif.
+                  Sur le plan botanique, le Karoo est rÃ©putÃ© pour ses cultures de vigne, dâ€™olivier, dâ€™amandier, de grenadier, ainsi que pour lâ€™Ã©levage historique de lâ€™autruche, particuliÃ¨rement adaptÃ© Ã  la sÃ©cheresse. La palette agronomique y est trÃ¨s voisine de celle envisageable Ã  KÃ©nitra.
                 </p>
               </div>
             </div>
@@ -532,41 +532,41 @@ export default function RapportScientifiquePage() {
               <h4 className="text-lg font-semibold">6.2. Australie</h4>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">6.2.1. Mildura, Renmark, Griffith (bassin Murray-Darling intérieur) — Similarité ≈ 87 % (avec inversion saisonnière)</h5>
+                <h5 className="font-semibold">6.2.1. Mildura, Renmark, Griffith (bassin Murray-Darling intÃ©rieur) â€” SimilaritÃ© â‰ˆ 87 % (avec inversion saisonniÃ¨re)</h5>
                 <p className="text-justify">
-                  Mildura, dans l’État de Victoria, constitue probablement le meilleur analogue climatique de Guercif dans l’hémisphère Sud. La pluviométrie annuelle y atteint environ 280 mm, l’insolation y dépasse 3 400 h, les étés y sont très chauds, avec des Tmax de janvier proches de 33 °C, mais comportant des pointes fréquentes à 40 °C, et les hivers y sont frais, avec des Tmin de juillet proches de 4 °C et des gelées possibles. Le régime pluviométrique y est légèrement plus régulier au cours de l’année, avec un léger maximum d’hiver austral. La région est célèbre pour sa viticulture, ses agrumes irrigués, ses amandiers, ses oliviers, et pour ses palmiers dattiers cultivés expérimentalement à Alice Springs et Coober Pedy.
+                  Mildura, dans lâ€™Ã‰tat de Victoria, constitue probablement le meilleur analogue climatique de KÃ©nitra dans lâ€™hÃ©misphÃ¨re Sud. La pluviomÃ©trie annuelle y atteint environ 280 mm, lâ€™insolation y dÃ©passe 3 400 h, les Ã©tÃ©s y sont trÃ¨s chauds, avec des Tmax de janvier proches de 33 Â°C, mais comportant des pointes frÃ©quentes Ã  40 Â°C, et les hivers y sont frais, avec des Tmin de juillet proches de 4 Â°C et des gelÃ©es possibles. Le rÃ©gime pluviomÃ©trique y est lÃ©gÃ¨rement plus rÃ©gulier au cours de lâ€™annÃ©e, avec un lÃ©ger maximum dâ€™hiver austral. La rÃ©gion est cÃ©lÃ¨bre pour sa viticulture, ses agrumes irriguÃ©s, ses amandiers, ses oliviers, et pour ses palmiers dattiers cultivÃ©s expÃ©rimentalement Ã  Alice Springs et Coober Pedy.
                 </p>
                 <p className="text-justify">
-                  Renmark, en Australie-Méridionale, et Griffith, en Nouvelle-Galles du Sud, présentent des signatures très proches.
-                </p>
-              </div>
-              
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">6.2.2. Alice Springs (Territoire du Nord, Australie centrale) — Similarité ≈ 72 %</h5>
-                <p className="text-justify">
-                  Cette station est trop chaude et trop désertique, avec un régime pluviométrique estival.
+                  Renmark, en Australie-MÃ©ridionale, et Griffith, en Nouvelle-Galles du Sud, prÃ©sentent des signatures trÃ¨s proches.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">6.2.3. Broken Hill (Nouvelle-Galles du Sud) — Similarité ≈ 83 %</h5>
+                <h5 className="font-semibold">6.2.2. Alice Springs (Territoire du Nord, Australie centrale) â€” SimilaritÃ© â‰ˆ 72 %</h5>
                 <p className="text-justify">
-                  Il s’agit d’un analogue très correct, quoique légèrement plus aride que Guercif.
+                  Cette station est trop chaude et trop dÃ©sertique, avec un rÃ©gime pluviomÃ©trique estival.
                 </p>
               </div>
               
               <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">6.2.4. Wagga Wagga, Deniliquin — Similarité ≈ 82 %</h5>
+                <h5 className="font-semibold">6.2.3. Broken Hill (Nouvelle-Galles du Sud) â€” SimilaritÃ© â‰ˆ 83 %</h5>
                 <p className="text-justify">
-                  Ces stations constituent des analogues satisfaisants, mais plus arrosés, avec environ 500 mm.
+                  Il sâ€™agit dâ€™un analogue trÃ¨s correct, quoique lÃ©gÃ¨rement plus aride que KÃ©nitra.
+                </p>
+              </div>
+              
+              <div className="space-y-3 ml-4">
+                <h5 className="font-semibold">6.2.4. Wagga Wagga, Deniliquin â€” SimilaritÃ© â‰ˆ 82 %</h5>
+                <p className="text-justify">
+                  Ces stations constituent des analogues satisfaisants, mais plus arrosÃ©s, avec environ 500 mm.
                 </p>
               </div>
             </div>
             
             <div className="space-y-4 mt-6">
-              <h4 className="text-lg font-semibold">6.3. Nouvelle-Zélande</h4>
+              <h4 className="text-lg font-semibold">6.3. Nouvelle-ZÃ©lande</h4>
               <p className="text-justify">
-                La Nouvelle-Zélande ne présente aucun analogue direct de Guercif, son climat étant partout modéré par une influence océanique dominante. Le Central Otago, notamment les vallées de Cromwell et Alexandra, constitue la seule région néo-zélandaise à caractère semi-continental avec sécheresse estivale ; néanmoins, sa pluviométrie, comprise entre 350 et 450 mm, et ses hivers plus froids en font un analogue lointain, dont la similarité ne dépasse pas ≈ 68 %.
+                La Nouvelle-ZÃ©lande ne prÃ©sente aucun analogue direct de KÃ©nitra, son climat Ã©tant partout modÃ©rÃ© par une influence ocÃ©anique dominante. Le Central Otago, notamment les vallÃ©es de Cromwell et Alexandra, constitue la seule rÃ©gion nÃ©o-zÃ©landaise Ã  caractÃ¨re semi-continental avec sÃ©cheresse estivale ; nÃ©anmoins, sa pluviomÃ©trie, comprise entre 350 et 450 mm, et ses hivers plus froids en font un analogue lointain, dont la similaritÃ© ne dÃ©passe pas â‰ˆ 68 %.
               </p>
             </div>
           </section>
@@ -575,79 +575,79 @@ export default function RapportScientifiquePage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE VII — SYNTHÈSE COMPARATIVE ORDONNÉE PAR NIVEAU DE SIMILARITÉ</CardTitle>
+          <CardTitle>PARTIE VII â€” SYNTHÃˆSE COMPARATIVE ORDONNÃ‰E PAR NIVEAU DE SIMILARITÃ‰</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
-            <h3 className="text-xl font-semibold mb-2">Catégorie 1 — Climat pratiquement identique à Guercif (97–100 %)</h3>
+            <h3 className="text-xl font-semibold mb-2">CatÃ©gorie 1 â€” Climat pratiquement identique Ã  KÃ©nitra (97â€“100 %)</h3>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Rang 1 : Taourirt, Maroc — 99 %</li>
-              <li>Rang 2 : Outat El Haj, Maroc — 97 %</li>
-              <li>Rang 3 : Guenfouda, Jerada (sud), Maroc — 97 %</li>
+              <li>Rang 1 : Taourirt, Maroc â€” 99 %</li>
+              <li>Rang 2 : Outat El Haj, Maroc â€” 97 %</li>
+              <li>Rang 3 : Guenfouda, Jerada (sud), Maroc â€” 97 %</li>
             </ul>
             
-            <h3 className="text-xl font-semibold mb-2 mt-6">Catégorie 2 — Climat extrêmement similaires (92–96 %)</h3>
+            <h3 className="text-xl font-semibold mb-2 mt-6">CatÃ©gorie 2 â€” Climat extrÃªmement similaires (92â€“96 %)</h3>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Rang 4 : Missour, Maroc — 96 %</li>
-              <li>Rang 5 : Oujda, Maroc — 93 %</li>
-              <li>Rang 6 : Tabernas / Sorbas, Espagne — 93 %</li>
-              <li>Rang 7 : Sebdou / Tlemcen sud, Algérie — 92 %</li>
-              <li>Rang 8 : Kasserine / Sbeïtla, Tunisie — 91 %</li>
-              <li>Rang 9 : Guadix-Baza, Espagne — 91 %</li>
-              <li>Rang 10 : Aïn Sefra / Naâma, Algérie — 90 %</li>
-              <li>Rang 11 : Mendoza (après correction saisonnière + régime), Argentine — 90 %</li>
+              <li>Rang 4 : Missour, Maroc â€” 96 %</li>
+              <li>Rang 5 : Oujda, Maroc â€” 93 %</li>
+              <li>Rang 6 : Tabernas / Sorbas, Espagne â€” 93 %</li>
+              <li>Rang 7 : Sebdou / Tlemcen sud, AlgÃ©rie â€” 92 %</li>
+              <li>Rang 8 : Kasserine / SbeÃ¯tla, Tunisie â€” 91 %</li>
+              <li>Rang 9 : Guadix-Baza, Espagne â€” 91 %</li>
+              <li>Rang 10 : AÃ¯n Sefra / NaÃ¢ma, AlgÃ©rie â€” 90 %</li>
+              <li>Rang 11 : Mendoza (aprÃ¨s correction saisonniÃ¨re + rÃ©gime), Argentine â€” 90 %</li>
             </ul>
             
-            <h3 className="text-xl font-semibold mb-2 mt-6">Catégorie 3 — Climat très fortement comparables (85–91 %)</h3>
+            <h3 className="text-xl font-semibold mb-2 mt-6">CatÃ©gorie 3 â€” Climat trÃ¨s fortement comparables (85â€“91 %)</h3>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Rang 12 : Nalut / Yefren, Libye — 89 %</li>
-              <li>Rang 13 : Bekaa nord (Baalbek), Liban — 89 %</li>
-              <li>Rang 14 : Djelfa, Algérie — 88 %</li>
-              <li>Rang 15 : Alep / Homs / Hama, Syrie — 88 %</li>
-              <li>Rang 16 : La Rioja, Argentine — 87 %</li>
-              <li>Rang 17 : Mildura / Renmark, Australie — 87 %</li>
-              <li>Rang 18 : Amman, Jordanie — 87 %</li>
-              <li>Rang 19 : Şanlıurfa, Turquie — 86 %</li>
-              <li>Rang 20 : Batna, Algérie — 86 %</li>
-              <li>Rang 21 : Bassin de l’Èbre (Zaragoza), Espagne — 85 %</li>
-              <li>Rang 22 : Reno / Fallon, États-Unis — 85 %</li>
-              <li>Rang 23 : Kermanshah, Iran — 85 %</li>
-              <li>Rang 24 : Oudtshoorn (Karoo), Afrique du Sud — 85 %</li>
+              <li>Rang 12 : Nalut / Yefren, Libye â€” 89 %</li>
+              <li>Rang 13 : Bekaa nord (Baalbek), Liban â€” 89 %</li>
+              <li>Rang 14 : Djelfa, AlgÃ©rie â€” 88 %</li>
+              <li>Rang 15 : Alep / Homs / Hama, Syrie â€” 88 %</li>
+              <li>Rang 16 : La Rioja, Argentine â€” 87 %</li>
+              <li>Rang 17 : Mildura / Renmark, Australie â€” 87 %</li>
+              <li>Rang 18 : Amman, Jordanie â€” 87 %</li>
+              <li>Rang 19 : ÅžanlÄ±urfa, Turquie â€” 86 %</li>
+              <li>Rang 20 : Batna, AlgÃ©rie â€” 86 %</li>
+              <li>Rang 21 : Bassin de lâ€™Ãˆbre (Zaragoza), Espagne â€” 85 %</li>
+              <li>Rang 22 : Reno / Fallon, Ã‰tats-Unis â€” 85 %</li>
+              <li>Rang 23 : Kermanshah, Iran â€” 85 %</li>
+              <li>Rang 24 : Oudtshoorn (Karoo), Afrique du Sud â€” 85 %</li>
             </ul>
             
-            <h3 className="text-xl font-semibold mb-2 mt-6">Catégorie 4 — Climat comparable avec quelques différences (78–84 %)</h3>
+            <h3 className="text-xl font-semibold mb-2 mt-6">CatÃ©gorie 4 â€” Climat comparable avec quelques diffÃ©rences (78â€“84 %)</h3>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Rang 25 : Chypre intérieure (Nicosie), Chypre — 84 %</li>
-              <li>Rang 26 : Shiraz, Iran — 84 %</li>
-              <li>Rang 27 : Bakersfield, États-Unis — 84 %</li>
-              <li>Rang 28 : Konya / Karaman, Turquie — 83 %</li>
-              <li>Rang 29 : Broken Hill, Australie — 83 %</li>
-              <li>Rang 30 : Fresno / Modesto, États-Unis — 82 %</li>
-              <li>Rang 31 : Erfoud / Errachidia, Maroc — 82 %</li>
-              <li>Rang 32 : Enna / Caltanissetta, Italie (Sicile) — 82 %</li>
-              <li>Rang 33 : Albuquerque, États-Unis — 82 %</li>
-              <li>Rang 34 : Palmyre / Deir ez-Zor, Syrie — 82 %</li>
-              <li>Rang 35 : Wagga Wagga, Australie — 82 %</li>
-              <li>Rang 36 : Le Kef / Siliana, Tunisie — 84 %</li>
-              <li>Rang 37 : Vallenar / Ovalle, Chili — 80 %</li>
-              <li>Rang 38 : Yazd / Kerman, Iran — 80 %</li>
-              <li>Rang 39 : Coachella Valley, États-Unis — 79 %</li>
-              <li>Rang 40 : Chihuahua, Mexique — 78 %</li>
-              <li>Rang 41 : Crète intérieure, Grèce — 78 %</li>
-              <li>Rang 42 : El Paso / Las Cruces, États-Unis — 78 %</li>
-              <li>Rang 43 : Douchanbé, Tadjikistan — 78 %</li>
-              <li>Rang 44 : Midelt, Maroc — 78 %</li>
-              <li>Rang 45 : Beaufort West (Karoo), Afrique du Sud — 78 %</li>
+              <li>Rang 25 : Chypre intÃ©rieure (Nicosie), Chypre â€” 84 %</li>
+              <li>Rang 26 : Shiraz, Iran â€” 84 %</li>
+              <li>Rang 27 : Bakersfield, Ã‰tats-Unis â€” 84 %</li>
+              <li>Rang 28 : Konya / Karaman, Turquie â€” 83 %</li>
+              <li>Rang 29 : Broken Hill, Australie â€” 83 %</li>
+              <li>Rang 30 : Fresno / Modesto, Ã‰tats-Unis â€” 82 %</li>
+              <li>Rang 31 : Erfoud / Errachidia, Maroc â€” 82 %</li>
+              <li>Rang 32 : Enna / Caltanissetta, Italie (Sicile) â€” 82 %</li>
+              <li>Rang 33 : Albuquerque, Ã‰tats-Unis â€” 82 %</li>
+              <li>Rang 34 : Palmyre / Deir ez-Zor, Syrie â€” 82 %</li>
+              <li>Rang 35 : Wagga Wagga, Australie â€” 82 %</li>
+              <li>Rang 36 : Le Kef / Siliana, Tunisie â€” 84 %</li>
+              <li>Rang 37 : Vallenar / Ovalle, Chili â€” 80 %</li>
+              <li>Rang 38 : Yazd / Kerman, Iran â€” 80 %</li>
+              <li>Rang 39 : Coachella Valley, Ã‰tats-Unis â€” 79 %</li>
+              <li>Rang 40 : Chihuahua, Mexique â€” 78 %</li>
+              <li>Rang 41 : CrÃ¨te intÃ©rieure, GrÃ¨ce â€” 78 %</li>
+              <li>Rang 42 : El Paso / Las Cruces, Ã‰tats-Unis â€” 78 %</li>
+              <li>Rang 43 : DouchanbÃ©, Tadjikistan â€” 78 %</li>
+              <li>Rang 44 : Midelt, Maroc â€” 78 %</li>
+              <li>Rang 45 : Beaufort West (Karoo), Afrique du Sud â€” 78 %</li>
             </ul>
             
-            <h3 className="text-xl font-semibold mb-2 mt-6">Catégorie 5 — Climat ressemblant mais présentant des différences importantes (70–77 %)</h3>
+            <h3 className="text-xl font-semibold mb-2 mt-6">CatÃ©gorie 5 â€” Climat ressemblant mais prÃ©sentant des diffÃ©rences importantes (70â€“77 %)</h3>
             <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Rang 46 : Tachkent / Samarcande, Ouzbékistan — 76 %</li>
-              <li>Rang 47 : Winnemucca, États-Unis — 76 %</li>
-              <li>Rang 48 : Phoenix / Tucson, États-Unis — 72 %</li>
-              <li>Rang 49 : Alice Springs, Australie — 72 %</li>
-              <li>Rang 50 : Arequipa, Pérou — 70 %</li>
-              <li>Rang 51 : Central Otago (Cromwell), Nouvelle-Zélande — 68 %</li>
+              <li>Rang 46 : Tachkent / Samarcande, OuzbÃ©kistan â€” 76 %</li>
+              <li>Rang 47 : Winnemucca, Ã‰tats-Unis â€” 76 %</li>
+              <li>Rang 48 : Phoenix / Tucson, Ã‰tats-Unis â€” 72 %</li>
+              <li>Rang 49 : Alice Springs, Australie â€” 72 %</li>
+              <li>Rang 50 : Arequipa, PÃ©rou â€” 70 %</li>
+              <li>Rang 51 : Central Otago (Cromwell), Nouvelle-ZÃ©lande â€” 68 %</li>
             </ul>
           </section>
         </CardContent>
@@ -655,80 +655,80 @@ export default function RapportScientifiquePage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE VIII — ANALYSE ÉCOPHYSIOLOGIQUE ET AGRONOMIQUE COMPARÉE PAR ESPÈCE</CardTitle>
+          <CardTitle>PARTIE VIII â€” ANALYSE Ã‰COPHYSIOLOGIQUE ET AGRONOMIQUE COMPARÃ‰E PAR ESPÃˆCE</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
             <div className="space-y-4">
               <h4 className="text-lg font-semibold">8.1. Phoenix dactylifera (palmier dattier)</h4>
               <p className="text-justify">
-                Le palmier dattier exige une somme thermique estivale élevée, correspondant à un indice thermique de Nixon-Furr ≥ 1 800 unités thermiques, une saison sèche estivale absolue, une faible humidité durant la maturation, ainsi qu’une tolérance au gel modérée, avec une résistance pouvant atteindre −6 à −9 °C chez les sujets adultes. Guercif satisfait ces critères dans leur expression limite : la maturation des variétés tardives, telles que Medjool et Boufeggous, y demeure marginale, tandis que les variétés précoces, telles que Bou Sthammi et Aziza, y sont préférables.
+                Le palmier dattier exige une somme thermique estivale Ã©levÃ©e, correspondant Ã  un indice thermique de Nixon-Furr â‰¥ 1 800 unitÃ©s thermiques, une saison sÃ¨che estivale absolue, une faible humiditÃ© durant la maturation, ainsi quâ€™une tolÃ©rance au gel modÃ©rÃ©e, avec une rÃ©sistance pouvant atteindre âˆ’6 Ã  âˆ’9 Â°C chez les sujets adultes. KÃ©nitra satisfait ces critÃ¨res dans leur expression limite : la maturation des variÃ©tÃ©s tardives, telles que Medjool et Boufeggous, y demeure marginale, tandis que les variÃ©tÃ©s prÃ©coces, telles que Bou Sthammi et Aziza, y sont prÃ©fÃ©rables.
               </p>
               <p className="text-justify">
-                Le dattier est cultivable optimalement dans la Coachella Valley, à Erfoud-Rissani, à Deir ez-Zor, à Nalut, à Palmyre, à Yazd et à Alice Springs. Il est cultivable en position marginale, comme à Guercif, à Taourirt, Missour, Tabernas, Baalbek et Mildura. Il n’est pas cultivable commercialement à Bakersfield, en raison des brouillards, à Mendoza, du fait d’une maturation incomplète, à Konya, où l’hiver est trop froid, ni dans le Central Otago, où l’été est insuffisant.
+                Le dattier est cultivable optimalement dans la Coachella Valley, Ã  Erfoud-Rissani, Ã  Deir ez-Zor, Ã  Nalut, Ã  Palmyre, Ã  Yazd et Ã  Alice Springs. Il est cultivable en position marginale, comme Ã  KÃ©nitra, Ã  Taourirt, Missour, Tabernas, Baalbek et Mildura. Il nâ€™est pas cultivable commercialement Ã  Bakersfield, en raison des brouillards, Ã  Mendoza, du fait dâ€™une maturation incomplÃ¨te, Ã  Konya, oÃ¹ lâ€™hiver est trop froid, ni dans le Central Otago, oÃ¹ lâ€™Ã©tÃ© est insuffisant.
               </p>
             </div>
             
             <div className="space-y-4 mt-6">
               <h4 className="text-lg font-semibold">8.2. Olivea europaea (olivier)</h4>
               <p className="text-justify">
-                L’olivier tolère parfaitement l’ensemble des régions énumérées, à l’exception des zones soumises à des gels sévères prolongés, telles que Konya, certains secteurs d’altitude de Djelfa, et le Central Otago sur les fonds de vallée. Il constitue l’espèce indicatrice quasi universelle de l’ensemble des analogues étudiés.
+                Lâ€™olivier tolÃ¨re parfaitement lâ€™ensemble des rÃ©gions Ã©numÃ©rÃ©es, Ã  lâ€™exception des zones soumises Ã  des gels sÃ©vÃ¨res prolongÃ©s, telles que Konya, certains secteurs dâ€™altitude de Djelfa, et le Central Otago sur les fonds de vallÃ©e. Il constitue lâ€™espÃ¨ce indicatrice quasi universelle de lâ€™ensemble des analogues Ã©tudiÃ©s.
               </p>
             </div>
             
             <div className="space-y-4 mt-6">
               <h4 className="text-lg font-semibold">8.3. Vitis vinifera (vigne)</h4>
               <p className="text-justify">
-                La vigne est parfaitement adaptée à l’ensemble des régions recensées. Les meilleurs analogues viticoles de Guercif sont Mendoza, La Rioja en Argentine, le Karoo, Mildura, Aïn Sefra, Kasserine et la Bekaa. La qualité de la vinification y est excellente, notamment grâce à l’amplitude thermique diurne.
+                La vigne est parfaitement adaptÃ©e Ã  lâ€™ensemble des rÃ©gions recensÃ©es. Les meilleurs analogues viticoles de KÃ©nitra sont Mendoza, La Rioja en Argentine, le Karoo, Mildura, AÃ¯n Sefra, Kasserine et la Bekaa. La qualitÃ© de la vinification y est excellente, notamment grÃ¢ce Ã  lâ€™amplitude thermique diurne.
               </p>
             </div>
             
             <div className="space-y-4 mt-6">
               <h4 className="text-lg font-semibold">8.4. Agrumes (Citrus spp.)</h4>
               <p className="text-justify">
-                Les agrumes exigent l’absence de gel prolongé et une humidité modérée. Les meilleurs analogues sont Berkane (Triffa), Bakersfield, Fresno, Mildura et Nicosie. À Guercif, l’oranger et le mandarinier sont cultivables sous irrigation ; le citronnier et la lime demeurent plus fragiles au froid.
+                Les agrumes exigent lâ€™absence de gel prolongÃ© et une humiditÃ© modÃ©rÃ©e. Les meilleurs analogues sont Berkane (Triffa), Bakersfield, Fresno, Mildura et Nicosie. Ã€ KÃ©nitra, lâ€™oranger et le mandarinier sont cultivables sous irrigation ; le citronnier et la lime demeurent plus fragiles au froid.
               </p>
             </div>
             
             <div className="space-y-4 mt-6">
               <h4 className="text-lg font-semibold">8.5. Pistacia vera (pistachier)</h4>
               <p className="text-justify">
-                Le pistachier est parfaitement adapté à l’ensemble des régions à hivers frais et été chauds et secs. Les meilleurs analogues pistachicoles sont Kerman en Iran, référence mondiale, Şanlıurfa, Alep, Kasserine et Aïn Sefra. Guercif présente un potentiel pistachicole excellent, mais sous-exploité.
+                Le pistachier est parfaitement adaptÃ© Ã  lâ€™ensemble des rÃ©gions Ã  hivers frais et Ã©tÃ© chauds et secs. Les meilleurs analogues pistachicoles sont Kerman en Iran, rÃ©fÃ©rence mondiale, ÅžanlÄ±urfa, Alep, Kasserine et AÃ¯n Sefra. KÃ©nitra prÃ©sente un potentiel pistachicole excellent, mais sous-exploitÃ©.
               </p>
             </div>
             
             <div className="space-y-4 mt-6">
               <h4 className="text-lg font-semibold">8.6. Amandier, figuier, grenadier, caroubier</h4>
               <p className="text-justify">
-                Ces espèces méditerranéennes classiques prospèrent dans la totalité des analogues énumérés, à l’exception des zones soumises à des gels sévères pour le caroubier, dont la limite se situe approximativement en zone USDA 9b.
+                Ces espÃ¨ces mÃ©diterranÃ©ennes classiques prospÃ¨rent dans la totalitÃ© des analogues Ã©numÃ©rÃ©s, Ã  lâ€™exception des zones soumises Ã  des gels sÃ©vÃ¨res pour le caroubier, dont la limite se situe approximativement en zone USDA 9b.
               </p>
             </div>
             
             <div className="space-y-4 mt-6">
               <h4 className="text-lg font-semibold">8.7. Argania spinosa (arganier)</h4>
               <p className="text-justify">
-                L’arganier est endémique du sud-ouest marocain, notamment du Souss-Massa, et ne trouve nulle part ailleurs dans le monde un véritable analogue climato-édaphique. Sa culture à Guercif demeure marginale.
+                Lâ€™arganier est endÃ©mique du sud-ouest marocain, notamment du Souss-Massa, et ne trouve nulle part ailleurs dans le monde un vÃ©ritable analogue climato-Ã©daphique. Sa culture Ã  KÃ©nitra demeure marginale.
               </p>
             </div>
             
             <div className="space-y-4 mt-6">
               <h4 className="text-lg font-semibold">8.8. Simmondsia chinensis (jojoba)</h4>
               <p className="text-justify">
-                Le jojoba est originaire du désert de Sonora. Il tolère bien Guercif, mais préfère les climats de type Coachella, Sonora ou Néguev.
+                Le jojoba est originaire du dÃ©sert de Sonora. Il tolÃ¨re bien KÃ©nitra, mais prÃ©fÃ¨re les climats de type Coachella, Sonora ou NÃ©guev.
               </p>
             </div>
             
             <div className="space-y-4 mt-6">
               <h4 className="text-lg font-semibold">8.9. Washingtonia filifera / robusta et palmiers ornementaux</h4>
               <p className="text-justify">
-                Ces palmiers sont parfaitement adaptés à l’ensemble des régions classées en USDA ≥ 9a. Guercif leur convient parfaitement.
+                Ces palmiers sont parfaitement adaptÃ©s Ã  lâ€™ensemble des rÃ©gions classÃ©es en USDA â‰¥ 9a. KÃ©nitra leur convient parfaitement.
               </p>
             </div>
             
             <div className="space-y-4 mt-6">
               <h4 className="text-lg font-semibold">8.10. Eucalyptus, Prosopis, Acacia, Tamarix</h4>
               <p className="text-justify">
-                Il s’agit d’espèces xérophytes universelles, adaptées à l’ensemble des régions semi-arides énumérées dans le présent rapport.
+                Il sâ€™agit dâ€™espÃ¨ces xÃ©rophytes universelles, adaptÃ©es Ã  lâ€™ensemble des rÃ©gions semi-arides Ã©numÃ©rÃ©es dans le prÃ©sent rapport.
               </p>
             </div>
           </section>
@@ -737,32 +737,32 @@ export default function RapportScientifiquePage() {
       
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE IX — CONCLUSION SCIENTIFIQUE GÉNÉRALE</CardTitle>
+          <CardTitle>PARTIE IX â€” CONCLUSION SCIENTIFIQUE GÃ‰NÃ‰RALE</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
             <p className="text-justify">
-              Le bassin de Guercif appartient à une famille climatique restreinte à l’échelle planétaire : celle des bassins intérieurs semi-arides méditerranéens à double signature, à la fois steppique et méditerranéenne dégradée, caractérisée par une pluviométrie annuelle de 200 à 280 mm, un régime équinoxial-hivernal, une insolation supérieure à 3 000 h, des étés très chauds et secs, ainsi que des hivers frais avec gels radiatifs possibles.
+              Le bassin de KÃ©nitra appartient Ã  une famille climatique restreinte Ã  lâ€™Ã©chelle planÃ©taire : celle des bassins intÃ©rieurs semi-arides mÃ©diterranÃ©ens Ã  double signature, Ã  la fois steppique et mÃ©diterranÃ©enne dÃ©gradÃ©e, caractÃ©risÃ©e par une pluviomÃ©trie annuelle de 200 Ã  280 mm, un rÃ©gime Ã©quinoxial-hivernal, une insolation supÃ©rieure Ã  3 000 h, des Ã©tÃ©s trÃ¨s chauds et secs, ainsi que des hivers frais avec gels radiatifs possibles.
             </p>
             <p className="text-justify">
-              Cette famille climatique ne compte, à l’échelle mondiale, que moins de vingt régions parfaitement identifiées, dont environ la moitié se situe dans le seul Maghreb — couloir de la Moulouya, Hauts Plateaux algériens, Tunisie centrale, Djebel Nefoussa libyen — ce qui souligne à la fois le caractère régionalement spécifique et la rareté bioclimatique du climat de Guercif.
+              Cette famille climatique ne compte, Ã  lâ€™Ã©chelle mondiale, que moins de vingt rÃ©gions parfaitement identifiÃ©es, dont environ la moitiÃ© se situe dans le seul Maghreb â€” couloir de la Moulouya, Hauts Plateaux algÃ©riens, Tunisie centrale, Djebel Nefoussa libyen â€” ce qui souligne Ã  la fois le caractÃ¨re rÃ©gionalement spÃ©cifique et la raretÃ© bioclimatique du climat de KÃ©nitra.
             </p>
             <p className="text-justify">
-              Les analogues extra-maghrébins de très haute fidélité sont, par ordre décroissant, Tabernas et le bassin de Guadix-Baza en Espagne intérieure sud-orientale, Kasserine en Tunisie, la Bekaa septentrionale au Liban, Şanlıurfa et Konya en Turquie, Mendoza et La Rioja en Argentine après correction saisonnière, Mildura dans l’intérieur sud-est australien, le Karoo sud-africain, notamment Oudtshoorn, et le Grand Bassin nord-américain, notamment Reno-Fallon.
+              Les analogues extra-maghrÃ©bins de trÃ¨s haute fidÃ©litÃ© sont, par ordre dÃ©croissant, Tabernas et le bassin de Guadix-Baza en Espagne intÃ©rieure sud-orientale, Kasserine en Tunisie, la Bekaa septentrionale au Liban, ÅžanlÄ±urfa et Konya en Turquie, Mendoza et La Rioja en Argentine aprÃ¨s correction saisonniÃ¨re, Mildura dans lâ€™intÃ©rieur sud-est australien, le Karoo sud-africain, notamment Oudtshoorn, et le Grand Bassin nord-amÃ©ricain, notamment Reno-Fallon.
             </p>
             <p className="text-justify">
-              Les quasi-analogues fréquemment cités mais imparfaits incluent Bakersfield en Californie, dont la ressemblance estivale de premier ordre est fortement pondérée par la spécificité hivernale — brouillard de Tule, inversion persistante, humidité relative hivernale élevée —, ce qui interdit de lui accorder une similarité supérieure à 84 %, malgré une convergence remarquable des paramètres pluviométriques et thermiques estivaux.
+              Les quasi-analogues frÃ©quemment citÃ©s mais imparfaits incluent Bakersfield en Californie, dont la ressemblance estivale de premier ordre est fortement pondÃ©rÃ©e par la spÃ©cificitÃ© hivernale â€” brouillard de Tule, inversion persistante, humiditÃ© relative hivernale Ã©levÃ©e â€”, ce qui interdit de lui accorder une similaritÃ© supÃ©rieure Ã  84 %, malgrÃ© une convergence remarquable des paramÃ¨tres pluviomÃ©triques et thermiques estivaux.
             </p>
             <p className="text-justify mt-4">
-              À l’échelle bioclimatique, cela signifie que le potentiel agronomique de Guercif s’inscrit dans une stratégie mondiale de cultures méditerranéennes à faible besoin hydrique et à haute valeur ajoutée, comparable à celle mise en œuvre avec succès dans les régions viticoles de Mendoza, oléicoles d’Andalousie intérieure, pistachicoles du Kerman iranien, et fruitières de Mildura. La palette agronomique optimale de Guercif apparaît ainsi clairement définie : olivier, pistachier, amandier, grenadier, figuier, vigne de cuve à identité méditerranéenne, agrumes en irrigation localisée, palmier dattier en variétés précoces sur stations abritées, ainsi que cultures xérophytes secondaires telles que le caroubier, le jojoba et l’opuntia.
+              Ã€ lâ€™Ã©chelle bioclimatique, cela signifie que le potentiel agronomique de KÃ©nitra sâ€™inscrit dans une stratÃ©gie mondiale de cultures mÃ©diterranÃ©ennes Ã  faible besoin hydrique et Ã  haute valeur ajoutÃ©e, comparable Ã  celle mise en Å“uvre avec succÃ¨s dans les rÃ©gions viticoles de Mendoza, olÃ©icoles dâ€™Andalousie intÃ©rieure, pistachicoles du Kerman iranien, et fruitiÃ¨res de Mildura. La palette agronomique optimale de KÃ©nitra apparaÃ®t ainsi clairement dÃ©finie : olivier, pistachier, amandier, grenadier, figuier, vigne de cuve Ã  identitÃ© mÃ©diterranÃ©enne, agrumes en irrigation localisÃ©e, palmier dattier en variÃ©tÃ©s prÃ©coces sur stations abritÃ©es, ainsi que cultures xÃ©rophytes secondaires telles que le caroubier, le jojoba et lâ€™opuntia.
             </p>
             <p className="text-justify mt-4">
-              En termes de rusticité et de risque climatique, Guercif se situe à l’interface USDA 10a / 9b, avec une vulnérabilité épisodique aux vagues de froid radiatif, et en AHS Heat Zone 8–9, avec une vulnérabilité récurrente aux vagues de chaleur estivales advectées par le chergui saharien. Cette bipolarité constitue précisément la signature des climats de bassin intérieur du Maghreb oriental, dont Guercif représente l’un des exemples les plus purs et les mieux documentés.
+              En termes de rusticitÃ© et de risque climatique, KÃ©nitra se situe Ã  lâ€™interface USDA 10a / 9b, avec une vulnÃ©rabilitÃ© Ã©pisodique aux vagues de froid radiatif, et en AHS Heat Zone 8â€“9, avec une vulnÃ©rabilitÃ© rÃ©currente aux vagues de chaleur estivales advectÃ©es par le chergui saharien. Cette bipolaritÃ© constitue prÃ©cisÃ©ment la signature des climats de bassin intÃ©rieur du Maghreb oriental, dont KÃ©nitra reprÃ©sente lâ€™un des exemples les plus purs et les mieux documentÃ©s.
             </p>
             <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-800 border-l-4 border-blue-500 rounded">
-              <p className="font-semibold mb-2">Nota bene méthodologique :</p>
+              <p className="font-semibold mb-2">Nota bene mÃ©thodologique :</p>
               <p className="text-justify">
-                Les pourcentages de similarité indiqués résultent d’une pondération multi-critères intégrant les sept invariants de la signature guercifienne, avec des poids respectifs de 20 % pour le régime pluviométrique, 18 % pour la structure thermique, 15 % pour l’humidité et le point de rosée, 12 % pour l’insolation, 12 % pour la continentalité et l’amplitude thermique, 12 % pour les extrêmes absolus et la rusticité, et 11 % pour la dynamique synoptique et les vents locaux. Les analogies de l’hémisphère Sud ont été calculées après correction saisonnière stricte selon la table d’inversion janvier ↔ juillet, février ↔ août, etc., conformément aux exigences méthodologiques initiales.
+                Les pourcentages de similaritÃ© indiquÃ©s rÃ©sultent dâ€™une pondÃ©ration multi-critÃ¨res intÃ©grant les sept invariants de la signature KÃ©nitraienne, avec des poids respectifs de 20 % pour le rÃ©gime pluviomÃ©trique, 18 % pour la structure thermique, 15 % pour lâ€™humiditÃ© et le point de rosÃ©e, 12 % pour lâ€™insolation, 12 % pour la continentalitÃ© et lâ€™amplitude thermique, 12 % pour les extrÃªmes absolus et la rusticitÃ©, et 11 % pour la dynamique synoptique et les vents locaux. Les analogies de lâ€™hÃ©misphÃ¨re Sud ont Ã©tÃ© calculÃ©es aprÃ¨s correction saisonniÃ¨re stricte selon la table dâ€™inversion janvier â†” juillet, fÃ©vrier â†” aoÃ»t, etc., conformÃ©ment aux exigences mÃ©thodologiques initiales.
               </p>
             </div>
           </section>
@@ -771,3 +771,4 @@ export default function RapportScientifiquePage() {
     </div>
   );
 }
+

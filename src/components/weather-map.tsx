@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
@@ -30,10 +30,11 @@ export default function WeatherMap() {
         />
         <Marker position={position} icon={icon}>
           <Popup>
-            Guercif, Maroc <br /> Station météo archivée.
+            KÃ©nitra, Maroc <br /> Station mÃ©tÃ©o archivÃ©e.
           </Popup>
         </Marker>
       </MapContainer>
     </div>
   );
 }
+

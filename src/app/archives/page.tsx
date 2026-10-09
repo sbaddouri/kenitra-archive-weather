@@ -1,4 +1,4 @@
-import fs from 'fs';
+﻿import fs from 'fs';
 import path from 'path';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
@@ -18,7 +18,7 @@ export default function ArchivesPage() {
   return (
     <div className="space-y-8">
       <h1 className="text-3xl font-bold">Archives Climatologiques</h1>
-      <p className="text-muted-foreground">Parcourez les données historiques de Guercif par année et par mois.</p>
+      <p className="text-muted-foreground">Parcourez les donnÃ©es historiques de KÃ©nitra par annÃ©e et par mois.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {years.map(year => {
@@ -30,14 +30,14 @@ export default function ArchivesPage() {
           return (
             <Card key={year}>
               <CardHeader>
-                <CardTitle>Année {year}</CardTitle>
+                <CardTitle>AnnÃ©e {year}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 gap-2">
                   {months.map(month => (
                     <Link 
                       key={month} 
-                      href={`/climatologie/mois/${year}/${month}/guercif`}
+                      href={`/climatologie/mois/${year}/${month}/kenitra`}
                       className="text-sm p-2 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-colors text-center capitalize"
                     >
                       {format(new Date(parseInt(year), parseInt(month) - 1), "MMMM", { locale: fr })}
@@ -46,10 +46,10 @@ export default function ArchivesPage() {
                 </div>
                 <div className="mt-4 pt-4 border-t">
                   <Link 
-                    href={`/climatologie/annee/${year}/guercif`}
+                    href={`/climatologie/annee/${year}/kenitra`}
                     className="text-sm font-medium text-primary hover:underline"
                   >
-                    Voir le résumé de l'année →
+                    Voir le rÃ©sumÃ© de l'annÃ©e â†’
                   </Link>
                 </div>
               </CardContent>

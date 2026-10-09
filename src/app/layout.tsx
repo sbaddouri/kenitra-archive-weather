@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Guercif Weather Archive - Climatologie de Guercif, Maroc",
-  description: "Archives météorologiques complètes de Guercif, Oriental, Maroc. Températures, précipitations et statistiques climatiques.",
-  keywords: ["Guercif", "Météo", "Climatologie", "Maroc", "Archives Météo", "Oriental", "Températures", "Pluie", "Radar Météo", "Rapport Scientifique"],
-  authors: [{ name: "Guercif Weather" }],
+  title: "Kénitra Weather Archive - Climatologie de Kénitra, Maroc",
+  description: "Archives météorologiques complètes de Kénitra, Gharb-Chrarda-Béni Hssen, Maroc. Températures, précipitations et statistiques climatiques.",
+  keywords: ["Kénitra", "Météo", "Climatologie", "Maroc", "Archives Météo", "Gharb", "Températures", "Pluie", "Radar Météo", "Rapport Scientifique"],
+  authors: [{ name: "Kénitra Weather" }],
   openGraph: {
-    title: "Guercif Weather Archive",
-    description: "Climatologie et archives météo de Guercif, Maroc.",
-    url: "https://guercifarchiveweather.vercel.app",
-    siteName: "Guercif Weather",
+    title: "Kénitra Weather Archive",
+    description: "Climatologie et archives météo de Kénitra, Maroc.",
+    url: "https://kenitraarchiveweather.vercel.app",
+    siteName: "Kénitra Weather",
     locale: "fr_FR",
   },
   manifest: "/manifest.webmanifest",
@@ -55,7 +55,7 @@ export default function RootLayout({
               {children}
             </main>
             <footer className="border-t py-6 text-center text-sm text-muted-foreground">
-              &copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> Guercif Weather Archive. Données via{" "}
+              &copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> Kénitra Weather Archive. Données via{" "}
               <a 
                 href="https://open-meteo.com/" 
                 target="_blank" 
