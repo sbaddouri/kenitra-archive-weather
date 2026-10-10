@@ -9,9 +9,9 @@
   },
   "homepage": "https://github.com/sbaddouri/kenitra-archive-weather#readme",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build --webpack",
-    "start": "next start",
+    "start": "node server.js",
     "lint": "eslint"
   },
   "dependencies": {
