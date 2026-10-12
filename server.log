@@ -1,0 +1,10 @@
+Starting Next.js server...
+Next.js app prepared, creating HTTP server...
+> Server listening on 0.0.0.0:3000
+> Ready on http://localhost:3000
+[2026-10-10T12:49:54.028Z] GET /
+(node:11712) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Ôùï Compiling / ...
+ GET / 200 in 18.3s (next.js: 17.5s, application-code: 814ms)
+[2026-10-10T12:50:12.395Z] Response: 200
