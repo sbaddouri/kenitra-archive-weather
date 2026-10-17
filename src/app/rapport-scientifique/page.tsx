@@ -849,6 +849,405 @@ export default function RapportScientifiquePage() {
               Échelles de normalisation (écart-type climatologique de référence) : σT = 1,5 °C ; σTx = 3,0 °C ; σTn = 3,0 °C ; σP = 150 mm ; σHR = 8 % ; σS = 400 h.
             </p>
           </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">6.2. Classement mondial des analogues de Kénitra</h3>
+            <p className="text-justify space-y-2">
+              Distance climatique normalisée : conversion en score de similarité, fonction explicitement définie, appliquée à une distance D elle-même normalisée et documentée. Conformément au mandat, ces pourcentages ne sont pas des vérités observées mais des indices internes de similarité, dont la sensibilité aux pondérations est discutée au § 6.4.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-max text-sm border-collapse border border-gray-300">
+                <thead className="bg-gray-100 sticky top-0 z-10">
+                  <tr>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Rang</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Lieu</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Pays</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">T ann (°C)</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">P ann (mm)</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Tx (°C)</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Tn (°C)</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Köppen</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">D</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">S (%)</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Couv.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Faro</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Portugal</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">18,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">511,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">29,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">7,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,344</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">70,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Adelaide</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Australie</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">17,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">536,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">30,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">7,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,507</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">60,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">78 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Portimão</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Portugal</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">17,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">528,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">28,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">8,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,520</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">59,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Larache</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Maroc</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">18,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">700,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">28,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">8,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,522</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">59,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">78 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">La Valette</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Malte</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">—</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">580,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">32,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">9,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,578</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">56,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">54 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Le Cap</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Afrique du Sud</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">17,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">492,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">27,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">7,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csb</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,600</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">54,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Valence</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Espagne</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">18,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">459,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">30,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">7,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">BSh/Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,618</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">53,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Tanger</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Maroc</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">17,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">735,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">28,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">8,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,628</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">53,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">100 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Casablanca</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Maroc</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">18,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">408,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">26,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">8,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,642</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">52,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">100 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">10</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Los Angeles</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">États-Unis</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">18,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">362,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">28,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">9,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">BSh</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,735</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">48,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">100 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">11</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Perth</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Australie</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">18,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">731,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">31,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">8,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,754</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">47,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">78 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">12</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Santa Barbara</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">États-Unis</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">17,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">482,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">25,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">7,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csb</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,788</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">45,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">13</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Barcelone</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Espagne</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">18,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">558,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">28,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">5,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,789</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">45,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">100 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">14</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Tunis</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Tunisie</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">19,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">555,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">33,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">5,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,845</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">42,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">78 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">15</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Tel-Aviv</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Israël</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">20,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">528,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">30,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">9,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,912</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">40,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">78 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">16</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Izmir</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Turquie</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">18,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">730,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">33,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">6,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">0,992</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">37,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">17</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Héraklion</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Grèce</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">19,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">318,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">28,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">10,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,007</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">36,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">18</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Cagliari</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Italie</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">17,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">413,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">32,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">5,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,058</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">34,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">19</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Jerez</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Espagne</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">—</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">570,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">34,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">5,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,082</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">33,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">66 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">20</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Essaouira</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Maroc</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">17,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">364,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">22,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">11,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">BSk/BSh</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,169</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">31,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">21</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">San Diego</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">États-Unis</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">18,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">249,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">25,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">10,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">BSh/Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,196</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">30,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">100 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">22</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Split</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Croatie</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">16,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">800,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">31,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">5,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,198</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">30,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">23</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Séville</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Espagne</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">19,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">502,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">36,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">6,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,273</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">28,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">100 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">24</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Sacramento</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">États-Unis</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">16,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">461,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">33,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">4,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,329</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">26,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">25</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Almería</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Espagne</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">19,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">197,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">31,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">8,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">BWh</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,357</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">25,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">26</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Santiago</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Chili</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">—</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">286,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">30,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">2,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">BSk</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,580</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">20,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">76 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">27</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Fresno</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">États-Unis</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">18,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">279,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">36,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">4,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">BSh</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">1,653</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">19,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">90 %</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold">28</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Monterey</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">États-Unis</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">13,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">435,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">20,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">6,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csb</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">2,416</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">8,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">78 %</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-justify mt-4 text-sm">
+              Stations marocaines non incluses dans le classement faute de données comparables complètes : Rabat-Salé (S ≈ 57 %, estimation), El Jadida (S ≈ 49 %), Safi (S ≈ 42 %, BSh), Sidi Kacem, Souk El Arbaa.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">6.3. Catégories d'analogie (conventions descriptives)</h3>
+          </section>
         </CardContent>
       </Card>
     </div>
