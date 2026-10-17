@@ -1,5 +1,8 @@
-﻿import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+﻿"use client";
+
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import WeatherCountdown from '@/components/weather-countdown';
+import { useTheme } from 'next-themes';
 
 // ============================================================
 // Traduction fidèle des plages de couleurs de
@@ -24,6 +27,19 @@ function rangePos(value: number, start: number, stop: number): number {
 
 function formatLine(background: string, textColor: string): React.CSSProperties {
   return { backgroundColor: `#${background}`, color: `#${textColor}` };
+}
+
+// Calcule la couleur de texte optimale (noir ou blanc) selon la luminosité du fond
+// et le thème actif, pour rester lisible en mode clair comme en mode sombre
+function contrastTextColor(hexBg: string, theme: string): string {
+  const r = parseInt(hexBg.substring(0, 2), 16);
+  const g = parseInt(hexBg.substring(2, 4), 16);
+  const b = parseInt(hexBg.substring(4, 6), 16);
+  // Luminance relative (formule W3C)
+  const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  // En mode sombre, on abaisse légèrement le seuil pour privilégier le texte clair
+  const threshold = theme === 'dark' ? 0.55 : 0.5;
+  return lum > threshold ? '000000' : 'FFFFFF';
 }
 
 function daysColor(val: number | null): string {
@@ -126,13 +142,22 @@ function parseNum(s: string): number | null {
 }
 
 // Calcule le style de cellule à partir du libellé de ligne et de la valeur texte
-function cellStyle(param: string, valStr: string): React.CSSProperties {
+function cellStyle(param: string, valStr: string, theme: string): React.CSSProperties {
   const n = parseNum(valStr);
-  if (n == null) return formatLine('FFFFFF', '000000');
-  return colorForRow(param, n);
+  if (n == null) {
+    return theme === 'dark'
+      ? { backgroundColor: '#1a1a1a', color: '#e5e5e5' }
+      : { backgroundColor: '#ffffff', color: '#000000' };
+  }
+  const base = colorForRow(param, n);
+  const bgHex = base.backgroundColor!.replace('#', '');
+  const textColor = contrastTextColor(bgHex, theme);
+  return { backgroundColor: base.backgroundColor, color: `#${textColor}` };
 }
 
 export default function RapportScientifiquePage() {
+  const { theme } = useTheme();
+  const cs = (param: string, valStr: string) => cellStyle(param, valStr, theme ?? 'light');
   return (
     <div className="space-y-8">
       <WeatherCountdown />
@@ -226,241 +251,241 @@ export default function RapportScientifiquePage() {
                 <tbody>
                   <tr className="bg-white">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-white z-10">Record haut °C</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '27,6')}>27,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '30,5')}>30,5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '35,5')}>35,5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '38,1')}>38,1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '45,3')}>45,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '45,6')}>45,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '48,0')}>48,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '47,2')}>47,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '43,3')}>43,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '39,5')}>39,5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '33,9')}>33,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '28,5')}>28,5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Record haut °C', '48,0')}>48,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record haut °C', '47,7 (août)')}>47,7 (août)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '27,6')}>27,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '30,5')}>30,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '35,5')}>35,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '38,1')}>38,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '45,3')}>45,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '45,6')}>45,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '48,0')}>48,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '47,2')}>47,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '43,3')}>43,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '39,5')}>39,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '33,9')}>33,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '28,5')}>28,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Record haut °C', '48,0')}>48,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record haut °C', '47,7 (août)')}>47,7 (août)</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-gray-50 z-10">Moyenne des maxima °C</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '21,5')}>21,5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '23,7')}>23,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '26,9')}>26,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '28,8')}>28,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '31,6')}>31,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '34,8')}>34,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '34,9')}>34,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '35,0')}>35,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '32,8')}>32,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '30,8')}>30,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '26,3')}>26,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '21,9')}>21,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Moyenne des maxima °C', '36,90')}>36,90</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maxima °C', '—')}>—</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '21,5')}>21,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '23,7')}>23,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '26,9')}>26,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '28,8')}>28,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '31,6')}>31,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '34,8')}>34,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '34,9')}>34,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '35,0')}>35,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '32,8')}>32,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '30,8')}>30,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '26,3')}>26,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '21,9')}>21,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Moyenne des maxima °C', '36,90')}>36,90</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maxima °C', '—')}>—</td>
                   </tr>
                   <tr className="bg-white">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-white z-10">Moyenne des maximales °C</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '17,1')}>17,1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '18,8')}>18,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '19,8')}>19,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '21,1')}>21,1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '23,7')}>23,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '25,2')}>25,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '27,9')}>27,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '28,7')}>28,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '26,1')}>26,1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '24,9')}>24,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '21,6')}>21,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '18,4')}>18,4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Moyenne des maximales °C', '22,8')}>22,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des maximales °C', '23,5')}>23,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '17,1')}>17,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '18,8')}>18,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '19,8')}>19,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '21,1')}>21,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '23,7')}>23,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '25,2')}>25,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '27,9')}>27,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '28,7')}>28,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '26,1')}>26,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '24,9')}>24,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '21,6')}>21,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '18,4')}>18,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Moyenne des maximales °C', '22,8')}>22,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des maximales °C', '23,5')}>23,5</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-gray-50 z-10">Moyenne journalière °C</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '13,2')}>13,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '14,2')}>14,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '15,2')}>15,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '16,8')}>16,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '19,3')}>19,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '21,3')}>21,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '23,8')}>23,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '24,7')}>24,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '22,4')}>22,4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '20,3')}>20,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '17,2')}>17,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '14,4/13,2')}>14,4/13,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Moyenne journalière °C', '18,6')}>18,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne journalière °C', '18,4')}>18,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '13,2')}>13,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '14,2')}>14,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '15,2')}>15,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '16,8')}>16,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '19,3')}>19,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '21,3')}>21,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '23,8')}>23,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '24,7')}>24,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '22,4')}>22,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '20,3')}>20,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '17,2')}>17,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '14,4/13,2')}>14,4/13,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Moyenne journalière °C', '18,6')}>18,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne journalière °C', '18,4')}>18,4</td>
                   </tr>
                   <tr className="bg-white">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-white z-10">Moyenne des minimales °C</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '9,2')}>9,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '9,5')}>9,5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '10,5')}>10,5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '12,5')}>12,5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '14,9')}>14,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '17,3')}>17,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '19,6')}>19,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '20,6')}>20,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '18,6')}>18,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '15,6')}>15,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '12,8')}>12,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '10,4')}>10,4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Moyenne des minimales °C', '14,3')}>14,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minimales °C', '13,4')}>13,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '9,2')}>9,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '9,5')}>9,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '10,5')}>10,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '12,5')}>12,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '14,9')}>14,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '17,3')}>17,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '19,6')}>19,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '20,6')}>20,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '18,6')}>18,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '15,6')}>15,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '12,8')}>12,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '10,4')}>10,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Moyenne des minimales °C', '14,3')}>14,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minimales °C', '13,4')}>13,4</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-gray-50 z-10">Moyenne des minima °C</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '5,0')}>5,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '6,2')}>6,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '7,6')}>7,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '9,7')}>9,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '11,3')}>11,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '15,1')}>15,1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '16,4')}>16,4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '16,9')}>16,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '15,8')}>15,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '13,0')}>13,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '8,7')}>8,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '6,6')}>6,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Moyenne des minima °C', '5,29')}>5,29</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Moyenne des minima °C', '—')}>—</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '5,0')}>5,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '6,2')}>6,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '7,6')}>7,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '9,7')}>9,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '11,3')}>11,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '15,1')}>15,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '16,4')}>16,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '16,9')}>16,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '15,8')}>15,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '13,0')}>13,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '8,7')}>8,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '6,6')}>6,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Moyenne des minima °C', '5,29')}>5,29</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Moyenne des minima °C', '—')}>—</td>
                   </tr>
                   <tr className="bg-white">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-white z-10">Record bas °C</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '−1,1')}>−1,1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '−0,8')}>−0,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '2,9')}>2,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '5,7')}>5,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '6,9')}>6,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '10,9')}>10,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '12,5')}>12,5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '13,3')}>13,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '10,8')}>10,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '7,4')}>7,4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '2,9')}>2,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '0,9')}>0,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Record bas °C', '−1,1')}>−1,1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Record bas °C', '−3,0 (fév)')}>−3,0 (fév)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '−1,1')}>−1,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '−0,8')}>−0,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '2,9')}>2,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '5,7')}>5,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '6,9')}>6,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '10,9')}>10,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '12,5')}>12,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '13,3')}>13,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '10,8')}>10,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '7,4')}>7,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '2,9')}>2,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '0,9')}>0,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Record bas °C', '−1,1')}>−1,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Record bas °C', '−3,0 (fév)')}>−3,0 (fév)</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-gray-50 z-10">Précipitations mm</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '82')}>82</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '64')}>64</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '63')}>63</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '57')}>57</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '32')}>32</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '8')}>8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '1')}>1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '1')}>1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '21')}>21</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '63')}>63</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '94')}>94</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '85')}>85</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Précipitations mm', '571')}>571</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Précipitations mm', '539,5')}>539,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '82')}>82</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '64')}>64</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '63')}>63</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '57')}>57</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '32')}>32</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '8')}>8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '1')}>1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '1')}>1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '21')}>21</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '63')}>63</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '94')}>94</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '85')}>85</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Précipitations mm', '571')}>571</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Précipitations mm', '539,5')}>539,5</td>
                   </tr>
                   <tr className="bg-white">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-white z-10">Jours de précip. ≥1 mm</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '6')}>6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '6')}>6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '5')}>5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '6')}>6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '4')}>4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '1')}>1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '0')}>0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '0')}>0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '3')}>3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '5')}>5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '7')}>7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '7')}>7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Jours de précip. ≥1 mm', '50')}>50</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de précip. ≥1 mm', '52,6')}>52,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '6')}>6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '6')}>6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '5')}>5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '6')}>6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '4')}>4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '1')}>1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '0')}>0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '0')}>0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '3')}>3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '5')}>5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '7')}>7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '7')}>7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Jours de précip. ≥1 mm', '50')}>50</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de précip. ≥1 mm', '52,6')}>52,6</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-gray-50 z-10">Jours de pluie</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '12,3')}>12,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '12,7')}>12,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '12,2')}>12,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '11,0')}>11,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '7,6')}>7,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '2,9')}>2,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '0,3')}>0,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '0,7')}>0,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '2,8')}>2,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '8,6')}>8,6</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '13,3')}>13,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '14,0')}>14,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Jours de pluie', '98,4')}>98,4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Jours de pluie', '—')}>—</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '12,3')}>12,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '12,7')}>12,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '12,2')}>12,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '11,0')}>11,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '7,6')}>7,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '2,9')}>2,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '0,3')}>0,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '0,7')}>0,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '2,8')}>2,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '8,6')}>8,6</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '13,3')}>13,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '14,0')}>14,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Jours de pluie', '98,4')}>98,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Jours de pluie', '—')}>—</td>
                   </tr>
                   <tr className="bg-white">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-white z-10">Humidité relative %</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '80')}>80</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '77')}>77</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '75')}>75</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '75')}>75</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '72')}>72</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '73')}>73</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '75')}>75</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '76')}>76</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '76')}>76</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '78')}>78</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '77')}>77</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '78')}>78</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Humidité relative %', '76')}>76</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Humidité relative %', '—')}>—</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '80')}>80</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '77')}>77</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '75')}>75</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '75')}>75</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '72')}>72</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '73')}>73</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '75')}>75</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '76')}>76</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '76')}>76</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '78')}>78</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '77')}>77</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '78')}>78</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Humidité relative %', '76')}>76</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Humidité relative %', '—')}>—</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-gray-50 z-10">Point de rosée °C</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '9,38')}>9,38</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '9,74')}>9,74</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '10,77')}>10,77</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '11,76')}>11,76</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '13,61')}>13,61</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '16,08')}>16,08</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '17,96')}>17,96</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '18,68')}>18,68</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '17,81')}>17,81</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '15,52')}>15,52</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '12,50')}>12,50</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '10,37')}>10,37</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Point de rosée °C', '13,68 (table : 8,4)')}>13,68 (table : 8,4)</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Point de rosée °C', '—')}>—</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '9,38')}>9,38</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '9,74')}>9,74</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '10,77')}>10,77</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '11,76')}>11,76</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '13,61')}>13,61</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '16,08')}>16,08</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '17,96')}>17,96</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '18,68')}>18,68</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '17,81')}>17,81</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '15,52')}>15,52</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '12,50')}>12,50</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '10,37')}>10,37</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Point de rosée °C', '13,68 (table : 8,4)')}>13,68 (table : 8,4)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Point de rosée °C', '—')}>—</td>
                   </tr>
                   <tr className="bg-white">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-white z-10">Ensoleillement h</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '182,9')}>182,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '184,8')}>184,8</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '244,9')}>244,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '270,0')}>270,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '313,1')}>313,1</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '318,0')}>318,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '347,2')}>347,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '331,7')}>331,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '282,0')}>282,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '248,0')}>248,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '195,0')}>195,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '182,9')}>182,9</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('Ensoleillement h', '3 110,5')}>3 110,5</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('Ensoleillement h', '3 005,7')}>3 005,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '182,9')}>182,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '184,8')}>184,8</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '244,9')}>244,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '270,0')}>270,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '313,1')}>313,1</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '318,0')}>318,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '347,2')}>347,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '331,7')}>331,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '282,0')}>282,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '248,0')}>248,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '195,0')}>195,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '182,9')}>182,9</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('Ensoleillement h', '3 110,5')}>3 110,5</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('Ensoleillement h', '3 005,7')}>3 005,7</td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="border border-gray-300 px-2 py-1 font-medium sticky left-0 bg-gray-50 z-10">% ensoleillement possible</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '69,4')}>69,4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '66,0')}>66,0</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '66,4')}>66,4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '66,7')}>66,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '67,3')}>67,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '66,3')}>66,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '72,3')}>72,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '76,4')}>76,4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '75,2')}>75,2</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '72,7')}>72,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '68,4')}>68,4</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '73,7')}>73,7</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cellStyle('% ensoleillement possible', '70,3')}>70,3</td>
-                    <td className="border border-gray-300 px-2 py-1 text-center" style={cellStyle('% ensoleillement possible', '—')}>—</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '69,4')}>69,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '66,0')}>66,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '66,4')}>66,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '66,7')}>66,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '67,3')}>67,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '66,3')}>66,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '72,3')}>72,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '76,4')}>76,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '75,2')}>75,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '72,7')}>72,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '68,4')}>68,4</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '73,7')}>73,7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center font-semibold" style={cs('% ensoleillement possible', '70,3')}>70,3</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center" style={cs('% ensoleillement possible', '—')}>—</td>
                   </tr>
                 </tbody>
               </table>
