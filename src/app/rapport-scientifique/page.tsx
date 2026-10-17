@@ -527,124 +527,95 @@ export default function RapportScientifiquePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE II â€” ANALOGUES CLIMATIQUES DU MAROC ET DU MAGHREB</CardTitle>
+          <CardTitle>PARTIE II — ANALOGUES DU MAROC ET DU MAGHREB</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
-            <h3 className="text-xl font-semibold mb-2">Analogues nationaux et rÃ©gionaux</h3>
-            
-            <div className="space-y-4">
-              <h4 className="text-lg font-semibold">2.1. CatÃ©gorie 1 â€” Climats pratiquement identiques (similaritÃ© 97â€“100 %)</h4>
-              
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.1.1. Taourirt (Province de Taourirt, RÃ©gion de lâ€™Oriental, Maroc) â€” SimilaritÃ© climatique â‰ˆ 99 %</h5>
-                <p className="text-justify">
-                  Taourirt, situÃ©e Ã  environ 55 km Ã  lâ€™est de KÃ©nitra, dans le mÃªme couloir de la basse Moulouya, Ã  une altitude comparable de 415 m, constitue de trÃ¨s loin lâ€™analogue le plus parfait de KÃ©nitra Ã  lâ€™Ã©chelle planÃ©taire. Les tempÃ©ratures moyennes annuelles y sont pratiquement identiques, 18,7 Â°C contre 18,9 Â°C, les prÃ©cipitations avoisinent 240 mm avec le mÃªme rÃ©gime Â« moulouyen Â» Ã  double maximum Ã©quinoxial, lâ€™insolation y dÃ©passe 3 100 h, lâ€™humiditÃ© relative estivale y chute Ã  38â€“40 %, et le chergui y souffle avec une violence comparable. Les rares diffÃ©rences observables tiennent Ã  une trÃ¨s lÃ©gÃ¨re majoration des prÃ©cipitations printaniÃ¨res Ã  Taourirt, du fait dâ€™une proximitÃ© un peu plus sensible des reliefs des Beni-Snassen, ainsi quâ€™Ã  des minimales hivernales lÃ©gÃ¨rement moins basses, sous lâ€™effet de lâ€™ouverture du couloir en direction de la MÃ©diterranÃ©e. Sur les plans botanique et agronomique, la totalitÃ© des espÃ¨ces cultivÃ©es Ã  KÃ©nitra â€” olivier, agrumes en irrigation, palmier dattier en bordure, vigne de cuve, grenadier, figuier, amandier, pistachier â€” y prÃ©sente un comportement rigoureusement identique. Le zonage USDA 10a est Ã©galement partagÃ©. Aucune diffÃ©rence agroclimatique significative nâ€™y est dÃ©celable.
-                </p>
-              </div>
+            <h3 className="text-xl font-semibold mb-4">2.1. Catégorie 1 — Climats quasi identiques (analogie très forte)</h3>
 
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.1.2. Missour (Province de Boulemane, plaine de la haute Moulouya) â€” SimilaritÃ© â‰ˆ 96 %</h5>
-                <p className="text-justify">
-                  Missour, situÃ©e Ã  environ 100 km au sud-sud-ouest de KÃ©nitra, dans la haute Moulouya Ã  900 m dâ€™altitude, prÃ©sente une signature trÃ¨s proche, bien que lÃ©gÃ¨rement plus continentalisÃ©e du fait de lâ€™altitude. Les prÃ©cipitations annuelles y sont sensiblement Ã©quivalentes, de lâ€™ordre de 195 Ã  220 mm, lâ€™insolation y dÃ©passe 3 100 h, mais les hivers y sont notablement plus rigoureux, avec une Tmin de janvier proche de 2 Â°C et des records pouvant descendre jusquâ€™Ã  âˆ’10 Â°C, tandis que les Ã©tÃ©s y sont lÃ©gÃ¨rement moins torrides, la Tmax de juillet se situant aux alentours de 35 Â°C. Les gelÃ©es y sont plus frÃ©quentes, de lâ€™ordre de 25 Ã  40 nuits par an, contre 15 Ã  20 Ã  KÃ©nitra, ce qui entraÃ®ne de vÃ©ritables consÃ©quences horticoles : le palmier dattier y demeure cultivable, mais avec un risque accru de brÃ»lures foliaires hivernales sur les jeunes feuilles ; les agrumes sensibles, tels que le citronnier et la lime, requiÃ¨rent une protection plus stricte. En revanche, la vigne, lâ€™amandier, le pistachier et lâ€™olivier y prospÃ¨rent de maniÃ¨re identique.
-                </p>
-              </div>
-
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.1.3. Outat El Haj (Province de Boulemane) â€” SimilaritÃ© â‰ˆ 97 %</h5>
-                <p className="text-justify">
-                  Outat El Haj, dans la moyenne Moulouya Ã  environ 800 m dâ€™altitude, se rapproche de Missour tout en demeurant plus chaude que cette derniÃ¨re en Ã©tÃ©. Le rÃ©gime pluviomÃ©trique y est extrÃªmement proche de celui de KÃ©nitra, avec environ 220 mm annuels et un maximum printanier prononcÃ©. Les diffÃ©rences sont marginales et se limitent Ã  une insolation trÃ¨s lÃ©gÃ¨rement infÃ©rieure ainsi quâ€™Ã  des minimales hivernales plus basses dâ€™environ 1 Ã  2 Â°C. Le comportement des cultures y est identique Ã  celui observÃ© Ã  KÃ©nitra, avec un trÃ¨s lÃ©ger dÃ©savantage pour les agrumes prÃ©coces.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.1.1. Larache (Province de Larache, Maroc) — Similarité S = 59,3 % (D = 0,522)</h5>
+              <p className="text-justify">
+                Larache (35°11′ N, 6°09′ O), à 120 km au nord-nord-est de Kénitra sur la même façade atlantique, constitue l'analogue marocain le plus proche de Kénitra hors du Gharb. Climat Csa, température moyenne annuelle 18,2 °C (contre 18,6 °C), précipitations 700,5 mm (contre 571 mm), moyenne des maximales d'août 28,7 °C (identique à Kénitra), moyenne des minimales de janvier 8,2 °C, record haut 46,4 °C, record bas −3,0 °C. Les différences sont pluviométriques : Larache reçoit environ 130 mm de plus, ce qui s'explique par sa position plus septentrionale, plus directement exposée aux perturbations atlantiques hivernales. Les deux villes partagent : régime pluviométrique à maximum hivernal, sécheresse estivale absolue, hiver sans gel, humidité élevée, vent de secteur nord. Aucune différence agroclimatique significative : la palette culturale (agrumes irrigués, céréales, betterave, maraîchage) est identique, et Larache est même un pôle marocain de la fraise et du maraîchage d'exportation.
+              </p>
             </div>
 
-            <div className="space-y-4 mt-6">
-              <h4 className="text-lg font-semibold">2.2. CatÃ©gorie 2 â€” Climats extrÃªmement similaires (similaritÃ© 92â€“97 %)</h4>
-              
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.2.1. Oujda (chef-lieu de la RÃ©gion de lâ€™Oriental) â€” SimilaritÃ© â‰ˆ 93 %</h5>
-                <p className="text-justify">
-                  Oujda, Ã  470 m dâ€™altitude, est davantage ouverte aux influences mÃ©diterranÃ©ennes indirectes par le couloir Taourirtâ€“Oujda. La pluviomÃ©trie y est lÃ©gÃ¨rement supÃ©rieure, de lâ€™ordre de 330 mm, les Ã©tÃ©s y sont un peu moins secs et lÃ©gÃ¨rement moins torrides, avec une Tmax de juillet proche de 34 Â°C, mais la structure saisonniÃ¨re demeure trÃ¨s fidÃ¨le Ã  celle de KÃ©nitra. Du point de vue agronomique, Oujda autorise une agriculture pluviale un peu plus assurÃ©e, tout en conservant une palette culturale identique.
-                </p>
-              </div>
-
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.2.2. Berkane et la plaine des Triffa â€” SimilaritÃ© â‰ˆ 88 %</h5>
-                <p className="text-justify">
-                  La plaine des Triffa, rÃ©putÃ©e pour son agrumiculture, est nettement plus arrosÃ©e, avec 350 Ã  400 mm annuels, et sensiblement plus douce en hiver du fait de la proximitÃ© mÃ©diterranÃ©enne. La comparaison nâ€™est vÃ©ritablement pertinente que pour la pÃ©riode estivale, au cours de laquelle les tempÃ©ratures maximales approchent celles de KÃ©nitra. La similaritÃ© globale demeure nÃ©anmoins limitÃ©e par lâ€™influence maritime.
-                </p>
-              </div>
-
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.2.3. Midelt (Province de Midelt) â€” SimilaritÃ© â‰ˆ 78 %</h5>
-                <p className="text-justify">
-                  Midelt, Ã  1 500 m dâ€™altitude, prÃ©sente un climat semi-aride de haute altitude beaucoup plus rigoureux en hiver, avec une Tmin de janvier proche de âˆ’1 Â°C et 60 Ã  80 nuits de gel par an, mais des Ã©tÃ©s comparables en journÃ©e. Lâ€™analogie y demeure partielle et concerne principalement le rÃ©gime hydrique.
-                </p>
-              </div>
-
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.2.4. Erfoud, Rissani, Errachidia (vallÃ©e du Ziz, prÃ©sahariens marocains) â€” SimilaritÃ© â‰ˆ 82 %</h5>
-                <p className="text-justify">
-                  Ces stations prÃ©sahariennes prÃ©sentent une pluviomÃ©trie plus faible encore, de lâ€™ordre de 100 Ã  130 mm, ainsi que des Ã©tÃ©s significativement plus chauds, avec des Tmax de juillet comprises entre 40 et 42 Â°C en moyenne. En revanche, leur rÃ©gime dâ€™ensoleillement, leur humiditÃ© et leur continentalitÃ© sont extrÃªmement voisins de ceux de KÃ©nitra. Il sâ€™agit dâ€™analogues Â« chauds Â» de KÃ©nitra, dÃ©calÃ©s vers lâ€™ariditÃ© dÃ©sertique. Le palmier dattier y trouve son optimum, alors quâ€™Ã  KÃ©nitra il vit Ã  la limite septentrionale de son domaine nord-africain.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.1.2. Rabat-Salé (Région Rabat-Salé-Kénitra, Maroc) — Similarité S ≈ 57 % (Salé : D ≈ 0,56)</h5>
+              <p className="text-justify">
+                Salé (34°02′ N, 6°48′ O) présente une température moyenne annuelle de 17,7 °C, des précipitations de 521,9 mm, une moyenne des maximales d'août de 27,8 °C, une moyenne des minimales de janvier de 7,2 °C, avec des records de 47,2 °C et −3,2 °C ; climat Csa. Rabat-Salé est la ville-jumelle climatique immédiate de Kénitra, à 40 km au sud-ouest : même influence océanique, même régime, même humidité, même absence de gel structurel. L'écart principal est une pluviométrie inférieure d'environ 50 mm et un été légèrement moins chaud. Il faut souligner que Rabat-Salé et Kénitra forment, avec Casablanca, un continuum littoral atlantique marocain dont la signature est remarquablement homogène sur près de 250 km de côte.
+              </p>
             </div>
 
-            <div className="space-y-4 mt-6">
-              <h4 className="text-lg font-semibold">2.3. Analogues algÃ©riens (analogies trÃ¨s fortes Ã  parfaites)</h4>
-              
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.3.1. Tlemcen (versant sud) et Sebdou â€” SimilaritÃ© â‰ˆ 92 %</h5>
-                <p className="text-justify">
-                  Sur le versant sud des monts de Tlemcen, Ã  des altitudes comparables de 800 Ã  1 000 m, le climat devient trÃ¨s semblable Ã  celui de KÃ©nitra, avec une pluviomÃ©trie de 300 Ã  350 mm, un maximum Ã©quinoxial marquÃ©, des Ã©tÃ©s secs et chauds, et une continentalitÃ© comparable.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.1.3. Casablanca (Maroc) — Similarité S = 52,6 % (D = 0,642 ; couverture 100 %)</h5>
+              <p className="text-justify">
+                Casablanca (33°32′ N, 7°35′ O) : Csa, T = 18,6 °C, P = 408,2 mm, moyenne des maximales d'août 26,7 °C, moyenne des minimales de janvier 8,9 °C, humidité relative 82 %, ensoleillement 3 030 h, records 42,2 °C / 0,3 °C. C'est le seul analogue dont les six variables du modèle sont renseignées (couverture 100 %), ce qui en fait un point d'ancrage statistique solide. La divergence est pluviométrique : 163 mm de moins que Kénitra, ce qui rapproche Casablanca du seuil semi-aride et réduit sa similarité globale. Sur le plan de la température annuelle (18,6 °C, identique) et de l'humidité (82 % vs 76 %), la convergence est en revanche quasi parfaite.
+              </p>
+            </div>
+          </section>
 
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.3.2. AÃ¯n Sefra, NaÃ¢ma, MÃ©cheria (Hauts Plateaux occidentaux algÃ©riens) â€” SimilaritÃ© â‰ˆ 90 %</h5>
-                <p className="text-justify">
-                  Ces stations, situÃ©es entre 900 et 1 100 m sur les Hauts Plateaux algÃ©riens, prÃ©sentent une signature remarquablement proche de celle de KÃ©nitra, avec toutefois une continentalitÃ© accrue du fait de lâ€™altitude : hivers plus froids, avec Tmin de janvier de 0 Ã  2 Â°C et records atteignant âˆ’12 Â°C, Ã©tÃ©s trÃ¨s chauds et secs, avec Tmax de juillet de 35 Ã  37 Â°C, et pluviomÃ©trie de 180 Ã  250 mm Ã  rÃ©partition mars-avril-mai marquÃ©e. Il sâ€™agit de la Â« ceinture steppique Â» nord-africaine, dont KÃ©nitra constitue lâ€™extrÃ©mitÃ© occidentale.
-                </p>
-              </div>
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">2.2. Catégorie 2 — Climats extrêmement similaires</h3>
 
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.3.3. Djelfa, Laghouat, Bou SaÃ¢da (Hauts Plateaux centraux) â€” SimilaritÃ© â‰ˆ 87â€“91 %</h5>
-                <p className="text-justify">
-                  Djelfa, Ã  1 130 m, prÃ©sente une continentalitÃ© plus marquÃ©e, avec un record de âˆ’10,7 Â°C, tandis que Laghouat, plus mÃ©ridionale et situÃ©e Ã  750 m, tend davantage vers un climat aride chaud. La transition KÃ©nitra â†’ Djelfa â†’ Laghouat illustre parfaitement le gradient allant du semi-aride tempÃ©rÃ© vers le semi-aride dÃ©sertique.
-                </p>
-              </div>
-
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.3.4. Batna, Khenchela, AÃ¯n BeÃ¯da (Hauts Plateaux orientaux) â€” SimilaritÃ© â‰ˆ 86 %</h5>
-                <p className="text-justify">
-                  Batna, Ã  1 040 m, est lÃ©gÃ¨rement plus fraÃ®che, avec une tempÃ©rature moyenne annuelle dâ€™environ 14 Â°C, et plus arrosÃ©e, avec environ 350 mm. Elle est donc moins analogue sur le plan thermique, mais demeure trÃ¨s analogue du point de vue hygromÃ©trique et de la structure saisonniÃ¨re.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.2.1. Tanger (Maroc) — Similarité S = 53,4 % (D = 0,628 ; couverture 100 %)</h5>
+              <p className="text-justify">
+                Tanger (35°47′ N, 5°48′ O) : Csa, T = 17,7 °C, P = 735,9 mm, moyenne des maximales d'août 28,6 °C, moyenne des minimales de janvier 8,8 °C, humidité relative 76 % (identique à Kénitra), ensoleillement 2 960,7 h. L'écart pluviométrique (+165 mm) pénalise le score, mais la convergence hygrométrique (76 % vs 76 %) et thermique est remarquable. Tanger relève de la même famille « méditerranéen océanique du détroit » que Larache et Kénitra.
+              </p>
             </div>
 
-            <div className="space-y-4 mt-6">
-              <h4 className="text-lg font-semibold">2.4. Analogues tunisiens et libyens</h4>
-              
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.4.1. Kasserine, SbeÃ¯tla, Gafsa (centre-ouest tunisien) â€” SimilaritÃ© â‰ˆ 91 %</h5>
-                <p className="text-justify">
-                  Kasserine, Ã  670 m, prÃ©sente environ 260 mm annuels, un rÃ©gime pluviomÃ©trique Ã  double maximum Ã©quinoxial, des Ã©tÃ©s trÃ¨s chauds, avec une Tmax de juillet de 36 Ã  37 Â°C, une humiditÃ© estivale basse, et une insolation supÃ©rieure Ã  3 000 h. Il sâ€™agit de lâ€™un des meilleurs analogues extra-marocains de KÃ©nitra. SbeÃ¯tla et Gafsa complÃ¨tent cet ensemble, avec une inflexion vers une ariditÃ© plus chaude dans le cas de Gafsa.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.2.2. El Jadida (Maroc) — Similarité S ≈ 49 % (D ≈ 0,71)</h5>
+              <p className="text-justify">
+                El Jadida (33°14′ N, 8°30′ O) : Csa, T = 17,4 °C, P = 372 mm, moyenne des maximales d'août 27,9 °C, moyenne des minimales de janvier 7,6 °C. Même structure thermique et hygrométrique, mais pluviométrie très inférieure (−199 mm), ce qui l'éloigne davantage que Casablanca.
+              </p>
+            </div>
 
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.4.2. Le Kef, Siliana (dorsale tunisienne intÃ©rieure) â€” SimilaritÃ© â‰ˆ 84 %</h5>
-                <p className="text-justify">
-                  Ces stations sont lÃ©gÃ¨rement plus arrosÃ©es, mais prÃ©sentent la mÃªme signature thermique.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.2.3. Sidi Kacem et Souk El Arbaa (Gharb intérieur) — Similarité ≈ 85-90 %</h5>
+              <p className="text-justify">
+                Sidi Kacem (34°13′ N, 5°42′ O, 194 m) et Souk El Arbaa (34°40′ N, 5°58′ O), toutes deux dans la région de Kénitra, présentent un climat plus continentalisé que Kénitra : « étés chauds à très chauds, pointes entre 32 et 36 °C ; hivers relativement frais, les minima passant parfois sous le point de congélation ; précipitations annuelles de 350 à 600 mm ». Il s'agit d'analogues intra-régionaux dégradés par la continentalité : le gradient Kénitra → Sidi Kacem → Sidi Slimane illustre le passage du littoral océanique tempéré à l'intérieur semi-aride du Gharb, gradient décrit dans la littérature sous la forme d'un « climat subhumide au nord-ouest, semi-aride au sud et à l'est ».
+              </p>
+            </div>
 
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">2.4.3. Nalut, Yefren (Djebel Nefoussa libyen) â€” SimilaritÃ© â‰ˆ 89 %</h5>
-                <p className="text-justify">
-                  Le Djebel Nefoussa, entre 700 et 900 m dâ€™altitude, prÃ©sente une combinatoire climatique remarquablement proche de celle de KÃ©nitra : 200 Ã  280 mm annuels, une insolation supÃ©rieure Ã  3 200 h, des Ã©tÃ©s trÃ¨s chauds, et des hivers frais oÃ¹ des gelÃ©es demeurent possibles.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.2.4. Essaouira (Maroc) — Similarité S = 31,1 % (D = 1,169)</h5>
+              <p className="text-justify">
+                Essaouira (31°30′ N, 9°46′ O) : BSk/BSh, T = 17,9 °C, P = 364,2 mm, moyenne des maximales de septembre 22,4 °C (remarquablement fraîche, reflet d'un upwelling intense), moyenne des minimales de janvier 11,2 °C, ensoleillement 2 978,5 h. Essaouira constitue un analogue « océanique froid » extrême : la température annuelle est proche, mais l'été y est beaucoup plus frais (22,4 °C contre 28,7 °C de moyenne des maximales). Elle délimite la borne froide de la famille des analogues atlantiques marocains.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">2.3. Analogues algériens et tunisiens</h3>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.3.1. Mostaganem (Algérie) — Similarité S ≈ 46 % (D ≈ 0,78)</h5>
+              <p className="text-justify">
+                Mostaganem (35°56′ N, 0°05′ E, 104 m) : Csa, T = 17,9 °C, P = 347 mm, moyenne des maximales de juillet 31,6 °C, moyenne des minimales de janvier 5,8 °C, records 45,9 °C / −2,2 °C. Convergence thermique annuelle forte, divergence pluviométrique (−224 mm) et continentale hivernale (minima plus bas).
+              </p>
+            </div>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.3.2. Tlemcen (Algérie) — Similarité ≈ 40 %</h5>
+              <p className="text-justify">
+                Tlemcen (34°53′ N, 1°19′ O, 842 m) : Csa, T = 17,2 °C, P = 444,8 mm, moyenne des maximales d'août 33,6 °C, moyenne des minimales de janvier 5,3 °C. La température annuelle est très proche, mais l'altitude et la continentalité accroissent l'amplitude et les extrêmes hivernaux, ce qui dégrade l'analogie avec le littoral kénitrien.
+              </p>
+            </div>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.3.3. Bizerte (Tunisie) — Similarité S ≈ 50 % (D ≈ 0,69)</h5>
+              <p className="text-justify">
+                Bizerte (37°16′ N, 9°51′ E, 5 m) : Csa, T = 18,6 °C (identique à Kénitra), P = 653,2 mm, moyenne des maximales d'août 33,2 °C, moyenne des minimales de janvier 7,1 °C, ensoleillement 3 026,9 h, records 48,9 °C / −4,2 °C. C'est le meilleur analogue tunisien : même température annuelle, pluviométrie du même ordre, mais été nettement plus chaud (33,2 °C contre 28,7 °C) car Bizerte n'est pas rafraîchie par un upwelling atlantique équivalent.
+              </p>
+            </div>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">2.3.4. Béja et Tunis (Tunisie)</h5>
+              <p className="text-justify">
+                Béja (36°44′ N, 9°11′ E, 222 m) : Csa, T = 18,3 °C, P = 610,5 mm, moyenne des maximales d'août 36,7 °C, moyenne des minimales de février 4,8 °C, records 48,9 °C / −4,5 °C. Tunis (36°48′ N, 10°10′ E) : Csa, T = 19,2 °C, P = 555,2 mm, moyenne des maximales de juillet 33,0 °C, moyenne des minimales de janvier 5,6 °C, records 49,0 °C / 2,0 °C. Ces deux stations partagent la pluviométrie et la température annuelle de Kénitra mais pas son été tempéré ni son humidité.
+              </p>
             </div>
           </section>
         </CardContent>
