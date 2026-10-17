@@ -1,0 +1,18 @@
+{
+  "date": "2015-04-19",
+  "weather_code": 2,
+  "temp_max": 19.4,
+  "temp_min": 12.6,
+  "temp_mean": 16.1,
+  "precipitation": 0,
+  "sunshine": 46598.18,
+  "wind_speed_max": 18.9,
+  "sunrise": "2015-04-19T06:50",
+  "sunset": "2015-04-19T20:00",
+  "sunshine_duration_seconds": 46598.18,
+  "sunshine_duration_minutes": 777,
+  "estimated_daily_sunshine_minutes": 705,
+  "estimated_daily_sunshine": "11 h 45 min",
+  "sunshine_difference_minutes": 72,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2017-05-17",
+  "weather_code": 3,
+  "temp_max": 28.7,
+  "temp_min": 15.2,
+  "temp_mean": 21.9,
+  "precipitation": 0,
+  "sunshine": 47312.43,
+  "wind_speed_max": 13.8,
+  "sunrise": "2017-05-17T06:22",
+  "sunset": "2017-05-17T20:23",
+  "sunshine_duration_seconds": 47312.43,
+  "sunshine_duration_minutes": 789,
+  "estimated_daily_sunshine_minutes": 171,
+  "estimated_daily_sunshine": "2 h 51 min",
+  "sunshine_difference_minutes": 618,
+  "sunshine_consistency": "Faible"
+}

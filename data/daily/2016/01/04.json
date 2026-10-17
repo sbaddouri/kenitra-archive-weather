@@ -1,0 +1,18 @@
+{
+  "date": "2016-01-04",
+  "weather_code": 51,
+  "temp_max": 19.5,
+  "temp_min": 16.7,
+  "temp_mean": 17.8,
+  "precipitation": 0.8,
+  "sunshine": 30137.18,
+  "wind_speed_max": 25.1,
+  "sunrise": "2016-01-04T08:32",
+  "sunset": "2016-01-04T18:29",
+  "sunshine_duration_seconds": 30137.18,
+  "sunshine_duration_minutes": 502,
+  "estimated_daily_sunshine_minutes": 189,
+  "estimated_daily_sunshine": "3 h 09 min",
+  "sunshine_difference_minutes": 313,
+  "sunshine_consistency": "Faible"
+}

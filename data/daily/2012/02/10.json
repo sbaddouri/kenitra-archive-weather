@@ -1,0 +1,18 @@
+{
+  "date": "2012-02-10",
+  "weather_code": 0,
+  "temp_max": 13.3,
+  "temp_min": 6.5,
+  "temp_mean": 10,
+  "precipitation": 0,
+  "sunshine": 38329.92,
+  "wind_speed_max": 14.3,
+  "sunrise": "2012-02-10T08:16",
+  "sunset": "2012-02-10T19:04",
+  "sunshine_duration_seconds": 38329.92,
+  "sunshine_duration_minutes": 639,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 21,
+  "sunshine_consistency": "Moyen"
+}

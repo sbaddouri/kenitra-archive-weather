@@ -1,0 +1,18 @@
+{
+  "date": "2015-02-10",
+  "weather_code": 51,
+  "temp_max": 15.9,
+  "temp_min": 9.8,
+  "temp_mean": 12.8,
+  "precipitation": 0.3,
+  "sunshine": 37775.18,
+  "wind_speed_max": 11.5,
+  "sunrise": "2015-02-10T08:16",
+  "sunset": "2015-02-10T19:04",
+  "sunshine_duration_seconds": 37775.18,
+  "sunshine_duration_minutes": 630,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 45,
+  "sunshine_consistency": "Faible"
+}

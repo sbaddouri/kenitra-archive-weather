@@ -1,0 +1,18 @@
+{
+  "date": "2013-02-26",
+  "weather_code": 3,
+  "temp_max": 16.9,
+  "temp_min": 8,
+  "temp_mean": 12.1,
+  "precipitation": 0,
+  "sunshine": 39426.81,
+  "wind_speed_max": 17.4,
+  "sunrise": "2013-02-26T07:58",
+  "sunset": "2013-02-26T19:19",
+  "sunshine_duration_seconds": 39426.81,
+  "sunshine_duration_minutes": 657,
+  "estimated_daily_sunshine_minutes": 513,
+  "estimated_daily_sunshine": "8 h 33 min",
+  "sunshine_difference_minutes": 144,
+  "sunshine_consistency": "Faible"
+}

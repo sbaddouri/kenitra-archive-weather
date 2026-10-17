@@ -1,0 +1,18 @@
+{
+  "date": "2016-05-08",
+  "weather_code": 63,
+  "temp_max": 17.4,
+  "temp_min": 15.3,
+  "temp_mean": 16.9,
+  "precipitation": 17.8,
+  "sunshine": 3028.99,
+  "wind_speed_max": 26.4,
+  "sunrise": "2016-05-08T06:29",
+  "sunset": "2016-05-08T20:16",
+  "sunshine_duration_seconds": 3028.99,
+  "sunshine_duration_minutes": 50,
+  "estimated_daily_sunshine_minutes": 123,
+  "estimated_daily_sunshine": "2 h 03 min",
+  "sunshine_difference_minutes": 73,
+  "sunshine_consistency": "Faible"
+}

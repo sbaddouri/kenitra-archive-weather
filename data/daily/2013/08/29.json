@@ -1,0 +1,18 @@
+{
+  "date": "2013-08-29",
+  "weather_code": 3,
+  "temp_max": 24.9,
+  "temp_min": 20.5,
+  "temp_mean": 22.6,
+  "precipitation": 0,
+  "sunshine": 41090.91,
+  "wind_speed_max": 18.1,
+  "sunrise": "2013-08-29T06:57",
+  "sunset": "2013-08-29T19:56",
+  "sunshine_duration_seconds": 41090.91,
+  "sunshine_duration_minutes": 685,
+  "estimated_daily_sunshine_minutes": 375,
+  "estimated_daily_sunshine": "6 h 15 min",
+  "sunshine_difference_minutes": 310,
+  "sunshine_consistency": "Faible"
+}

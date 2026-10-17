@@ -1,0 +1,18 @@
+{
+  "date": "2014-03-14",
+  "weather_code": 1,
+  "temp_max": 18.2,
+  "temp_min": 11.7,
+  "temp_mean": 14.8,
+  "precipitation": 0,
+  "sunshine": 40124.45,
+  "wind_speed_max": 15.9,
+  "sunrise": "2014-03-14T07:38",
+  "sunset": "2014-03-14T19:32",
+  "sunshine_duration_seconds": 40124.45,
+  "sunshine_duration_minutes": 669,
+  "estimated_daily_sunshine_minutes": 690,
+  "estimated_daily_sunshine": "11 h 30 min",
+  "sunshine_difference_minutes": 21,
+  "sunshine_consistency": "Moyen"
+}

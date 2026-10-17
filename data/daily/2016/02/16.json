@@ -1,0 +1,18 @@
+{
+  "date": "2016-02-16",
+  "weather_code": 2,
+  "temp_max": 12.9,
+  "temp_min": 9.3,
+  "temp_mean": 11.5,
+  "precipitation": 0,
+  "sunshine": 38697.31,
+  "wind_speed_max": 17.7,
+  "sunrise": "2016-02-16T08:10",
+  "sunset": "2016-02-16T19:10",
+  "sunshine_duration_seconds": 38697.31,
+  "sunshine_duration_minutes": 645,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 45,
+  "sunshine_consistency": "Faible"
+}

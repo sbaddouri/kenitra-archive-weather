@@ -1,0 +1,18 @@
+{
+  "date": "2014-03-28",
+  "weather_code": 53,
+  "temp_max": 12.7,
+  "temp_min": 10.7,
+  "temp_mean": 11.9,
+  "precipitation": 5.2,
+  "sunshine": 3987.22,
+  "wind_speed_max": 19.5,
+  "sunrise": "2014-03-28T07:19",
+  "sunset": "2014-03-28T19:43",
+  "sunshine_duration_seconds": 3987.22,
+  "sunshine_duration_minutes": 66,
+  "estimated_daily_sunshine_minutes": 162,
+  "estimated_daily_sunshine": "2 h 42 min",
+  "sunshine_difference_minutes": 96,
+  "sunshine_consistency": "Faible"
+}

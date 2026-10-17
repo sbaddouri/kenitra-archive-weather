@@ -1,0 +1,18 @@
+{
+  "date": "2017-04-29",
+  "weather_code": 55,
+  "temp_max": 21.5,
+  "temp_min": 16.2,
+  "temp_mean": 18.5,
+  "precipitation": 1.8,
+  "sunshine": 46800,
+  "wind_speed_max": 22,
+  "sunrise": "2017-04-29T06:38",
+  "sunset": "2017-04-29T20:09",
+  "sunshine_duration_seconds": 46800,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 528,
+  "estimated_daily_sunshine": "8 h 48 min",
+  "sunshine_difference_minutes": 252,
+  "sunshine_consistency": "Faible"
+}

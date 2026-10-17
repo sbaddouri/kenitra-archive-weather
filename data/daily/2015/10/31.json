@@ -1,0 +1,18 @@
+{
+  "date": "2015-10-31",
+  "weather_code": 51,
+  "temp_max": 22.3,
+  "temp_min": 17.7,
+  "temp_mean": 19.3,
+  "precipitation": 0.9,
+  "sunshine": 33201.1,
+  "wind_speed_max": 19,
+  "sunrise": "2015-10-31T07:44",
+  "sunset": "2015-10-31T18:34",
+  "sunshine_duration_seconds": 33201.1,
+  "sunshine_duration_minutes": 553,
+  "estimated_daily_sunshine_minutes": 351,
+  "estimated_daily_sunshine": "5 h 51 min",
+  "sunshine_difference_minutes": 202,
+  "sunshine_consistency": "Faible"
+}

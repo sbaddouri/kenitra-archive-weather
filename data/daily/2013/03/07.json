@@ -1,0 +1,18 @@
+{
+  "date": "2013-03-07",
+  "weather_code": 53,
+  "temp_max": 19.3,
+  "temp_min": 16.3,
+  "temp_mean": 17.6,
+  "precipitation": 3.8,
+  "sunshine": 27281.5,
+  "wind_speed_max": 31.6,
+  "sunrise": "2013-03-07T07:47",
+  "sunset": "2013-03-07T19:27",
+  "sunshine_duration_seconds": 27281.5,
+  "sunshine_duration_minutes": 455,
+  "estimated_daily_sunshine_minutes": 237,
+  "estimated_daily_sunshine": "3 h 57 min",
+  "sunshine_difference_minutes": 218,
+  "sunshine_consistency": "Faible"
+}

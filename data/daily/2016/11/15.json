@@ -1,0 +1,18 @@
+{
+  "date": "2016-11-15",
+  "weather_code": 0,
+  "temp_max": 23,
+  "temp_min": 13.3,
+  "temp_mean": 17.9,
+  "precipitation": 0,
+  "sunshine": 35755.6,
+  "wind_speed_max": 24.1,
+  "sunrise": "2016-11-15T07:59",
+  "sunset": "2016-11-15T18:21",
+  "sunshine_duration_seconds": 35755.6,
+  "sunshine_duration_minutes": 596,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 64,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2013-03-04",
+  "weather_code": 61,
+  "temp_max": 18.9,
+  "temp_min": 12.9,
+  "temp_mean": 15.5,
+  "precipitation": 6.4,
+  "sunshine": 23778.09,
+  "wind_speed_max": 24.4,
+  "sunrise": "2013-03-04T07:51",
+  "sunset": "2013-03-04T19:24",
+  "sunshine_duration_seconds": 23778.09,
+  "sunshine_duration_minutes": 396,
+  "estimated_daily_sunshine_minutes": 195,
+  "estimated_daily_sunshine": "3 h 15 min",
+  "sunshine_difference_minutes": 201,
+  "sunshine_consistency": "Faible"
+}

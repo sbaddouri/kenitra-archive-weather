@@ -1,0 +1,18 @@
+{
+  "date": "2014-11-08",
+  "weather_code": 53,
+  "temp_max": 19.7,
+  "temp_min": 16.8,
+  "temp_mean": 18,
+  "precipitation": 5.8,
+  "sunshine": 27893.18,
+  "wind_speed_max": 18.4,
+  "sunrise": "2014-11-08T07:52",
+  "sunset": "2014-11-08T18:27",
+  "sunshine_duration_seconds": 27893.18,
+  "sunshine_duration_minutes": 465,
+  "estimated_daily_sunshine_minutes": 171,
+  "estimated_daily_sunshine": "2 h 51 min",
+  "sunshine_difference_minutes": 294,
+  "sunshine_consistency": "Faible"
+}

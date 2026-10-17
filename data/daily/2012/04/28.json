@@ -1,0 +1,18 @@
+{
+  "date": "2012-04-28",
+  "weather_code": 63,
+  "temp_max": 18.1,
+  "temp_min": 12.3,
+  "temp_mean": 14.6,
+  "precipitation": 17.5,
+  "sunshine": 31876.68,
+  "wind_speed_max": 29.2,
+  "sunrise": "2012-04-28T06:39",
+  "sunset": "2012-04-28T20:08",
+  "sunshine_duration_seconds": 31876.68,
+  "sunshine_duration_minutes": 531,
+  "estimated_daily_sunshine_minutes": 234,
+  "estimated_daily_sunshine": "3 h 54 min",
+  "sunshine_difference_minutes": 297,
+  "sunshine_consistency": "Faible"
+}

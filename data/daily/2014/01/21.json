@@ -1,0 +1,18 @@
+{
+  "date": "2014-01-21",
+  "weather_code": 3,
+  "temp_max": 15.5,
+  "temp_min": 9.3,
+  "temp_mean": 12,
+  "precipitation": 0,
+  "sunshine": 35311.55,
+  "wind_speed_max": 12,
+  "sunrise": "2014-01-21T08:30",
+  "sunset": "2014-01-21T18:45",
+  "sunshine_duration_seconds": 35311.55,
+  "sunshine_duration_minutes": 589,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 19,
+  "sunshine_consistency": "Moyen"
+}

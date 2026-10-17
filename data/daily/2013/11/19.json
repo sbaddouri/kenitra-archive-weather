@@ -1,0 +1,18 @@
+{
+  "date": "2013-11-19",
+  "weather_code": 63,
+  "temp_max": 16.4,
+  "temp_min": 12.8,
+  "temp_mean": 14.7,
+  "precipitation": 13.8,
+  "sunshine": 33231.74,
+  "wind_speed_max": 16.8,
+  "sunrise": "2013-11-19T08:03",
+  "sunset": "2013-11-19T18:19",
+  "sunshine_duration_seconds": 33231.74,
+  "sunshine_duration_minutes": 554,
+  "estimated_daily_sunshine_minutes": 87,
+  "estimated_daily_sunshine": "1 h 27 min",
+  "sunshine_difference_minutes": 467,
+  "sunshine_consistency": "Faible"
+}

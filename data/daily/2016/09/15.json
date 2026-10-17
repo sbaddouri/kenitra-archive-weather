@@ -1,0 +1,18 @@
+{
+  "date": "2016-09-15",
+  "weather_code": 1,
+  "temp_max": 24.1,
+  "temp_min": 18.3,
+  "temp_mean": 20.8,
+  "precipitation": 0,
+  "sunshine": 42920.71,
+  "wind_speed_max": 20.8,
+  "sunrise": "2016-09-15T07:09",
+  "sunset": "2016-09-15T19:32",
+  "sunshine_duration_seconds": 42920.71,
+  "sunshine_duration_minutes": 715,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 55,
+  "sunshine_consistency": "Faible"
+}

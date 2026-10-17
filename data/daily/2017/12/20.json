@@ -1,0 +1,18 @@
+{
+  "date": "2017-12-20",
+  "weather_code": 2,
+  "temp_max": 17.9,
+  "temp_min": 8.5,
+  "temp_mean": 12.7,
+  "precipitation": 0,
+  "sunshine": 32862.01,
+  "wind_speed_max": 20.6,
+  "sunrise": "2017-12-20T08:27",
+  "sunset": "2017-12-20T18:19",
+  "sunshine_duration_seconds": 32862.01,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 22,
+  "sunshine_consistency": "Moyen"
+}

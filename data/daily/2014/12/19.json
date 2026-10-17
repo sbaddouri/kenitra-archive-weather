@@ -1,0 +1,18 @@
+{
+  "date": "2014-12-19",
+  "weather_code": 3,
+  "temp_max": 15.3,
+  "temp_min": 10.8,
+  "temp_mean": 12.5,
+  "precipitation": 0,
+  "sunshine": 26072.17,
+  "wind_speed_max": 8.1,
+  "sunrise": "2014-12-19T08:27",
+  "sunset": "2014-12-19T18:19",
+  "sunshine_duration_seconds": 26072.17,
+  "sunshine_duration_minutes": 435,
+  "estimated_daily_sunshine_minutes": 285,
+  "estimated_daily_sunshine": "4 h 45 min",
+  "sunshine_difference_minutes": 150,
+  "sunshine_consistency": "Faible"
+}

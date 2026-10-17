@@ -1,0 +1,18 @@
+{
+  "date": "2012-11-17",
+  "weather_code": 63,
+  "temp_max": 17.8,
+  "temp_min": 15.5,
+  "temp_mean": 16.8,
+  "precipitation": 25.5,
+  "sunshine": 27221.18,
+  "wind_speed_max": 23.6,
+  "sunrise": "2012-11-17T08:01",
+  "sunset": "2012-11-17T18:20",
+  "sunshine_duration_seconds": 27221.18,
+  "sunshine_duration_minutes": 454,
+  "estimated_daily_sunshine_minutes": 75,
+  "estimated_daily_sunshine": "1 h 15 min",
+  "sunshine_difference_minutes": 379,
+  "sunshine_consistency": "Faible"
+}

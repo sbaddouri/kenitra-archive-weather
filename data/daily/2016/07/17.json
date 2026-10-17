@@ -1,0 +1,18 @@
+{
+  "date": "2016-07-17",
+  "weather_code": 1,
+  "temp_max": 28.8,
+  "temp_min": 23,
+  "temp_mean": 25.6,
+  "precipitation": 0,
+  "sunshine": 47071.77,
+  "wind_speed_max": 15.6,
+  "sunrise": "2016-07-17T06:26",
+  "sunset": "2016-07-17T20:37",
+  "sunshine_duration_seconds": 47071.77,
+  "sunshine_duration_minutes": 785,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 55,
+  "sunshine_consistency": "Faible"
+}

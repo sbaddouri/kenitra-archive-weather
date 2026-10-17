@@ -1,0 +1,18 @@
+{
+  "date": "2015-05-16",
+  "weather_code": 0,
+  "temp_max": 25.9,
+  "temp_min": 14.7,
+  "temp_mean": 21.1,
+  "precipitation": 0,
+  "sunshine": 47338.01,
+  "wind_speed_max": 17.7,
+  "sunrise": "2015-05-16T06:23",
+  "sunset": "2015-05-16T20:21",
+  "sunshine_duration_seconds": 47338.01,
+  "sunshine_duration_minutes": 789,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 51,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2013-01-25",
+  "weather_code": 61,
+  "temp_max": 15.7,
+  "temp_min": 14.6,
+  "temp_mean": 15.1,
+  "precipitation": 22.3,
+  "sunshine": 0,
+  "wind_speed_max": 23,
+  "sunrise": "2013-01-25T08:28",
+  "sunset": "2013-01-25T18:49",
+  "sunshine_duration_seconds": 0,
+  "sunshine_duration_minutes": 0,
+  "estimated_daily_sunshine_minutes": 84,
+  "estimated_daily_sunshine": "1 h 24 min",
+  "sunshine_difference_minutes": 84,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2013-10-20",
+  "weather_code": 51,
+  "temp_max": 23.8,
+  "temp_min": 19.1,
+  "temp_mean": 21,
+  "precipitation": 0.5,
+  "sunshine": 37703.59,
+  "wind_speed_max": 16.7,
+  "sunrise": "2013-10-20T07:35",
+  "sunset": "2013-10-20T18:45",
+  "sunshine_duration_seconds": 37703.59,
+  "sunshine_duration_minutes": 628,
+  "estimated_daily_sunshine_minutes": 336,
+  "estimated_daily_sunshine": "5 h 36 min",
+  "sunshine_difference_minutes": 292,
+  "sunshine_consistency": "Faible"
+}

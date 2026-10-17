@@ -1,0 +1,18 @@
+{
+  "date": "2013-08-07",
+  "weather_code": 2,
+  "temp_max": 26.4,
+  "temp_min": 20.4,
+  "temp_mean": 22.9,
+  "precipitation": 0,
+  "sunshine": 46529.1,
+  "wind_speed_max": 17.4,
+  "sunrise": "2013-08-07T06:41",
+  "sunset": "2013-08-07T20:21",
+  "sunshine_duration_seconds": 46529.1,
+  "sunshine_duration_minutes": 775,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 5,
+  "sunshine_consistency": "Excellent"
+}

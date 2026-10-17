@@ -1,0 +1,18 @@
+{
+  "date": "2014-01-18",
+  "weather_code": 63,
+  "temp_max": 13.6,
+  "temp_min": 11.3,
+  "temp_mean": 12.3,
+  "precipitation": 27.6,
+  "sunshine": 24650.2,
+  "wind_speed_max": 27.9,
+  "sunrise": "2014-01-18T08:31",
+  "sunset": "2014-01-18T18:42",
+  "sunshine_duration_seconds": 24650.2,
+  "sunshine_duration_minutes": 411,
+  "estimated_daily_sunshine_minutes": 51,
+  "estimated_daily_sunshine": "0 h 51 min",
+  "sunshine_difference_minutes": 360,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2014-02-20",
+  "weather_code": 1,
+  "temp_max": 16.4,
+  "temp_min": 9.8,
+  "temp_mean": 12.9,
+  "precipitation": 0,
+  "sunshine": 38985.21,
+  "wind_speed_max": 11.9,
+  "sunrise": "2014-02-20T08:06",
+  "sunset": "2014-02-20T19:14",
+  "sunshine_duration_seconds": 38985.21,
+  "sunshine_duration_minutes": 650,
+  "estimated_daily_sunshine_minutes": 645,
+  "estimated_daily_sunshine": "10 h 45 min",
+  "sunshine_difference_minutes": 5,
+  "sunshine_consistency": "Excellent"
+}

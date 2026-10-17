@@ -1,0 +1,18 @@
+{
+  "date": "2013-12-22",
+  "weather_code": 0,
+  "temp_max": 17.8,
+  "temp_min": 10.3,
+  "temp_mean": 13.3,
+  "precipitation": 0,
+  "sunshine": 32891.56,
+  "wind_speed_max": 14.3,
+  "sunrise": "2013-12-22T08:29",
+  "sunset": "2013-12-22T18:20",
+  "sunshine_duration_seconds": 32891.56,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 52,
+  "sunshine_consistency": "Faible"
+}

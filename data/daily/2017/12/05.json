@@ -1,0 +1,18 @@
+{
+  "date": "2017-12-05",
+  "weather_code": 0,
+  "temp_max": 20.6,
+  "temp_min": 5.5,
+  "temp_mean": 11.5,
+  "precipitation": 0,
+  "sunshine": 34661.93,
+  "wind_speed_max": 11.5,
+  "sunrise": "2017-12-05T08:17",
+  "sunset": "2017-12-05T18:16",
+  "sunshine_duration_seconds": 34661.93,
+  "sunshine_duration_minutes": 578,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 22,
+  "sunshine_consistency": "Moyen"
+}

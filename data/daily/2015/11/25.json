@@ -1,0 +1,18 @@
+{
+  "date": "2015-11-25",
+  "weather_code": 1,
+  "temp_max": 18.1,
+  "temp_min": 11.3,
+  "temp_mean": 14.9,
+  "precipitation": 0,
+  "sunshine": 35223.77,
+  "wind_speed_max": 11.8,
+  "sunrise": "2015-11-25T08:08",
+  "sunset": "2015-11-25T18:17",
+  "sunshine_duration_seconds": 35223.77,
+  "sunshine_duration_minutes": 587,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 13,
+  "sunshine_consistency": "Bon"
+}

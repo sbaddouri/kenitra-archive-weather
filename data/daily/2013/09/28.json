@@ -1,0 +1,18 @@
+{
+  "date": "2013-09-28",
+  "weather_code": 61,
+  "temp_max": 23.4,
+  "temp_min": 21.3,
+  "temp_mean": 22.3,
+  "precipitation": 7.3,
+  "sunshine": 18624.74,
+  "wind_speed_max": 18.5,
+  "sunrise": "2013-09-28T07:18",
+  "sunset": "2013-09-28T19:14",
+  "sunshine_duration_seconds": 18624.74,
+  "sunshine_duration_minutes": 310,
+  "estimated_daily_sunshine_minutes": 186,
+  "estimated_daily_sunshine": "3 h 06 min",
+  "sunshine_difference_minutes": 124,
+  "sunshine_consistency": "Faible"
+}

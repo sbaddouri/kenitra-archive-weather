@@ -1,0 +1,18 @@
+{
+  "date": "2017-12-27",
+  "weather_code": 63,
+  "temp_max": 16.2,
+  "temp_min": 14.1,
+  "temp_mean": 15.1,
+  "precipitation": 14.4,
+  "sunshine": 9531.86,
+  "wind_speed_max": 27.3,
+  "sunrise": "2017-12-27T08:31",
+  "sunset": "2017-12-27T18:23",
+  "sunshine_duration_seconds": 9531.86,
+  "sunshine_duration_minutes": 159,
+  "estimated_daily_sunshine_minutes": 114,
+  "estimated_daily_sunshine": "1 h 54 min",
+  "sunshine_difference_minutes": 45,
+  "sunshine_consistency": "Faible"
+}

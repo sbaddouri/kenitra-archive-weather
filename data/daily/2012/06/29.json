@@ -1,0 +1,18 @@
+{
+  "date": "2012-06-29",
+  "weather_code": 1,
+  "temp_max": 25.1,
+  "temp_min": 19.8,
+  "temp_mean": 22,
+  "precipitation": 0,
+  "sunshine": 47625.94,
+  "wind_speed_max": 19.2,
+  "sunrise": "2012-06-29T06:16",
+  "sunset": "2012-06-29T20:42",
+  "sunshine_duration_seconds": 47625.94,
+  "sunshine_duration_minutes": 794,
+  "estimated_daily_sunshine_minutes": 795,
+  "estimated_daily_sunshine": "13 h 15 min",
+  "sunshine_difference_minutes": 1,
+  "sunshine_consistency": "Excellent"
+}

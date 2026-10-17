@@ -1,0 +1,18 @@
+{
+  "date": "2014-04-21",
+  "weather_code": 63,
+  "temp_max": 18.1,
+  "temp_min": 14.4,
+  "temp_mean": 16,
+  "precipitation": 12.6,
+  "sunshine": 43926.39,
+  "wind_speed_max": 27.8,
+  "sunrise": "2014-04-21T06:47",
+  "sunset": "2014-04-21T20:02",
+  "sunshine_duration_seconds": 43926.39,
+  "sunshine_duration_minutes": 732,
+  "estimated_daily_sunshine_minutes": 147,
+  "estimated_daily_sunshine": "2 h 27 min",
+  "sunshine_difference_minutes": 585,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2012-06-06",
+  "weather_code": 1,
+  "temp_max": 26,
+  "temp_min": 17.6,
+  "temp_mean": 21.5,
+  "precipitation": 0,
+  "sunshine": 48338.39,
+  "wind_speed_max": 19.6,
+  "sunrise": "2012-06-06T06:13",
+  "sunset": "2012-06-06T20:36",
+  "sunshine_duration_seconds": 48338.39,
+  "sunshine_duration_minutes": 806,
+  "estimated_daily_sunshine_minutes": 795,
+  "estimated_daily_sunshine": "13 h 15 min",
+  "sunshine_difference_minutes": 11,
+  "sunshine_consistency": "Bon"
+}

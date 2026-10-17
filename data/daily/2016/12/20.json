@@ -1,0 +1,18 @@
+{
+  "date": "2016-12-20",
+  "weather_code": 53,
+  "temp_max": 16.1,
+  "temp_min": 11.9,
+  "temp_mean": 13.8,
+  "precipitation": 3.5,
+  "sunshine": 31714.11,
+  "wind_speed_max": 14.3,
+  "sunrise": "2016-12-20T08:28",
+  "sunset": "2016-12-20T18:19",
+  "sunshine_duration_seconds": 31714.11,
+  "sunshine_duration_minutes": 529,
+  "estimated_daily_sunshine_minutes": 315,
+  "estimated_daily_sunshine": "5 h 15 min",
+  "sunshine_difference_minutes": 214,
+  "sunshine_consistency": "Faible"
+}

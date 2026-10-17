@@ -1,0 +1,18 @@
+{
+  "date": "2017-06-09",
+  "weather_code": 3,
+  "temp_max": 26.3,
+  "temp_min": 20.3,
+  "temp_mean": 22.7,
+  "precipitation": 0,
+  "sunshine": 38140.7,
+  "wind_speed_max": 19.5,
+  "sunrise": "2017-06-09T06:13",
+  "sunset": "2017-06-09T20:37",
+  "sunshine_duration_seconds": 38140.7,
+  "sunshine_duration_minutes": 636,
+  "estimated_daily_sunshine_minutes": 156,
+  "estimated_daily_sunshine": "2 h 36 min",
+  "sunshine_difference_minutes": 480,
+  "sunshine_consistency": "Faible"
+}

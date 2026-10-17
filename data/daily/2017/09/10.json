@@ -1,0 +1,18 @@
+{
+  "date": "2017-09-10",
+  "weather_code": 51,
+  "temp_max": 24.9,
+  "temp_min": 17.5,
+  "temp_mean": 21.9,
+  "precipitation": 0.3,
+  "sunshine": 38968.47,
+  "wind_speed_max": 18,
+  "sunrise": "2017-09-10T07:05",
+  "sunset": "2017-09-10T19:39",
+  "sunshine_duration_seconds": 38968.47,
+  "sunshine_duration_minutes": 649,
+  "estimated_daily_sunshine_minutes": 531,
+  "estimated_daily_sunshine": "8 h 51 min",
+  "sunshine_difference_minutes": 118,
+  "sunshine_consistency": "Faible"
+}

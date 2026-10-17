@@ -1,0 +1,18 @@
+{
+  "date": "2012-03-15",
+  "weather_code": 51,
+  "temp_max": 18.8,
+  "temp_min": 10.7,
+  "temp_mean": 14.6,
+  "precipitation": 0.2,
+  "sunshine": 40366.22,
+  "wind_speed_max": 14.7,
+  "sunrise": "2012-03-15T07:36",
+  "sunset": "2012-03-15T19:34",
+  "sunshine_duration_seconds": 40366.22,
+  "sunshine_duration_minutes": 673,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 47,
+  "sunshine_consistency": "Faible"
+}

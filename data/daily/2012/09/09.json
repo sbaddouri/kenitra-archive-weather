@@ -1,0 +1,18 @@
+{
+  "date": "2012-09-09",
+  "weather_code": 2,
+  "temp_max": 25.5,
+  "temp_min": 18.2,
+  "temp_mean": 21.6,
+  "precipitation": 0,
+  "sunshine": 41998.84,
+  "wind_speed_max": 16.6,
+  "sunrise": "2012-09-09T07:05",
+  "sunset": "2012-09-09T19:40",
+  "sunshine_duration_seconds": 41998.84,
+  "sunshine_duration_minutes": 700,
+  "estimated_daily_sunshine_minutes": 630,
+  "estimated_daily_sunshine": "10 h 30 min",
+  "sunshine_difference_minutes": 70,
+  "sunshine_consistency": "Faible"
+}

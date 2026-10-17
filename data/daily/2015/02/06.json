@@ -1,0 +1,18 @@
+{
+  "date": "2015-02-06",
+  "weather_code": 53,
+  "temp_max": 11.7,
+  "temp_min": 8.5,
+  "temp_mean": 10,
+  "precipitation": 4.1,
+  "sunshine": 24773.18,
+  "wind_speed_max": 14.9,
+  "sunrise": "2015-02-06T08:20",
+  "sunset": "2015-02-06T19:00",
+  "sunshine_duration_seconds": 24773.18,
+  "sunshine_duration_minutes": 413,
+  "estimated_daily_sunshine_minutes": 138,
+  "estimated_daily_sunshine": "2 h 18 min",
+  "sunshine_difference_minutes": 275,
+  "sunshine_consistency": "Faible"
+}

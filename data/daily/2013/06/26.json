@@ -1,0 +1,18 @@
+{
+  "date": "2013-06-26",
+  "weather_code": 0,
+  "temp_max": 29.5,
+  "temp_min": 20.1,
+  "temp_mean": 24.7,
+  "precipitation": 0,
+  "sunshine": 49158.26,
+  "wind_speed_max": 13.9,
+  "sunrise": "2013-06-26T06:15",
+  "sunset": "2013-06-26T20:42",
+  "sunshine_duration_seconds": 49158.26,
+  "sunshine_duration_minutes": 819,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 21,
+  "sunshine_consistency": "Moyen"
+}

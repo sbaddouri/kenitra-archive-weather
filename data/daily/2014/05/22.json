@@ -1,0 +1,18 @@
+{
+  "date": "2014-05-22",
+  "weather_code": 2,
+  "temp_max": 19.9,
+  "temp_min": 16.2,
+  "temp_mean": 17.9,
+  "precipitation": 0,
+  "sunshine": 47235.09,
+  "wind_speed_max": 17.3,
+  "sunrise": "2014-05-22T06:19",
+  "sunset": "2014-05-22T20:26",
+  "sunshine_duration_seconds": 47235.09,
+  "sunshine_duration_minutes": 787,
+  "estimated_daily_sunshine_minutes": 615,
+  "estimated_daily_sunshine": "10 h 15 min",
+  "sunshine_difference_minutes": 172,
+  "sunshine_consistency": "Faible"
+}

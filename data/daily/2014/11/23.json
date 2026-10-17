@@ -1,0 +1,18 @@
+{
+  "date": "2014-11-23",
+  "weather_code": 55,
+  "temp_max": 21,
+  "temp_min": 16,
+  "temp_mean": 18.3,
+  "precipitation": 4.8,
+  "sunshine": 31802.2,
+  "wind_speed_max": 22.8,
+  "sunrise": "2014-11-23T08:06",
+  "sunset": "2014-11-23T18:18",
+  "sunshine_duration_seconds": 31802.2,
+  "sunshine_duration_minutes": 530,
+  "estimated_daily_sunshine_minutes": 99,
+  "estimated_daily_sunshine": "1 h 39 min",
+  "sunshine_difference_minutes": 431,
+  "sunshine_consistency": "Faible"
+}

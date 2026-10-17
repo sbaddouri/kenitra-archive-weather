@@ -1,0 +1,18 @@
+{
+  "date": "2016-12-05",
+  "weather_code": 61,
+  "temp_max": 18.1,
+  "temp_min": 16.4,
+  "temp_mean": 17.1,
+  "precipitation": 20.3,
+  "sunshine": 20353.15,
+  "wind_speed_max": 29.7,
+  "sunrise": "2016-12-05T08:17",
+  "sunset": "2016-12-05T18:16",
+  "sunshine_duration_seconds": 20353.15,
+  "sunshine_duration_minutes": 339,
+  "estimated_daily_sunshine_minutes": 87,
+  "estimated_daily_sunshine": "1 h 27 min",
+  "sunshine_difference_minutes": 252,
+  "sunshine_consistency": "Faible"
+}

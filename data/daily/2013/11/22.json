@@ -1,0 +1,18 @@
+{
+  "date": "2013-11-22",
+  "weather_code": 61,
+  "temp_max": 17.7,
+  "temp_min": 14.9,
+  "temp_mean": 16,
+  "precipitation": 7.2,
+  "sunshine": 472.16,
+  "wind_speed_max": 30,
+  "sunrise": "2013-11-22T08:06",
+  "sunset": "2013-11-22T18:18",
+  "sunshine_duration_seconds": 472.16,
+  "sunshine_duration_minutes": 8,
+  "estimated_daily_sunshine_minutes": 111,
+  "estimated_daily_sunshine": "1 h 51 min",
+  "sunshine_difference_minutes": 103,
+  "sunshine_consistency": "Faible"
+}

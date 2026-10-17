@@ -1,0 +1,18 @@
+{
+  "date": "2016-03-22",
+  "weather_code": 63,
+  "temp_max": 15,
+  "temp_min": 11.3,
+  "temp_mean": 13.1,
+  "precipitation": 22.6,
+  "sunshine": 39644.79,
+  "wind_speed_max": 28.2,
+  "sunrise": "2016-03-22T07:26",
+  "sunset": "2016-03-22T19:39",
+  "sunshine_duration_seconds": 39644.79,
+  "sunshine_duration_minutes": 661,
+  "estimated_daily_sunshine_minutes": 96,
+  "estimated_daily_sunshine": "1 h 36 min",
+  "sunshine_difference_minutes": 565,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2012-04-21",
+  "weather_code": 3,
+  "temp_max": 20,
+  "temp_min": 12.5,
+  "temp_mean": 16,
+  "precipitation": 0,
+  "sunshine": 46725.28,
+  "wind_speed_max": 19.9,
+  "sunrise": "2012-04-21T06:47",
+  "sunset": "2012-04-21T20:02",
+  "sunshine_duration_seconds": 46725.28,
+  "sunshine_duration_minutes": 779,
+  "estimated_daily_sunshine_minutes": 657,
+  "estimated_daily_sunshine": "10 h 57 min",
+  "sunshine_difference_minutes": 122,
+  "sunshine_consistency": "Faible"
+}

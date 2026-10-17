@@ -1,0 +1,18 @@
+{
+  "date": "2013-12-19",
+  "weather_code": 61,
+  "temp_max": 17.3,
+  "temp_min": 13.3,
+  "temp_mean": 14.9,
+  "precipitation": 5.3,
+  "sunshine": 28302.49,
+  "wind_speed_max": 26,
+  "sunrise": "2013-12-19T08:27",
+  "sunset": "2013-12-19T18:19",
+  "sunshine_duration_seconds": 28302.49,
+  "sunshine_duration_minutes": 472,
+  "estimated_daily_sunshine_minutes": 123,
+  "estimated_daily_sunshine": "2 h 03 min",
+  "sunshine_difference_minutes": 349,
+  "sunshine_consistency": "Faible"
+}

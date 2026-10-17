@@ -1,0 +1,18 @@
+{
+  "date": "2017-02-11",
+  "weather_code": 63,
+  "temp_max": 17.8,
+  "temp_min": 9.2,
+  "temp_mean": 12.3,
+  "precipitation": 20.3,
+  "sunshine": 29884.58,
+  "wind_speed_max": 14.7,
+  "sunrise": "2017-02-11T08:15",
+  "sunset": "2017-02-11T19:06",
+  "sunshine_duration_seconds": 29884.58,
+  "sunshine_duration_minutes": 498,
+  "estimated_daily_sunshine_minutes": 120,
+  "estimated_daily_sunshine": "2 h 00 min",
+  "sunshine_difference_minutes": 378,
+  "sunshine_consistency": "Faible"
+}
