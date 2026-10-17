@@ -1703,6 +1703,49 @@ export default function RapportScientifiquePage() {
           </section>
         </CardContent>
       </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>NOTA BENE MÉTHODOLOGIQUE</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <section>
+            <p className="text-justify space-y-2">
+              Les scores de similarité présentés résultent d'une distance climatique normalisée à six variables, convertie en pourcentage par la fonction S = 100 × e^(−D), avec des pondérations respectives de 20 % (température moyenne annuelle), 20 % (précipitations), 12 % (moyenne des maximales du mois le plus chaud), 12 % (moyenne des minimales du mois le plus froid), 8 % (humidité relative), 10 % (ensoleillement). Les poids sont renormalisés sur les variables effectivement disponibles pour chaque station, ce qui est explicité par l'indicateur de couverture. Les analogies de l'hémisphère sud ont été calculées après correction saisonnière stricte selon la table d'inversion janvier ↔ juillet, février ↔ août, etc., et le régime pluviométrique a été comparé séparément, conformément aux exigences méthodologiques initiales. Ces pourcentages constituent un indice interne de similarité et non une vérité scientifique directement observée.
+            </p>
+          </section>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>LIMITES EXPLICITES DU PRÉSENT TRAVAIL</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <section>
+            <ul className="list-disc list-inside space-y-3 ml-4">
+              <li className="text-justify">
+                Le moteur de recherche n'a pas pu être appliqué à l'ensemble des mailles climatiques mondiales : la comparaison porte sur 28 stations documentées, sélectionnées par recherche documentaire et non par balayage systématique d'une grille (WorldClim, CHELSA, ERA5-Land). Les analogues réellement calculés sur grille pourraient inclure des stations non répertoriées.
+              </li>
+              <li className="text-justify">
+                Les records absolus de Kénitra (48,0 °C et −1,1 °C) n'ont pas été vérifiés auprès de la source primaire (DGM Maroc) et divergent des normales OMM.
+              </li>
+              <li className="text-justify">
+                Aucune donnée CMIP6 n'a été téléchargée : la partie « analogues futurs » reste qualitative.
+              </li>
+              <li className="text-justify">
+                L'indice AHS Heat Zone est estimé, non calculé sur série journalière.
+              </li>
+              <li className="text-justify">
+                Six stations sur vingt-huit présentent une couverture de variables inférieure à 80 %.
+              </li>
+              <li className="text-justify">
+                Aucun fichier SIG ni carte interactive n'a été produit : les cartes décrites dans le mandat relèvent d'une étape ultérieure.
+              </li>
+            </ul>
+          </section>
+        </CardContent>
+      </Card>
     </div>
   );
 }
