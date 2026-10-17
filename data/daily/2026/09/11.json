@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-11",
+  "weather_code": 0,
+  "temp_max": 33.1,
+  "temp_min": 19.6,
+  "temp_mean": 26.5,
+  "precipitation": 0,
+  "sunshine": 42654.77,
+  "wind_speed_max": 28.3,
+  "sunrise": "2026-09-11T07:06",
+  "sunset": "2026-09-11T19:38",
+  "sunshine_duration_seconds": 42654.77,
+  "sunshine_duration_minutes": 711,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 9,
+  "sunshine_consistency": "Bon"
+}

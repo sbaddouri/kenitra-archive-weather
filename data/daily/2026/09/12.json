@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-12",
+  "weather_code": 0,
+  "temp_max": 38.3,
+  "temp_min": 25,
+  "temp_mean": 30.2,
+  "precipitation": 0,
+  "sunshine": 42158.28,
+  "wind_speed_max": 23.1,
+  "sunrise": "2026-09-12T07:07",
+  "sunset": "2026-09-12T19:37",
+  "sunshine_duration_seconds": 42158.28,
+  "sunshine_duration_minutes": 703,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 17,
+  "sunshine_consistency": "Moyen"
+}
