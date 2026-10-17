@@ -623,83 +623,109 @@ export default function RapportScientifiquePage() {
 
       <Card>
         <CardHeader>
-          <CardTitle>PARTIE III â€” ANALOGUES DU BASSIN MÃ‰DITERRANÃ‰EN NORD</CardTitle>
+          <CardTitle>PARTIE III — ANALOGUES DU BASSIN MÉDITERRANÉEN NORD</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
-            <h3 className="text-xl font-semibold mb-2">3.1. Analogues ibÃ©riques</h3>
-            
-            <div className="space-y-4">
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.1.1. AlmerÃ­a intÃ©rieure â€” Tabernas, Sorbas, GÃ¡dor, NÃ­jar â€” SimilaritÃ© â‰ˆ 93 %</h5>
-                <p className="text-justify">
-                  Le dÃ©sert de Tabernas et les bassins intÃ©rieurs dâ€™AlmerÃ­a constituent, Ã  lâ€™Ã©chelle europÃ©enne, lâ€™analogue le plus fidÃ¨le du bassin de KÃ©nitra. Tabernas, Ã  400 m, reÃ§oit environ 235 mm annuels, prÃ©sente un rÃ©gime pluviomÃ©trique Ã  maximum Ã©quinoxial, notamment en octobre-novembre et mars-avril, une insolation supÃ©rieure Ã  3 000 h, des Ã©tÃ©s trÃ¨s chauds, avec une Tmax de juillet proche de 34 Â°C, et des hivers frais marquÃ©s par des gelÃ©es occasionnelles, le record sâ€™Ã©tablissant autour de âˆ’6 Â°C. La diffÃ©rence essentielle rÃ©side dans la proximitÃ© maritime plus immÃ©diate, qui attÃ©nue lÃ©gÃ¨rement les extrÃªmes hivernaux et modÃ¨re les canicules estivales par lâ€™advection des brises. Dâ€™un point de vue botanique, la palette culturale y est rigoureusement identique : olivier, amandier, figuier, grenadier, pistachier, jojoba introduit expÃ©rimentalement, agave, opuntia. Le palmier dattier y fructifie dans les microstations abritÃ©es de la rÃ©gion Elcheâ€“AlmerÃ­a, ce qui correspond Ã©galement Ã  la situation de KÃ©nitra.
-                </p>
-              </div>
+            <h3 className="text-xl font-semibold mb-4">3.1. Analogues ibériques — le cœur de l'analogie européenne</h3>
 
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.1.2. Bassin du Guadix-Baza (Grenade intÃ©rieure) â€” SimilaritÃ© â‰ˆ 91 %</h5>
-                <p className="text-justify">
-                  Ce bassin intramontagnard, situÃ© Ã  environ 900 m dâ€™altitude, en position dâ€™abri pluviomÃ©trique derriÃ¨re les sierras BÃ©ticas, prÃ©sente 250 Ã  320 mm annuels, une continentalitÃ© marquÃ©e, avec un record de âˆ’14 Â°C Ã  Baza, des Ã©tÃ©s trÃ¨s chauds, et une signature dâ€™inversion thermique hivernale caractÃ©ristique. Il sâ€™agit dâ€™un analogue Â« altitudinal Â» de KÃ©nitra, dotÃ© dâ€™un hiver plus rigoureux.
-                </p>
-              </div>
-
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.1.3. Bassin de lâ€™Ãˆbre intÃ©rieur â€” Zaragoza, Bardenas Reales, Monegros â€” SimilaritÃ© â‰ˆ 85 %</h5>
-                <p className="text-justify">
-                  Ces rÃ©gions prÃ©sentent 280 Ã  350 mm annuels, un climat semi-aride continentalisÃ© de type BSk, mais avec des hivers nettement plus froids, Tmin de janvier proche de 2 Â°C, et 40 Ã  60 nuits de gel par an, une signature pluviomÃ©trique Ã©quinoxiale et des Ã©tÃ©s trÃ¨s chauds. Les Bardenas Reales et les Monegros constituent le dÃ©sert semi-aride ibÃ©rique, avec un rÃ©gime dâ€™inversion thermique hivernale rappelant celui de la VallÃ©e Centrale de Californie.
-                </p>
-              </div>
-
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.1.4. Fraga, Lleida, plaine centrale catalane â€” SimilaritÃ© â‰ˆ 79 %</h5>
-                <p className="text-justify">
-                  Lâ€™analogie y demeure partielle, limitÃ©e par une humiditÃ© hivernale plus forte et par la frÃ©quence de brouillards persistants.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.1.1. Faro (Algarve, Portugal) — Similarité S = 70,9 % (D = 0,344) — ANALOGUE N° 1 MONDIAL</h5>
+              <p className="text-justify">
+                Faro (37°00′ N, 7°56′ O, 8 m) obtient le meilleur score mondial du modèle. Csa ; T = 17,5-18,5 °C ; P = 511,6 mm ; moyenne des maximales de juillet 29,2 °C ; moyenne des minimales de janvier 7,9 °C ; ensoleillement 3 044,4 h ; records 44,3 °C / 1,2 °C. Les écarts sont minimes : ΔT ≈ −0,6 °C, ΔP ≈ −60 mm, ΔTx ≈ +0,5 °C, ΔTn ≈ −1,3 °C, ΔEnsoleillement ≈ −66 h. Faro est un littoral atlantique méridional à été sec : exactement la même mécanique que Kénitra (océan tempéré + anticyclone subtropical + sécheresse estivale). La végétation y est dominée par le pin pignon, le caroubier, l'olivier, le figuier et l'amandier — une palette quasi superposable à celle du Gharb. La principale différence est l'intensité du refroidissement estival par upwelling : la côte algarienne est plus froide en été que Kénitra, où le plateau continental et l'orientation du trait de côte atténuent cet effet.
+              </p>
             </div>
 
-            <div className="space-y-4 mt-6">
-              <h3 className="text-xl font-semibold mb-2">3.2. Analogues italiens et grecs</h3>
-              
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.2.1. Sicile intÃ©rieure â€” Enna, Caltanissetta, Piazza Armerina â€” SimilaritÃ© â‰ˆ 82 %</h5>
-                <p className="text-justify">
-                  Lâ€™intÃ©rieur sicilien dâ€™altitude prÃ©sente des Ã©tÃ©s trÃ¨s chauds et secs, mais des hivers plus humides, ainsi quâ€™une pluviomÃ©trie annuelle sensiblement plus Ã©levÃ©e, de lâ€™ordre de 500 Ã  700 mm, ce qui rÃ©duit lâ€™analogie hydrique.
-                </p>
-              </div>
-
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.2.2. CrÃ¨te intÃ©rieure â€” SimilaritÃ© â‰ˆ 78 %</h5>
-                <p className="text-justify">
-                  Lâ€™analogie y demeure partielle.
-                </p>
-              </div>
-
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.2.3. Chypre intÃ©rieure â€” Nicosie, Athienou â€” SimilaritÃ© â‰ˆ 84 %</h5>
-                <p className="text-justify">
-                  Nicosie prÃ©sente environ 320 mm annuels, une saison sÃ¨che estivale marquÃ©e, une insolation Ã©levÃ©e, mais des hivers plus doux et plus humides.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.1.2. Portimão (Algarve, Portugal) — Similarité S = 59,5 % (D = 0,520)</h5>
+              <p className="text-justify">
+                Portimão (37°08′ N, 8°32′ O) : Csa, T = 17,2 °C, P = 528,1 mm, moyenne des maximales d'août 28,8 °C, moyenne des minimales de janvier 8,2 °C, ensoleillement 3 018,8 h, records 37,6 °C / −2,0 °C. Convergence quasi parfaite sur la pluviométrie (528 vs 571 mm) et la moyenne des maximales d'août (28,8 vs 28,7 °C). Portimão confirme que l'Algarve occidental est le meilleur analogue européen de Kénitra.
+              </p>
             </div>
 
-            <div className="space-y-4 mt-6">
-              <h3 className="text-xl font-semibold mb-2">3.3. Analogues turcs</h3>
-              
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.3.1. Konya, KarapÄ±nar, Karaman (plateau anatolien central intÃ©rieur) â€” SimilaritÃ© â‰ˆ 83 %</h5>
-                <p className="text-justify">
-                  Konya, Ã  1 020 m, reÃ§oit environ 320 mm annuels avec un rÃ©gime Ã©quinoxial. La continentalitÃ© y est toutefois beaucoup plus marquÃ©e quâ€™Ã  KÃ©nitra, avec une Tmin de janvier proche de âˆ’4 Â°C et des records atteignant âˆ’26 Â°C, de sorte que lâ€™analogie est surtout estivale et hygromÃ©trique.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.1.3. Huelva et Jerez de la Frontera (Andalousie atlantique, Espagne)</h5>
+              <p className="text-justify">
+                Huelva (37°15′ N, 6°57′ O, 54 m) : Csa, T = 18,1 °C, P = 525 mm, moyenne des maximales d'août 33,1 °C, moyenne des minimales de janvier 5,9 °C, ensoleillement 2 970 h, records 43,9 °C / −3,2 °C. Jerez (36°40′ N, 6°08′ O, 56 m) : T ≈ 18 °C, P = 570 mm, moyenne des maximales d'août 34,3 °C, moyenne des minimales de janvier 5,3 °C, 2 965 h d'ensoleillement, 53 jours de pluie, 137 jours clairs. La pluviométrie de Jerez (570 mm) est rigoureusement égale à celle de Kénitra (571 mm) — mais l'été andalou est 5,6 °C plus chaud (34,3 vs 28,7 °C) et l'hiver 3,9 °C plus froid : c'est la continentalité andalouse qui crée l'écart.
+              </p>
+            </div>
 
-              <div className="space-y-3 ml-4">
-                <h5 className="font-semibold">3.3.2. ÅžanlÄ±urfa, Mardin, DiyarbakÄ±r (Anatolie du Sud-Est) â€” SimilaritÃ© â‰ˆ 86 %</h5>
-                <p className="text-justify">
-                  ÅžanlÄ±urfa, Ã  550 m, reÃ§oit environ 460 mm, mais prÃ©sente des Ã©tÃ©s extrÃªmement chauds, avec une Tmax de juillet voisine de 39 Â°C, et un rÃ©gime pluviomÃ©trique concentrÃ© sur lâ€™hiver et le printemps. Lâ€™analogie estivale y est trÃ¨s forte, lâ€™analogie hivernale sensiblement moins satisfaisante, les hivers Ã©tant plus rigoureux.
-                </p>
-              </div>
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.1.4. Séville (Espagne) — Similarité S = 28,0 %</h5>
+              <p className="text-justify">
+                Séville (37°23′ N, 5°59′ O, 7 m) : Csa, T = 19,2 °C, P = 502 mm, moyenne des maximales de juillet 36,2 °C, moyenne des minimales de janvier 6,0 °C, humidité relative 59,4 %, ensoleillement 3 279,3 h, records 46,6 °C / −5,5 °C. Séville est l'anti-modèle absolu de Kénitra : à pluviométrie comparable, elle cumule une humidité 17 points plus basse, un été 7,5 °C plus chaud et un hiver 3,2 °C plus froid. L'analogie est hydrique mais nullement hygrothermique.
+              </p>
+            </div>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.1.5. Valence et Barcelone (Espagne méditerranéenne)</h5>
+              <p className="text-justify">
+                Valence (39°28′ N, 0°22′ O, 15 m) : BSh/Csa, T = 18,6 °C (identique à Kénitra), P = 459 mm, moyenne des maximales d'août 30,6 °C, moyenne des minimales de janvier 7,5 °C, 2 733 h d'ensoleillement, records 44,5 °C / −7,2 °C. Barcelone (41°23′ N, 2°11′ E, 12 m) : Csa, T = 18,2 °C (jour 21,2 / nuit 15,1), P = 558,1 mm, moyenne des maximales d'août 28,9 °C, moyenne des minimales de janvier 5,5 °C, HR 68 %, 2 489 h, records 37,4 °C / −8,0 °C. Barcelone est un analogue remarquable par sa pluviométrie (558 mm) et sa moyenne des maximales d'août (28,9 °C) ; elle s'en écarte par un hiver plus froid et un ensoleillement bien moindre.
+              </p>
+            </div>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.1.6. Setúbal et Algeciras (péninsule Ibérique méridionale)</h5>
+              <p className="text-justify">
+                Setúbal (38°31′ N, 8°53′ O) : Csa, T ≈ 16,5-17 °C, P = 703,4 mm, moyenne des maximales d'août 30,7 °C, moyenne des minimales de janvier 5,2 °C, records 45,5 °C / −5,8 °C. Algeciras (36°07′ N, 5°27′ O, 20 m) : Csa, T = 18,3 °C, P = 835,7 mm, moyenne des maximales d'août 27,8 °C, moyenne des minimales de janvier 11,1 °C. Algeciras, avec 27,8 °C de moyenne des maximales d'août et 11,1 °C de minima en janvier, est thermiquement le plus proche de Kénitra — mais sa pluviométrie de 835,7 mm l'en éloigne structurellement.
+              </p>
+            </div>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.1.7. Almería et Carthagène (Sud-Est espagnol) — analogues « chauds et secs » dégradés</h5>
+              <p className="text-justify">
+                Almería (36°50′ N, 2°27′ O, 24 m) : BWh, T = 19,2 °C, P = 197,5 mm, moyenne des maximales d'août 31,2 °C, ensoleillement 3 095 h, records 42,0 °C / 0,1 °C. Carthagène (37°36′ N, 0°59′ O, 10 m) : climat de transition BSh/BWh, T = 19,2 °C, P = 260,2 mm, moyenne des maximales d'août 30,4 °C. Ces stations constituent des analogues « chauds et secs » de Kénitra, décalés vers l'aridité ; elles ne partagent ni la pluviométrie (déficit de 310 à 370 mm) ni l'humidité.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">3.2. Analogues italiens, maltais, croates et grecs</h3>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.2.1. Cagliari (Sardaigne, Italie) — Similarité S = 34,7 % (D = 1,058)</h5>
+              <p className="text-justify">
+                Cagliari (39°13′ N, 9°06′ E, 4 m) : Csa, T = 17,3 °C, P = 413,2 mm, moyenne des maximales d'août 32,1 °C, moyenne des minimales de février 5,1 °C, 2 729,2 h, records 44,6 °C / 4,8 °C. Convergence méditerranéenne classique, dégradée par un été 3,4 °C plus chaud.
+              </p>
+            </div>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.2.2. La Valette (Malte) — Similarité S = 56,1 % (D = 0,578 ; couverture 54 %)</h5>
+              <p className="text-justify">
+                La Valette (35°54′ N, 14°31′ E, 56 m) : Csa, P = 580,7 mm (proche de 571 mm), moyenne des maximales d'août 32,0 °C, moyenne des minimales de février 9,5 °C. Pluviométrie quasi identique, minima hivernaux proches, mais été insulaire nettement plus chaud. La couverture du modèle est faible (3 variables) : le score doit être lu avec prudence.
+              </p>
+            </div>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.2.3. Split (Croatie) — Similarité S = 30,2 %</h5>
+              <p className="text-justify">
+                Split (43°30′ N, 16°26′ E, 0 m) : Csa, T = 16,8 °C, P = 800,6 mm, moyenne des maximales de juillet 31,0 °C, moyenne des minimales de janvier 5,9 °C, 2 698,5 h, records 38,6 °C / −9,0 °C. Trop arrosé (+230 mm) et trop froid en hiver.
+              </p>
+            </div>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.2.4. Héraklion (Crète, Grèce) — Similarité S = 36,5 %</h5>
+              <p className="text-justify">
+                Héraklion (35°20′ N, 25°08′ E) : Csa, T = 19,6 °C, P = 318,6 mm, moyenne des maximales de juillet-août 28,3 °C (très proche de Kénitra), moyenne des minimales de janvier 10,5 °C, 2 778,6 h, records 38,3 °C / 1,4 °C. La température annuelle et les maxima estivaux sont remarquablement proches, mais la pluviométrie est inférieure de 252 mm — l'analogie est thermique et non hydrique.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">3.3. Analogues turcs et levantins</h3>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.3.1. Izmir (Turquie) — Similarité S = 37,1 % (D = 0,992)</h5>
+              <p className="text-justify">
+                Izmir (38°25′ N, 27°08′ E, 2 m) : Csa, T = 18,4 °C, P = 730,5 mm, moyenne des maximales de juillet 33,8 °C, moyenne des minimales de janvier 6,0 °C, 2 938,5 h, records 43,2 °C / −8,2 °C. Température annuelle très proche, mais été 5,1 °C plus chaud et pluviométrie supérieure.
+              </p>
+            </div>
+
+            <div className="space-y-3 ml-4">
+              <h5 className="font-semibold">3.3.2. Tel-Aviv (Israël) — Similarité S = 40,2 %</h5>
+              <p className="text-justify">
+                Tel-Aviv (32°05′ N, 34°47′ E, 5 m) : Csa, T = 20,9 °C, P = 528 mm, moyenne des maximales d'août 30,2 °C, moyenne des minimales de janvier 9,6 °C, records 46,5 °C / 1,9 °C. Pluviométrie et minima hivernaux très proches, mais température annuelle 2,3 °C plus élevée et climat nettement plus chaud.
+              </p>
             </div>
           </section>
         </CardContent>
