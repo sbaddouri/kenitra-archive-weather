@@ -1,0 +1,18 @@
+{
+  "date": "2006-01-30",
+  "weather_code": 63,
+  "temp_max": 12.2,
+  "temp_min": 8.6,
+  "temp_mean": 10.5,
+  "precipitation": 15.3,
+  "sunshine": 34563.63,
+  "wind_speed_max": 30.4,
+  "sunrise": "2006-01-30T08:25",
+  "sunset": "2006-01-30T18:53",
+  "sunshine_duration_seconds": 34563.63,
+  "sunshine_duration_minutes": 576,
+  "estimated_daily_sunshine_minutes": 156,
+  "estimated_daily_sunshine": "2 h 36 min",
+  "sunshine_difference_minutes": 420,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2011-03-19",
+  "weather_code": 0,
+  "temp_max": 21.6,
+  "temp_min": 10.9,
+  "temp_mean": 15.6,
+  "precipitation": 0,
+  "sunshine": 41510.14,
+  "wind_speed_max": 11.1,
+  "sunrise": "2011-03-19T07:31",
+  "sunset": "2011-03-19T19:36",
+  "sunshine_duration_seconds": 41510.14,
+  "sunshine_duration_minutes": 692,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 28,
+  "sunshine_consistency": "Moyen"
+}

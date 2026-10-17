@@ -1,0 +1,18 @@
+{
+  "date": "2010-03-21",
+  "weather_code": 63,
+  "temp_max": 22.8,
+  "temp_min": 15.2,
+  "temp_mean": 18.4,
+  "precipitation": 8,
+  "sunshine": 30202.76,
+  "wind_speed_max": 25.3,
+  "sunrise": "2010-03-21T07:28",
+  "sunset": "2010-03-21T19:38",
+  "sunshine_duration_seconds": 30202.76,
+  "sunshine_duration_minutes": 503,
+  "estimated_daily_sunshine_minutes": 438,
+  "estimated_daily_sunshine": "7 h 18 min",
+  "sunshine_difference_minutes": 65,
+  "sunshine_consistency": "Faible"
+}

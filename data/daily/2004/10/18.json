@@ -1,0 +1,18 @@
+{
+  "date": "2004-10-18",
+  "weather_code": 61,
+  "temp_max": 22,
+  "temp_min": 14.8,
+  "temp_mean": 18.8,
+  "precipitation": 2.6,
+  "sunshine": 16173.23,
+  "wind_speed_max": 26.1,
+  "sunrise": "2004-10-18T07:34",
+  "sunset": "2004-10-18T18:47",
+  "sunshine_duration_seconds": 16173.23,
+  "sunshine_duration_minutes": 270,
+  "estimated_daily_sunshine_minutes": 84,
+  "estimated_daily_sunshine": "1 h 24 min",
+  "sunshine_difference_minutes": 186,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2008-06-21",
+  "weather_code": 2,
+  "temp_max": 25.5,
+  "temp_min": 18,
+  "temp_mean": 21.7,
+  "precipitation": 0,
+  "sunshine": 47566.37,
+  "wind_speed_max": 16,
+  "sunrise": "2008-06-21T06:14",
+  "sunset": "2008-06-21T20:41",
+  "sunshine_duration_seconds": 47566.37,
+  "sunshine_duration_minutes": 793,
+  "estimated_daily_sunshine_minutes": 750,
+  "estimated_daily_sunshine": "12 h 30 min",
+  "sunshine_difference_minutes": 43,
+  "sunshine_consistency": "Faible"
+}

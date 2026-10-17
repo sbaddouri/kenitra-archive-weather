@@ -1,0 +1,18 @@
+{
+  "date": "2002-07-05",
+  "weather_code": 2,
+  "temp_max": 24.9,
+  "temp_min": 18.8,
+  "temp_mean": 21.4,
+  "precipitation": 0,
+  "sunshine": 48007.18,
+  "wind_speed_max": 14.3,
+  "sunrise": "2002-07-05T06:19",
+  "sunset": "2002-07-05T20:41",
+  "sunshine_duration_seconds": 48007.18,
+  "sunshine_duration_minutes": 800,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 80,
+  "sunshine_consistency": "Faible"
+}

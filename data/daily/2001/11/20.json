@@ -1,0 +1,18 @@
+{
+  "date": "2001-11-20",
+  "weather_code": 3,
+  "temp_max": 20,
+  "temp_min": 12.7,
+  "temp_mean": 16.1,
+  "precipitation": 0,
+  "sunshine": 35352.91,
+  "wind_speed_max": 14.1,
+  "sunrise": "2001-11-20T08:04",
+  "sunset": "2001-11-20T18:19",
+  "sunshine_duration_seconds": 35352.91,
+  "sunshine_duration_minutes": 589,
+  "estimated_daily_sunshine_minutes": 147,
+  "estimated_daily_sunshine": "2 h 27 min",
+  "sunshine_difference_minutes": 442,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2002-10-21",
+  "weather_code": 61,
+  "temp_max": 22.8,
+  "temp_min": 20,
+  "temp_mean": 21.5,
+  "precipitation": 7.2,
+  "sunshine": 19607.94,
+  "wind_speed_max": 21.2,
+  "sunrise": "2002-10-21T07:36",
+  "sunset": "2002-10-21T18:45",
+  "sunshine_duration_seconds": 19607.94,
+  "sunshine_duration_minutes": 327,
+  "estimated_daily_sunshine_minutes": 240,
+  "estimated_daily_sunshine": "4 h 00 min",
+  "sunshine_difference_minutes": 87,
+  "sunshine_consistency": "Faible"
+}

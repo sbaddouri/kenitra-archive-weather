@@ -1,0 +1,18 @@
+{
+  "date": "2001-12-22",
+  "weather_code": 3,
+  "temp_max": 21.3,
+  "temp_min": 13.1,
+  "temp_mean": 17,
+  "precipitation": 0,
+  "sunshine": 32892.03,
+  "wind_speed_max": 14.3,
+  "sunrise": "2001-12-22T08:29",
+  "sunset": "2001-12-22T18:20",
+  "sunshine_duration_seconds": 32892.03,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 84,
+  "estimated_daily_sunshine": "1 h 24 min",
+  "sunshine_difference_minutes": 464,
+  "sunshine_consistency": "Faible"
+}

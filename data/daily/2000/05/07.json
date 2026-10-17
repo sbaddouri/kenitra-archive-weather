@@ -1,0 +1,18 @@
+{
+  "date": "2000-05-07",
+  "weather_code": 51,
+  "temp_max": 19.7,
+  "temp_min": 14.4,
+  "temp_mean": 16.8,
+  "precipitation": 0.5,
+  "sunshine": 40423.32,
+  "wind_speed_max": 15.2,
+  "sunrise": "2000-05-07T06:30",
+  "sunset": "2000-05-07T20:15",
+  "sunshine_duration_seconds": 40423.32,
+  "sunshine_duration_minutes": 674,
+  "estimated_daily_sunshine_minutes": 267,
+  "estimated_daily_sunshine": "4 h 27 min",
+  "sunshine_difference_minutes": 407,
+  "sunshine_consistency": "Faible"
+}

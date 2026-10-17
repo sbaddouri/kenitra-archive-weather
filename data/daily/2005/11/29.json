@@ -1,0 +1,18 @@
+{
+  "date": "2005-11-29",
+  "weather_code": 61,
+  "temp_max": 13.6,
+  "temp_min": 10,
+  "temp_mean": 12,
+  "precipitation": 17.3,
+  "sunshine": 509.66,
+  "wind_speed_max": 13.5,
+  "sunrise": "2005-11-29T08:12",
+  "sunset": "2005-11-29T18:16",
+  "sunshine_duration_seconds": 509.66,
+  "sunshine_duration_minutes": 8,
+  "estimated_daily_sunshine_minutes": 90,
+  "estimated_daily_sunshine": "1 h 30 min",
+  "sunshine_difference_minutes": 82,
+  "sunshine_consistency": "Faible"
+}

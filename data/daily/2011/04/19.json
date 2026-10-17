@@ -1,0 +1,18 @@
+{
+  "date": "2011-04-19",
+  "weather_code": 61,
+  "temp_max": 22,
+  "temp_min": 16.3,
+  "temp_mean": 18.8,
+  "precipitation": 2.8,
+  "sunshine": 46598.49,
+  "wind_speed_max": 21.4,
+  "sunrise": "2011-04-19T06:50",
+  "sunset": "2011-04-19T20:00",
+  "sunshine_duration_seconds": 46598.49,
+  "sunshine_duration_minutes": 777,
+  "estimated_daily_sunshine_minutes": 438,
+  "estimated_daily_sunshine": "7 h 18 min",
+  "sunshine_difference_minutes": 339,
+  "sunshine_consistency": "Faible"
+}

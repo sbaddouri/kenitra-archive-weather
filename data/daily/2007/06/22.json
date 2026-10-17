@@ -1,0 +1,18 @@
+{
+  "date": "2007-06-22",
+  "weather_code": 0,
+  "temp_max": 24.3,
+  "temp_min": 17,
+  "temp_mean": 20.6,
+  "precipitation": 0,
+  "sunshine": 48830.41,
+  "wind_speed_max": 20.9,
+  "sunrise": "2007-06-22T06:14",
+  "sunset": "2007-06-22T20:41",
+  "sunshine_duration_seconds": 48830.41,
+  "sunshine_duration_minutes": 814,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 26,
+  "sunshine_consistency": "Moyen"
+}

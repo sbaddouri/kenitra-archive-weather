@@ -1,0 +1,18 @@
+{
+  "date": "2009-05-20",
+  "weather_code": 2,
+  "temp_max": 22.3,
+  "temp_min": 16.2,
+  "temp_mean": 18.9,
+  "precipitation": 0,
+  "sunshine": 46961.6,
+  "wind_speed_max": 15.4,
+  "sunrise": "2009-05-20T06:20",
+  "sunset": "2009-05-20T20:25",
+  "sunshine_duration_seconds": 46961.6,
+  "sunshine_duration_minutes": 783,
+  "estimated_daily_sunshine_minutes": 795,
+  "estimated_daily_sunshine": "13 h 15 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

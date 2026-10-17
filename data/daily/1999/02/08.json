@@ -1,0 +1,18 @@
+{
+  "date": "1999-02-08",
+  "weather_code": 51,
+  "temp_max": 15.7,
+  "temp_min": 12,
+  "temp_mean": 13.5,
+  "precipitation": 1,
+  "sunshine": 35965.9,
+  "wind_speed_max": 13.2,
+  "sunrise": "1999-02-08T08:18",
+  "sunset": "1999-02-08T19:02",
+  "sunshine_duration_seconds": 35965.9,
+  "sunshine_duration_minutes": 599,
+  "estimated_daily_sunshine_minutes": 315,
+  "estimated_daily_sunshine": "5 h 15 min",
+  "sunshine_difference_minutes": 284,
+  "sunshine_consistency": "Faible"
+}

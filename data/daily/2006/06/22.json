@@ -1,0 +1,18 @@
+{
+  "date": "2006-06-22",
+  "weather_code": 3,
+  "temp_max": 26.5,
+  "temp_min": 20.3,
+  "temp_mean": 22.9,
+  "precipitation": 0,
+  "sunshine": 43614.46,
+  "wind_speed_max": 15.1,
+  "sunrise": "2006-06-22T06:14",
+  "sunset": "2006-06-22T20:41",
+  "sunshine_duration_seconds": 43614.46,
+  "sunshine_duration_minutes": 727,
+  "estimated_daily_sunshine_minutes": 702,
+  "estimated_daily_sunshine": "11 h 42 min",
+  "sunshine_difference_minutes": 25,
+  "sunshine_consistency": "Moyen"
+}

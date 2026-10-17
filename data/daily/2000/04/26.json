@@ -1,0 +1,18 @@
+{
+  "date": "2000-04-26",
+  "weather_code": 53,
+  "temp_max": 15.8,
+  "temp_min": 12.8,
+  "temp_mean": 14.7,
+  "precipitation": 8.1,
+  "sunshine": 6787.1,
+  "wind_speed_max": 17.6,
+  "sunrise": "2000-04-26T06:41",
+  "sunset": "2000-04-26T20:06",
+  "sunshine_duration_seconds": 6787.1,
+  "sunshine_duration_minutes": 113,
+  "estimated_daily_sunshine_minutes": 216,
+  "estimated_daily_sunshine": "3 h 36 min",
+  "sunshine_difference_minutes": 103,
+  "sunshine_consistency": "Faible"
+}

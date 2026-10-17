@@ -1,0 +1,18 @@
+{
+  "date": "2009-03-08",
+  "weather_code": 3,
+  "temp_max": 17.6,
+  "temp_min": 11,
+  "temp_mean": 14.2,
+  "precipitation": 0,
+  "sunshine": 23230.09,
+  "wind_speed_max": 10.2,
+  "sunrise": "2009-03-08T07:46",
+  "sunset": "2009-03-08T19:28",
+  "sunshine_duration_seconds": 23230.09,
+  "sunshine_duration_minutes": 387,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 315,
+  "sunshine_consistency": "Faible"
+}

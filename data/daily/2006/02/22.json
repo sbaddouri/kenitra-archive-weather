@@ -1,0 +1,18 @@
+{
+  "date": "2006-02-22",
+  "weather_code": 61,
+  "temp_max": 13.1,
+  "temp_min": 9.1,
+  "temp_mean": 10.9,
+  "precipitation": 8.2,
+  "sunshine": 37695.97,
+  "wind_speed_max": 28.4,
+  "sunrise": "2006-02-22T08:03",
+  "sunset": "2006-02-22T19:15",
+  "sunshine_duration_seconds": 37695.97,
+  "sunshine_duration_minutes": 628,
+  "estimated_daily_sunshine_minutes": 312,
+  "estimated_daily_sunshine": "5 h 12 min",
+  "sunshine_difference_minutes": 316,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2005-02-27",
+  "weather_code": 63,
+  "temp_max": 17.8,
+  "temp_min": 10.2,
+  "temp_mean": 13.9,
+  "precipitation": 13.9,
+  "sunshine": 37617.75,
+  "wind_speed_max": 35.5,
+  "sunrise": "2005-02-27T07:57",
+  "sunset": "2005-02-27T19:20",
+  "sunshine_duration_seconds": 37617.75,
+  "sunshine_duration_minutes": 627,
+  "estimated_daily_sunshine_minutes": 216,
+  "estimated_daily_sunshine": "3 h 36 min",
+  "sunshine_difference_minutes": 411,
+  "sunshine_consistency": "Faible"
+}

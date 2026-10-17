@@ -1,0 +1,18 @@
+{
+  "date": "1999-03-22",
+  "weather_code": 2,
+  "temp_max": 22.4,
+  "temp_min": 11.8,
+  "temp_mean": 16.8,
+  "precipitation": 0,
+  "sunshine": 41321.13,
+  "wind_speed_max": 16.1,
+  "sunrise": "1999-03-22T07:27",
+  "sunset": "1999-03-22T19:39",
+  "sunshine_duration_seconds": 41321.13,
+  "sunshine_duration_minutes": 689,
+  "estimated_daily_sunshine_minutes": 645,
+  "estimated_daily_sunshine": "10 h 45 min",
+  "sunshine_difference_minutes": 44,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2008-12-19",
+  "weather_code": 1,
+  "temp_max": 15.1,
+  "temp_min": 8.7,
+  "temp_mean": 11.7,
+  "precipitation": 0,
+  "sunshine": 32854.41,
+  "wind_speed_max": 11.2,
+  "sunrise": "2008-12-19T08:27",
+  "sunset": "2008-12-19T18:19",
+  "sunshine_duration_seconds": 32854.41,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 8,
+  "sunshine_consistency": "Bon"
+}

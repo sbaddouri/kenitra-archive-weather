@@ -1,0 +1,18 @@
+{
+  "date": "2001-12-10",
+  "weather_code": 55,
+  "temp_max": 21.2,
+  "temp_min": 15.2,
+  "temp_mean": 16.9,
+  "precipitation": 4,
+  "sunshine": 24678.67,
+  "wind_speed_max": 16.4,
+  "sunrise": "2001-12-10T08:21",
+  "sunset": "2001-12-10T18:16",
+  "sunshine_duration_seconds": 24678.67,
+  "sunshine_duration_minutes": 411,
+  "estimated_daily_sunshine_minutes": 93,
+  "estimated_daily_sunshine": "1 h 33 min",
+  "sunshine_difference_minutes": 318,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2007-12-26",
+  "weather_code": 53,
+  "temp_max": 15.3,
+  "temp_min": 11.8,
+  "temp_mean": 13.5,
+  "precipitation": 2.1,
+  "sunshine": 22644.47,
+  "wind_speed_max": 15.9,
+  "sunrise": "2007-12-26T08:30",
+  "sunset": "2007-12-26T18:22",
+  "sunshine_duration_seconds": 22644.47,
+  "sunshine_duration_minutes": 377,
+  "estimated_daily_sunshine_minutes": 213,
+  "estimated_daily_sunshine": "3 h 33 min",
+  "sunshine_difference_minutes": 164,
+  "sunshine_consistency": "Faible"
+}

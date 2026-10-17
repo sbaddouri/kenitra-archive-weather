@@ -1,0 +1,18 @@
+{
+  "date": "2008-03-20",
+  "weather_code": 63,
+  "temp_max": 16.4,
+  "temp_min": 12.9,
+  "temp_mean": 14.5,
+  "precipitation": 9.3,
+  "sunshine": 39688.43,
+  "wind_speed_max": 21,
+  "sunrise": "2008-03-20T07:29",
+  "sunset": "2008-03-20T19:38",
+  "sunshine_duration_seconds": 39688.43,
+  "sunshine_duration_minutes": 661,
+  "estimated_daily_sunshine_minutes": 237,
+  "estimated_daily_sunshine": "3 h 57 min",
+  "sunshine_difference_minutes": 424,
+  "sunshine_consistency": "Faible"
+}

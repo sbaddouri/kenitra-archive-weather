@@ -1,0 +1,18 @@
+{
+  "date": "2008-10-04",
+  "weather_code": 0,
+  "temp_max": 24.1,
+  "temp_min": 15.3,
+  "temp_mean": 19.4,
+  "precipitation": 0,
+  "sunshine": 40578.12,
+  "wind_speed_max": 16.1,
+  "sunrise": "2008-10-04T07:23",
+  "sunset": "2008-10-04T19:05",
+  "sunshine_duration_seconds": 40578.12,
+  "sunshine_duration_minutes": 676,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 44,
+  "sunshine_consistency": "Faible"
+}

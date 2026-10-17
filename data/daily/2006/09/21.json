@@ -1,0 +1,18 @@
+{
+  "date": "2006-09-21",
+  "weather_code": 3,
+  "temp_max": 25.5,
+  "temp_min": 20.6,
+  "temp_mean": 22.6,
+  "precipitation": 0.2,
+  "sunshine": 40269.92,
+  "wind_speed_max": 15.4,
+  "sunrise": "2006-09-21T07:13",
+  "sunset": "2006-09-21T19:24",
+  "sunshine_duration_seconds": 40269.92,
+  "sunshine_duration_minutes": 671,
+  "estimated_daily_sunshine_minutes": 531,
+  "estimated_daily_sunshine": "8 h 51 min",
+  "sunshine_difference_minutes": 140,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2003-03-29",
+  "weather_code": 51,
+  "temp_max": 20.5,
+  "temp_min": 16.8,
+  "temp_mean": 18.3,
+  "precipitation": 0.5,
+  "sunshine": 28688.91,
+  "wind_speed_max": 26.6,
+  "sunrise": "2003-03-29T07:18",
+  "sunset": "2003-03-29T19:44",
+  "sunshine_duration_seconds": 28688.91,
+  "sunshine_duration_minutes": 478,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 406,
+  "sunshine_consistency": "Faible"
+}

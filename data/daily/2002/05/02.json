@@ -1,0 +1,18 @@
+{
+  "date": "2002-05-02",
+  "weather_code": 51,
+  "temp_max": 18.2,
+  "temp_min": 14.8,
+  "temp_mean": 16.3,
+  "precipitation": 0.2,
+  "sunshine": 44997.99,
+  "wind_speed_max": 17.3,
+  "sunrise": "2002-05-02T06:35",
+  "sunset": "2002-05-02T20:11",
+  "sunshine_duration_seconds": 44997.99,
+  "sunshine_duration_minutes": 750,
+  "estimated_daily_sunshine_minutes": 576,
+  "estimated_daily_sunshine": "9 h 36 min",
+  "sunshine_difference_minutes": 174,
+  "sunshine_consistency": "Faible"
+}

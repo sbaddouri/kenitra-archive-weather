@@ -1,0 +1,18 @@
+{
+  "date": "2010-05-11",
+  "weather_code": 51,
+  "temp_max": 18.9,
+  "temp_min": 15.9,
+  "temp_mean": 17.3,
+  "precipitation": 1.6,
+  "sunshine": 46800,
+  "wind_speed_max": 21,
+  "sunrise": "2010-05-11T06:27",
+  "sunset": "2010-05-11T20:18",
+  "sunshine_duration_seconds": 46800,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 321,
+  "estimated_daily_sunshine": "5 h 21 min",
+  "sunshine_difference_minutes": 459,
+  "sunshine_consistency": "Faible"
+}

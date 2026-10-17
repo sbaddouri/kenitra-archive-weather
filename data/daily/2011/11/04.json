@@ -1,0 +1,18 @@
+{
+  "date": "2011-11-04",
+  "weather_code": 63,
+  "temp_max": 17.4,
+  "temp_min": 13.8,
+  "temp_mean": 15.8,
+  "precipitation": 42.2,
+  "sunshine": 27979.56,
+  "wind_speed_max": 40.7,
+  "sunrise": "2011-11-04T07:48",
+  "sunset": "2011-11-04T18:30",
+  "sunshine_duration_seconds": 27979.56,
+  "sunshine_duration_minutes": 466,
+  "estimated_daily_sunshine_minutes": 57,
+  "estimated_daily_sunshine": "0 h 57 min",
+  "sunshine_difference_minutes": 409,
+  "sunshine_consistency": "Faible"
+}

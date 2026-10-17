@@ -1,0 +1,18 @@
+{
+  "date": "2010-09-19",
+  "weather_code": 51,
+  "temp_max": 25.2,
+  "temp_min": 19.4,
+  "temp_mean": 21.7,
+  "precipitation": 0.2,
+  "sunshine": 41341.35,
+  "wind_speed_max": 12.9,
+  "sunrise": "2010-09-19T07:11",
+  "sunset": "2010-09-19T19:27",
+  "sunshine_duration_seconds": 41341.35,
+  "sunshine_duration_minutes": 689,
+  "estimated_daily_sunshine_minutes": 525,
+  "estimated_daily_sunshine": "8 h 45 min",
+  "sunshine_difference_minutes": 164,
+  "sunshine_consistency": "Faible"
+}

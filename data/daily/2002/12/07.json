@@ -1,0 +1,18 @@
+{
+  "date": "2002-12-07",
+  "weather_code": 0,
+  "temp_max": 15.6,
+  "temp_min": 9.9,
+  "temp_mean": 12.6,
+  "precipitation": 0,
+  "sunshine": 34576.58,
+  "wind_speed_max": 9.9,
+  "sunrise": "2002-12-07T08:19",
+  "sunset": "2002-12-07T18:16",
+  "sunshine_duration_seconds": 34576.58,
+  "sunshine_duration_minutes": 576,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 24,
+  "sunshine_consistency": "Moyen"
+}

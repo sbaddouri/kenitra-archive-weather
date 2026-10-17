@@ -1,0 +1,18 @@
+{
+  "date": "2002-06-02",
+  "weather_code": 3,
+  "temp_max": 21.7,
+  "temp_min": 17.9,
+  "temp_mean": 19.3,
+  "precipitation": 0,
+  "sunshine": 35318.63,
+  "wind_speed_max": 14.8,
+  "sunrise": "2002-06-02T06:14",
+  "sunset": "2002-06-02T20:33",
+  "sunshine_duration_seconds": 35318.63,
+  "sunshine_duration_minutes": 589,
+  "estimated_daily_sunshine_minutes": 132,
+  "estimated_daily_sunshine": "2 h 12 min",
+  "sunshine_difference_minutes": 457,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2000-10-31",
+  "weather_code": 51,
+  "temp_max": 19.3,
+  "temp_min": 15.7,
+  "temp_mean": 16.8,
+  "precipitation": 0.7,
+  "sunshine": 19998.75,
+  "wind_speed_max": 19,
+  "sunrise": "2000-10-31T07:45",
+  "sunset": "2000-10-31T18:33",
+  "sunshine_duration_seconds": 19998.75,
+  "sunshine_duration_minutes": 333,
+  "estimated_daily_sunshine_minutes": 237,
+  "estimated_daily_sunshine": "3 h 57 min",
+  "sunshine_difference_minutes": 96,
+  "sunshine_consistency": "Faible"
+}

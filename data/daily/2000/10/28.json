@@ -1,0 +1,18 @@
+{
+  "date": "2000-10-28",
+  "weather_code": 2,
+  "temp_max": 21.5,
+  "temp_min": 14,
+  "temp_mean": 17.4,
+  "precipitation": 0,
+  "sunshine": 37357.45,
+  "wind_speed_max": 10.5,
+  "sunrise": "2000-10-28T07:42",
+  "sunset": "2000-10-28T18:36",
+  "sunshine_duration_seconds": 37357.45,
+  "sunshine_duration_minutes": 623,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 38,
+  "sunshine_consistency": "Faible"
+}

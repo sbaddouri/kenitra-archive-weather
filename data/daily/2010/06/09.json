@@ -1,0 +1,18 @@
+{
+  "date": "2010-06-09",
+  "weather_code": 53,
+  "temp_max": 23.2,
+  "temp_min": 17.8,
+  "temp_mean": 20.2,
+  "precipitation": 2.7,
+  "sunshine": 35331.79,
+  "wind_speed_max": 27.5,
+  "sunrise": "2010-06-09T06:13",
+  "sunset": "2010-06-09T20:37",
+  "sunshine_duration_seconds": 35331.79,
+  "sunshine_duration_minutes": 589,
+  "estimated_daily_sunshine_minutes": 120,
+  "estimated_daily_sunshine": "2 h 00 min",
+  "sunshine_difference_minutes": 469,
+  "sunshine_consistency": "Faible"
+}

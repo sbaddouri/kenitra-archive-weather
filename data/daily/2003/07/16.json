@@ -1,0 +1,18 @@
+{
+  "date": "2003-07-16",
+  "weather_code": 1,
+  "temp_max": 25.6,
+  "temp_min": 18.1,
+  "temp_mean": 21.8,
+  "precipitation": 0,
+  "sunshine": 47323.65,
+  "wind_speed_max": 18.9,
+  "sunrise": "2003-07-16T06:25",
+  "sunset": "2003-07-16T20:38",
+  "sunshine_duration_seconds": 47323.65,
+  "sunshine_duration_minutes": 789,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 51,
+  "sunshine_consistency": "Faible"
+}

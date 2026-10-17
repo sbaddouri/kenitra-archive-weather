@@ -1,0 +1,18 @@
+{
+  "date": "2006-12-06",
+  "weather_code": 63,
+  "temp_max": 17.5,
+  "temp_min": 14.7,
+  "temp_mean": 16.1,
+  "precipitation": 8.1,
+  "sunshine": 32563.62,
+  "wind_speed_max": 26.4,
+  "sunrise": "2006-12-06T08:18",
+  "sunset": "2006-12-06T18:16",
+  "sunshine_duration_seconds": 32563.62,
+  "sunshine_duration_minutes": 543,
+  "estimated_daily_sunshine_minutes": 420,
+  "estimated_daily_sunshine": "7 h 00 min",
+  "sunshine_difference_minutes": 123,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2004-09-28",
+  "weather_code": 1,
+  "temp_max": 29.3,
+  "temp_min": 17.9,
+  "temp_mean": 23.4,
+  "precipitation": 0,
+  "sunshine": 41829.53,
+  "wind_speed_max": 12.8,
+  "sunrise": "2004-09-28T07:18",
+  "sunset": "2004-09-28T19:14",
+  "sunshine_duration_seconds": 41829.53,
+  "sunshine_duration_minutes": 697,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 23,
+  "sunshine_consistency": "Moyen"
+}

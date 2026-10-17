@@ -1,0 +1,18 @@
+{
+  "date": "2004-03-30",
+  "weather_code": 51,
+  "temp_max": 16.5,
+  "temp_min": 12.1,
+  "temp_mean": 14.1,
+  "precipitation": 1.2,
+  "sunshine": 44244.4,
+  "wind_speed_max": 19.2,
+  "sunrise": "2004-03-30T07:15",
+  "sunset": "2004-03-30T19:45",
+  "sunshine_duration_seconds": 44244.4,
+  "sunshine_duration_minutes": 737,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 167,
+  "sunshine_consistency": "Faible"
+}

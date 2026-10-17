@@ -1,0 +1,18 @@
+{
+  "date": "2009-12-25",
+  "weather_code": 63,
+  "temp_max": 21.1,
+  "temp_min": 17.1,
+  "temp_mean": 18.5,
+  "precipitation": 12.5,
+  "sunshine": 12378.82,
+  "wind_speed_max": 31.6,
+  "sunrise": "2009-12-25T08:30",
+  "sunset": "2009-12-25T18:22",
+  "sunshine_duration_seconds": 12378.82,
+  "sunshine_duration_minutes": 206,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 134,
+  "sunshine_consistency": "Faible"
+}

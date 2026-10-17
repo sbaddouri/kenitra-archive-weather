@@ -1,0 +1,18 @@
+{
+  "date": "2008-11-02",
+  "weather_code": 61,
+  "temp_max": 15.8,
+  "temp_min": 12.7,
+  "temp_mean": 13.9,
+  "precipitation": 20.8,
+  "sunshine": 34062.34,
+  "wind_speed_max": 26.6,
+  "sunrise": "2008-11-02T07:47",
+  "sunset": "2008-11-02T18:31",
+  "sunshine_duration_seconds": 34062.34,
+  "sunshine_duration_minutes": 568,
+  "estimated_daily_sunshine_minutes": 123,
+  "estimated_daily_sunshine": "2 h 03 min",
+  "sunshine_difference_minutes": 445,
+  "sunshine_consistency": "Faible"
+}

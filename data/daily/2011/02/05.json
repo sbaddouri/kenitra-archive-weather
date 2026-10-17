@@ -1,0 +1,18 @@
+{
+  "date": "2011-02-05",
+  "weather_code": 0,
+  "temp_max": 17.6,
+  "temp_min": 9.7,
+  "temp_mean": 13.1,
+  "precipitation": 0,
+  "sunshine": 37810.99,
+  "wind_speed_max": 17.3,
+  "sunrise": "2011-02-05T08:21",
+  "sunset": "2011-02-05T18:59",
+  "sunshine_duration_seconds": 37810.99,
+  "sunshine_duration_minutes": 630,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 30,
+  "sunshine_consistency": "Moyen"
+}

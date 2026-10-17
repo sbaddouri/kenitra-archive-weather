@@ -1,0 +1,18 @@
+{
+  "date": "2002-11-23",
+  "weather_code": 61,
+  "temp_max": 18,
+  "temp_min": 15.2,
+  "temp_mean": 16.5,
+  "precipitation": 11.6,
+  "sunshine": 14770.9,
+  "wind_speed_max": 23.7,
+  "sunrise": "2002-11-23T08:06",
+  "sunset": "2002-11-23T18:18",
+  "sunshine_duration_seconds": 14770.9,
+  "sunshine_duration_minutes": 246,
+  "estimated_daily_sunshine_minutes": 102,
+  "estimated_daily_sunshine": "1 h 42 min",
+  "sunshine_difference_minutes": 144,
+  "sunshine_consistency": "Faible"
+}

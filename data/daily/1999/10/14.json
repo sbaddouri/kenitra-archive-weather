@@ -1,0 +1,18 @@
+{
+  "date": "1999-10-14",
+  "weather_code": 53,
+  "temp_max": 24.6,
+  "temp_min": 19.2,
+  "temp_mean": 21.4,
+  "precipitation": 2.7,
+  "sunshine": 33623.97,
+  "wind_speed_max": 8.1,
+  "sunrise": "1999-10-14T07:30",
+  "sunset": "1999-10-14T18:53",
+  "sunshine_duration_seconds": 33623.97,
+  "sunshine_duration_minutes": 560,
+  "estimated_daily_sunshine_minutes": 78,
+  "estimated_daily_sunshine": "1 h 18 min",
+  "sunshine_difference_minutes": 482,
+  "sunshine_consistency": "Faible"
+}

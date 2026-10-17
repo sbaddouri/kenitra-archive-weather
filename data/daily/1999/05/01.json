@@ -1,0 +1,18 @@
+{
+  "date": "1999-05-01",
+  "weather_code": 63,
+  "temp_max": 19,
+  "temp_min": 14.3,
+  "temp_mean": 16.2,
+  "precipitation": 13.6,
+  "sunshine": 39725.98,
+  "wind_speed_max": 19.6,
+  "sunrise": "1999-05-01T06:37",
+  "sunset": "1999-05-01T20:10",
+  "sunshine_duration_seconds": 39725.98,
+  "sunshine_duration_minutes": 662,
+  "estimated_daily_sunshine_minutes": 264,
+  "estimated_daily_sunshine": "4 h 24 min",
+  "sunshine_difference_minutes": 398,
+  "sunshine_consistency": "Faible"
+}

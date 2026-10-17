@@ -1,0 +1,18 @@
+{
+  "date": "2000-03-10",
+  "weather_code": 53,
+  "temp_max": 30.1,
+  "temp_min": 16.6,
+  "temp_mean": 22.4,
+  "precipitation": 0.5,
+  "sunshine": 39656.58,
+  "wind_speed_max": 17.3,
+  "sunrise": "2000-03-10T07:43",
+  "sunset": "2000-03-10T19:30",
+  "sunshine_duration_seconds": 39656.58,
+  "sunshine_duration_minutes": 661,
+  "estimated_daily_sunshine_minutes": 609,
+  "estimated_daily_sunshine": "10 h 09 min",
+  "sunshine_difference_minutes": 52,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2011-12-27",
+  "weather_code": 0,
+  "temp_max": 16.3,
+  "temp_min": 9.9,
+  "temp_mean": 12.8,
+  "precipitation": 0,
+  "sunshine": 33025.2,
+  "wind_speed_max": 12.1,
+  "sunrise": "2011-12-27T08:30",
+  "sunset": "2011-12-27T18:23",
+  "sunshine_duration_seconds": 33025.2,
+  "sunshine_duration_minutes": 550,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 50,
+  "sunshine_consistency": "Faible"
+}

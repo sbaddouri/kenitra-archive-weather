@@ -1,0 +1,18 @@
+{
+  "date": "2011-03-16",
+  "weather_code": 63,
+  "temp_max": 14.3,
+  "temp_min": 10,
+  "temp_mean": 12.1,
+  "precipitation": 29.8,
+  "sunshine": 22364.87,
+  "wind_speed_max": 42.2,
+  "sunrise": "2011-03-16T07:35",
+  "sunset": "2011-03-16T19:34",
+  "sunshine_duration_seconds": 22364.87,
+  "sunshine_duration_minutes": 373,
+  "estimated_daily_sunshine_minutes": 93,
+  "estimated_daily_sunshine": "1 h 33 min",
+  "sunshine_difference_minutes": 280,
+  "sunshine_consistency": "Faible"
+}

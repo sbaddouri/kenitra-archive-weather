@@ -1,0 +1,18 @@
+{
+  "date": "2005-10-10",
+  "weather_code": 55,
+  "temp_max": 30,
+  "temp_min": 21,
+  "temp_mean": 23.7,
+  "precipitation": 3.4,
+  "sunshine": 36354.33,
+  "wind_speed_max": 22.7,
+  "sunrise": "2005-10-10T07:27",
+  "sunset": "2005-10-10T18:58",
+  "sunshine_duration_seconds": 36354.33,
+  "sunshine_duration_minutes": 606,
+  "estimated_daily_sunshine_minutes": 324,
+  "estimated_daily_sunshine": "5 h 24 min",
+  "sunshine_difference_minutes": 282,
+  "sunshine_consistency": "Faible"
+}

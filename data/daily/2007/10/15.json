@@ -1,0 +1,18 @@
+{
+  "date": "2007-10-15",
+  "weather_code": 51,
+  "temp_max": 22.9,
+  "temp_min": 18.8,
+  "temp_mean": 20.4,
+  "precipitation": 0.8,
+  "sunshine": 31847.3,
+  "wind_speed_max": 11.2,
+  "sunrise": "2007-10-15T07:31",
+  "sunset": "2007-10-15T18:52",
+  "sunshine_duration_seconds": 31847.3,
+  "sunshine_duration_minutes": 531,
+  "estimated_daily_sunshine_minutes": 210,
+  "estimated_daily_sunshine": "3 h 30 min",
+  "sunshine_difference_minutes": 321,
+  "sunshine_consistency": "Faible"
+}

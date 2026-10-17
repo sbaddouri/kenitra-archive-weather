@@ -1,0 +1,18 @@
+{
+  "date": "2000-04-08",
+  "weather_code": 61,
+  "temp_max": 19.3,
+  "temp_min": 14.9,
+  "temp_mean": 16.7,
+  "precipitation": 9.6,
+  "sunshine": 43864.98,
+  "wind_speed_max": 19.9,
+  "sunrise": "2000-04-08T07:03",
+  "sunset": "2000-04-08T19:52",
+  "sunshine_duration_seconds": 43864.98,
+  "sunshine_duration_minutes": 731,
+  "estimated_daily_sunshine_minutes": 450,
+  "estimated_daily_sunshine": "7 h 30 min",
+  "sunshine_difference_minutes": 281,
+  "sunshine_consistency": "Faible"
+}

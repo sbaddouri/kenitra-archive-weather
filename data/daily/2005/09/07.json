@@ -1,0 +1,18 @@
+{
+  "date": "2005-09-07",
+  "weather_code": 51,
+  "temp_max": 24.6,
+  "temp_min": 21,
+  "temp_mean": 22.6,
+  "precipitation": 0.4,
+  "sunshine": 37371.72,
+  "wind_speed_max": 18.9,
+  "sunrise": "2005-09-07T07:03",
+  "sunset": "2005-09-07T19:44",
+  "sunshine_duration_seconds": 37371.72,
+  "sunshine_duration_minutes": 623,
+  "estimated_daily_sunshine_minutes": 162,
+  "estimated_daily_sunshine": "2 h 42 min",
+  "sunshine_difference_minutes": 461,
+  "sunshine_consistency": "Faible"
+}

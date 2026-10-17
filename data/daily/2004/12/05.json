@@ -1,0 +1,18 @@
+{
+  "date": "2004-12-05",
+  "weather_code": 61,
+  "temp_max": 14.4,
+  "temp_min": 10.5,
+  "temp_mean": 12.5,
+  "precipitation": 8.7,
+  "sunshine": 30261.21,
+  "wind_speed_max": 10,
+  "sunrise": "2004-12-05T08:17",
+  "sunset": "2004-12-05T18:15",
+  "sunshine_duration_seconds": 30261.21,
+  "sunshine_duration_minutes": 504,
+  "estimated_daily_sunshine_minutes": 129,
+  "estimated_daily_sunshine": "2 h 09 min",
+  "sunshine_difference_minutes": 375,
+  "sunshine_consistency": "Faible"
+}

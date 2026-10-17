@@ -1,0 +1,18 @@
+{
+  "date": "2009-03-24",
+  "weather_code": 51,
+  "temp_max": 19.6,
+  "temp_min": 14.8,
+  "temp_mean": 16.9,
+  "precipitation": 0,
+  "sunshine": 39382.9,
+  "wind_speed_max": 15.9,
+  "sunrise": "2009-03-24T07:24",
+  "sunset": "2009-03-24T19:41",
+  "sunshine_duration_seconds": 39382.9,
+  "sunshine_duration_minutes": 656,
+  "estimated_daily_sunshine_minutes": 144,
+  "estimated_daily_sunshine": "2 h 24 min",
+  "sunshine_difference_minutes": 512,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2001-11-16",
+  "weather_code": 0,
+  "temp_max": 15.3,
+  "temp_min": 8.2,
+  "temp_mean": 11.5,
+  "precipitation": 0,
+  "sunshine": 35716.03,
+  "wind_speed_max": 11.1,
+  "sunrise": "2001-11-16T08:00",
+  "sunset": "2001-11-16T18:21",
+  "sunshine_duration_seconds": 35716.03,
+  "sunshine_duration_minutes": 595,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 65,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2004-04-16",
+  "weather_code": 53,
+  "temp_max": 17,
+  "temp_min": 13.4,
+  "temp_mean": 15.4,
+  "precipitation": 4.5,
+  "sunshine": 41927.69,
+  "wind_speed_max": 20.6,
+  "sunrise": "2004-04-16T06:53",
+  "sunset": "2004-04-16T19:58",
+  "sunshine_duration_seconds": 41927.69,
+  "sunshine_duration_minutes": 699,
+  "estimated_daily_sunshine_minutes": 204,
+  "estimated_daily_sunshine": "3 h 24 min",
+  "sunshine_difference_minutes": 495,
+  "sunshine_consistency": "Faible"
+}

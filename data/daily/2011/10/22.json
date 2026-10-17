@@ -1,0 +1,18 @@
+{
+  "date": "2011-10-22",
+  "weather_code": 51,
+  "temp_max": 25,
+  "temp_min": 18.5,
+  "temp_mean": 21.3,
+  "precipitation": 0.5,
+  "sunshine": 38267.27,
+  "wind_speed_max": 13.7,
+  "sunrise": "2011-10-22T07:37",
+  "sunset": "2011-10-22T18:43",
+  "sunshine_duration_seconds": 38267.27,
+  "sunshine_duration_minutes": 638,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 53,
+  "sunshine_consistency": "Faible"
+}

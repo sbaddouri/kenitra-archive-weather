@@ -1,0 +1,18 @@
+{
+  "date": "2004-08-08",
+  "weather_code": 3,
+  "temp_max": 27,
+  "temp_min": 21.6,
+  "temp_mean": 23.8,
+  "precipitation": 0,
+  "sunshine": 44811.35,
+  "wind_speed_max": 16.1,
+  "sunrise": "2004-08-08T06:42",
+  "sunset": "2004-08-08T20:20",
+  "sunshine_duration_seconds": 44811.35,
+  "sunshine_duration_minutes": 747,
+  "estimated_daily_sunshine_minutes": 735,
+  "estimated_daily_sunshine": "12 h 15 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2006-10-25",
+  "weather_code": 63,
+  "temp_max": 24.8,
+  "temp_min": 18.7,
+  "temp_mean": 20.5,
+  "precipitation": 13.9,
+  "sunshine": 19212.65,
+  "wind_speed_max": 27.2,
+  "sunrise": "2006-10-25T07:39",
+  "sunset": "2006-10-25T18:40",
+  "sunshine_duration_seconds": 19212.65,
+  "sunshine_duration_minutes": 320,
+  "estimated_daily_sunshine_minutes": 276,
+  "estimated_daily_sunshine": "4 h 36 min",
+  "sunshine_difference_minutes": 44,
+  "sunshine_consistency": "Faible"
+}

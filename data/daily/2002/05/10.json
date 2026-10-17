@@ -1,0 +1,18 @@
+{
+  "date": "2002-05-10",
+  "weather_code": 53,
+  "temp_max": 18.1,
+  "temp_min": 14.9,
+  "temp_mean": 16.3,
+  "precipitation": 5.5,
+  "sunshine": 42848.5,
+  "wind_speed_max": 20.7,
+  "sunrise": "2002-05-10T06:28",
+  "sunset": "2002-05-10T20:17",
+  "sunshine_duration_seconds": 42848.5,
+  "sunshine_duration_minutes": 714,
+  "estimated_daily_sunshine_minutes": 369,
+  "estimated_daily_sunshine": "6 h 09 min",
+  "sunshine_difference_minutes": 345,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2002-03-16",
+  "weather_code": 63,
+  "temp_max": 14.9,
+  "temp_min": 12.1,
+  "temp_mean": 13.6,
+  "precipitation": 16.9,
+  "sunshine": 29348.99,
+  "wind_speed_max": 22.8,
+  "sunrise": "2002-03-16T07:35",
+  "sunset": "2002-03-16T19:34",
+  "sunshine_duration_seconds": 29348.99,
+  "sunshine_duration_minutes": 489,
+  "estimated_daily_sunshine_minutes": 138,
+  "estimated_daily_sunshine": "2 h 18 min",
+  "sunshine_difference_minutes": 351,
+  "sunshine_consistency": "Faible"
+}

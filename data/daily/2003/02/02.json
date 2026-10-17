@@ -1,0 +1,18 @@
+{
+  "date": "2003-02-02",
+  "weather_code": 0,
+  "temp_max": 14.9,
+  "temp_min": 6.1,
+  "temp_mean": 10.9,
+  "precipitation": 0,
+  "sunshine": 37272.48,
+  "wind_speed_max": 10.9,
+  "sunrise": "2003-02-02T08:23",
+  "sunset": "2003-02-02T18:56",
+  "sunshine_duration_seconds": 37272.48,
+  "sunshine_duration_minutes": 621,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 21,
+  "sunshine_consistency": "Moyen"
+}

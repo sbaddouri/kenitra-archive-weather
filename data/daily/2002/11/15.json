@@ -1,0 +1,18 @@
+{
+  "date": "2002-11-15",
+  "weather_code": 63,
+  "temp_max": 15.5,
+  "temp_min": 12.9,
+  "temp_mean": 14.2,
+  "precipitation": 41.2,
+  "sunshine": 22412.88,
+  "wind_speed_max": 28.9,
+  "sunrise": "2002-11-15T07:59",
+  "sunset": "2002-11-15T18:22",
+  "sunshine_duration_seconds": 22412.88,
+  "sunshine_duration_minutes": 374,
+  "estimated_daily_sunshine_minutes": 51,
+  "estimated_daily_sunshine": "0 h 51 min",
+  "sunshine_difference_minutes": 323,
+  "sunshine_consistency": "Faible"
+}

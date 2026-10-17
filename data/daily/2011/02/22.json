@@ -1,0 +1,18 @@
+{
+  "date": "2011-02-22",
+  "weather_code": 2,
+  "temp_max": 17,
+  "temp_min": 10.5,
+  "temp_mean": 13.8,
+  "precipitation": 0,
+  "sunshine": 39110.02,
+  "wind_speed_max": 12.3,
+  "sunrise": "2011-02-22T08:04",
+  "sunset": "2011-02-22T19:15",
+  "sunshine_duration_seconds": 39110.02,
+  "sunshine_duration_minutes": 652,
+  "estimated_daily_sunshine_minutes": 480,
+  "estimated_daily_sunshine": "8 h 00 min",
+  "sunshine_difference_minutes": 172,
+  "sunshine_consistency": "Faible"
+}

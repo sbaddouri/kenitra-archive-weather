@@ -1,0 +1,18 @@
+{
+  "date": "2000-03-12",
+  "weather_code": 3,
+  "temp_max": 19.1,
+  "temp_min": 13.1,
+  "temp_mean": 15.9,
+  "precipitation": 0,
+  "sunshine": 35406.67,
+  "wind_speed_max": 15,
+  "sunrise": "2000-03-12T07:40",
+  "sunset": "2000-03-12T19:31",
+  "sunshine_duration_seconds": 35406.67,
+  "sunshine_duration_minutes": 590,
+  "estimated_daily_sunshine_minutes": 567,
+  "estimated_daily_sunshine": "9 h 27 min",
+  "sunshine_difference_minutes": 23,
+  "sunshine_consistency": "Moyen"
+}

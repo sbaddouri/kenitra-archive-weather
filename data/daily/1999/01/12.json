@@ -1,0 +1,18 @@
+{
+  "date": "1999-01-12",
+  "weather_code": 53,
+  "temp_max": 13.2,
+  "temp_min": 9.3,
+  "temp_mean": 11,
+  "precipitation": 4.5,
+  "sunshine": 23025.18,
+  "wind_speed_max": 17.1,
+  "sunrise": "1999-01-12T08:32",
+  "sunset": "1999-01-12T18:36",
+  "sunshine_duration_seconds": 23025.18,
+  "sunshine_duration_minutes": 384,
+  "estimated_daily_sunshine_minutes": 285,
+  "estimated_daily_sunshine": "4 h 45 min",
+  "sunshine_difference_minutes": 99,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1999-03-18",
+  "weather_code": 1,
+  "temp_max": 20.6,
+  "temp_min": 11.6,
+  "temp_mean": 15.8,
+  "precipitation": 0,
+  "sunshine": 40870.01,
+  "wind_speed_max": 15.6,
+  "sunrise": "1999-03-18T07:33",
+  "sunset": "1999-03-18T19:35",
+  "sunshine_duration_seconds": 40870.01,
+  "sunshine_duration_minutes": 681,
+  "estimated_daily_sunshine_minutes": 675,
+  "estimated_daily_sunshine": "11 h 15 min",
+  "sunshine_difference_minutes": 6,
+  "sunshine_consistency": "Bon"
+}

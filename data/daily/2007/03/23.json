@@ -1,0 +1,18 @@
+{
+  "date": "2007-03-23",
+  "weather_code": 0,
+  "temp_max": 17.9,
+  "temp_min": 8.7,
+  "temp_mean": 13.5,
+  "precipitation": 0,
+  "sunshine": 42811.68,
+  "wind_speed_max": 15.9,
+  "sunrise": "2007-03-23T07:26",
+  "sunset": "2007-03-23T19:39",
+  "sunshine_duration_seconds": 42811.68,
+  "sunshine_duration_minutes": 714,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 6,
+  "sunshine_consistency": "Bon"
+}

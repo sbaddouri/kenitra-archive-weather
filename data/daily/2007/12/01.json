@@ -1,0 +1,18 @@
+{
+  "date": "2007-12-01",
+  "weather_code": 3,
+  "temp_max": 17.7,
+  "temp_min": 10.5,
+  "temp_mean": 14.4,
+  "precipitation": 0,
+  "sunshine": 34892.98,
+  "wind_speed_max": 9,
+  "sunrise": "2007-12-01T08:13",
+  "sunset": "2007-12-01T18:16",
+  "sunshine_duration_seconds": 34892.98,
+  "sunshine_duration_minutes": 582,
+  "estimated_daily_sunshine_minutes": 555,
+  "estimated_daily_sunshine": "9 h 15 min",
+  "sunshine_difference_minutes": 27,
+  "sunshine_consistency": "Moyen"
+}

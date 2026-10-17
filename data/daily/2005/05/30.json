@@ -1,0 +1,18 @@
+{
+  "date": "2005-05-30",
+  "weather_code": 63,
+  "temp_max": 23.7,
+  "temp_min": 18.2,
+  "temp_mean": 20.6,
+  "precipitation": 9.1,
+  "sunshine": 36569.13,
+  "wind_speed_max": 14.2,
+  "sunrise": "2005-05-30T06:15",
+  "sunset": "2005-05-30T20:32",
+  "sunshine_duration_seconds": 36569.13,
+  "sunshine_duration_minutes": 609,
+  "estimated_daily_sunshine_minutes": 558,
+  "estimated_daily_sunshine": "9 h 18 min",
+  "sunshine_difference_minutes": 51,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2005-12-28",
+  "weather_code": 51,
+  "temp_max": 15.7,
+  "temp_min": 11.1,
+  "temp_mean": 13.2,
+  "precipitation": 0.5,
+  "sunshine": 28997.2,
+  "wind_speed_max": 11.7,
+  "sunrise": "2005-12-28T08:31",
+  "sunset": "2005-12-28T18:24",
+  "sunshine_duration_seconds": 28997.2,
+  "sunshine_duration_minutes": 483,
+  "estimated_daily_sunshine_minutes": 258,
+  "estimated_daily_sunshine": "4 h 18 min",
+  "sunshine_difference_minutes": 225,
+  "sunshine_consistency": "Faible"
+}

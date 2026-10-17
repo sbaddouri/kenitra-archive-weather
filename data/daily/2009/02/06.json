@@ -1,0 +1,18 @@
+{
+  "date": "2009-02-06",
+  "weather_code": 63,
+  "temp_max": 13,
+  "temp_min": 10.5,
+  "temp_mean": 11.7,
+  "precipitation": 25.5,
+  "sunshine": 32211.31,
+  "wind_speed_max": 22.9,
+  "sunrise": "2009-02-06T08:19",
+  "sunset": "2009-02-06T19:01",
+  "sunshine_duration_seconds": 32211.31,
+  "sunshine_duration_minutes": 537,
+  "estimated_daily_sunshine_minutes": 102,
+  "estimated_daily_sunshine": "1 h 42 min",
+  "sunshine_difference_minutes": 435,
+  "sunshine_consistency": "Faible"
+}

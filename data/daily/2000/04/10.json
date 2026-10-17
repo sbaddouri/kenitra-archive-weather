@@ -1,0 +1,18 @@
+{
+  "date": "2000-04-10",
+  "weather_code": 51,
+  "temp_max": 17.8,
+  "temp_min": 14.3,
+  "temp_mean": 15.9,
+  "precipitation": 1.6,
+  "sunshine": 45592.15,
+  "wind_speed_max": 23.5,
+  "sunrise": "2000-04-10T07:01",
+  "sunset": "2000-04-10T19:54",
+  "sunshine_duration_seconds": 45592.15,
+  "sunshine_duration_minutes": 760,
+  "estimated_daily_sunshine_minutes": 291,
+  "estimated_daily_sunshine": "4 h 51 min",
+  "sunshine_difference_minutes": 469,
+  "sunshine_consistency": "Faible"
+}

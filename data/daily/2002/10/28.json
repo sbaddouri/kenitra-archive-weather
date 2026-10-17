@@ -1,0 +1,18 @@
+{
+  "date": "2002-10-28",
+  "weather_code": 1,
+  "temp_max": 26,
+  "temp_min": 15.5,
+  "temp_mean": 20.3,
+  "precipitation": 0,
+  "sunshine": 37635.18,
+  "wind_speed_max": 8.5,
+  "sunrise": "2002-10-28T07:42",
+  "sunset": "2002-10-28T18:37",
+  "sunshine_duration_seconds": 37635.18,
+  "sunshine_duration_minutes": 627,
+  "estimated_daily_sunshine_minutes": 630,
+  "estimated_daily_sunshine": "10 h 30 min",
+  "sunshine_difference_minutes": 3,
+  "sunshine_consistency": "Excellent"
+}

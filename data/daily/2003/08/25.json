@@ -1,0 +1,18 @@
+{
+  "date": "2003-08-25",
+  "weather_code": 2,
+  "temp_max": 26.3,
+  "temp_min": 18.9,
+  "temp_mean": 22.6,
+  "precipitation": 0,
+  "sunshine": 46676.18,
+  "wind_speed_max": 15.8,
+  "sunrise": "2003-08-25T06:54",
+  "sunset": "2003-08-25T20:02",
+  "sunshine_duration_seconds": 46676.18,
+  "sunshine_duration_minutes": 778,
+  "estimated_daily_sunshine_minutes": 690,
+  "estimated_daily_sunshine": "11 h 30 min",
+  "sunshine_difference_minutes": 88,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2005-07-28",
+  "weather_code": 51,
+  "temp_max": 25.6,
+  "temp_min": 21.1,
+  "temp_mean": 23.1,
+  "precipitation": 1,
+  "sunshine": 46800,
+  "wind_speed_max": 15.1,
+  "sunrise": "2005-07-28T06:34",
+  "sunset": "2005-07-28T20:30",
+  "sunshine_duration_seconds": 46800,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 240,
+  "sunshine_consistency": "Faible"
+}

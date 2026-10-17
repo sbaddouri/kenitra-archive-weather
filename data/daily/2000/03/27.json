@@ -1,0 +1,18 @@
+{
+  "date": "2000-03-27",
+  "weather_code": 0,
+  "temp_max": 21.1,
+  "temp_min": 12,
+  "temp_mean": 16.6,
+  "precipitation": 0,
+  "sunshine": 43950.34,
+  "wind_speed_max": 20,
+  "sunrise": "2000-03-27T07:20",
+  "sunset": "2000-03-27T19:43",
+  "sunshine_duration_seconds": 43950.34,
+  "sunshine_duration_minutes": 733,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 13,
+  "sunshine_consistency": "Bon"
+}

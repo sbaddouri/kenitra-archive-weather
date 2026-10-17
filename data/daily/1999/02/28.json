@@ -1,0 +1,18 @@
+{
+  "date": "1999-02-28",
+  "weather_code": 63,
+  "temp_max": 14.4,
+  "temp_min": 9.8,
+  "temp_mean": 12.3,
+  "precipitation": 8.8,
+  "sunshine": 36060.65,
+  "wind_speed_max": 10.5,
+  "sunrise": "1999-02-28T07:57",
+  "sunset": "1999-02-28T19:21",
+  "sunshine_duration_seconds": 36060.65,
+  "sunshine_duration_minutes": 601,
+  "estimated_daily_sunshine_minutes": 189,
+  "estimated_daily_sunshine": "3 h 09 min",
+  "sunshine_difference_minutes": 412,
+  "sunshine_consistency": "Faible"
+}

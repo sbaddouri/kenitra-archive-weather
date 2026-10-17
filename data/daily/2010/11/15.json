@@ -1,0 +1,18 @@
+{
+  "date": "2010-11-15",
+  "weather_code": 61,
+  "temp_max": 17.1,
+  "temp_min": 13,
+  "temp_mean": 15.7,
+  "precipitation": 1.7,
+  "sunshine": 35780.29,
+  "wind_speed_max": 15.2,
+  "sunrise": "2010-11-15T07:59",
+  "sunset": "2010-11-15T18:22",
+  "sunshine_duration_seconds": 35780.29,
+  "sunshine_duration_minutes": 596,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 11,
+  "sunshine_consistency": "Bon"
+}

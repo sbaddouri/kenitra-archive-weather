@@ -1,0 +1,18 @@
+{
+  "date": "2007-11-29",
+  "weather_code": 1,
+  "temp_max": 17.3,
+  "temp_min": 11.4,
+  "temp_mean": 14.3,
+  "precipitation": 0,
+  "sunshine": 35002.18,
+  "wind_speed_max": 7.9,
+  "sunrise": "2007-11-29T08:12",
+  "sunset": "2007-11-29T18:16",
+  "sunshine_duration_seconds": 35002.18,
+  "sunshine_duration_minutes": 583,
+  "estimated_daily_sunshine_minutes": 480,
+  "estimated_daily_sunshine": "8 h 00 min",
+  "sunshine_difference_minutes": 103,
+  "sunshine_consistency": "Faible"
+}

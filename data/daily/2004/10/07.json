@@ -1,0 +1,18 @@
+{
+  "date": "2004-10-07",
+  "weather_code": 1,
+  "temp_max": 26.3,
+  "temp_min": 21.1,
+  "temp_mean": 23.6,
+  "precipitation": 0,
+  "sunshine": 40528.53,
+  "wind_speed_max": 16.1,
+  "sunrise": "2004-10-07T07:25",
+  "sunset": "2004-10-07T19:02",
+  "sunshine_duration_seconds": 40528.53,
+  "sunshine_duration_minutes": 675,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

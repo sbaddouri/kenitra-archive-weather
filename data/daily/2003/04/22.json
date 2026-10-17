@@ -1,0 +1,18 @@
+{
+  "date": "2003-04-22",
+  "weather_code": 63,
+  "temp_max": 18.4,
+  "temp_min": 14.6,
+  "temp_mean": 16.1,
+  "precipitation": 11.9,
+  "sunshine": 45453.24,
+  "wind_speed_max": 35.7,
+  "sunrise": "2003-04-22T06:47",
+  "sunset": "2003-04-22T20:03",
+  "sunshine_duration_seconds": 45453.24,
+  "sunshine_duration_minutes": 758,
+  "estimated_daily_sunshine_minutes": 279,
+  "estimated_daily_sunshine": "4 h 39 min",
+  "sunshine_difference_minutes": 479,
+  "sunshine_consistency": "Faible"
+}

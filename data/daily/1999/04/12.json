@@ -1,0 +1,18 @@
+{
+  "date": "1999-04-12",
+  "weather_code": 0,
+  "temp_max": 23.8,
+  "temp_min": 14.1,
+  "temp_mean": 19.1,
+  "precipitation": 0,
+  "sunshine": 46053.45,
+  "wind_speed_max": 18.4,
+  "sunrise": "1999-04-12T06:59",
+  "sunset": "1999-04-12T19:55",
+  "sunshine_duration_seconds": 46053.45,
+  "sunshine_duration_minutes": 768,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

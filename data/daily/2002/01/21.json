@@ -1,0 +1,18 @@
+{
+  "date": "2002-01-21",
+  "weather_code": 1,
+  "temp_max": 18.5,
+  "temp_min": 11.4,
+  "temp_mean": 14.5,
+  "precipitation": 0,
+  "sunshine": 35307.56,
+  "wind_speed_max": 16.1,
+  "sunrise": "2002-01-21T08:30",
+  "sunset": "2002-01-21T18:44",
+  "sunshine_duration_seconds": 35307.56,
+  "sunshine_duration_minutes": 588,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

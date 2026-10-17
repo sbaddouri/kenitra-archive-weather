@@ -1,0 +1,18 @@
+{
+  "date": "2000-12-24",
+  "weather_code": 63,
+  "temp_max": 15.9,
+  "temp_min": 13.9,
+  "temp_mean": 15.1,
+  "precipitation": 37.6,
+  "sunshine": 32080.99,
+  "wind_speed_max": 35.8,
+  "sunrise": "2000-12-24T08:30",
+  "sunset": "2000-12-24T18:21",
+  "sunshine_duration_seconds": 32080.99,
+  "sunshine_duration_minutes": 535,
+  "estimated_daily_sunshine_minutes": 69,
+  "estimated_daily_sunshine": "1 h 09 min",
+  "sunshine_difference_minutes": 466,
+  "sunshine_consistency": "Faible"
+}

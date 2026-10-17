@@ -1,0 +1,18 @@
+{
+  "date": "2011-08-12",
+  "weather_code": 3,
+  "temp_max": 26.6,
+  "temp_min": 21.1,
+  "temp_mean": 23.7,
+  "precipitation": 0,
+  "sunshine": 37423.27,
+  "wind_speed_max": 15.6,
+  "sunrise": "2011-08-12T06:44",
+  "sunset": "2011-08-12T20:17",
+  "sunshine_duration_seconds": 37423.27,
+  "sunshine_duration_minutes": 624,
+  "estimated_daily_sunshine_minutes": 612,
+  "estimated_daily_sunshine": "10 h 12 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

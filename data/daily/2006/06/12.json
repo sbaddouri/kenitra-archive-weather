@@ -1,0 +1,18 @@
+{
+  "date": "2006-06-12",
+  "weather_code": 51,
+  "temp_max": 25.4,
+  "temp_min": 20,
+  "temp_mean": 22.3,
+  "precipitation": 0.3,
+  "sunshine": 47628.22,
+  "wind_speed_max": 18,
+  "sunrise": "2006-06-12T06:13",
+  "sunset": "2006-06-12T20:38",
+  "sunshine_duration_seconds": 47628.22,
+  "sunshine_duration_minutes": 794,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 14,
+  "sunshine_consistency": "Bon"
+}

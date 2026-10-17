@@ -1,0 +1,18 @@
+{
+  "date": "2009-03-04",
+  "weather_code": 61,
+  "temp_max": 14.8,
+  "temp_min": 9.7,
+  "temp_mean": 12.9,
+  "precipitation": 8.4,
+  "sunshine": 19867.37,
+  "wind_speed_max": 33.9,
+  "sunrise": "2009-03-04T07:51",
+  "sunset": "2009-03-04T19:24",
+  "sunshine_duration_seconds": 19867.37,
+  "sunshine_duration_minutes": 331,
+  "estimated_daily_sunshine_minutes": 165,
+  "estimated_daily_sunshine": "2 h 45 min",
+  "sunshine_difference_minutes": 166,
+  "sunshine_consistency": "Faible"
+}

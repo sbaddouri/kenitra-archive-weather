@@ -1,0 +1,18 @@
+{
+  "date": "2000-11-29",
+  "weather_code": 61,
+  "temp_max": 19,
+  "temp_min": 13.7,
+  "temp_mean": 17.2,
+  "precipitation": 8.5,
+  "sunshine": 27596.37,
+  "wind_speed_max": 22.1,
+  "sunrise": "2000-11-29T08:12",
+  "sunset": "2000-11-29T18:16",
+  "sunshine_duration_seconds": 27596.37,
+  "sunshine_duration_minutes": 460,
+  "estimated_daily_sunshine_minutes": 282,
+  "estimated_daily_sunshine": "4 h 42 min",
+  "sunshine_difference_minutes": 178,
+  "sunshine_consistency": "Faible"
+}

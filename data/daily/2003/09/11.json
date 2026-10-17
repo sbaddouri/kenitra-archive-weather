@@ -1,0 +1,18 @@
+{
+  "date": "2003-09-11",
+  "weather_code": 0,
+  "temp_max": 28.7,
+  "temp_min": 19.2,
+  "temp_mean": 24,
+  "precipitation": 0,
+  "sunshine": 44041.34,
+  "wind_speed_max": 12.3,
+  "sunrise": "2003-09-11T07:06",
+  "sunset": "2003-09-11T19:39",
+  "sunshine_duration_seconds": 44041.34,
+  "sunshine_duration_minutes": 734,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 14,
+  "sunshine_consistency": "Bon"
+}

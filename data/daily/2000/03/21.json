@@ -1,0 +1,18 @@
+{
+  "date": "2000-03-21",
+  "weather_code": 51,
+  "temp_max": 18.7,
+  "temp_min": 13.4,
+  "temp_mean": 15.8,
+  "precipitation": 0.4,
+  "sunshine": 34603.39,
+  "wind_speed_max": 15,
+  "sunrise": "2000-03-21T07:28",
+  "sunset": "2000-03-21T19:38",
+  "sunshine_duration_seconds": 34603.39,
+  "sunshine_duration_minutes": 577,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 505,
+  "sunshine_consistency": "Faible"
+}

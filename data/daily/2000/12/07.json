@@ -1,0 +1,18 @@
+{
+  "date": "2000-12-07",
+  "weather_code": 3,
+  "temp_max": 20.9,
+  "temp_min": 15,
+  "temp_mean": 18.1,
+  "precipitation": 0,
+  "sunshine": 5871.34,
+  "wind_speed_max": 27.2,
+  "sunrise": "2000-12-07T08:19",
+  "sunset": "2000-12-07T18:16",
+  "sunshine_duration_seconds": 5871.34,
+  "sunshine_duration_minutes": 98,
+  "estimated_daily_sunshine_minutes": 60,
+  "estimated_daily_sunshine": "1 h 00 min",
+  "sunshine_difference_minutes": 38,
+  "sunshine_consistency": "Faible"
+}

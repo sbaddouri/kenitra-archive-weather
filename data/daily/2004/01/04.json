@@ -1,0 +1,18 @@
+{
+  "date": "2004-01-04",
+  "weather_code": 3,
+  "temp_max": 15.5,
+  "temp_min": 8.6,
+  "temp_mean": 12.4,
+  "precipitation": 0,
+  "sunshine": 30744.91,
+  "wind_speed_max": 12.9,
+  "sunrise": "2004-01-04T08:32",
+  "sunset": "2004-01-04T18:28",
+  "sunshine_duration_seconds": 30744.91,
+  "sunshine_duration_minutes": 512,
+  "estimated_daily_sunshine_minutes": 447,
+  "estimated_daily_sunshine": "7 h 27 min",
+  "sunshine_difference_minutes": 65,
+  "sunshine_consistency": "Faible"
+}

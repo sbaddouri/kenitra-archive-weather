@@ -1,0 +1,18 @@
+{
+  "date": "2008-12-13",
+  "weather_code": 53,
+  "temp_max": 14.6,
+  "temp_min": 11.4,
+  "temp_mean": 13.1,
+  "precipitation": 4.7,
+  "sunshine": 27036.47,
+  "wind_speed_max": 34.7,
+  "sunrise": "2008-12-13T08:23",
+  "sunset": "2008-12-13T18:17",
+  "sunshine_duration_seconds": 27036.47,
+  "sunshine_duration_minutes": 451,
+  "estimated_daily_sunshine_minutes": 111,
+  "estimated_daily_sunshine": "1 h 51 min",
+  "sunshine_difference_minutes": 340,
+  "sunshine_consistency": "Faible"
+}

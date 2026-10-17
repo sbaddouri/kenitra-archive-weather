@@ -1,0 +1,18 @@
+{
+  "date": "2000-03-22",
+  "weather_code": 61,
+  "temp_max": 18.7,
+  "temp_min": 13.5,
+  "temp_mean": 15.6,
+  "precipitation": 3.3,
+  "sunshine": 40124.26,
+  "wind_speed_max": 19.6,
+  "sunrise": "2000-03-22T07:27",
+  "sunset": "2000-03-22T19:39",
+  "sunshine_duration_seconds": 40124.26,
+  "sunshine_duration_minutes": 669,
+  "estimated_daily_sunshine_minutes": 369,
+  "estimated_daily_sunshine": "6 h 09 min",
+  "sunshine_difference_minutes": 300,
+  "sunshine_consistency": "Faible"
+}

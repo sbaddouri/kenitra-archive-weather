@@ -1,0 +1,18 @@
+{
+  "date": "2005-07-21",
+  "weather_code": 0,
+  "temp_max": 30.4,
+  "temp_min": 22.4,
+  "temp_mean": 25.9,
+  "precipitation": 0,
+  "sunshine": 47074.42,
+  "wind_speed_max": 16.2,
+  "sunrise": "2005-07-21T06:29",
+  "sunset": "2005-07-21T20:35",
+  "sunshine_duration_seconds": 47074.42,
+  "sunshine_duration_minutes": 785,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 55,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2005-12-17",
+  "weather_code": 1,
+  "temp_max": 15.4,
+  "temp_min": 8.4,
+  "temp_mean": 12.3,
+  "precipitation": 0,
+  "sunshine": 33135.7,
+  "wind_speed_max": 8.5,
+  "sunrise": "2005-12-17T08:26",
+  "sunset": "2005-12-17T18:18",
+  "sunshine_duration_seconds": 33135.7,
+  "sunshine_duration_minutes": 552,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

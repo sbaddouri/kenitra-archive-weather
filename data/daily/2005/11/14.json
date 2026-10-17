@@ -1,0 +1,18 @@
+{
+  "date": "2005-11-14",
+  "weather_code": 63,
+  "temp_max": 14,
+  "temp_min": 11.8,
+  "temp_mean": 13,
+  "precipitation": 34.9,
+  "sunshine": 21383.16,
+  "wind_speed_max": 27.4,
+  "sunrise": "2005-11-14T07:58",
+  "sunset": "2005-11-14T18:22",
+  "sunshine_duration_seconds": 21383.16,
+  "sunshine_duration_minutes": 356,
+  "estimated_daily_sunshine_minutes": 54,
+  "estimated_daily_sunshine": "0 h 54 min",
+  "sunshine_difference_minutes": 302,
+  "sunshine_consistency": "Faible"
+}

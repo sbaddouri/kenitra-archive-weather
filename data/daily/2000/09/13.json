@@ -1,0 +1,18 @@
+{
+  "date": "2000-09-13",
+  "weather_code": 3,
+  "temp_max": 27.9,
+  "temp_min": 19.8,
+  "temp_mean": 23.1,
+  "precipitation": 0,
+  "sunshine": 39248.83,
+  "wind_speed_max": 14.7,
+  "sunrise": "2000-09-13T07:08",
+  "sunset": "2000-09-13T19:35",
+  "sunshine_duration_seconds": 39248.83,
+  "sunshine_duration_minutes": 654,
+  "estimated_daily_sunshine_minutes": 324,
+  "estimated_daily_sunshine": "5 h 24 min",
+  "sunshine_difference_minutes": 330,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2001-11-06",
+  "weather_code": 51,
+  "temp_max": 28.1,
+  "temp_min": 18.2,
+  "temp_mean": 22,
+  "precipitation": 0.2,
+  "sunshine": 36166.06,
+  "wind_speed_max": 16.2,
+  "sunrise": "2001-11-06T07:50",
+  "sunset": "2001-11-06T18:28",
+  "sunshine_duration_seconds": 36166.06,
+  "sunshine_duration_minutes": 603,
+  "estimated_daily_sunshine_minutes": 279,
+  "estimated_daily_sunshine": "4 h 39 min",
+  "sunshine_difference_minutes": 324,
+  "sunshine_consistency": "Faible"
+}

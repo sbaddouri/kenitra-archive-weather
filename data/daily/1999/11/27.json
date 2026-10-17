@@ -1,0 +1,18 @@
+{
+  "date": "1999-11-27",
+  "weather_code": 0,
+  "temp_max": 17.6,
+  "temp_min": 10.5,
+  "temp_mean": 13.7,
+  "precipitation": 0,
+  "sunshine": 35119.69,
+  "wind_speed_max": 16.2,
+  "sunrise": "1999-11-27T08:10",
+  "sunset": "1999-11-27T18:17",
+  "sunshine_duration_seconds": 35119.69,
+  "sunshine_duration_minutes": 585,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

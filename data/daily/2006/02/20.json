@@ -1,0 +1,18 @@
+{
+  "date": "2006-02-20",
+  "weather_code": 55,
+  "temp_max": 13.5,
+  "temp_min": 11.1,
+  "temp_mean": 12.1,
+  "precipitation": 9.8,
+  "sunshine": 38558.47,
+  "wind_speed_max": 22,
+  "sunrise": "2006-02-20T08:06",
+  "sunset": "2006-02-20T19:14",
+  "sunshine_duration_seconds": 38558.47,
+  "sunshine_duration_minutes": 643,
+  "estimated_daily_sunshine_minutes": 129,
+  "estimated_daily_sunshine": "2 h 09 min",
+  "sunshine_difference_minutes": 514,
+  "sunshine_consistency": "Faible"
+}

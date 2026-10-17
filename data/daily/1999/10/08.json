@@ -1,0 +1,18 @@
+{
+  "date": "1999-10-08",
+  "weather_code": 63,
+  "temp_max": 23,
+  "temp_min": 18.2,
+  "temp_mean": 20.1,
+  "precipitation": 13.6,
+  "sunshine": 37047.31,
+  "wind_speed_max": 15.2,
+  "sunrise": "1999-10-08T07:25",
+  "sunset": "1999-10-08T19:01",
+  "sunshine_duration_seconds": 37047.31,
+  "sunshine_duration_minutes": 617,
+  "estimated_daily_sunshine_minutes": 375,
+  "estimated_daily_sunshine": "6 h 15 min",
+  "sunshine_difference_minutes": 242,
+  "sunshine_consistency": "Faible"
+}

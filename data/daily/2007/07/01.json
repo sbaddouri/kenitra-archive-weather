@@ -1,0 +1,18 @@
+{
+  "date": "2007-07-01",
+  "weather_code": 2,
+  "temp_max": 24.1,
+  "temp_min": 19.3,
+  "temp_mean": 21.4,
+  "precipitation": 0,
+  "sunshine": 45858.31,
+  "wind_speed_max": 17.8,
+  "sunrise": "2007-07-01T06:17",
+  "sunset": "2007-07-01T20:42",
+  "sunshine_duration_seconds": 45858.31,
+  "sunshine_duration_minutes": 764,
+  "estimated_daily_sunshine_minutes": 690,
+  "estimated_daily_sunshine": "11 h 30 min",
+  "sunshine_difference_minutes": 74,
+  "sunshine_consistency": "Faible"
+}

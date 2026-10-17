@@ -1,0 +1,18 @@
+{
+  "date": "2009-10-21",
+  "weather_code": 63,
+  "temp_max": 21.3,
+  "temp_min": 17.6,
+  "temp_mean": 19.6,
+  "precipitation": 17,
+  "sunshine": 29600.78,
+  "wind_speed_max": 27.8,
+  "sunrise": "2009-10-21T07:36",
+  "sunset": "2009-10-21T18:44",
+  "sunshine_duration_seconds": 29600.78,
+  "sunshine_duration_minutes": 493,
+  "estimated_daily_sunshine_minutes": 102,
+  "estimated_daily_sunshine": "1 h 42 min",
+  "sunshine_difference_minutes": 391,
+  "sunshine_consistency": "Faible"
+}

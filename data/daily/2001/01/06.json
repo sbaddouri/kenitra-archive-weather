@@ -1,0 +1,18 @@
+{
+  "date": "2001-01-06",
+  "weather_code": 61,
+  "temp_max": 15.5,
+  "temp_min": 12.9,
+  "temp_mean": 14.4,
+  "precipitation": 16.1,
+  "sunshine": 18972.46,
+  "wind_speed_max": 25.9,
+  "sunrise": "2001-01-06T08:33",
+  "sunset": "2001-01-06T18:31",
+  "sunshine_duration_seconds": 18972.46,
+  "sunshine_duration_minutes": 316,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 244,
+  "sunshine_consistency": "Faible"
+}

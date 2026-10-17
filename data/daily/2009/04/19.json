@@ -1,0 +1,18 @@
+{
+  "date": "2009-04-19",
+  "weather_code": 55,
+  "temp_max": 18.3,
+  "temp_min": 13.4,
+  "temp_mean": 16.1,
+  "precipitation": 4.7,
+  "sunshine": 41647.91,
+  "wind_speed_max": 22.5,
+  "sunrise": "2009-04-19T06:49",
+  "sunset": "2009-04-19T20:01",
+  "sunshine_duration_seconds": 41647.91,
+  "sunshine_duration_minutes": 694,
+  "estimated_daily_sunshine_minutes": 378,
+  "estimated_daily_sunshine": "6 h 18 min",
+  "sunshine_difference_minutes": 316,
+  "sunshine_consistency": "Faible"
+}

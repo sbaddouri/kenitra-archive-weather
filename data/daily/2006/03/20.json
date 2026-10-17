@@ -1,0 +1,18 @@
+{
+  "date": "2006-03-20",
+  "weather_code": 61,
+  "temp_max": 17,
+  "temp_min": 12.5,
+  "temp_mean": 14.3,
+  "precipitation": 10.3,
+  "sunshine": 38736.76,
+  "wind_speed_max": 22.9,
+  "sunrise": "2006-03-20T07:30",
+  "sunset": "2006-03-20T19:37",
+  "sunshine_duration_seconds": 38736.76,
+  "sunshine_duration_minutes": 646,
+  "estimated_daily_sunshine_minutes": 192,
+  "estimated_daily_sunshine": "3 h 12 min",
+  "sunshine_difference_minutes": 454,
+  "sunshine_consistency": "Faible"
+}

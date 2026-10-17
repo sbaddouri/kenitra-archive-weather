@@ -1,0 +1,18 @@
+{
+  "date": "2001-12-14",
+  "weather_code": 2,
+  "temp_max": 18.9,
+  "temp_min": 13.3,
+  "temp_mean": 15.6,
+  "precipitation": 0,
+  "sunshine": 33077.56,
+  "wind_speed_max": 12.3,
+  "sunrise": "2001-12-14T08:24",
+  "sunset": "2001-12-14T18:17",
+  "sunshine_duration_seconds": 33077.56,
+  "sunshine_duration_minutes": 551,
+  "estimated_daily_sunshine_minutes": 555,
+  "estimated_daily_sunshine": "9 h 15 min",
+  "sunshine_difference_minutes": 4,
+  "sunshine_consistency": "Excellent"
+}

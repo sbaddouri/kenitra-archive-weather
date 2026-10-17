@@ -1,0 +1,18 @@
+{
+  "date": "2010-02-18",
+  "weather_code": 61,
+  "temp_max": 19.2,
+  "temp_min": 12.5,
+  "temp_mean": 15.3,
+  "precipitation": 10.5,
+  "sunshine": 22178.79,
+  "wind_speed_max": 32.4,
+  "sunrise": "2010-02-18T08:08",
+  "sunset": "2010-02-18T19:12",
+  "sunshine_duration_seconds": 22178.79,
+  "sunshine_duration_minutes": 370,
+  "estimated_daily_sunshine_minutes": 120,
+  "estimated_daily_sunshine": "2 h 00 min",
+  "sunshine_difference_minutes": 250,
+  "sunshine_consistency": "Faible"
+}

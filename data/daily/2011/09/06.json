@@ -1,0 +1,18 @@
+{
+  "date": "2011-09-06",
+  "weather_code": 1,
+  "temp_max": 29.2,
+  "temp_min": 17.6,
+  "temp_mean": 24,
+  "precipitation": 0,
+  "sunshine": 45316.33,
+  "wind_speed_max": 14.6,
+  "sunrise": "2011-09-06T07:02",
+  "sunset": "2011-09-06T19:46",
+  "sunshine_duration_seconds": 45316.33,
+  "sunshine_duration_minutes": 755,
+  "estimated_daily_sunshine_minutes": 705,
+  "estimated_daily_sunshine": "11 h 45 min",
+  "sunshine_difference_minutes": 50,
+  "sunshine_consistency": "Faible"
+}

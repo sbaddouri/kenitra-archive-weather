@@ -1,0 +1,18 @@
+{
+  "date": "2007-01-15",
+  "weather_code": 1,
+  "temp_max": 17.4,
+  "temp_min": 9.2,
+  "temp_mean": 13.5,
+  "precipitation": 0,
+  "sunshine": 34421.69,
+  "wind_speed_max": 10.2,
+  "sunrise": "2007-01-15T08:32",
+  "sunset": "2007-01-15T18:39",
+  "sunshine_duration_seconds": 34421.69,
+  "sunshine_duration_minutes": 574,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 34,
+  "sunshine_consistency": "Faible"
+}

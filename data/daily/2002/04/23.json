@@ -1,0 +1,18 @@
+{
+  "date": "2002-04-23",
+  "weather_code": 0,
+  "temp_max": 26.2,
+  "temp_min": 16.3,
+  "temp_mean": 21.4,
+  "precipitation": 0,
+  "sunshine": 46789.46,
+  "wind_speed_max": 22,
+  "sunrise": "2002-04-23T06:45",
+  "sunset": "2002-04-23T20:04",
+  "sunshine_duration_seconds": 46789.46,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 60,
+  "sunshine_consistency": "Faible"
+}

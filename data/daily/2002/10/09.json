@@ -1,0 +1,18 @@
+{
+  "date": "2002-10-09",
+  "weather_code": 63,
+  "temp_max": 19.7,
+  "temp_min": 17.7,
+  "temp_mean": 18.9,
+  "precipitation": 29.4,
+  "sunshine": 29155.26,
+  "wind_speed_max": 22.7,
+  "sunrise": "2002-10-09T07:26",
+  "sunset": "2002-10-09T18:59",
+  "sunshine_duration_seconds": 29155.26,
+  "sunshine_duration_minutes": 486,
+  "estimated_daily_sunshine_minutes": 60,
+  "estimated_daily_sunshine": "1 h 00 min",
+  "sunshine_difference_minutes": 426,
+  "sunshine_consistency": "Faible"
+}
