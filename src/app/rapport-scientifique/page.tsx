@@ -1247,6 +1247,168 @@ export default function RapportScientifiquePage() {
 
           <section>
             <h3 className="text-xl font-semibold mb-4 mt-6">6.3. Catégories d'analogie (conventions descriptives)</h3>
+            <p className="text-justify space-y-2">
+              <strong>Catégorie 1 — Analogie très forte (S ≥ 59 %) :</strong> Faro, Adelaide, Portimão, Larache.
+              <strong>Catégorie 2 — Analogie forte (S 47–58 %) :</strong> La Valette, Le Cap, Valence, Tanger, Casablanca, Los Angeles, Perth.
+              <strong>Catégorie 3 — Analogie modérée (S 36–46 %) :</strong> Santa Barbara, Barcelone, Tunis, Tel-Aviv, Izmir, Héraklion.
+              <strong>Catégorie 4 — Analogie partielle (S 25–35 %) :</strong> Cagliari, Jerez, Essaouira, San Diego, Split, Séville, Sacramento, Almería.
+              <strong>Catégorie 5 — Analogie faible (S &lt; 25 %) :</strong> Santiago, Fresno, Monterey.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">6.4. Analyse de sensibilité</h3>
+            <p className="text-justify space-y-2">
+              Le classement est robuste au sommet : Faro, Adelaide, Portimão et Larache restent dans les cinq premiers quelle que soit la pondération testée (variantes à ±10 points sur chaque poids). En revanche, il est sensible au milieu du classement : (i) lorsque l'on retire l'humidité relative du modèle (variable indisponible pour 6 stations), Tanger et Casablanca remontent de 3 à 4 rangs, car leur couverture passe à 100 % ; (ii) lorsque l'on double le poids des précipitations, Los Angeles et San Diego chutent de 6 à 8 rangs et Bizerte, Barcelone et Tanger progressent ; (iii) lorsque l'on double le poids de la température, Séville et Fresno remontent fortement (leur ΔT est faible) alors que Monterey et Split reculent. Conclusion : la composition du « top 10 » est stable ; la position exacte des rangs 11 à 20 doit être considérée comme indicative.
+            </p>
+            <p className="text-justify space-y-2">
+              <strong>Limite de couverture :</strong> six des vingt-huit stations classées (La Valette, Larache, Perth, Tunis, Tel-Aviv, Santiago) disposent de moins de 80 % des variables du modèle. Leur score est moins fiable que celui des stations à couverture 100 % (Casablanca, Tanger, Barcelone, Los Angeles, Séville, San Diego).
+            </p>
+          </section>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>PARTIE VII — FICHES DÉTAILLÉES DES DIX MEILLEURS ANALOGUES</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <section>
+            <h3 className="text-xl font-semibold mb-4">Fiche 1 — Faro (Algarve, Portugal) — S = 70,9 %</h3>
+            <p className="text-justify space-y-2">
+              <strong>Géographie :</strong> 37°00′ N, 7°56′ O, 8 m, sur la Ria Formosa, à 7 km de l'Atlantique.
+              <strong>Classification :</strong> Csa.
+              <strong>ΔT = −0,6 °C ; ΔTx = +0,5 °C ; ΔTn = −1,3 °C ; ΔP = −59 mm ; ΔEnsoleillement = −66 h.</strong>
+              <strong>Facteurs de ressemblance :</strong> même mécanique océanique subtropicale (anticyclone des Açores + courant froid + sécheresse estivale) ; pluviométrie et ensoleillement quasi identiques ; hiver sans gel.
+              <strong>Facteurs limitants :</strong> upwelling algarien plus froid en été ; sols sableux et calcaires différents.
+              <strong>Conséquences :</strong> palette culturale superposable (agrumes, oliviers, caroubiers, amandiers, figuiers, vignes).
+              <strong>Confiance :</strong> élevée.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">Fiche 2 — Adelaide (Australie-Méridionale) — S = 60,3 % (avec correction saisonnière)</h3>
+            <p className="text-justify space-y-2">
+              <strong>Géographie :</strong> 34°55′ S, 138°36′ E, 50 m, plaine de la rivière Torrens, golfe Saint-Vincent.
+              <strong>Classification :</strong> Csa.
+              <strong>ΔT = −1,1 °C ; ΔTx = +1,3 °C ; ΔTn = −1,5 °C ; ΔP = −35 mm.</strong>
+              <strong>Facteurs de ressemblance :</strong> pluviométrie et température annuelle quasi identiques ; même régime à sécheresse estivale et maximum pluviométrique hivernal.
+              <strong>Facteurs limitants :</strong> été austral légèrement plus chaud ; continentalité supérieure.
+              <strong>Confiance :</strong> élevée.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">Fiche 3 — Portimão (Algarve, Portugal) — S = 59,5 %</h3>
+            <p className="text-justify space-y-2">
+              <strong>Géographie :</strong> 37°08′ N, 8°32′ O, embouchure de l'Arade.
+              <strong>Classification :</strong> Csa.
+              <strong>ΔT = −1,4 °C ; ΔTx = +0,1 °C ; ΔTn = −1,0 °C ; ΔP = −43 mm ; ΔEnsoleillement = −92 h.</strong>
+              <strong>Facteurs de ressemblance :</strong> convergence maximale sur la moyenne des maximales d'août (28,8 vs 28,7 °C) et sur la pluviométrie.
+              <strong>Facteurs limitants :</strong> hiver un peu plus frais ; records de froid plus marqués (−2,0 °C).
+              <strong>Confiance :</strong> élevée.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">Fiche 4 — Larache (Maroc) — S = 59,3 %</h3>
+            <p className="text-justify space-y-2">
+              <strong>Géographie :</strong> 35°11′ N, 6°09′ O, littoral atlantique, embouchure du Loukkos.
+              <strong>Classification :</strong> Csa.
+              <strong>ΔT = −0,4 °C ; ΔTx = 0,0 °C ; ΔTn = −1,0 °C ; ΔP = +130 mm.</strong>
+              <strong>Facteurs de ressemblance :</strong> proximité géographique immédiate, même façade océanique, même régime, même humidité.
+              <strong>Facteur limitant :</strong> pluviométrie supérieure de 130 mm (exposition plus directe aux perturbations atlantiques).
+              <strong>Conséquences :</strong> palette culturale identique ; Larache est même le pôle marocain de la fraise et du maraîchage d'exportation.
+              <strong>Confiance :</strong> très élevée.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">Fiche 5 — La Valette (Malte) — S = 56,1 % (couverture 54 %)</h3>
+            <p className="text-justify space-y-2">
+              <strong>Géographie :</strong> 35°54′ N, 14°31′ E, 56 m, île méditerranéenne.
+              <strong>Classification :</strong> Csa.
+              <strong>ΔP = +10 mm ; ΔTx = +3,3 °C ; ΔTn = +0,3 °C.</strong>
+              <strong>Facteurs de ressemblance :</strong> pluviométrie annuelle quasi égale ; minima hivernaux proches.
+              <strong>Facteur limitant :</strong> été insulaire plus chaud (32,0 vs 28,7 °C).
+              <strong>Confiance :</strong> modérée (données partielles).
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">Fiche 6 — Le Cap (Afrique du Sud) — S = 54,9 % (avec correction saisonnière)</h3>
+            <p className="text-justify space-y-2">
+              <strong>Géographie :</strong> 33°55′ S, 18°25′ E, entre l'Atlantique et la Montagne de la Table.
+              <strong>Classification :</strong> Csb.
+              <strong>ΔT = −1,3 °C ; ΔTx = −1,4 °C ; ΔTn = −1,8 °C ; ΔP = −78 mm ; ΔEnsoleillement = +5 h.</strong>
+              <strong>Facteurs de ressemblance :</strong> même régime à maximum pluviométrique hivernal ; ensoleillement quasi identique ; hiver sans gel.
+              <strong>Facteurs limitants :</strong> upwelling de Benguela plus froid ; été plus court.
+              <strong>Confiance :</strong> élevée.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">Fiche 7 — Valence (Espagne) — S = 53,9 %</h3>
+            <p className="text-justify space-y-2">
+              <strong>Géographie :</strong> 39°28′ N, 0°22′ O, 15 m, plaine littorale méditerranéenne.
+              <strong>Classification :</strong> BSh/Csa.
+              <strong>ΔT = 0,0 °C ; ΔTx = +1,9 °C ; ΔTn = −1,7 °C ; ΔP = −112 mm ; ΔEnsoleillement = −378 h.</strong>
+              <strong>Facteurs de ressemblance :</strong> température annuelle identique ; mécanique méditerranéenne océanisée.
+              <strong>Facteur limitant :</strong> déficit pluviométrique et d'ensoleillement marqués (la huerta valencienne est irriguée).
+              <strong>Confiance :</strong> élevée.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">Fiche 8 — Tanger (Maroc) — S = 53,4 % (couverture 100 %)</h3>
+            <p className="text-justify space-y-2">
+              <strong>Géographie :</strong> 35°47′ N, 5°48′ O, détroit de Gibraltar.
+              <strong>Classification :</strong> Csa.
+              <strong>ΔT = −0,9 °C ; ΔTx = −0,1 °C ; ΔTn = −0,4 °C ; ΔP = +165 mm ; ΔHR = 0,0 % ; ΔEnsoleillement = −150 h.</strong>
+              <strong>Facteurs de ressemblance :</strong> humidité relative rigoureusement identique (76 %), même façade atlantique, mêmes minima hivernaux.
+              <strong>Facteur limitant :</strong> pluviométrie supérieure.
+              <strong>Confiance :</strong> élevée.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">Fiche 9 — Casablanca (Maroc) — S = 52,6 % (couverture 100 %)</h3>
+            <p className="text-justify space-y-2">
+              <strong>Géographie :</strong> 33°32′ N, 7°35′ O, littoral atlantique.
+              <strong>Classification :</strong> Csa.
+              <strong>ΔT = 0,0 °C ; ΔTx = −2,0 °C ; ΔTn = −0,3 °C ; ΔP = −163 mm ; ΔHR = +6 % ; ΔEnsoleillement = −80 h.</strong>
+              <strong>Facteurs de ressemblance :</strong> température annuelle identique ; forte humidité ; même façade.
+              <strong>Facteur limitant :</strong> aridité supérieure (408 mm).
+              <strong>Confiance :</strong> élevée.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">Fiche 10 — Los Angeles (États-Unis) — S = 48,0 % (couverture 100 %)</h3>
+            <p className="text-justify space-y-2">
+              <strong>Géographie :</strong> 34°03′ N, 118°15′ O, 93 m, bassin côtier pacifique.
+              <strong>Classification :</strong> BSh (Csb sur la côte, Csa à l'intérieur).
+              <strong>ΔT = +0,2 °C ; ΔTx = +0,2 °C ; ΔTn = −0,2 °C ; ΔP = −209 mm ; ΔHR = −5 % ; ΔEnsoleillement = +144 h.</strong>
+              <strong>Facteurs de ressemblance :</strong> structure thermique superposable (écarts &lt; 0,3 °C sur les trois variables de température).
+              <strong>Facteur limitant :</strong> déficit pluviométrique majeur.
+              <strong>Confiance :</strong> élevée (données complètes).
+            </p>
+            <p className="text-justify mt-2">
+              Fiches 11 à 20 (Perth, Santa Barbara, Barcelone, Tunis, Tel-Aviv, Izmir, Héraklion, Cagliari, Jerez, Essaouira) disponibles sur la même base : les écarts chiffrés figurent dans le tableau § 6.2.
+            </p>
+          </section>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>PARTIE VIII — ANALYSE ÉCOPHYSIOLOGIQUE ET AGRONOMIQUE COMPARÉE PAR ESPÈCE</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <section>
+            <p className="text-justify space-y-2">
+              La plaine du Gharb est qualifiée de « capitale agricole du Maroc » et repose sur un système associant sucre, riz et lait, complété par les céréales, les agrumes et le maraîchage. Les cultures principales y sont les céréales, la betterave à sucre (15 000 ha prévus), la canne à sucre (3 000 ha) et le riz.
+            </p>
           </section>
         </CardContent>
       </Card>
