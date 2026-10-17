@@ -230,8 +230,9 @@ async function saveDailyAndHourlyData(daily: any, hourly: any) {
       
       if (missingFields.length > 0) {
         console.warn(`[WARNING] Missing critical fields for ${date}: ${missingFields.join(', ')}. Skipping save for this day.`);
-        missingDays.push(date);
-        continue; // Skip saving this day to prevent corrupted data
+        continue; // Skip saving this day to prevent corrupted data. The day is
+                  // automatically reported as missing by main(), which recomputes
+                  // missingDays from the requested range minus the saved days.
       }
 
       // Calculate estimated daily sunshine from hourly data
