@@ -1406,9 +1406,115 @@ export default function RapportScientifiquePage() {
         </CardHeader>
         <CardContent className="space-y-6">
           <section>
+            <h3 className="text-xl font-semibold mb-4">8.1. Agrumes (Citrus spp.) — culture-emblème, faisabilité optimale</h3>
             <p className="text-justify space-y-2">
-              La plaine du Gharb est qualifiée de « capitale agricole du Maroc » et repose sur un système associant sucre, riz et lait, complété par les céréales, les agrumes et le maraîchage. Les cultures principales y sont les céréales, la betterave à sucre (15 000 ha prévus), la canne à sucre (3 000 ha) et le riz.
+              Kénitra est au cœur du domaine agrumicole marocain. Les exigences (absence de gel prolongé, hiver doux, été chaud mais non torride, faible amplitude thermique) sont satisfaites de façon quasi optimale : minima de janvier 9,2 °C, moyenne des minima annuels 5,29 °C, record −1,1 à −3,0 °C, été à 28,7 °C de moyenne des maximales. Les analogues les plus agrumicoles sont Faro, Portimão, Le Cap, Valence, Los Angeles et Tel-Aviv.
+              <strong>Faisabilité climatique :</strong> excellente.
+              <strong>Pédologique :</strong> bonne (sols du Gharb profonds et limoneux).
+              <strong>Hydrique :</strong> dépendante de l'irrigation (déficit annuel de 2 166 mm).
+              <strong>Agronomique :</strong> établie.
             </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.2. Betterave à sucre et canne à sucre — faisabilité très bonne sous irrigation</h3>
+            <p className="text-justify space-y-2">
+              La betterave exige un été chaud et ensoleillé (3 100 h disponibles) et un hiver doux permettant la reprise ; la canne exige une saison chaude longue et une forte disponibilité en eau. Le Gharb est la région sucrière historique du Maroc. Les analogues les plus sucriers sont Huelva, Jerez, Séville (betterave espagnole) et Adelaide, Perth, Mildura (canne et betterave australiennes).
+              <strong>Faisabilité climatique :</strong> très bonne.
+              <strong>Hydrique :</strong> dépendante de l'irrigation (Sebou, nappe du Gharb).
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.3. Riz (Oryza sativa) — faisabilité climatique très bonne, hydrique exigeante</h3>
+            <p className="text-justify space-y-2">
+              Le riz requiert une saison chaude (moyenne &gt; 20 °C) et une eau d'irrigation abondante. La période mai-septembre (moyennes de 19,3 à 24,7 °C) est adaptée.
+              <strong>Faisabilité climatique :</strong> très bonne.
+              <strong>Hydrique :</strong> très exigeante, dépendante du bas Sebou.
+              L'analogue rizicole le plus proche est le delta de l'Èbre et la Camargue (non classés faute de données comparables complètes).
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.4. Céréales (blé tendre, blé dur, orge) — faisabilité pluviale réelle</h3>
+            <p className="text-justify space-y-2">
+              Avec 571 mm annuels, le Gharb se situe au-dessus du seuil de 400 mm permettant une céréaliculture pluviale viable — un avantage décisif sur Guercif (233 mm). Les analogues céréaliers les plus proches sont Faro, Barcelone, Le Cap, Adelaide.
+              <strong>Faisabilité climatique :</strong> bonne.
+              <strong>Risque :</strong> sécheresses saisonnières récurrentes ; la littérature signale dans le Gharb une tendance à la baisse ou à la stagnation des mois secs et une aggravation de la sécheresse saisonnière.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.5. Chêne-liège (Quercus suber) — espèce-emblème de la Maâmora</h3>
+            <p className="text-justify space-y-2">
+              La forêt de la Maâmora, entre Rabat et Kénitra, est la plus vaste subéraie de plaine du monde (~132 000 ha). Elle est rendue possible par exactement les invariants 4 et 6 de la signature kénitrienne : hiver doux sans gel et humidité atmosphérique élevée (76 %). C'est la preuve biogéographique la plus directe de la spécificité du climat de Kénitra par rapport à l'intérieur semi-aride.
+              <strong>Les analogues subéricoles sont l'Alentejo et l'Algarve portugais (Faro, Portimão, Setúbal) et la Sardaigne (Cagliari).</strong>
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.6. Olivier (Olea europaea) — faisabilité excellente</h3>
+            <p className="text-justify space-y-2">
+              L'olivier tolère parfaitement l'ensemble des analogues classés. Il constitue l'espèce indicatrice quasi universelle du domaine.
+              <strong>Faisabilité :</strong> excellente.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.7. Vigne (Vitis vinifera) — faisabilité climatique bonne, faisabilité phytosanitaire limitée</h3>
+            <p className="text-justify space-y-2">
+              L'insolation (3 110 h) et la chaleur estivale suffisent à une maturation complète. En revanche, l'humidité relative de 76 % et les brouillards favorisent les maladies cryptogamiques (mildiou, oïdium), ce qui pénalise la vigne à Kénitra par rapport à Guercif, Meknès ou Beni Mellal. Les meilleurs analogues viticoles sont Adelaide, Le Cap, Perth, Jerez, Séville — mais tous présentent une humidité inférieure.
+              <strong>Faisabilité climatique :</strong> bonne.
+              <strong>Agronomique :</strong> dégradée par l'hygrométrie.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.8. Palmier dattier (Phoenix dactylifera) — faisabilité marginale, non recommandée</h3>
+            <p className="text-justify space-y-2">
+              Le dattier exige une saison sèche estivale absolue et une faible humidité pendant la maturation. Or Kénitra présente 18,9 jours « moites ou pires » en août et une humidité relative annuelle de 76 %. L'humidité compromet la maturation et favorise la graphiose (Graphiola phoenicis).
+              <strong>Faisabilité climatique :</strong> marginale.
+              <strong>Non recommandée à l'échelle commerciale.</strong>
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.9. Amandier, figuier, grenadier, caroubier — faisabilité bonne à excellente</h3>
+            <p className="text-justify space-y-2">
+              Ces espèces méditerranéennes prospèrent dans la totalité des analogues classés en Catégories 1 à 3. Le caroubier, plus sensible au froid, reste limité par le risque de gel épisodique (USDA 11a moyen, mais décrochages en 9b/10a).
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.10. Maraîchage d'exportation (tomate, pomme de terre, fraise, haricot) — faisabilité excellente</h3>
+            <p className="text-justify space-y-2">
+              La douceur hivernale (minima de janvier 9,2 °C), l'insolation hivernale élevée et l'absence de gel structurel font du Gharb la première région marocaine de primeurs d'exportation. Les analogues les plus proches sont Huelva (fraises espagnoles), Almería (maraîchage sous serre), Faro, Larache.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.11. Espèces forestières et de reboisement</h3>
+            <p className="text-justify space-y-2">
+              Pour la Maâmora, la littérature recommande de favoriser le chêne-liège et le pin maritime, et d'éviter l'eucalyptus gommier rouge. Les xérophytes universelles (eucalyptus, Prosopis, Acacia, Tamarix) restent adaptées.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">8.12. Arganier (Argania spinosa) — non faisable</h3>
+            <p className="text-justify space-y-2">
+              Endémique du Souss-Massa, il exige un climat aride à semi-aride à faible hygrométrie. Le climat humide du Gharb ne lui convient pas. À distinguer nettement des analogues climatiques purs.
+            </p>
+          </section>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>PARTIE IX — CLASSIFICATIONS CLIMATIQUES, CALCULS DÉTAILLÉS ET AUDIT FINAL</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <section>
+            <h3 className="text-xl font-semibold mb-4">9.1. Classifications climatiques calculées</h3>
           </section>
         </CardContent>
       </Card>
