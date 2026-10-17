@@ -1515,6 +1515,191 @@ export default function RapportScientifiquePage() {
         <CardContent className="space-y-6">
           <section>
             <h3 className="text-xl font-semibold mb-4">9.1. Classifications climatiques calculées</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-max text-sm border-collapse border border-gray-300">
+                <thead className="bg-gray-100 sticky top-0 z-10">
+                  <tr>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Système</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Variables d'entrée</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Formule / critères</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Résultat</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Signification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-medium">Köppen-Geiger</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Tjanv = 13,2 °C ; Taou = 24,7 °C ; P = 571 mm ; Psec_été = 1 mm (juil.) ; Phumide_hiver = 104 mm</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">C : −3 °C &lt; Tmin_mens &lt; 18 °C ✓ ; a : Tm_chaud = 24,7 °C ≥ 22 °C ✓ ; s : Psec_été = 1 mm &lt; 40 mm ✓ et 1 &lt; 104/3 ✓</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Climat tempéré, été sec et chaud</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-medium">Trewartha</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">12 mois ≥ 10 °C ; Tm_chaud = 24,7 °C ; sécheresse estivale</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">C (subtropical), s (été sec), a (mois chaud ≥ 22 °C)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Csa</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Subtropical à été sec</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-medium">Emberger (Q₂)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">P = 571 mm ; M = 28,7 °C (301,85 K) ; m = 9,2 °C (282,35 K)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Q₂ = 2000·P / (M² − m²) = 1 142 000 / (91 113,4 − 79 721,5) = 100,2</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Étage humide à perhumide (m = 9,2 °C → hiver tempéré/doux)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Forte humidité bioclimatique</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-medium">De Martonne</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">P = 571 mm ; T = 18,6 °C</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">I = P/(T+10) = 571/28,6 = 19,97</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Limite semi-aride / méditerranéen-subhumide</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Équilibre précaire</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-medium">UNEP (P/ET₀)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">P = 571 mm ; ET₀ = 2 737 mm (Hargreaves)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">AI = 571/2 737 = 0,209</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Semi-aride (0,20 ≤ AI &lt; 0,50)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">À la frontière de l'aride</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-medium">Gorczynski</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">A = 11,5 °C ; φ = 34,25°</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">k = 1,7·A/sin(φ+10°) − 14 = 14,0</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Maritime (k &lt; 33)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Faible continentalité</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-medium">USDA</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Moyenne des minima annuels = 5,29 °C (41,5 °F)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Zone 11a : 40-45 °F</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">11a, décrochages épisodiques 9b-10a</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Gel quasi absent en moyenne</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center font-medium">AHS</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">~50-70 jours &gt; 30 °C (estimé)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Zone 6-7</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">6-7 (estimation, à confirmer)</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">Chaleur estivale modérée par l'océan</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-justify mt-4 text-sm">
+              <strong>Ambiguïté à signaler :</strong> les indices divergent sur Kénitra — l'indice d'aridité (De Martonne = 20, UNEP = 0,21) la situe à la frontière du semi-aride, tandis que le quotient d'Emberger (Q₂ = 100) la situe dans l'étage humide à perhumide. Cette divergence n'est pas contradictoire : elle traduit la conjonction d'une pluviométrie notable (571 mm) avec une sécheresse estivale absolue et une forte demande évaporative (2 737 mm). Le quotient d'Emberger est très sensible à la faible amplitude thermique (11,5 °C) de Kénitra, qui gonfle artificiellement Q₂. La classification la plus robuste et la plus discriminante pour Kénitra reste donc Köppen Csa, avec nuance subhumide à semi-aride selon l'échelle d'aridité retenue.
+            </p>
+            <p className="text-justify space-y-2">
+              <strong>AHS :</strong> l'estimation de 50 à 70 jours &gt; 30 °C est dérivée des statistiques mensuelles et n'a pas été vérifiée sur une série journalière ; elle doit être confirmée auprès de la DGM avant tout usage opérationnel.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">9.2. Bilan hydrique et contraintes</h3>
+            <p className="text-justify space-y-2">
+              ET₀ (Hargreaves-Samani, calculée) : 115,1 ; 148,2 ; 213,5 ; 252,4 ; 313,9 ; 315,1 ; 348,3 ; 323,9 ; 243,1 ; 210,8 ; 141,1 ; 111,3 mm → 2 737 mm/an. Bilan mensuel (P − ET₀) : négatif sur les douze mois ; déficit cumulé 2 166 mm/an, surplus 0 mm. VPD (déficit de pression de vapeur) : 0,39 à 0,94 kPa, moyenne 0,69 kPa — modéré, reflet de la forte humidité relative. Conséquence agronomique : l'irrigation est indispensable pour toute culture d'été ; le Gharb dépend structurellement de l'oued Sebou et de la nappe profonde.
+            </p>
+            <p className="text-justify space-y-2">
+              Environnement écologique : la plaine du Gharb abrite des zones humides d'importance internationale qui attestent de la productivité de ce climat — la Merja Zerga (lagune tidale de 4 500 ha, Ramsar depuis 1980, 70 km au nord de Kénitra, précipitations locales de 600 à 700 mm, plus de 100 espèces d'oiseaux, 15 000 à 30 000 canards hivernants) et la réserve biologique de Sidi Boughaba (150 ha, site Ramsar), entre Mehdia et la Maâmora.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">9.3. Analogues futurs — précaution méthodologique</h3>
+            <p className="text-justify space-y-2">
+              Aucune projection climatique quantitative n'a été calculée : le mandat exigeait de ne pas présenter de projection comme une prévision certaine, et aucune donnée CMIP6 n'a été effectivement téléchargée. Les éléments disponibles signalent seulement une tendance au réchauffement et à l'aggravation des sécheresses au Maroc, avec un déficit pluviométrique récent d'environ 35 % qualifié de « déficit extrême ». Toute affirmation sur le déplacement des analogues vers le nord ou vers des latitudes plus fraîches serait, en l'état, une hypothèse non quantifiée.
+            </p>
+          </section>
+
+          <section>
+            <h3 className="text-xl font-semibold mb-4 mt-6">9.4. Synthèse de l'audit scientifique</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-max text-sm border-collapse border border-gray-300">
+                <thead className="bg-gray-100 sticky top-0 z-10">
+                  <tr>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Point de contrôle</th>
+                    <th className="border border-gray-300 px-2 py-1 font-semibold text-center">Résultat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Cohérence T mensuelles / annuelles</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">✓ (18,57 recalculé vs 18,6 annoncé)</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Cohérence P mensuelles / annuelle</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">✓ (somme = 571 mm)</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Conversion des unités</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">✓</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Cohérence des périodes</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">⚠ Tableau composite (1940-2025 / 1981-2010 / 1961-1990)</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Point de rosée annuel</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">✗ Anomalie majeure — 8,4 °C impossible, corrigé à 13,7 °C</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Records absolus</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">⚠ Divergence avec les normales OMM (48,0 vs 47,7 °C ; −1,1 vs −3,0 °C)</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Doublons géographiques</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">✓ Aucun</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Cohérence des classifications</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">⚠ Divergence De Martonne / Emberger — documentée</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Sensibilité du classement</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">⚠ Top 10 stable, rangs 11-20 sensibles</td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Disponibilité réelle des variables</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">⚠ 6 stations sur 28 à couverture &lt; 80 %</td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="border border-gray-300 px-2 py-1 text-center">Distinction records / statistiques longues</td>
+                    <td className="border border-gray-300 px-2 py-1 text-center">✓ Respectée</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>PARTIE X — CONCLUSION SCIENTIFIQUE GÉNÉRALE</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-6">
+          <section>
+            <p className="text-justify space-y-2">
+              Le climat de Kénitra appartient à une famille climatique mondialement restreinte : celle des climats méditerranéens à très forte influence océanique atlantique, caractérisés simultanément par une pluviométrie annuelle de 500 à 750 mm, un régime à maximum automnal-hivernal et sécheresse estivale absolue, une insolation de 3 000 à 3 100 h, une humidité relative de 70 à 80 %, une amplitude thermique annuelle inférieure à 13 °C et une absence structurelle de gel.
+            </p>
+            <p className="text-justify space-y-2">
+              Cette famille ne compte qu'une vingtaine de régions parfaitement identifiées à l'échelle mondiale, réparties en trois foyers : (i) la façade atlantique ibéro-marocaine (Algarve, golfe de Cadix, littoral marocain de Larache à Casablanca) ; (ii) les façades méditerranéennes occidentales adoucies (Valence, Barcelone, Malte, Bizerte, Tunis) ; (iii) les façades océaniques subtropicales de l'hémisphère sud (Le Cap, Adelaide, Perth) et la côte pacifique californienne (Los Angeles, Santa Barbara, San Diego).
+            </p>
+            <p className="text-justify space-y-2">
+              Les analogues de très haute fidélité de Kénitra sont, par ordre décroissant : Faro et Portimão (Algarve), Larache et Tanger (Maroc atlantique), Le Cap (Afrique du Sud), Adelaide (Australie), Valence et Barcelone (Espagne), La Valette (Malte), Casablanca et Rabat-Salé (Maroc). Les analogues extra-régionaux les plus instructifs sont Le Cap, Adelaide et Los Angeles, qui reproduisent la structure thermique avec une précision remarquable.
+            </p>
+            <p className="text-justify space-y-2">
+              Les quasi-analogues fréquemment cités mais imparfaits incluent Séville, Jerez, Huelva, Cagliari, Izmir et Tunis — tous pénalisés par un été 3 à 8 °C plus chaud et une humidité inférieure — ainsi que Los Angeles et San Diego, pénalisés par un déficit pluviométrique de 200 à 320 mm.
+            </p>
+            <p className="text-justify space-y-2">
+              Il faut souligner le contraste décisif avec Guercif : à seulement 300 km de distance, Guercif relève d'une famille climatique entièrement différente — bassin intérieur semi-aride continental (BSk/BSH, Q₂ ≈ 25, amplitude annuelle 19 °C, humidité estivale 36-40 %, gel sévère jusqu'à −8,5 °C). Les deux villes marocaines ne partagent pratiquement aucun analogue, ce qui démontre que la latitude seule ne détermine pas le climat : c'est la position par rapport à l'océan et aux reliefs qui commande la classification.
+            </p>
+            <p className="text-justify space-y-2">
+              En termes de potentiel agronomique, la palette optimale de Kénitra apparaît clairement définie : agrumes, betterave et canne à sucre, riz, céréales pluviales, maraîchage d'exportation, olivier, amandier, figuier, grenadier et chêne-liège. Le palmier dattier et la vigne y sont, à l'inverse, déconseillés ou dégradés par l'hygrométrie élevée — situation exactement inverse de celle de Guercif.
+            </p>
+            <p className="text-justify space-y-2">
+              En termes de risque climatique, Kénitra se situe à l'interface USDA 11a / 9b-10a, avec une vulnérabilité épisodique aux vagues de froid radiatif, et en AHS Heat Zone 6-7 (estimation), avec une vulnérabilité modérée aux vagues de chaleur — mais une vulnérabilité structurelle et croissante au stress hydrique estival, qui constitue le principal défi d'adaptation du Gharb.
+            </p>
           </section>
         </CardContent>
       </Card>
