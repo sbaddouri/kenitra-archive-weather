@@ -1,0 +1,18 @@
+{
+  "date": "2021-04-03",
+  "weather_code": 51,
+  "temp_max": 19.4,
+  "temp_min": 12.3,
+  "temp_mean": 15.8,
+  "precipitation": 0.5,
+  "sunshine": 40475.26,
+  "wind_speed_max": 14.7,
+  "sunrise": "2021-04-03T07:10",
+  "sunset": "2021-04-03T19:48",
+  "sunshine_duration_seconds": 40475.26,
+  "sunshine_duration_minutes": 675,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 90,
+  "sunshine_consistency": "Faible"
+}

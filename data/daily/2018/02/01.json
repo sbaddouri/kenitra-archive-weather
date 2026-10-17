@@ -1,0 +1,18 @@
+{
+  "date": "2018-02-01",
+  "weather_code": 55,
+  "temp_max": 16.4,
+  "temp_min": 9.1,
+  "temp_mean": 12.6,
+  "precipitation": 0.4,
+  "sunshine": 34931.47,
+  "wind_speed_max": 17.3,
+  "sunrise": "2018-02-01T08:23",
+  "sunset": "2018-02-01T18:55",
+  "sunshine_duration_seconds": 34931.47,
+  "sunshine_duration_minutes": 582,
+  "estimated_daily_sunshine_minutes": 243,
+  "estimated_daily_sunshine": "4 h 03 min",
+  "sunshine_difference_minutes": 339,
+  "sunshine_consistency": "Faible"
+}

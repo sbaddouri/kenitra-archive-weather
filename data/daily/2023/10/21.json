@@ -1,0 +1,18 @@
+{
+  "date": "2023-10-21",
+  "weather_code": 51,
+  "temp_max": 22.7,
+  "temp_min": 16.2,
+  "temp_mean": 19.1,
+  "precipitation": 0.2,
+  "sunshine": 36790.27,
+  "wind_speed_max": 11.9,
+  "sunrise": "2023-10-21T07:36",
+  "sunset": "2023-10-21T18:45",
+  "sunshine_duration_seconds": 36790.27,
+  "sunshine_duration_minutes": 613,
+  "estimated_daily_sunshine_minutes": 285,
+  "estimated_daily_sunshine": "4 h 45 min",
+  "sunshine_difference_minutes": 328,
+  "sunshine_consistency": "Faible"
+}

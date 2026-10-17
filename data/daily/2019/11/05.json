@@ -1,0 +1,18 @@
+{
+  "date": "2019-11-05",
+  "weather_code": 55,
+  "temp_max": 19.5,
+  "temp_min": 14.9,
+  "temp_mean": 17.5,
+  "precipitation": 5.1,
+  "sunshine": 15723.57,
+  "wind_speed_max": 17.4,
+  "sunrise": "2019-11-05T07:49",
+  "sunset": "2019-11-05T18:29",
+  "sunshine_duration_seconds": 15723.57,
+  "sunshine_duration_minutes": 262,
+  "estimated_daily_sunshine_minutes": 240,
+  "estimated_daily_sunshine": "4 h 00 min",
+  "sunshine_difference_minutes": 22,
+  "sunshine_consistency": "Moyen"
+}

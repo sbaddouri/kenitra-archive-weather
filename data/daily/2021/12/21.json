@@ -1,0 +1,18 @@
+{
+  "date": "2021-12-21",
+  "weather_code": 53,
+  "temp_max": 26.1,
+  "temp_min": 11.3,
+  "temp_mean": 16.9,
+  "precipitation": 1.7,
+  "sunshine": 32400,
+  "wind_speed_max": 15.7,
+  "sunrise": "2021-12-21T08:28",
+  "sunset": "2021-12-21T18:20",
+  "sunshine_duration_seconds": 32400,
+  "sunshine_duration_minutes": 540,
+  "estimated_daily_sunshine_minutes": 69,
+  "estimated_daily_sunshine": "1 h 09 min",
+  "sunshine_difference_minutes": 471,
+  "sunshine_consistency": "Faible"
+}

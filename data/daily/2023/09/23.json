@@ -1,0 +1,18 @@
+{
+  "date": "2023-09-23",
+  "weather_code": 0,
+  "temp_max": 24.7,
+  "temp_min": 15,
+  "temp_mean": 19.9,
+  "precipitation": 0,
+  "sunshine": 40867.63,
+  "wind_speed_max": 20.3,
+  "sunrise": "2023-09-23T07:14",
+  "sunset": "2023-09-23T19:22",
+  "sunshine_duration_seconds": 40867.63,
+  "sunshine_duration_minutes": 681,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 39,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2022-12-08",
+  "weather_code": 63,
+  "temp_max": 21,
+  "temp_min": 14.2,
+  "temp_mean": 17.9,
+  "precipitation": 6.7,
+  "sunshine": 5962.98,
+  "wind_speed_max": 22.3,
+  "sunrise": "2022-12-08T08:19",
+  "sunset": "2022-12-08T18:16",
+  "sunshine_duration_seconds": 5962.98,
+  "sunshine_duration_minutes": 99,
+  "estimated_daily_sunshine_minutes": 84,
+  "estimated_daily_sunshine": "1 h 24 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

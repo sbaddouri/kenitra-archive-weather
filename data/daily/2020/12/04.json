@@ -1,0 +1,18 @@
+{
+  "date": "2020-12-04",
+  "weather_code": 61,
+  "temp_max": 17.6,
+  "temp_min": 13,
+  "temp_mean": 15.4,
+  "precipitation": 8,
+  "sunshine": 30667.5,
+  "wind_speed_max": 31.6,
+  "sunrise": "2020-12-04T08:17",
+  "sunset": "2020-12-04T18:15",
+  "sunshine_duration_seconds": 30667.5,
+  "sunshine_duration_minutes": 511,
+  "estimated_daily_sunshine_minutes": 117,
+  "estimated_daily_sunshine": "1 h 57 min",
+  "sunshine_difference_minutes": 394,
+  "sunshine_consistency": "Faible"
+}

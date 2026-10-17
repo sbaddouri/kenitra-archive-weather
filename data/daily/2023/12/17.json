@@ -1,0 +1,18 @@
+{
+  "date": "2023-12-17",
+  "weather_code": 0,
+  "temp_max": 21.5,
+  "temp_min": 12.1,
+  "temp_mean": 15.5,
+  "precipitation": 0,
+  "sunshine": 33448.53,
+  "wind_speed_max": 25.6,
+  "sunrise": "2023-12-17T08:26",
+  "sunset": "2023-12-17T18:18",
+  "sunshine_duration_seconds": 33448.53,
+  "sunshine_duration_minutes": 557,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 43,
+  "sunshine_consistency": "Faible"
+}

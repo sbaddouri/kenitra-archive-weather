@@ -1,0 +1,18 @@
+{
+  "date": "2018-10-14",
+  "weather_code": 53,
+  "temp_max": 22.2,
+  "temp_min": 17.4,
+  "temp_mean": 20.2,
+  "precipitation": 3,
+  "sunshine": 5419.85,
+  "wind_speed_max": 20,
+  "sunrise": "2018-10-14T07:30",
+  "sunset": "2018-10-14T18:53",
+  "sunshine_duration_seconds": 5419.85,
+  "sunshine_duration_minutes": 90,
+  "estimated_daily_sunshine_minutes": 168,
+  "estimated_daily_sunshine": "2 h 48 min",
+  "sunshine_difference_minutes": 78,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2021-05-27",
+  "weather_code": 3,
+  "temp_max": 24.1,
+  "temp_min": 17.8,
+  "temp_mean": 20.9,
+  "precipitation": 0,
+  "sunshine": 38607.35,
+  "wind_speed_max": 14,
+  "sunrise": "2021-05-27T06:16",
+  "sunset": "2021-05-27T20:30",
+  "sunshine_duration_seconds": 38607.35,
+  "sunshine_duration_minutes": 643,
+  "estimated_daily_sunshine_minutes": 108,
+  "estimated_daily_sunshine": "1 h 48 min",
+  "sunshine_difference_minutes": 535,
+  "sunshine_consistency": "Faible"
+}

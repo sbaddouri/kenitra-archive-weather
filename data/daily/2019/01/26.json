@@ -1,0 +1,18 @@
+{
+  "date": "2019-01-26",
+  "weather_code": 3,
+  "temp_max": 16.2,
+  "temp_min": 8.9,
+  "temp_mean": 11.7,
+  "precipitation": 0,
+  "sunshine": 26066.91,
+  "wind_speed_max": 11.8,
+  "sunrise": "2019-01-26T08:27",
+  "sunset": "2019-01-26T18:49",
+  "sunshine_duration_seconds": 26066.91,
+  "sunshine_duration_minutes": 434,
+  "estimated_daily_sunshine_minutes": 201,
+  "estimated_daily_sunshine": "3 h 21 min",
+  "sunshine_difference_minutes": 233,
+  "sunshine_consistency": "Faible"
+}

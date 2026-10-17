@@ -1,0 +1,18 @@
+{
+  "date": "2023-12-06",
+  "weather_code": 53,
+  "temp_max": 19.3,
+  "temp_min": 15.6,
+  "temp_mean": 17.8,
+  "precipitation": 4.5,
+  "sunshine": 4269.11,
+  "wind_speed_max": 35.1,
+  "sunrise": "2023-12-06T08:18",
+  "sunset": "2023-12-06T18:15",
+  "sunshine_duration_seconds": 4269.11,
+  "sunshine_duration_minutes": 71,
+  "estimated_daily_sunshine_minutes": 144,
+  "estimated_daily_sunshine": "2 h 24 min",
+  "sunshine_difference_minutes": 73,
+  "sunshine_consistency": "Faible"
+}

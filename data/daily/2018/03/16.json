@@ -1,0 +1,18 @@
+{
+  "date": "2018-03-16",
+  "weather_code": 61,
+  "temp_max": 15,
+  "temp_min": 11.1,
+  "temp_mean": 13.2,
+  "precipitation": 5.5,
+  "sunshine": 39560.23,
+  "wind_speed_max": 22.9,
+  "sunrise": "2018-03-16T07:35",
+  "sunset": "2018-03-16T19:34",
+  "sunshine_duration_seconds": 39560.23,
+  "sunshine_duration_minutes": 659,
+  "estimated_daily_sunshine_minutes": 228,
+  "estimated_daily_sunshine": "3 h 48 min",
+  "sunshine_difference_minutes": 431,
+  "sunshine_consistency": "Faible"
+}

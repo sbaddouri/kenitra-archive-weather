@@ -1,0 +1,18 @@
+{
+  "date": "2022-03-29",
+  "weather_code": 63,
+  "temp_max": 19.7,
+  "temp_min": 13.6,
+  "temp_mean": 15.6,
+  "precipitation": 9.1,
+  "sunshine": 20636.74,
+  "wind_speed_max": 21.2,
+  "sunrise": "2022-03-29T07:17",
+  "sunset": "2022-03-29T19:44",
+  "sunshine_duration_seconds": 20636.74,
+  "sunshine_duration_minutes": 344,
+  "estimated_daily_sunshine_minutes": 168,
+  "estimated_daily_sunshine": "2 h 48 min",
+  "sunshine_difference_minutes": 176,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2023-09-02",
+  "weather_code": 55,
+  "temp_max": 24.1,
+  "temp_min": 18.9,
+  "temp_mean": 22,
+  "precipitation": 1.9,
+  "sunshine": 33469.24,
+  "wind_speed_max": 15.1,
+  "sunrise": "2023-09-02T06:59",
+  "sunset": "2023-09-02T19:51",
+  "sunshine_duration_seconds": 33469.24,
+  "sunshine_duration_minutes": 558,
+  "estimated_daily_sunshine_minutes": 282,
+  "estimated_daily_sunshine": "4 h 42 min",
+  "sunshine_difference_minutes": 276,
+  "sunshine_consistency": "Faible"
+}

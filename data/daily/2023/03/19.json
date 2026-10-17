@@ -1,0 +1,18 @@
+{
+  "date": "2023-03-19",
+  "weather_code": 51,
+  "temp_max": 20.7,
+  "temp_min": 9.6,
+  "temp_mean": 14.9,
+  "precipitation": 0.3,
+  "sunshine": 39729.44,
+  "wind_speed_max": 17.9,
+  "sunrise": "2023-03-19T07:31",
+  "sunset": "2023-03-19T19:36",
+  "sunshine_duration_seconds": 39729.44,
+  "sunshine_duration_minutes": 662,
+  "estimated_daily_sunshine_minutes": 576,
+  "estimated_daily_sunshine": "9 h 36 min",
+  "sunshine_difference_minutes": 86,
+  "sunshine_consistency": "Faible"
+}

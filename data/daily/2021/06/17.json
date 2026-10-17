@@ -1,0 +1,18 @@
+{
+  "date": "2021-06-17",
+  "weather_code": 53,
+  "temp_max": 24.3,
+  "temp_min": 18.3,
+  "temp_mean": 20.8,
+  "precipitation": 3,
+  "sunshine": 40574.96,
+  "wind_speed_max": 20.7,
+  "sunrise": "2021-06-17T06:13",
+  "sunset": "2021-06-17T20:40",
+  "sunshine_duration_seconds": 40574.96,
+  "sunshine_duration_minutes": 676,
+  "estimated_daily_sunshine_minutes": 264,
+  "estimated_daily_sunshine": "4 h 24 min",
+  "sunshine_difference_minutes": 412,
+  "sunshine_consistency": "Faible"
+}

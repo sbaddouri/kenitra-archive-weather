@@ -1,0 +1,18 @@
+{
+  "date": "2021-11-27",
+  "weather_code": 55,
+  "temp_max": 16.2,
+  "temp_min": 8.1,
+  "temp_mean": 12.1,
+  "precipitation": 3.6,
+  "sunshine": 33262.28,
+  "wind_speed_max": 17.1,
+  "sunrise": "2021-11-27T08:10",
+  "sunset": "2021-11-27T18:16",
+  "sunshine_duration_seconds": 33262.28,
+  "sunshine_duration_minutes": 554,
+  "estimated_daily_sunshine_minutes": 345,
+  "estimated_daily_sunshine": "5 h 45 min",
+  "sunshine_difference_minutes": 209,
+  "sunshine_consistency": "Faible"
+}

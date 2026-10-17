@@ -1,0 +1,18 @@
+{
+  "date": "2020-06-13",
+  "weather_code": 55,
+  "temp_max": 24,
+  "temp_min": 17.2,
+  "temp_mean": 20.2,
+  "precipitation": 3.2,
+  "sunshine": 40072.65,
+  "wind_speed_max": 18.7,
+  "sunrise": "2020-06-13T06:13",
+  "sunset": "2020-06-13T20:39",
+  "sunshine_duration_seconds": 40072.65,
+  "sunshine_duration_minutes": 668,
+  "estimated_daily_sunshine_minutes": 354,
+  "estimated_daily_sunshine": "5 h 54 min",
+  "sunshine_difference_minutes": 314,
+  "sunshine_consistency": "Faible"
+}

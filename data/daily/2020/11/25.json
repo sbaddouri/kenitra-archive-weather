@@ -1,0 +1,18 @@
+{
+  "date": "2020-11-25",
+  "weather_code": 51,
+  "temp_max": 21.4,
+  "temp_min": 12.9,
+  "temp_mean": 16.5,
+  "precipitation": 0.7,
+  "sunshine": 35177.32,
+  "wind_speed_max": 23.2,
+  "sunrise": "2020-11-25T08:09",
+  "sunset": "2020-11-25T18:17",
+  "sunshine_duration_seconds": 35177.32,
+  "sunshine_duration_minutes": 586,
+  "estimated_daily_sunshine_minutes": 417,
+  "estimated_daily_sunshine": "6 h 57 min",
+  "sunshine_difference_minutes": 169,
+  "sunshine_consistency": "Faible"
+}

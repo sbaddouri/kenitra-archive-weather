@@ -1,0 +1,18 @@
+{
+  "date": "2018-02-26",
+  "weather_code": 61,
+  "temp_max": 19.6,
+  "temp_min": 10.6,
+  "temp_mean": 13.7,
+  "precipitation": 4.2,
+  "sunshine": 18983.9,
+  "wind_speed_max": 31.9,
+  "sunrise": "2018-02-26T07:58",
+  "sunset": "2018-02-26T19:19",
+  "sunshine_duration_seconds": 18983.9,
+  "sunshine_duration_minutes": 316,
+  "estimated_daily_sunshine_minutes": 237,
+  "estimated_daily_sunshine": "3 h 57 min",
+  "sunshine_difference_minutes": 79,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2022-06-13",
+  "weather_code": 3,
+  "temp_max": 41.3,
+  "temp_min": 20.8,
+  "temp_mean": 26.8,
+  "precipitation": 0,
+  "sunshine": 45373.51,
+  "wind_speed_max": 21.5,
+  "sunrise": "2022-06-13T06:13",
+  "sunset": "2022-06-13T20:39",
+  "sunshine_duration_seconds": 45373.51,
+  "sunshine_duration_minutes": 756,
+  "estimated_daily_sunshine_minutes": 447,
+  "estimated_daily_sunshine": "7 h 27 min",
+  "sunshine_difference_minutes": 309,
+  "sunshine_consistency": "Faible"
+}

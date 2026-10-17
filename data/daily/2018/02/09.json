@@ -1,0 +1,18 @@
+{
+  "date": "2018-02-09",
+  "weather_code": 51,
+  "temp_max": 14.3,
+  "temp_min": 8.1,
+  "temp_mean": 11.2,
+  "precipitation": 0.2,
+  "sunshine": 22215.81,
+  "wind_speed_max": 16.9,
+  "sunrise": "2018-02-09T08:17",
+  "sunset": "2018-02-09T19:03",
+  "sunshine_duration_seconds": 22215.81,
+  "sunshine_duration_minutes": 370,
+  "estimated_daily_sunshine_minutes": 291,
+  "estimated_daily_sunshine": "4 h 51 min",
+  "sunshine_difference_minutes": 79,
+  "sunshine_consistency": "Faible"
+}

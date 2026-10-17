@@ -1,0 +1,18 @@
+{
+  "date": "2018-02-11",
+  "weather_code": 2,
+  "temp_max": 15.9,
+  "temp_min": 7,
+  "temp_mean": 11.4,
+  "precipitation": 0,
+  "sunshine": 37728.72,
+  "wind_speed_max": 11.5,
+  "sunrise": "2018-02-11T08:15",
+  "sunset": "2018-02-11T19:05",
+  "sunshine_duration_seconds": 37728.72,
+  "sunshine_duration_minutes": 629,
+  "estimated_daily_sunshine_minutes": 615,
+  "estimated_daily_sunshine": "10 h 15 min",
+  "sunshine_difference_minutes": 14,
+  "sunshine_consistency": "Bon"
+}

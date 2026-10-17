@@ -1,0 +1,18 @@
+{
+  "date": "2020-01-10",
+  "weather_code": 53,
+  "temp_max": 16,
+  "temp_min": 8.7,
+  "temp_mean": 12.4,
+  "precipitation": 1.3,
+  "sunshine": 12640.85,
+  "wind_speed_max": 14.9,
+  "sunrise": "2020-01-10T08:33",
+  "sunset": "2020-01-10T18:34",
+  "sunshine_duration_seconds": 12640.85,
+  "sunshine_duration_minutes": 211,
+  "estimated_daily_sunshine_minutes": 153,
+  "estimated_daily_sunshine": "2 h 33 min",
+  "sunshine_difference_minutes": 58,
+  "sunshine_consistency": "Faible"
+}

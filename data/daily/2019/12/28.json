@@ -1,0 +1,18 @@
+{
+  "date": "2019-12-28",
+  "weather_code": 2,
+  "temp_max": 21.2,
+  "temp_min": 7.1,
+  "temp_mean": 12.5,
+  "precipitation": 0,
+  "sunshine": 32693.49,
+  "wind_speed_max": 10.8,
+  "sunrise": "2019-12-28T08:31",
+  "sunset": "2019-12-28T18:23",
+  "sunshine_duration_seconds": 32693.49,
+  "sunshine_duration_minutes": 545,
+  "estimated_daily_sunshine_minutes": 525,
+  "estimated_daily_sunshine": "8 h 45 min",
+  "sunshine_difference_minutes": 20,
+  "sunshine_consistency": "Moyen"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2020-12-27",
+  "weather_code": 0,
+  "temp_max": 16.3,
+  "temp_min": 6.3,
+  "temp_mean": 10.8,
+  "precipitation": 0,
+  "sunshine": 32693.65,
+  "wind_speed_max": 11.6,
+  "sunrise": "2020-12-27T08:31",
+  "sunset": "2020-12-27T18:23",
+  "sunshine_duration_seconds": 32693.65,
+  "sunshine_duration_minutes": 545,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 55,
+  "sunshine_consistency": "Faible"
+}

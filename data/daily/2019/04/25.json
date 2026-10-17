@@ -1,0 +1,18 @@
+{
+  "date": "2019-04-25",
+  "weather_code": 51,
+  "temp_max": 19.8,
+  "temp_min": 12.9,
+  "temp_mean": 16.2,
+  "precipitation": 0.8,
+  "sunshine": 41277.22,
+  "wind_speed_max": 18.6,
+  "sunrise": "2019-04-25T06:43",
+  "sunset": "2019-04-25T20:05",
+  "sunshine_duration_seconds": 41277.22,
+  "sunshine_duration_minutes": 688,
+  "estimated_daily_sunshine_minutes": 366,
+  "estimated_daily_sunshine": "6 h 06 min",
+  "sunshine_difference_minutes": 322,
+  "sunshine_consistency": "Faible"
+}

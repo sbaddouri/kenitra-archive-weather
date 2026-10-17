@@ -1,0 +1,18 @@
+{
+  "date": "2018-03-19",
+  "weather_code": 53,
+  "temp_max": 17.4,
+  "temp_min": 12.5,
+  "temp_mean": 15.1,
+  "precipitation": 2.7,
+  "sunshine": 38468.6,
+  "wind_speed_max": 23.1,
+  "sunrise": "2018-03-19T07:31",
+  "sunset": "2018-03-19T19:36",
+  "sunshine_duration_seconds": 38468.6,
+  "sunshine_duration_minutes": 641,
+  "estimated_daily_sunshine_minutes": 411,
+  "estimated_daily_sunshine": "6 h 51 min",
+  "sunshine_difference_minutes": 230,
+  "sunshine_consistency": "Faible"
+}

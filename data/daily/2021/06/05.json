@@ -1,0 +1,18 @@
+{
+  "date": "2021-06-05",
+  "weather_code": 1,
+  "temp_max": 25,
+  "temp_min": 15.8,
+  "temp_mean": 20.1,
+  "precipitation": 0,
+  "sunshine": 47107.67,
+  "wind_speed_max": 16.8,
+  "sunrise": "2021-06-05T06:14",
+  "sunset": "2021-06-05T20:35",
+  "sunshine_duration_seconds": 47107.67,
+  "sunshine_duration_minutes": 785,
+  "estimated_daily_sunshine_minutes": 825,
+  "estimated_daily_sunshine": "13 h 45 min",
+  "sunshine_difference_minutes": 40,
+  "sunshine_consistency": "Faible"
+}

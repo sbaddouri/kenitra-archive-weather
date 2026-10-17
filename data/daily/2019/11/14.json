@@ -1,0 +1,18 @@
+{
+  "date": "2019-11-14",
+  "weather_code": 61,
+  "temp_max": 19.3,
+  "temp_min": 13.1,
+  "temp_mean": 15.8,
+  "precipitation": 4.8,
+  "sunshine": 30452.62,
+  "wind_speed_max": 26.1,
+  "sunrise": "2019-11-14T07:58",
+  "sunset": "2019-11-14T18:22",
+  "sunshine_duration_seconds": 30452.62,
+  "sunshine_duration_minutes": 508,
+  "estimated_daily_sunshine_minutes": 195,
+  "estimated_daily_sunshine": "3 h 15 min",
+  "sunshine_difference_minutes": 313,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2020-09-01",
+  "weather_code": 2,
+  "temp_max": 26.2,
+  "temp_min": 19.8,
+  "temp_mean": 22.7,
+  "precipitation": 0,
+  "sunshine": 44625.39,
+  "wind_speed_max": 19.8,
+  "sunrise": "2020-09-01T06:59",
+  "sunset": "2020-09-01T19:51",
+  "sunshine_duration_seconds": 44625.39,
+  "sunshine_duration_minutes": 744,
+  "estimated_daily_sunshine_minutes": 510,
+  "estimated_daily_sunshine": "8 h 30 min",
+  "sunshine_difference_minutes": 234,
+  "sunshine_consistency": "Faible"
+}

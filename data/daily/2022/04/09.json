@@ -1,0 +1,18 @@
+{
+  "date": "2022-04-09",
+  "weather_code": 3,
+  "temp_max": 21.5,
+  "temp_min": 8.6,
+  "temp_mean": 14.6,
+  "precipitation": 0,
+  "sunshine": 45164.25,
+  "wind_speed_max": 17.3,
+  "sunrise": "2022-04-09T07:02",
+  "sunset": "2022-04-09T19:53",
+  "sunshine_duration_seconds": 45164.25,
+  "sunshine_duration_minutes": 753,
+  "estimated_daily_sunshine_minutes": 621,
+  "estimated_daily_sunshine": "10 h 21 min",
+  "sunshine_difference_minutes": 132,
+  "sunshine_consistency": "Faible"
+}

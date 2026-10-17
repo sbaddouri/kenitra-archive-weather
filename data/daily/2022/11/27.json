@@ -1,0 +1,18 @@
+{
+  "date": "2022-11-27",
+  "weather_code": 0,
+  "temp_max": 22.6,
+  "temp_min": 8.2,
+  "temp_mean": 15.1,
+  "precipitation": 0,
+  "sunshine": 35098.75,
+  "wind_speed_max": 14.5,
+  "sunrise": "2022-11-27T08:10",
+  "sunset": "2022-11-27T18:16",
+  "sunshine_duration_seconds": 35098.75,
+  "sunshine_duration_minutes": 585,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

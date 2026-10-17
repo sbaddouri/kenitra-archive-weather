@@ -1,0 +1,18 @@
+{
+  "date": "2018-10-23",
+  "weather_code": 61,
+  "temp_max": 23.4,
+  "temp_min": 16,
+  "temp_mean": 20,
+  "precipitation": 5.1,
+  "sunshine": 20031.38,
+  "wind_speed_max": 17.7,
+  "sunrise": "2018-10-23T07:38",
+  "sunset": "2018-10-23T18:42",
+  "sunshine_duration_seconds": 20031.38,
+  "sunshine_duration_minutes": 334,
+  "estimated_daily_sunshine_minutes": 294,
+  "estimated_daily_sunshine": "4 h 54 min",
+  "sunshine_difference_minutes": 40,
+  "sunshine_consistency": "Faible"
+}

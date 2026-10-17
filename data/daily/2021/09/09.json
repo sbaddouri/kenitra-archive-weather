@@ -1,0 +1,18 @@
+{
+  "date": "2021-09-09",
+  "weather_code": 51,
+  "temp_max": 26.7,
+  "temp_min": 19.9,
+  "temp_mean": 22.8,
+  "precipitation": 0.6,
+  "sunshine": 40869.19,
+  "wind_speed_max": 17.4,
+  "sunrise": "2021-09-09T07:05",
+  "sunset": "2021-09-09T19:41",
+  "sunshine_duration_seconds": 40869.19,
+  "sunshine_duration_minutes": 681,
+  "estimated_daily_sunshine_minutes": 465,
+  "estimated_daily_sunshine": "7 h 45 min",
+  "sunshine_difference_minutes": 216,
+  "sunshine_consistency": "Faible"
+}

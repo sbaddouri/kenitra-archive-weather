@@ -1,0 +1,18 @@
+{
+  "date": "2019-01-20",
+  "weather_code": 63,
+  "temp_max": 16.1,
+  "temp_min": 12.3,
+  "temp_mean": 14.5,
+  "precipitation": 15.1,
+  "sunshine": 31118.65,
+  "wind_speed_max": 30,
+  "sunrise": "2019-01-20T08:30",
+  "sunset": "2019-01-20T18:43",
+  "sunshine_duration_seconds": 31118.65,
+  "sunshine_duration_minutes": 519,
+  "estimated_daily_sunshine_minutes": 264,
+  "estimated_daily_sunshine": "4 h 24 min",
+  "sunshine_difference_minutes": 255,
+  "sunshine_consistency": "Faible"
+}

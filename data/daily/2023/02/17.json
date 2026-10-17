@@ -1,0 +1,18 @@
+{
+  "date": "2023-02-17",
+  "weather_code": 3,
+  "temp_max": 21.4,
+  "temp_min": 12.4,
+  "temp_mean": 16.8,
+  "precipitation": 0,
+  "sunshine": 2919.41,
+  "wind_speed_max": 20.3,
+  "sunrise": "2023-02-17T08:09",
+  "sunset": "2023-02-17T19:11",
+  "sunshine_duration_seconds": 2919.41,
+  "sunshine_duration_minutes": 49,
+  "estimated_daily_sunshine_minutes": 66,
+  "estimated_daily_sunshine": "1 h 06 min",
+  "sunshine_difference_minutes": 17,
+  "sunshine_consistency": "Moyen"
+}

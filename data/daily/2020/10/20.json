@@ -1,0 +1,18 @@
+{
+  "date": "2020-10-20",
+  "weather_code": 53,
+  "temp_max": 32,
+  "temp_min": 15.4,
+  "temp_mean": 22.5,
+  "precipitation": 2,
+  "sunshine": 25910.42,
+  "wind_speed_max": 38.9,
+  "sunrise": "2020-10-20T07:35",
+  "sunset": "2020-10-20T18:45",
+  "sunshine_duration_seconds": 25910.42,
+  "sunshine_duration_minutes": 432,
+  "estimated_daily_sunshine_minutes": 66,
+  "estimated_daily_sunshine": "1 h 06 min",
+  "sunshine_difference_minutes": 366,
+  "sunshine_consistency": "Faible"
+}

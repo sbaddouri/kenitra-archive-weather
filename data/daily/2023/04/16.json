@@ -1,0 +1,18 @@
+{
+  "date": "2023-04-16",
+  "weather_code": 3,
+  "temp_max": 28.4,
+  "temp_min": 9.6,
+  "temp_mean": 19.2,
+  "precipitation": 0,
+  "sunshine": 46462.49,
+  "wind_speed_max": 17.8,
+  "sunrise": "2023-04-16T06:54",
+  "sunset": "2023-04-16T19:58",
+  "sunshine_duration_seconds": 46462.49,
+  "sunshine_duration_minutes": 774,
+  "estimated_daily_sunshine_minutes": 711,
+  "estimated_daily_sunshine": "11 h 51 min",
+  "sunshine_difference_minutes": 63,
+  "sunshine_consistency": "Faible"
+}

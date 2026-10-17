@@ -1,0 +1,18 @@
+{
+  "date": "2020-10-21",
+  "weather_code": 53,
+  "temp_max": 24.6,
+  "temp_min": 17.4,
+  "temp_mean": 20.7,
+  "precipitation": 0.3,
+  "sunshine": 6066.68,
+  "wind_speed_max": 23.7,
+  "sunrise": "2020-10-21T07:36",
+  "sunset": "2020-10-21T18:44",
+  "sunshine_duration_seconds": 6066.68,
+  "sunshine_duration_minutes": 101,
+  "estimated_daily_sunshine_minutes": 75,
+  "estimated_daily_sunshine": "1 h 15 min",
+  "sunshine_difference_minutes": 26,
+  "sunshine_consistency": "Moyen"
+}

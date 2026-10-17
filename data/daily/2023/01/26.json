@@ -1,0 +1,18 @@
+{
+  "date": "2023-01-26",
+  "weather_code": 63,
+  "temp_max": 15.6,
+  "temp_min": 1.4,
+  "temp_mean": 9,
+  "precipitation": 8.4,
+  "sunshine": 33056.28,
+  "wind_speed_max": 20.1,
+  "sunrise": "2023-01-26T08:27",
+  "sunset": "2023-01-26T18:49",
+  "sunshine_duration_seconds": 33056.28,
+  "sunshine_duration_minutes": 551,
+  "estimated_daily_sunshine_minutes": 408,
+  "estimated_daily_sunshine": "6 h 48 min",
+  "sunshine_difference_minutes": 143,
+  "sunshine_consistency": "Faible"
+}

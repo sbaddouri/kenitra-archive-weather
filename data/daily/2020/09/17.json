@@ -1,0 +1,18 @@
+{
+  "date": "2020-09-17",
+  "weather_code": 63,
+  "temp_max": 28,
+  "temp_min": 20.9,
+  "temp_mean": 24,
+  "precipitation": 12.9,
+  "sunshine": 21207.05,
+  "wind_speed_max": 12.3,
+  "sunrise": "2020-09-17T07:10",
+  "sunset": "2020-09-17T19:29",
+  "sunshine_duration_seconds": 21207.05,
+  "sunshine_duration_minutes": 353,
+  "estimated_daily_sunshine_minutes": 81,
+  "estimated_daily_sunshine": "1 h 21 min",
+  "sunshine_difference_minutes": 272,
+  "sunshine_consistency": "Faible"
+}

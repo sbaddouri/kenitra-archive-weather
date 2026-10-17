@@ -1,0 +1,18 @@
+{
+  "date": "2018-01-19",
+  "weather_code": 51,
+  "temp_max": 17.6,
+  "temp_min": 9.8,
+  "temp_mean": 13,
+  "precipitation": 0.6,
+  "sunshine": 31351.73,
+  "wind_speed_max": 16.4,
+  "sunrise": "2018-01-19T08:31",
+  "sunset": "2018-01-19T18:43",
+  "sunshine_duration_seconds": 31351.73,
+  "sunshine_duration_minutes": 523,
+  "estimated_daily_sunshine_minutes": 279,
+  "estimated_daily_sunshine": "4 h 39 min",
+  "sunshine_difference_minutes": 244,
+  "sunshine_consistency": "Faible"
+}

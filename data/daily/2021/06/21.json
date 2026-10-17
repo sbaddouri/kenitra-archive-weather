@@ -1,0 +1,18 @@
+{
+  "date": "2021-06-21",
+  "weather_code": 51,
+  "temp_max": 23.2,
+  "temp_min": 16.3,
+  "temp_mean": 19.4,
+  "precipitation": 0.3,
+  "sunshine": 26528.62,
+  "wind_speed_max": 17.9,
+  "sunrise": "2021-06-21T06:14",
+  "sunset": "2021-06-21T20:41",
+  "sunshine_duration_seconds": 26528.62,
+  "sunshine_duration_minutes": 442,
+  "estimated_daily_sunshine_minutes": 444,
+  "estimated_daily_sunshine": "7 h 24 min",
+  "sunshine_difference_minutes": 2,
+  "sunshine_consistency": "Excellent"
+}

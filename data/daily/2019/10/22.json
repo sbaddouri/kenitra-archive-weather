@@ -1,0 +1,18 @@
+{
+  "date": "2019-10-22",
+  "weather_code": 61,
+  "temp_max": 16.1,
+  "temp_min": 12.6,
+  "temp_mean": 14.1,
+  "precipitation": 10.7,
+  "sunshine": 34477.25,
+  "wind_speed_max": 21,
+  "sunrise": "2019-10-22T07:37",
+  "sunset": "2019-10-22T18:43",
+  "sunshine_duration_seconds": 34477.25,
+  "sunshine_duration_minutes": 575,
+  "estimated_daily_sunshine_minutes": 129,
+  "estimated_daily_sunshine": "2 h 09 min",
+  "sunshine_difference_minutes": 446,
+  "sunshine_consistency": "Faible"
+}

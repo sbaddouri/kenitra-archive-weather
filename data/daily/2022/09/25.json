@@ -1,0 +1,18 @@
+{
+  "date": "2022-09-25",
+  "weather_code": 3,
+  "temp_max": 24.5,
+  "temp_min": 19.5,
+  "temp_mean": 21.6,
+  "precipitation": 0,
+  "sunshine": 31666.77,
+  "wind_speed_max": 22.7,
+  "sunrise": "2022-09-25T07:16",
+  "sunset": "2022-09-25T19:19",
+  "sunshine_duration_seconds": 31666.77,
+  "sunshine_duration_minutes": 528,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 456,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2022-10-18",
+  "weather_code": 3,
+  "temp_max": 30.2,
+  "temp_min": 17.6,
+  "temp_mean": 22.8,
+  "precipitation": 0,
+  "sunshine": 31644.66,
+  "wind_speed_max": 11.4,
+  "sunrise": "2022-10-18T07:33",
+  "sunset": "2022-10-18T18:48",
+  "sunshine_duration_seconds": 31644.66,
+  "sunshine_duration_minutes": 527,
+  "estimated_daily_sunshine_minutes": 129,
+  "estimated_daily_sunshine": "2 h 09 min",
+  "sunshine_difference_minutes": 398,
+  "sunshine_consistency": "Faible"
+}

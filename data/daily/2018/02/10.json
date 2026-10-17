@@ -1,0 +1,18 @@
+{
+  "date": "2018-02-10",
+  "weather_code": 53,
+  "temp_max": 15.4,
+  "temp_min": 10.5,
+  "temp_mean": 12.4,
+  "precipitation": 2.5,
+  "sunshine": 36289.78,
+  "wind_speed_max": 16.5,
+  "sunrise": "2018-02-10T08:16",
+  "sunset": "2018-02-10T19:04",
+  "sunshine_duration_seconds": 36289.78,
+  "sunshine_duration_minutes": 605,
+  "estimated_daily_sunshine_minutes": 318,
+  "estimated_daily_sunshine": "5 h 18 min",
+  "sunshine_difference_minutes": 287,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2022-11-22",
+  "weather_code": 55,
+  "temp_max": 22.6,
+  "temp_min": 14,
+  "temp_mean": 18.1,
+  "precipitation": 3.6,
+  "sunshine": 29100.52,
+  "wind_speed_max": 14.8,
+  "sunrise": "2022-11-22T08:05",
+  "sunset": "2022-11-22T18:18",
+  "sunshine_duration_seconds": 29100.52,
+  "sunshine_duration_minutes": 485,
+  "estimated_daily_sunshine_minutes": 165,
+  "estimated_daily_sunshine": "2 h 45 min",
+  "sunshine_difference_minutes": 320,
+  "sunshine_consistency": "Faible"
+}

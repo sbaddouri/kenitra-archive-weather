@@ -1,0 +1,18 @@
+{
+  "date": "2020-05-02",
+  "weather_code": 2,
+  "temp_max": 27.5,
+  "temp_min": 14,
+  "temp_mean": 20.2,
+  "precipitation": 0,
+  "sunshine": 46800,
+  "wind_speed_max": 17.5,
+  "sunrise": "2020-05-02T06:35",
+  "sunset": "2020-05-02T20:11",
+  "sunshine_duration_seconds": 46800,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 0,
+  "sunshine_consistency": "Excellent"
+}

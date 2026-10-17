@@ -1,0 +1,18 @@
+{
+  "date": "2019-12-16",
+  "weather_code": 51,
+  "temp_max": 20.6,
+  "temp_min": 10.5,
+  "temp_mean": 13.9,
+  "precipitation": 1,
+  "sunshine": 28864.64,
+  "wind_speed_max": 34.9,
+  "sunrise": "2019-12-16T08:25",
+  "sunset": "2019-12-16T18:17",
+  "sunshine_duration_seconds": 28864.64,
+  "sunshine_duration_minutes": 481,
+  "estimated_daily_sunshine_minutes": 303,
+  "estimated_daily_sunshine": "5 h 03 min",
+  "sunshine_difference_minutes": 178,
+  "sunshine_consistency": "Faible"
+}

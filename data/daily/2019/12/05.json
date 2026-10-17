@@ -1,0 +1,18 @@
+{
+  "date": "2019-12-05",
+  "weather_code": 53,
+  "temp_max": 17.6,
+  "temp_min": 10.9,
+  "temp_mean": 13.9,
+  "precipitation": 1.2,
+  "sunshine": 32488.25,
+  "wind_speed_max": 14.3,
+  "sunrise": "2019-12-05T08:17",
+  "sunset": "2019-12-05T18:15",
+  "sunshine_duration_seconds": 32488.25,
+  "sunshine_duration_minutes": 541,
+  "estimated_daily_sunshine_minutes": 108,
+  "estimated_daily_sunshine": "1 h 48 min",
+  "sunshine_difference_minutes": 433,
+  "sunshine_consistency": "Faible"
+}

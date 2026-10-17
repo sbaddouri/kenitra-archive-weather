@@ -1,0 +1,18 @@
+{
+  "date": "2020-06-12",
+  "weather_code": 51,
+  "temp_max": 22.7,
+  "temp_min": 16.8,
+  "temp_mean": 19.7,
+  "precipitation": 2.1,
+  "sunshine": 46800,
+  "wind_speed_max": 24.3,
+  "sunrise": "2020-06-12T06:13",
+  "sunset": "2020-06-12T20:39",
+  "sunshine_duration_seconds": 46800,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 285,
+  "estimated_daily_sunshine": "4 h 45 min",
+  "sunshine_difference_minutes": 495,
+  "sunshine_consistency": "Faible"
+}

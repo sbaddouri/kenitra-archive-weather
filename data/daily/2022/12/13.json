@@ -1,0 +1,18 @@
+{
+  "date": "2022-12-13",
+  "weather_code": 63,
+  "temp_max": 23.5,
+  "temp_min": 17.4,
+  "temp_mean": 20,
+  "precipitation": 4.2,
+  "sunshine": 31399.03,
+  "wind_speed_max": 25.3,
+  "sunrise": "2022-12-13T08:23",
+  "sunset": "2022-12-13T18:17",
+  "sunshine_duration_seconds": 31399.03,
+  "sunshine_duration_minutes": 523,
+  "estimated_daily_sunshine_minutes": 186,
+  "estimated_daily_sunshine": "3 h 06 min",
+  "sunshine_difference_minutes": 337,
+  "sunshine_consistency": "Faible"
+}

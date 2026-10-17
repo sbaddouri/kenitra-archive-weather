@@ -1,0 +1,18 @@
+{
+  "date": "2019-06-25",
+  "weather_code": 3,
+  "temp_max": 26.1,
+  "temp_min": 19,
+  "temp_mean": 22,
+  "precipitation": 0,
+  "sunshine": 40137.7,
+  "wind_speed_max": 16.3,
+  "sunrise": "2019-06-25T06:15",
+  "sunset": "2019-06-25T20:42",
+  "sunshine_duration_seconds": 40137.7,
+  "sunshine_duration_minutes": 669,
+  "estimated_daily_sunshine_minutes": 624,
+  "estimated_daily_sunshine": "10 h 24 min",
+  "sunshine_difference_minutes": 45,
+  "sunshine_consistency": "Faible"
+}

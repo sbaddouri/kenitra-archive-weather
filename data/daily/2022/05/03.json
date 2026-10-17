@@ -1,0 +1,18 @@
+{
+  "date": "2022-05-03",
+  "weather_code": 63,
+  "temp_max": 17.7,
+  "temp_min": 13.5,
+  "temp_mean": 15.5,
+  "precipitation": 14.3,
+  "sunshine": 29464.87,
+  "wind_speed_max": 19,
+  "sunrise": "2022-05-03T06:34",
+  "sunset": "2022-05-03T20:12",
+  "sunshine_duration_seconds": 29464.87,
+  "sunshine_duration_minutes": 491,
+  "estimated_daily_sunshine_minutes": 243,
+  "estimated_daily_sunshine": "4 h 03 min",
+  "sunshine_difference_minutes": 248,
+  "sunshine_consistency": "Faible"
+}

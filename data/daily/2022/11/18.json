@@ -1,0 +1,18 @@
+{
+  "date": "2022-11-18",
+  "weather_code": 63,
+  "temp_max": 19.6,
+  "temp_min": 15.4,
+  "temp_mean": 17.3,
+  "precipitation": 8.6,
+  "sunshine": 28108.67,
+  "wind_speed_max": 30.4,
+  "sunrise": "2022-11-18T08:02",
+  "sunset": "2022-11-18T18:20",
+  "sunshine_duration_seconds": 28108.67,
+  "sunshine_duration_minutes": 468,
+  "estimated_daily_sunshine_minutes": 240,
+  "estimated_daily_sunshine": "4 h 00 min",
+  "sunshine_difference_minutes": 228,
+  "sunshine_consistency": "Faible"
+}

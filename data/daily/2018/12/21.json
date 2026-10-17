@@ -1,0 +1,18 @@
+{
+  "date": "2018-12-21",
+  "weather_code": 3,
+  "temp_max": 19,
+  "temp_min": 6.4,
+  "temp_mean": 11.5,
+  "precipitation": 0,
+  "sunshine": 32555.03,
+  "wind_speed_max": 13.9,
+  "sunrise": "2018-12-21T08:28",
+  "sunset": "2018-12-21T18:20",
+  "sunshine_duration_seconds": 32555.03,
+  "sunshine_duration_minutes": 543,
+  "estimated_daily_sunshine_minutes": 516,
+  "estimated_daily_sunshine": "8 h 36 min",
+  "sunshine_difference_minutes": 27,
+  "sunshine_consistency": "Moyen"
+}

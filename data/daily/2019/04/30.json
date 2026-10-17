@@ -1,0 +1,18 @@
+{
+  "date": "2019-04-30",
+  "weather_code": 3,
+  "temp_max": 23.7,
+  "temp_min": 15.4,
+  "temp_mean": 18.9,
+  "precipitation": 0,
+  "sunshine": 44117.27,
+  "wind_speed_max": 13.5,
+  "sunrise": "2019-04-30T06:38",
+  "sunset": "2019-04-30T20:09",
+  "sunshine_duration_seconds": 44117.27,
+  "sunshine_duration_minutes": 735,
+  "estimated_daily_sunshine_minutes": 726,
+  "estimated_daily_sunshine": "12 h 06 min",
+  "sunshine_difference_minutes": 9,
+  "sunshine_consistency": "Bon"
+}

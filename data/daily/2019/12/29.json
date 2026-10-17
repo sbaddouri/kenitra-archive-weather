@@ -1,0 +1,18 @@
+{
+  "date": "2019-12-29",
+  "weather_code": 2,
+  "temp_max": 22,
+  "temp_min": 8.1,
+  "temp_mean": 13.2,
+  "precipitation": 0,
+  "sunshine": 32681.18,
+  "wind_speed_max": 14.1,
+  "sunrise": "2019-12-29T08:31",
+  "sunset": "2019-12-29T18:24",
+  "sunshine_duration_seconds": 32681.18,
+  "sunshine_duration_minutes": 545,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 40,
+  "sunshine_consistency": "Faible"
+}

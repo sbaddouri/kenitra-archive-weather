@@ -1,0 +1,18 @@
+{
+  "date": "2018-11-21",
+  "weather_code": 63,
+  "temp_max": 17.7,
+  "temp_min": 13.6,
+  "temp_mean": 15.2,
+  "precipitation": 8.1,
+  "sunshine": 31195.08,
+  "wind_speed_max": 24.8,
+  "sunrise": "2018-11-21T08:04",
+  "sunset": "2018-11-21T18:18",
+  "sunshine_duration_seconds": 31195.08,
+  "sunshine_duration_minutes": 520,
+  "estimated_daily_sunshine_minutes": 174,
+  "estimated_daily_sunshine": "2 h 54 min",
+  "sunshine_difference_minutes": 346,
+  "sunshine_consistency": "Faible"
+}

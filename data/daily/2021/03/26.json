@@ -1,0 +1,18 @@
+{
+  "date": "2021-03-26",
+  "weather_code": 3,
+  "temp_max": 23.9,
+  "temp_min": 6.8,
+  "temp_mean": 14.8,
+  "precipitation": 0,
+  "sunshine": 40773.8,
+  "wind_speed_max": 16.6,
+  "sunrise": "2021-03-26T07:21",
+  "sunset": "2021-03-26T19:42",
+  "sunshine_duration_seconds": 40773.8,
+  "sunshine_duration_minutes": 680,
+  "estimated_daily_sunshine_minutes": 420,
+  "estimated_daily_sunshine": "7 h 00 min",
+  "sunshine_difference_minutes": 260,
+  "sunshine_consistency": "Faible"
+}

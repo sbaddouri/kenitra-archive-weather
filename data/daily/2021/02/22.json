@@ -1,0 +1,18 @@
+{
+  "date": "2021-02-22",
+  "weather_code": 63,
+  "temp_max": 16.5,
+  "temp_min": 9.1,
+  "temp_mean": 12.2,
+  "precipitation": 4.6,
+  "sunshine": 39036.14,
+  "wind_speed_max": 14.4,
+  "sunrise": "2021-02-22T08:03",
+  "sunset": "2021-02-22T19:16",
+  "sunshine_duration_seconds": 39036.14,
+  "sunshine_duration_minutes": 651,
+  "estimated_daily_sunshine_minutes": 465,
+  "estimated_daily_sunshine": "7 h 45 min",
+  "sunshine_difference_minutes": 186,
+  "sunshine_consistency": "Faible"
+}

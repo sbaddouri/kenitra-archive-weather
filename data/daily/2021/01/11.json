@@ -1,0 +1,18 @@
+{
+  "date": "2021-01-11",
+  "weather_code": 61,
+  "temp_max": 12.7,
+  "temp_min": 4.8,
+  "temp_mean": 9,
+  "precipitation": 4.9,
+  "sunshine": 33038.69,
+  "wind_speed_max": 16.2,
+  "sunrise": "2021-01-11T08:32",
+  "sunset": "2021-01-11T18:35",
+  "sunshine_duration_seconds": 33038.69,
+  "sunshine_duration_minutes": 551,
+  "estimated_daily_sunshine_minutes": 273,
+  "estimated_daily_sunshine": "4 h 33 min",
+  "sunshine_difference_minutes": 278,
+  "sunshine_consistency": "Faible"
+}
