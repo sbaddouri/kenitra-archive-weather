@@ -1,0 +1,18 @@
+{
+  "date": "2024-11-19",
+  "weather_code": 55,
+  "temp_max": 23.3,
+  "temp_min": 16.5,
+  "temp_mean": 19.3,
+  "precipitation": 1.6,
+  "sunshine": 34403.32,
+  "wind_speed_max": 23.3,
+  "sunrise": "2024-11-19T08:03",
+  "sunset": "2024-11-19T18:19",
+  "sunshine_duration_seconds": 34403.32,
+  "sunshine_duration_minutes": 573,
+  "estimated_daily_sunshine_minutes": 93,
+  "estimated_daily_sunshine": "1 h 33 min",
+  "sunshine_difference_minutes": 480,
+  "sunshine_consistency": "Faible"
+}

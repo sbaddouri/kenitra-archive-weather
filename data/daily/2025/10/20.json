@@ -1,0 +1,18 @@
+{
+  "date": "2025-10-20",
+  "weather_code": 51,
+  "temp_max": 23.8,
+  "temp_min": 19.2,
+  "temp_mean": 20.9,
+  "precipitation": 0.4,
+  "sunshine": 35500.69,
+  "wind_speed_max": 12.7,
+  "sunrise": "2025-10-20T07:35",
+  "sunset": "2025-10-20T18:45",
+  "sunshine_duration_seconds": 35500.69,
+  "sunshine_duration_minutes": 592,
+  "estimated_daily_sunshine_minutes": 333,
+  "estimated_daily_sunshine": "5 h 33 min",
+  "sunshine_difference_minutes": 259,
+  "sunshine_consistency": "Faible"
+}

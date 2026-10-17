@@ -1,0 +1,18 @@
+{
+  "date": "2024-09-12",
+  "weather_code": 1,
+  "temp_max": 24.9,
+  "temp_min": 16.2,
+  "temp_mean": 20.5,
+  "precipitation": 0,
+  "sunshine": 41905.13,
+  "wind_speed_max": 14.9,
+  "sunrise": "2024-09-12T07:07",
+  "sunset": "2024-09-12T19:36",
+  "sunshine_duration_seconds": 41905.13,
+  "sunshine_duration_minutes": 698,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 22,
+  "sunshine_consistency": "Moyen"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2025-11-13",
+  "weather_code": 63,
+  "temp_max": 21.5,
+  "temp_min": 16.3,
+  "temp_mean": 18.1,
+  "precipitation": 22.5,
+  "sunshine": 0,
+  "wind_speed_max": 42,
+  "sunrise": "2025-11-13T07:57",
+  "sunset": "2025-11-13T18:23",
+  "sunshine_duration_seconds": 0,
+  "sunshine_duration_minutes": 0,
+  "estimated_daily_sunshine_minutes": 78,
+  "estimated_daily_sunshine": "1 h 18 min",
+  "sunshine_difference_minutes": 78,
+  "sunshine_consistency": "Faible"
+}

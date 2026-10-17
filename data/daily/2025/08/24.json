@@ -1,0 +1,18 @@
+{
+  "date": "2025-08-24",
+  "weather_code": 63,
+  "temp_max": 24.6,
+  "temp_min": 20.1,
+  "temp_mean": 22.2,
+  "precipitation": 9.5,
+  "sunshine": 28445.5,
+  "wind_speed_max": 17.1,
+  "sunrise": "2025-08-24T06:53",
+  "sunset": "2025-08-24T20:02",
+  "sunshine_duration_seconds": 28445.5,
+  "sunshine_duration_minutes": 474,
+  "estimated_daily_sunshine_minutes": 87,
+  "estimated_daily_sunshine": "1 h 27 min",
+  "sunshine_difference_minutes": 387,
+  "sunshine_consistency": "Faible"
+}

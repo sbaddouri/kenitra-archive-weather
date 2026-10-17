@@ -1,0 +1,18 @@
+{
+  "date": "2025-02-19",
+  "weather_code": 51,
+  "temp_max": 17.9,
+  "temp_min": 12.8,
+  "temp_mean": 14.9,
+  "precipitation": 1,
+  "sunshine": 33202.75,
+  "wind_speed_max": 14.2,
+  "sunrise": "2025-02-19T08:06",
+  "sunset": "2025-02-19T19:13",
+  "sunshine_duration_seconds": 33202.75,
+  "sunshine_duration_minutes": 553,
+  "estimated_daily_sunshine_minutes": 366,
+  "estimated_daily_sunshine": "6 h 06 min",
+  "sunshine_difference_minutes": 187,
+  "sunshine_consistency": "Faible"
+}

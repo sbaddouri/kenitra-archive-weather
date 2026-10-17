@@ -1,0 +1,18 @@
+{
+  "date": "2025-12-31",
+  "weather_code": 65,
+  "temp_max": 18,
+  "temp_min": 12.3,
+  "temp_mean": 15,
+  "precipitation": 27.7,
+  "sunshine": 21595.97,
+  "wind_speed_max": 30.5,
+  "sunrise": "2025-12-31T08:32",
+  "sunset": "2025-12-31T18:26",
+  "sunshine_duration_seconds": 21595.97,
+  "sunshine_duration_minutes": 360,
+  "estimated_daily_sunshine_minutes": 96,
+  "estimated_daily_sunshine": "1 h 36 min",
+  "sunshine_difference_minutes": 264,
+  "sunshine_consistency": "Faible"
+}

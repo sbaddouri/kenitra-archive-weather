@@ -1,0 +1,18 @@
+{
+  "date": "2024-02-26",
+  "weather_code": 63,
+  "temp_max": 16.4,
+  "temp_min": 14.1,
+  "temp_mean": 15.1,
+  "precipitation": 13.2,
+  "sunshine": 18845.26,
+  "wind_speed_max": 30.6,
+  "sunrise": "2024-02-26T07:59",
+  "sunset": "2024-02-26T19:19",
+  "sunshine_duration_seconds": 18845.26,
+  "sunshine_duration_minutes": 314,
+  "estimated_daily_sunshine_minutes": 228,
+  "estimated_daily_sunshine": "3 h 48 min",
+  "sunshine_difference_minutes": 86,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2024-12-13",
+  "weather_code": 61,
+  "temp_max": 17.9,
+  "temp_min": 10.4,
+  "temp_mean": 13.3,
+  "precipitation": 2.7,
+  "sunshine": 32742.79,
+  "wind_speed_max": 10.6,
+  "sunrise": "2024-12-13T08:24",
+  "sunset": "2024-12-13T18:17",
+  "sunshine_duration_seconds": 32742.79,
+  "sunshine_duration_minutes": 546,
+  "estimated_daily_sunshine_minutes": 495,
+  "estimated_daily_sunshine": "8 h 15 min",
+  "sunshine_difference_minutes": 51,
+  "sunshine_consistency": "Faible"
+}

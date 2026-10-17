@@ -1,0 +1,18 @@
+{
+  "date": "2024-10-27",
+  "weather_code": 55,
+  "temp_max": 19.2,
+  "temp_min": 14.3,
+  "temp_mean": 16.9,
+  "precipitation": 5.4,
+  "sunshine": 32888.02,
+  "wind_speed_max": 16.4,
+  "sunrise": "2024-10-27T07:42",
+  "sunset": "2024-10-27T18:37",
+  "sunshine_duration_seconds": 32888.02,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 393,
+  "estimated_daily_sunshine": "6 h 33 min",
+  "sunshine_difference_minutes": 155,
+  "sunshine_consistency": "Faible"
+}

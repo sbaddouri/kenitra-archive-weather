@@ -1,0 +1,18 @@
+{
+  "date": "2024-09-16",
+  "weather_code": 3,
+  "temp_max": 26.8,
+  "temp_min": 21,
+  "temp_mean": 23,
+  "precipitation": 0,
+  "sunshine": 37897.75,
+  "wind_speed_max": 24.6,
+  "sunrise": "2024-09-16T07:10",
+  "sunset": "2024-09-16T19:30",
+  "sunshine_duration_seconds": 37897.75,
+  "sunshine_duration_minutes": 632,
+  "estimated_daily_sunshine_minutes": 432,
+  "estimated_daily_sunshine": "7 h 12 min",
+  "sunshine_difference_minutes": 200,
+  "sunshine_consistency": "Faible"
+}

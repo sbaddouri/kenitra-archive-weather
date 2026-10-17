@@ -1,0 +1,18 @@
+{
+  "date": "2024-10-07",
+  "weather_code": 51,
+  "temp_max": 23.9,
+  "temp_min": 19.7,
+  "temp_mean": 21.6,
+  "precipitation": 1.1,
+  "sunshine": 31603.82,
+  "wind_speed_max": 21.2,
+  "sunrise": "2024-10-07T07:25",
+  "sunset": "2024-10-07T19:01",
+  "sunshine_duration_seconds": 31603.82,
+  "sunshine_duration_minutes": 527,
+  "estimated_daily_sunshine_minutes": 213,
+  "estimated_daily_sunshine": "3 h 33 min",
+  "sunshine_difference_minutes": 314,
+  "sunshine_consistency": "Faible"
+}

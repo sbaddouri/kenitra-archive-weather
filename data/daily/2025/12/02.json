@@ -1,0 +1,18 @@
+{
+  "date": "2025-12-02",
+  "weather_code": 53,
+  "temp_max": 17.6,
+  "temp_min": 9,
+  "temp_mean": 13.3,
+  "precipitation": 2.8,
+  "sunshine": 27486.54,
+  "wind_speed_max": 24.1,
+  "sunrise": "2025-12-02T08:15",
+  "sunset": "2025-12-02T18:16",
+  "sunshine_duration_seconds": 27486.54,
+  "sunshine_duration_minutes": 458,
+  "estimated_daily_sunshine_minutes": 276,
+  "estimated_daily_sunshine": "4 h 36 min",
+  "sunshine_difference_minutes": 182,
+  "sunshine_consistency": "Faible"
+}

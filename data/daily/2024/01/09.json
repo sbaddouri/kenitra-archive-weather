@@ -1,0 +1,18 @@
+{
+  "date": "2024-01-09",
+  "weather_code": 65,
+  "temp_max": 20.6,
+  "temp_min": 8.3,
+  "temp_mean": 13.3,
+  "precipitation": 28.1,
+  "sunshine": 15111.11,
+  "wind_speed_max": 19.5,
+  "sunrise": "2024-01-09T08:33",
+  "sunset": "2024-01-09T18:33",
+  "sunshine_duration_seconds": 15111.11,
+  "sunshine_duration_minutes": 252,
+  "estimated_daily_sunshine_minutes": 63,
+  "estimated_daily_sunshine": "1 h 03 min",
+  "sunshine_difference_minutes": 189,
+  "sunshine_consistency": "Faible"
+}

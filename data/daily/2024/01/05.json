@@ -1,0 +1,18 @@
+{
+  "date": "2024-01-05",
+  "weather_code": 61,
+  "temp_max": 17.2,
+  "temp_min": 14.3,
+  "temp_mean": 15.6,
+  "precipitation": 4.8,
+  "sunshine": 32093.9,
+  "wind_speed_max": 30.5,
+  "sunrise": "2024-01-05T08:32",
+  "sunset": "2024-01-05T18:29",
+  "sunshine_duration_seconds": 32093.9,
+  "sunshine_duration_minutes": 535,
+  "estimated_daily_sunshine_minutes": 366,
+  "estimated_daily_sunshine": "6 h 06 min",
+  "sunshine_difference_minutes": 169,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2025-02-05",
+  "weather_code": 0,
+  "temp_max": 19,
+  "temp_min": 9.6,
+  "temp_mean": 13.4,
+  "precipitation": 0,
+  "sunshine": 37079.93,
+  "wind_speed_max": 21.8,
+  "sunrise": "2025-02-05T08:20",
+  "sunset": "2025-02-05T19:00",
+  "sunshine_duration_seconds": 37079.93,
+  "sunshine_duration_minutes": 618,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 18,
+  "sunshine_consistency": "Moyen"
+}

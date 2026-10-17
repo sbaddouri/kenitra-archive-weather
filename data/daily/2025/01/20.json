@@ -1,0 +1,18 @@
+{
+  "date": "2025-01-20",
+  "weather_code": 3,
+  "temp_max": 18.8,
+  "temp_min": 10.1,
+  "temp_mean": 13.8,
+  "precipitation": 0,
+  "sunshine": 29610.55,
+  "wind_speed_max": 15.6,
+  "sunrise": "2025-01-20T08:30",
+  "sunset": "2025-01-20T18:44",
+  "sunshine_duration_seconds": 29610.55,
+  "sunshine_duration_minutes": 494,
+  "estimated_daily_sunshine_minutes": 123,
+  "estimated_daily_sunshine": "2 h 03 min",
+  "sunshine_difference_minutes": 371,
+  "sunshine_consistency": "Faible"
+}

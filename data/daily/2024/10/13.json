@@ -1,0 +1,18 @@
+{
+  "date": "2024-10-13",
+  "weather_code": 53,
+  "temp_max": 24.6,
+  "temp_min": 18.7,
+  "temp_mean": 21,
+  "precipitation": 1.5,
+  "sunshine": 36000,
+  "wind_speed_max": 14.5,
+  "sunrise": "2024-10-13T07:30",
+  "sunset": "2024-10-13T18:53",
+  "sunshine_duration_seconds": 36000,
+  "sunshine_duration_minutes": 600,
+  "estimated_daily_sunshine_minutes": 333,
+  "estimated_daily_sunshine": "5 h 33 min",
+  "sunshine_difference_minutes": 267,
+  "sunshine_consistency": "Faible"
+}

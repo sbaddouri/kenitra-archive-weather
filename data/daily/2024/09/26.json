@@ -1,0 +1,18 @@
+{
+  "date": "2024-09-26",
+  "weather_code": 51,
+  "temp_max": 25,
+  "temp_min": 18.7,
+  "temp_mean": 21.8,
+  "precipitation": 0.1,
+  "sunshine": 30601.88,
+  "wind_speed_max": 14.6,
+  "sunrise": "2024-09-26T07:17",
+  "sunset": "2024-09-26T19:16",
+  "sunshine_duration_seconds": 30601.88,
+  "sunshine_duration_minutes": 510,
+  "estimated_daily_sunshine_minutes": 282,
+  "estimated_daily_sunshine": "4 h 42 min",
+  "sunshine_difference_minutes": 228,
+  "sunshine_consistency": "Faible"
+}

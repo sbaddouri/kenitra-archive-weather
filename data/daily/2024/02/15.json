@@ -1,0 +1,18 @@
+{
+  "date": "2024-02-15",
+  "weather_code": 53,
+  "temp_max": 21.2,
+  "temp_min": 16.7,
+  "temp_mean": 18.9,
+  "precipitation": 2.9,
+  "sunshine": 25548.84,
+  "wind_speed_max": 28.2,
+  "sunrise": "2024-02-15T08:11",
+  "sunset": "2024-02-15T19:09",
+  "sunshine_duration_seconds": 25548.84,
+  "sunshine_duration_minutes": 426,
+  "estimated_daily_sunshine_minutes": 150,
+  "estimated_daily_sunshine": "2 h 30 min",
+  "sunshine_difference_minutes": 276,
+  "sunshine_consistency": "Faible"
+}

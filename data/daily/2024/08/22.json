@@ -1,0 +1,18 @@
+{
+  "date": "2024-08-22",
+  "weather_code": 51,
+  "temp_max": 25.3,
+  "temp_min": 21.3,
+  "temp_mean": 23,
+  "precipitation": 0.3,
+  "sunshine": 43369.65,
+  "wind_speed_max": 18.4,
+  "sunrise": "2024-08-22T06:52",
+  "sunset": "2024-08-22T20:04",
+  "sunshine_duration_seconds": 43369.65,
+  "sunshine_duration_minutes": 723,
+  "estimated_daily_sunshine_minutes": 513,
+  "estimated_daily_sunshine": "8 h 33 min",
+  "sunshine_difference_minutes": 210,
+  "sunshine_consistency": "Faible"
+}

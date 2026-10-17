@@ -1,0 +1,18 @@
+{
+  "date": "2024-07-02",
+  "weather_code": 1,
+  "temp_max": 24.6,
+  "temp_min": 16.1,
+  "temp_mean": 21,
+  "precipitation": 0,
+  "sunshine": 46910.87,
+  "wind_speed_max": 16.3,
+  "sunrise": "2024-07-02T06:18",
+  "sunset": "2024-07-02T20:42",
+  "sunshine_duration_seconds": 46910.87,
+  "sunshine_duration_minutes": 782,
+  "estimated_daily_sunshine_minutes": 810,
+  "estimated_daily_sunshine": "13 h 30 min",
+  "sunshine_difference_minutes": 28,
+  "sunshine_consistency": "Moyen"
+}

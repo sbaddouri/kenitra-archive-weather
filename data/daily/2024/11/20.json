@@ -1,0 +1,18 @@
+{
+  "date": "2024-11-20",
+  "weather_code": 3,
+  "temp_max": 21.9,
+  "temp_min": 14.5,
+  "temp_mean": 17.6,
+  "precipitation": 0,
+  "sunshine": 35459.28,
+  "wind_speed_max": 11.8,
+  "sunrise": "2024-11-20T08:04",
+  "sunset": "2024-11-20T18:19",
+  "sunshine_duration_seconds": 35459.28,
+  "sunshine_duration_minutes": 591,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 51,
+  "sunshine_consistency": "Faible"
+}

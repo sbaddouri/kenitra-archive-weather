@@ -1,0 +1,18 @@
+{
+  "date": "2024-02-08",
+  "weather_code": 51,
+  "temp_max": 23.5,
+  "temp_min": 8.5,
+  "temp_mean": 16.2,
+  "precipitation": 0.1,
+  "sunshine": 20035.85,
+  "wind_speed_max": 33,
+  "sunrise": "2024-02-08T08:18",
+  "sunset": "2024-02-08T19:02",
+  "sunshine_duration_seconds": 20035.85,
+  "sunshine_duration_minutes": 334,
+  "estimated_daily_sunshine_minutes": 66,
+  "estimated_daily_sunshine": "1 h 06 min",
+  "sunshine_difference_minutes": 268,
+  "sunshine_consistency": "Faible"
+}

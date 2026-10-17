@@ -1,0 +1,18 @@
+{
+  "date": "2025-12-10",
+  "weather_code": 55,
+  "temp_max": 15.2,
+  "temp_min": 12.3,
+  "temp_mean": 13.1,
+  "precipitation": 5,
+  "sunshine": 0,
+  "wind_speed_max": 20.8,
+  "sunrise": "2025-12-10T08:21",
+  "sunset": "2025-12-10T18:16",
+  "sunshine_duration_seconds": 0,
+  "sunshine_duration_minutes": 0,
+  "estimated_daily_sunshine_minutes": 132,
+  "estimated_daily_sunshine": "2 h 12 min",
+  "sunshine_difference_minutes": 132,
+  "sunshine_consistency": "Faible"
+}

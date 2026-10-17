@@ -1,0 +1,18 @@
+{
+  "date": "2025-11-25",
+  "weather_code": 61,
+  "temp_max": 18.2,
+  "temp_min": 13.1,
+  "temp_mean": 15.6,
+  "precipitation": 4.4,
+  "sunshine": 19622.46,
+  "wind_speed_max": 28,
+  "sunrise": "2025-11-25T08:08",
+  "sunset": "2025-11-25T18:17",
+  "sunshine_duration_seconds": 19622.46,
+  "sunshine_duration_minutes": 327,
+  "estimated_daily_sunshine_minutes": 198,
+  "estimated_daily_sunshine": "3 h 18 min",
+  "sunshine_difference_minutes": 129,
+  "sunshine_consistency": "Faible"
+}

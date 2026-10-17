@@ -1,0 +1,18 @@
+{
+  "date": "2025-10-14",
+  "weather_code": 3,
+  "temp_max": 24.4,
+  "temp_min": 17.8,
+  "temp_mean": 20.2,
+  "precipitation": 0,
+  "sunshine": 38269.31,
+  "wind_speed_max": 14.2,
+  "sunrise": "2025-10-14T07:30",
+  "sunset": "2025-10-14T18:52",
+  "sunshine_duration_seconds": 38269.31,
+  "sunshine_duration_minutes": 638,
+  "estimated_daily_sunshine_minutes": 477,
+  "estimated_daily_sunshine": "7 h 57 min",
+  "sunshine_difference_minutes": 161,
+  "sunshine_consistency": "Faible"
+}
