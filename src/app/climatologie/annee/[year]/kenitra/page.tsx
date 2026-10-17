@@ -179,14 +179,14 @@ export default async function YearPage({ params }: PageProps) {
       <div className="flex flex-col space-y-2">
         <div className="flex items-center justify-between">
           {!isEarliestYear && (
-            <Link href={`/climatologie/annee/${prevYear}/guercif`}>
+            <Link href={`/climatologie/annee/${prevYear}/kenitra`}>
               <button className={cn(buttonVariants({ variant: "ghost" }), "disabled:opacity-50")} disabled={!hasPrev}>
                 ← Année précédente
               </button>
             </Link>
           )}
-          <h1 className="text-3xl font-bold text-center">Données climatiques {year} - Guercif, Maroc</h1>
-          <Link href={`/climatologie/annee/${nextYear}/guercif`}>
+          <h1 className="text-3xl font-bold text-center">Données climatiques {year} - Kénitra, Maroc</h1>
+          <Link href={`/climatologie/annee/${nextYear}/kenitra`}>
             <button className={cn(buttonVariants({ variant: "ghost" }), "disabled:opacity-50")} disabled={!hasNext}>
               Année suivante →
             </button>
@@ -269,7 +269,7 @@ export default async function YearPage({ params }: PageProps) {
                   {sortedMonths.map(m => (
                     <TableHead key={m} className="border font-bold text-black dark:text-white px-0 py-0 h-auto capitalize">
                       <Link 
-                        href={`/climatologie/mois/${year}/${m}/guercif`}
+                        href={`/climatologie/mois/${year}/${m}/kenitra`}
                         className="flex items-center justify-center w-full h-full py-1 hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
                       >
                         {monthlyStats[m].name}
@@ -506,7 +506,7 @@ export default async function YearPage({ params }: PageProps) {
             </Table>
           </div>
           <div className="mt-2 text-[11px] text-muted-foreground italic">
-            Source : Open-Meteo Archive (Guercif). Échelle de couleurs basée sur le modèle Weather Box de Wikipédia.
+            Source : Open-Meteo Archive (Kénitra). Échelle de couleurs basée sur le modèle Weather Box de Wikipédia.
           </div>
         </CardContent>
       </Card>
@@ -515,7 +515,7 @@ export default async function YearPage({ params }: PageProps) {
         {sortedMonths.map(m => (
           <Link 
             key={m} 
-            href={`/climatologie/mois/${year}/${m}/guercif`}
+            href={`/climatologie/mois/${year}/${m}/kenitra`}
             className={cn(buttonVariants({ variant: "outline" }), "w-full capitalize")}
           >
             Détails {monthlyStats[m].fullName} {year}

@@ -121,22 +121,22 @@ export default async function MonthPage({ params }: PageProps) {
     <div className="space-y-8">
       <div className="flex flex-col space-y-2">
         <div className="flex items-center justify-between">
-          <Link href={`/climatologie/mois/${prevYear}/${prevMonth}/guercif`}>
+          <Link href={`/climatologie/mois/${prevYear}/${prevMonth}/kenitra`}>
             <Button variant="ghost" disabled={!hasPrev}>
               ← {format(prevDate, "MMMM", { locale: fr })}
             </Button>
           </Link>
           <h1 className="text-3xl font-bold capitalize text-center">
-            Climatologie de Guercif - {format(parseISO(dailyData[0].date), "MMMM yyyy", { locale: fr })}
+            Climatologie de Kénitra - {format(parseISO(dailyData[0].date), "MMMM yyyy", { locale: fr })}
           </h1>
-          <Link href={`/climatologie/mois/${nextYear}/${nextMonth}/guercif`}>
+          <Link href={`/climatologie/mois/${nextYear}/${nextMonth}/kenitra`}>
             <Button variant="ghost" disabled={!hasNext}>
               {format(nextDate, "MMMM", { locale: fr })} →
             </Button>
           </Link>
         </div>
         <div className="flex items-center justify-center gap-4 flex-wrap">
-          <Link href={`/climatologie/annee/${year}/guercif`}>
+          <Link href={`/climatologie/annee/${year}/kenitra`}>
             <Button variant="outline" size="sm">
               Voir l'année {year}
             </Button>
@@ -245,7 +245,7 @@ export default async function MonthPage({ params }: PageProps) {
                     return (
                       <TableRow key={day.date}>
                         <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1 w-[120px] whitespace-nowrap">
-                          <Link href={`/climatologie/jour/${year}/${month}/${format(parseISO(day.date), "dd")}/guercif`} className="hover:underline">
+                          <Link href={`/climatologie/jour/${year}/${month}/${format(parseISO(day.date), "dd")}/kenitra`} className="hover:underline">
                             {format(parseISO(day.date), "d EEE", { locale: fr })}
                           </Link>
                         </TableCell>
@@ -304,7 +304,7 @@ export default async function MonthPage({ params }: PageProps) {
                         </TableCell>
                         <TableCell className="border bg-white dark:bg-background w-[100px] whitespace-nowrap">
                           <Link 
-                            href={`/climatologie/jour/${year}/${month}/${format(parseISO(day.date), "dd")}/guercif`}
+                            href={`/climatologie/jour/${year}/${month}/${format(parseISO(day.date), "dd")}/kenitra`}
                             className="text-primary hover:underline"
                           >
                             Détails

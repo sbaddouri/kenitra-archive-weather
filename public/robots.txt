@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://guercifarchiveweather.vercel.app/sitemap.xml
+Sitemap: https://kenitraarchiveweather.vercel.app/sitemap.xml

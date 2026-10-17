@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const dateFormatted = format(parseISO(dateStr), "d MMMM yyyy", { locale: fr });
 
   return {
-    title: `Météo Guercif - ${dateFormatted} | Archive Climatologique`,
-    description: `Découvrez les archives météo détaillées de Guercif pour le ${dateFormatted}. Températures, précipitations, vent et humidité heure par heure.`,
+    title: `Météo Kénitra - ${dateFormatted} | Archive Climatologique`,
+    description: `Découvrez les archives météo détaillées de Kénitra pour le ${dateFormatted}. Températures, précipitations, vent et humidité heure par heure.`,
   };
 }
 
@@ -84,14 +84,14 @@ export default async function DayPage({ params }: PageProps) {
         <div className="flex flex-col space-y-2">
           <div className="flex items-center justify-between gap-3 w-full sm:w-auto">
             {prevDay && (
-              <Link href={`/climatologie/jour/${year}/${month}/${prevDay}/guercif`}>
+              <Link href={`/climatologie/jour/${year}/${month}/${prevDay}/kenitra`}>
                 <button className={cn(buttonVariants({ variant: "ghost" }))}>
                   ← Jour précédent
                 </button>
               </Link>
             )}
             {prevMonthDate && !prevDay && (
-              <Link href={`/climatologie/jour/${prevMonthYear}/${prevMonthMonth}/${prevMonthDay}/guercif`}>
+              <Link href={`/climatologie/jour/${prevMonthYear}/${prevMonthMonth}/${prevMonthDay}/kenitra`}>
                 <button className={cn(buttonVariants({ variant: "ghost" }))}>
                   ← Jour précédent
                 </button>
@@ -111,18 +111,18 @@ export default async function DayPage({ params }: PageProps) {
                 return <span className="h-12 w-12 inline-block" aria-hidden="true"></span>;
               })()}
               <h1 className="text-3xl font-bold">
-                Météo à Guercif le {format(parseISO(dateStr), "d MMMM yyyy", { locale: fr })}
+                Météo à Kénitra le {format(parseISO(dateStr), "d MMMM yyyy", { locale: fr })}
               </h1>
             </div>
             {nextDay && (
-              <Link href={`/climatologie/jour/${year}/${month}/${nextDay}/guercif`}>
+              <Link href={`/climatologie/jour/${year}/${month}/${nextDay}/kenitra`}>
                 <button className={cn(buttonVariants({ variant: "ghost" }))}>
                   Jour suivant →
                 </button>
               </Link>
             )}
             {nextMonthDate && !nextDay && (
-              <Link href={`/climatologie/jour/${nextMonthYear}/${nextMonthMonth}/${nextMonthDay}/guercif`}>
+              <Link href={`/climatologie/jour/${nextMonthYear}/${nextMonthMonth}/${nextMonthDay}/kenitra`}>
                 <button className={cn(buttonVariants({ variant: "ghost" }))}>
                   Jour suivant →
                 </button>
@@ -141,7 +141,7 @@ export default async function DayPage({ params }: PageProps) {
             Lever du soleil: {dailyData.sunrise ? format(parseISO(dailyData.sunrise), "HH:mm", { locale: fr }) : "--:--"} • Coucher du soleil: {dailyData.sunset ? format(parseISO(dailyData.sunset), "HH:mm", { locale: fr }) : "--:--"}
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap mt-2">
-            <Link href={`/climatologie/mois/${year}/${month}/guercif`}>
+            <Link href={`/climatologie/mois/${year}/${month}/kenitra`}>
               <button className={cn(buttonVariants({ variant: "outline", size: "sm" }))}>
                 Voir le mois {format(parseISO(dateStr), "MMMM yyyy", { locale: fr })}
               </button>
@@ -153,7 +153,7 @@ export default async function DayPage({ params }: PageProps) {
             </Link>
           </div>
         </div>
-        <ExportData data={hourlyData} filename={`guercif_weather_${dateStr}`} />
+        <ExportData data={hourlyData} filename={`kenitra_weather_${dateStr}`} />
       </div>
 
       {/* Summary Cards */}

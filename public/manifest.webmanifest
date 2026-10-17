@@ -1,7 +1,7 @@
 {
-  "name": "Guercif Weather Archive",
-  "short_name": "Guercif Weather",
-  "description": "Archives climatologiques de Guercif, Maroc",
+  "name": "Kénitra Weather Archive",
+  "short_name": "Kénitra Weather",
+  "description": "Archives climatologiques de Kénitra, Maroc",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
