@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-04",
+  "weather_code": 61,
+  "temp_max": 18.4,
+  "temp_min": 14,
+  "temp_mean": 16.7,
+  "precipitation": 8,
+  "sunshine": 9304.73,
+  "wind_speed_max": 49.6,
+  "sunrise": "2026-02-04T08:21",
+  "sunset": "2026-02-04T18:59",
+  "sunshine_duration_seconds": 9304.73,
+  "sunshine_duration_minutes": 155,
+  "estimated_daily_sunshine_minutes": 96,
+  "estimated_daily_sunshine": "1 h 36 min",
+  "sunshine_difference_minutes": 59,
+  "sunshine_consistency": "Faible"
+}

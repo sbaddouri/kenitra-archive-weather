@@ -1,0 +1,18 @@
+{
+  "date": "2026-05-10",
+  "weather_code": 51,
+  "temp_max": 21,
+  "temp_min": 15.5,
+  "temp_mean": 18.1,
+  "precipitation": 0.1,
+  "sunshine": 45888.81,
+  "wind_speed_max": 21.9,
+  "sunrise": "2026-05-10T06:28",
+  "sunset": "2026-05-10T20:17",
+  "sunshine_duration_seconds": 45888.81,
+  "sunshine_duration_minutes": 765,
+  "estimated_daily_sunshine_minutes": 108,
+  "estimated_daily_sunshine": "1 h 48 min",
+  "sunshine_difference_minutes": 657,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-03-16",
+  "weather_code": 3,
+  "temp_max": 24,
+  "temp_min": 11,
+  "temp_mean": 16.5,
+  "precipitation": 0,
+  "sunshine": 36933.7,
+  "wind_speed_max": 30.4,
+  "sunrise": "2026-03-16T07:35",
+  "sunset": "2026-03-16T19:34",
+  "sunshine_duration_seconds": 36933.7,
+  "sunshine_duration_minutes": 616,
+  "estimated_daily_sunshine_minutes": 567,
+  "estimated_daily_sunshine": "9 h 27 min",
+  "sunshine_difference_minutes": 49,
+  "sunshine_consistency": "Faible"
+}

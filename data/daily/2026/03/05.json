@@ -1,0 +1,18 @@
+{
+  "date": "2026-03-05",
+  "weather_code": 53,
+  "temp_max": 16.1,
+  "temp_min": 9.5,
+  "temp_mean": 13,
+  "precipitation": 3.8,
+  "sunshine": 29345.16,
+  "wind_speed_max": 29.2,
+  "sunrise": "2026-03-05T07:50",
+  "sunset": "2026-03-05T19:25",
+  "sunshine_duration_seconds": 29345.16,
+  "sunshine_duration_minutes": 489,
+  "estimated_daily_sunshine_minutes": 138,
+  "estimated_daily_sunshine": "2 h 18 min",
+  "sunshine_difference_minutes": 351,
+  "sunshine_consistency": "Faible"
+}

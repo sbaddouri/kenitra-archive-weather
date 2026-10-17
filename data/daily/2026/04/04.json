@@ -1,0 +1,18 @@
+{
+  "date": "2026-04-04",
+  "weather_code": 0,
+  "temp_max": 27.4,
+  "temp_min": 12.7,
+  "temp_mean": 19.4,
+  "precipitation": 0,
+  "sunshine": 44386.69,
+  "wind_speed_max": 24.8,
+  "sunrise": "2026-04-04T07:09",
+  "sunset": "2026-04-04T19:49",
+  "sunshine_duration_seconds": 44386.69,
+  "sunshine_duration_minutes": 740,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 20,
+  "sunshine_consistency": "Moyen"
+}

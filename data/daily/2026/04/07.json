@@ -1,0 +1,18 @@
+{
+  "date": "2026-04-07",
+  "weather_code": 65,
+  "temp_max": 21.3,
+  "temp_min": 14.4,
+  "temp_mean": 18.1,
+  "precipitation": 15.4,
+  "sunshine": 37843.39,
+  "wind_speed_max": 20.6,
+  "sunrise": "2026-04-07T07:05",
+  "sunset": "2026-04-07T19:51",
+  "sunshine_duration_seconds": 37843.39,
+  "sunshine_duration_minutes": 631,
+  "estimated_daily_sunshine_minutes": 378,
+  "estimated_daily_sunshine": "6 h 18 min",
+  "sunshine_difference_minutes": 253,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-31",
+  "weather_code": 3,
+  "temp_max": 30.8,
+  "temp_min": 21,
+  "temp_mean": 25.5,
+  "precipitation": 0,
+  "sunshine": 43783.26,
+  "wind_speed_max": 19.2,
+  "sunrise": "2026-07-31T06:36",
+  "sunset": "2026-07-31T20:28",
+  "sunshine_duration_seconds": 43783.26,
+  "sunshine_duration_minutes": 730,
+  "estimated_daily_sunshine_minutes": 483,
+  "estimated_daily_sunshine": "8 h 03 min",
+  "sunshine_difference_minutes": 247,
+  "sunshine_consistency": "Faible"
+}

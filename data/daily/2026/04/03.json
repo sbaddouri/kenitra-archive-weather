@@ -1,0 +1,18 @@
+{
+  "date": "2026-04-03",
+  "weather_code": 0,
+  "temp_max": 20.9,
+  "temp_min": 9.9,
+  "temp_mean": 15.3,
+  "precipitation": 0,
+  "sunshine": 43607.83,
+  "wind_speed_max": 15.1,
+  "sunrise": "2026-04-03T07:10",
+  "sunset": "2026-04-03T19:48",
+  "sunshine_duration_seconds": 43607.83,
+  "sunshine_duration_minutes": 727,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 7,
+  "sunshine_consistency": "Bon"
+}

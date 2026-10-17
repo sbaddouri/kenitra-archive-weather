@@ -1,0 +1,18 @@
+{
+  "date": "2026-01-14",
+  "weather_code": 53,
+  "temp_max": 15.4,
+  "temp_min": 11,
+  "temp_mean": 13.1,
+  "precipitation": 2.3,
+  "sunshine": 31741.81,
+  "wind_speed_max": 19.3,
+  "sunrise": "2026-01-14T08:32",
+  "sunset": "2026-01-14T18:38",
+  "sunshine_duration_seconds": 31741.81,
+  "sunshine_duration_minutes": 529,
+  "estimated_daily_sunshine_minutes": 255,
+  "estimated_daily_sunshine": "4 h 15 min",
+  "sunshine_difference_minutes": 274,
+  "sunshine_consistency": "Faible"
+}

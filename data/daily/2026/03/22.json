@@ -1,0 +1,18 @@
+{
+  "date": "2026-03-22",
+  "weather_code": 61,
+  "temp_max": 22.5,
+  "temp_min": 12.7,
+  "temp_mean": 16.8,
+  "precipitation": 1.6,
+  "sunshine": 39930.04,
+  "wind_speed_max": 11.9,
+  "sunrise": "2026-03-22T07:27",
+  "sunset": "2026-03-22T19:39",
+  "sunshine_duration_seconds": 39930.04,
+  "sunshine_duration_minutes": 666,
+  "estimated_daily_sunshine_minutes": 351,
+  "estimated_daily_sunshine": "5 h 51 min",
+  "sunshine_difference_minutes": 315,
+  "sunshine_consistency": "Faible"
+}
