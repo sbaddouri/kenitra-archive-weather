@@ -1,0 +1,18 @@
+{
+  "date": "1976-08-13",
+  "weather_code": 3,
+  "temp_max": 32.3,
+  "temp_min": 20,
+  "temp_mean": 26.5,
+  "precipitation": 0,
+  "sunshine": 46600.66,
+  "wind_speed_max": 16.1,
+  "sunrise": "1976-08-13T06:45",
+  "sunset": "1976-08-13T20:15",
+  "sunshine_duration_seconds": 46600.66,
+  "sunshine_duration_minutes": 777,
+  "estimated_daily_sunshine_minutes": 156,
+  "estimated_daily_sunshine": "2 h 36 min",
+  "sunshine_difference_minutes": 621,
+  "sunshine_consistency": "Faible"
+}

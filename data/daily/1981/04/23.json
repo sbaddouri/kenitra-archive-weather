@@ -1,0 +1,18 @@
+{
+  "date": "1981-04-23",
+  "weather_code": 61,
+  "temp_max": 16.1,
+  "temp_min": 11.7,
+  "temp_mean": 14,
+  "precipitation": 13.8,
+  "sunshine": 46268.33,
+  "wind_speed_max": 27.8,
+  "sunrise": "1981-04-23T06:45",
+  "sunset": "1981-04-23T20:04",
+  "sunshine_duration_seconds": 46268.33,
+  "sunshine_duration_minutes": 771,
+  "estimated_daily_sunshine_minutes": 291,
+  "estimated_daily_sunshine": "4 h 51 min",
+  "sunshine_difference_minutes": 480,
+  "sunshine_consistency": "Faible"
+}

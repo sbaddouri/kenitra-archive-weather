@@ -1,0 +1,18 @@
+{
+  "date": "1978-04-14",
+  "weather_code": 2,
+  "temp_max": 16.5,
+  "temp_min": 9.8,
+  "temp_mean": 13.5,
+  "precipitation": 0,
+  "sunshine": 46307.03,
+  "wind_speed_max": 15,
+  "sunrise": "1978-04-14T06:56",
+  "sunset": "1978-04-14T19:56",
+  "sunshine_duration_seconds": 46307.03,
+  "sunshine_duration_minutes": 772,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 232,
+  "sunshine_consistency": "Faible"
+}

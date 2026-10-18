@@ -1,0 +1,18 @@
+{
+  "date": "1982-08-07",
+  "weather_code": 3,
+  "temp_max": 27.4,
+  "temp_min": 19.6,
+  "temp_mean": 22.9,
+  "precipitation": 0,
+  "sunshine": 43355.53,
+  "wind_speed_max": 15.5,
+  "sunrise": "1982-08-07T06:40",
+  "sunset": "1982-08-07T20:22",
+  "sunshine_duration_seconds": 43355.53,
+  "sunshine_duration_minutes": 723,
+  "estimated_daily_sunshine_minutes": 717,
+  "estimated_daily_sunshine": "11 h 57 min",
+  "sunshine_difference_minutes": 6,
+  "sunshine_consistency": "Bon"
+}

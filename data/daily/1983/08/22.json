@@ -1,0 +1,18 @@
+{
+  "date": "1983-08-22",
+  "weather_code": 2,
+  "temp_max": 25,
+  "temp_min": 19.7,
+  "temp_mean": 21.9,
+  "precipitation": 0,
+  "sunshine": 44663.62,
+  "wind_speed_max": 17.8,
+  "sunrise": "1983-08-22T06:51",
+  "sunset": "1983-08-22T20:06",
+  "sunshine_duration_seconds": 44663.62,
+  "sunshine_duration_minutes": 744,
+  "estimated_daily_sunshine_minutes": 645,
+  "estimated_daily_sunshine": "10 h 45 min",
+  "sunshine_difference_minutes": 99,
+  "sunshine_consistency": "Faible"
+}

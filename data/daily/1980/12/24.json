@@ -1,0 +1,18 @@
+{
+  "date": "1980-12-24",
+  "weather_code": 1,
+  "temp_max": 17.1,
+  "temp_min": 9.3,
+  "temp_mean": 13.3,
+  "precipitation": 0,
+  "sunshine": 32604.42,
+  "wind_speed_max": 8.6,
+  "sunrise": "1980-12-24T08:30",
+  "sunset": "1980-12-24T18:21",
+  "sunshine_duration_seconds": 32604.42,
+  "sunshine_duration_minutes": 543,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 27,
+  "sunshine_consistency": "Moyen"
+}

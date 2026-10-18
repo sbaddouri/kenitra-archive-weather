@@ -1,0 +1,18 @@
+{
+  "date": "1977-09-25",
+  "weather_code": 51,
+  "temp_max": 24.4,
+  "temp_min": 16.4,
+  "temp_mean": 20.3,
+  "precipitation": 0.1,
+  "sunshine": 37613.66,
+  "wind_speed_max": 16.4,
+  "sunrise": "1977-09-25T07:16",
+  "sunset": "1977-09-25T19:19",
+  "sunshine_duration_seconds": 37613.66,
+  "sunshine_duration_minutes": 627,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 87,
+  "sunshine_consistency": "Faible"
+}

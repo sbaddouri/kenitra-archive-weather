@@ -1,0 +1,18 @@
+{
+  "date": "1979-12-24",
+  "weather_code": 3,
+  "temp_max": 16.8,
+  "temp_min": 10.2,
+  "temp_mean": 13.2,
+  "precipitation": 0,
+  "sunshine": 32590.96,
+  "wind_speed_max": 14.9,
+  "sunrise": "1979-12-24T08:29",
+  "sunset": "1979-12-24T18:21",
+  "sunshine_duration_seconds": 32590.96,
+  "sunshine_duration_minutes": 543,
+  "estimated_daily_sunshine_minutes": 375,
+  "estimated_daily_sunshine": "6 h 15 min",
+  "sunshine_difference_minutes": 168,
+  "sunshine_consistency": "Faible"
+}

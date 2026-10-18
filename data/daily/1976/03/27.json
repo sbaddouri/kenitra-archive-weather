@@ -1,0 +1,18 @@
+{
+  "date": "1976-03-27",
+  "weather_code": 0,
+  "temp_max": 22.6,
+  "temp_min": 12.4,
+  "temp_mean": 17.1,
+  "precipitation": 0,
+  "sunshine": 43950.35,
+  "wind_speed_max": 21.5,
+  "sunrise": "1976-03-27T07:20",
+  "sunset": "1976-03-27T19:43",
+  "sunshine_duration_seconds": 43950.35,
+  "sunshine_duration_minutes": 733,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 13,
+  "sunshine_consistency": "Bon"
+}

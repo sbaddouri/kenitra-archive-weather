@@ -1,0 +1,18 @@
+{
+  "date": "1984-05-18",
+  "weather_code": 61,
+  "temp_max": 17.5,
+  "temp_min": 13.2,
+  "temp_mean": 15.3,
+  "precipitation": 11,
+  "sunshine": 40879.68,
+  "wind_speed_max": 26.7,
+  "sunrise": "1984-05-18T06:21",
+  "sunset": "1984-05-18T20:23",
+  "sunshine_duration_seconds": 40879.68,
+  "sunshine_duration_minutes": 681,
+  "estimated_daily_sunshine_minutes": 327,
+  "estimated_daily_sunshine": "5 h 27 min",
+  "sunshine_difference_minutes": 354,
+  "sunshine_consistency": "Faible"
+}

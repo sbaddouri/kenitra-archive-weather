@@ -1,0 +1,18 @@
+{
+  "date": "1983-02-10",
+  "weather_code": 61,
+  "temp_max": 12,
+  "temp_min": 5.8,
+  "temp_mean": 9,
+  "precipitation": 9,
+  "sunshine": 37782.38,
+  "wind_speed_max": 22,
+  "sunrise": "1983-02-10T08:16",
+  "sunset": "1983-02-10T19:04",
+  "sunshine_duration_seconds": 37782.38,
+  "sunshine_duration_minutes": 630,
+  "estimated_daily_sunshine_minutes": 369,
+  "estimated_daily_sunshine": "6 h 09 min",
+  "sunshine_difference_minutes": 261,
+  "sunshine_consistency": "Faible"
+}

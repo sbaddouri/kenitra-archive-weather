@@ -1,0 +1,18 @@
+{
+  "date": "1978-02-24",
+  "weather_code": 61,
+  "temp_max": 17.6,
+  "temp_min": 13.8,
+  "temp_mean": 15.8,
+  "precipitation": 10,
+  "sunshine": 35977.97,
+  "wind_speed_max": 40,
+  "sunrise": "1978-02-24T08:01",
+  "sunset": "1978-02-24T19:17",
+  "sunshine_duration_seconds": 35977.97,
+  "sunshine_duration_minutes": 600,
+  "estimated_daily_sunshine_minutes": 240,
+  "estimated_daily_sunshine": "4 h 00 min",
+  "sunshine_difference_minutes": 360,
+  "sunshine_consistency": "Faible"
+}

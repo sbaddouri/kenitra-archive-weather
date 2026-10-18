@@ -1,0 +1,18 @@
+{
+  "date": "1976-11-17",
+  "weather_code": 0,
+  "temp_max": 18.5,
+  "temp_min": 11.8,
+  "temp_mean": 14.8,
+  "precipitation": 0,
+  "sunshine": 35649.08,
+  "wind_speed_max": 16.6,
+  "sunrise": "1976-11-17T08:01",
+  "sunset": "1976-11-17T18:20",
+  "sunshine_duration_seconds": 35649.08,
+  "sunshine_duration_minutes": 594,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 6,
+  "sunshine_consistency": "Bon"
+}

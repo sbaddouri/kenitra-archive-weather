@@ -1,0 +1,18 @@
+{
+  "date": "1982-04-26",
+  "weather_code": 63,
+  "temp_max": 19,
+  "temp_min": 14.9,
+  "temp_mean": 17.1,
+  "precipitation": 9.2,
+  "sunshine": 26537.88,
+  "wind_speed_max": 12.9,
+  "sunrise": "1982-04-26T06:42",
+  "sunset": "1982-04-26T20:06",
+  "sunshine_duration_seconds": 26537.88,
+  "sunshine_duration_minutes": 442,
+  "estimated_daily_sunshine_minutes": 117,
+  "estimated_daily_sunshine": "1 h 57 min",
+  "sunshine_difference_minutes": 325,
+  "sunshine_consistency": "Faible"
+}

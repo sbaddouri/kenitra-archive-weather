@@ -1,0 +1,18 @@
+{
+  "date": "1981-03-29",
+  "weather_code": 61,
+  "temp_max": 16.4,
+  "temp_min": 11.8,
+  "temp_mean": 15.2,
+  "precipitation": 13,
+  "sunshine": 40605.99,
+  "wind_speed_max": 32.5,
+  "sunrise": "1981-03-29T07:17",
+  "sunset": "1981-03-29T19:44",
+  "sunshine_duration_seconds": 40605.99,
+  "sunshine_duration_minutes": 677,
+  "estimated_daily_sunshine_minutes": 327,
+  "estimated_daily_sunshine": "5 h 27 min",
+  "sunshine_difference_minutes": 350,
+  "sunshine_consistency": "Faible"
+}

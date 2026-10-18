@@ -1,0 +1,18 @@
+{
+  "date": "1977-04-18",
+  "weather_code": 2,
+  "temp_max": 18.1,
+  "temp_min": 13,
+  "temp_mean": 15.5,
+  "precipitation": 0,
+  "sunshine": 46559.73,
+  "wind_speed_max": 17.6,
+  "sunrise": "1977-04-18T06:51",
+  "sunset": "1977-04-18T20:00",
+  "sunshine_duration_seconds": 46559.73,
+  "sunshine_duration_minutes": 776,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 236,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1984-06-22",
+  "weather_code": 1,
+  "temp_max": 24.1,
+  "temp_min": 16.6,
+  "temp_mean": 20.3,
+  "precipitation": 0,
+  "sunshine": 47895.1,
+  "wind_speed_max": 14.7,
+  "sunrise": "1984-06-22T06:14",
+  "sunset": "1984-06-22T20:41",
+  "sunshine_duration_seconds": 47895.1,
+  "sunshine_duration_minutes": 798,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 18,
+  "sunshine_consistency": "Moyen"
+}

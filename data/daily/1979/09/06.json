@@ -1,0 +1,18 @@
+{
+  "date": "1979-09-06",
+  "weather_code": 51,
+  "temp_max": 24.4,
+  "temp_min": 20.9,
+  "temp_mean": 22.6,
+  "precipitation": 0.3,
+  "sunshine": 32884.86,
+  "wind_speed_max": 15.6,
+  "sunrise": "1979-09-06T07:02",
+  "sunset": "1979-09-06T19:46",
+  "sunshine_duration_seconds": 32884.86,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 195,
+  "estimated_daily_sunshine": "3 h 15 min",
+  "sunshine_difference_minutes": 353,
+  "sunshine_consistency": "Faible"
+}

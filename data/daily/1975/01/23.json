@@ -1,0 +1,18 @@
+{
+  "date": "1975-01-23",
+  "weather_code": 1,
+  "temp_max": 14.7,
+  "temp_min": 8.1,
+  "temp_mean": 11.1,
+  "precipitation": 0,
+  "sunshine": 35379.24,
+  "wind_speed_max": 10.2,
+  "sunrise": "1975-01-23T08:29",
+  "sunset": "1975-01-23T18:46",
+  "sunshine_duration_seconds": 35379.24,
+  "sunshine_duration_minutes": 590,
+  "estimated_daily_sunshine_minutes": 525,
+  "estimated_daily_sunshine": "8 h 45 min",
+  "sunshine_difference_minutes": 65,
+  "sunshine_consistency": "Faible"
+}

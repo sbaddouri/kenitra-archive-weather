@@ -1,0 +1,18 @@
+{
+  "date": "1979-02-03",
+  "weather_code": 63,
+  "temp_max": 18.1,
+  "temp_min": 15.1,
+  "temp_mean": 16.3,
+  "precipitation": 16.9,
+  "sunshine": 35591.54,
+  "wind_speed_max": 22.8,
+  "sunrise": "1979-02-03T08:22",
+  "sunset": "1979-02-03T18:57",
+  "sunshine_duration_seconds": 35591.54,
+  "sunshine_duration_minutes": 593,
+  "estimated_daily_sunshine_minutes": 246,
+  "estimated_daily_sunshine": "4 h 06 min",
+  "sunshine_difference_minutes": 347,
+  "sunshine_consistency": "Faible"
+}

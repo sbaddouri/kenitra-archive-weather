@@ -1,0 +1,18 @@
+{
+  "date": "1978-12-03",
+  "weather_code": 55,
+  "temp_max": 18.3,
+  "temp_min": 15.4,
+  "temp_mean": 16.8,
+  "precipitation": 7,
+  "sunshine": 15975.49,
+  "wind_speed_max": 24.9,
+  "sunrise": "1978-12-03T08:15",
+  "sunset": "1978-12-03T18:16",
+  "sunshine_duration_seconds": 15975.49,
+  "sunshine_duration_minutes": 266,
+  "estimated_daily_sunshine_minutes": 144,
+  "estimated_daily_sunshine": "2 h 24 min",
+  "sunshine_difference_minutes": 122,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1984-03-11",
+  "weather_code": 0,
+  "temp_max": 18.9,
+  "temp_min": 10.6,
+  "temp_mean": 14.3,
+  "precipitation": 0,
+  "sunshine": 39912.12,
+  "wind_speed_max": 21,
+  "sunrise": "1984-03-11T07:42",
+  "sunset": "1984-03-11T19:30",
+  "sunshine_duration_seconds": 39912.12,
+  "sunshine_duration_minutes": 665,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 55,
+  "sunshine_consistency": "Faible"
+}

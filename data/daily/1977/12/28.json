@@ -1,0 +1,18 @@
+{
+  "date": "1977-12-28",
+  "weather_code": 53,
+  "temp_max": 15.2,
+  "temp_min": 13,
+  "temp_mean": 14.2,
+  "precipitation": 4.2,
+  "sunshine": 20219.08,
+  "wind_speed_max": 22.2,
+  "sunrise": "1977-12-28T08:31",
+  "sunset": "1977-12-28T18:24",
+  "sunshine_duration_seconds": 20219.08,
+  "sunshine_duration_minutes": 337,
+  "estimated_daily_sunshine_minutes": 147,
+  "estimated_daily_sunshine": "2 h 27 min",
+  "sunshine_difference_minutes": 190,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1981-04-30",
+  "weather_code": 55,
+  "temp_max": 16.8,
+  "temp_min": 11,
+  "temp_mean": 13.9,
+  "precipitation": 2,
+  "sunshine": 46310.87,
+  "wind_speed_max": 21.4,
+  "sunrise": "1981-04-30T06:37",
+  "sunset": "1981-04-30T20:09",
+  "sunshine_duration_seconds": 46310.87,
+  "sunshine_duration_minutes": 772,
+  "estimated_daily_sunshine_minutes": 438,
+  "estimated_daily_sunshine": "7 h 18 min",
+  "sunshine_difference_minutes": 334,
+  "sunshine_consistency": "Faible"
+}

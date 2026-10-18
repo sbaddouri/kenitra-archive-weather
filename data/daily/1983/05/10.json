@@ -1,0 +1,18 @@
+{
+  "date": "1983-05-10",
+  "weather_code": 51,
+  "temp_max": 18.8,
+  "temp_min": 15.4,
+  "temp_mean": 17.1,
+  "precipitation": 1,
+  "sunshine": 39369.45,
+  "wind_speed_max": 22.2,
+  "sunrise": "1983-05-10T06:28",
+  "sunset": "1983-05-10T20:17",
+  "sunshine_duration_seconds": 39369.45,
+  "sunshine_duration_minutes": 656,
+  "estimated_daily_sunshine_minutes": 318,
+  "estimated_daily_sunshine": "5 h 18 min",
+  "sunshine_difference_minutes": 338,
+  "sunshine_consistency": "Faible"
+}

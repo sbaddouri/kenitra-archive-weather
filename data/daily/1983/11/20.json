@@ -1,0 +1,18 @@
+{
+  "date": "1983-11-20",
+  "weather_code": 63,
+  "temp_max": 19.9,
+  "temp_min": 17.5,
+  "temp_mean": 18.6,
+  "precipitation": 17,
+  "sunshine": 8632.45,
+  "wind_speed_max": 17.8,
+  "sunrise": "1983-11-20T08:03",
+  "sunset": "1983-11-20T18:19",
+  "sunshine_duration_seconds": 8632.45,
+  "sunshine_duration_minutes": 144,
+  "estimated_daily_sunshine_minutes": 69,
+  "estimated_daily_sunshine": "1 h 09 min",
+  "sunshine_difference_minutes": 75,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1980-01-18",
+  "weather_code": 61,
+  "temp_max": 12.9,
+  "temp_min": 9.6,
+  "temp_mean": 11.5,
+  "precipitation": 11.9,
+  "sunshine": 27972.14,
+  "wind_speed_max": 15.1,
+  "sunrise": "1980-01-18T08:31",
+  "sunset": "1980-01-18T18:41",
+  "sunshine_duration_seconds": 27972.14,
+  "sunshine_duration_minutes": 466,
+  "estimated_daily_sunshine_minutes": 216,
+  "estimated_daily_sunshine": "3 h 36 min",
+  "sunshine_difference_minutes": 250,
+  "sunshine_consistency": "Faible"
+}

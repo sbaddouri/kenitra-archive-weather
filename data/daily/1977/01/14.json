@@ -1,0 +1,18 @@
+{
+  "date": "1977-01-14",
+  "weather_code": 1,
+  "temp_max": 15.3,
+  "temp_min": 7.2,
+  "temp_mean": 11.2,
+  "precipitation": 0,
+  "sunshine": 34451.67,
+  "wind_speed_max": 9.2,
+  "sunrise": "1977-01-14T08:32",
+  "sunset": "1977-01-14T18:38",
+  "sunshine_duration_seconds": 34451.67,
+  "sunshine_duration_minutes": 574,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 26,
+  "sunshine_consistency": "Moyen"
+}

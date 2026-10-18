@@ -1,0 +1,18 @@
+{
+  "date": "1975-12-07",
+  "weather_code": 51,
+  "temp_max": 19.6,
+  "temp_min": 12.1,
+  "temp_mean": 15.3,
+  "precipitation": 0.5,
+  "sunshine": 28957.71,
+  "wind_speed_max": 12.6,
+  "sunrise": "1975-12-07T08:18",
+  "sunset": "1975-12-07T18:16",
+  "sunshine_duration_seconds": 28957.71,
+  "sunshine_duration_minutes": 483,
+  "estimated_daily_sunshine_minutes": 246,
+  "estimated_daily_sunshine": "4 h 06 min",
+  "sunshine_difference_minutes": 237,
+  "sunshine_consistency": "Faible"
+}

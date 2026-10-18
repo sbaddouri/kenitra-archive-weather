@@ -1,0 +1,18 @@
+{
+  "date": "1979-05-27",
+  "weather_code": 3,
+  "temp_max": 22.2,
+  "temp_min": 14.5,
+  "temp_mean": 18.2,
+  "precipitation": 0,
+  "sunshine": 47481.98,
+  "wind_speed_max": 18.6,
+  "sunrise": "1979-05-27T06:17",
+  "sunset": "1979-05-27T20:29",
+  "sunshine_duration_seconds": 47481.98,
+  "sunshine_duration_minutes": 791,
+  "estimated_daily_sunshine_minutes": 750,
+  "estimated_daily_sunshine": "12 h 30 min",
+  "sunshine_difference_minutes": 41,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1981-03-24",
+  "weather_code": 3,
+  "temp_max": 21.7,
+  "temp_min": 11.3,
+  "temp_mean": 16.3,
+  "precipitation": 0,
+  "sunshine": 41552.52,
+  "wind_speed_max": 13.2,
+  "sunrise": "1981-03-24T07:24",
+  "sunset": "1981-03-24T19:40",
+  "sunshine_duration_seconds": 41552.52,
+  "sunshine_duration_minutes": 693,
+  "estimated_daily_sunshine_minutes": 582,
+  "estimated_daily_sunshine": "9 h 42 min",
+  "sunshine_difference_minutes": 111,
+  "sunshine_consistency": "Faible"
+}

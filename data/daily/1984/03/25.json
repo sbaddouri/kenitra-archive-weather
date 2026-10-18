@@ -1,0 +1,18 @@
+{
+  "date": "1984-03-25",
+  "weather_code": 51,
+  "temp_max": 17.5,
+  "temp_min": 12.8,
+  "temp_mean": 15,
+  "precipitation": 0.4,
+  "sunshine": 41368.6,
+  "wind_speed_max": 22,
+  "sunrise": "1984-03-25T07:23",
+  "sunset": "1984-03-25T19:41",
+  "sunshine_duration_seconds": 41368.6,
+  "sunshine_duration_minutes": 689,
+  "estimated_daily_sunshine_minutes": 288,
+  "estimated_daily_sunshine": "4 h 48 min",
+  "sunshine_difference_minutes": 401,
+  "sunshine_consistency": "Faible"
+}

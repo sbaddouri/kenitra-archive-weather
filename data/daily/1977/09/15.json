@@ -1,0 +1,18 @@
+{
+  "date": "1977-09-15",
+  "weather_code": 53,
+  "temp_max": 27.1,
+  "temp_min": 20.2,
+  "temp_mean": 23.4,
+  "precipitation": 0.5,
+  "sunshine": 40939.54,
+  "wind_speed_max": 15.3,
+  "sunrise": "1977-09-15T07:09",
+  "sunset": "1977-09-15T19:33",
+  "sunshine_duration_seconds": 40939.54,
+  "sunshine_duration_minutes": 682,
+  "estimated_daily_sunshine_minutes": 609,
+  "estimated_daily_sunshine": "10 h 09 min",
+  "sunshine_difference_minutes": 73,
+  "sunshine_consistency": "Faible"
+}

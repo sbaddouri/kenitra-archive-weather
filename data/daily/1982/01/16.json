@@ -1,0 +1,18 @@
+{
+  "date": "1982-01-16",
+  "weather_code": 63,
+  "temp_max": 13.9,
+  "temp_min": 10.7,
+  "temp_mean": 13,
+  "precipitation": 23.7,
+  "sunshine": 4259.15,
+  "wind_speed_max": 26,
+  "sunrise": "1982-01-16T08:32",
+  "sunset": "1982-01-16T18:39",
+  "sunshine_duration_seconds": 4259.15,
+  "sunshine_duration_minutes": 71,
+  "estimated_daily_sunshine_minutes": 66,
+  "estimated_daily_sunshine": "1 h 06 min",
+  "sunshine_difference_minutes": 5,
+  "sunshine_consistency": "Excellent"
+}

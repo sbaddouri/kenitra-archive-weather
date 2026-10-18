@@ -1,0 +1,18 @@
+{
+  "date": "1984-01-21",
+  "weather_code": 61,
+  "temp_max": 16.2,
+  "temp_min": 12.3,
+  "temp_mean": 14,
+  "precipitation": 8.1,
+  "sunshine": 34479.22,
+  "wind_speed_max": 17.1,
+  "sunrise": "1984-01-21T08:30",
+  "sunset": "1984-01-21T18:44",
+  "sunshine_duration_seconds": 34479.22,
+  "sunshine_duration_minutes": 575,
+  "estimated_daily_sunshine_minutes": 420,
+  "estimated_daily_sunshine": "7 h 00 min",
+  "sunshine_difference_minutes": 155,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1977-10-20",
+  "weather_code": 61,
+  "temp_max": 20.2,
+  "temp_min": 16.5,
+  "temp_mean": 18.1,
+  "precipitation": 6.9,
+  "sunshine": 34019.31,
+  "wind_speed_max": 19.5,
+  "sunrise": "1977-10-20T07:35",
+  "sunset": "1977-10-20T18:46",
+  "sunshine_duration_seconds": 34019.31,
+  "sunshine_duration_minutes": 567,
+  "estimated_daily_sunshine_minutes": 159,
+  "estimated_daily_sunshine": "2 h 39 min",
+  "sunshine_difference_minutes": 408,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1980-12-20",
+  "weather_code": 53,
+  "temp_max": 16.7,
+  "temp_min": 14.3,
+  "temp_mean": 15.3,
+  "precipitation": 6.8,
+  "sunshine": 16966.83,
+  "wind_speed_max": 25,
+  "sunrise": "1980-12-20T08:28",
+  "sunset": "1980-12-20T18:19",
+  "sunshine_duration_seconds": 16966.83,
+  "sunshine_duration_minutes": 283,
+  "estimated_daily_sunshine_minutes": 138,
+  "estimated_daily_sunshine": "2 h 18 min",
+  "sunshine_difference_minutes": 145,
+  "sunshine_consistency": "Faible"
+}

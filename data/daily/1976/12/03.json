@@ -1,0 +1,18 @@
+{
+  "date": "1976-12-03",
+  "weather_code": 53,
+  "temp_max": 17.7,
+  "temp_min": 15.5,
+  "temp_mean": 16.5,
+  "precipitation": 4,
+  "sunshine": 31621.53,
+  "wind_speed_max": 26.6,
+  "sunrise": "1976-12-03T08:16",
+  "sunset": "1976-12-03T18:16",
+  "sunshine_duration_seconds": 31621.53,
+  "sunshine_duration_minutes": 527,
+  "estimated_daily_sunshine_minutes": 144,
+  "estimated_daily_sunshine": "2 h 24 min",
+  "sunshine_difference_minutes": 383,
+  "sunshine_consistency": "Faible"
+}

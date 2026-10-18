@@ -1,0 +1,18 @@
+{
+  "date": "1982-03-26",
+  "weather_code": 0,
+  "temp_max": 18.2,
+  "temp_min": 11,
+  "temp_mean": 14.6,
+  "precipitation": 0,
+  "sunshine": 43382.53,
+  "wind_speed_max": 18.5,
+  "sunrise": "1982-03-26T07:22",
+  "sunset": "1982-03-26T19:42",
+  "sunshine_duration_seconds": 43382.53,
+  "sunshine_duration_minutes": 723,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 3,
+  "sunshine_consistency": "Excellent"
+}

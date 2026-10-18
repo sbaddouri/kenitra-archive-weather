@@ -1,0 +1,18 @@
+{
+  "date": "1979-10-31",
+  "weather_code": 1,
+  "temp_max": 19.5,
+  "temp_min": 12.9,
+  "temp_mean": 16.4,
+  "precipitation": 0,
+  "sunshine": 37141.42,
+  "wind_speed_max": 9.5,
+  "sunrise": "1979-10-31T07:44",
+  "sunset": "1979-10-31T18:34",
+  "sunshine_duration_seconds": 37141.42,
+  "sunshine_duration_minutes": 619,
+  "estimated_daily_sunshine_minutes": 630,
+  "estimated_daily_sunshine": "10 h 30 min",
+  "sunshine_difference_minutes": 11,
+  "sunshine_consistency": "Bon"
+}

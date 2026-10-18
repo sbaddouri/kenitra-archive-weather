@@ -1,0 +1,18 @@
+{
+  "date": "1981-05-14",
+  "weather_code": 2,
+  "temp_max": 20.1,
+  "temp_min": 13.9,
+  "temp_mean": 17.2,
+  "precipitation": 0,
+  "sunshine": 46800,
+  "wind_speed_max": 21,
+  "sunrise": "1981-05-14T06:24",
+  "sunset": "1981-05-14T20:20",
+  "sunshine_duration_seconds": 46800,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 825,
+  "estimated_daily_sunshine": "13 h 45 min",
+  "sunshine_difference_minutes": 45,
+  "sunshine_consistency": "Faible"
+}

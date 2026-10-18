@@ -1,0 +1,18 @@
+{
+  "date": "1981-12-20",
+  "weather_code": 55,
+  "temp_max": 16,
+  "temp_min": 8.7,
+  "temp_mean": 12.6,
+  "precipitation": 2.5,
+  "sunshine": 32865.76,
+  "wind_speed_max": 26.2,
+  "sunrise": "1981-12-20T08:28",
+  "sunset": "1981-12-20T18:19",
+  "sunshine_duration_seconds": 32865.76,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 348,
+  "estimated_daily_sunshine": "5 h 48 min",
+  "sunshine_difference_minutes": 200,
+  "sunshine_consistency": "Faible"
+}

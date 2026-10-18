@@ -1,0 +1,18 @@
+{
+  "date": "1977-02-16",
+  "weather_code": 1,
+  "temp_max": 15.2,
+  "temp_min": 8.5,
+  "temp_mean": 11.7,
+  "precipitation": 0,
+  "sunshine": 38718.15,
+  "wind_speed_max": 10.8,
+  "sunrise": "1977-02-16T08:10",
+  "sunset": "1977-02-16T19:10",
+  "sunshine_duration_seconds": 38718.15,
+  "sunshine_duration_minutes": 645,
+  "estimated_daily_sunshine_minutes": 630,
+  "estimated_daily_sunshine": "10 h 30 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1975-11-06",
+  "weather_code": 1,
+  "temp_max": 21.6,
+  "temp_min": 11,
+  "temp_mean": 16.6,
+  "precipitation": 0,
+  "sunshine": 36441.23,
+  "wind_speed_max": 12.3,
+  "sunrise": "1975-11-06T07:50",
+  "sunset": "1975-11-06T18:29",
+  "sunshine_duration_seconds": 36441.23,
+  "sunshine_duration_minutes": 607,
+  "estimated_daily_sunshine_minutes": 645,
+  "estimated_daily_sunshine": "10 h 45 min",
+  "sunshine_difference_minutes": 38,
+  "sunshine_consistency": "Faible"
+}

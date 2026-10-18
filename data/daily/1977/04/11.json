@@ -1,0 +1,18 @@
+{
+  "date": "1977-04-11",
+  "weather_code": 53,
+  "temp_max": 21.1,
+  "temp_min": 10.3,
+  "temp_mean": 16.1,
+  "precipitation": 0.9,
+  "sunshine": 45964.83,
+  "wind_speed_max": 22.5,
+  "sunrise": "1977-04-11T07:00",
+  "sunset": "1977-04-11T19:54",
+  "sunshine_duration_seconds": 45964.83,
+  "sunshine_duration_minutes": 766,
+  "estimated_daily_sunshine_minutes": 534,
+  "estimated_daily_sunshine": "8 h 54 min",
+  "sunshine_difference_minutes": 232,
+  "sunshine_consistency": "Faible"
+}

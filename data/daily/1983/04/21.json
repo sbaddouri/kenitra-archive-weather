@@ -1,0 +1,18 @@
+{
+  "date": "1983-04-21",
+  "weather_code": 55,
+  "temp_max": 17.8,
+  "temp_min": 12,
+  "temp_mean": 14.6,
+  "precipitation": 2.9,
+  "sunshine": 46678.17,
+  "wind_speed_max": 21.4,
+  "sunrise": "1983-04-21T06:48",
+  "sunset": "1983-04-21T20:02",
+  "sunshine_duration_seconds": 46678.17,
+  "sunshine_duration_minutes": 778,
+  "estimated_daily_sunshine_minutes": 630,
+  "estimated_daily_sunshine": "10 h 30 min",
+  "sunshine_difference_minutes": 148,
+  "sunshine_consistency": "Faible"
+}

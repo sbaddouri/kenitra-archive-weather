@@ -1,0 +1,18 @@
+{
+  "date": "1975-09-13",
+  "weather_code": 0,
+  "temp_max": 26.3,
+  "temp_min": 17,
+  "temp_mean": 21.4,
+  "precipitation": 0,
+  "sunshine": 43202.35,
+  "wind_speed_max": 14.3,
+  "sunrise": "1975-09-13T07:07",
+  "sunset": "1975-09-13T19:36",
+  "sunshine_duration_seconds": 43202.35,
+  "sunshine_duration_minutes": 720,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 0,
+  "sunshine_consistency": "Excellent"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1975-09-15",
+  "weather_code": 61,
+  "temp_max": 20.1,
+  "temp_min": 16.9,
+  "temp_mean": 18.8,
+  "precipitation": 5.8,
+  "sunshine": 40133.91,
+  "wind_speed_max": 22.3,
+  "sunrise": "1975-09-15T07:08",
+  "sunset": "1975-09-15T19:33",
+  "sunshine_duration_seconds": 40133.91,
+  "sunshine_duration_minutes": 669,
+  "estimated_daily_sunshine_minutes": 360,
+  "estimated_daily_sunshine": "6 h 00 min",
+  "sunshine_difference_minutes": 309,
+  "sunshine_consistency": "Faible"
+}

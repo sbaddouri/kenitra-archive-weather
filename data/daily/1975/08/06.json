@@ -1,0 +1,18 @@
+{
+  "date": "1975-08-06",
+  "weather_code": 1,
+  "temp_max": 28,
+  "temp_min": 20.2,
+  "temp_mean": 23.8,
+  "precipitation": 0,
+  "sunshine": 45238.51,
+  "wind_speed_max": 14.8,
+  "sunrise": "1975-08-06T06:39",
+  "sunset": "1975-08-06T20:23",
+  "sunshine_duration_seconds": 45238.51,
+  "sunshine_duration_minutes": 754,
+  "estimated_daily_sunshine_minutes": 825,
+  "estimated_daily_sunshine": "13 h 45 min",
+  "sunshine_difference_minutes": 71,
+  "sunshine_consistency": "Faible"
+}

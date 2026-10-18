@@ -1,0 +1,18 @@
+{
+  "date": "1977-02-22",
+  "weather_code": 61,
+  "temp_max": 15.8,
+  "temp_min": 11.4,
+  "temp_mean": 13.2,
+  "precipitation": 6,
+  "sunshine": 39124.77,
+  "wind_speed_max": 21.5,
+  "sunrise": "1977-02-22T08:03",
+  "sunset": "1977-02-22T19:16",
+  "sunshine_duration_seconds": 39124.77,
+  "sunshine_duration_minutes": 652,
+  "estimated_daily_sunshine_minutes": 306,
+  "estimated_daily_sunshine": "5 h 06 min",
+  "sunshine_difference_minutes": 346,
+  "sunshine_consistency": "Faible"
+}

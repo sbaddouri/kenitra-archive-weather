@@ -1,0 +1,18 @@
+{
+  "date": "1978-01-29",
+  "weather_code": 53,
+  "temp_max": 15,
+  "temp_min": 11.9,
+  "temp_mean": 14.2,
+  "precipitation": 3.4,
+  "sunshine": 24340.94,
+  "wind_speed_max": 28,
+  "sunrise": "1978-01-29T08:26",
+  "sunset": "1978-01-29T18:52",
+  "sunshine_duration_seconds": 24340.94,
+  "sunshine_duration_minutes": 406,
+  "estimated_daily_sunshine_minutes": 150,
+  "estimated_daily_sunshine": "2 h 30 min",
+  "sunshine_difference_minutes": 256,
+  "sunshine_consistency": "Faible"
+}

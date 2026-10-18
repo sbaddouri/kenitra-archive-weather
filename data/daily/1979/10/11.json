@@ -1,0 +1,18 @@
+{
+  "date": "1979-10-11",
+  "weather_code": 63,
+  "temp_max": 23.2,
+  "temp_min": 17.1,
+  "temp_mean": 19.3,
+  "precipitation": 14.1,
+  "sunshine": 33535.32,
+  "wind_speed_max": 27.4,
+  "sunrise": "1979-10-11T07:27",
+  "sunset": "1979-10-11T18:57",
+  "sunshine_duration_seconds": 33535.32,
+  "sunshine_duration_minutes": 559,
+  "estimated_daily_sunshine_minutes": 375,
+  "estimated_daily_sunshine": "6 h 15 min",
+  "sunshine_difference_minutes": 184,
+  "sunshine_consistency": "Faible"
+}

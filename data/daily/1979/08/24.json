@@ -1,0 +1,18 @@
+{
+  "date": "1979-08-24",
+  "weather_code": 2,
+  "temp_max": 26.7,
+  "temp_min": 19.6,
+  "temp_mean": 22.9,
+  "precipitation": 0,
+  "sunshine": 46768.56,
+  "wind_speed_max": 13.8,
+  "sunrise": "1979-08-24T06:53",
+  "sunset": "1979-08-24T20:03",
+  "sunshine_duration_seconds": 46768.56,
+  "sunshine_duration_minutes": 779,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 209,
+  "sunshine_consistency": "Faible"
+}

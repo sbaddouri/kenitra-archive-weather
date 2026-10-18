@@ -1,0 +1,18 @@
+{
+  "date": "1978-06-07",
+  "weather_code": 51,
+  "temp_max": 19.3,
+  "temp_min": 16.2,
+  "temp_mean": 17.6,
+  "precipitation": 1.9,
+  "sunshine": 45362.01,
+  "wind_speed_max": 17.5,
+  "sunrise": "1978-06-07T06:13",
+  "sunset": "1978-06-07T20:36",
+  "sunshine_duration_seconds": 45362.01,
+  "sunshine_duration_minutes": 756,
+  "estimated_daily_sunshine_minutes": 243,
+  "estimated_daily_sunshine": "4 h 03 min",
+  "sunshine_difference_minutes": 513,
+  "sunshine_consistency": "Faible"
+}

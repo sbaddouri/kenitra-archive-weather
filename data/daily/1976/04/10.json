@@ -1,0 +1,18 @@
+{
+  "date": "1976-04-10",
+  "weather_code": 53,
+  "temp_max": 17.6,
+  "temp_min": 10.5,
+  "temp_mean": 13.9,
+  "precipitation": 1.5,
+  "sunshine": 45308.45,
+  "wind_speed_max": 13.2,
+  "sunrise": "1976-04-10T07:01",
+  "sunset": "1976-04-10T19:54",
+  "sunshine_duration_seconds": 45308.45,
+  "sunshine_duration_minutes": 755,
+  "estimated_daily_sunshine_minutes": 468,
+  "estimated_daily_sunshine": "7 h 48 min",
+  "sunshine_difference_minutes": 287,
+  "sunshine_consistency": "Faible"
+}

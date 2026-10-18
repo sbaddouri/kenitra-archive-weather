@@ -1,0 +1,18 @@
+{
+  "date": "1975-01-11",
+  "weather_code": 63,
+  "temp_max": 17.9,
+  "temp_min": 14.2,
+  "temp_mean": 16,
+  "precipitation": 13.6,
+  "sunshine": 16848.26,
+  "wind_speed_max": 35.4,
+  "sunrise": "1975-01-11T08:33",
+  "sunset": "1975-01-11T18:35",
+  "sunshine_duration_seconds": 16848.26,
+  "sunshine_duration_minutes": 281,
+  "estimated_daily_sunshine_minutes": 87,
+  "estimated_daily_sunshine": "1 h 27 min",
+  "sunshine_difference_minutes": 194,
+  "sunshine_consistency": "Faible"
+}

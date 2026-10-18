@@ -1,0 +1,18 @@
+{
+  "date": "1977-01-29",
+  "weather_code": 51,
+  "temp_max": 14.4,
+  "temp_min": 10.5,
+  "temp_mean": 12.3,
+  "precipitation": 0.7,
+  "sunshine": 28330.29,
+  "wind_speed_max": 13,
+  "sunrise": "1977-01-29T08:26",
+  "sunset": "1977-01-29T18:53",
+  "sunshine_duration_seconds": 28330.29,
+  "sunshine_duration_minutes": 472,
+  "estimated_daily_sunshine_minutes": 69,
+  "estimated_daily_sunshine": "1 h 09 min",
+  "sunshine_difference_minutes": 403,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1984-06-13",
+  "weather_code": 1,
+  "temp_max": 28.3,
+  "temp_min": 19.9,
+  "temp_mean": 23.8,
+  "precipitation": 0,
+  "sunshine": 48237.62,
+  "wind_speed_max": 15.6,
+  "sunrise": "1984-06-13T06:13",
+  "sunset": "1984-06-13T20:39",
+  "sunshine_duration_seconds": 48237.62,
+  "sunshine_duration_minutes": 804,
+  "estimated_daily_sunshine_minutes": 810,
+  "estimated_daily_sunshine": "13 h 30 min",
+  "sunshine_difference_minutes": 6,
+  "sunshine_consistency": "Bon"
+}

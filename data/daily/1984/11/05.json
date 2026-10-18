@@ -1,0 +1,18 @@
+{
+  "date": "1984-11-05",
+  "weather_code": 63,
+  "temp_max": 17.7,
+  "temp_min": 15.2,
+  "temp_mean": 16.3,
+  "precipitation": 25.9,
+  "sunshine": 32014.52,
+  "wind_speed_max": 37.8,
+  "sunrise": "1984-11-05T07:50",
+  "sunset": "1984-11-05T18:29",
+  "sunshine_duration_seconds": 32014.52,
+  "sunshine_duration_minutes": 534,
+  "estimated_daily_sunshine_minutes": 306,
+  "estimated_daily_sunshine": "5 h 06 min",
+  "sunshine_difference_minutes": 228,
+  "sunshine_consistency": "Faible"
+}

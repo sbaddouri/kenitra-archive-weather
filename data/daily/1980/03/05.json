@@ -1,0 +1,18 @@
+{
+  "date": "1980-03-05",
+  "weather_code": 55,
+  "temp_max": 15.1,
+  "temp_min": 11.3,
+  "temp_mean": 13.3,
+  "precipitation": 8.4,
+  "sunshine": 37114.18,
+  "wind_speed_max": 21.6,
+  "sunrise": "1980-03-05T07:50",
+  "sunset": "1980-03-05T19:25",
+  "sunshine_duration_seconds": 37114.18,
+  "sunshine_duration_minutes": 619,
+  "estimated_daily_sunshine_minutes": 285,
+  "estimated_daily_sunshine": "4 h 45 min",
+  "sunshine_difference_minutes": 334,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1975-11-25",
+  "weather_code": 55,
+  "temp_max": 14.2,
+  "temp_min": 10.9,
+  "temp_mean": 12.4,
+  "precipitation": 7.8,
+  "sunshine": 32615.86,
+  "wind_speed_max": 21.6,
+  "sunrise": "1975-11-25T08:08",
+  "sunset": "1975-11-25T18:17",
+  "sunshine_duration_seconds": 32615.86,
+  "sunshine_duration_minutes": 544,
+  "estimated_daily_sunshine_minutes": 99,
+  "estimated_daily_sunshine": "1 h 39 min",
+  "sunshine_difference_minutes": 445,
+  "sunshine_consistency": "Faible"
+}

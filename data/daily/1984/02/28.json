@@ -1,0 +1,18 @@
+{
+  "date": "1984-02-28",
+  "weather_code": 55,
+  "temp_max": 13.9,
+  "temp_min": 10.5,
+  "temp_mean": 13.2,
+  "precipitation": 6.9,
+  "sunshine": 36492.62,
+  "wind_speed_max": 30.7,
+  "sunrise": "1984-02-28T07:57",
+  "sunset": "1984-02-28T19:20",
+  "sunshine_duration_seconds": 36492.62,
+  "sunshine_duration_minutes": 608,
+  "estimated_daily_sunshine_minutes": 270,
+  "estimated_daily_sunshine": "4 h 30 min",
+  "sunshine_difference_minutes": 338,
+  "sunshine_consistency": "Faible"
+}

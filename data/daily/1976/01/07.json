@@ -1,0 +1,18 @@
+{
+  "date": "1976-01-07",
+  "weather_code": 3,
+  "temp_max": 16.7,
+  "temp_min": 9.2,
+  "temp_mean": 12.4,
+  "precipitation": 0,
+  "sunshine": 30865.06,
+  "wind_speed_max": 10.7,
+  "sunrise": "1976-01-07T08:33",
+  "sunset": "1976-01-07T18:31",
+  "sunshine_duration_seconds": 30865.06,
+  "sunshine_duration_minutes": 514,
+  "estimated_daily_sunshine_minutes": 477,
+  "estimated_daily_sunshine": "7 h 57 min",
+  "sunshine_difference_minutes": 37,
+  "sunshine_consistency": "Faible"
+}

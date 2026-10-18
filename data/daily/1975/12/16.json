@@ -1,0 +1,18 @@
+{
+  "date": "1975-12-16",
+  "weather_code": 61,
+  "temp_max": 14.3,
+  "temp_min": 11.2,
+  "temp_mean": 12.5,
+  "precipitation": 16.3,
+  "sunshine": 21334.57,
+  "wind_speed_max": 33.4,
+  "sunrise": "1975-12-16T08:25",
+  "sunset": "1975-12-16T18:17",
+  "sunshine_duration_seconds": 21334.57,
+  "sunshine_duration_minutes": 356,
+  "estimated_daily_sunshine_minutes": 111,
+  "estimated_daily_sunshine": "1 h 51 min",
+  "sunshine_difference_minutes": 245,
+  "sunshine_consistency": "Faible"
+}

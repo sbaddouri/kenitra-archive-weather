@@ -1,0 +1,18 @@
+{
+  "date": "1984-03-21",
+  "weather_code": 63,
+  "temp_max": 15.5,
+  "temp_min": 11.4,
+  "temp_mean": 12.9,
+  "precipitation": 10.4,
+  "sunshine": 12653.46,
+  "wind_speed_max": 15.2,
+  "sunrise": "1984-03-21T07:28",
+  "sunset": "1984-03-21T19:38",
+  "sunshine_duration_seconds": 12653.46,
+  "sunshine_duration_minutes": 211,
+  "estimated_daily_sunshine_minutes": 84,
+  "estimated_daily_sunshine": "1 h 24 min",
+  "sunshine_difference_minutes": 127,
+  "sunshine_consistency": "Faible"
+}

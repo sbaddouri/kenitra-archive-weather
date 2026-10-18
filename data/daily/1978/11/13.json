@@ -1,0 +1,18 @@
+{
+  "date": "1978-11-13",
+  "weather_code": 0,
+  "temp_max": 22.6,
+  "temp_min": 14.9,
+  "temp_mean": 18.2,
+  "precipitation": 0,
+  "sunshine": 35937.01,
+  "wind_speed_max": 13.3,
+  "sunrise": "1978-11-13T07:57",
+  "sunset": "1978-11-13T18:23",
+  "sunshine_duration_seconds": 35937.01,
+  "sunshine_duration_minutes": 599,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 61,
+  "sunshine_consistency": "Faible"
+}

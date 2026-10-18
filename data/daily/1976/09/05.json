@@ -1,0 +1,18 @@
+{
+  "date": "1976-09-05",
+  "weather_code": 1,
+  "temp_max": 26.1,
+  "temp_min": 18.9,
+  "temp_mean": 22.5,
+  "precipitation": 0,
+  "sunshine": 44610.17,
+  "wind_speed_max": 15.6,
+  "sunrise": "1976-09-05T07:02",
+  "sunset": "1976-09-05T19:46",
+  "sunshine_duration_seconds": 44610.17,
+  "sunshine_duration_minutes": 744,
+  "estimated_daily_sunshine_minutes": 615,
+  "estimated_daily_sunshine": "10 h 15 min",
+  "sunshine_difference_minutes": 129,
+  "sunshine_consistency": "Faible"
+}

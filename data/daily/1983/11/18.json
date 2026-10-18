@@ -1,0 +1,18 @@
+{
+  "date": "1983-11-18",
+  "weather_code": 51,
+  "temp_max": 20.7,
+  "temp_min": 16.2,
+  "temp_mean": 18,
+  "precipitation": 0.9,
+  "sunshine": 32472.8,
+  "wind_speed_max": 16.3,
+  "sunrise": "1983-11-18T08:01",
+  "sunset": "1983-11-18T18:20",
+  "sunshine_duration_seconds": 32472.8,
+  "sunshine_duration_minutes": 541,
+  "estimated_daily_sunshine_minutes": 216,
+  "estimated_daily_sunshine": "3 h 36 min",
+  "sunshine_difference_minutes": 325,
+  "sunshine_consistency": "Faible"
+}

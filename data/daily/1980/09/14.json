@@ -1,0 +1,18 @@
+{
+  "date": "1980-09-14",
+  "weather_code": 53,
+  "temp_max": 31.9,
+  "temp_min": 23.5,
+  "temp_mean": 27.4,
+  "precipitation": 1.2,
+  "sunshine": 41521.31,
+  "wind_speed_max": 20.9,
+  "sunrise": "1980-09-14T07:08",
+  "sunset": "1980-09-14T19:34",
+  "sunshine_duration_seconds": 41521.31,
+  "sunshine_duration_minutes": 692,
+  "estimated_daily_sunshine_minutes": 168,
+  "estimated_daily_sunshine": "2 h 48 min",
+  "sunshine_difference_minutes": 524,
+  "sunshine_consistency": "Faible"
+}

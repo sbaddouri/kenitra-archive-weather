@@ -1,0 +1,18 @@
+{
+  "date": "1979-06-25",
+  "weather_code": 53,
+  "temp_max": 22.1,
+  "temp_min": 18,
+  "temp_mean": 19.8,
+  "precipitation": 1.7,
+  "sunshine": 35111.62,
+  "wind_speed_max": 13.2,
+  "sunrise": "1979-06-25T06:15",
+  "sunset": "1979-06-25T20:42",
+  "sunshine_duration_seconds": 35111.62,
+  "sunshine_duration_minutes": 585,
+  "estimated_daily_sunshine_minutes": 315,
+  "estimated_daily_sunshine": "5 h 15 min",
+  "sunshine_difference_minutes": 270,
+  "sunshine_consistency": "Faible"
+}

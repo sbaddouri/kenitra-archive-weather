@@ -1,0 +1,18 @@
+{
+  "date": "1978-12-16",
+  "weather_code": 63,
+  "temp_max": 16.5,
+  "temp_min": 12.7,
+  "temp_mean": 15.2,
+  "precipitation": 17.5,
+  "sunshine": 26851.25,
+  "wind_speed_max": 24,
+  "sunrise": "1978-12-16T08:25",
+  "sunset": "1978-12-16T18:18",
+  "sunshine_duration_seconds": 26851.25,
+  "sunshine_duration_minutes": 448,
+  "estimated_daily_sunshine_minutes": 132,
+  "estimated_daily_sunshine": "2 h 12 min",
+  "sunshine_difference_minutes": 316,
+  "sunshine_consistency": "Faible"
+}

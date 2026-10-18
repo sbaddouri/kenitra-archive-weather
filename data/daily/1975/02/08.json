@@ -1,0 +1,18 @@
+{
+  "date": "1975-02-08",
+  "weather_code": 61,
+  "temp_max": 15.7,
+  "temp_min": 12.3,
+  "temp_mean": 14.3,
+  "precipitation": 8.7,
+  "sunshine": 28119.44,
+  "wind_speed_max": 31.3,
+  "sunrise": "1975-02-08T08:18",
+  "sunset": "1975-02-08T19:02",
+  "sunshine_duration_seconds": 28119.44,
+  "sunshine_duration_minutes": 469,
+  "estimated_daily_sunshine_minutes": 144,
+  "estimated_daily_sunshine": "2 h 24 min",
+  "sunshine_difference_minutes": 325,
+  "sunshine_consistency": "Faible"
+}

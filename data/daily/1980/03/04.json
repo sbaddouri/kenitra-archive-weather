@@ -1,0 +1,18 @@
+{
+  "date": "1980-03-04",
+  "weather_code": 61,
+  "temp_max": 15.1,
+  "temp_min": 11.4,
+  "temp_mean": 13.4,
+  "precipitation": 11.6,
+  "sunshine": 20543.69,
+  "wind_speed_max": 19.2,
+  "sunrise": "1980-03-04T07:51",
+  "sunset": "1980-03-04T19:25",
+  "sunshine_duration_seconds": 20543.69,
+  "sunshine_duration_minutes": 342,
+  "estimated_daily_sunshine_minutes": 105,
+  "estimated_daily_sunshine": "1 h 45 min",
+  "sunshine_difference_minutes": 237,
+  "sunshine_consistency": "Faible"
+}

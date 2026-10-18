@@ -1,0 +1,18 @@
+{
+  "date": "1976-11-30",
+  "weather_code": 1,
+  "temp_max": 15.8,
+  "temp_min": 8.8,
+  "temp_mean": 12.6,
+  "precipitation": 0,
+  "sunshine": 34918.74,
+  "wind_speed_max": 8.7,
+  "sunrise": "1976-11-30T08:13",
+  "sunset": "1976-11-30T18:16",
+  "sunshine_duration_seconds": 34918.74,
+  "sunshine_duration_minutes": 582,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 42,
+  "sunshine_consistency": "Faible"
+}

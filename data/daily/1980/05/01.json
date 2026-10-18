@@ -1,0 +1,18 @@
+{
+  "date": "1980-05-01",
+  "weather_code": 51,
+  "temp_max": 18.8,
+  "temp_min": 13.7,
+  "temp_mean": 16,
+  "precipitation": 0.1,
+  "sunshine": 44122.03,
+  "wind_speed_max": 16.3,
+  "sunrise": "1980-05-01T06:36",
+  "sunset": "1980-05-01T20:10",
+  "sunshine_duration_seconds": 44122.03,
+  "sunshine_duration_minutes": 735,
+  "estimated_daily_sunshine_minutes": 468,
+  "estimated_daily_sunshine": "7 h 48 min",
+  "sunshine_difference_minutes": 267,
+  "sunshine_consistency": "Faible"
+}

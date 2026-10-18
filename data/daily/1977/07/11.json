@@ -1,0 +1,18 @@
+{
+  "date": "1977-07-11",
+  "weather_code": 1,
+  "temp_max": 24.4,
+  "temp_min": 18.2,
+  "temp_mean": 20.8,
+  "precipitation": 0,
+  "sunshine": 47261.47,
+  "wind_speed_max": 17.8,
+  "sunrise": "1977-07-11T06:22",
+  "sunset": "1977-07-11T20:40",
+  "sunshine_duration_seconds": 47261.47,
+  "sunshine_duration_minutes": 788,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 8,
+  "sunshine_consistency": "Bon"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1979-01-07",
+  "weather_code": 51,
+  "temp_max": 19,
+  "temp_min": 11.7,
+  "temp_mean": 15.2,
+  "precipitation": 0.8,
+  "sunshine": 32852.46,
+  "wind_speed_max": 16.1,
+  "sunrise": "1979-01-07T08:33",
+  "sunset": "1979-01-07T18:31",
+  "sunshine_duration_seconds": 32852.46,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 8,
+  "sunshine_consistency": "Bon"
+}

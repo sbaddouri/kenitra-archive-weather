@@ -1,0 +1,18 @@
+{
+  "date": "1979-05-19",
+  "weather_code": 55,
+  "temp_max": 18.1,
+  "temp_min": 14.3,
+  "temp_mean": 16.1,
+  "precipitation": 3.9,
+  "sunshine": 45776.3,
+  "wind_speed_max": 18.5,
+  "sunrise": "1979-05-19T06:21",
+  "sunset": "1979-05-19T20:23",
+  "sunshine_duration_seconds": 45776.3,
+  "sunshine_duration_minutes": 763,
+  "estimated_daily_sunshine_minutes": 510,
+  "estimated_daily_sunshine": "8 h 30 min",
+  "sunshine_difference_minutes": 253,
+  "sunshine_consistency": "Faible"
+}

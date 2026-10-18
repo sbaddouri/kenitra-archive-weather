@@ -1,0 +1,18 @@
+{
+  "date": "1981-03-20",
+  "weather_code": 53,
+  "temp_max": 16.8,
+  "temp_min": 12.4,
+  "temp_mean": 14.6,
+  "precipitation": 3.7,
+  "sunshine": 40533.97,
+  "wind_speed_max": 21,
+  "sunrise": "1981-03-20T07:30",
+  "sunset": "1981-03-20T19:37",
+  "sunshine_duration_seconds": 40533.97,
+  "sunshine_duration_minutes": 676,
+  "estimated_daily_sunshine_minutes": 300,
+  "estimated_daily_sunshine": "5 h 00 min",
+  "sunshine_difference_minutes": 376,
+  "sunshine_consistency": "Faible"
+}

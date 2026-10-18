@@ -1,0 +1,18 @@
+{
+  "date": "1977-11-28",
+  "weather_code": 61,
+  "temp_max": 14.8,
+  "temp_min": 13,
+  "temp_mean": 13.7,
+  "precipitation": 18.9,
+  "sunshine": 7739.38,
+  "wind_speed_max": 24.2,
+  "sunrise": "1977-11-28T08:11",
+  "sunset": "1977-11-28T18:16",
+  "sunshine_duration_seconds": 7739.38,
+  "sunshine_duration_minutes": 129,
+  "estimated_daily_sunshine_minutes": 60,
+  "estimated_daily_sunshine": "1 h 00 min",
+  "sunshine_difference_minutes": 69,
+  "sunshine_consistency": "Faible"
+}

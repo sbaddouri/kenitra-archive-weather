@@ -1,0 +1,18 @@
+{
+  "date": "1976-06-29",
+  "weather_code": 61,
+  "temp_max": 23.9,
+  "temp_min": 19.9,
+  "temp_mean": 21.9,
+  "precipitation": 4.6,
+  "sunshine": 37367.83,
+  "wind_speed_max": 15.6,
+  "sunrise": "1976-06-29T06:16",
+  "sunset": "1976-06-29T20:42",
+  "sunshine_duration_seconds": 37367.83,
+  "sunshine_duration_minutes": 623,
+  "estimated_daily_sunshine_minutes": 273,
+  "estimated_daily_sunshine": "4 h 33 min",
+  "sunshine_difference_minutes": 350,
+  "sunshine_consistency": "Faible"
+}

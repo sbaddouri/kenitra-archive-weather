@@ -1,0 +1,18 @@
+{
+  "date": "1977-01-11",
+  "weather_code": 63,
+  "temp_max": 13,
+  "temp_min": 11.4,
+  "temp_mean": 12,
+  "precipitation": 25.2,
+  "sunshine": 25884.16,
+  "wind_speed_max": 27.2,
+  "sunrise": "1977-01-11T08:33",
+  "sunset": "1977-01-11T18:35",
+  "sunshine_duration_seconds": 25884.16,
+  "sunshine_duration_minutes": 431,
+  "estimated_daily_sunshine_minutes": 69,
+  "estimated_daily_sunshine": "1 h 09 min",
+  "sunshine_difference_minutes": 362,
+  "sunshine_consistency": "Faible"
+}
