@@ -1,0 +1,18 @@
+{
+  "date": "1947-12-19",
+  "weather_code": 55,
+  "temp_max": 15,
+  "temp_min": 8.8,
+  "temp_mean": 12.1,
+  "precipitation": 1.8,
+  "sunshine": 32840.74,
+  "wind_speed_max": 19.8,
+  "sunrise": "1947-12-19T08:27",
+  "sunset": "1947-12-19T18:19",
+  "sunshine_duration_seconds": 32840.74,
+  "sunshine_duration_minutes": 547,
+  "estimated_daily_sunshine_minutes": 267,
+  "estimated_daily_sunshine": "4 h 27 min",
+  "sunshine_difference_minutes": 280,
+  "sunshine_consistency": "Faible"
+}

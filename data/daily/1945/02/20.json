@@ -1,0 +1,18 @@
+{
+  "date": "1945-02-20",
+  "weather_code": 0,
+  "temp_max": 18.5,
+  "temp_min": 11.8,
+  "temp_mean": 15.1,
+  "precipitation": 0,
+  "sunshine": 39023.9,
+  "wind_speed_max": 27.5,
+  "sunrise": "1945-02-20T08:05",
+  "sunset": "1945-02-20T19:14",
+  "sunshine_duration_seconds": 39023.9,
+  "sunshine_duration_minutes": 650,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 10,
+  "sunshine_consistency": "Bon"
+}

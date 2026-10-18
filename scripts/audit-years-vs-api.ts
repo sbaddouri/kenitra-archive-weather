@@ -50,7 +50,7 @@ function resolveYears(): number[] {
 
 const YEARS = resolveYears();
 const DATA_DIR = path.join(process.cwd(), 'data');
-const PAUSE_BETWEEN_YEARS_MS = 1500;
+const PAUSE_BETWEEN_YEARS_MS = 6000;
 
 type Maybe<T> = T | null;
 
@@ -137,6 +137,35 @@ function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+/**
+ * Open-Meteo limite le débit (HTTP 429). On réessaie avec un délai exponentiel
+ * plutôt que d'abandonner : un 429 est un throttling temporaire, pas une erreur
+ * de données. Sans cela, l'audit échoue dès qu'une longue série est auditée.
+ */
+async function fetchWithRetry(url: string, maxAttempts = 6): Promise<ApiResponse> {
+  let lastError = '';
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      const response = await axios.get<ApiResponse>(url, { timeout: 180000 });
+      return response.data;
+    } catch (error) {
+      const axiosError = error as { response?: { status?: number }; message?: string };
+      const status = axiosError.response?.status;
+      lastError = `${status ?? 'N/A'} ${axiosError.message ?? 'erreur inconnue'}`;
+
+      const isThrottled = status === 429 || (typeof status === 'number' && status >= 500);
+      if (!isThrottled || attempt === maxAttempts) break;
+
+      const waitSeconds = Math.min(60, 10 * attempt);
+      console.log(`[INFO] API limited (${status}), nouvelle tentative dans ${waitSeconds}s (${attempt}/${maxAttempts})`);
+      await sleep(waitSeconds * 1000);
+    }
+  }
+
+  throw new Error(lastError || 'échec inconnu');
+}
+
 async function fetchYear(year: number): Promise<ApiResponse> {
   const url =
     `https://archive-api.open-meteo.com/v1/archive?latitude=${LAT}&longitude=${LON}` +
@@ -145,8 +174,7 @@ async function fetchYear(year: number): Promise<ApiResponse> {
     '&daily=weather_code,temperature_2m_max,temperature_2m_min,temperature_2m_mean,precipitation_sum,sunshine_duration,wind_speed_10m_max,sunrise,sunset' +
     `&timezone=${TIMEZONE}&models=${MODEL}`;
 
-  const response = await axios.get<ApiResponse>(url, { timeout: 180000 });
-  const data = response.data;
+  const data = await fetchWithRetry(url);
 
   if (!data || !data.daily || !data.hourly || !Array.isArray(data.daily.time) || data.daily.time.length === 0) {
     throw new Error(`Réponse invalide de l'API pour ${year}`);

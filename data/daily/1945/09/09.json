@@ -1,0 +1,18 @@
+{
+  "date": "1945-09-09",
+  "weather_code": 2,
+  "temp_max": 24.6,
+  "temp_min": 16.7,
+  "temp_mean": 20.7,
+  "precipitation": 0,
+  "sunshine": 39299.24,
+  "wind_speed_max": 18.2,
+  "sunrise": "1945-09-09T07:05",
+  "sunset": "1945-09-09T19:40",
+  "sunshine_duration_seconds": 39299.24,
+  "sunshine_duration_minutes": 655,
+  "estimated_daily_sunshine_minutes": 645,
+  "estimated_daily_sunshine": "10 h 45 min",
+  "sunshine_difference_minutes": 10,
+  "sunshine_consistency": "Bon"
+}

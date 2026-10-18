@@ -1,0 +1,18 @@
+{
+  "date": "1949-05-26",
+  "weather_code": 1,
+  "temp_max": 24,
+  "temp_min": 17.8,
+  "temp_mean": 20.6,
+  "precipitation": 0,
+  "sunshine": 48095.08,
+  "wind_speed_max": 17.6,
+  "sunrise": "1949-05-26T06:17",
+  "sunset": "1949-05-26T20:29",
+  "sunshine_duration_seconds": 48095.08,
+  "sunshine_duration_minutes": 802,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 22,
+  "sunshine_consistency": "Moyen"
+}

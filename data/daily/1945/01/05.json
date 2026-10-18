@@ -1,0 +1,18 @@
+{
+  "date": "1945-01-05",
+  "weather_code": 53,
+  "temp_max": 12.1,
+  "temp_min": 6.7,
+  "temp_mean": 10.4,
+  "precipitation": 1.7,
+  "sunshine": 32887.7,
+  "wind_speed_max": 23.2,
+  "sunrise": "1945-01-05T08:32",
+  "sunset": "1945-01-05T18:30",
+  "sunshine_duration_seconds": 32887.7,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 420,
+  "estimated_daily_sunshine": "7 h 00 min",
+  "sunshine_difference_minutes": 128,
+  "sunshine_consistency": "Faible"
+}

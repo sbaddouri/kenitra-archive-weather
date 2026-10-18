@@ -1,0 +1,18 @@
+{
+  "date": "1950-01-14",
+  "weather_code": 0,
+  "temp_max": 18.8,
+  "temp_min": 10.2,
+  "temp_mean": 13.5,
+  "precipitation": 0,
+  "sunshine": 34468.3,
+  "wind_speed_max": 14.7,
+  "sunrise": "1950-01-14T08:32",
+  "sunset": "1950-01-14T18:37",
+  "sunshine_duration_seconds": 34468.3,
+  "sunshine_duration_minutes": 574,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 26,
+  "sunshine_consistency": "Moyen"
+}

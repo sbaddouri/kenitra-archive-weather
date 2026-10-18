@@ -1,0 +1,18 @@
+{
+  "date": "1952-03-28",
+  "weather_code": 63,
+  "temp_max": 23.7,
+  "temp_min": 14.4,
+  "temp_mean": 17.8,
+  "precipitation": 13.4,
+  "sunshine": 27932.85,
+  "wind_speed_max": 34.6,
+  "sunrise": "1952-03-28T07:19",
+  "sunset": "1952-03-28T19:44",
+  "sunshine_duration_seconds": 27932.85,
+  "sunshine_duration_minutes": 466,
+  "estimated_daily_sunshine_minutes": 180,
+  "estimated_daily_sunshine": "3 h 00 min",
+  "sunshine_difference_minutes": 286,
+  "sunshine_consistency": "Faible"
+}

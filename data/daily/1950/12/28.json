@@ -1,0 +1,18 @@
+{
+  "date": "1950-12-28",
+  "weather_code": 61,
+  "temp_max": 14.5,
+  "temp_min": 12.2,
+  "temp_mean": 13.5,
+  "precipitation": 12.5,
+  "sunshine": 5050.73,
+  "wind_speed_max": 32.7,
+  "sunrise": "1950-12-28T08:31",
+  "sunset": "1950-12-28T18:23",
+  "sunshine_duration_seconds": 5050.73,
+  "sunshine_duration_minutes": 84,
+  "estimated_daily_sunshine_minutes": 93,
+  "estimated_daily_sunshine": "1 h 33 min",
+  "sunshine_difference_minutes": 9,
+  "sunshine_consistency": "Bon"
+}

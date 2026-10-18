@@ -1,0 +1,18 @@
+{
+  "date": "1952-10-01",
+  "weather_code": 55,
+  "temp_max": 22.6,
+  "temp_min": 17.4,
+  "temp_mean": 19.7,
+  "precipitation": 3.5,
+  "sunshine": 36835.96,
+  "wind_speed_max": 18.1,
+  "sunrise": "1952-10-01T07:20",
+  "sunset": "1952-10-01T19:10",
+  "sunshine_duration_seconds": 36835.96,
+  "sunshine_duration_minutes": 614,
+  "estimated_daily_sunshine_minutes": 342,
+  "estimated_daily_sunshine": "5 h 42 min",
+  "sunshine_difference_minutes": 272,
+  "sunshine_consistency": "Faible"
+}

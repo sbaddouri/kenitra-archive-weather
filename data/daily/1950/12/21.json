@@ -1,0 +1,18 @@
+{
+  "date": "1950-12-21",
+  "weather_code": 63,
+  "temp_max": 15.6,
+  "temp_min": 13.2,
+  "temp_mean": 14.1,
+  "precipitation": 11.4,
+  "sunshine": 25914.84,
+  "wind_speed_max": 24.1,
+  "sunrise": "1950-12-21T08:28",
+  "sunset": "1950-12-21T18:20",
+  "sunshine_duration_seconds": 25914.84,
+  "sunshine_duration_minutes": 432,
+  "estimated_daily_sunshine_minutes": 135,
+  "estimated_daily_sunshine": "2 h 15 min",
+  "sunshine_difference_minutes": 297,
+  "sunshine_consistency": "Faible"
+}

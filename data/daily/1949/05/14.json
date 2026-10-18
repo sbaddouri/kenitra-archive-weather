@@ -1,0 +1,18 @@
+{
+  "date": "1949-05-14",
+  "weather_code": 51,
+  "temp_max": 21,
+  "temp_min": 15.6,
+  "temp_mean": 18.2,
+  "precipitation": 1.8,
+  "sunshine": 44339.88,
+  "wind_speed_max": 14.5,
+  "sunrise": "1949-05-14T06:24",
+  "sunset": "1949-05-14T20:21",
+  "sunshine_duration_seconds": 44339.88,
+  "sunshine_duration_minutes": 739,
+  "estimated_daily_sunshine_minutes": 450,
+  "estimated_daily_sunshine": "7 h 30 min",
+  "sunshine_difference_minutes": 289,
+  "sunshine_consistency": "Faible"
+}

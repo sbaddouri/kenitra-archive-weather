@@ -1,0 +1,18 @@
+{
+  "date": "1948-08-06",
+  "weather_code": 2,
+  "temp_max": 26.5,
+  "temp_min": 18,
+  "temp_mean": 22.4,
+  "precipitation": 0,
+  "sunshine": 46800,
+  "wind_speed_max": 16.8,
+  "sunrise": "1948-08-06T06:41",
+  "sunset": "1948-08-06T20:22",
+  "sunshine_duration_seconds": 46800,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 810,
+  "estimated_daily_sunshine": "13 h 30 min",
+  "sunshine_difference_minutes": 30,
+  "sunshine_consistency": "Moyen"
+}

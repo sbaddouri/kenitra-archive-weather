@@ -1,0 +1,18 @@
+{
+  "date": "1947-11-22",
+  "weather_code": 0,
+  "temp_max": 25.4,
+  "temp_min": 18.8,
+  "temp_mean": 21.4,
+  "precipitation": 0,
+  "sunshine": 35379.57,
+  "wind_speed_max": 20.5,
+  "sunrise": "1947-11-22T08:05",
+  "sunset": "1947-11-22T18:18",
+  "sunshine_duration_seconds": 35379.57,
+  "sunshine_duration_minutes": 590,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 10,
+  "sunshine_consistency": "Bon"
+}

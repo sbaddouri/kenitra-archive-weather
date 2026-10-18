@@ -1,0 +1,18 @@
+{
+  "date": "1948-10-26",
+  "weather_code": 63,
+  "temp_max": 19.9,
+  "temp_min": 17.3,
+  "temp_mean": 18.3,
+  "precipitation": 7.5,
+  "sunshine": 32774.06,
+  "wind_speed_max": 22.7,
+  "sunrise": "1948-10-26T07:41",
+  "sunset": "1948-10-26T18:38",
+  "sunshine_duration_seconds": 32774.06,
+  "sunshine_duration_minutes": 546,
+  "estimated_daily_sunshine_minutes": 162,
+  "estimated_daily_sunshine": "2 h 42 min",
+  "sunshine_difference_minutes": 384,
+  "sunshine_consistency": "Faible"
+}

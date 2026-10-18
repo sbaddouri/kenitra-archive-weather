@@ -1,0 +1,18 @@
+{
+  "date": "1953-07-08",
+  "weather_code": 0,
+  "temp_max": 27.9,
+  "temp_min": 20.6,
+  "temp_mean": 24.1,
+  "precipitation": 0,
+  "sunshine": 48363.87,
+  "wind_speed_max": 16.9,
+  "sunrise": "1953-07-08T06:20",
+  "sunset": "1953-07-08T20:41",
+  "sunshine_duration_seconds": 48363.87,
+  "sunshine_duration_minutes": 806,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 34,
+  "sunshine_consistency": "Faible"
+}

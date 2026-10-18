@@ -1,0 +1,18 @@
+{
+  "date": "1951-12-27",
+  "weather_code": 51,
+  "temp_max": 16.3,
+  "temp_min": 9.6,
+  "temp_mean": 13.4,
+  "precipitation": 0.3,
+  "sunshine": 30643.87,
+  "wind_speed_max": 15.7,
+  "sunrise": "1951-12-27T08:30",
+  "sunset": "1951-12-27T18:23",
+  "sunshine_duration_seconds": 30643.87,
+  "sunshine_duration_minutes": 511,
+  "estimated_daily_sunshine_minutes": 297,
+  "estimated_daily_sunshine": "4 h 57 min",
+  "sunshine_difference_minutes": 214,
+  "sunshine_consistency": "Faible"
+}

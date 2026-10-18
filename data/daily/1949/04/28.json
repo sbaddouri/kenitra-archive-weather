@@ -1,0 +1,18 @@
+{
+  "date": "1949-04-28",
+  "weather_code": 63,
+  "temp_max": 18.2,
+  "temp_min": 13.6,
+  "temp_mean": 16,
+  "precipitation": 5.5,
+  "sunshine": 39345.29,
+  "wind_speed_max": 15.3,
+  "sunrise": "1949-04-28T06:39",
+  "sunset": "1949-04-28T20:08",
+  "sunshine_duration_seconds": 39345.29,
+  "sunshine_duration_minutes": 656,
+  "estimated_daily_sunshine_minutes": 228,
+  "estimated_daily_sunshine": "3 h 48 min",
+  "sunshine_difference_minutes": 428,
+  "sunshine_consistency": "Faible"
+}

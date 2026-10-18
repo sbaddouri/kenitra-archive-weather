@@ -1,0 +1,18 @@
+{
+  "date": "1954-02-19",
+  "weather_code": 51,
+  "temp_max": 15.2,
+  "temp_min": 9.6,
+  "temp_mean": 12.5,
+  "precipitation": 0.1,
+  "sunshine": 22314.44,
+  "wind_speed_max": 13.1,
+  "sunrise": "1954-02-19T08:07",
+  "sunset": "1954-02-19T19:12",
+  "sunshine_duration_seconds": 22314.44,
+  "sunshine_duration_minutes": 372,
+  "estimated_daily_sunshine_minutes": 234,
+  "estimated_daily_sunshine": "3 h 54 min",
+  "sunshine_difference_minutes": 138,
+  "sunshine_consistency": "Faible"
+}

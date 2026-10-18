@@ -1,0 +1,18 @@
+{
+  "date": "1947-05-11",
+  "weather_code": 53,
+  "temp_max": 18.8,
+  "temp_min": 13.1,
+  "temp_mean": 15.9,
+  "precipitation": 1.5,
+  "sunshine": 45017.8,
+  "wind_speed_max": 16.3,
+  "sunrise": "1947-05-11T06:27",
+  "sunset": "1947-05-11T20:18",
+  "sunshine_duration_seconds": 45017.8,
+  "sunshine_duration_minutes": 750,
+  "estimated_daily_sunshine_minutes": 483,
+  "estimated_daily_sunshine": "8 h 03 min",
+  "sunshine_difference_minutes": 267,
+  "sunshine_consistency": "Faible"
+}

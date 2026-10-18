@@ -1,0 +1,18 @@
+{
+  "date": "1950-11-11",
+  "weather_code": 53,
+  "temp_max": 23.1,
+  "temp_min": 17.4,
+  "temp_mean": 20.6,
+  "precipitation": 6.3,
+  "sunshine": 32884.54,
+  "wind_speed_max": 15.3,
+  "sunrise": "1950-11-11T07:55",
+  "sunset": "1950-11-11T18:25",
+  "sunshine_duration_seconds": 32884.54,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 75,
+  "estimated_daily_sunshine": "1 h 15 min",
+  "sunshine_difference_minutes": 473,
+  "sunshine_consistency": "Faible"
+}

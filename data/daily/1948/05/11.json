@@ -1,0 +1,18 @@
+{
+  "date": "1948-05-11",
+  "weather_code": 63,
+  "temp_max": 17.9,
+  "temp_min": 12.7,
+  "temp_mean": 15.1,
+  "precipitation": 9.8,
+  "sunshine": 42401.02,
+  "wind_speed_max": 21.1,
+  "sunrise": "1948-05-11T06:26",
+  "sunset": "1948-05-11T20:18",
+  "sunshine_duration_seconds": 42401.02,
+  "sunshine_duration_minutes": 707,
+  "estimated_daily_sunshine_minutes": 282,
+  "estimated_daily_sunshine": "4 h 42 min",
+  "sunshine_difference_minutes": 425,
+  "sunshine_consistency": "Faible"
+}

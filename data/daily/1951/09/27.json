@@ -1,0 +1,18 @@
+{
+  "date": "1951-09-27",
+  "weather_code": 0,
+  "temp_max": 24.2,
+  "temp_min": 16.6,
+  "temp_mean": 20.2,
+  "precipitation": 0,
+  "sunshine": 41929.07,
+  "wind_speed_max": 17.3,
+  "sunrise": "1951-09-27T07:17",
+  "sunset": "1951-09-27T19:17",
+  "sunshine_duration_seconds": 41929.07,
+  "sunshine_duration_minutes": 699,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 21,
+  "sunshine_consistency": "Moyen"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1948-01-15",
+  "weather_code": 53,
+  "temp_max": 15.1,
+  "temp_min": 10,
+  "temp_mean": 12.7,
+  "precipitation": 2.1,
+  "sunshine": 33246.87,
+  "wind_speed_max": 18.1,
+  "sunrise": "1948-01-15T08:32",
+  "sunset": "1948-01-15T18:38",
+  "sunshine_duration_seconds": 33246.87,
+  "sunshine_duration_minutes": 554,
+  "estimated_daily_sunshine_minutes": 330,
+  "estimated_daily_sunshine": "5 h 30 min",
+  "sunshine_difference_minutes": 224,
+  "sunshine_consistency": "Faible"
+}

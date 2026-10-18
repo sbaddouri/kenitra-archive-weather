@@ -1,0 +1,18 @@
+{
+  "date": "1947-01-07",
+  "weather_code": 55,
+  "temp_max": 16.6,
+  "temp_min": 13.8,
+  "temp_mean": 15.6,
+  "precipitation": 8.7,
+  "sunshine": 1179.55,
+  "wind_speed_max": 26.3,
+  "sunrise": "1947-01-07T08:33",
+  "sunset": "1947-01-07T18:31",
+  "sunshine_duration_seconds": 1179.55,
+  "sunshine_duration_minutes": 20,
+  "estimated_daily_sunshine_minutes": 102,
+  "estimated_daily_sunshine": "1 h 42 min",
+  "sunshine_difference_minutes": 82,
+  "sunshine_consistency": "Faible"
+}

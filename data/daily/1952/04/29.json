@@ -1,0 +1,18 @@
+{
+  "date": "1952-04-29",
+  "weather_code": 63,
+  "temp_max": 18.2,
+  "temp_min": 13.5,
+  "temp_mean": 15.6,
+  "precipitation": 9.3,
+  "sunshine": 45963.46,
+  "wind_speed_max": 26.2,
+  "sunrise": "1952-04-29T06:38",
+  "sunset": "1952-04-29T20:08",
+  "sunshine_duration_seconds": 45963.46,
+  "sunshine_duration_minutes": 766,
+  "estimated_daily_sunshine_minutes": 324,
+  "estimated_daily_sunshine": "5 h 24 min",
+  "sunshine_difference_minutes": 442,
+  "sunshine_consistency": "Faible"
+}

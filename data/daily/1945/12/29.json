@@ -1,0 +1,18 @@
+{
+  "date": "1945-12-29",
+  "weather_code": 3,
+  "temp_max": 15.6,
+  "temp_min": 11.1,
+  "temp_mean": 13.4,
+  "precipitation": 0,
+  "sunshine": 27477.54,
+  "wind_speed_max": 8.7,
+  "sunrise": "1945-12-29T08:31",
+  "sunset": "1945-12-29T18:24",
+  "sunshine_duration_seconds": 27477.54,
+  "sunshine_duration_minutes": 458,
+  "estimated_daily_sunshine_minutes": 171,
+  "estimated_daily_sunshine": "2 h 51 min",
+  "sunshine_difference_minutes": 287,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1949-11-22",
+  "weather_code": 53,
+  "temp_max": 19.6,
+  "temp_min": 11.7,
+  "temp_mean": 15.6,
+  "precipitation": 1.6,
+  "sunshine": 23663.78,
+  "wind_speed_max": 20.5,
+  "sunrise": "1949-11-22T08:06",
+  "sunset": "1949-11-22T18:18",
+  "sunshine_duration_seconds": 23663.78,
+  "sunshine_duration_minutes": 394,
+  "estimated_daily_sunshine_minutes": 243,
+  "estimated_daily_sunshine": "4 h 03 min",
+  "sunshine_difference_minutes": 151,
+  "sunshine_consistency": "Faible"
+}

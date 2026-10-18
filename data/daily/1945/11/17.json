@@ -1,0 +1,18 @@
+{
+  "date": "1945-11-17",
+  "weather_code": 61,
+  "temp_max": 20,
+  "temp_min": 15.9,
+  "temp_mean": 18.1,
+  "precipitation": 15.1,
+  "sunshine": 18536.67,
+  "wind_speed_max": 25,
+  "sunrise": "1945-11-17T08:01",
+  "sunset": "1945-11-17T18:20",
+  "sunshine_duration_seconds": 18536.67,
+  "sunshine_duration_minutes": 309,
+  "estimated_daily_sunshine_minutes": 66,
+  "estimated_daily_sunshine": "1 h 06 min",
+  "sunshine_difference_minutes": 243,
+  "sunshine_consistency": "Faible"
+}

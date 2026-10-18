@@ -1,0 +1,18 @@
+{
+  "date": "1947-07-23",
+  "weather_code": 2,
+  "temp_max": 26.1,
+  "temp_min": 20,
+  "temp_mean": 22.7,
+  "precipitation": 0,
+  "sunshine": 44472.51,
+  "wind_speed_max": 16,
+  "sunrise": "1947-07-23T06:30",
+  "sunset": "1947-07-23T20:34",
+  "sunshine_duration_seconds": 44472.51,
+  "sunshine_duration_minutes": 741,
+  "estimated_daily_sunshine_minutes": 735,
+  "estimated_daily_sunshine": "12 h 15 min",
+  "sunshine_difference_minutes": 6,
+  "sunshine_consistency": "Bon"
+}

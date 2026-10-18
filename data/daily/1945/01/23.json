@@ -1,0 +1,18 @@
+{
+  "date": "1945-01-23",
+  "weather_code": 1,
+  "temp_max": 14.3,
+  "temp_min": 6.6,
+  "temp_mean": 10.7,
+  "precipitation": 0,
+  "sunshine": 35104.65,
+  "wind_speed_max": 8.4,
+  "sunrise": "1945-01-23T08:29",
+  "sunset": "1945-01-23T18:47",
+  "sunshine_duration_seconds": 35104.65,
+  "sunshine_duration_minutes": 585,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

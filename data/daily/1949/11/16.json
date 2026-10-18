@@ -1,0 +1,18 @@
+{
+  "date": "1949-11-16",
+  "weather_code": 0,
+  "temp_max": 21.1,
+  "temp_min": 13.6,
+  "temp_mean": 17,
+  "precipitation": 0,
+  "sunshine": 35699.08,
+  "wind_speed_max": 13.5,
+  "sunrise": "1949-11-16T08:00",
+  "sunset": "1949-11-16T18:21",
+  "sunshine_duration_seconds": 35699.08,
+  "sunshine_duration_minutes": 595,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 65,
+  "sunshine_consistency": "Faible"
+}

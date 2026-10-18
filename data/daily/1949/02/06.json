@@ -1,0 +1,18 @@
+{
+  "date": "1949-02-06",
+  "weather_code": 53,
+  "temp_max": 17.6,
+  "temp_min": 10.9,
+  "temp_mean": 13.9,
+  "precipitation": 0.7,
+  "sunshine": 37113.36,
+  "wind_speed_max": 12.5,
+  "sunrise": "1949-02-06T08:19",
+  "sunset": "1949-02-06T19:01",
+  "sunshine_duration_seconds": 37113.36,
+  "sunshine_duration_minutes": 619,
+  "estimated_daily_sunshine_minutes": 465,
+  "estimated_daily_sunshine": "7 h 45 min",
+  "sunshine_difference_minutes": 154,
+  "sunshine_consistency": "Faible"
+}

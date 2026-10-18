@@ -1,0 +1,18 @@
+{
+  "date": "1946-02-27",
+  "weather_code": 63,
+  "temp_max": 18.9,
+  "temp_min": 11.1,
+  "temp_mean": 14.2,
+  "precipitation": 10.1,
+  "sunshine": 29970.35,
+  "wind_speed_max": 35,
+  "sunrise": "1946-02-27T07:57",
+  "sunset": "1946-02-27T19:20",
+  "sunshine_duration_seconds": 29970.35,
+  "sunshine_duration_minutes": 500,
+  "estimated_daily_sunshine_minutes": 114,
+  "estimated_daily_sunshine": "1 h 54 min",
+  "sunshine_difference_minutes": 386,
+  "sunshine_consistency": "Faible"
+}

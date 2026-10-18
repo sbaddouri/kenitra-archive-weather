@@ -1,0 +1,18 @@
+{
+  "date": "1952-03-25",
+  "weather_code": 3,
+  "temp_max": 21.5,
+  "temp_min": 11,
+  "temp_mean": 16.1,
+  "precipitation": 0,
+  "sunshine": 38000.08,
+  "wind_speed_max": 13.6,
+  "sunrise": "1952-03-25T07:23",
+  "sunset": "1952-03-25T19:41",
+  "sunshine_duration_seconds": 38000.08,
+  "sunshine_duration_minutes": 633,
+  "estimated_daily_sunshine_minutes": 144,
+  "estimated_daily_sunshine": "2 h 24 min",
+  "sunshine_difference_minutes": 489,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1945-10-19",
+  "weather_code": 63,
+  "temp_max": 21.9,
+  "temp_min": 17.5,
+  "temp_mean": 19.9,
+  "precipitation": 11.9,
+  "sunshine": 29743.85,
+  "wind_speed_max": 17.6,
+  "sunrise": "1945-10-19T07:35",
+  "sunset": "1945-10-19T18:46",
+  "sunshine_duration_seconds": 29743.85,
+  "sunshine_duration_minutes": 496,
+  "estimated_daily_sunshine_minutes": 111,
+  "estimated_daily_sunshine": "1 h 51 min",
+  "sunshine_difference_minutes": 385,
+  "sunshine_consistency": "Faible"
+}

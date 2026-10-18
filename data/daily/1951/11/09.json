@@ -1,0 +1,18 @@
+{
+  "date": "1951-11-09",
+  "weather_code": 63,
+  "temp_max": 17.6,
+  "temp_min": 14.3,
+  "temp_mean": 16,
+  "precipitation": 40.2,
+  "sunshine": 20156.6,
+  "wind_speed_max": 35.2,
+  "sunrise": "1951-11-09T07:52",
+  "sunset": "1951-11-09T18:26",
+  "sunshine_duration_seconds": 20156.6,
+  "sunshine_duration_minutes": 336,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 264,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1950-09-30",
+  "weather_code": 53,
+  "temp_max": 22.5,
+  "temp_min": 17.3,
+  "temp_mean": 19.6,
+  "precipitation": 1.8,
+  "sunshine": 37722.27,
+  "wind_speed_max": 14.3,
+  "sunrise": "1950-09-30T07:19",
+  "sunset": "1950-09-30T19:12",
+  "sunshine_duration_seconds": 37722.27,
+  "sunshine_duration_minutes": 629,
+  "estimated_daily_sunshine_minutes": 360,
+  "estimated_daily_sunshine": "6 h 00 min",
+  "sunshine_difference_minutes": 269,
+  "sunshine_consistency": "Faible"
+}

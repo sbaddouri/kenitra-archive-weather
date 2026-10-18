@@ -1,0 +1,18 @@
+{
+  "date": "1953-02-27",
+  "weather_code": 1,
+  "temp_max": 17.5,
+  "temp_min": 9.7,
+  "temp_mean": 13.4,
+  "precipitation": 0,
+  "sunshine": 39468.23,
+  "wind_speed_max": 13.2,
+  "sunrise": "1953-02-27T07:58",
+  "sunset": "1953-02-27T19:20",
+  "sunshine_duration_seconds": 39468.23,
+  "sunshine_duration_minutes": 658,
+  "estimated_daily_sunshine_minutes": 705,
+  "estimated_daily_sunshine": "11 h 45 min",
+  "sunshine_difference_minutes": 47,
+  "sunshine_consistency": "Faible"
+}

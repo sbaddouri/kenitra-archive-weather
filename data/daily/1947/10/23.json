@@ -1,0 +1,18 @@
+{
+  "date": "1947-10-23",
+  "weather_code": 2,
+  "temp_max": 23.4,
+  "temp_min": 16.7,
+  "temp_mean": 19.8,
+  "precipitation": 0,
+  "sunshine": 38307.85,
+  "wind_speed_max": 14.7,
+  "sunrise": "1947-10-23T07:38",
+  "sunset": "1947-10-23T18:42",
+  "sunshine_duration_seconds": 38307.85,
+  "sunshine_duration_minutes": 638,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 22,
+  "sunshine_consistency": "Moyen"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1949-10-27",
+  "weather_code": 3,
+  "temp_max": 20.9,
+  "temp_min": 14.2,
+  "temp_mean": 17.8,
+  "precipitation": 0,
+  "sunshine": 38005.17,
+  "wind_speed_max": 14.1,
+  "sunrise": "1949-10-27T07:42",
+  "sunset": "1949-10-27T18:37",
+  "sunshine_duration_seconds": 38005.17,
+  "sunshine_duration_minutes": 633,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 27,
+  "sunshine_consistency": "Moyen"
+}

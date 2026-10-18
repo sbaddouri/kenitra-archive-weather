@@ -1,0 +1,18 @@
+{
+  "date": "1945-08-12",
+  "weather_code": 51,
+  "temp_max": 24.1,
+  "temp_min": 19.1,
+  "temp_mean": 21.6,
+  "precipitation": 0.1,
+  "sunshine": 41121.75,
+  "wind_speed_max": 17.2,
+  "sunrise": "1945-08-12T06:45",
+  "sunset": "1945-08-12T20:16",
+  "sunshine_duration_seconds": 41121.75,
+  "sunshine_duration_minutes": 685,
+  "estimated_daily_sunshine_minutes": 681,
+  "estimated_daily_sunshine": "11 h 21 min",
+  "sunshine_difference_minutes": 4,
+  "sunshine_consistency": "Excellent"
+}

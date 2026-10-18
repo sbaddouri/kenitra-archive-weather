@@ -1,0 +1,18 @@
+{
+  "date": "1953-10-26",
+  "weather_code": 3,
+  "temp_max": 19.9,
+  "temp_min": 13.2,
+  "temp_mean": 16.7,
+  "precipitation": 0,
+  "sunshine": 37556.91,
+  "wind_speed_max": 12.3,
+  "sunrise": "1953-10-26T07:40",
+  "sunset": "1953-10-26T18:39",
+  "sunshine_duration_seconds": 37556.91,
+  "sunshine_duration_minutes": 626,
+  "estimated_daily_sunshine_minutes": 615,
+  "estimated_daily_sunshine": "10 h 15 min",
+  "sunshine_difference_minutes": 11,
+  "sunshine_consistency": "Bon"
+}

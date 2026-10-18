@@ -1,0 +1,18 @@
+{
+  "date": "1947-02-04",
+  "weather_code": 63,
+  "temp_max": 16.1,
+  "temp_min": 14.1,
+  "temp_mean": 15.2,
+  "precipitation": 25.5,
+  "sunshine": 4306.8,
+  "wind_speed_max": 36.7,
+  "sunrise": "1947-02-04T08:21",
+  "sunset": "1947-02-04T18:58",
+  "sunshine_duration_seconds": 4306.8,
+  "sunshine_duration_minutes": 72,
+  "estimated_daily_sunshine_minutes": 57,
+  "estimated_daily_sunshine": "0 h 57 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

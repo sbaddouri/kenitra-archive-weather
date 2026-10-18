@@ -1,0 +1,18 @@
+{
+  "date": "1952-05-26",
+  "weather_code": 63,
+  "temp_max": 20.9,
+  "temp_min": 16.2,
+  "temp_mean": 18.9,
+  "precipitation": 17.9,
+  "sunshine": 23798.66,
+  "wind_speed_max": 19.2,
+  "sunrise": "1952-05-26T06:17",
+  "sunset": "1952-05-26T20:29",
+  "sunshine_duration_seconds": 23798.66,
+  "sunshine_duration_minutes": 397,
+  "estimated_daily_sunshine_minutes": 165,
+  "estimated_daily_sunshine": "2 h 45 min",
+  "sunshine_difference_minutes": 232,
+  "sunshine_consistency": "Faible"
+}

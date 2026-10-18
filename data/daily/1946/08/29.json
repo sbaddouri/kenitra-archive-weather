@@ -1,0 +1,18 @@
+{
+  "date": "1946-08-29",
+  "weather_code": 51,
+  "temp_max": 24.1,
+  "temp_min": 18.1,
+  "temp_mean": 21.1,
+  "precipitation": 0.2,
+  "sunshine": 46234.17,
+  "wind_speed_max": 16.8,
+  "sunrise": "1946-08-29T06:57",
+  "sunset": "1946-08-29T19:56",
+  "sunshine_duration_seconds": 46234.17,
+  "sunshine_duration_minutes": 771,
+  "estimated_daily_sunshine_minutes": 369,
+  "estimated_daily_sunshine": "6 h 09 min",
+  "sunshine_difference_minutes": 402,
+  "sunshine_consistency": "Faible"
+}

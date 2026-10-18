@@ -1,0 +1,18 @@
+{
+  "date": "1952-03-11",
+  "weather_code": 61,
+  "temp_max": 18.7,
+  "temp_min": 11.6,
+  "temp_mean": 15.5,
+  "precipitation": 11.4,
+  "sunshine": 27357.89,
+  "wind_speed_max": 24.3,
+  "sunrise": "1952-03-11T07:42",
+  "sunset": "1952-03-11T19:30",
+  "sunshine_duration_seconds": 27357.89,
+  "sunshine_duration_minutes": 456,
+  "estimated_daily_sunshine_minutes": 147,
+  "estimated_daily_sunshine": "2 h 27 min",
+  "sunshine_difference_minutes": 309,
+  "sunshine_consistency": "Faible"
+}

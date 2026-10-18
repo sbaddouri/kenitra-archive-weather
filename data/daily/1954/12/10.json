@@ -1,0 +1,18 @@
+{
+  "date": "1954-12-10",
+  "weather_code": 63,
+  "temp_max": 12.5,
+  "temp_min": 10.1,
+  "temp_mean": 11.2,
+  "precipitation": 31.3,
+  "sunshine": 5247.85,
+  "wind_speed_max": 32.1,
+  "sunrise": "1954-12-10T08:21",
+  "sunset": "1954-12-10T18:16",
+  "sunshine_duration_seconds": 5247.85,
+  "sunshine_duration_minutes": 87,
+  "estimated_daily_sunshine_minutes": 60,
+  "estimated_daily_sunshine": "1 h 00 min",
+  "sunshine_difference_minutes": 27,
+  "sunshine_consistency": "Moyen"
+}

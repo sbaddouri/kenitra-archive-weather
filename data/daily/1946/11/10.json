@@ -1,0 +1,18 @@
+{
+  "date": "1946-11-10",
+  "weather_code": 61,
+  "temp_max": 18.3,
+  "temp_min": 14.7,
+  "temp_mean": 16.5,
+  "precipitation": 13.6,
+  "sunshine": 36000,
+  "wind_speed_max": 25.7,
+  "sunrise": "1946-11-10T07:54",
+  "sunset": "1946-11-10T18:25",
+  "sunshine_duration_seconds": 36000,
+  "sunshine_duration_minutes": 600,
+  "estimated_daily_sunshine_minutes": 267,
+  "estimated_daily_sunshine": "4 h 27 min",
+  "sunshine_difference_minutes": 333,
+  "sunshine_consistency": "Faible"
+}

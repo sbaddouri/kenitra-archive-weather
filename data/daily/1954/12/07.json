@@ -1,0 +1,18 @@
+{
+  "date": "1954-12-07",
+  "weather_code": 51,
+  "temp_max": 17.7,
+  "temp_min": 12.3,
+  "temp_mean": 15.1,
+  "precipitation": 0.3,
+  "sunshine": 32400,
+  "wind_speed_max": 18.9,
+  "sunrise": "1954-12-07T08:18",
+  "sunset": "1954-12-07T18:16",
+  "sunshine_duration_seconds": 32400,
+  "sunshine_duration_minutes": 540,
+  "estimated_daily_sunshine_minutes": 315,
+  "estimated_daily_sunshine": "5 h 15 min",
+  "sunshine_difference_minutes": 225,
+  "sunshine_consistency": "Faible"
+}

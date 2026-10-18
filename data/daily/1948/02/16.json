@@ -1,0 +1,18 @@
+{
+  "date": "1948-02-16",
+  "weather_code": 3,
+  "temp_max": 16.6,
+  "temp_min": 9.7,
+  "temp_mean": 12.7,
+  "precipitation": 0,
+  "sunshine": 31267.59,
+  "wind_speed_max": 11,
+  "sunrise": "1948-02-16T08:10",
+  "sunset": "1948-02-16T19:10",
+  "sunshine_duration_seconds": 31267.59,
+  "sunshine_duration_minutes": 521,
+  "estimated_daily_sunshine_minutes": 507,
+  "estimated_daily_sunshine": "8 h 27 min",
+  "sunshine_difference_minutes": 14,
+  "sunshine_consistency": "Bon"
+}

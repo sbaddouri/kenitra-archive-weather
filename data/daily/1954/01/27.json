@@ -1,0 +1,18 @@
+{
+  "date": "1954-01-27",
+  "weather_code": 55,
+  "temp_max": 13.6,
+  "temp_min": 10.7,
+  "temp_mean": 11.9,
+  "precipitation": 2.5,
+  "sunshine": 34760.85,
+  "wind_speed_max": 12.7,
+  "sunrise": "1954-01-27T08:27",
+  "sunset": "1954-01-27T18:50",
+  "sunshine_duration_seconds": 34760.85,
+  "sunshine_duration_minutes": 579,
+  "estimated_daily_sunshine_minutes": 312,
+  "estimated_daily_sunshine": "5 h 12 min",
+  "sunshine_difference_minutes": 267,
+  "sunshine_consistency": "Faible"
+}

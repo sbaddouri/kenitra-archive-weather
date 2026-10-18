@@ -1,0 +1,18 @@
+{
+  "date": "1949-09-23",
+  "weather_code": 63,
+  "temp_max": 22.6,
+  "temp_min": 19.1,
+  "temp_mean": 21,
+  "precipitation": 14.8,
+  "sunshine": 26593.77,
+  "wind_speed_max": 14.6,
+  "sunrise": "1949-09-23T07:15",
+  "sunset": "1949-09-23T19:21",
+  "sunshine_duration_seconds": 26593.77,
+  "sunshine_duration_minutes": 443,
+  "estimated_daily_sunshine_minutes": 267,
+  "estimated_daily_sunshine": "4 h 27 min",
+  "sunshine_difference_minutes": 176,
+  "sunshine_consistency": "Faible"
+}

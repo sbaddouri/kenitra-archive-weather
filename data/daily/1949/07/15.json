@@ -1,0 +1,18 @@
+{
+  "date": "1949-07-15",
+  "weather_code": 2,
+  "temp_max": 26.9,
+  "temp_min": 18.4,
+  "temp_mean": 22.3,
+  "precipitation": 0,
+  "sunshine": 47627.37,
+  "wind_speed_max": 19.7,
+  "sunrise": "1949-07-15T06:25",
+  "sunset": "1949-07-15T20:38",
+  "sunshine_duration_seconds": 47627.37,
+  "sunshine_duration_minutes": 794,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 14,
+  "sunshine_consistency": "Bon"
+}

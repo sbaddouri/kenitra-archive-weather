@@ -1,0 +1,18 @@
+{
+  "date": "1946-09-05",
+  "weather_code": 2,
+  "temp_max": 23.7,
+  "temp_min": 16.7,
+  "temp_mean": 20.5,
+  "precipitation": 0,
+  "sunshine": 45165.58,
+  "wind_speed_max": 16.1,
+  "sunrise": "1946-09-05T07:02",
+  "sunset": "1946-09-05T19:46",
+  "sunshine_duration_seconds": 45165.58,
+  "sunshine_duration_minutes": 753,
+  "estimated_daily_sunshine_minutes": 705,
+  "estimated_daily_sunshine": "11 h 45 min",
+  "sunshine_difference_minutes": 48,
+  "sunshine_consistency": "Faible"
+}

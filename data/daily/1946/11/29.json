@@ -1,0 +1,18 @@
+{
+  "date": "1946-11-29",
+  "weather_code": 55,
+  "temp_max": 19.2,
+  "temp_min": 14.2,
+  "temp_mean": 16,
+  "precipitation": 2.7,
+  "sunshine": 34976.6,
+  "wind_speed_max": 20,
+  "sunrise": "1946-11-29T08:12",
+  "sunset": "1946-11-29T18:16",
+  "sunshine_duration_seconds": 34976.6,
+  "sunshine_duration_minutes": 583,
+  "estimated_daily_sunshine_minutes": 396,
+  "estimated_daily_sunshine": "6 h 36 min",
+  "sunshine_difference_minutes": 187,
+  "sunshine_consistency": "Faible"
+}

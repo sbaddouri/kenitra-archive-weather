@@ -1,0 +1,18 @@
+{
+  "date": "1954-10-29",
+  "weather_code": 3,
+  "temp_max": 23.8,
+  "temp_min": 15.3,
+  "temp_mean": 19,
+  "precipitation": 0,
+  "sunshine": 37654.68,
+  "wind_speed_max": 12.1,
+  "sunrise": "1954-10-29T07:43",
+  "sunset": "1954-10-29T18:36",
+  "sunshine_duration_seconds": 37654.68,
+  "sunshine_duration_minutes": 628,
+  "estimated_daily_sunshine_minutes": 369,
+  "estimated_daily_sunshine": "6 h 09 min",
+  "sunshine_difference_minutes": 259,
+  "sunshine_consistency": "Faible"
+}

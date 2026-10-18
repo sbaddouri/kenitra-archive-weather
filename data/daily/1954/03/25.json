@@ -1,0 +1,18 @@
+{
+  "date": "1954-03-25",
+  "weather_code": 61,
+  "temp_max": 11.7,
+  "temp_min": 10.1,
+  "temp_mean": 10.9,
+  "precipitation": 25.9,
+  "sunshine": 0,
+  "wind_speed_max": 20.4,
+  "sunrise": "1954-03-25T07:24",
+  "sunset": "1954-03-25T19:41",
+  "sunshine_duration_seconds": 0,
+  "sunshine_duration_minutes": 0,
+  "estimated_daily_sunshine_minutes": 66,
+  "estimated_daily_sunshine": "1 h 06 min",
+  "sunshine_difference_minutes": 66,
+  "sunshine_consistency": "Faible"
+}

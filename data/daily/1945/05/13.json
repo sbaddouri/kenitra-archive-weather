@@ -1,0 +1,18 @@
+{
+  "date": "1945-05-13",
+  "weather_code": 2,
+  "temp_max": 22.7,
+  "temp_min": 16.2,
+  "temp_mean": 19.2,
+  "precipitation": 0,
+  "sunshine": 43458.28,
+  "wind_speed_max": 18.5,
+  "sunrise": "1945-05-13T06:25",
+  "sunset": "1945-05-13T20:20",
+  "sunshine_duration_seconds": 43458.28,
+  "sunshine_duration_minutes": 724,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 4,
+  "sunshine_consistency": "Excellent"
+}

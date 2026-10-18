@@ -1,0 +1,18 @@
+{
+  "date": "1948-12-31",
+  "weather_code": 61,
+  "temp_max": 15.2,
+  "temp_min": 12,
+  "temp_mean": 13.9,
+  "precipitation": 8.2,
+  "sunshine": 8920.47,
+  "wind_speed_max": 24,
+  "sunrise": "1948-12-31T08:32",
+  "sunset": "1948-12-31T18:26",
+  "sunshine_duration_seconds": 8920.47,
+  "sunshine_duration_minutes": 149,
+  "estimated_daily_sunshine_minutes": 87,
+  "estimated_daily_sunshine": "1 h 27 min",
+  "sunshine_difference_minutes": 62,
+  "sunshine_consistency": "Faible"
+}

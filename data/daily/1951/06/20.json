@@ -1,0 +1,18 @@
+{
+  "date": "1951-06-20",
+  "weather_code": 3,
+  "temp_max": 26.6,
+  "temp_min": 19.2,
+  "temp_mean": 22.8,
+  "precipitation": 0,
+  "sunshine": 47265.65,
+  "wind_speed_max": 23.2,
+  "sunrise": "1951-06-20T06:13",
+  "sunset": "1951-06-20T20:41",
+  "sunshine_duration_seconds": 47265.65,
+  "sunshine_duration_minutes": 788,
+  "estimated_daily_sunshine_minutes": 735,
+  "estimated_daily_sunshine": "12 h 15 min",
+  "sunshine_difference_minutes": 53,
+  "sunshine_consistency": "Faible"
+}

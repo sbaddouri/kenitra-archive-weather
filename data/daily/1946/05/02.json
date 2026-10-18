@@ -1,0 +1,18 @@
+{
+  "date": "1946-05-02",
+  "weather_code": 55,
+  "temp_max": 19,
+  "temp_min": 14.6,
+  "temp_mean": 16.2,
+  "precipitation": 9.2,
+  "sunshine": 40843.29,
+  "wind_speed_max": 24.7,
+  "sunrise": "1946-05-02T06:35",
+  "sunset": "1946-05-02T20:11",
+  "sunshine_duration_seconds": 40843.29,
+  "sunshine_duration_minutes": 681,
+  "estimated_daily_sunshine_minutes": 240,
+  "estimated_daily_sunshine": "4 h 00 min",
+  "sunshine_difference_minutes": 441,
+  "sunshine_consistency": "Faible"
+}

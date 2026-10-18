@@ -1,0 +1,18 @@
+{
+  "date": "1946-12-06",
+  "weather_code": 51,
+  "temp_max": 18.5,
+  "temp_min": 13.1,
+  "temp_mean": 15.7,
+  "precipitation": 0,
+  "sunshine": 23234.18,
+  "wind_speed_max": 9.2,
+  "sunrise": "1946-12-06T08:18",
+  "sunset": "1946-12-06T18:15",
+  "sunshine_duration_seconds": 23234.18,
+  "sunshine_duration_minutes": 387,
+  "estimated_daily_sunshine_minutes": 273,
+  "estimated_daily_sunshine": "4 h 33 min",
+  "sunshine_difference_minutes": 114,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1945-03-05",
+  "weather_code": 0,
+  "temp_max": 19.1,
+  "temp_min": 10,
+  "temp_mean": 15.2,
+  "precipitation": 0,
+  "sunshine": 39782.82,
+  "wind_speed_max": 15,
+  "sunrise": "1945-03-05T07:49",
+  "sunset": "1945-03-05T19:25",
+  "sunshine_duration_seconds": 39782.82,
+  "sunshine_duration_minutes": 663,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 57,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1946-05-22",
+  "weather_code": 51,
+  "temp_max": 19.2,
+  "temp_min": 14,
+  "temp_mean": 17,
+  "precipitation": 1.3,
+  "sunshine": 44801.27,
+  "wind_speed_max": 18.2,
+  "sunrise": "1946-05-22T06:19",
+  "sunset": "1946-05-22T20:26",
+  "sunshine_duration_seconds": 44801.27,
+  "sunshine_duration_minutes": 747,
+  "estimated_daily_sunshine_minutes": 495,
+  "estimated_daily_sunshine": "8 h 15 min",
+  "sunshine_difference_minutes": 252,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1952-02-18",
+  "weather_code": 1,
+  "temp_max": 13.1,
+  "temp_min": 5.8,
+  "temp_mean": 10.1,
+  "precipitation": 0,
+  "sunshine": 38785.99,
+  "wind_speed_max": 13.2,
+  "sunrise": "1952-02-18T08:09",
+  "sunset": "1952-02-18T19:11",
+  "sunshine_duration_seconds": 38785.99,
+  "sunshine_duration_minutes": 646,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 14,
+  "sunshine_consistency": "Bon"
+}

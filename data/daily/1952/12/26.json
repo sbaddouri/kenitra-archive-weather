@@ -1,0 +1,18 @@
+{
+  "date": "1952-12-26",
+  "weather_code": 51,
+  "temp_max": 16.9,
+  "temp_min": 10.9,
+  "temp_mean": 13.3,
+  "precipitation": 0.3,
+  "sunshine": 18771.85,
+  "wind_speed_max": 14.7,
+  "sunrise": "1952-12-26T08:30",
+  "sunset": "1952-12-26T18:23",
+  "sunshine_duration_seconds": 18771.85,
+  "sunshine_duration_minutes": 313,
+  "estimated_daily_sunshine_minutes": 207,
+  "estimated_daily_sunshine": "3 h 27 min",
+  "sunshine_difference_minutes": 106,
+  "sunshine_consistency": "Faible"
+}

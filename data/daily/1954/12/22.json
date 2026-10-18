@@ -1,0 +1,18 @@
+{
+  "date": "1954-12-22",
+  "weather_code": 1,
+  "temp_max": 15.4,
+  "temp_min": 10.7,
+  "temp_mean": 13.1,
+  "precipitation": 0,
+  "sunshine": 32891.6,
+  "wind_speed_max": 8.5,
+  "sunrise": "1954-12-22T08:28",
+  "sunset": "1954-12-22T18:20",
+  "sunshine_duration_seconds": 32891.6,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 555,
+  "estimated_daily_sunshine": "9 h 15 min",
+  "sunshine_difference_minutes": 7,
+  "sunshine_consistency": "Bon"
+}

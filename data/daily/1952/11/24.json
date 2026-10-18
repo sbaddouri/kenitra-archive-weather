@@ -1,0 +1,18 @@
+{
+  "date": "1952-11-24",
+  "weather_code": 1,
+  "temp_max": 22.3,
+  "temp_min": 14.4,
+  "temp_mean": 17.5,
+  "precipitation": 0,
+  "sunshine": 35255.06,
+  "wind_speed_max": 13.6,
+  "sunrise": "1952-11-24T08:07",
+  "sunset": "1952-11-24T18:17",
+  "sunshine_duration_seconds": 35255.06,
+  "sunshine_duration_minutes": 588,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 3,
+  "sunshine_consistency": "Excellent"
+}

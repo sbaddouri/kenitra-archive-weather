@@ -1,0 +1,18 @@
+{
+  "date": "1948-01-26",
+  "weather_code": 61,
+  "temp_max": 17.4,
+  "temp_min": 15.2,
+  "temp_mean": 16.4,
+  "precipitation": 14,
+  "sunshine": 5367.64,
+  "wind_speed_max": 35.7,
+  "sunrise": "1948-01-26T08:27",
+  "sunset": "1948-01-26T18:49",
+  "sunshine_duration_seconds": 5367.64,
+  "sunshine_duration_minutes": 89,
+  "estimated_daily_sunshine_minutes": 102,
+  "estimated_daily_sunshine": "1 h 42 min",
+  "sunshine_difference_minutes": 13,
+  "sunshine_consistency": "Bon"
+}

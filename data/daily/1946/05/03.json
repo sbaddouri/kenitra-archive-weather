@@ -1,0 +1,18 @@
+{
+  "date": "1946-05-03",
+  "weather_code": 63,
+  "temp_max": 19.1,
+  "temp_min": 13.4,
+  "temp_mean": 16,
+  "precipitation": 7.7,
+  "sunshine": 46800,
+  "wind_speed_max": 22.3,
+  "sunrise": "1946-05-03T06:34",
+  "sunset": "1946-05-03T20:12",
+  "sunshine_duration_seconds": 46800,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 252,
+  "estimated_daily_sunshine": "4 h 12 min",
+  "sunshine_difference_minutes": 528,
+  "sunshine_consistency": "Faible"
+}

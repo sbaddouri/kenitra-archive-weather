@@ -1,0 +1,18 @@
+{
+  "date": "1950-11-30",
+  "weather_code": 1,
+  "temp_max": 20.2,
+  "temp_min": 14.7,
+  "temp_mean": 17.5,
+  "precipitation": 0,
+  "sunshine": 34949.21,
+  "wind_speed_max": 12.9,
+  "sunrise": "1950-11-30T08:12",
+  "sunset": "1950-11-30T18:16",
+  "sunshine_duration_seconds": 34949.21,
+  "sunshine_duration_minutes": 582,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 18,
+  "sunshine_consistency": "Moyen"
+}

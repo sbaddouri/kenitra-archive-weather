@@ -1,0 +1,18 @@
+{
+  "date": "1953-02-23",
+  "weather_code": 0,
+  "temp_max": 17.3,
+  "temp_min": 8.5,
+  "temp_mean": 12.9,
+  "precipitation": 0,
+  "sunshine": 39175.18,
+  "wind_speed_max": 11.2,
+  "sunrise": "1953-02-23T08:03",
+  "sunset": "1953-02-23T19:16",
+  "sunshine_duration_seconds": 39175.18,
+  "sunshine_duration_minutes": 653,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 7,
+  "sunshine_consistency": "Bon"
+}

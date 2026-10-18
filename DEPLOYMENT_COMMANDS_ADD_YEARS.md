@@ -38,9 +38,14 @@ Plages déjà en ligne et vérifiées :
 
 | Plage | Jours | Bissextiles | Audit (valeurs comparées) |
 |---|---|---|---|
+| 1945 → 1954 | 3 652 | 1948, 1952 | 1 197 856 — 0 écart |
 | 1955 → 1964 | 3 653 | 1956, 1960, 1964 | 1 198 184 — 0 écart |
 | 1965 → 1974 | 3 652 | 1968, 1972 | 1 197 856 — 0 écart |
 | 1975 → 1984 | 3 653 | 1976, 1980, 1984 | 1 198 184 — 0 écart |
+
+> `audit-years-vs-api.ts` réessaie automatiquement en cas de limitation de débit Open-Meteo
+> (HTTP 429) avec un délai exponentiel, et attend 6 s entre deux années. Sur les longues séries,
+> un premier passage peut renvoyer des 429 : c'est transitoire, relancer le script suffit.
 
 ---
 

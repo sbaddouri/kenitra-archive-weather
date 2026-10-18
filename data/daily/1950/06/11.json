@@ -1,0 +1,18 @@
+{
+  "date": "1950-06-11",
+  "weather_code": 1,
+  "temp_max": 24.3,
+  "temp_min": 17.2,
+  "temp_mean": 20.7,
+  "precipitation": 0,
+  "sunshine": 48886.77,
+  "wind_speed_max": 18,
+  "sunrise": "1950-06-11T06:13",
+  "sunset": "1950-06-11T20:37",
+  "sunshine_duration_seconds": 48886.77,
+  "sunshine_duration_minutes": 815,
+  "estimated_daily_sunshine_minutes": 825,
+  "estimated_daily_sunshine": "13 h 45 min",
+  "sunshine_difference_minutes": 10,
+  "sunshine_consistency": "Bon"
+}

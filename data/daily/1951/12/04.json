@@ -1,0 +1,18 @@
+{
+  "date": "1951-12-04",
+  "weather_code": 2,
+  "temp_max": 19.5,
+  "temp_min": 12.4,
+  "temp_mean": 15.5,
+  "precipitation": 0,
+  "sunshine": 34758.74,
+  "wind_speed_max": 14.6,
+  "sunrise": "1951-12-04T08:16",
+  "sunset": "1951-12-04T18:16",
+  "sunshine_duration_seconds": 34758.74,
+  "sunshine_duration_minutes": 579,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 21,
+  "sunshine_consistency": "Moyen"
+}

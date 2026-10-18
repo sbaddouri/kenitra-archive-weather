@@ -1,0 +1,18 @@
+{
+  "date": "1945-12-18",
+  "weather_code": 63,
+  "temp_max": 19,
+  "temp_min": 15.8,
+  "temp_mean": 17.3,
+  "precipitation": 23.8,
+  "sunshine": 15579.13,
+  "wind_speed_max": 34.1,
+  "sunrise": "1945-12-18T08:26",
+  "sunset": "1945-12-18T18:18",
+  "sunshine_duration_seconds": 15579.13,
+  "sunshine_duration_minutes": 260,
+  "estimated_daily_sunshine_minutes": 141,
+  "estimated_daily_sunshine": "2 h 21 min",
+  "sunshine_difference_minutes": 119,
+  "sunshine_consistency": "Faible"
+}

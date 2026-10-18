@@ -1,0 +1,18 @@
+{
+  "date": "1947-01-29",
+  "weather_code": 61,
+  "temp_max": 14.8,
+  "temp_min": 10.5,
+  "temp_mean": 12.3,
+  "precipitation": 12.9,
+  "sunshine": 23479.5,
+  "wind_speed_max": 27.2,
+  "sunrise": "1947-01-29T08:25",
+  "sunset": "1947-01-29T18:52",
+  "sunshine_duration_seconds": 23479.5,
+  "sunshine_duration_minutes": 391,
+  "estimated_daily_sunshine_minutes": 102,
+  "estimated_daily_sunshine": "1 h 42 min",
+  "sunshine_difference_minutes": 289,
+  "sunshine_consistency": "Faible"
+}

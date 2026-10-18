@@ -1,0 +1,18 @@
+{
+  "date": "1951-11-26",
+  "weather_code": 3,
+  "temp_max": 17.9,
+  "temp_min": 12.8,
+  "temp_mean": 15,
+  "precipitation": 0,
+  "sunshine": 33523.17,
+  "wind_speed_max": 9.7,
+  "sunrise": "1951-11-26T08:09",
+  "sunset": "1951-11-26T18:17",
+  "sunshine_duration_seconds": 33523.17,
+  "sunshine_duration_minutes": 559,
+  "estimated_daily_sunshine_minutes": 60,
+  "estimated_daily_sunshine": "1 h 00 min",
+  "sunshine_difference_minutes": 499,
+  "sunshine_consistency": "Faible"
+}

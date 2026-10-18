@@ -1,0 +1,18 @@
+{
+  "date": "1949-12-31",
+  "weather_code": 63,
+  "temp_max": 14.3,
+  "temp_min": 12.8,
+  "temp_mean": 13.7,
+  "precipitation": 32.3,
+  "sunshine": 23126.76,
+  "wind_speed_max": 27.8,
+  "sunrise": "1949-12-31T08:32",
+  "sunset": "1949-12-31T18:23",
+  "sunshine_duration_seconds": 23126.76,
+  "sunshine_duration_minutes": 385,
+  "estimated_daily_sunshine_minutes": 54,
+  "estimated_daily_sunshine": "0 h 54 min",
+  "sunshine_difference_minutes": 331,
+  "sunshine_consistency": "Faible"
+}

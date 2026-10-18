@@ -1,0 +1,18 @@
+{
+  "date": "1947-12-21",
+  "weather_code": 0,
+  "temp_max": 14,
+  "temp_min": 6,
+  "temp_mean": 9.6,
+  "precipitation": 0,
+  "sunshine": 33192.38,
+  "wind_speed_max": 10,
+  "sunrise": "1947-12-21T08:28",
+  "sunset": "1947-12-21T18:19",
+  "sunshine_duration_seconds": 33192.38,
+  "sunshine_duration_minutes": 553,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 47,
+  "sunshine_consistency": "Faible"
+}

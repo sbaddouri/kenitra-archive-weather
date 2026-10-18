@@ -1,0 +1,18 @@
+{
+  "date": "1950-06-22",
+  "weather_code": 1,
+  "temp_max": 24.1,
+  "temp_min": 16.8,
+  "temp_mean": 20.2,
+  "precipitation": 0,
+  "sunshine": 49141.16,
+  "wind_speed_max": 17.9,
+  "sunrise": "1950-06-22T06:14",
+  "sunset": "1950-06-22T20:41",
+  "sunshine_duration_seconds": 49141.16,
+  "sunshine_duration_minutes": 819,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 21,
+  "sunshine_consistency": "Moyen"
+}
