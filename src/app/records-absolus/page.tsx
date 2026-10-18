@@ -995,6 +995,50 @@ async function getMaxDailyPrecipOverall(): Promise<{ value: number; date: string
   return maxDailyPrecip;
 }
 
+/**
+ * Cellule d'un record de chaleur : valeur + jour/mois/année du record.
+ * La valeur affichée provient directement de temp_max stocké par jour.
+ */
+function MaxRecordCell({
+  record,
+  monthShort,
+}: {
+  record: { value: number; date: string; year: string } | null;
+  monthShort: string;
+}) {
+  if (!record) {
+    return (
+      <TableCell className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
+    );
+  }
+  const bgColor = getTemperatureColor(record.value);
+  const day = parseISO(record.date);
+  return (
+    <TableCell
+      className="border px-2 py-2 text-center"
+      style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}
+    >
+      <div className="font-bold leading-tight">{record.value.toFixed(1)}</div>
+      <div className="text-[10px] leading-tight">
+        {format(day, 'dd')} {monthShort} {format(day, 'yyyy')}
+      </div>
+    </TableCell>
+  );
+}
+
+function MaxRecordDateCell({ record }: { record: { value: number; date: string; year: string } | null }) {
+  if (!record) {
+    return (
+      <TableCell className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
+    );
+  }
+  return (
+    <TableCell className="border px-2 py-2 text-center text-[11px] text-muted-foreground">
+      {format(parseISO(record.date), 'dd/MM/yyyy')}
+    </TableCell>
+  );
+}
+
 export default async function RecordsAbsolusPage() {
   // Fetch all records in parallel
   const maxTempPromises = months.map(m => getAbsoluteMaxTempForMonth(m.num));
@@ -1072,6 +1116,18 @@ export default async function RecordsAbsolusPage() {
   const avgPrecipMonthsSafe = avgPrecipMonths ?? [];
   const maxDailyPrecipMonthsSafe = maxDailyPrecipMonths ?? [];
 
+  // Record de chaleur absolu de la période 1940-2026.
+  // Il est déduit des 12 records mensuels : le maximum de maxima est identique
+  // au maximum calculé sur l'ensemble des jours, sans lecture supplémentaire.
+  const overallMaxRecord = maxTempsSafe.reduce<(typeof maxTempsSafe)[number]>(
+    (best, record) => {
+      if (!record) return best;
+      if (best === null || record.value > best.value) return record;
+      return best;
+    },
+    null
+  );
+
   return (
     <div className="container mx-auto px-4 py-8 space-y-8">
       <div className="space-y-2">
@@ -1080,6 +1136,67 @@ export default async function RecordsAbsolusPage() {
           Records absolus de température (1940-2026) basés sur les données journalières Open-Meteo.
         </p>
       </div>
+
+      {/* Records de chaleur mensuels + record absolu 1940-2026 */}
+      <Card>
+        <CardHeader>
+          <CardTitle>Records de chaleur mensuels et record absolu 1940-2026</CardTitle>
+        </CardHeader>
+        <CardContent className="p-0">
+          <div className="overflow-x-auto">
+            <Table className="w-full">
+              <TableHeader>
+                <TableRow className="bg-muted/50 border-b">
+                  <TableHead colSpan={14} className="border px-3 py-2 text-left font-bold">
+                    Tempé. maxi extrême (°C)
+                  </TableHead>
+                </TableRow>
+                <TableRow className="bg-muted/50 border-b">
+                  <TableHead className="border px-3 py-2 text-left font-bold sticky left-0 z-10">Record</TableHead>
+                  {months.map(m => (
+                    <TableHead key={m.num} className="border px-2 py-2 text-center text-sm font-bold">
+                      {m.short}
+                    </TableHead>
+                  ))}
+                  <TableHead className="border px-2 py-2 text-center text-sm font-bold">
+                    Année
+                  </TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell className="border px-3 py-2 text-left font-bold bg-muted/50">
+                    Tempé. maxi extrême (°C)
+                  </TableCell>
+                  {months.map((m, idx) => (
+                    <MaxRecordCell key={m.num} record={maxTempsSafe[idx] ?? null} monthShort={m.short} />
+                  ))}
+                  <MaxRecordCell record={overallMaxRecord} monthShort="—" />
+                </TableRow>
+                <TableRow>
+                  <TableCell className="border px-3 py-2 text-left font-bold bg-muted/50">
+                    Date du record (jour/mois/année)
+                  </TableCell>
+                  {months.map((m, idx) => (
+                    <MaxRecordDateCell key={m.num} record={maxTempsSafe[idx] ?? null} />
+                  ))}
+                  <MaxRecordDateCell record={overallMaxRecord} />
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
+          <p className="px-6 py-3 text-xs text-muted-foreground">
+            Période couverte : 1er janvier 1940 au 17 octobre 2026, d&apos;exclusivement les
+            températures maximales journalières (temp_max) enregistrées dans data/daily. Chaque case
+            indique la valeur du record ainsi que le jour, le mois et l&apos;année où il a été
+            relevé. La colonne « Année » donne le record de chaleur absolu de toute la période. Comme
+            sur le reste de cette page, le mois d&apos;octobre 2026 encore incomplet est écarté de
+            la compétition : son maximum partiel atteint 33,7 °C le 4 octobre 2026, très en deçà du
+            record d&apos;octobre (38,0 °C), donc le résultat est identique avec ou sans cette
+            exclusion.
+          </p>
+        </CardContent>
+      </Card>
 
       {/* Max Temperature Records */}
       <Card>
@@ -1960,7 +2077,7 @@ export default async function RecordsAbsolusPage() {
           <ol className="list-decimal pl-5 space-y-1">
             <li>Données basées sur les relevés journaliers Open-Meteo (ERA5 reanalysis) pour Kénitra (34.3006°N, -6.5996°W).</li>
             <li>Période couverte : janvier 1940 à janvier 2026 (87 années).</li>
-            <li>Tempé. maxi extrême : valeur maximale de temp_max journalière pour chaque mois sur toute la période.</li>
+            <li>Tempé. maxi extrême : valeur maximale de temp_max journalière pour chaque mois sur toute la période, avec le jour, le mois et l&apos;année du record. La dernière colonne « Année » reprend le record absolu de la période 1940-2026, obtenu comme maximum des douze records mensuels (les deux méthodes donnent le même résultat).</li>
             <li>Tempé. mini maximale : valeur maximale de temp_min journalière pour chaque mois sur toute la période (nuit la plus chaude).</li>
             <li>Tempé. maxi moyenne la plus haute : moyenne mensuelle des maximales la plus élevée pour chaque mois sur toute la période (mois le plus chaud en moyenne).</li>
             <li>Tempé. maxi moyenne la plus basse : moyenne mensuelle des maximales la plus basse pour chaque mois sur toute la période (mois le plus froid en moyenne).</li>
