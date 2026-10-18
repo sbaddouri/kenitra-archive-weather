@@ -1,0 +1,18 @@
+{
+  "date": "1994-05-16",
+  "weather_code": 53,
+  "temp_max": 19.7,
+  "temp_min": 15.5,
+  "temp_mean": 17.5,
+  "precipitation": 1.2,
+  "sunshine": 46800,
+  "wind_speed_max": 16.4,
+  "sunrise": "1994-05-16T06:23",
+  "sunset": "1994-05-16T20:21",
+  "sunshine_duration_seconds": 46800,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 210,
+  "sunshine_consistency": "Faible"
+}

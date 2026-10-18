@@ -1,0 +1,18 @@
+{
+  "date": "1985-01-14",
+  "weather_code": 61,
+  "temp_max": 12.4,
+  "temp_min": 9.8,
+  "temp_mean": 10.8,
+  "precipitation": 6.9,
+  "sunshine": 24186.07,
+  "wind_speed_max": 22.3,
+  "sunrise": "1985-01-14T08:32",
+  "sunset": "1985-01-14T18:38",
+  "sunshine_duration_seconds": 24186.07,
+  "sunshine_duration_minutes": 403,
+  "estimated_daily_sunshine_minutes": 138,
+  "estimated_daily_sunshine": "2 h 18 min",
+  "sunshine_difference_minutes": 265,
+  "sunshine_consistency": "Faible"
+}

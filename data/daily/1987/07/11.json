@@ -1,0 +1,18 @@
+{
+  "date": "1987-07-11",
+  "weather_code": 1,
+  "temp_max": 28,
+  "temp_min": 20.3,
+  "temp_mean": 24.1,
+  "precipitation": 0,
+  "sunshine": 47257.54,
+  "wind_speed_max": 14.7,
+  "sunrise": "1987-07-11T06:22",
+  "sunset": "1987-07-11T20:40",
+  "sunshine_duration_seconds": 47257.54,
+  "sunshine_duration_minutes": 788,
+  "estimated_daily_sunshine_minutes": 810,
+  "estimated_daily_sunshine": "13 h 30 min",
+  "sunshine_difference_minutes": 22,
+  "sunshine_consistency": "Moyen"
+}

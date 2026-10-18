@@ -1,0 +1,18 @@
+{
+  "date": "1994-01-17",
+  "weather_code": 51,
+  "temp_max": 13.8,
+  "temp_min": 10.1,
+  "temp_mean": 11.6,
+  "precipitation": 0.8,
+  "sunshine": 32080.62,
+  "wind_speed_max": 21.5,
+  "sunrise": "1994-01-17T08:31",
+  "sunset": "1994-01-17T18:40",
+  "sunshine_duration_seconds": 32080.62,
+  "sunshine_duration_minutes": 535,
+  "estimated_daily_sunshine_minutes": 294,
+  "estimated_daily_sunshine": "4 h 54 min",
+  "sunshine_difference_minutes": 241,
+  "sunshine_consistency": "Faible"
+}

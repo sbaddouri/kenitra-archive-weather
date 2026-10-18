@@ -1,0 +1,18 @@
+{
+  "date": "1990-02-22",
+  "weather_code": 2,
+  "temp_max": 24,
+  "temp_min": 13.4,
+  "temp_mean": 18,
+  "precipitation": 0,
+  "sunshine": 39106.94,
+  "wind_speed_max": 16.1,
+  "sunrise": "1990-02-22T08:04",
+  "sunset": "1990-02-22T19:15",
+  "sunshine_duration_seconds": 39106.94,
+  "sunshine_duration_minutes": 652,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 67,
+  "sunshine_consistency": "Faible"
+}

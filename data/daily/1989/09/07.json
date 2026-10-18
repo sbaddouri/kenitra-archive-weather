@@ -1,0 +1,18 @@
+{
+  "date": "1989-09-07",
+  "weather_code": 55,
+  "temp_max": 24.3,
+  "temp_min": 20.1,
+  "temp_mean": 22.1,
+  "precipitation": 4.5,
+  "sunshine": 42414.75,
+  "wind_speed_max": 23.8,
+  "sunrise": "1989-09-07T07:03",
+  "sunset": "1989-09-07T19:44",
+  "sunshine_duration_seconds": 42414.75,
+  "sunshine_duration_minutes": 707,
+  "estimated_daily_sunshine_minutes": 375,
+  "estimated_daily_sunshine": "6 h 15 min",
+  "sunshine_difference_minutes": 332,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1986-02-07",
+  "weather_code": 53,
+  "temp_max": 13.3,
+  "temp_min": 8.8,
+  "temp_mean": 11.2,
+  "precipitation": 6,
+  "sunshine": 36833.5,
+  "wind_speed_max": 21.2,
+  "sunrise": "1986-02-07T08:19",
+  "sunset": "1986-02-07T19:01",
+  "sunshine_duration_seconds": 36833.5,
+  "sunshine_duration_minutes": 614,
+  "estimated_daily_sunshine_minutes": 213,
+  "estimated_daily_sunshine": "3 h 33 min",
+  "sunshine_difference_minutes": 401,
+  "sunshine_consistency": "Faible"
+}

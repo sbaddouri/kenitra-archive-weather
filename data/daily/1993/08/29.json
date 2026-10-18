@@ -1,0 +1,18 @@
+{
+  "date": "1993-08-29",
+  "weather_code": 0,
+  "temp_max": 27.4,
+  "temp_min": 17.5,
+  "temp_mean": 22.7,
+  "precipitation": 0,
+  "sunshine": 46255.76,
+  "wind_speed_max": 13.8,
+  "sunrise": "1993-08-29T06:57",
+  "sunset": "1993-08-29T19:56",
+  "sunshine_duration_seconds": 46255.76,
+  "sunshine_duration_minutes": 771,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 9,
+  "sunshine_consistency": "Bon"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1986-02-08",
+  "weather_code": 55,
+  "temp_max": 13.8,
+  "temp_min": 12.3,
+  "temp_mean": 13.1,
+  "precipitation": 7.8,
+  "sunshine": 14939.87,
+  "wind_speed_max": 28.6,
+  "sunrise": "1986-02-08T08:18",
+  "sunset": "1986-02-08T19:02",
+  "sunshine_duration_seconds": 14939.87,
+  "sunshine_duration_minutes": 249,
+  "estimated_daily_sunshine_minutes": 129,
+  "estimated_daily_sunshine": "2 h 09 min",
+  "sunshine_difference_minutes": 120,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1991-01-09",
+  "weather_code": 0,
+  "temp_max": 16.8,
+  "temp_min": 9.7,
+  "temp_mean": 12.8,
+  "precipitation": 0,
+  "sunshine": 33709.07,
+  "wind_speed_max": 12.1,
+  "sunrise": "1991-01-09T08:33",
+  "sunset": "1991-01-09T18:33",
+  "sunshine_duration_seconds": 33709.07,
+  "sunshine_duration_minutes": 562,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 38,
+  "sunshine_consistency": "Faible"
+}

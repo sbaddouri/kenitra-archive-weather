@@ -1,0 +1,18 @@
+{
+  "date": "1988-01-13",
+  "weather_code": 61,
+  "temp_max": 15.8,
+  "temp_min": 11.9,
+  "temp_mean": 13.3,
+  "precipitation": 17.2,
+  "sunshine": 6047.28,
+  "wind_speed_max": 24.7,
+  "sunrise": "1988-01-13T08:32",
+  "sunset": "1988-01-13T18:36",
+  "sunshine_duration_seconds": 6047.28,
+  "sunshine_duration_minutes": 101,
+  "estimated_daily_sunshine_minutes": 84,
+  "estimated_daily_sunshine": "1 h 24 min",
+  "sunshine_difference_minutes": 17,
+  "sunshine_consistency": "Moyen"
+}

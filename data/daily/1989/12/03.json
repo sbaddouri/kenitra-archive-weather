@@ -1,0 +1,18 @@
+{
+  "date": "1989-12-03",
+  "weather_code": 61,
+  "temp_max": 18,
+  "temp_min": 14.8,
+  "temp_mean": 16.4,
+  "precipitation": 17.8,
+  "sunshine": 781.79,
+  "wind_speed_max": 12.3,
+  "sunrise": "1989-12-03T08:15",
+  "sunset": "1989-12-03T18:16",
+  "sunshine_duration_seconds": 781.79,
+  "sunshine_duration_minutes": 13,
+  "estimated_daily_sunshine_minutes": 63,
+  "estimated_daily_sunshine": "1 h 03 min",
+  "sunshine_difference_minutes": 50,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1987-11-28",
+  "weather_code": 1,
+  "temp_max": 15.7,
+  "temp_min": 9.9,
+  "temp_mean": 12.4,
+  "precipitation": 0,
+  "sunshine": 35070.08,
+  "wind_speed_max": 13.3,
+  "sunrise": "1987-11-28T08:10",
+  "sunset": "1987-11-28T18:16",
+  "sunshine_duration_seconds": 35070.08,
+  "sunshine_duration_minutes": 585,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

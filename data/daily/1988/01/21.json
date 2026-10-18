@@ -1,0 +1,18 @@
+{
+  "date": "1988-01-21",
+  "weather_code": 51,
+  "temp_max": 15.4,
+  "temp_min": 10.2,
+  "temp_mean": 12.8,
+  "precipitation": 0.1,
+  "sunshine": 31289.3,
+  "wind_speed_max": 10.1,
+  "sunrise": "1988-01-21T08:30",
+  "sunset": "1988-01-21T18:44",
+  "sunshine_duration_seconds": 31289.3,
+  "sunshine_duration_minutes": 521,
+  "estimated_daily_sunshine_minutes": 252,
+  "estimated_daily_sunshine": "4 h 12 min",
+  "sunshine_difference_minutes": 269,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1988-11-25",
+  "weather_code": 63,
+  "temp_max": 19.2,
+  "temp_min": 13.8,
+  "temp_mean": 15.5,
+  "precipitation": 11.9,
+  "sunshine": 12005.05,
+  "wind_speed_max": 29.3,
+  "sunrise": "1988-11-25T08:09",
+  "sunset": "1988-11-25T18:17",
+  "sunshine_duration_seconds": 12005.05,
+  "sunshine_duration_minutes": 200,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 128,
+  "sunshine_consistency": "Faible"
+}

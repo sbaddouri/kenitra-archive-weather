@@ -1,0 +1,18 @@
+{
+  "date": "1993-01-03",
+  "weather_code": 53,
+  "temp_max": 14.9,
+  "temp_min": 8.2,
+  "temp_mean": 12,
+  "precipitation": 2.1,
+  "sunshine": 32400,
+  "wind_speed_max": 11.7,
+  "sunrise": "1993-01-03T08:32",
+  "sunset": "1993-01-03T18:28",
+  "sunshine_duration_seconds": 32400,
+  "sunshine_duration_minutes": 540,
+  "estimated_daily_sunshine_minutes": 312,
+  "estimated_daily_sunshine": "5 h 12 min",
+  "sunshine_difference_minutes": 228,
+  "sunshine_consistency": "Faible"
+}

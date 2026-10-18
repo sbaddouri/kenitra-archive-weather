@@ -1,0 +1,18 @@
+{
+  "date": "1986-03-02",
+  "weather_code": 63,
+  "temp_max": 17.4,
+  "temp_min": 12.2,
+  "temp_mean": 14.5,
+  "precipitation": 4,
+  "sunshine": 39600,
+  "wind_speed_max": 13.7,
+  "sunrise": "1986-03-02T07:54",
+  "sunset": "1986-03-02T19:22",
+  "sunshine_duration_seconds": 39600,
+  "sunshine_duration_minutes": 660,
+  "estimated_daily_sunshine_minutes": 462,
+  "estimated_daily_sunshine": "7 h 42 min",
+  "sunshine_difference_minutes": 198,
+  "sunshine_consistency": "Faible"
+}

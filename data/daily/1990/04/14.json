@@ -1,0 +1,18 @@
+{
+  "date": "1990-04-14",
+  "weather_code": 53,
+  "temp_max": 17.1,
+  "temp_min": 13.4,
+  "temp_mean": 15.2,
+  "precipitation": 3.6,
+  "sunshine": 41088.11,
+  "wind_speed_max": 17.1,
+  "sunrise": "1990-04-14T06:56",
+  "sunset": "1990-04-14T19:56",
+  "sunshine_duration_seconds": 41088.11,
+  "sunshine_duration_minutes": 685,
+  "estimated_daily_sunshine_minutes": 483,
+  "estimated_daily_sunshine": "8 h 03 min",
+  "sunshine_difference_minutes": 202,
+  "sunshine_consistency": "Faible"
+}

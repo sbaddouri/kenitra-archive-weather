@@ -1,0 +1,18 @@
+{
+  "date": "1987-06-22",
+  "weather_code": 2,
+  "temp_max": 26,
+  "temp_min": 19.6,
+  "temp_mean": 22.5,
+  "precipitation": 0,
+  "sunshine": 47581.6,
+  "wind_speed_max": 18.2,
+  "sunrise": "1987-06-22T06:14",
+  "sunset": "1987-06-22T20:41",
+  "sunshine_duration_seconds": 47581.6,
+  "sunshine_duration_minutes": 793,
+  "estimated_daily_sunshine_minutes": 705,
+  "estimated_daily_sunshine": "11 h 45 min",
+  "sunshine_difference_minutes": 88,
+  "sunshine_consistency": "Faible"
+}

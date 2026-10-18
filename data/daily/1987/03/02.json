@@ -1,0 +1,18 @@
+{
+  "date": "1987-03-02",
+  "weather_code": 2,
+  "temp_max": 20.8,
+  "temp_min": 11.5,
+  "temp_mean": 16.8,
+  "precipitation": 0,
+  "sunshine": 39603.67,
+  "wind_speed_max": 9.5,
+  "sunrise": "1987-03-02T07:54",
+  "sunset": "1987-03-02T19:22",
+  "sunshine_duration_seconds": 39603.67,
+  "sunshine_duration_minutes": 660,
+  "estimated_daily_sunshine_minutes": 645,
+  "estimated_daily_sunshine": "10 h 45 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1989-04-16",
+  "weather_code": 51,
+  "temp_max": 15.9,
+  "temp_min": 12.3,
+  "temp_mean": 14.3,
+  "precipitation": 0.4,
+  "sunshine": 34940.73,
+  "wind_speed_max": 19.4,
+  "sunrise": "1989-04-16T06:53",
+  "sunset": "1989-04-16T19:58",
+  "sunshine_duration_seconds": 34940.73,
+  "sunshine_duration_minutes": 582,
+  "estimated_daily_sunshine_minutes": 354,
+  "estimated_daily_sunshine": "5 h 54 min",
+  "sunshine_difference_minutes": 228,
+  "sunshine_consistency": "Faible"
+}

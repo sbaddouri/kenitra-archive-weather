@@ -1,0 +1,18 @@
+{
+  "date": "1990-01-18",
+  "weather_code": 55,
+  "temp_max": 14.1,
+  "temp_min": 10.6,
+  "temp_mean": 12,
+  "precipitation": 3.3,
+  "sunshine": 33145.38,
+  "wind_speed_max": 12.3,
+  "sunrise": "1990-01-18T08:31",
+  "sunset": "1990-01-18T18:41",
+  "sunshine_duration_seconds": 33145.38,
+  "sunshine_duration_minutes": 552,
+  "estimated_daily_sunshine_minutes": 189,
+  "estimated_daily_sunshine": "3 h 09 min",
+  "sunshine_difference_minutes": 363,
+  "sunshine_consistency": "Faible"
+}

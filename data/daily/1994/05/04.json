@@ -1,0 +1,18 @@
+{
+  "date": "1994-05-04",
+  "weather_code": 63,
+  "temp_max": 20.3,
+  "temp_min": 15.4,
+  "temp_mean": 17.3,
+  "precipitation": 23.3,
+  "sunshine": 35526.22,
+  "wind_speed_max": 14.3,
+  "sunrise": "1994-05-04T06:33",
+  "sunset": "1994-05-04T20:12",
+  "sunshine_duration_seconds": 35526.22,
+  "sunshine_duration_minutes": 592,
+  "estimated_daily_sunshine_minutes": 162,
+  "estimated_daily_sunshine": "2 h 42 min",
+  "sunshine_difference_minutes": 430,
+  "sunshine_consistency": "Faible"
+}

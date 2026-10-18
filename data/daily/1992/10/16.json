@@ -1,0 +1,18 @@
+{
+  "date": "1992-10-16",
+  "weather_code": 63,
+  "temp_max": 21.5,
+  "temp_min": 18.2,
+  "temp_mean": 19.6,
+  "precipitation": 21.4,
+  "sunshine": 30716.99,
+  "wind_speed_max": 31.8,
+  "sunrise": "1992-10-16T07:32",
+  "sunset": "1992-10-16T18:50",
+  "sunshine_duration_seconds": 30716.99,
+  "sunshine_duration_minutes": 512,
+  "estimated_daily_sunshine_minutes": 102,
+  "estimated_daily_sunshine": "1 h 42 min",
+  "sunshine_difference_minutes": 410,
+  "sunshine_consistency": "Faible"
+}

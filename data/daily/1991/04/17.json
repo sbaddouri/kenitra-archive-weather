@@ -1,0 +1,18 @@
+{
+  "date": "1991-04-17",
+  "weather_code": 53,
+  "temp_max": 18,
+  "temp_min": 13.1,
+  "temp_mean": 15.3,
+  "precipitation": 6.9,
+  "sunshine": 42301.02,
+  "wind_speed_max": 21.9,
+  "sunrise": "1991-04-17T06:53",
+  "sunset": "1991-04-17T19:59",
+  "sunshine_duration_seconds": 42301.02,
+  "sunshine_duration_minutes": 705,
+  "estimated_daily_sunshine_minutes": 330,
+  "estimated_daily_sunshine": "5 h 30 min",
+  "sunshine_difference_minutes": 375,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1986-12-01",
+  "weather_code": 2,
+  "temp_max": 19.5,
+  "temp_min": 10.9,
+  "temp_mean": 14.8,
+  "precipitation": 0,
+  "sunshine": 34895.71,
+  "wind_speed_max": 9.4,
+  "sunrise": "1986-12-01T08:13",
+  "sunset": "1986-12-01T18:16",
+  "sunshine_duration_seconds": 34895.71,
+  "sunshine_duration_minutes": 582,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 3,
+  "sunshine_consistency": "Excellent"
+}

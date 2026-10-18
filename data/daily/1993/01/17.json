@@ -1,0 +1,18 @@
+{
+  "date": "1993-01-17",
+  "weather_code": 1,
+  "temp_max": 16.2,
+  "temp_min": 8.4,
+  "temp_mean": 12.2,
+  "precipitation": 0,
+  "sunshine": 34634.68,
+  "wind_speed_max": 8.9,
+  "sunrise": "1993-01-17T08:31",
+  "sunset": "1993-01-17T18:41",
+  "sunshine_duration_seconds": 34634.68,
+  "sunshine_duration_minutes": 577,
+  "estimated_daily_sunshine_minutes": 525,
+  "estimated_daily_sunshine": "8 h 45 min",
+  "sunshine_difference_minutes": 52,
+  "sunshine_consistency": "Faible"
+}

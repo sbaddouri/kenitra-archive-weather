@@ -1,20 +1,19 @@
 {
-  "success": true,
-  "date": "2026-10-17T22:19:46.849Z",
-  "message": "Données mises à jour avec succès (2000-02-29 à 2000-02-29), 1 jours mis à jour",
-  "initialStartDate": "2000-02-29",
-  "initialEndDate": "2000-02-29",
-  "finalStartDate": "2000-02-29",
-  "finalEndDate": "2000-02-29",
+  "success": false,
+  "date": "2026-10-18T14:40:15.378Z",
+  "message": "Échec de la récupération des données météorologiques depuis Open-Meteo",
+  "initialStartDate": "1994-09-01",
+  "initialEndDate": "1994-09-30",
+  "finalStartDate": "1994-09-01",
+  "finalEndDate": "1994-09-30",
   "attempts": 0,
-  "daysUpdated": [
-    "2000-02-29"
-  ],
+  "daysUpdated": [],
   "missingDays": [],
   "attemptDetails": [
     {
-      "date": "2000-02-29",
-      "success": true
+      "date": "1994-09-30",
+      "success": false,
+      "error": "read ECONNRESET"
     }
   ]
 }

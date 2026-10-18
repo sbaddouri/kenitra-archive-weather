@@ -1,0 +1,18 @@
+{
+  "date": "1993-04-27",
+  "weather_code": 55,
+  "temp_max": 16.3,
+  "temp_min": 11.9,
+  "temp_mean": 14,
+  "precipitation": 5.3,
+  "sunshine": 41935.38,
+  "wind_speed_max": 16.7,
+  "sunrise": "1993-04-27T06:40",
+  "sunset": "1993-04-27T20:07",
+  "sunshine_duration_seconds": 41935.38,
+  "sunshine_duration_minutes": 699,
+  "estimated_daily_sunshine_minutes": 222,
+  "estimated_daily_sunshine": "3 h 42 min",
+  "sunshine_difference_minutes": 477,
+  "sunshine_consistency": "Faible"
+}

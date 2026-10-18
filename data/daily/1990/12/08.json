@@ -1,0 +1,18 @@
+{
+  "date": "1990-12-08",
+  "weather_code": 63,
+  "temp_max": 17.3,
+  "temp_min": 14.9,
+  "temp_mean": 16.2,
+  "precipitation": 29.8,
+  "sunshine": 4040.91,
+  "wind_speed_max": 28.5,
+  "sunrise": "1990-12-08T08:19",
+  "sunset": "1990-12-08T18:16",
+  "sunshine_duration_seconds": 4040.91,
+  "sunshine_duration_minutes": 67,
+  "estimated_daily_sunshine_minutes": 96,
+  "estimated_daily_sunshine": "1 h 36 min",
+  "sunshine_difference_minutes": 29,
+  "sunshine_consistency": "Moyen"
+}

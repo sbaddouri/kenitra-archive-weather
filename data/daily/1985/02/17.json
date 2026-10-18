@@ -1,0 +1,18 @@
+{
+  "date": "1985-02-17",
+  "weather_code": 51,
+  "temp_max": 17.3,
+  "temp_min": 13.8,
+  "temp_mean": 15.5,
+  "precipitation": 1,
+  "sunshine": 36349.18,
+  "wind_speed_max": 22.8,
+  "sunrise": "1985-02-17T08:09",
+  "sunset": "1985-02-17T19:11",
+  "sunshine_duration_seconds": 36349.18,
+  "sunshine_duration_minutes": 606,
+  "estimated_daily_sunshine_minutes": 258,
+  "estimated_daily_sunshine": "4 h 18 min",
+  "sunshine_difference_minutes": 348,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1987-05-18",
+  "weather_code": 51,
+  "temp_max": 19.3,
+  "temp_min": 13.8,
+  "temp_mean": 16.8,
+  "precipitation": 0.2,
+  "sunshine": 47006.16,
+  "wind_speed_max": 16.2,
+  "sunrise": "1987-05-18T06:22",
+  "sunset": "1987-05-18T20:23",
+  "sunshine_duration_seconds": 47006.16,
+  "sunshine_duration_minutes": 783,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 198,
+  "sunshine_consistency": "Faible"
+}

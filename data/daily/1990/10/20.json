@@ -1,0 +1,18 @@
+{
+  "date": "1990-10-20",
+  "weather_code": 2,
+  "temp_max": 22.9,
+  "temp_min": 16,
+  "temp_mean": 19.6,
+  "precipitation": 0,
+  "sunshine": 37897.09,
+  "wind_speed_max": 12.1,
+  "sunrise": "1990-10-20T07:35",
+  "sunset": "1990-10-20T18:46",
+  "sunshine_duration_seconds": 37897.09,
+  "sunshine_duration_minutes": 632,
+  "estimated_daily_sunshine_minutes": 480,
+  "estimated_daily_sunshine": "8 h 00 min",
+  "sunshine_difference_minutes": 152,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1992-09-27",
+  "weather_code": 55,
+  "temp_max": 22,
+  "temp_min": 16.2,
+  "temp_mean": 19.2,
+  "precipitation": 1.4,
+  "sunshine": 37203.99,
+  "wind_speed_max": 11.6,
+  "sunrise": "1992-09-27T07:17",
+  "sunset": "1992-09-27T19:15",
+  "sunshine_duration_seconds": 37203.99,
+  "sunshine_duration_minutes": 620,
+  "estimated_daily_sunshine_minutes": 450,
+  "estimated_daily_sunshine": "7 h 30 min",
+  "sunshine_difference_minutes": 170,
+  "sunshine_consistency": "Faible"
+}

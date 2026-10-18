@@ -1,0 +1,18 @@
+{
+  "date": "1994-07-15",
+  "weather_code": 2,
+  "temp_max": 29.2,
+  "temp_min": 21.6,
+  "temp_mean": 25,
+  "precipitation": 0,
+  "sunshine": 46992.98,
+  "wind_speed_max": 26.6,
+  "sunrise": "1994-07-15T06:24",
+  "sunset": "1994-07-15T20:38",
+  "sunshine_duration_seconds": 46992.98,
+  "sunshine_duration_minutes": 783,
+  "estimated_daily_sunshine_minutes": 795,
+  "estimated_daily_sunshine": "13 h 15 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

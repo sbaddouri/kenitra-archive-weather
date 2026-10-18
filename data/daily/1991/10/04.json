@@ -1,0 +1,18 @@
+{
+  "date": "1991-10-04",
+  "weather_code": 0,
+  "temp_max": 25.7,
+  "temp_min": 18.8,
+  "temp_mean": 21.9,
+  "precipitation": 0,
+  "sunshine": 40557.57,
+  "wind_speed_max": 15.4,
+  "sunrise": "1991-10-04T07:22",
+  "sunset": "1991-10-04T19:07",
+  "sunshine_duration_seconds": 40557.57,
+  "sunshine_duration_minutes": 676,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 44,
+  "sunshine_consistency": "Faible"
+}

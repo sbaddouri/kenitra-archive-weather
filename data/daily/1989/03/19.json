@@ -1,0 +1,18 @@
+{
+  "date": "1989-03-19",
+  "weather_code": 63,
+  "temp_max": 15,
+  "temp_min": 10.8,
+  "temp_mean": 13,
+  "precipitation": 7.5,
+  "sunshine": 40556.44,
+  "wind_speed_max": 22.4,
+  "sunrise": "1989-03-19T07:31",
+  "sunset": "1989-03-19T19:37",
+  "sunshine_duration_seconds": 40556.44,
+  "sunshine_duration_minutes": 676,
+  "estimated_daily_sunshine_minutes": 309,
+  "estimated_daily_sunshine": "5 h 09 min",
+  "sunshine_difference_minutes": 367,
+  "sunshine_consistency": "Faible"
+}

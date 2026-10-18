@@ -1,0 +1,18 @@
+{
+  "date": "1992-07-11",
+  "weather_code": 3,
+  "temp_max": 25.1,
+  "temp_min": 18.9,
+  "temp_mean": 21.7,
+  "precipitation": 0,
+  "sunshine": 45338.84,
+  "wind_speed_max": 14.7,
+  "sunrise": "1992-07-11T06:22",
+  "sunset": "1992-07-11T20:40",
+  "sunshine_duration_seconds": 45338.84,
+  "sunshine_duration_minutes": 756,
+  "estimated_daily_sunshine_minutes": 687,
+  "estimated_daily_sunshine": "11 h 27 min",
+  "sunshine_difference_minutes": 69,
+  "sunshine_consistency": "Faible"
+}

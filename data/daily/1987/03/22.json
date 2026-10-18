@@ -1,0 +1,18 @@
+{
+  "date": "1987-03-22",
+  "weather_code": 51,
+  "temp_max": 16.8,
+  "temp_min": 12.1,
+  "temp_mean": 14.2,
+  "precipitation": 0.2,
+  "sunshine": 41326.8,
+  "wind_speed_max": 14.5,
+  "sunrise": "1987-03-22T07:28",
+  "sunset": "1987-03-22T19:38",
+  "sunshine_duration_seconds": 41326.8,
+  "sunshine_duration_minutes": 689,
+  "estimated_daily_sunshine_minutes": 465,
+  "estimated_daily_sunshine": "7 h 45 min",
+  "sunshine_difference_minutes": 224,
+  "sunshine_consistency": "Faible"
+}

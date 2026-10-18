@@ -1,0 +1,18 @@
+{
+  "date": "1985-08-03",
+  "weather_code": 2,
+  "temp_max": 28.6,
+  "temp_min": 22,
+  "temp_mean": 24.9,
+  "precipitation": 0,
+  "sunshine": 43217.87,
+  "wind_speed_max": 13.4,
+  "sunrise": "1985-08-03T06:38",
+  "sunset": "1985-08-03T20:26",
+  "sunshine_duration_seconds": 43217.87,
+  "sunshine_duration_minutes": 720,
+  "estimated_daily_sunshine_minutes": 480,
+  "estimated_daily_sunshine": "8 h 00 min",
+  "sunshine_difference_minutes": 240,
+  "sunshine_consistency": "Faible"
+}

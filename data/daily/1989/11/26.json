@@ -1,0 +1,18 @@
+{
+  "date": "1989-11-26",
+  "weather_code": 63,
+  "temp_max": 20.5,
+  "temp_min": 16.5,
+  "temp_mean": 17.7,
+  "precipitation": 11.4,
+  "sunshine": 25660.03,
+  "wind_speed_max": 33.9,
+  "sunrise": "1989-11-26T08:09",
+  "sunset": "1989-11-26T18:17",
+  "sunshine_duration_seconds": 25660.03,
+  "sunshine_duration_minutes": 428,
+  "estimated_daily_sunshine_minutes": 75,
+  "estimated_daily_sunshine": "1 h 15 min",
+  "sunshine_difference_minutes": 353,
+  "sunshine_consistency": "Faible"
+}

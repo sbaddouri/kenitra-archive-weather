@@ -1,0 +1,18 @@
+{
+  "date": "1990-11-15",
+  "weather_code": 3,
+  "temp_max": 22.6,
+  "temp_min": 14.7,
+  "temp_mean": 18,
+  "precipitation": 0,
+  "sunshine": 29314.44,
+  "wind_speed_max": 14.6,
+  "sunrise": "1990-11-15T07:59",
+  "sunset": "1990-11-15T18:22",
+  "sunshine_duration_seconds": 29314.44,
+  "sunshine_duration_minutes": 489,
+  "estimated_daily_sunshine_minutes": 483,
+  "estimated_daily_sunshine": "8 h 03 min",
+  "sunshine_difference_minutes": 6,
+  "sunshine_consistency": "Bon"
+}

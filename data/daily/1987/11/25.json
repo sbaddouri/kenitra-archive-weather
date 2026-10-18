@@ -1,0 +1,18 @@
+{
+  "date": "1987-11-25",
+  "weather_code": 63,
+  "temp_max": 13.9,
+  "temp_min": 11.5,
+  "temp_mean": 12.8,
+  "precipitation": 33.3,
+  "sunshine": 27335.07,
+  "wind_speed_max": 26.1,
+  "sunrise": "1987-11-25T08:08",
+  "sunset": "1987-11-25T18:17",
+  "sunshine_duration_seconds": 27335.07,
+  "sunshine_duration_minutes": 456,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 384,
+  "sunshine_consistency": "Faible"
+}

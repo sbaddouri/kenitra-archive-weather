@@ -1,0 +1,18 @@
+{
+  "date": "1985-12-21",
+  "weather_code": 2,
+  "temp_max": 17.3,
+  "temp_min": 10.1,
+  "temp_mean": 13.6,
+  "precipitation": 0,
+  "sunshine": 32881.1,
+  "wind_speed_max": 7.2,
+  "sunrise": "1985-12-21T08:28",
+  "sunset": "1985-12-21T18:20",
+  "sunshine_duration_seconds": 32881.1,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 555,
+  "estimated_daily_sunshine": "9 h 15 min",
+  "sunshine_difference_minutes": 7,
+  "sunshine_consistency": "Bon"
+}

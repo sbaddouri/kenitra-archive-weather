@@ -1,0 +1,18 @@
+{
+  "date": "1986-04-15",
+  "weather_code": 53,
+  "temp_max": 16.7,
+  "temp_min": 11.8,
+  "temp_mean": 14.6,
+  "precipitation": 0.1,
+  "sunshine": 46413.77,
+  "wind_speed_max": 13.7,
+  "sunrise": "1986-04-15T06:55",
+  "sunset": "1986-04-15T19:57",
+  "sunshine_duration_seconds": 46413.77,
+  "sunshine_duration_minutes": 774,
+  "estimated_daily_sunshine_minutes": 546,
+  "estimated_daily_sunshine": "9 h 06 min",
+  "sunshine_difference_minutes": 228,
+  "sunshine_consistency": "Faible"
+}

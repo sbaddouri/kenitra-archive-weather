@@ -1,0 +1,18 @@
+{
+  "date": "1992-09-26",
+  "weather_code": 61,
+  "temp_max": 24.1,
+  "temp_min": 17.3,
+  "temp_mean": 20.5,
+  "precipitation": 6.9,
+  "sunshine": 35289.8,
+  "wind_speed_max": 28.8,
+  "sunrise": "1992-09-26T07:17",
+  "sunset": "1992-09-26T19:17",
+  "sunshine_duration_seconds": 35289.8,
+  "sunshine_duration_minutes": 588,
+  "estimated_daily_sunshine_minutes": 249,
+  "estimated_daily_sunshine": "4 h 09 min",
+  "sunshine_difference_minutes": 339,
+  "sunshine_consistency": "Faible"
+}

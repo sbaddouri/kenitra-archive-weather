@@ -1,0 +1,18 @@
+{
+  "date": "1992-12-07",
+  "weather_code": 53,
+  "temp_max": 19.2,
+  "temp_min": 12.9,
+  "temp_mean": 16,
+  "precipitation": 1.5,
+  "sunshine": 32404.82,
+  "wind_speed_max": 23,
+  "sunrise": "1992-12-07T08:19",
+  "sunset": "1992-12-07T18:16",
+  "sunshine_duration_seconds": 32404.82,
+  "sunshine_duration_minutes": 540,
+  "estimated_daily_sunshine_minutes": 264,
+  "estimated_daily_sunshine": "4 h 24 min",
+  "sunshine_difference_minutes": 276,
+  "sunshine_consistency": "Faible"
+}

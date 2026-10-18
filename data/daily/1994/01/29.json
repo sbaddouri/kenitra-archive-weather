@@ -1,0 +1,18 @@
+{
+  "date": "1994-01-29",
+  "weather_code": 1,
+  "temp_max": 17.7,
+  "temp_min": 7.9,
+  "temp_mean": 12.3,
+  "precipitation": 0,
+  "sunshine": 35942.31,
+  "wind_speed_max": 7.9,
+  "sunrise": "1994-01-29T08:26",
+  "sunset": "1994-01-29T18:52",
+  "sunshine_duration_seconds": 35942.31,
+  "sunshine_duration_minutes": 599,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 29,
+  "sunshine_consistency": "Moyen"
+}

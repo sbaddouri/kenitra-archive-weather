@@ -1,0 +1,18 @@
+{
+  "date": "1990-12-16",
+  "weather_code": 61,
+  "temp_max": 16.7,
+  "temp_min": 9.4,
+  "temp_mean": 12.7,
+  "precipitation": 3.8,
+  "sunshine": 29510.62,
+  "wind_speed_max": 24.5,
+  "sunrise": "1990-12-16T08:25",
+  "sunset": "1990-12-16T18:17",
+  "sunshine_duration_seconds": 29510.62,
+  "sunshine_duration_minutes": 492,
+  "estimated_daily_sunshine_minutes": 402,
+  "estimated_daily_sunshine": "6 h 42 min",
+  "sunshine_difference_minutes": 90,
+  "sunshine_consistency": "Faible"
+}

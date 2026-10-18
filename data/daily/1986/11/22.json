@@ -1,0 +1,18 @@
+{
+  "date": "1986-11-22",
+  "weather_code": 51,
+  "temp_max": 18.2,
+  "temp_min": 14.4,
+  "temp_mean": 16.3,
+  "precipitation": 0.1,
+  "sunshine": 23842.44,
+  "wind_speed_max": 9.3,
+  "sunrise": "1986-11-22T08:05",
+  "sunset": "1986-11-22T18:18",
+  "sunshine_duration_seconds": 23842.44,
+  "sunshine_duration_minutes": 397,
+  "estimated_daily_sunshine_minutes": 180,
+  "estimated_daily_sunshine": "3 h 00 min",
+  "sunshine_difference_minutes": 217,
+  "sunshine_consistency": "Faible"
+}

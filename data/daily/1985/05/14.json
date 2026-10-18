@@ -1,0 +1,18 @@
+{
+  "date": "1985-05-14",
+  "weather_code": 51,
+  "temp_max": 18.2,
+  "temp_min": 13.9,
+  "temp_mean": 15.8,
+  "precipitation": 0.7,
+  "sunshine": 45920.6,
+  "wind_speed_max": 16.8,
+  "sunrise": "1985-05-14T06:24",
+  "sunset": "1985-05-14T20:20",
+  "sunshine_duration_seconds": 45920.6,
+  "sunshine_duration_minutes": 765,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 165,
+  "sunshine_consistency": "Faible"
+}

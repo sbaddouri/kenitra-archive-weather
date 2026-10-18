@@ -1,0 +1,18 @@
+{
+  "date": "1989-03-20",
+  "weather_code": 51,
+  "temp_max": 15.9,
+  "temp_min": 12.4,
+  "temp_mean": 14,
+  "precipitation": 0.2,
+  "sunshine": 40315.12,
+  "wind_speed_max": 18.9,
+  "sunrise": "1989-03-20T07:30",
+  "sunset": "1989-03-20T19:37",
+  "sunshine_duration_seconds": 40315.12,
+  "sunshine_duration_minutes": 672,
+  "estimated_daily_sunshine_minutes": 405,
+  "estimated_daily_sunshine": "6 h 45 min",
+  "sunshine_difference_minutes": 267,
+  "sunshine_consistency": "Faible"
+}

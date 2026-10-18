@@ -1,0 +1,18 @@
+{
+  "date": "1990-03-31",
+  "weather_code": 63,
+  "temp_max": 22.6,
+  "temp_min": 14.6,
+  "temp_mean": 17.5,
+  "precipitation": 12.3,
+  "sunshine": 31596.28,
+  "wind_speed_max": 17.6,
+  "sunrise": "1990-03-31T07:15",
+  "sunset": "1990-03-31T19:46",
+  "sunshine_duration_seconds": 31596.28,
+  "sunshine_duration_minutes": 527,
+  "estimated_daily_sunshine_minutes": 258,
+  "estimated_daily_sunshine": "4 h 18 min",
+  "sunshine_difference_minutes": 269,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1992-05-08",
+  "weather_code": 61,
+  "temp_max": 19.8,
+  "temp_min": 15.8,
+  "temp_mean": 17.6,
+  "precipitation": 11.4,
+  "sunshine": 39930.26,
+  "wind_speed_max": 15.8,
+  "sunrise": "1992-05-08T06:29",
+  "sunset": "1992-05-08T20:16",
+  "sunshine_duration_seconds": 39930.26,
+  "sunshine_duration_minutes": 666,
+  "estimated_daily_sunshine_minutes": 279,
+  "estimated_daily_sunshine": "4 h 39 min",
+  "sunshine_difference_minutes": 387,
+  "sunshine_consistency": "Faible"
+}

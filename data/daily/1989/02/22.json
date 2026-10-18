@@ -1,0 +1,18 @@
+{
+  "date": "1989-02-22",
+  "weather_code": 51,
+  "temp_max": 15.9,
+  "temp_min": 9.8,
+  "temp_mean": 13.1,
+  "precipitation": 0.5,
+  "sunshine": 34623.22,
+  "wind_speed_max": 12.6,
+  "sunrise": "1989-02-22T08:03",
+  "sunset": "1989-02-22T19:16",
+  "sunshine_duration_seconds": 34623.22,
+  "sunshine_duration_minutes": 577,
+  "estimated_daily_sunshine_minutes": 258,
+  "estimated_daily_sunshine": "4 h 18 min",
+  "sunshine_difference_minutes": 319,
+  "sunshine_consistency": "Faible"
+}

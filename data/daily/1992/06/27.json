@@ -1,0 +1,18 @@
+{
+  "date": "1992-06-27",
+  "weather_code": 2,
+  "temp_max": 24.2,
+  "temp_min": 17.7,
+  "temp_mean": 20.9,
+  "precipitation": 0,
+  "sunshine": 47126.86,
+  "wind_speed_max": 13.8,
+  "sunrise": "1992-06-27T06:16",
+  "sunset": "1992-06-27T20:42",
+  "sunshine_duration_seconds": 47126.86,
+  "sunshine_duration_minutes": 785,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 5,
+  "sunshine_consistency": "Excellent"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1989-11-30",
+  "weather_code": 55,
+  "temp_max": 18.6,
+  "temp_min": 12.7,
+  "temp_mean": 15.5,
+  "precipitation": 1.1,
+  "sunshine": 34926.3,
+  "wind_speed_max": 10.1,
+  "sunrise": "1989-11-30T08:13",
+  "sunset": "1989-11-30T18:16",
+  "sunshine_duration_seconds": 34926.3,
+  "sunshine_duration_minutes": 582,
+  "estimated_daily_sunshine_minutes": 465,
+  "estimated_daily_sunshine": "7 h 45 min",
+  "sunshine_difference_minutes": 117,
+  "sunshine_consistency": "Faible"
+}

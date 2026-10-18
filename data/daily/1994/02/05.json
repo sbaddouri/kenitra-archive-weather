@@ -1,0 +1,18 @@
+{
+  "date": "1994-02-05",
+  "weather_code": 55,
+  "temp_max": 11.7,
+  "temp_min": 9.3,
+  "temp_mean": 10.5,
+  "precipitation": 6,
+  "sunshine": 22685.09,
+  "wind_speed_max": 27.6,
+  "sunrise": "1994-02-05T08:21",
+  "sunset": "1994-02-05T18:59",
+  "sunshine_duration_seconds": 22685.09,
+  "sunshine_duration_minutes": 378,
+  "estimated_daily_sunshine_minutes": 114,
+  "estimated_daily_sunshine": "1 h 54 min",
+  "sunshine_difference_minutes": 264,
+  "sunshine_consistency": "Faible"
+}

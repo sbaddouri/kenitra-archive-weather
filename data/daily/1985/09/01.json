@@ -1,0 +1,18 @@
+{
+  "date": "1985-09-01",
+  "weather_code": 0,
+  "temp_max": 28.5,
+  "temp_min": 19.9,
+  "temp_mean": 23.4,
+  "precipitation": 0,
+  "sunshine": 45899.42,
+  "wind_speed_max": 13,
+  "sunrise": "1985-09-01T06:59",
+  "sunset": "1985-09-01T19:52",
+  "sunshine_duration_seconds": 45899.42,
+  "sunshine_duration_minutes": 765,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

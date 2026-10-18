@@ -1,0 +1,18 @@
+{
+  "date": "1991-03-07",
+  "weather_code": 63,
+  "temp_max": 15.1,
+  "temp_min": 11.3,
+  "temp_mean": 13.3,
+  "precipitation": 33.6,
+  "sunshine": 32849.26,
+  "wind_speed_max": 40.7,
+  "sunrise": "1991-03-07T07:48",
+  "sunset": "1991-03-07T19:26",
+  "sunshine_duration_seconds": 32849.26,
+  "sunshine_duration_minutes": 547,
+  "estimated_daily_sunshine_minutes": 87,
+  "estimated_daily_sunshine": "1 h 27 min",
+  "sunshine_difference_minutes": 460,
+  "sunshine_consistency": "Faible"
+}

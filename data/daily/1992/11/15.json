@@ -1,0 +1,18 @@
+{
+  "date": "1992-11-15",
+  "weather_code": 61,
+  "temp_max": 19.9,
+  "temp_min": 13.6,
+  "temp_mean": 16.5,
+  "precipitation": 7,
+  "sunshine": 26737.23,
+  "wind_speed_max": 18.7,
+  "sunrise": "1992-11-15T07:59",
+  "sunset": "1992-11-15T18:21",
+  "sunshine_duration_seconds": 26737.23,
+  "sunshine_duration_minutes": 446,
+  "estimated_daily_sunshine_minutes": 129,
+  "estimated_daily_sunshine": "2 h 09 min",
+  "sunshine_difference_minutes": 317,
+  "sunshine_consistency": "Faible"
+}

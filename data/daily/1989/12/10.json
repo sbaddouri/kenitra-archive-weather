@@ -1,0 +1,18 @@
+{
+  "date": "1989-12-10",
+  "weather_code": 53,
+  "temp_max": 18.1,
+  "temp_min": 13.5,
+  "temp_mean": 15.8,
+  "precipitation": 4.9,
+  "sunshine": 7726.07,
+  "wind_speed_max": 11.4,
+  "sunrise": "1989-12-10T08:21",
+  "sunset": "1989-12-10T18:16",
+  "sunshine_duration_seconds": 7726.07,
+  "sunshine_duration_minutes": 129,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 57,
+  "sunshine_consistency": "Faible"
+}

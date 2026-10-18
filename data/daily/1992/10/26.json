@@ -1,0 +1,18 @@
+{
+  "date": "1992-10-26",
+  "weather_code": 2,
+  "temp_max": 20.4,
+  "temp_min": 15.2,
+  "temp_mean": 17.6,
+  "precipitation": 0,
+  "sunshine": 33119.08,
+  "wind_speed_max": 13,
+  "sunrise": "1992-10-26T07:41",
+  "sunset": "1992-10-26T18:38",
+  "sunshine_duration_seconds": 33119.08,
+  "sunshine_duration_minutes": 552,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

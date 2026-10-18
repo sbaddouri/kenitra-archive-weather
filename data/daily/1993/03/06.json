@@ -1,0 +1,18 @@
+{
+  "date": "1993-03-06",
+  "weather_code": 61,
+  "temp_max": 16.8,
+  "temp_min": 12.3,
+  "temp_mean": 14,
+  "precipitation": 6.6,
+  "sunshine": 39127.89,
+  "wind_speed_max": 20.1,
+  "sunrise": "1993-03-06T07:48",
+  "sunset": "1993-03-06T19:26",
+  "sunshine_duration_seconds": 39127.89,
+  "sunshine_duration_minutes": 652,
+  "estimated_daily_sunshine_minutes": 279,
+  "estimated_daily_sunshine": "4 h 39 min",
+  "sunshine_difference_minutes": 373,
+  "sunshine_consistency": "Faible"
+}

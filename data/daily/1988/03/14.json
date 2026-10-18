@@ -1,0 +1,18 @@
+{
+  "date": "1988-03-14",
+  "weather_code": 3,
+  "temp_max": 18.2,
+  "temp_min": 12.8,
+  "temp_mean": 16.2,
+  "precipitation": 0,
+  "sunshine": 17410.99,
+  "wind_speed_max": 17.3,
+  "sunrise": "1988-03-14T07:37",
+  "sunset": "1988-03-14T19:33",
+  "sunshine_duration_seconds": 17410.99,
+  "sunshine_duration_minutes": 290,
+  "estimated_daily_sunshine_minutes": 258,
+  "estimated_daily_sunshine": "4 h 18 min",
+  "sunshine_difference_minutes": 32,
+  "sunshine_consistency": "Faible"
+}

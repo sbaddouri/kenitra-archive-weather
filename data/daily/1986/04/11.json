@@ -1,0 +1,18 @@
+{
+  "date": "1986-04-11",
+  "weather_code": 51,
+  "temp_max": 16,
+  "temp_min": 11.8,
+  "temp_mean": 13.9,
+  "precipitation": 0.1,
+  "sunshine": 44428.37,
+  "wind_speed_max": 19.7,
+  "sunrise": "1986-04-11T07:00",
+  "sunset": "1986-04-11T19:54",
+  "sunshine_duration_seconds": 44428.37,
+  "sunshine_duration_minutes": 740,
+  "estimated_daily_sunshine_minutes": 441,
+  "estimated_daily_sunshine": "7 h 21 min",
+  "sunshine_difference_minutes": 299,
+  "sunshine_consistency": "Faible"
+}

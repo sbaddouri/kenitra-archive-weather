@@ -1,0 +1,18 @@
+{
+  "date": "1993-11-27",
+  "weather_code": 51,
+  "temp_max": 16.7,
+  "temp_min": 10.4,
+  "temp_mean": 13.5,
+  "precipitation": 0.1,
+  "sunshine": 35086.05,
+  "wind_speed_max": 7.2,
+  "sunrise": "1993-11-27T08:10",
+  "sunset": "1993-11-27T18:16",
+  "sunshine_duration_seconds": 35086.05,
+  "sunshine_duration_minutes": 585,
+  "estimated_daily_sunshine_minutes": 375,
+  "estimated_daily_sunshine": "6 h 15 min",
+  "sunshine_difference_minutes": 210,
+  "sunshine_consistency": "Faible"
+}

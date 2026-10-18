@@ -1,0 +1,18 @@
+{
+  "date": "1987-03-15",
+  "weather_code": 61,
+  "temp_max": 16.8,
+  "temp_min": 13.8,
+  "temp_mean": 15.9,
+  "precipitation": 8.2,
+  "sunshine": 24616.03,
+  "wind_speed_max": 14.2,
+  "sunrise": "1987-03-15T07:37",
+  "sunset": "1987-03-15T19:33",
+  "sunshine_duration_seconds": 24616.03,
+  "sunshine_duration_minutes": 410,
+  "estimated_daily_sunshine_minutes": 111,
+  "estimated_daily_sunshine": "1 h 51 min",
+  "sunshine_difference_minutes": 299,
+  "sunshine_consistency": "Faible"
+}

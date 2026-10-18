@@ -1,0 +1,18 @@
+{
+  "date": "1986-01-28",
+  "weather_code": 61,
+  "temp_max": 15,
+  "temp_min": 11.4,
+  "temp_mean": 13.1,
+  "precipitation": 2.8,
+  "sunshine": 32573.34,
+  "wind_speed_max": 18.4,
+  "sunrise": "1986-01-28T08:26",
+  "sunset": "1986-01-28T18:51",
+  "sunshine_duration_seconds": 32573.34,
+  "sunshine_duration_minutes": 543,
+  "estimated_daily_sunshine_minutes": 204,
+  "estimated_daily_sunshine": "3 h 24 min",
+  "sunshine_difference_minutes": 339,
+  "sunshine_consistency": "Faible"
+}

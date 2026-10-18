@@ -1,0 +1,18 @@
+{
+  "date": "1989-06-09",
+  "weather_code": 2,
+  "temp_max": 22.3,
+  "temp_min": 15.9,
+  "temp_mean": 18.9,
+  "precipitation": 0,
+  "sunshine": 46888.21,
+  "wind_speed_max": 17.2,
+  "sunrise": "1989-06-09T06:13",
+  "sunset": "1989-06-09T20:37",
+  "sunshine_duration_seconds": 46888.21,
+  "sunshine_duration_minutes": 781,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 181,
+  "sunshine_consistency": "Faible"
+}

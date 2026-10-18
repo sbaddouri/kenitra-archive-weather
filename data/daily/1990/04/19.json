@@ -1,0 +1,18 @@
+{
+  "date": "1990-04-19",
+  "weather_code": 1,
+  "temp_max": 21.7,
+  "temp_min": 14.2,
+  "temp_mean": 17.9,
+  "precipitation": 0,
+  "sunshine": 46598.87,
+  "wind_speed_max": 17.7,
+  "sunrise": "1990-04-19T06:50",
+  "sunset": "1990-04-19T20:00",
+  "sunshine_duration_seconds": 46598.87,
+  "sunshine_duration_minutes": 777,
+  "estimated_daily_sunshine_minutes": 765,
+  "estimated_daily_sunshine": "12 h 45 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1991-02-07",
+  "weather_code": 61,
+  "temp_max": 14.2,
+  "temp_min": 11.7,
+  "temp_mean": 12.9,
+  "precipitation": 7.8,
+  "sunshine": 5015.76,
+  "wind_speed_max": 23.6,
+  "sunrise": "1991-02-07T08:19",
+  "sunset": "1991-02-07T19:01",
+  "sunshine_duration_seconds": 5015.76,
+  "sunshine_duration_minutes": 84,
+  "estimated_daily_sunshine_minutes": 96,
+  "estimated_daily_sunshine": "1 h 36 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1990-06-20",
+  "weather_code": 51,
+  "temp_max": 23.4,
+  "temp_min": 18.1,
+  "temp_mean": 20.6,
+  "precipitation": 0.1,
+  "sunshine": 43808.58,
+  "wind_speed_max": 16.2,
+  "sunrise": "1990-06-20T06:14",
+  "sunset": "1990-06-20T20:41",
+  "sunshine_duration_seconds": 43808.58,
+  "sunshine_duration_minutes": 730,
+  "estimated_daily_sunshine_minutes": 615,
+  "estimated_daily_sunshine": "10 h 15 min",
+  "sunshine_difference_minutes": 115,
+  "sunshine_consistency": "Faible"
+}

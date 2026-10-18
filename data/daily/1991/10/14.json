@@ -1,0 +1,18 @@
+{
+  "date": "1991-10-14",
+  "weather_code": 55,
+  "temp_max": 20,
+  "temp_min": 16.3,
+  "temp_mean": 18,
+  "precipitation": 2.1,
+  "sunshine": 37523.62,
+  "wind_speed_max": 15.6,
+  "sunrise": "1991-10-14T07:30",
+  "sunset": "1991-10-14T18:53",
+  "sunshine_duration_seconds": 37523.62,
+  "sunshine_duration_minutes": 625,
+  "estimated_daily_sunshine_minutes": 408,
+  "estimated_daily_sunshine": "6 h 48 min",
+  "sunshine_difference_minutes": 217,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1992-06-23",
+  "weather_code": 51,
+  "temp_max": 21,
+  "temp_min": 17.5,
+  "temp_mean": 19.1,
+  "precipitation": 0.4,
+  "sunshine": 44041.04,
+  "wind_speed_max": 16.9,
+  "sunrise": "1992-06-23T06:14",
+  "sunset": "1992-06-23T20:41",
+  "sunshine_duration_seconds": 44041.04,
+  "sunshine_duration_minutes": 734,
+  "estimated_daily_sunshine_minutes": 396,
+  "estimated_daily_sunshine": "6 h 36 min",
+  "sunshine_difference_minutes": 338,
+  "sunshine_consistency": "Faible"
+}
