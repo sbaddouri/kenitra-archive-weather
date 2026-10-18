@@ -995,6 +995,183 @@ async function getMaxDailyPrecipOverall(): Promise<{ value: number; date: string
   return maxDailyPrecip;
 }
 
+const RAIN_DAY_THRESHOLD_MM = 1;
+
+type RainDayMonthStat = {
+  maxCount: number;
+  maxYear: string | null;
+  minCount: number;
+  minYear: string | null;
+  totalCount: number;
+  yearsCounted: number;
+};
+
+type RainDayYearStat = {
+  totalCount: number;
+  monthsCounted: number;
+};
+
+type RainDayStats = {
+  perMonth: Record<string, RainDayMonthStat>;
+  perYear: Record<string, RainDayYearStat>;
+};
+
+/**
+ * Un seul parcours des données journalières (1940 -> 2026) qui calcule, pour chaque
+ * mois, le nombre de jours de précipitations >= 1 mm : maximum, minimum et moyenne.
+ *
+ * Règles appliquées, toutes fondées sur la seule donnée stockée (precipitation) :
+ *  - un mois n'entre en statistique que si TOUS ses jours ont une précipitation
+ *    exploitable ; aucun jour manquant n'est compté ni remplacé (1940-01-01, dont la
+ *    précipitation vaut null dans l'API, est donc exclu des statistiques de janvier) ;
+ *  - le mois en cours (octobre 2026) est écarté car incomplet ;
+ *  - la moyenne annuelle ne retient que les années dont les 12 mois sont complets.
+ */
+async function getRainDayStats(): Promise<RainDayStats> {
+  const perMonth: Record<string, RainDayMonthStat> = {};
+  for (const m of months) {
+    perMonth[m.num] = {
+      maxCount: -1,
+      maxYear: null,
+      minCount: -1,
+      minYear: null,
+      totalCount: 0,
+      yearsCounted: 0
+    };
+  }
+  const perYear: Record<string, RainDayYearStat> = {};
+
+  const years = listAvailableYears().sort((a, b) => parseInt(a) - parseInt(b));
+
+  for (const year of years) {
+    const yearNum = parseInt(year);
+    if (yearNum < 1940 || yearNum > CURRENT_YEAR) continue;
+    perYear[year] = { totalCount: 0, monthsCounted: 0 };
+
+    for (const m of months) {
+      if (isIncompletePeriod(yearNum, m.num)) continue;
+
+      const data = await getDailyDataForMonth(year, m.num);
+      if (data.length === 0) continue;
+
+      let count = 0;
+      let complete = true;
+      for (const day of data) {
+        const p = day.precipitation;
+        if (p === null || p === undefined) {
+          complete = false;
+          break;
+        }
+        if (p >= RAIN_DAY_THRESHOLD_MM) count++;
+      }
+      if (!complete) continue;
+
+      const s = perMonth[m.num];
+      if (s.maxCount === -1 || count > s.maxCount) {
+        s.maxCount = count;
+        s.maxYear = year;
+      }
+      if (s.minCount === -1 || count < s.minCount) {
+        s.minCount = count;
+        s.minYear = year;
+      }
+      s.totalCount += count;
+      s.yearsCounted += 1;
+
+      perYear[year].totalCount += count;
+      perYear[year].monthsCounted += 1;
+    }
+  }
+
+  return { perMonth, perYear };
+}
+
+type StatCellData = {
+  display: string;
+  detail: string;
+};
+
+/**
+ * Tableau à 13 colonnes : Record + 12 mois + colonne de synthèse
+ * (Record absolu ou Moyenne annuelle).
+ */
+function RainDaysStatTable({
+  title,
+  absoluteLabel,
+  valueLabel,
+  detailLabel,
+  values,
+  details,
+  note
+}: {
+  title: string;
+  absoluteLabel: string;
+  valueLabel: string;
+  detailLabel: string;
+  values: StatCellData[];
+  details: string[];
+  note: string;
+}) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <CardContent className="p-0">
+        <div className="overflow-x-auto">
+          <Table className="w-full">
+            <TableHeader>
+              <TableRow className="bg-muted/50 border-b">
+                <TableHead className="border px-3 py-2 text-left font-bold sticky left-0 z-10">
+                  Record
+                </TableHead>
+                {months.map(m => (
+                  <TableHead key={m.num} className="border px-2 py-2 text-center text-sm font-bold">
+                    {m.short}
+                  </TableHead>
+                ))}
+                <TableHead className="border px-2 py-2 text-center text-sm font-bold">
+                  {absoluteLabel}
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow>
+                <TableCell className="border px-3 py-2 text-left font-bold bg-muted/50">
+                  {valueLabel}
+                </TableCell>
+                {values.map((cell, idx) => (
+                  <TableCell
+                    key={idx}
+                    className={`border px-2 py-2 text-center ${idx === 12 ? 'bg-primary/10' : ''}`}
+                  >
+                    <div className="font-bold leading-tight">{cell.display}</div>
+                    <div className="text-[10px] leading-tight text-muted-foreground">{cell.detail}</div>
+                  </TableCell>
+                ))}
+              </TableRow>
+              <TableRow>
+                <TableCell className="border px-3 py-2 text-left font-bold bg-muted/50">
+                  {detailLabel}
+                </TableCell>
+                {details.map((detail, idx) => (
+                  <TableCell
+                    key={idx}
+                    className={`border px-2 py-2 text-center text-[11px] text-muted-foreground ${idx === 12 ? 'bg-primary/10' : ''}`}
+                  >
+                    {detail}
+                  </TableCell>
+                ))}
+              </TableRow>
+            </TableBody>
+          </Table>
+        </div>
+        <p className="px-6 py-3 text-xs text-muted-foreground">{note}</p>
+      </CardContent>
+    </Card>
+  );
+}
+
 /**
  * Cellule d'un record de chaleur : valeur + jour/mois/année du record.
  * La valeur affichée provient directement de temp_max stocké par jour.
@@ -1128,10 +1305,65 @@ export default async function RecordsAbsolusPage() {
     null
   );
 
+  // --- Nombre de jours de précipitations >= 1 mm (max, min, moyenne) ---
+  const rainDayStats = await getRainDayStats();
+  const rainPerMonth = rainDayStats.perMonth;
+
+  const rainMaxValues: StatCellData[] = months.map(m => {
+    const s = rainPerMonth[m.num];
+    if (s.maxYear === null) return { display: '—', detail: '—' };
+    return { display: String(s.maxCount), detail: `${m.short} ${s.maxYear}` };
+  });
+  const rainMaxDetails = months.map(m => rainPerMonth[m.num].maxYear ?? '—');
+
+  const rainMaxOverall = months.reduce<{ count: number; label: string } | null>((best, m) => {
+    const s = rainPerMonth[m.num];
+    if (s.maxYear === null) return best;
+    if (best === null || s.maxCount > best.count) {
+      return { count: s.maxCount, label: `${m.short} ${s.maxYear}` };
+    }
+    return best;
+  }, null);
+
+  const rainMinValues: StatCellData[] = months.map(m => {
+    const s = rainPerMonth[m.num];
+    if (s.minYear === null) return { display: '—', detail: '—' };
+    return { display: String(s.minCount), detail: `${m.short} ${s.minYear}` };
+  });
+  const rainMinDetails = months.map(m => rainPerMonth[m.num].minYear ?? '—');
+
+  const rainMinOverall = months.reduce<{ count: number; label: string } | null>((best, m) => {
+    const s = rainPerMonth[m.num];
+    if (s.minYear === null) return best;
+    if (best === null || s.minCount < best.count) {
+      return { count: s.minCount, label: `${m.short} ${s.minYear}` };
+    }
+    return best;
+  }, null);
+
+  const rainAvgValues: StatCellData[] = months.map(m => {
+    const s = rainPerMonth[m.num];
+    if (s.yearsCounted === 0) return { display: '—', detail: '—' };
+    return {
+      display: (s.totalCount / s.yearsCounted).toFixed(1),
+      detail: `sur ${s.yearsCounted} années`
+    };
+  });
+  const rainAvgDetails = months.map(m =>
+    rainPerMonth[m.num].yearsCounted === 0 ? '—' : `${rainPerMonth[m.num].yearsCounted} années`
+  );
+
+  // Moyenne annuelle : uniquement les années dont les 12 mois sont complets.
+  const completeYears = Object.values(rainDayStats.perYear).filter(y => y.monthsCounted === 12);
+  const avgAnnualRainDays =
+    completeYears.length > 0
+      ? completeYears.reduce((sum, y) => sum + y.totalCount, 0) / completeYears.length
+      : 0;
+
   return (
     <div className="container mx-auto px-4 py-8 space-y-8">
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold">Records Absolus - KÃ©nitra</h1>
+        <h1 className="text-3xl font-bold">Records Absolus - Kénitra</h1>
         <p className="text-muted-foreground">
           Records absolus de température (1940-2026) basés sur les données journalières Open-Meteo.
         </p>
@@ -1197,6 +1429,53 @@ export default async function RecordsAbsolusPage() {
           </p>
         </CardContent>
       </Card>
+
+      {/* Nombre de jours de précipitations record élevé (>= 1mm) */}
+      <RainDaysStatTable
+        title="Nombre de jours de précipitations record élevé (≥1mm) - Mensuel"
+        absoluteLabel="Record absolu"
+        valueLabel="Jours ≥ 1mm"
+        detailLabel="Mois / année du record"
+        values={
+          rainMaxOverall
+            ? [...rainMaxValues, { display: String(rainMaxOverall.count), detail: rainMaxOverall.label }]
+            : [...rainMaxValues, { display: '—', detail: '—' }]
+        }
+        details={[...rainMaxDetails, rainMaxOverall ? rainMaxOverall.label : '—']}
+        note="Pour chaque mois, le plus grand nombre de jours avec au moins 1 mm de précipitations, relevé sur la période 1940-2026. Un mois n'est retenu que si tous ses jours disposent d'une valeur de précipitation ; aucun jour manquant n'est compté. Le 1er janvier 1940, dont la précipitation est absente de l'API, est donc écarté des statistiques de janvier. Le mois d'octobre 2026, encore incomplet, est exclu de la compétition. La colonne « Record absolu » reprend le plus élevé des douze records mensuels."
+      />
+
+      {/* Nombre de jours de précipitations record bas (>= 1mm) */}
+      <RainDaysStatTable
+        title="Nombre de jours de précipitations record bas (≥1mm) - Mensuel"
+        absoluteLabel="Record absolu"
+        valueLabel="Jours ≥ 1mm"
+        detailLabel="Mois / année du record"
+        values={
+          rainMinOverall
+            ? [...rainMinValues, { display: String(rainMinOverall.count), detail: rainMinOverall.label }]
+            : [...rainMinValues, { display: '—', detail: '—' }]
+        }
+        details={[...rainMinDetails, rainMinOverall ? rainMinOverall.label : '—']}
+        note="Pour chaque mois, le plus faible nombre de jours avec au moins 1 mm de précipitations, relevé sur la période 1940-2026. Même règle d'exclusion que le tableau précédent : mois complet requis, aucune valeur manquante comblée, octobre 2026 écarté. La colonne « Record absolu » reprend le plus bas des douze records mensuels."
+      />
+
+      {/* Nombre de jours de précipitations moyen (>= 1mm) */}
+      <RainDaysStatTable
+        title="Nombre de jours de précipitations moyen (≥1mm) - Mensuel"
+        absoluteLabel="Moyenne annuelle"
+        valueLabel="Jours ≥ 1mm (moyenne)"
+        detailLabel="Années retenues"
+        values={[
+          ...rainAvgValues,
+          {
+            display: avgAnnualRainDays.toFixed(1),
+            detail: `sur ${completeYears.length} années complètes`
+          }
+        ]}
+        details={[...rainAvgDetails, `${completeYears.length} années complètes`]}
+        note="Pour chaque mois, le nombre moyen de jours avec au moins 1 mm de précipitations, calculé sur toutes les années disponibles pour ce mois. La colonne « Moyenne annuelle » est la moyenne du total annuel de jours de pluie, calculée uniquement sur les années dont les douze mois sont complets, afin de ne pas mélanger des années tronquées."
+      />
 
       {/* Max Temperature Records */}
       <Card>

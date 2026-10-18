@@ -30,7 +30,7 @@ export default function WeatherMap() {
         />
         <Marker position={position} icon={icon}>
           <Popup>
-            KÃ©nitra, Maroc <br /> Station mÃ©tÃ©o archivÃ©e.
+            Kénitra, Maroc <br /> Station météo archivée.
           </Popup>
         </Marker>
       </MapContainer>

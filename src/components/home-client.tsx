@@ -13,7 +13,7 @@ export default function HomeClient() {
     <section className="space-y-4">
       <div className="flex items-center space-x-2">
         <MapPin className="h-5 w-5 text-primary" />
-        <h2 className="text-2xl font-bold">Localisation de KÃ©nitra</h2>
+        <h2 className="text-2xl font-bold">Localisation de Kénitra</h2>
       </div>
       <WeatherMap />
     </section>

@@ -18,7 +18,7 @@ export default function ArchivesPage() {
   return (
     <div className="space-y-8">
       <h1 className="text-3xl font-bold">Archives Climatologiques</h1>
-      <p className="text-muted-foreground">Parcourez les donnÃ©es historiques de KÃ©nitra par annÃ©e et par mois.</p>
+      <p className="text-muted-foreground">Parcourez les données historiques de Kénitra par année et par mois.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {years.map(year => {
@@ -30,7 +30,7 @@ export default function ArchivesPage() {
           return (
             <Card key={year}>
               <CardHeader>
-                <CardTitle>AnnÃ©e {year}</CardTitle>
+                <CardTitle>Année {year}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 gap-2">
@@ -49,7 +49,7 @@ export default function ArchivesPage() {
                     href={`/climatologie/annee/${year}/kenitra`}
                     className="text-sm font-medium text-primary hover:underline"
                   >
-                    Voir le rÃ©sumÃ© de l'annÃ©e â†’
+                    Voir le résumé de l'année →
                   </Link>
                 </div>
               </CardContent>
