@@ -1,0 +1,18 @@
+{
+  "date": "1997-11-21",
+  "weather_code": 63,
+  "temp_max": 18.7,
+  "temp_min": 14,
+  "temp_mean": 16.9,
+  "precipitation": 29.2,
+  "sunshine": 17390.44,
+  "wind_speed_max": 29.6,
+  "sunrise": "1997-11-21T08:05",
+  "sunset": "1997-11-21T18:18",
+  "sunshine_duration_seconds": 17390.44,
+  "sunshine_duration_minutes": 290,
+  "estimated_daily_sunshine_minutes": 63,
+  "estimated_daily_sunshine": "1 h 03 min",
+  "sunshine_difference_minutes": 227,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1996-01-21",
+  "weather_code": 63,
+  "temp_max": 14,
+  "temp_min": 12.4,
+  "temp_mean": 13.3,
+  "precipitation": 48.3,
+  "sunshine": 2266.31,
+  "wind_speed_max": 38.8,
+  "sunrise": "1996-01-21T08:30",
+  "sunset": "1996-01-21T18:44",
+  "sunshine_duration_seconds": 2266.31,
+  "sunshine_duration_minutes": 38,
+  "estimated_daily_sunshine_minutes": 48,
+  "estimated_daily_sunshine": "0 h 48 min",
+  "sunshine_difference_minutes": 10,
+  "sunshine_consistency": "Bon"
+}

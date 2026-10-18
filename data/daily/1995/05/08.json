@@ -1,0 +1,18 @@
+{
+  "date": "1995-05-08",
+  "weather_code": 61,
+  "temp_max": 20.1,
+  "temp_min": 16.4,
+  "temp_mean": 18.2,
+  "precipitation": 7.3,
+  "sunshine": 27463.02,
+  "wind_speed_max": 12.2,
+  "sunrise": "1995-05-08T06:30",
+  "sunset": "1995-05-08T20:15",
+  "sunshine_duration_seconds": 27463.02,
+  "sunshine_duration_minutes": 458,
+  "estimated_daily_sunshine_minutes": 360,
+  "estimated_daily_sunshine": "6 h 00 min",
+  "sunshine_difference_minutes": 98,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1995-10-08",
+  "weather_code": 1,
+  "temp_max": 27.3,
+  "temp_min": 20.5,
+  "temp_mean": 23,
+  "precipitation": 0,
+  "sunshine": 40227.16,
+  "wind_speed_max": 14.2,
+  "sunrise": "1995-10-08T07:25",
+  "sunset": "1995-10-08T19:01",
+  "sunshine_duration_seconds": 40227.16,
+  "sunshine_duration_minutes": 670,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 50,
+  "sunshine_consistency": "Faible"
+}

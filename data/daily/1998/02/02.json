@@ -1,0 +1,18 @@
+{
+  "date": "1998-02-02",
+  "weather_code": 63,
+  "temp_max": 17.6,
+  "temp_min": 14.8,
+  "temp_mean": 16.1,
+  "precipitation": 25.5,
+  "sunshine": 24068.93,
+  "wind_speed_max": 28.3,
+  "sunrise": "1998-02-02T08:23",
+  "sunset": "1998-02-02T18:56",
+  "sunshine_duration_seconds": 24068.93,
+  "sunshine_duration_minutes": 401,
+  "estimated_daily_sunshine_minutes": 51,
+  "estimated_daily_sunshine": "0 h 51 min",
+  "sunshine_difference_minutes": 350,
+  "sunshine_consistency": "Faible"
+}

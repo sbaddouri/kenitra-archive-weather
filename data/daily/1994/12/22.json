@@ -1,0 +1,18 @@
+{
+  "date": "1994-12-22",
+  "weather_code": 1,
+  "temp_max": 16.5,
+  "temp_min": 8.5,
+  "temp_mean": 12.6,
+  "precipitation": 0,
+  "sunshine": 32888.14,
+  "wind_speed_max": 10.5,
+  "sunrise": "1994-12-22T08:28",
+  "sunset": "1994-12-22T18:20",
+  "sunshine_duration_seconds": 32888.14,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 555,
+  "estimated_daily_sunshine": "9 h 15 min",
+  "sunshine_difference_minutes": 7,
+  "sunshine_consistency": "Bon"
+}

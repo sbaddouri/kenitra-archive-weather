@@ -1,0 +1,18 @@
+{
+  "date": "1998-09-07",
+  "weather_code": 2,
+  "temp_max": 25.7,
+  "temp_min": 19.3,
+  "temp_mean": 22.1,
+  "precipitation": 0,
+  "sunshine": 44357.17,
+  "wind_speed_max": 13.9,
+  "sunrise": "1998-09-07T07:03",
+  "sunset": "1998-09-07T19:44",
+  "sunshine_duration_seconds": 44357.17,
+  "sunshine_duration_minutes": 739,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 169,
+  "sunshine_consistency": "Faible"
+}

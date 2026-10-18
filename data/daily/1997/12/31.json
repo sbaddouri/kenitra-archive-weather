@@ -1,0 +1,18 @@
+{
+  "date": "1997-12-31",
+  "weather_code": 61,
+  "temp_max": 15,
+  "temp_min": 11.8,
+  "temp_mean": 13.3,
+  "precipitation": 12.8,
+  "sunshine": 10373.68,
+  "wind_speed_max": 22.1,
+  "sunrise": "1997-12-31T08:32",
+  "sunset": "1997-12-31T18:26",
+  "sunshine_duration_seconds": 10373.68,
+  "sunshine_duration_minutes": 173,
+  "estimated_daily_sunshine_minutes": 108,
+  "estimated_daily_sunshine": "1 h 48 min",
+  "sunshine_difference_minutes": 65,
+  "sunshine_consistency": "Faible"
+}

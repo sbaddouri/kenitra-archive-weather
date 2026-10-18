@@ -1,0 +1,18 @@
+{
+  "date": "1997-09-22",
+  "weather_code": 2,
+  "temp_max": 27.3,
+  "temp_min": 19.5,
+  "temp_mean": 23.4,
+  "precipitation": 0,
+  "sunshine": 40851.4,
+  "wind_speed_max": 15.1,
+  "sunrise": "1997-09-22T07:14",
+  "sunset": "1997-09-22T19:23",
+  "sunshine_duration_seconds": 40851.4,
+  "sunshine_duration_minutes": 681,
+  "estimated_daily_sunshine_minutes": 690,
+  "estimated_daily_sunshine": "11 h 30 min",
+  "sunshine_difference_minutes": 9,
+  "sunshine_consistency": "Bon"
+}

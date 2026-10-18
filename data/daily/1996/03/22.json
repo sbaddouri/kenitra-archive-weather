@@ -1,0 +1,18 @@
+{
+  "date": "1996-03-22",
+  "weather_code": 3,
+  "temp_max": 21,
+  "temp_min": 11.5,
+  "temp_mean": 16.6,
+  "precipitation": 0,
+  "sunshine": 41276.98,
+  "wind_speed_max": 10.9,
+  "sunrise": "1996-03-22T07:27",
+  "sunset": "1996-03-22T19:39",
+  "sunshine_duration_seconds": 41276.98,
+  "sunshine_duration_minutes": 688,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 28,
+  "sunshine_consistency": "Moyen"
+}

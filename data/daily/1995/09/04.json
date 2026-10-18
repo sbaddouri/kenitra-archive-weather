@@ -1,0 +1,18 @@
+{
+  "date": "1995-09-04",
+  "weather_code": 61,
+  "temp_max": 25.8,
+  "temp_min": 21.2,
+  "temp_mean": 23.2,
+  "precipitation": 3.9,
+  "sunshine": 42492.64,
+  "wind_speed_max": 14.8,
+  "sunrise": "1995-09-04T07:01",
+  "sunset": "1995-09-04T19:49",
+  "sunshine_duration_seconds": 42492.64,
+  "sunshine_duration_minutes": 708,
+  "estimated_daily_sunshine_minutes": 315,
+  "estimated_daily_sunshine": "5 h 15 min",
+  "sunshine_difference_minutes": 393,
+  "sunshine_consistency": "Faible"
+}

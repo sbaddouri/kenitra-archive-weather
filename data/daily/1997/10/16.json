@@ -1,0 +1,18 @@
+{
+  "date": "1997-10-16",
+  "weather_code": 0,
+  "temp_max": 25.4,
+  "temp_min": 15.8,
+  "temp_mean": 20.9,
+  "precipitation": 0,
+  "sunshine": 38937.79,
+  "wind_speed_max": 9.4,
+  "sunrise": "1997-10-16T07:32",
+  "sunset": "1997-10-16T18:50",
+  "sunshine_duration_seconds": 38937.79,
+  "sunshine_duration_minutes": 649,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 11,
+  "sunshine_consistency": "Bon"
+}

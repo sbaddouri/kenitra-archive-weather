@@ -1,0 +1,18 @@
+{
+  "date": "1997-09-14",
+  "weather_code": 51,
+  "temp_max": 27.1,
+  "temp_min": 21.7,
+  "temp_mean": 23.7,
+  "precipitation": 0.3,
+  "sunshine": 40884.69,
+  "wind_speed_max": 16.2,
+  "sunrise": "1997-09-14T07:08",
+  "sunset": "1997-09-14T19:34",
+  "sunshine_duration_seconds": 40884.69,
+  "sunshine_duration_minutes": 681,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 96,
+  "sunshine_consistency": "Faible"
+}

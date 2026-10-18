@@ -1,0 +1,18 @@
+{
+  "date": "1995-11-30",
+  "weather_code": 55,
+  "temp_max": 17.5,
+  "temp_min": 13.8,
+  "temp_mean": 15.6,
+  "precipitation": 7.6,
+  "sunshine": 33336.95,
+  "wind_speed_max": 25.1,
+  "sunrise": "1995-11-30T08:12",
+  "sunset": "1995-11-30T18:16",
+  "sunshine_duration_seconds": 33336.95,
+  "sunshine_duration_minutes": 556,
+  "estimated_daily_sunshine_minutes": 285,
+  "estimated_daily_sunshine": "4 h 45 min",
+  "sunshine_difference_minutes": 271,
+  "sunshine_consistency": "Faible"
+}

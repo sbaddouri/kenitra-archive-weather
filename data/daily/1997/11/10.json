@@ -1,0 +1,18 @@
+{
+  "date": "1997-11-10",
+  "weather_code": 55,
+  "temp_max": 19.2,
+  "temp_min": 17.1,
+  "temp_mean": 18.3,
+  "precipitation": 5.4,
+  "sunshine": 12000.7,
+  "wind_speed_max": 12.3,
+  "sunrise": "1997-11-10T07:54",
+  "sunset": "1997-11-10T18:25",
+  "sunshine_duration_seconds": 12000.7,
+  "sunshine_duration_minutes": 200,
+  "estimated_daily_sunshine_minutes": 105,
+  "estimated_daily_sunshine": "1 h 45 min",
+  "sunshine_difference_minutes": 95,
+  "sunshine_consistency": "Faible"
+}

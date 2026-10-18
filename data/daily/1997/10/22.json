@@ -1,0 +1,18 @@
+{
+  "date": "1997-10-22",
+  "weather_code": 63,
+  "temp_max": 23,
+  "temp_min": 20,
+  "temp_mean": 21.4,
+  "precipitation": 17,
+  "sunshine": 31303.26,
+  "wind_speed_max": 14.3,
+  "sunrise": "1997-10-22T07:37",
+  "sunset": "1997-10-22T18:43",
+  "sunshine_duration_seconds": 31303.26,
+  "sunshine_duration_minutes": 522,
+  "estimated_daily_sunshine_minutes": 135,
+  "estimated_daily_sunshine": "2 h 15 min",
+  "sunshine_difference_minutes": 387,
+  "sunshine_consistency": "Faible"
+}

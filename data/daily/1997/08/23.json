@@ -1,0 +1,18 @@
+{
+  "date": "1997-08-23",
+  "weather_code": 53,
+  "temp_max": 27.9,
+  "temp_min": 21.7,
+  "temp_mean": 24.2,
+  "precipitation": 2.2,
+  "sunshine": 46797.65,
+  "wind_speed_max": 13,
+  "sunrise": "1997-08-23T06:52",
+  "sunset": "1997-08-23T20:04",
+  "sunshine_duration_seconds": 46797.65,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 450,
+  "estimated_daily_sunshine": "7 h 30 min",
+  "sunshine_difference_minutes": 330,
+  "sunshine_consistency": "Faible"
+}

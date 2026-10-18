@@ -1,0 +1,18 @@
+{
+  "date": "1996-03-19",
+  "weather_code": 51,
+  "temp_max": 18,
+  "temp_min": 12.9,
+  "temp_mean": 15.2,
+  "precipitation": 0.6,
+  "sunshine": 40357.33,
+  "wind_speed_max": 15.8,
+  "sunrise": "1996-03-19T07:31",
+  "sunset": "1996-03-19T19:37",
+  "sunshine_duration_seconds": 40357.33,
+  "sunshine_duration_minutes": 673,
+  "estimated_daily_sunshine_minutes": 405,
+  "estimated_daily_sunshine": "6 h 45 min",
+  "sunshine_difference_minutes": 268,
+  "sunshine_consistency": "Faible"
+}

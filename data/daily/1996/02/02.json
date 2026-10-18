@@ -1,0 +1,18 @@
+{
+  "date": "1996-02-02",
+  "weather_code": 2,
+  "temp_max": 15.6,
+  "temp_min": 10,
+  "temp_mean": 13.2,
+  "precipitation": 0,
+  "sunshine": 36065.74,
+  "wind_speed_max": 12.6,
+  "sunrise": "1996-02-02T08:23",
+  "sunset": "1996-02-02T18:56",
+  "sunshine_duration_seconds": 36065.74,
+  "sunshine_duration_minutes": 601,
+  "estimated_daily_sunshine_minutes": 465,
+  "estimated_daily_sunshine": "7 h 45 min",
+  "sunshine_difference_minutes": 136,
+  "sunshine_consistency": "Faible"
+}

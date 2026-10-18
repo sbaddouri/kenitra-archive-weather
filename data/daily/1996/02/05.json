@@ -1,0 +1,18 @@
+{
+  "date": "1996-02-05",
+  "weather_code": 51,
+  "temp_max": 15.2,
+  "temp_min": 12.2,
+  "temp_mean": 13.7,
+  "precipitation": 1.6,
+  "sunshine": 33157.41,
+  "wind_speed_max": 17.1,
+  "sunrise": "1996-02-05T08:21",
+  "sunset": "1996-02-05T18:59",
+  "sunshine_duration_seconds": 33157.41,
+  "sunshine_duration_minutes": 553,
+  "estimated_daily_sunshine_minutes": 162,
+  "estimated_daily_sunshine": "2 h 42 min",
+  "sunshine_difference_minutes": 391,
+  "sunshine_consistency": "Faible"
+}

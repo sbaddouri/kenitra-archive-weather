@@ -1,0 +1,18 @@
+{
+  "date": "1994-09-10",
+  "weather_code": 0,
+  "temp_max": 26.4,
+  "temp_min": 17.4,
+  "temp_mean": 22,
+  "precipitation": 0,
+  "sunshine": 44038.45,
+  "wind_speed_max": 16.4,
+  "sunrise": "1994-09-10T07:05",
+  "sunset": "1994-09-10T19:40",
+  "sunshine_duration_seconds": 44038.45,
+  "sunshine_duration_minutes": 734,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 14,
+  "sunshine_consistency": "Bon"
+}

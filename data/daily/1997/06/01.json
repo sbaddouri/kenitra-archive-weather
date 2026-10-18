@@ -1,0 +1,18 @@
+{
+  "date": "1997-06-01",
+  "weather_code": 2,
+  "temp_max": 22.1,
+  "temp_min": 17.1,
+  "temp_mean": 19.6,
+  "precipitation": 0,
+  "sunshine": 47435.05,
+  "wind_speed_max": 16.9,
+  "sunrise": "1997-06-01T06:15",
+  "sunset": "1997-06-01T20:33",
+  "sunshine_duration_seconds": 47435.05,
+  "sunshine_duration_minutes": 791,
+  "estimated_daily_sunshine_minutes": 645,
+  "estimated_daily_sunshine": "10 h 45 min",
+  "sunshine_difference_minutes": 146,
+  "sunshine_consistency": "Faible"
+}

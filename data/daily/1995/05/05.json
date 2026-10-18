@@ -1,0 +1,18 @@
+{
+  "date": "1995-05-05",
+  "weather_code": 51,
+  "temp_max": 24.1,
+  "temp_min": 18.1,
+  "temp_mean": 20.8,
+  "precipitation": 0.9,
+  "sunshine": 38370.14,
+  "wind_speed_max": 24,
+  "sunrise": "1995-05-05T06:33",
+  "sunset": "1995-05-05T20:13",
+  "sunshine_duration_seconds": 38370.14,
+  "sunshine_duration_minutes": 640,
+  "estimated_daily_sunshine_minutes": 147,
+  "estimated_daily_sunshine": "2 h 27 min",
+  "sunshine_difference_minutes": 493,
+  "sunshine_consistency": "Faible"
+}

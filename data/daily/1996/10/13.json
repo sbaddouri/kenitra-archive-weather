@@ -1,0 +1,18 @@
+{
+  "date": "1996-10-13",
+  "weather_code": 63,
+  "temp_max": 23.5,
+  "temp_min": 16.4,
+  "temp_mean": 19.3,
+  "precipitation": 18,
+  "sunshine": 36849.29,
+  "wind_speed_max": 29.5,
+  "sunrise": "1996-10-13T07:30",
+  "sunset": "1996-10-13T18:54",
+  "sunshine_duration_seconds": 36849.29,
+  "sunshine_duration_minutes": 614,
+  "estimated_daily_sunshine_minutes": 93,
+  "estimated_daily_sunshine": "1 h 33 min",
+  "sunshine_difference_minutes": 521,
+  "sunshine_consistency": "Faible"
+}

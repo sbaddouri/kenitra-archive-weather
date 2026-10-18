@@ -1,0 +1,18 @@
+{
+  "date": "1997-10-12",
+  "weather_code": 3,
+  "temp_max": 25.2,
+  "temp_min": 19.5,
+  "temp_mean": 21.7,
+  "precipitation": 0,
+  "sunshine": 35085.49,
+  "wind_speed_max": 13.1,
+  "sunrise": "1997-10-12T07:29",
+  "sunset": "1997-10-12T18:55",
+  "sunshine_duration_seconds": 35085.49,
+  "sunshine_duration_minutes": 585,
+  "estimated_daily_sunshine_minutes": 492,
+  "estimated_daily_sunshine": "8 h 12 min",
+  "sunshine_difference_minutes": 93,
+  "sunshine_consistency": "Faible"
+}

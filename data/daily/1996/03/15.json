@@ -1,0 +1,18 @@
+{
+  "date": "1996-03-15",
+  "weather_code": 63,
+  "temp_max": 14.9,
+  "temp_min": 9.4,
+  "temp_mean": 12.1,
+  "precipitation": 24.2,
+  "sunshine": 40089.45,
+  "wind_speed_max": 24.1,
+  "sunrise": "1996-03-15T07:36",
+  "sunset": "1996-03-15T19:34",
+  "sunshine_duration_seconds": 40089.45,
+  "sunshine_duration_minutes": 668,
+  "estimated_daily_sunshine_minutes": 90,
+  "estimated_daily_sunshine": "1 h 30 min",
+  "sunshine_difference_minutes": 578,
+  "sunshine_consistency": "Faible"
+}

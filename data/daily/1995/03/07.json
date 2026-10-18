@@ -1,0 +1,18 @@
+{
+  "date": "1995-03-07",
+  "weather_code": 51,
+  "temp_max": 17.9,
+  "temp_min": 12.2,
+  "temp_mean": 14.8,
+  "precipitation": 0.3,
+  "sunshine": 36894.63,
+  "wind_speed_max": 12.3,
+  "sunrise": "1995-03-07T07:48",
+  "sunset": "1995-03-07T19:27",
+  "sunshine_duration_seconds": 36894.63,
+  "sunshine_duration_minutes": 615,
+  "estimated_daily_sunshine_minutes": 231,
+  "estimated_daily_sunshine": "3 h 51 min",
+  "sunshine_difference_minutes": 384,
+  "sunshine_consistency": "Faible"
+}

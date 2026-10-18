@@ -1,0 +1,18 @@
+{
+  "date": "1995-05-20",
+  "weather_code": 1,
+  "temp_max": 24.7,
+  "temp_min": 15.4,
+  "temp_mean": 20,
+  "precipitation": 0,
+  "sunshine": 47572.67,
+  "wind_speed_max": 17.1,
+  "sunrise": "1995-05-20T06:21",
+  "sunset": "1995-05-20T20:24",
+  "sunshine_duration_seconds": 47572.67,
+  "sunshine_duration_minutes": 793,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 13,
+  "sunshine_consistency": "Bon"
+}

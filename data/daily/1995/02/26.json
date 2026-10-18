@@ -1,0 +1,18 @@
+{
+  "date": "1995-02-26",
+  "weather_code": 53,
+  "temp_max": 14.9,
+  "temp_min": 11,
+  "temp_mean": 13.9,
+  "precipitation": 4.1,
+  "sunshine": 30436.75,
+  "wind_speed_max": 26,
+  "sunrise": "1995-02-26T07:59",
+  "sunset": "1995-02-26T19:19",
+  "sunshine_duration_seconds": 30436.75,
+  "sunshine_duration_minutes": 507,
+  "estimated_daily_sunshine_minutes": 240,
+  "estimated_daily_sunshine": "4 h 00 min",
+  "sunshine_difference_minutes": 267,
+  "sunshine_consistency": "Faible"
+}

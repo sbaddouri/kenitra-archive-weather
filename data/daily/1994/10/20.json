@@ -1,0 +1,18 @@
+{
+  "date": "1994-10-20",
+  "weather_code": 51,
+  "temp_max": 21.6,
+  "temp_min": 17.1,
+  "temp_mean": 19,
+  "precipitation": 2.4,
+  "sunshine": 37897.72,
+  "wind_speed_max": 20.6,
+  "sunrise": "1994-10-20T07:35",
+  "sunset": "1994-10-20T18:46",
+  "sunshine_duration_seconds": 37897.72,
+  "sunshine_duration_minutes": 632,
+  "estimated_daily_sunshine_minutes": 231,
+  "estimated_daily_sunshine": "3 h 51 min",
+  "sunshine_difference_minutes": 401,
+  "sunshine_consistency": "Faible"
+}

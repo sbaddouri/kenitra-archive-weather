@@ -1,0 +1,18 @@
+{
+  "date": "1995-04-04",
+  "weather_code": 51,
+  "temp_max": 20.4,
+  "temp_min": 15.2,
+  "temp_mean": 17.2,
+  "precipitation": 1,
+  "sunshine": 42300.9,
+  "wind_speed_max": 13.5,
+  "sunrise": "1995-04-04T07:10",
+  "sunset": "1995-04-04T19:49",
+  "sunshine_duration_seconds": 42300.9,
+  "sunshine_duration_minutes": 705,
+  "estimated_daily_sunshine_minutes": 501,
+  "estimated_daily_sunshine": "8 h 21 min",
+  "sunshine_difference_minutes": 204,
+  "sunshine_consistency": "Faible"
+}

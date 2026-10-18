@@ -1,0 +1,18 @@
+{
+  "date": "1995-01-01",
+  "weather_code": 61,
+  "temp_max": 19.4,
+  "temp_min": 14.3,
+  "temp_mean": 16.4,
+  "precipitation": 6.8,
+  "sunshine": 32400,
+  "wind_speed_max": 22.3,
+  "sunrise": "1995-01-01T08:32",
+  "sunset": "1995-01-01T18:27",
+  "sunshine_duration_seconds": 32400,
+  "sunshine_duration_minutes": 540,
+  "estimated_daily_sunshine_minutes": 300,
+  "estimated_daily_sunshine": "5 h 00 min",
+  "sunshine_difference_minutes": 240,
+  "sunshine_consistency": "Faible"
+}

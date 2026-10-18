@@ -1,0 +1,18 @@
+{
+  "date": "1994-11-23",
+  "weather_code": 1,
+  "temp_max": 21.7,
+  "temp_min": 12.6,
+  "temp_mean": 16.9,
+  "precipitation": 0,
+  "sunshine": 35326.37,
+  "wind_speed_max": 11.3,
+  "sunrise": "1994-11-23T08:06",
+  "sunset": "1994-11-23T18:18",
+  "sunshine_duration_seconds": 35326.37,
+  "sunshine_duration_minutes": 589,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 19,
+  "sunshine_consistency": "Moyen"
+}

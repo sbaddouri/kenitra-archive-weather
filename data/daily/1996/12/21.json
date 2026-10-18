@@ -1,0 +1,18 @@
+{
+  "date": "1996-12-21",
+  "weather_code": 63,
+  "temp_max": 18.9,
+  "temp_min": 14.4,
+  "temp_mean": 16.2,
+  "precipitation": 20.1,
+  "sunshine": 16615.12,
+  "wind_speed_max": 32.8,
+  "sunrise": "1996-12-21T08:28",
+  "sunset": "1996-12-21T18:20",
+  "sunshine_duration_seconds": 16615.12,
+  "sunshine_duration_minutes": 277,
+  "estimated_daily_sunshine_minutes": 108,
+  "estimated_daily_sunshine": "1 h 48 min",
+  "sunshine_difference_minutes": 169,
+  "sunshine_consistency": "Faible"
+}

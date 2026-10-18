@@ -1,0 +1,18 @@
+{
+  "date": "1995-01-31",
+  "weather_code": 2,
+  "temp_max": 19.2,
+  "temp_min": 11.4,
+  "temp_mean": 14.9,
+  "precipitation": 0,
+  "sunshine": 36002.71,
+  "wind_speed_max": 13.9,
+  "sunrise": "1995-01-31T08:24",
+  "sunset": "1995-01-31T18:54",
+  "sunshine_duration_seconds": 36002.71,
+  "sunshine_duration_minutes": 600,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

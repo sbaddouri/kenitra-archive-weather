@@ -1,0 +1,18 @@
+{
+  "date": "1996-11-28",
+  "weather_code": 51,
+  "temp_max": 18.7,
+  "temp_min": 13.8,
+  "temp_mean": 16,
+  "precipitation": 0.4,
+  "sunshine": 29464.89,
+  "wind_speed_max": 14.7,
+  "sunrise": "1996-11-28T08:11",
+  "sunset": "1996-11-28T18:16",
+  "sunshine_duration_seconds": 29464.89,
+  "sunshine_duration_minutes": 491,
+  "estimated_daily_sunshine_minutes": 204,
+  "estimated_daily_sunshine": "3 h 24 min",
+  "sunshine_difference_minutes": 287,
+  "sunshine_consistency": "Faible"
+}

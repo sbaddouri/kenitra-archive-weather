@@ -1,0 +1,18 @@
+{
+  "date": "1994-10-08",
+  "weather_code": 55,
+  "temp_max": 24.4,
+  "temp_min": 16.8,
+  "temp_mean": 20.5,
+  "precipitation": 3.6,
+  "sunshine": 39436.29,
+  "wind_speed_max": 13.4,
+  "sunrise": "1994-10-08T07:25",
+  "sunset": "1994-10-08T19:01",
+  "sunshine_duration_seconds": 39436.29,
+  "sunshine_duration_minutes": 657,
+  "estimated_daily_sunshine_minutes": 630,
+  "estimated_daily_sunshine": "10 h 30 min",
+  "sunshine_difference_minutes": 27,
+  "sunshine_consistency": "Moyen"
+}
