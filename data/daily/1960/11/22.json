@@ -1,0 +1,18 @@
+{
+  "date": "1960-11-22",
+  "weather_code": 53,
+  "temp_max": 19,
+  "temp_min": 16,
+  "temp_mean": 17.4,
+  "precipitation": 3,
+  "sunshine": 30442.36,
+  "wind_speed_max": 18.7,
+  "sunrise": "1960-11-22T08:06",
+  "sunset": "1960-11-22T18:18",
+  "sunshine_duration_seconds": 30442.36,
+  "sunshine_duration_minutes": 507,
+  "estimated_daily_sunshine_minutes": 123,
+  "estimated_daily_sunshine": "2 h 03 min",
+  "sunshine_difference_minutes": 384,
+  "sunshine_consistency": "Faible"
+}

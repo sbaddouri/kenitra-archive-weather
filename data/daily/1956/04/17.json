@@ -1,0 +1,18 @@
+{
+  "date": "1956-04-17",
+  "weather_code": 3,
+  "temp_max": 18.3,
+  "temp_min": 12,
+  "temp_mean": 15,
+  "precipitation": 0,
+  "sunshine": 43240.44,
+  "wind_speed_max": 14.1,
+  "sunrise": "1956-04-17T06:52",
+  "sunset": "1956-04-17T19:59",
+  "sunshine_duration_seconds": 43240.44,
+  "sunshine_duration_minutes": 721,
+  "estimated_daily_sunshine_minutes": 504,
+  "estimated_daily_sunshine": "8 h 24 min",
+  "sunshine_difference_minutes": 217,
+  "sunshine_consistency": "Faible"
+}

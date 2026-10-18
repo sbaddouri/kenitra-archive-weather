@@ -1,0 +1,18 @@
+{
+  "date": "1964-09-02",
+  "weather_code": 2,
+  "temp_max": 27.6,
+  "temp_min": 21.5,
+  "temp_mean": 23.9,
+  "precipitation": 0,
+  "sunshine": 45750.27,
+  "wind_speed_max": 15.7,
+  "sunrise": "1964-09-02T07:00",
+  "sunset": "1964-09-02T19:51",
+  "sunshine_duration_seconds": 45750.27,
+  "sunshine_duration_minutes": 763,
+  "estimated_daily_sunshine_minutes": 645,
+  "estimated_daily_sunshine": "10 h 45 min",
+  "sunshine_difference_minutes": 118,
+  "sunshine_consistency": "Faible"
+}

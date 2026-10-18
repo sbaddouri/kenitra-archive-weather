@@ -1,0 +1,18 @@
+{
+  "date": "1960-10-23",
+  "weather_code": 55,
+  "temp_max": 19.8,
+  "temp_min": 16.5,
+  "temp_mean": 17.9,
+  "precipitation": 7.5,
+  "sunshine": 35362.01,
+  "wind_speed_max": 26.5,
+  "sunrise": "1960-10-23T07:38",
+  "sunset": "1960-10-23T18:42",
+  "sunshine_duration_seconds": 35362.01,
+  "sunshine_duration_minutes": 589,
+  "estimated_daily_sunshine_minutes": 183,
+  "estimated_daily_sunshine": "3 h 03 min",
+  "sunshine_difference_minutes": 406,
+  "sunshine_consistency": "Faible"
+}

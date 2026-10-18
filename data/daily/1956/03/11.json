@@ -1,0 +1,18 @@
+{
+  "date": "1956-03-11",
+  "weather_code": 61,
+  "temp_max": 12.7,
+  "temp_min": 10.3,
+  "temp_mean": 11.7,
+  "precipitation": 14.4,
+  "sunshine": 604.64,
+  "wind_speed_max": 19.4,
+  "sunrise": "1956-03-11T07:42",
+  "sunset": "1956-03-11T19:30",
+  "sunshine_duration_seconds": 604.64,
+  "sunshine_duration_minutes": 10,
+  "estimated_daily_sunshine_minutes": 114,
+  "estimated_daily_sunshine": "1 h 54 min",
+  "sunshine_difference_minutes": 104,
+  "sunshine_consistency": "Faible"
+}

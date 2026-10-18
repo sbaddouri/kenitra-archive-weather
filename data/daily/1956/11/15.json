@@ -1,0 +1,18 @@
+{
+  "date": "1956-11-15",
+  "weather_code": 0,
+  "temp_max": 17.6,
+  "temp_min": 10.7,
+  "temp_mean": 14.3,
+  "precipitation": 0,
+  "sunshine": 35842.83,
+  "wind_speed_max": 13.2,
+  "sunrise": "1956-11-15T07:59",
+  "sunset": "1956-11-15T18:22",
+  "sunshine_duration_seconds": 35842.83,
+  "sunshine_duration_minutes": 597,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 63,
+  "sunshine_consistency": "Faible"
+}

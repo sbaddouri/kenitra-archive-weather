@@ -1,0 +1,18 @@
+{
+  "date": "1964-03-07",
+  "weather_code": 51,
+  "temp_max": 18.2,
+  "temp_min": 14.5,
+  "temp_mean": 16,
+  "precipitation": 1.1,
+  "sunshine": 32244.91,
+  "wind_speed_max": 28.2,
+  "sunrise": "1964-03-07T07:47",
+  "sunset": "1964-03-07T19:27",
+  "sunshine_duration_seconds": 32244.91,
+  "sunshine_duration_minutes": 537,
+  "estimated_daily_sunshine_minutes": 144,
+  "estimated_daily_sunshine": "2 h 24 min",
+  "sunshine_difference_minutes": 393,
+  "sunshine_consistency": "Faible"
+}

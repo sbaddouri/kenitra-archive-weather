@@ -1,0 +1,18 @@
+{
+  "date": "1960-09-22",
+  "weather_code": 3,
+  "temp_max": 24.8,
+  "temp_min": 18.5,
+  "temp_mean": 21.4,
+  "precipitation": 0,
+  "sunshine": 41684.35,
+  "wind_speed_max": 14.3,
+  "sunrise": "1960-09-22T07:14",
+  "sunset": "1960-09-22T19:23",
+  "sunshine_duration_seconds": 41684.35,
+  "sunshine_duration_minutes": 695,
+  "estimated_daily_sunshine_minutes": 324,
+  "estimated_daily_sunshine": "5 h 24 min",
+  "sunshine_difference_minutes": 371,
+  "sunshine_consistency": "Faible"
+}

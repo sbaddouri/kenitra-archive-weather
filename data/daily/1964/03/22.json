@@ -1,0 +1,18 @@
+{
+  "date": "1964-03-22",
+  "weather_code": 1,
+  "temp_max": 19.6,
+  "temp_min": 10.7,
+  "temp_mean": 14.8,
+  "precipitation": 0,
+  "sunshine": 41290.1,
+  "wind_speed_max": 15.7,
+  "sunrise": "1964-03-22T07:27",
+  "sunset": "1964-03-22T19:39",
+  "sunshine_duration_seconds": 41290.1,
+  "sunshine_duration_minutes": 688,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 28,
+  "sunshine_consistency": "Moyen"
+}

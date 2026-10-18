@@ -1,0 +1,18 @@
+{
+  "date": "1960-12-08",
+  "weather_code": 61,
+  "temp_max": 15,
+  "temp_min": 12.1,
+  "temp_mean": 14,
+  "precipitation": 9.3,
+  "sunshine": 32940.88,
+  "wind_speed_max": 27.9,
+  "sunrise": "1960-12-08T08:20",
+  "sunset": "1960-12-08T18:16",
+  "sunshine_duration_seconds": 32940.88,
+  "sunshine_duration_minutes": 549,
+  "estimated_daily_sunshine_minutes": 231,
+  "estimated_daily_sunshine": "3 h 51 min",
+  "sunshine_difference_minutes": 318,
+  "sunshine_consistency": "Faible"
+}

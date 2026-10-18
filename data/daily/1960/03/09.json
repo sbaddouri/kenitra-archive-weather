@@ -1,0 +1,18 @@
+{
+  "date": "1960-03-09",
+  "weather_code": 63,
+  "temp_max": 15.7,
+  "temp_min": 13.5,
+  "temp_mean": 14.9,
+  "precipitation": 22.3,
+  "sunshine": 16848.78,
+  "wind_speed_max": 30.3,
+  "sunrise": "1960-03-09T07:45",
+  "sunset": "1960-03-09T19:29",
+  "sunshine_duration_seconds": 16848.78,
+  "sunshine_duration_minutes": 281,
+  "estimated_daily_sunshine_minutes": 87,
+  "estimated_daily_sunshine": "1 h 27 min",
+  "sunshine_difference_minutes": 194,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1960-02-08",
+  "weather_code": 53,
+  "temp_max": 13.6,
+  "temp_min": 9.2,
+  "temp_mean": 11.8,
+  "precipitation": 1.2,
+  "sunshine": 37144.88,
+  "wind_speed_max": 14.5,
+  "sunrise": "1960-02-08T08:19",
+  "sunset": "1960-02-08T19:02",
+  "sunshine_duration_seconds": 37144.88,
+  "sunshine_duration_minutes": 619,
+  "estimated_daily_sunshine_minutes": 450,
+  "estimated_daily_sunshine": "7 h 30 min",
+  "sunshine_difference_minutes": 169,
+  "sunshine_consistency": "Faible"
+}

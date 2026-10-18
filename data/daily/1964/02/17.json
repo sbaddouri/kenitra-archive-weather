@@ -1,0 +1,18 @@
+{
+  "date": "1964-02-17",
+  "weather_code": 55,
+  "temp_max": 18.3,
+  "temp_min": 13.7,
+  "temp_mean": 15.7,
+  "precipitation": 5.8,
+  "sunshine": 16421.68,
+  "wind_speed_max": 29,
+  "sunrise": "1964-02-17T08:10",
+  "sunset": "1964-02-17T19:10",
+  "sunshine_duration_seconds": 16421.68,
+  "sunshine_duration_minutes": 274,
+  "estimated_daily_sunshine_minutes": 111,
+  "estimated_daily_sunshine": "1 h 51 min",
+  "sunshine_difference_minutes": 163,
+  "sunshine_consistency": "Faible"
+}

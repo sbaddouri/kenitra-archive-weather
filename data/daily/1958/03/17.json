@@ -1,0 +1,18 @@
+{
+  "date": "1958-03-17",
+  "weather_code": 51,
+  "temp_max": 17.8,
+  "temp_min": 14.2,
+  "temp_mean": 15.7,
+  "precipitation": 0.1,
+  "sunshine": 19309.32,
+  "wind_speed_max": 10.8,
+  "sunrise": "1958-03-17T07:34",
+  "sunset": "1958-03-17T19:35",
+  "sunshine_duration_seconds": 19309.32,
+  "sunshine_duration_minutes": 322,
+  "estimated_daily_sunshine_minutes": 105,
+  "estimated_daily_sunshine": "1 h 45 min",
+  "sunshine_difference_minutes": 217,
+  "sunshine_consistency": "Faible"
+}

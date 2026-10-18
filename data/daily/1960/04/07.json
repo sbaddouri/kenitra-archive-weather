@@ -1,0 +1,18 @@
+{
+  "date": "1960-04-07",
+  "weather_code": 51,
+  "temp_max": 19.2,
+  "temp_min": 16.3,
+  "temp_mean": 17.6,
+  "precipitation": 0.6,
+  "sunshine": 18631.85,
+  "wind_speed_max": 18.4,
+  "sunrise": "1960-04-07T07:05",
+  "sunset": "1960-04-07T19:51",
+  "sunshine_duration_seconds": 18631.85,
+  "sunshine_duration_minutes": 311,
+  "estimated_daily_sunshine_minutes": 90,
+  "estimated_daily_sunshine": "1 h 30 min",
+  "sunshine_difference_minutes": 221,
+  "sunshine_consistency": "Faible"
+}

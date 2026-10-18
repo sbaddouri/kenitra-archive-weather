@@ -1,0 +1,18 @@
+{
+  "date": "1955-08-29",
+  "weather_code": 51,
+  "temp_max": 27.4,
+  "temp_min": 20.5,
+  "temp_mean": 23.9,
+  "precipitation": 0.1,
+  "sunshine": 46354.27,
+  "wind_speed_max": 15.5,
+  "sunrise": "1955-08-29T06:56",
+  "sunset": "1955-08-29T19:57",
+  "sunshine_duration_seconds": 46354.27,
+  "sunshine_duration_minutes": 773,
+  "estimated_daily_sunshine_minutes": 750,
+  "estimated_daily_sunshine": "12 h 30 min",
+  "sunshine_difference_minutes": 23,
+  "sunshine_consistency": "Moyen"
+}

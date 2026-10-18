@@ -1,0 +1,18 @@
+{
+  "date": "1956-11-29",
+  "weather_code": 51,
+  "temp_max": 16.6,
+  "temp_min": 12.9,
+  "temp_mean": 14.7,
+  "precipitation": 0.5,
+  "sunshine": 29103.05,
+  "wind_speed_max": 22,
+  "sunrise": "1956-11-29T08:12",
+  "sunset": "1956-11-29T18:16",
+  "sunshine_duration_seconds": 29103.05,
+  "sunshine_duration_minutes": 485,
+  "estimated_daily_sunshine_minutes": 216,
+  "estimated_daily_sunshine": "3 h 36 min",
+  "sunshine_difference_minutes": 269,
+  "sunshine_consistency": "Faible"
+}

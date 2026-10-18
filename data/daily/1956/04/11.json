@@ -1,0 +1,18 @@
+{
+  "date": "1956-04-11",
+  "weather_code": 53,
+  "temp_max": 19.4,
+  "temp_min": 12.4,
+  "temp_mean": 16,
+  "precipitation": 0.8,
+  "sunshine": 45982.39,
+  "wind_speed_max": 13,
+  "sunrise": "1956-04-11T07:00",
+  "sunset": "1956-04-11T19:54",
+  "sunshine_duration_seconds": 45982.39,
+  "sunshine_duration_minutes": 766,
+  "estimated_daily_sunshine_minutes": 504,
+  "estimated_daily_sunshine": "8 h 24 min",
+  "sunshine_difference_minutes": 262,
+  "sunshine_consistency": "Faible"
+}

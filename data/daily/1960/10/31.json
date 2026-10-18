@@ -1,0 +1,18 @@
+{
+  "date": "1960-10-31",
+  "weather_code": 2,
+  "temp_max": 23.6,
+  "temp_min": 14.5,
+  "temp_mean": 18.3,
+  "precipitation": 0,
+  "sunshine": 36868.42,
+  "wind_speed_max": 11.4,
+  "sunrise": "1960-10-31T07:45",
+  "sunset": "1960-10-31T18:33",
+  "sunshine_duration_seconds": 36868.42,
+  "sunshine_duration_minutes": 614,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 14,
+  "sunshine_consistency": "Bon"
+}

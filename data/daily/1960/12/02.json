@@ -1,0 +1,18 @@
+{
+  "date": "1960-12-02",
+  "weather_code": 63,
+  "temp_max": 14.4,
+  "temp_min": 12.4,
+  "temp_mean": 13.7,
+  "precipitation": 14.1,
+  "sunshine": 28320.15,
+  "wind_speed_max": 22.1,
+  "sunrise": "1960-12-02T08:15",
+  "sunset": "1960-12-02T18:16",
+  "sunshine_duration_seconds": 28320.15,
+  "sunshine_duration_minutes": 472,
+  "estimated_daily_sunshine_minutes": 156,
+  "estimated_daily_sunshine": "2 h 36 min",
+  "sunshine_difference_minutes": 316,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1960-02-13",
+  "weather_code": 55,
+  "temp_max": 17,
+  "temp_min": 11.7,
+  "temp_mean": 14,
+  "precipitation": 3.9,
+  "sunshine": 34682.22,
+  "wind_speed_max": 19.3,
+  "sunrise": "1960-02-13T08:14",
+  "sunset": "1960-02-13T19:06",
+  "sunshine_duration_seconds": 34682.22,
+  "sunshine_duration_minutes": 578,
+  "estimated_daily_sunshine_minutes": 237,
+  "estimated_daily_sunshine": "3 h 57 min",
+  "sunshine_difference_minutes": 341,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1964-02-14",
+  "weather_code": 63,
+  "temp_max": 13.8,
+  "temp_min": 10.6,
+  "temp_mean": 12.4,
+  "precipitation": 30.4,
+  "sunshine": 31199.49,
+  "wind_speed_max": 38.8,
+  "sunrise": "1964-02-14T08:13",
+  "sunset": "1964-02-14T19:07",
+  "sunshine_duration_seconds": 31199.49,
+  "sunshine_duration_minutes": 520,
+  "estimated_daily_sunshine_minutes": 69,
+  "estimated_daily_sunshine": "1 h 09 min",
+  "sunshine_difference_minutes": 451,
+  "sunshine_consistency": "Faible"
+}

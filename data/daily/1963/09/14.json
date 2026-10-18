@@ -1,0 +1,18 @@
+{
+  "date": "1963-09-14",
+  "weather_code": 2,
+  "temp_max": 23.7,
+  "temp_min": 17.4,
+  "temp_mean": 20.1,
+  "precipitation": 0,
+  "sunshine": 43203.23,
+  "wind_speed_max": 16.5,
+  "sunrise": "1963-09-14T07:07",
+  "sunset": "1963-09-14T19:35",
+  "sunshine_duration_seconds": 43203.23,
+  "sunshine_duration_minutes": 720,
+  "estimated_daily_sunshine_minutes": 705,
+  "estimated_daily_sunshine": "11 h 45 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

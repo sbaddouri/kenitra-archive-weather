@@ -1,0 +1,18 @@
+{
+  "date": "1961-10-30",
+  "weather_code": 53,
+  "temp_max": 21.1,
+  "temp_min": 15.3,
+  "temp_mean": 17.6,
+  "precipitation": 1.7,
+  "sunshine": 35657.93,
+  "wind_speed_max": 26.1,
+  "sunrise": "1961-10-30T07:44",
+  "sunset": "1961-10-30T18:35",
+  "sunshine_duration_seconds": 35657.93,
+  "sunshine_duration_minutes": 594,
+  "estimated_daily_sunshine_minutes": 219,
+  "estimated_daily_sunshine": "3 h 39 min",
+  "sunshine_difference_minutes": 375,
+  "sunshine_consistency": "Faible"
+}

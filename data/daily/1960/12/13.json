@@ -1,0 +1,18 @@
+{
+  "date": "1960-12-13",
+  "weather_code": 53,
+  "temp_max": 15.9,
+  "temp_min": 12.8,
+  "temp_mean": 14.7,
+  "precipitation": 3.1,
+  "sunshine": 9289.45,
+  "wind_speed_max": 19.7,
+  "sunrise": "1960-12-13T08:23",
+  "sunset": "1960-12-13T18:17",
+  "sunshine_duration_seconds": 9289.45,
+  "sunshine_duration_minutes": 155,
+  "estimated_daily_sunshine_minutes": 96,
+  "estimated_daily_sunshine": "1 h 36 min",
+  "sunshine_difference_minutes": 59,
+  "sunshine_consistency": "Faible"
+}

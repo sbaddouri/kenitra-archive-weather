@@ -1,0 +1,18 @@
+{
+  "date": "1962-01-04",
+  "weather_code": 51,
+  "temp_max": 17.3,
+  "temp_min": 12.7,
+  "temp_mean": 15,
+  "precipitation": 0.9,
+  "sunshine": 31559.87,
+  "wind_speed_max": 12.7,
+  "sunrise": "1962-01-04T08:32",
+  "sunset": "1962-01-04T18:29",
+  "sunshine_duration_seconds": 31559.87,
+  "sunshine_duration_minutes": 526,
+  "estimated_daily_sunshine_minutes": 162,
+  "estimated_daily_sunshine": "2 h 42 min",
+  "sunshine_difference_minutes": 364,
+  "sunshine_consistency": "Faible"
+}

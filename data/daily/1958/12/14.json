@@ -1,0 +1,18 @@
+{
+  "date": "1958-12-14",
+  "weather_code": 63,
+  "temp_max": 17.1,
+  "temp_min": 15.1,
+  "temp_mean": 16.1,
+  "precipitation": 39,
+  "sunshine": 12038.13,
+  "wind_speed_max": 37.5,
+  "sunrise": "1958-12-14T08:24",
+  "sunset": "1958-12-14T18:17",
+  "sunshine_duration_seconds": 12038.13,
+  "sunshine_duration_minutes": 201,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 129,
+  "sunshine_consistency": "Faible"
+}

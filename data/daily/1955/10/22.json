@@ -1,0 +1,18 @@
+{
+  "date": "1955-10-22",
+  "weather_code": 3,
+  "temp_max": 20,
+  "temp_min": 14.6,
+  "temp_mean": 17.2,
+  "precipitation": 0,
+  "sunshine": 36805.42,
+  "wind_speed_max": 15.6,
+  "sunrise": "1955-10-22T07:36",
+  "sunset": "1955-10-22T18:44",
+  "sunshine_duration_seconds": 36805.42,
+  "sunshine_duration_minutes": 613,
+  "estimated_daily_sunshine_minutes": 270,
+  "estimated_daily_sunshine": "4 h 30 min",
+  "sunshine_difference_minutes": 343,
+  "sunshine_consistency": "Faible"
+}

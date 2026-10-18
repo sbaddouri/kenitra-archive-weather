@@ -1,0 +1,18 @@
+{
+  "date": "1957-12-04",
+  "weather_code": 3,
+  "temp_max": 17.6,
+  "temp_min": 10.3,
+  "temp_mean": 14,
+  "precipitation": 0,
+  "sunshine": 31197.61,
+  "wind_speed_max": 8.4,
+  "sunrise": "1957-12-04T08:16",
+  "sunset": "1957-12-04T18:16",
+  "sunshine_duration_seconds": 31197.61,
+  "sunshine_duration_minutes": 520,
+  "estimated_daily_sunshine_minutes": 84,
+  "estimated_daily_sunshine": "1 h 24 min",
+  "sunshine_difference_minutes": 436,
+  "sunshine_consistency": "Faible"
+}

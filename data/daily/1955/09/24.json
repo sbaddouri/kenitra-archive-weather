@@ -1,0 +1,18 @@
+{
+  "date": "1955-09-24",
+  "weather_code": 2,
+  "temp_max": 25.7,
+  "temp_min": 18.9,
+  "temp_mean": 21.8,
+  "precipitation": 0,
+  "sunshine": 40876.36,
+  "wind_speed_max": 17.3,
+  "sunrise": "1955-09-24T07:14",
+  "sunset": "1955-09-24T19:21",
+  "sunshine_duration_seconds": 40876.36,
+  "sunshine_duration_minutes": 681,
+  "estimated_daily_sunshine_minutes": 690,
+  "estimated_daily_sunshine": "11 h 30 min",
+  "sunshine_difference_minutes": 9,
+  "sunshine_consistency": "Bon"
+}

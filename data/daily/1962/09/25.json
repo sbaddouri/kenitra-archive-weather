@@ -1,0 +1,18 @@
+{
+  "date": "1962-09-25",
+  "weather_code": 55,
+  "temp_max": 24.8,
+  "temp_min": 20.6,
+  "temp_mean": 22.7,
+  "precipitation": 2.6,
+  "sunshine": 41741.16,
+  "wind_speed_max": 25.3,
+  "sunrise": "1962-09-25T07:15",
+  "sunset": "1962-09-25T19:19",
+  "sunshine_duration_seconds": 41741.16,
+  "sunshine_duration_minutes": 696,
+  "estimated_daily_sunshine_minutes": 369,
+  "estimated_daily_sunshine": "6 h 09 min",
+  "sunshine_difference_minutes": 327,
+  "sunshine_consistency": "Faible"
+}

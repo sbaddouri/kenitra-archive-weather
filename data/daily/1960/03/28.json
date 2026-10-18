@@ -1,0 +1,18 @@
+{
+  "date": "1960-03-28",
+  "weather_code": 51,
+  "temp_max": 15.7,
+  "temp_min": 11.9,
+  "temp_mean": 13.5,
+  "precipitation": 4.6,
+  "sunshine": 39690.01,
+  "wind_speed_max": 28.2,
+  "sunrise": "1960-03-28T07:19",
+  "sunset": "1960-03-28T19:44",
+  "sunshine_duration_seconds": 39690.01,
+  "sunshine_duration_minutes": 662,
+  "estimated_daily_sunshine_minutes": 180,
+  "estimated_daily_sunshine": "3 h 00 min",
+  "sunshine_difference_minutes": 482,
+  "sunshine_consistency": "Faible"
+}

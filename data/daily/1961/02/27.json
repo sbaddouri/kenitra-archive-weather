@@ -1,0 +1,18 @@
+{
+  "date": "1961-02-27",
+  "weather_code": 1,
+  "temp_max": 21.8,
+  "temp_min": 11,
+  "temp_mean": 16,
+  "precipitation": 0,
+  "sunshine": 39473.22,
+  "wind_speed_max": 11.5,
+  "sunrise": "1961-02-27T07:58",
+  "sunset": "1961-02-27T19:20",
+  "sunshine_duration_seconds": 39473.22,
+  "sunshine_duration_minutes": 658,
+  "estimated_daily_sunshine_minutes": 675,
+  "estimated_daily_sunshine": "11 h 15 min",
+  "sunshine_difference_minutes": 17,
+  "sunshine_consistency": "Moyen"
+}

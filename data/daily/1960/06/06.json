@@ -1,0 +1,18 @@
+{
+  "date": "1960-06-06",
+  "weather_code": 51,
+  "temp_max": 21.4,
+  "temp_min": 17.6,
+  "temp_mean": 19.3,
+  "precipitation": 0.4,
+  "sunshine": 44816.71,
+  "wind_speed_max": 17.7,
+  "sunrise": "1960-06-06T06:13",
+  "sunset": "1960-06-06T20:35",
+  "sunshine_duration_seconds": 44816.71,
+  "sunshine_duration_minutes": 747,
+  "estimated_daily_sunshine_minutes": 480,
+  "estimated_daily_sunshine": "8 h 00 min",
+  "sunshine_difference_minutes": 267,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1963-09-18",
+  "weather_code": 2,
+  "temp_max": 22.3,
+  "temp_min": 16.6,
+  "temp_mean": 19.8,
+  "precipitation": 0,
+  "sunshine": 41088.22,
+  "wind_speed_max": 15.6,
+  "sunrise": "1963-09-18T07:10",
+  "sunset": "1963-09-18T19:29",
+  "sunshine_duration_seconds": 41088.22,
+  "sunshine_duration_minutes": 685,
+  "estimated_daily_sunshine_minutes": 525,
+  "estimated_daily_sunshine": "8 h 45 min",
+  "sunshine_difference_minutes": 160,
+  "sunshine_consistency": "Faible"
+}

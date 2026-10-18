@@ -1,0 +1,18 @@
+{
+  "date": "1957-09-21",
+  "weather_code": 3,
+  "temp_max": 26,
+  "temp_min": 20.2,
+  "temp_mean": 22.5,
+  "precipitation": 0,
+  "sunshine": 38086.6,
+  "wind_speed_max": 16.5,
+  "sunrise": "1957-09-21T07:13",
+  "sunset": "1957-09-21T19:24",
+  "sunshine_duration_seconds": 38086.6,
+  "sunshine_duration_minutes": 635,
+  "estimated_daily_sunshine_minutes": 318,
+  "estimated_daily_sunshine": "5 h 18 min",
+  "sunshine_difference_minutes": 317,
+  "sunshine_consistency": "Faible"
+}

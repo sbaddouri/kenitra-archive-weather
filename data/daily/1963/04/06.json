@@ -1,0 +1,18 @@
+{
+  "date": "1963-04-06",
+  "weather_code": 51,
+  "temp_max": 16.5,
+  "temp_min": 12.6,
+  "temp_mean": 14.6,
+  "precipitation": 1,
+  "sunshine": 43731.53,
+  "wind_speed_max": 18.4,
+  "sunrise": "1963-04-06T07:07",
+  "sunset": "1963-04-06T19:50",
+  "sunshine_duration_seconds": 43731.53,
+  "sunshine_duration_minutes": 729,
+  "estimated_daily_sunshine_minutes": 411,
+  "estimated_daily_sunshine": "6 h 51 min",
+  "sunshine_difference_minutes": 318,
+  "sunshine_consistency": "Faible"
+}

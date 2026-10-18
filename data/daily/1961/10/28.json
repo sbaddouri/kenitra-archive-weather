@@ -1,0 +1,18 @@
+{
+  "date": "1961-10-28",
+  "weather_code": 61,
+  "temp_max": 18.4,
+  "temp_min": 16.2,
+  "temp_mean": 17.2,
+  "precipitation": 11.7,
+  "sunshine": 1031.26,
+  "wind_speed_max": 11.8,
+  "sunrise": "1961-10-28T07:42",
+  "sunset": "1961-10-28T18:37",
+  "sunshine_duration_seconds": 1031.26,
+  "sunshine_duration_minutes": 17,
+  "estimated_daily_sunshine_minutes": 108,
+  "estimated_daily_sunshine": "1 h 48 min",
+  "sunshine_difference_minutes": 91,
+  "sunshine_consistency": "Faible"
+}

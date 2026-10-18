@@ -1,0 +1,18 @@
+{
+  "date": "1962-09-07",
+  "weather_code": 1,
+  "temp_max": 27.2,
+  "temp_min": 21.5,
+  "temp_mean": 23.9,
+  "precipitation": 0,
+  "sunshine": 43783.36,
+  "wind_speed_max": 16,
+  "sunrise": "1962-09-07T07:03",
+  "sunset": "1962-09-07T19:44",
+  "sunshine_duration_seconds": 43783.36,
+  "sunshine_duration_minutes": 730,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 10,
+  "sunshine_consistency": "Bon"
+}

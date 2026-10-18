@@ -1,0 +1,18 @@
+{
+  "date": "1959-10-18",
+  "weather_code": 2,
+  "temp_max": 23.3,
+  "temp_min": 15.5,
+  "temp_mean": 19.1,
+  "precipitation": 0,
+  "sunshine": 38704.22,
+  "wind_speed_max": 14.2,
+  "sunrise": "1959-10-18T07:33",
+  "sunset": "1959-10-18T18:49",
+  "sunshine_duration_seconds": 38704.22,
+  "sunshine_duration_minutes": 645,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1960-07-14",
+  "weather_code": 2,
+  "temp_max": 26.3,
+  "temp_min": 21,
+  "temp_mean": 23.3,
+  "precipitation": 0,
+  "sunshine": 47290.3,
+  "wind_speed_max": 16.6,
+  "sunrise": "1960-07-14T06:24",
+  "sunset": "1960-07-14T20:39",
+  "sunshine_duration_seconds": 47290.3,
+  "sunshine_duration_minutes": 788,
+  "estimated_daily_sunshine_minutes": 690,
+  "estimated_daily_sunshine": "11 h 30 min",
+  "sunshine_difference_minutes": 98,
+  "sunshine_consistency": "Faible"
+}

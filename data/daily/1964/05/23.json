@@ -1,0 +1,18 @@
+{
+  "date": "1964-05-23",
+  "weather_code": 2,
+  "temp_max": 22.5,
+  "temp_min": 16.2,
+  "temp_mean": 19,
+  "precipitation": 0,
+  "sunshine": 46674.32,
+  "wind_speed_max": 19.5,
+  "sunrise": "1964-05-23T06:18",
+  "sunset": "1964-05-23T20:27",
+  "sunshine_duration_seconds": 46674.32,
+  "sunshine_duration_minutes": 778,
+  "estimated_daily_sunshine_minutes": 705,
+  "estimated_daily_sunshine": "11 h 45 min",
+  "sunshine_difference_minutes": 73,
+  "sunshine_consistency": "Faible"
+}

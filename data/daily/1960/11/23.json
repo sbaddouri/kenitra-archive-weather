@@ -1,0 +1,18 @@
+{
+  "date": "1960-11-23",
+  "weather_code": 2,
+  "temp_max": 19.2,
+  "temp_min": 14.6,
+  "temp_mean": 16.7,
+  "precipitation": 0,
+  "sunshine": 35013.74,
+  "wind_speed_max": 10.1,
+  "sunrise": "1960-11-23T08:06",
+  "sunset": "1960-11-23T18:18",
+  "sunshine_duration_seconds": 35013.74,
+  "sunshine_duration_minutes": 584,
+  "estimated_daily_sunshine_minutes": 450,
+  "estimated_daily_sunshine": "7 h 30 min",
+  "sunshine_difference_minutes": 134,
+  "sunshine_consistency": "Faible"
+}

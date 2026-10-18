@@ -1,0 +1,18 @@
+{
+  "date": "1959-11-23",
+  "weather_code": 0,
+  "temp_max": 18.9,
+  "temp_min": 11.9,
+  "temp_mean": 14.6,
+  "precipitation": 0,
+  "sunshine": 35350.41,
+  "wind_speed_max": 13.4,
+  "sunrise": "1959-11-23T08:06",
+  "sunset": "1959-11-23T18:18",
+  "sunshine_duration_seconds": 35350.41,
+  "sunshine_duration_minutes": 589,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 11,
+  "sunshine_consistency": "Bon"
+}

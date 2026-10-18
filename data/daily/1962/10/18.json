@@ -1,0 +1,18 @@
+{
+  "date": "1962-10-18",
+  "weather_code": 61,
+  "temp_max": 21.1,
+  "temp_min": 16.8,
+  "temp_mean": 18.8,
+  "precipitation": 8.7,
+  "sunshine": 35454.26,
+  "wind_speed_max": 9.7,
+  "sunrise": "1962-10-18T07:33",
+  "sunset": "1962-10-18T18:48",
+  "sunshine_duration_seconds": 35454.26,
+  "sunshine_duration_minutes": 591,
+  "estimated_daily_sunshine_minutes": 150,
+  "estimated_daily_sunshine": "2 h 30 min",
+  "sunshine_difference_minutes": 441,
+  "sunshine_consistency": "Faible"
+}

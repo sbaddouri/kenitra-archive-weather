@@ -1,0 +1,18 @@
+{
+  "date": "1957-03-13",
+  "weather_code": 63,
+  "temp_max": 15.2,
+  "temp_min": 11.8,
+  "temp_mean": 13.3,
+  "precipitation": 14.7,
+  "sunshine": 33894.2,
+  "wind_speed_max": 22.8,
+  "sunrise": "1957-03-13T07:40",
+  "sunset": "1957-03-13T19:32",
+  "sunshine_duration_seconds": 33894.2,
+  "sunshine_duration_minutes": 565,
+  "estimated_daily_sunshine_minutes": 120,
+  "estimated_daily_sunshine": "2 h 00 min",
+  "sunshine_difference_minutes": 445,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1955-03-20",
+  "weather_code": 61,
+  "temp_max": 17.5,
+  "temp_min": 13.4,
+  "temp_mean": 15.2,
+  "precipitation": 17,
+  "sunshine": 11032.01,
+  "wind_speed_max": 27.2,
+  "sunrise": "1955-03-20T07:31",
+  "sunset": "1955-03-20T19:37",
+  "sunshine_duration_seconds": 11032.01,
+  "sunshine_duration_minutes": 184,
+  "estimated_daily_sunshine_minutes": 129,
+  "estimated_daily_sunshine": "2 h 09 min",
+  "sunshine_difference_minutes": 55,
+  "sunshine_consistency": "Faible"
+}

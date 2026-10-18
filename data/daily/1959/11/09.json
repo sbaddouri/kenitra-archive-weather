@@ -1,0 +1,18 @@
+{
+  "date": "1959-11-09",
+  "weather_code": 55,
+  "temp_max": 18.5,
+  "temp_min": 15.6,
+  "temp_mean": 17,
+  "precipitation": 3.7,
+  "sunshine": 34126.84,
+  "wind_speed_max": 13.8,
+  "sunrise": "1959-11-09T07:52",
+  "sunset": "1959-11-09T18:26",
+  "sunshine_duration_seconds": 34126.84,
+  "sunshine_duration_minutes": 569,
+  "estimated_daily_sunshine_minutes": 183,
+  "estimated_daily_sunshine": "3 h 03 min",
+  "sunshine_difference_minutes": 386,
+  "sunshine_consistency": "Faible"
+}

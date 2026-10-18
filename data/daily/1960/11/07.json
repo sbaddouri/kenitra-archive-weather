@@ -1,0 +1,18 @@
+{
+  "date": "1960-11-07",
+  "weather_code": 51,
+  "temp_max": 19.5,
+  "temp_min": 15,
+  "temp_mean": 17.1,
+  "precipitation": 1.7,
+  "sunshine": 21795.74,
+  "wind_speed_max": 13.1,
+  "sunrise": "1960-11-07T07:51",
+  "sunset": "1960-11-07T18:27",
+  "sunshine_duration_seconds": 21795.74,
+  "sunshine_duration_minutes": 363,
+  "estimated_daily_sunshine_minutes": 174,
+  "estimated_daily_sunshine": "2 h 54 min",
+  "sunshine_difference_minutes": 189,
+  "sunshine_consistency": "Faible"
+}

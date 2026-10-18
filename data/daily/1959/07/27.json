@@ -1,0 +1,18 @@
+{
+  "date": "1959-07-27",
+  "weather_code": 1,
+  "temp_max": 29.7,
+  "temp_min": 19.6,
+  "temp_mean": 24.3,
+  "precipitation": 0,
+  "sunshine": 46866.29,
+  "wind_speed_max": 14.5,
+  "sunrise": "1959-07-27T06:32",
+  "sunset": "1959-07-27T20:32",
+  "sunshine_duration_seconds": 46866.29,
+  "sunshine_duration_minutes": 781,
+  "estimated_daily_sunshine_minutes": 795,
+  "estimated_daily_sunshine": "13 h 15 min",
+  "sunshine_difference_minutes": 14,
+  "sunshine_consistency": "Bon"
+}

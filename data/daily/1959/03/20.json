@@ -1,0 +1,18 @@
+{
+  "date": "1959-03-20",
+  "weather_code": 53,
+  "temp_max": 16.2,
+  "temp_min": 14.1,
+  "temp_mean": 15.1,
+  "precipitation": 4.4,
+  "sunshine": 18350.5,
+  "wind_speed_max": 19.4,
+  "sunrise": "1959-03-20T07:31",
+  "sunset": "1959-03-20T19:37",
+  "sunshine_duration_seconds": 18350.5,
+  "sunshine_duration_minutes": 306,
+  "estimated_daily_sunshine_minutes": 129,
+  "estimated_daily_sunshine": "2 h 09 min",
+  "sunshine_difference_minutes": 177,
+  "sunshine_consistency": "Faible"
+}

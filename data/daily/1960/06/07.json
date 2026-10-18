@@ -1,0 +1,18 @@
+{
+  "date": "1960-06-07",
+  "weather_code": 1,
+  "temp_max": 21.8,
+  "temp_min": 14.4,
+  "temp_mean": 18.5,
+  "precipitation": 0,
+  "sunshine": 48622.8,
+  "wind_speed_max": 16.6,
+  "sunrise": "1960-06-07T06:13",
+  "sunset": "1960-06-07T20:36",
+  "sunshine_duration_seconds": 48622.8,
+  "sunshine_duration_minutes": 810,
+  "estimated_daily_sunshine_minutes": 795,
+  "estimated_daily_sunshine": "13 h 15 min",
+  "sunshine_difference_minutes": 15,
+  "sunshine_consistency": "Bon"
+}

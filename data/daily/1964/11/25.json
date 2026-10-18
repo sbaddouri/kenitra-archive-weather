@@ -1,0 +1,18 @@
+{
+  "date": "1964-11-25",
+  "weather_code": 2,
+  "temp_max": 20.5,
+  "temp_min": 11.3,
+  "temp_mean": 15.6,
+  "precipitation": 0,
+  "sunshine": 35201.81,
+  "wind_speed_max": 10.7,
+  "sunrise": "1964-11-25T08:08",
+  "sunset": "1964-11-25T18:17",
+  "sunshine_duration_seconds": 35201.81,
+  "sunshine_duration_minutes": 587,
+  "estimated_daily_sunshine_minutes": 600,
+  "estimated_daily_sunshine": "10 h 00 min",
+  "sunshine_difference_minutes": 13,
+  "sunshine_consistency": "Bon"
+}

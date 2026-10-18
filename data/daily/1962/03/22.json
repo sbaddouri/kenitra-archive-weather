@@ -1,0 +1,18 @@
+{
+  "date": "1962-03-22",
+  "weather_code": 63,
+  "temp_max": 15.4,
+  "temp_min": 11.9,
+  "temp_mean": 13.4,
+  "precipitation": 29.2,
+  "sunshine": 36150.48,
+  "wind_speed_max": 30.5,
+  "sunrise": "1962-03-22T07:28",
+  "sunset": "1962-03-22T19:39",
+  "sunshine_duration_seconds": 36150.48,
+  "sunshine_duration_minutes": 603,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 531,
+  "sunshine_consistency": "Faible"
+}

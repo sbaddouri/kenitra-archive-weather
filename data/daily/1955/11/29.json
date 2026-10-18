@@ -1,0 +1,18 @@
+{
+  "date": "1955-11-29",
+  "weather_code": 53,
+  "temp_max": 21.6,
+  "temp_min": 15.7,
+  "temp_mean": 19,
+  "precipitation": 0.4,
+  "sunshine": 24539.65,
+  "wind_speed_max": 20.4,
+  "sunrise": "1955-11-29T08:11",
+  "sunset": "1955-11-29T18:16",
+  "sunshine_duration_seconds": 24539.65,
+  "sunshine_duration_minutes": 409,
+  "estimated_daily_sunshine_minutes": 132,
+  "estimated_daily_sunshine": "2 h 12 min",
+  "sunshine_difference_minutes": 277,
+  "sunshine_consistency": "Faible"
+}

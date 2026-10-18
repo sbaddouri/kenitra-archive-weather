@@ -38,6 +38,7 @@ Plages déjà en ligne et vérifiées :
 
 | Plage | Jours | Bissextiles | Audit (valeurs comparées) |
 |---|---|---|---|
+| 1955 → 1964 | 3 653 | 1956, 1960, 1964 | 1 198 184 — 0 écart |
 | 1965 → 1974 | 3 652 | 1968, 1972 | 1 197 856 — 0 écart |
 | 1975 → 1984 | 3 653 | 1976, 1980, 1984 | 1 198 184 — 0 écart |
 

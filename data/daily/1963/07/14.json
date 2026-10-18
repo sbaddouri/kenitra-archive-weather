@@ -1,0 +1,18 @@
+{
+  "date": "1963-07-14",
+  "weather_code": 0,
+  "temp_max": 28.6,
+  "temp_min": 18.5,
+  "temp_mean": 23.3,
+  "precipitation": 0,
+  "sunshine": 47564.19,
+  "wind_speed_max": 15.8,
+  "sunrise": "1963-07-14T06:23",
+  "sunset": "1963-07-14T20:39",
+  "sunshine_duration_seconds": 47564.19,
+  "sunshine_duration_minutes": 793,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 47,
+  "sunshine_consistency": "Faible"
+}

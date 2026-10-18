@@ -1,0 +1,18 @@
+{
+  "date": "1962-12-27",
+  "weather_code": 61,
+  "temp_max": 19.5,
+  "temp_min": 15.3,
+  "temp_mean": 16.9,
+  "precipitation": 6.9,
+  "sunshine": 9413.79,
+  "wind_speed_max": 24.8,
+  "sunrise": "1962-12-27T08:30",
+  "sunset": "1962-12-27T18:23",
+  "sunshine_duration_seconds": 9413.79,
+  "sunshine_duration_minutes": 157,
+  "estimated_daily_sunshine_minutes": 87,
+  "estimated_daily_sunshine": "1 h 27 min",
+  "sunshine_difference_minutes": 70,
+  "sunshine_consistency": "Faible"
+}

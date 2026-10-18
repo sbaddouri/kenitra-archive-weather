@@ -1,0 +1,18 @@
+{
+  "date": "1955-11-24",
+  "weather_code": 61,
+  "temp_max": 22,
+  "temp_min": 16.2,
+  "temp_mean": 18.7,
+  "precipitation": 8.1,
+  "sunshine": 16523.36,
+  "wind_speed_max": 15.8,
+  "sunrise": "1955-11-24T08:07",
+  "sunset": "1955-11-24T18:18",
+  "sunshine_duration_seconds": 16523.36,
+  "sunshine_duration_minutes": 275,
+  "estimated_daily_sunshine_minutes": 156,
+  "estimated_daily_sunshine": "2 h 36 min",
+  "sunshine_difference_minutes": 119,
+  "sunshine_consistency": "Faible"
+}

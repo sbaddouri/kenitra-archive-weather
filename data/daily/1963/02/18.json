@@ -1,0 +1,18 @@
+{
+  "date": "1963-02-18",
+  "weather_code": 63,
+  "temp_max": 17.5,
+  "temp_min": 12.9,
+  "temp_mean": 15.1,
+  "precipitation": 17.1,
+  "sunshine": 30511.52,
+  "wind_speed_max": 26.8,
+  "sunrise": "1963-02-18T08:09",
+  "sunset": "1963-02-18T19:11",
+  "sunshine_duration_seconds": 30511.52,
+  "sunshine_duration_minutes": 509,
+  "estimated_daily_sunshine_minutes": 141,
+  "estimated_daily_sunshine": "2 h 21 min",
+  "sunshine_difference_minutes": 368,
+  "sunshine_consistency": "Faible"
+}

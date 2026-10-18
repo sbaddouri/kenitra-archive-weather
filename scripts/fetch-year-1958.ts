@@ -2,7 +2,7 @@ import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
 import {
-  calculateHourlySunshine,
+  calculateHourlySunshineWithDaylight,
   calculateDailySunshine,
   formatSunshineDuration,
   calculateSunshineConsistency,
@@ -54,6 +54,13 @@ async function fetchAndSaveYear1958() {
       }
     }
 
+    const sunriseByDate: { [key: string]: string } = {};
+    const sunsetByDate: { [key: string]: string } = {};
+    for (let i = 0; i < daily.time.length; i++) {
+      sunriseByDate[daily.time[i]] = daily.sunrise[i];
+      sunsetByDate[daily.time[i]] = daily.sunset[i];
+    }
+
     const hourlyByDate: { [key: string]: any[] } = {};
     for (let i = 0; i < hourly.time.length; i++) {
       const time = hourly.time[i];
@@ -61,7 +68,12 @@ async function fetchAndSaveYear1958() {
       if (!hourlyByDate[date]) hourlyByDate[date] = [];
 
       const hourlyWeatherCode = hourly.weather_code[i];
-      const estimatedHourly = calculateHourlySunshine(hourlyWeatherCode);
+      const estimatedHourly = calculateHourlySunshineWithDaylight(
+        hourlyWeatherCode,
+        time,
+        sunriseByDate[date],
+        sunsetByDate[date]
+      );
 
       hourlyByDate[date].push({
         time,

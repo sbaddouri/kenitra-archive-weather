@@ -1,0 +1,18 @@
+{
+  "date": "1956-02-24",
+  "weather_code": 55,
+  "temp_max": 11.7,
+  "temp_min": 8.7,
+  "temp_mean": 10.3,
+  "precipitation": 9.9,
+  "sunshine": 38224.32,
+  "wind_speed_max": 38.8,
+  "sunrise": "1956-02-24T08:02",
+  "sunset": "1956-02-24T19:17",
+  "sunshine_duration_seconds": 38224.32,
+  "sunshine_duration_minutes": 637,
+  "estimated_daily_sunshine_minutes": 171,
+  "estimated_daily_sunshine": "2 h 51 min",
+  "sunshine_difference_minutes": 466,
+  "sunshine_consistency": "Faible"
+}

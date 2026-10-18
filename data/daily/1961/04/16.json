@@ -1,0 +1,18 @@
+{
+  "date": "1961-04-16",
+  "weather_code": 51,
+  "temp_max": 17.9,
+  "temp_min": 13,
+  "temp_mean": 15.8,
+  "precipitation": 0.8,
+  "sunshine": 10646.84,
+  "wind_speed_max": 19.1,
+  "sunrise": "1961-04-16T06:54",
+  "sunset": "1961-04-16T19:58",
+  "sunshine_duration_seconds": 10646.84,
+  "sunshine_duration_minutes": 177,
+  "estimated_daily_sunshine_minutes": 186,
+  "estimated_daily_sunshine": "3 h 06 min",
+  "sunshine_difference_minutes": 9,
+  "sunshine_consistency": "Bon"
+}
