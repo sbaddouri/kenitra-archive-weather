@@ -1,0 +1,18 @@
+{
+  "date": "1943-08-21",
+  "weather_code": 3,
+  "temp_max": 27.4,
+  "temp_min": 19.8,
+  "temp_mean": 23.6,
+  "precipitation": 0,
+  "sunshine": 43608.12,
+  "wind_speed_max": 20.4,
+  "sunrise": "1943-08-21T06:51",
+  "sunset": "1943-08-21T20:06",
+  "sunshine_duration_seconds": 43608.12,
+  "sunshine_duration_minutes": 727,
+  "estimated_daily_sunshine_minutes": 420,
+  "estimated_daily_sunshine": "7 h 00 min",
+  "sunshine_difference_minutes": 307,
+  "sunshine_consistency": "Faible"
+}

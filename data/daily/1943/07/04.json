@@ -1,0 +1,18 @@
+{
+  "date": "1943-07-04",
+  "weather_code": 0,
+  "temp_max": 25.2,
+  "temp_min": 18,
+  "temp_mean": 21.2,
+  "precipitation": 0,
+  "sunshine": 48614.97,
+  "wind_speed_max": 15.8,
+  "sunrise": "1943-07-04T06:19",
+  "sunset": "1943-07-04T20:42",
+  "sunshine_duration_seconds": 48614.97,
+  "sunshine_duration_minutes": 810,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 30,
+  "sunshine_consistency": "Moyen"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1942-06-22",
+  "weather_code": 2,
+  "temp_max": 25,
+  "temp_min": 18.2,
+  "temp_mean": 21.7,
+  "precipitation": 0,
+  "sunshine": 48784.76,
+  "wind_speed_max": 17.1,
+  "sunrise": "1942-06-22T06:14",
+  "sunset": "1942-06-22T20:41",
+  "sunshine_duration_seconds": 48784.76,
+  "sunshine_duration_minutes": 813,
+  "estimated_daily_sunshine_minutes": 795,
+  "estimated_daily_sunshine": "13 h 15 min",
+  "sunshine_difference_minutes": 18,
+  "sunshine_consistency": "Moyen"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1942-01-10",
+  "weather_code": 61,
+  "temp_max": 12.7,
+  "temp_min": 8.9,
+  "temp_mean": 11,
+  "precipitation": 14.9,
+  "sunshine": 1654.68,
+  "wind_speed_max": 35.3,
+  "sunrise": "1942-01-10T08:32",
+  "sunset": "1942-01-10T18:34",
+  "sunshine_duration_seconds": 1654.68,
+  "sunshine_duration_minutes": 28,
+  "estimated_daily_sunshine_minutes": 84,
+  "estimated_daily_sunshine": "1 h 24 min",
+  "sunshine_difference_minutes": 56,
+  "sunshine_consistency": "Faible"
+}

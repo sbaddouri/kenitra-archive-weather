@@ -1,0 +1,18 @@
+{
+  "date": "1941-12-13",
+  "weather_code": 53,
+  "temp_max": 18.6,
+  "temp_min": 14.1,
+  "temp_mean": 15.9,
+  "precipitation": 2.7,
+  "sunshine": 30501.64,
+  "wind_speed_max": 15.5,
+  "sunrise": "1941-12-13T08:23",
+  "sunset": "1941-12-13T18:17",
+  "sunshine_duration_seconds": 30501.64,
+  "sunshine_duration_minutes": 508,
+  "estimated_daily_sunshine_minutes": 315,
+  "estimated_daily_sunshine": "5 h 15 min",
+  "sunshine_difference_minutes": 193,
+  "sunshine_consistency": "Faible"
+}

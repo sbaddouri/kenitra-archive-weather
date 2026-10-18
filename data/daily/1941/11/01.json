@@ -1,0 +1,18 @@
+{
+  "date": "1941-11-01",
+  "weather_code": 53,
+  "temp_max": 19.9,
+  "temp_min": 15.8,
+  "temp_mean": 17.9,
+  "precipitation": 1.7,
+  "sunshine": 28621.66,
+  "wind_speed_max": 19.8,
+  "sunrise": "1941-11-01T07:46",
+  "sunset": "1941-11-01T18:32",
+  "sunshine_duration_seconds": 28621.66,
+  "sunshine_duration_minutes": 477,
+  "estimated_daily_sunshine_minutes": 183,
+  "estimated_daily_sunshine": "3 h 03 min",
+  "sunshine_difference_minutes": 294,
+  "sunshine_consistency": "Faible"
+}

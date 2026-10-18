@@ -1,0 +1,18 @@
+{
+  "date": "1942-03-01",
+  "weather_code": 61,
+  "temp_max": 14.4,
+  "temp_min": 11.2,
+  "temp_mean": 12.9,
+  "precipitation": 10.3,
+  "sunshine": 33622.97,
+  "wind_speed_max": 29.3,
+  "sunrise": "1942-03-01T07:55",
+  "sunset": "1942-03-01T19:22",
+  "sunshine_duration_seconds": 33622.97,
+  "sunshine_duration_minutes": 560,
+  "estimated_daily_sunshine_minutes": 135,
+  "estimated_daily_sunshine": "2 h 15 min",
+  "sunshine_difference_minutes": 425,
+  "sunshine_consistency": "Faible"
+}

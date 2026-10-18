@@ -1,0 +1,18 @@
+{
+  "date": "1941-05-25",
+  "weather_code": 51,
+  "temp_max": 20.3,
+  "temp_min": 13.2,
+  "temp_mean": 16.3,
+  "precipitation": 0.2,
+  "sunshine": 44384.02,
+  "wind_speed_max": 15.8,
+  "sunrise": "1941-05-25T06:17",
+  "sunset": "1941-05-25T20:28",
+  "sunshine_duration_seconds": 44384.02,
+  "sunshine_duration_minutes": 740,
+  "estimated_daily_sunshine_minutes": 126,
+  "estimated_daily_sunshine": "2 h 06 min",
+  "sunshine_difference_minutes": 614,
+  "sunshine_consistency": "Faible"
+}

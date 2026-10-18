@@ -1,0 +1,18 @@
+{
+  "date": "1941-09-23",
+  "weather_code": 55,
+  "temp_max": 25.9,
+  "temp_min": 19.5,
+  "temp_mean": 22.4,
+  "precipitation": 2.5,
+  "sunshine": 40882.22,
+  "wind_speed_max": 12.7,
+  "sunrise": "1941-09-23T07:15",
+  "sunset": "1941-09-23T19:21",
+  "sunshine_duration_seconds": 40882.22,
+  "sunshine_duration_minutes": 681,
+  "estimated_daily_sunshine_minutes": 273,
+  "estimated_daily_sunshine": "4 h 33 min",
+  "sunshine_difference_minutes": 408,
+  "sunshine_consistency": "Faible"
+}

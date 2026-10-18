@@ -1,0 +1,18 @@
+{
+  "date": "1940-06-01",
+  "weather_code": 3,
+  "temp_max": 29.6,
+  "temp_min": 18.6,
+  "temp_mean": 23.7,
+  "precipitation": 0,
+  "sunshine": 48412.25,
+  "wind_speed_max": 13.7,
+  "sunrise": "1940-06-01T06:15",
+  "sunset": "1940-06-01T20:33",
+  "sunshine_duration_seconds": 48412.25,
+  "sunshine_duration_minutes": 807,
+  "estimated_daily_sunshine_minutes": 825,
+  "estimated_daily_sunshine": "13 h 45 min",
+  "sunshine_difference_minutes": 18,
+  "sunshine_consistency": "Moyen"
+}

@@ -196,6 +196,7 @@ type AuditCounters = {
 async function auditYear(year: number, counters: AuditCounters): Promise<void> {
   const before = counters.errors.length;
   const daysBefore = counters.daysCompared;
+  const nullsBefore = counters.nullFromApi;
   const data = await fetchYear(year);
   const { daily, hourly } = data;
 
@@ -338,8 +339,10 @@ async function auditYear(year: number, counters: AuditCounters): Promise<void> {
 
   const errorsForYear = counters.errors.length - before;
   const daysForYear = counters.daysCompared - daysBefore;
+  const nullsForYear = counters.nullFromApi - nullsBefore;
   const status = errorsForYear === 0 ? 'OK  ' : 'KO  ';
-  console.log(`[${status}] ${year}: ${daysForYear} jours audités, ${errorsForYear} écart(s)`);
+  const gapNote = nullsForYear > 0 ? ` (${nullsForYear} jour(s) sans donnée API)` : '';
+  console.log(`[${status}] ${year}: ${daysForYear} jours audités, ${errorsForYear} écart(s)${gapNote}`);
   if (errorsForYear > 0) {
     counters.errors
       .slice(before, before + 10)
@@ -386,15 +389,26 @@ async function auditRange(): Promise<boolean> {
   console.log(`[RESUME] Jours sans donnée API (ignorés): ${counters.nullFromApi}`);
   console.log(`[RESUME] Écarts détectés: ${counters.errors.length}`);
 
-  if (counters.errors.length === 0 && counters.daysCompared === expectedTotal) {
+  // Un jour est conforme s'il correspond exactement à l'API, OU si l'API n'a
+  // elle-même aucune donnée pour ce jour (ex : 1940-01-01, début d'ERA5, où
+  // temperature_2m_mean / precipitation_sum / sunshine_duration renvoient null).
+  // Ces jours ne sont pas comblés : aucune valeur n'est inventée.
+  const covered = counters.daysCompared + counters.nullFromApi;
+
+  if (counters.errors.length === 0 && covered === expectedTotal) {
     console.log('');
-    console.log(`[SUCCESS] ✅ Les ${expectedTotal} jours correspondent exactement aux valeurs renvoyées par l'API Open-Meteo.`);
+    if (counters.nullFromApi > 0) {
+      console.log(`[SUCCESS] ✅ ${counters.daysCompared} jours correspondent exactement aux valeurs renvoyées par l'API Open-Meteo.`);
+      console.log(`[INFO] ${counters.nullFromApi} jour(s) sans donnée disponible dans l'API elle-même (non comblés, aucune valeur inventée).`);
+    } else {
+      console.log(`[SUCCESS] ✅ Les ${expectedTotal} jours correspondent exactement aux valeurs renvoyées par l'API Open-Meteo.`);
+    }
     console.log('[INFO] Aucune valeur arrondie, estimée ou inventée : les fichiers sont deployment-ready.');
     return true;
   }
 
   console.log('');
-  console.log('[FAILURE] ❌ Des écarts ont été détectés. Relancez l\'année concernée puis cet audit.');
+  console.log(`[FAILURE] ❌ Échec de l'audit : ${counters.errors.length} écart(s), ${covered}/${expectedTotal} jours couverts.`);
   counters.errors.slice(0, 20).forEach((e) => console.log(`     - ${e}`));
   return false;
 }

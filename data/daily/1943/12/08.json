@@ -1,0 +1,18 @@
+{
+  "date": "1943-12-08",
+  "weather_code": 61,
+  "temp_max": 15,
+  "temp_min": 10.3,
+  "temp_mean": 12.6,
+  "precipitation": 15.4,
+  "sunshine": 29440.45,
+  "wind_speed_max": 10.3,
+  "sunrise": "1943-12-08T08:19",
+  "sunset": "1943-12-08T18:16",
+  "sunshine_duration_seconds": 29440.45,
+  "sunshine_duration_minutes": 491,
+  "estimated_daily_sunshine_minutes": 75,
+  "estimated_daily_sunshine": "1 h 15 min",
+  "sunshine_difference_minutes": 416,
+  "sunshine_consistency": "Faible"
+}

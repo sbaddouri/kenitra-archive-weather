@@ -1,0 +1,18 @@
+{
+  "date": "1942-10-22",
+  "weather_code": 1,
+  "temp_max": 25.1,
+  "temp_min": 15.6,
+  "temp_mean": 20.1,
+  "precipitation": 0,
+  "sunshine": 38375.39,
+  "wind_speed_max": 15,
+  "sunrise": "1942-10-22T07:37",
+  "sunset": "1942-10-22T18:43",
+  "sunshine_duration_seconds": 38375.39,
+  "sunshine_duration_minutes": 640,
+  "estimated_daily_sunshine_minutes": 645,
+  "estimated_daily_sunshine": "10 h 45 min",
+  "sunshine_difference_minutes": 5,
+  "sunshine_consistency": "Excellent"
+}

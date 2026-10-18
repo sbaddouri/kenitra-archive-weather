@@ -1,0 +1,18 @@
+{
+  "date": "1941-06-12",
+  "weather_code": 1,
+  "temp_max": 24.3,
+  "temp_min": 15.4,
+  "temp_mean": 19.7,
+  "precipitation": 0,
+  "sunshine": 49178.84,
+  "wind_speed_max": 18.4,
+  "sunrise": "1941-06-12T06:13",
+  "sunset": "1941-06-12T20:38",
+  "sunshine_duration_seconds": 49178.84,
+  "sunshine_duration_minutes": 820,
+  "estimated_daily_sunshine_minutes": 810,
+  "estimated_daily_sunshine": "13 h 30 min",
+  "sunshine_difference_minutes": 10,
+  "sunshine_consistency": "Bon"
+}

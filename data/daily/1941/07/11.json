@@ -1,0 +1,18 @@
+{
+  "date": "1941-07-11",
+  "weather_code": 51,
+  "temp_max": 24.1,
+  "temp_min": 18.3,
+  "temp_mean": 21.2,
+  "precipitation": 0.2,
+  "sunshine": 45378.85,
+  "wind_speed_max": 17.6,
+  "sunrise": "1941-07-11T06:22",
+  "sunset": "1941-07-11T20:40",
+  "sunshine_duration_seconds": 45378.85,
+  "sunshine_duration_minutes": 756,
+  "estimated_daily_sunshine_minutes": 573,
+  "estimated_daily_sunshine": "9 h 33 min",
+  "sunshine_difference_minutes": 183,
+  "sunshine_consistency": "Faible"
+}

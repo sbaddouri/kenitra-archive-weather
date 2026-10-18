@@ -1,0 +1,18 @@
+{
+  "date": "1942-01-04",
+  "weather_code": 2,
+  "temp_max": 14.9,
+  "temp_min": 6.2,
+  "temp_mean": 11.1,
+  "precipitation": 0,
+  "sunshine": 33194.49,
+  "wind_speed_max": 9.4,
+  "sunrise": "1942-01-04T08:32",
+  "sunset": "1942-01-04T18:29",
+  "sunshine_duration_seconds": 33194.49,
+  "sunshine_duration_minutes": 553,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 13,
+  "sunshine_consistency": "Bon"
+}

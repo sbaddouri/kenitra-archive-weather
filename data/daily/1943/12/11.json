@@ -1,0 +1,18 @@
+{
+  "date": "1943-12-11",
+  "weather_code": 61,
+  "temp_max": 16.6,
+  "temp_min": 11.1,
+  "temp_mean": 13.8,
+  "precipitation": 4.2,
+  "sunshine": 20791.55,
+  "wind_speed_max": 17.9,
+  "sunrise": "1943-12-11T08:22",
+  "sunset": "1943-12-11T18:16",
+  "sunshine_duration_seconds": 20791.55,
+  "sunshine_duration_minutes": 347,
+  "estimated_daily_sunshine_minutes": 324,
+  "estimated_daily_sunshine": "5 h 24 min",
+  "sunshine_difference_minutes": 23,
+  "sunshine_consistency": "Moyen"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1944-11-06",
+  "weather_code": 3,
+  "temp_max": 20.6,
+  "temp_min": 10.6,
+  "temp_mean": 15.7,
+  "precipitation": 0,
+  "sunshine": 36476.89,
+  "wind_speed_max": 13,
+  "sunrise": "1944-11-06T07:51",
+  "sunset": "1944-11-06T18:28",
+  "sunshine_duration_seconds": 36476.89,
+  "sunshine_duration_minutes": 608,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 52,
+  "sunshine_consistency": "Faible"
+}

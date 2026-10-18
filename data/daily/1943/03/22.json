@@ -1,0 +1,18 @@
+{
+  "date": "1943-03-22",
+  "weather_code": 61,
+  "temp_max": 19,
+  "temp_min": 14,
+  "temp_mean": 15.8,
+  "precipitation": 7.6,
+  "sunshine": 18393.39,
+  "wind_speed_max": 14.2,
+  "sunrise": "1943-03-22T07:27",
+  "sunset": "1943-03-22T19:39",
+  "sunshine_duration_seconds": 18393.39,
+  "sunshine_duration_minutes": 307,
+  "estimated_daily_sunshine_minutes": 117,
+  "estimated_daily_sunshine": "1 h 57 min",
+  "sunshine_difference_minutes": 190,
+  "sunshine_consistency": "Faible"
+}

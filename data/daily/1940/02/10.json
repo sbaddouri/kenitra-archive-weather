@@ -1,0 +1,18 @@
+{
+  "date": "1940-02-10",
+  "weather_code": 53,
+  "temp_max": 15.3,
+  "temp_min": 9.3,
+  "temp_mean": 12.3,
+  "precipitation": 1.2,
+  "sunshine": 34109.67,
+  "wind_speed_max": 14.2,
+  "sunrise": "1940-02-10T08:16",
+  "sunset": "1940-02-10T19:04",
+  "sunshine_duration_seconds": 34109.67,
+  "sunshine_duration_minutes": 568,
+  "estimated_daily_sunshine_minutes": 258,
+  "estimated_daily_sunshine": "4 h 18 min",
+  "sunshine_difference_minutes": 310,
+  "sunshine_consistency": "Faible"
+}

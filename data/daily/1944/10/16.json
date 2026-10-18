@@ -1,0 +1,18 @@
+{
+  "date": "1944-10-16",
+  "weather_code": 51,
+  "temp_max": 22.3,
+  "temp_min": 17.9,
+  "temp_mean": 19.8,
+  "precipitation": 0.3,
+  "sunshine": 33311.86,
+  "wind_speed_max": 22.5,
+  "sunrise": "1944-10-16T07:32",
+  "sunset": "1944-10-16T18:50",
+  "sunshine_duration_seconds": 33311.86,
+  "sunshine_duration_minutes": 555,
+  "estimated_daily_sunshine_minutes": 114,
+  "estimated_daily_sunshine": "1 h 54 min",
+  "sunshine_difference_minutes": 441,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1943-09-03",
+  "weather_code": 2,
+  "temp_max": 26.6,
+  "temp_min": 18.8,
+  "temp_mean": 22.2,
+  "precipitation": 0,
+  "sunshine": 39144.35,
+  "wind_speed_max": 15.2,
+  "sunrise": "1943-09-03T07:00",
+  "sunset": "1943-09-03T19:49",
+  "sunshine_duration_seconds": 39144.35,
+  "sunshine_duration_minutes": 652,
+  "estimated_daily_sunshine_minutes": 675,
+  "estimated_daily_sunshine": "11 h 15 min",
+  "sunshine_difference_minutes": 23,
+  "sunshine_consistency": "Moyen"
+}

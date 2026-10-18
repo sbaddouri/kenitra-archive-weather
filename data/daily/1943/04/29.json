@@ -1,0 +1,18 @@
+{
+  "date": "1943-04-29",
+  "weather_code": 61,
+  "temp_max": 20.3,
+  "temp_min": 16.2,
+  "temp_mean": 17.9,
+  "precipitation": 7.1,
+  "sunshine": 25526.13,
+  "wind_speed_max": 15.5,
+  "sunrise": "1943-04-29T06:38",
+  "sunset": "1943-04-29T20:08",
+  "sunshine_duration_seconds": 25526.13,
+  "sunshine_duration_minutes": 425,
+  "estimated_daily_sunshine_minutes": 159,
+  "estimated_daily_sunshine": "2 h 39 min",
+  "sunshine_difference_minutes": 266,
+  "sunshine_consistency": "Faible"
+}

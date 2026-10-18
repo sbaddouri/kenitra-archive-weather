@@ -1,0 +1,18 @@
+{
+  "date": "1941-04-29",
+  "weather_code": 51,
+  "temp_max": 18.4,
+  "temp_min": 13,
+  "temp_mean": 15.6,
+  "precipitation": 0.7,
+  "sunshine": 25626.13,
+  "wind_speed_max": 25.7,
+  "sunrise": "1941-04-29T06:38",
+  "sunset": "1941-04-29T20:09",
+  "sunshine_duration_seconds": 25626.13,
+  "sunshine_duration_minutes": 427,
+  "estimated_daily_sunshine_minutes": 348,
+  "estimated_daily_sunshine": "5 h 48 min",
+  "sunshine_difference_minutes": 79,
+  "sunshine_consistency": "Faible"
+}

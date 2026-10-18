@@ -1,0 +1,18 @@
+{
+  "date": "1940-06-25",
+  "weather_code": 51,
+  "temp_max": 21.4,
+  "temp_min": 15.4,
+  "temp_mean": 18.6,
+  "precipitation": 0.3,
+  "sunshine": 48843.89,
+  "wind_speed_max": 17.2,
+  "sunrise": "1940-06-25T06:15",
+  "sunset": "1940-06-25T20:42",
+  "sunshine_duration_seconds": 48843.89,
+  "sunshine_duration_minutes": 814,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 154,
+  "sunshine_consistency": "Faible"
+}

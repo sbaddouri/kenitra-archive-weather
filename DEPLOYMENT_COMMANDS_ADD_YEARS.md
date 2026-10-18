@@ -38,10 +38,19 @@ Plages déjà en ligne et vérifiées :
 
 | Plage | Jours | Bissextiles | Audit (valeurs comparées) |
 |---|---|---|---|
+| 1940 → 1944 | 1 827 | 1940, 1944 | 599 256 — 0 écart |
 | 1945 → 1954 | 3 652 | 1948, 1952 | 1 197 856 — 0 écart |
 | 1955 → 1964 | 3 653 | 1956, 1960, 1964 | 1 198 184 — 0 écart |
 | 1965 → 1974 | 3 652 | 1968, 1972 | 1 197 856 — 0 écart |
 | 1975 → 1984 | 3 653 | 1976, 1980, 1984 | 1 198 184 — 0 écart |
+
+**Période 1940-2026 désormais complète** (1940 → 2026).
+
+> **1940-01-01 est partiellement vide dans la source** : l'API renvoie `null` pour
+> `temp_mean`, `precipitation` et `sunshine_duration` (début d'ERA5), ainsi que pour les 8 premiers
+> relevés horaires. Ces `null` sont **conservés tels quels**, jamais remplacés par des valeurs calculées.
+> `verify-years-data.ts` les signale comme avertissement, `audit-years-vs-api.ts` vérifie qu'ils
+> correspondent bien aux `null` renvoyés par l'API.
 
 > `audit-years-vs-api.ts` réessaie automatiquement en cas de limitation de débit Open-Meteo
 > (HTTP 429) avec un délai exponentiel, et attend 6 s entre deux années. Sur les longues séries,

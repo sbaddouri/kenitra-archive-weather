@@ -1,0 +1,18 @@
+{
+  "date": "1943-01-07",
+  "weather_code": 63,
+  "temp_max": 14.8,
+  "temp_min": 11.4,
+  "temp_mean": 13,
+  "precipitation": 17.7,
+  "sunshine": 0,
+  "wind_speed_max": 15,
+  "sunrise": "1943-01-07T08:33",
+  "sunset": "1943-01-07T18:31",
+  "sunshine_duration_seconds": 0,
+  "sunshine_duration_minutes": 0,
+  "estimated_daily_sunshine_minutes": 90,
+  "estimated_daily_sunshine": "1 h 30 min",
+  "sunshine_difference_minutes": 90,
+  "sunshine_consistency": "Faible"
+}

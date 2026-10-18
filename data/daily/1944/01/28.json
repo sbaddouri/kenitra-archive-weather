@@ -1,0 +1,18 @@
+{
+  "date": "1944-01-28",
+  "weather_code": 1,
+  "temp_max": 18.2,
+  "temp_min": 8.4,
+  "temp_mean": 13,
+  "precipitation": 0,
+  "sunshine": 36191.97,
+  "wind_speed_max": 9.3,
+  "sunrise": "1944-01-28T08:26",
+  "sunset": "1944-01-28T18:51",
+  "sunshine_duration_seconds": 36191.97,
+  "sunshine_duration_minutes": 603,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 18,
+  "sunshine_consistency": "Moyen"
+}

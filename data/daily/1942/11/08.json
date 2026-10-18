@@ -1,0 +1,18 @@
+{
+  "date": "1942-11-08",
+  "weather_code": 2,
+  "temp_max": 21.5,
+  "temp_min": 16.6,
+  "temp_mean": 18.7,
+  "precipitation": 0,
+  "sunshine": 36221.22,
+  "wind_speed_max": 12.6,
+  "sunrise": "1942-11-08T07:52",
+  "sunset": "1942-11-08T18:26",
+  "sunshine_duration_seconds": 36221.22,
+  "sunshine_duration_minutes": 604,
+  "estimated_daily_sunshine_minutes": 555,
+  "estimated_daily_sunshine": "9 h 15 min",
+  "sunshine_difference_minutes": 49,
+  "sunshine_consistency": "Faible"
+}

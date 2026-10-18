@@ -1,0 +1,18 @@
+{
+  "date": "1940-12-27",
+  "weather_code": 3,
+  "temp_max": 13.1,
+  "temp_min": 4.5,
+  "temp_mean": 8.3,
+  "precipitation": 0,
+  "sunshine": 32691.56,
+  "wind_speed_max": 9.2,
+  "sunrise": "1940-12-27T08:31",
+  "sunset": "1940-12-27T18:23",
+  "sunshine_duration_seconds": 32691.56,
+  "sunshine_duration_minutes": 545,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 5,
+  "sunshine_consistency": "Excellent"
+}

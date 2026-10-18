@@ -1,0 +1,18 @@
+{
+  "date": "1943-01-31",
+  "weather_code": 2,
+  "temp_max": 18.5,
+  "temp_min": 8.7,
+  "temp_mean": 13.1,
+  "precipitation": 0,
+  "sunshine": 36914.16,
+  "wind_speed_max": 11,
+  "sunrise": "1943-01-31T08:24",
+  "sunset": "1943-01-31T18:54",
+  "sunshine_duration_seconds": 36914.16,
+  "sunshine_duration_minutes": 615,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 30,
+  "sunshine_consistency": "Moyen"
+}

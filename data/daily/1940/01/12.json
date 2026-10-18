@@ -1,0 +1,18 @@
+{
+  "date": "1940-01-12",
+  "weather_code": 61,
+  "temp_max": 13.3,
+  "temp_min": 9.9,
+  "temp_mean": 11.1,
+  "precipitation": 9.1,
+  "sunshine": 32819.38,
+  "wind_speed_max": 19.5,
+  "sunrise": "1940-01-12T08:32",
+  "sunset": "1940-01-12T18:36",
+  "sunshine_duration_seconds": 32819.38,
+  "sunshine_duration_minutes": 547,
+  "estimated_daily_sunshine_minutes": 123,
+  "estimated_daily_sunshine": "2 h 03 min",
+  "sunshine_difference_minutes": 424,
+  "sunshine_consistency": "Faible"
+}

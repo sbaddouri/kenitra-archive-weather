@@ -1,0 +1,18 @@
+{
+  "date": "1942-04-28",
+  "weather_code": 63,
+  "temp_max": 17.7,
+  "temp_min": 14,
+  "temp_mean": 15.5,
+  "precipitation": 41.6,
+  "sunshine": 40597.44,
+  "wind_speed_max": 35.8,
+  "sunrise": "1942-04-28T06:39",
+  "sunset": "1942-04-28T20:08",
+  "sunshine_duration_seconds": 40597.44,
+  "sunshine_duration_minutes": 677,
+  "estimated_daily_sunshine_minutes": 114,
+  "estimated_daily_sunshine": "1 h 54 min",
+  "sunshine_difference_minutes": 563,
+  "sunshine_consistency": "Faible"
+}

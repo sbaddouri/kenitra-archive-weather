@@ -1,0 +1,18 @@
+{
+  "date": "1943-06-16",
+  "weather_code": 2,
+  "temp_max": 30.8,
+  "temp_min": 17.9,
+  "temp_mean": 24.6,
+  "precipitation": 0,
+  "sunshine": 48843.31,
+  "wind_speed_max": 20.9,
+  "sunrise": "1943-06-16T06:13",
+  "sunset": "1943-06-16T20:40",
+  "sunshine_duration_seconds": 48843.31,
+  "sunshine_duration_minutes": 814,
+  "estimated_daily_sunshine_minutes": 825,
+  "estimated_daily_sunshine": "13 h 45 min",
+  "sunshine_difference_minutes": 11,
+  "sunshine_consistency": "Bon"
+}

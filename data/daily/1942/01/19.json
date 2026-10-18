@@ -1,0 +1,18 @@
+{
+  "date": "1942-01-19",
+  "weather_code": 2,
+  "temp_max": 16,
+  "temp_min": 8.2,
+  "temp_mean": 11.8,
+  "precipitation": 0,
+  "sunshine": 34913.61,
+  "wind_speed_max": 14.6,
+  "sunrise": "1942-01-19T08:30",
+  "sunset": "1942-01-19T18:43",
+  "sunshine_duration_seconds": 34913.61,
+  "sunshine_duration_minutes": 582,
+  "estimated_daily_sunshine_minutes": 360,
+  "estimated_daily_sunshine": "6 h 00 min",
+  "sunshine_difference_minutes": 222,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1942-06-13",
+  "weather_code": 3,
+  "temp_max": 23.4,
+  "temp_min": 14.7,
+  "temp_mean": 19.1,
+  "precipitation": 0,
+  "sunshine": 47618.43,
+  "wind_speed_max": 17.4,
+  "sunrise": "1942-06-13T06:13",
+  "sunset": "1942-06-13T20:39",
+  "sunshine_duration_seconds": 47618.43,
+  "sunshine_duration_minutes": 794,
+  "estimated_daily_sunshine_minutes": 519,
+  "estimated_daily_sunshine": "8 h 39 min",
+  "sunshine_difference_minutes": 275,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1941-07-06",
+  "weather_code": 2,
+  "temp_max": 33.2,
+  "temp_min": 22,
+  "temp_mean": 27,
+  "precipitation": 0,
+  "sunshine": 48033.86,
+  "wind_speed_max": 15,
+  "sunrise": "1941-07-06T06:20",
+  "sunset": "1941-07-06T20:41",
+  "sunshine_duration_seconds": 48033.86,
+  "sunshine_duration_minutes": 801,
+  "estimated_daily_sunshine_minutes": 630,
+  "estimated_daily_sunshine": "10 h 30 min",
+  "sunshine_difference_minutes": 171,
+  "sunshine_consistency": "Faible"
+}

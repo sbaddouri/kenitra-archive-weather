@@ -1,0 +1,18 @@
+{
+  "date": "1944-05-27",
+  "weather_code": 63,
+  "temp_max": 23.6,
+  "temp_min": 16.7,
+  "temp_mean": 19.9,
+  "precipitation": 17,
+  "sunshine": 43566.9,
+  "wind_speed_max": 16.8,
+  "sunrise": "1944-05-27T06:16",
+  "sunset": "1944-05-27T20:30",
+  "sunshine_duration_seconds": 43566.9,
+  "sunshine_duration_minutes": 726,
+  "estimated_daily_sunshine_minutes": 714,
+  "estimated_daily_sunshine": "11 h 54 min",
+  "sunshine_difference_minutes": 12,
+  "sunshine_consistency": "Bon"
+}

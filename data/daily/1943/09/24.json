@@ -1,0 +1,18 @@
+{
+  "date": "1943-09-24",
+  "weather_code": 51,
+  "temp_max": 24.6,
+  "temp_min": 16.4,
+  "temp_mean": 20.4,
+  "precipitation": 0.2,
+  "sunshine": 42006.23,
+  "wind_speed_max": 16.5,
+  "sunrise": "1943-09-24T07:15",
+  "sunset": "1943-09-24T19:20",
+  "sunshine_duration_seconds": 42006.23,
+  "sunshine_duration_minutes": 700,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 115,
+  "sunshine_consistency": "Faible"
+}

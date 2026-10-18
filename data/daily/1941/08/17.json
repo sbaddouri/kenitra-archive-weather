@@ -1,0 +1,18 @@
+{
+  "date": "1941-08-17",
+  "weather_code": 2,
+  "temp_max": 25.6,
+  "temp_min": 18,
+  "temp_mean": 21.5,
+  "precipitation": 0,
+  "sunshine": 45369.3,
+  "wind_speed_max": 19.5,
+  "sunrise": "1941-08-17T06:48",
+  "sunset": "1941-08-17T20:11",
+  "sunshine_duration_seconds": 45369.3,
+  "sunshine_duration_minutes": 756,
+  "estimated_daily_sunshine_minutes": 750,
+  "estimated_daily_sunshine": "12 h 30 min",
+  "sunshine_difference_minutes": 6,
+  "sunshine_consistency": "Bon"
+}

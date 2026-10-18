@@ -1,0 +1,18 @@
+{
+  "date": "1941-04-02",
+  "weather_code": 55,
+  "temp_max": 18.3,
+  "temp_min": 15.3,
+  "temp_mean": 16.7,
+  "precipitation": 7.8,
+  "sunshine": 22230.42,
+  "wind_speed_max": 36.9,
+  "sunrise": "1941-04-02T07:11",
+  "sunset": "1941-04-02T19:48",
+  "sunshine_duration_seconds": 22230.42,
+  "sunshine_duration_minutes": 371,
+  "estimated_daily_sunshine_minutes": 174,
+  "estimated_daily_sunshine": "2 h 54 min",
+  "sunshine_difference_minutes": 197,
+  "sunshine_consistency": "Faible"
+}

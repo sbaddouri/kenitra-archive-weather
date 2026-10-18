@@ -1,0 +1,18 @@
+{
+  "date": "1942-04-15",
+  "weather_code": 61,
+  "temp_max": 15.4,
+  "temp_min": 11.1,
+  "temp_mean": 13.3,
+  "precipitation": 11.4,
+  "sunshine": 42743.41,
+  "wind_speed_max": 27.3,
+  "sunrise": "1942-04-15T06:55",
+  "sunset": "1942-04-15T19:58",
+  "sunshine_duration_seconds": 42743.41,
+  "sunshine_duration_minutes": 712,
+  "estimated_daily_sunshine_minutes": 138,
+  "estimated_daily_sunshine": "2 h 18 min",
+  "sunshine_difference_minutes": 574,
+  "sunshine_consistency": "Faible"
+}

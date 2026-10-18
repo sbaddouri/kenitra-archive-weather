@@ -1,0 +1,18 @@
+{
+  "date": "1944-10-12",
+  "weather_code": 2,
+  "temp_max": 22.5,
+  "temp_min": 14.4,
+  "temp_mean": 18.5,
+  "precipitation": 0.2,
+  "sunshine": 39391.61,
+  "wind_speed_max": 12.2,
+  "sunrise": "1944-10-12T07:29",
+  "sunset": "1944-10-12T18:54",
+  "sunshine_duration_seconds": 39391.61,
+  "sunshine_duration_minutes": 657,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 117,
+  "sunshine_consistency": "Faible"
+}

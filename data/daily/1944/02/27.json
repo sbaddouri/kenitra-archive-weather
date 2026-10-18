@@ -1,0 +1,18 @@
+{
+  "date": "1944-02-27",
+  "weather_code": 53,
+  "temp_max": 17.1,
+  "temp_min": 9.9,
+  "temp_mean": 13.5,
+  "precipitation": 2.5,
+  "sunshine": 35956.46,
+  "wind_speed_max": 29.2,
+  "sunrise": "1944-02-27T07:58",
+  "sunset": "1944-02-27T19:20",
+  "sunshine_duration_seconds": 35956.46,
+  "sunshine_duration_minutes": 599,
+  "estimated_daily_sunshine_minutes": 372,
+  "estimated_daily_sunshine": "6 h 12 min",
+  "sunshine_difference_minutes": 227,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1942-10-31",
+  "weather_code": 61,
+  "temp_max": 18.1,
+  "temp_min": 14.6,
+  "temp_mean": 16,
+  "precipitation": 12,
+  "sunshine": 35255.76,
+  "wind_speed_max": 33.4,
+  "sunrise": "1942-10-31T07:45",
+  "sunset": "1942-10-31T18:33",
+  "sunshine_duration_seconds": 35255.76,
+  "sunshine_duration_minutes": 588,
+  "estimated_daily_sunshine_minutes": 111,
+  "estimated_daily_sunshine": "1 h 51 min",
+  "sunshine_difference_minutes": 477,
+  "sunshine_consistency": "Faible"
+}

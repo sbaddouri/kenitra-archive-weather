@@ -1,0 +1,18 @@
+{
+  "date": "1944-06-15",
+  "weather_code": 51,
+  "temp_max": 27.4,
+  "temp_min": 20.3,
+  "temp_mean": 23.3,
+  "precipitation": 0.5,
+  "sunshine": 43691.64,
+  "wind_speed_max": 15.7,
+  "sunrise": "1944-06-15T06:13",
+  "sunset": "1944-06-15T20:40",
+  "sunshine_duration_seconds": 43691.64,
+  "sunshine_duration_minutes": 728,
+  "estimated_daily_sunshine_minutes": 642,
+  "estimated_daily_sunshine": "10 h 42 min",
+  "sunshine_difference_minutes": 86,
+  "sunshine_consistency": "Faible"
+}

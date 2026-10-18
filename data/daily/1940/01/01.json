@@ -1,0 +1,18 @@
+{
+  "date": "1940-01-01",
+  "weather_code": 63,
+  "temp_max": 16.5,
+  "temp_min": 11.6,
+  "temp_mean": null,
+  "precipitation": null,
+  "sunshine": null,
+  "wind_speed_max": 30.3,
+  "sunrise": "1940-01-01T08:32",
+  "sunset": "1940-01-01T18:26",
+  "sunshine_duration_seconds": null,
+  "sunshine_duration_minutes": null,
+  "estimated_daily_sunshine_minutes": 87,
+  "estimated_daily_sunshine": "1 h 27 min",
+  "sunshine_difference_minutes": null,
+  "sunshine_consistency": null
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1941-01-05",
+  "weather_code": 1,
+  "temp_max": 10,
+  "temp_min": 2.7,
+  "temp_mean": 6.2,
+  "precipitation": 0,
+  "sunshine": 33482.44,
+  "wind_speed_max": 8.7,
+  "sunrise": "1941-01-05T08:33",
+  "sunset": "1941-01-05T18:30",
+  "sunshine_duration_seconds": 33482.44,
+  "sunshine_duration_minutes": 558,
+  "estimated_daily_sunshine_minutes": 525,
+  "estimated_daily_sunshine": "8 h 45 min",
+  "sunshine_difference_minutes": 33,
+  "sunshine_consistency": "Faible"
+}

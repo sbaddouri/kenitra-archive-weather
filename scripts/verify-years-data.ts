@@ -166,8 +166,13 @@ function checkYear(year: number): YearReport {
 
       for (const key of DAILY_REQUIRED) {
         const value = daily[key];
-        if (value === undefined || value === null) {
-          errors.push(`${expectedDate}: valeur API nulle ou absente pour "${key}"`);
+        if (value === undefined) {
+          // Champ totalement absent du fichier : fichier corrompu.
+          errors.push(`${expectedDate}: champ "${key}" absent du fichier`);
+        } else if (value === null) {
+          // Valeur nulle : c'est ce que l'API renvoie pour cette période
+          // (ex. 1940-01-01, début d'ERA5). Conservée telle quelle, jamais comblée.
+          warnings.push(`${expectedDate}: "${key}" vaut null (valeur brute renvoyée par l'API)`);
         }
       }
 
@@ -241,13 +246,15 @@ function checkYear(year: number): YearReport {
     errors.push(`${hourlyFiles} fichiers hourly sur ${expected} attendus`);
   }
 
-  if (warnings.length === 0 && errors.length === 0) {
-    console.log(`[OK] ${year}: ${dailyFiles} jours daily + ${hourlyFiles} jours hourly (${expected} attendus)`);
+  if (errors.length === 0) {
+    const gapNote = warnings.length > 0 ? `, ${warnings.length} valeur(s) null renvoyées par l'API` : '';
+    console.log(`[OK] ${year}: ${dailyFiles} jours daily + ${hourlyFiles} jours hourly (${expected} attendus)${gapNote}`);
   } else {
     console.log(`[KO] ${year}: ${dailyFiles}/${expected} daily, ${hourlyFiles}/${expected} hourly, ${errors.length} erreur(s)`);
     for (const err of errors.slice(0, 20)) console.log(`     - ${err}`);
     if (errors.length > 20) console.log(`     ... et ${errors.length - 20} autre(s) erreur(s)`);
     for (const warn of warnings.slice(0, 10)) console.log(`     ~ ${warn}`);
+    if (warnings.length > 10) console.log(`     ... et ${warnings.length - 10} autre(s) valeur(s) null`);
   }
 
   return { year, expected, dailyFiles, hourlyFiles, errors, warnings };
@@ -271,6 +278,10 @@ function verifyRange(): boolean {
   console.log(`[RESUME] Années vérifiées: ${reports.length}`);
   console.log(`[RESUME] Jours daily présents: ${totalDays} / ${expectedTotal}`);
   console.log(`[RESUME] Erreurs détectées: ${totalErrors}`);
+  const totalWarnings = reports.reduce((sum, r) => sum + r.warnings.length, 0);
+  if (totalWarnings > 0) {
+    console.log(`[RESUME] Valeurs null renvoyées par l'API (conservées telles quelles): ${totalWarnings}`);
+  }
 
   if (totalErrors === 0 && totalDays === expectedTotal) {
     console.log('');

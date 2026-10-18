@@ -1,0 +1,18 @@
+{
+  "date": "1944-05-14",
+  "weather_code": 51,
+  "temp_max": 22.1,
+  "temp_min": 16,
+  "temp_mean": 18.9,
+  "precipitation": 0.2,
+  "sunshine": 45731.33,
+  "wind_speed_max": 15.2,
+  "sunrise": "1944-05-14T06:24",
+  "sunset": "1944-05-14T20:21",
+  "sunshine_duration_seconds": 45731.33,
+  "sunshine_duration_minutes": 762,
+  "estimated_daily_sunshine_minutes": 363,
+  "estimated_daily_sunshine": "6 h 03 min",
+  "sunshine_difference_minutes": 399,
+  "sunshine_consistency": "Faible"
+}

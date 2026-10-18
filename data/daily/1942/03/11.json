@@ -1,0 +1,18 @@
+{
+  "date": "1942-03-11",
+  "weather_code": 1,
+  "temp_max": 22.9,
+  "temp_min": 11.3,
+  "temp_mean": 16.9,
+  "precipitation": 0,
+  "sunshine": 39916.41,
+  "wind_speed_max": 9.3,
+  "sunrise": "1942-03-11T07:42",
+  "sunset": "1942-03-11T19:30",
+  "sunshine_duration_seconds": 39916.41,
+  "sunshine_duration_minutes": 665,
+  "estimated_daily_sunshine_minutes": 675,
+  "estimated_daily_sunshine": "11 h 15 min",
+  "sunshine_difference_minutes": 10,
+  "sunshine_consistency": "Bon"
+}

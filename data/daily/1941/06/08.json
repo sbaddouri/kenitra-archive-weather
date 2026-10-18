@@ -1,0 +1,18 @@
+{
+  "date": "1941-06-08",
+  "weather_code": 2,
+  "temp_max": 22.8,
+  "temp_min": 14.3,
+  "temp_mean": 18.2,
+  "precipitation": 0,
+  "sunshine": 48292.24,
+  "wind_speed_max": 14.7,
+  "sunrise": "1941-06-08T06:13",
+  "sunset": "1941-06-08T20:37",
+  "sunshine_duration_seconds": 48292.24,
+  "sunshine_duration_minutes": 805,
+  "estimated_daily_sunshine_minutes": 780,
+  "estimated_daily_sunshine": "13 h 00 min",
+  "sunshine_difference_minutes": 25,
+  "sunshine_consistency": "Moyen"
+}

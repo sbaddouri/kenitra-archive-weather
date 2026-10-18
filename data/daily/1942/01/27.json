@@ -1,0 +1,18 @@
+{
+  "date": "1942-01-27",
+  "weather_code": 51,
+  "temp_max": 16.5,
+  "temp_min": 11.4,
+  "temp_mean": 14.2,
+  "precipitation": 1.9,
+  "sunshine": 35256.76,
+  "wind_speed_max": 13.9,
+  "sunrise": "1942-01-27T08:27",
+  "sunset": "1942-01-27T18:51",
+  "sunshine_duration_seconds": 35256.76,
+  "sunshine_duration_minutes": 588,
+  "estimated_daily_sunshine_minutes": 195,
+  "estimated_daily_sunshine": "3 h 15 min",
+  "sunshine_difference_minutes": 393,
+  "sunshine_consistency": "Faible"
+}

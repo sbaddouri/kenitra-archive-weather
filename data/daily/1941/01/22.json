@@ -1,0 +1,18 @@
+{
+  "date": "1941-01-22",
+  "weather_code": 55,
+  "temp_max": 17.9,
+  "temp_min": 14.6,
+  "temp_mean": 16.2,
+  "precipitation": 5.7,
+  "sunshine": 1009.91,
+  "wind_speed_max": 39.3,
+  "sunrise": "1941-01-22T08:29",
+  "sunset": "1941-01-22T18:46",
+  "sunshine_duration_seconds": 1009.91,
+  "sunshine_duration_minutes": 17,
+  "estimated_daily_sunshine_minutes": 120,
+  "estimated_daily_sunshine": "2 h 00 min",
+  "sunshine_difference_minutes": 103,
+  "sunshine_consistency": "Faible"
+}

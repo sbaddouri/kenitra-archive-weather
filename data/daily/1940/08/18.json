@@ -1,0 +1,18 @@
+{
+  "date": "1940-08-18",
+  "weather_code": 3,
+  "temp_max": 36.3,
+  "temp_min": 21.6,
+  "temp_mean": 29,
+  "precipitation": 0,
+  "sunshine": 44486.74,
+  "wind_speed_max": 19.1,
+  "sunrise": "1940-08-18T06:49",
+  "sunset": "1940-08-18T20:09",
+  "sunshine_duration_seconds": 44486.74,
+  "sunshine_duration_minutes": 741,
+  "estimated_daily_sunshine_minutes": 234,
+  "estimated_daily_sunshine": "3 h 54 min",
+  "sunshine_difference_minutes": 507,
+  "sunshine_consistency": "Faible"
+}

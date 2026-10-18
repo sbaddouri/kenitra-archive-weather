@@ -1,0 +1,18 @@
+{
+  "date": "1943-03-25",
+  "weather_code": 55,
+  "temp_max": 16.6,
+  "temp_min": 12.8,
+  "temp_mean": 14.2,
+  "precipitation": 9.9,
+  "sunshine": 38749.76,
+  "wind_speed_max": 30.4,
+  "sunrise": "1943-03-25T07:23",
+  "sunset": "1943-03-25T19:41",
+  "sunshine_duration_seconds": 38749.76,
+  "sunshine_duration_minutes": 646,
+  "estimated_daily_sunshine_minutes": 168,
+  "estimated_daily_sunshine": "2 h 48 min",
+  "sunshine_difference_minutes": 478,
+  "sunshine_consistency": "Faible"
+}

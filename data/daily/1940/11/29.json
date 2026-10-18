@@ -1,0 +1,18 @@
+{
+  "date": "1940-11-29",
+  "weather_code": 51,
+  "temp_max": 16,
+  "temp_min": 10.2,
+  "temp_mean": 12.7,
+  "precipitation": 0.1,
+  "sunshine": 32177.76,
+  "wind_speed_max": 11.7,
+  "sunrise": "1940-11-29T08:12",
+  "sunset": "1940-11-29T18:16",
+  "sunshine_duration_seconds": 32177.76,
+  "sunshine_duration_minutes": 536,
+  "estimated_daily_sunshine_minutes": 330,
+  "estimated_daily_sunshine": "5 h 30 min",
+  "sunshine_difference_minutes": 206,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1940-06-22",
+  "weather_code": 2,
+  "temp_max": 24.6,
+  "temp_min": 18,
+  "temp_mean": 20.6,
+  "precipitation": 0,
+  "sunshine": 45367.52,
+  "wind_speed_max": 20.6,
+  "sunrise": "1940-06-22T06:14",
+  "sunset": "1940-06-22T20:41",
+  "sunshine_duration_seconds": 45367.52,
+  "sunshine_duration_minutes": 756,
+  "estimated_daily_sunshine_minutes": 675,
+  "estimated_daily_sunshine": "11 h 15 min",
+  "sunshine_difference_minutes": 81,
+  "sunshine_consistency": "Faible"
+}

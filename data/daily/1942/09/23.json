@@ -1,0 +1,18 @@
+{
+  "date": "1942-09-23",
+  "weather_code": 51,
+  "temp_max": 25.3,
+  "temp_min": 18,
+  "temp_mean": 21.3,
+  "precipitation": 0.6,
+  "sunshine": 38591.91,
+  "wind_speed_max": 15.9,
+  "sunrise": "1942-09-23T07:14",
+  "sunset": "1942-09-23T19:21",
+  "sunshine_duration_seconds": 38591.91,
+  "sunshine_duration_minutes": 643,
+  "estimated_daily_sunshine_minutes": 471,
+  "estimated_daily_sunshine": "7 h 51 min",
+  "sunshine_difference_minutes": 172,
+  "sunshine_consistency": "Faible"
+}

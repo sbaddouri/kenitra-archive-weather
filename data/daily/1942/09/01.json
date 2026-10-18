@@ -1,0 +1,18 @@
+{
+  "date": "1942-09-01",
+  "weather_code": 2,
+  "temp_max": 25.1,
+  "temp_min": 18.9,
+  "temp_mean": 21.9,
+  "precipitation": 0,
+  "sunshine": 45872.9,
+  "wind_speed_max": 15.8,
+  "sunrise": "1942-09-01T06:59",
+  "sunset": "1942-09-01T19:52",
+  "sunshine_duration_seconds": 45872.9,
+  "sunshine_duration_minutes": 765,
+  "estimated_daily_sunshine_minutes": 555,
+  "estimated_daily_sunshine": "9 h 15 min",
+  "sunshine_difference_minutes": 210,
+  "sunshine_consistency": "Faible"
+}

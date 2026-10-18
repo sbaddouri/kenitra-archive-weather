@@ -1,0 +1,18 @@
+{
+  "date": "1940-04-05",
+  "weather_code": 1,
+  "temp_max": 23.5,
+  "temp_min": 12,
+  "temp_mean": 17.5,
+  "precipitation": 0,
+  "sunshine": 45307.94,
+  "wind_speed_max": 14.4,
+  "sunrise": "1940-04-05T07:07",
+  "sunset": "1940-04-05T19:50",
+  "sunshine_duration_seconds": 45307.94,
+  "sunshine_duration_minutes": 755,
+  "estimated_daily_sunshine_minutes": 690,
+  "estimated_daily_sunshine": "11 h 30 min",
+  "sunshine_difference_minutes": 65,
+  "sunshine_consistency": "Faible"
+}

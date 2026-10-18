@@ -1,0 +1,18 @@
+{
+  "date": "1942-10-07",
+  "weather_code": 55,
+  "temp_max": 25.2,
+  "temp_min": 19.6,
+  "temp_mean": 21.7,
+  "precipitation": 4.6,
+  "sunshine": 21019.18,
+  "wind_speed_max": 16.1,
+  "sunrise": "1942-10-07T07:25",
+  "sunset": "1942-10-07T19:02",
+  "sunshine_duration_seconds": 21019.18,
+  "sunshine_duration_minutes": 350,
+  "estimated_daily_sunshine_minutes": 144,
+  "estimated_daily_sunshine": "2 h 24 min",
+  "sunshine_difference_minutes": 206,
+  "sunshine_consistency": "Faible"
+}
