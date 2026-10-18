@@ -1,0 +1,18 @@
+{
+  "date": "1966-07-22",
+  "weather_code": 2,
+  "temp_max": 26.5,
+  "temp_min": 19.7,
+  "temp_mean": 22.7,
+  "precipitation": 0,
+  "sunshine": 45393.34,
+  "wind_speed_max": 16.8,
+  "sunrise": "1966-07-22T06:29",
+  "sunset": "1966-07-22T20:35",
+  "sunshine_duration_seconds": 45393.34,
+  "sunshine_duration_minutes": 757,
+  "estimated_daily_sunshine_minutes": 765,
+  "estimated_daily_sunshine": "12 h 45 min",
+  "sunshine_difference_minutes": 8,
+  "sunshine_consistency": "Bon"
+}

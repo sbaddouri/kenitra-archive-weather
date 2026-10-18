@@ -1,0 +1,18 @@
+{
+  "date": "1974-05-27",
+  "weather_code": 51,
+  "temp_max": 22.6,
+  "temp_min": 16.2,
+  "temp_mean": 19,
+  "precipitation": 0,
+  "sunshine": 46800,
+  "wind_speed_max": 13,
+  "sunrise": "1974-05-27T06:17",
+  "sunset": "1974-05-27T20:29",
+  "sunshine_duration_seconds": 46800,
+  "sunshine_duration_minutes": 780,
+  "estimated_daily_sunshine_minutes": 672,
+  "estimated_daily_sunshine": "11 h 12 min",
+  "sunshine_difference_minutes": 108,
+  "sunshine_consistency": "Faible"
+}

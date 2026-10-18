@@ -1,0 +1,18 @@
+{
+  "date": "1967-10-21",
+  "weather_code": 61,
+  "temp_max": 23.2,
+  "temp_min": 18,
+  "temp_mean": 19.9,
+  "precipitation": 8,
+  "sunshine": 36000,
+  "wind_speed_max": 15.5,
+  "sunrise": "1967-10-21T07:35",
+  "sunset": "1967-10-21T18:45",
+  "sunshine_duration_seconds": 36000,
+  "sunshine_duration_minutes": 600,
+  "estimated_daily_sunshine_minutes": 354,
+  "estimated_daily_sunshine": "5 h 54 min",
+  "sunshine_difference_minutes": 246,
+  "sunshine_consistency": "Faible"
+}

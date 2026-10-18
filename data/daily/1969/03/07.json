@@ -1,0 +1,18 @@
+{
+  "date": "1969-03-07",
+  "weather_code": 55,
+  "temp_max": 15.4,
+  "temp_min": 10.6,
+  "temp_mean": 13.5,
+  "precipitation": 6.6,
+  "sunshine": 35171.31,
+  "wind_speed_max": 27.8,
+  "sunrise": "1969-03-07T07:47",
+  "sunset": "1969-03-07T19:27",
+  "sunshine_duration_seconds": 35171.31,
+  "sunshine_duration_minutes": 586,
+  "estimated_daily_sunshine_minutes": 270,
+  "estimated_daily_sunshine": "4 h 30 min",
+  "sunshine_difference_minutes": 316,
+  "sunshine_consistency": "Faible"
+}

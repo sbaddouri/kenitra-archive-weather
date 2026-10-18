@@ -1,0 +1,18 @@
+{
+  "date": "1973-03-20",
+  "weather_code": 61,
+  "temp_max": 16.2,
+  "temp_min": 13.3,
+  "temp_mean": 14.9,
+  "precipitation": 11.4,
+  "sunshine": 18399.56,
+  "wind_speed_max": 13.8,
+  "sunrise": "1973-03-20T07:30",
+  "sunset": "1973-03-20T19:37",
+  "sunshine_duration_seconds": 18399.56,
+  "sunshine_duration_minutes": 307,
+  "estimated_daily_sunshine_minutes": 90,
+  "estimated_daily_sunshine": "1 h 30 min",
+  "sunshine_difference_minutes": 217,
+  "sunshine_consistency": "Faible"
+}

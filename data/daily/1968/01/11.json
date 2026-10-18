@@ -1,0 +1,18 @@
+{
+  "date": "1968-01-11",
+  "weather_code": 51,
+  "temp_max": 15.2,
+  "temp_min": 9.1,
+  "temp_mean": 12.4,
+  "precipitation": 0.3,
+  "sunshine": 33699.84,
+  "wind_speed_max": 16,
+  "sunrise": "1968-01-11T08:33",
+  "sunset": "1968-01-11T18:34",
+  "sunshine_duration_seconds": 33699.84,
+  "sunshine_duration_minutes": 562,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 8,
+  "sunshine_consistency": "Bon"
+}

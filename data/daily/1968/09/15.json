@@ -1,0 +1,18 @@
+{
+  "date": "1968-09-15",
+  "weather_code": 53,
+  "temp_max": 20.8,
+  "temp_min": 18.7,
+  "temp_mean": 20.1,
+  "precipitation": 1.9,
+  "sunshine": 40146.99,
+  "wind_speed_max": 20.6,
+  "sunrise": "1968-09-15T07:09",
+  "sunset": "1968-09-15T19:32",
+  "sunshine_duration_seconds": 40146.99,
+  "sunshine_duration_minutes": 669,
+  "estimated_daily_sunshine_minutes": 294,
+  "estimated_daily_sunshine": "4 h 54 min",
+  "sunshine_difference_minutes": 375,
+  "sunshine_consistency": "Faible"
+}

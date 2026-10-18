@@ -1,0 +1,18 @@
+{
+  "date": "1970-07-05",
+  "weather_code": 0,
+  "temp_max": 32.3,
+  "temp_min": 20.4,
+  "temp_mean": 26.2,
+  "precipitation": 0,
+  "sunshine": 48312.84,
+  "wind_speed_max": 15.8,
+  "sunrise": "1970-07-05T06:19",
+  "sunset": "1970-07-05T20:41",
+  "sunshine_duration_seconds": 48312.84,
+  "sunshine_duration_minutes": 805,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 35,
+  "sunshine_consistency": "Faible"
+}

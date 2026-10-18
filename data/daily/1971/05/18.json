@@ -1,0 +1,18 @@
+{
+  "date": "1971-05-18",
+  "weather_code": 63,
+  "temp_max": 16.6,
+  "temp_min": 12.4,
+  "temp_mean": 14.3,
+  "precipitation": 21.3,
+  "sunshine": 45618.09,
+  "wind_speed_max": 30.6,
+  "sunrise": "1971-05-18T06:22",
+  "sunset": "1971-05-18T20:23",
+  "sunshine_duration_seconds": 45618.09,
+  "sunshine_duration_minutes": 760,
+  "estimated_daily_sunshine_minutes": 129,
+  "estimated_daily_sunshine": "2 h 09 min",
+  "sunshine_difference_minutes": 631,
+  "sunshine_consistency": "Faible"
+}

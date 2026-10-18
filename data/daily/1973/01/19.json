@@ -1,0 +1,18 @@
+{
+  "date": "1973-01-19",
+  "weather_code": 3,
+  "temp_max": 14.8,
+  "temp_min": 10.5,
+  "temp_mean": 12.5,
+  "precipitation": 0,
+  "sunshine": 33415.4,
+  "wind_speed_max": 17.1,
+  "sunrise": "1973-01-19T08:31",
+  "sunset": "1973-01-19T18:43",
+  "sunshine_duration_seconds": 33415.4,
+  "sunshine_duration_minutes": 557,
+  "estimated_daily_sunshine_minutes": 312,
+  "estimated_daily_sunshine": "5 h 12 min",
+  "sunshine_difference_minutes": 245,
+  "sunshine_consistency": "Faible"
+}

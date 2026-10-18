@@ -1,0 +1,18 @@
+{
+  "date": "1972-10-31",
+  "weather_code": 51,
+  "temp_max": 18.2,
+  "temp_min": 15.6,
+  "temp_mean": 17.1,
+  "precipitation": 3.7,
+  "sunshine": 577.73,
+  "wind_speed_max": 12.5,
+  "sunrise": "1972-10-31T07:45",
+  "sunset": "1972-10-31T18:33",
+  "sunshine_duration_seconds": 577.73,
+  "sunshine_duration_minutes": 10,
+  "estimated_daily_sunshine_minutes": 165,
+  "estimated_daily_sunshine": "2 h 45 min",
+  "sunshine_difference_minutes": 155,
+  "sunshine_consistency": "Faible"
+}

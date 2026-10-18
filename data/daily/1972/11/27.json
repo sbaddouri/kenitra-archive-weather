@@ -1,0 +1,18 @@
+{
+  "date": "1972-11-27",
+  "weather_code": 55,
+  "temp_max": 16.1,
+  "temp_min": 13.1,
+  "temp_mean": 14.8,
+  "precipitation": 2.9,
+  "sunshine": 34864.99,
+  "wind_speed_max": 13.4,
+  "sunrise": "1972-11-27T08:10",
+  "sunset": "1972-11-27T18:16",
+  "sunshine_duration_seconds": 34864.99,
+  "sunshine_duration_minutes": 581,
+  "estimated_daily_sunshine_minutes": 306,
+  "estimated_daily_sunshine": "5 h 06 min",
+  "sunshine_difference_minutes": 275,
+  "sunshine_consistency": "Faible"
+}

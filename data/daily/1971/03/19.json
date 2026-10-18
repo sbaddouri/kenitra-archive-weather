@@ -1,0 +1,18 @@
+{
+  "date": "1971-03-19",
+  "weather_code": 63,
+  "temp_max": 16.3,
+  "temp_min": 12.6,
+  "temp_mean": 14.6,
+  "precipitation": 10.4,
+  "sunshine": 39600,
+  "wind_speed_max": 35.2,
+  "sunrise": "1971-03-19T07:32",
+  "sunset": "1971-03-19T19:36",
+  "sunshine_duration_seconds": 39600,
+  "sunshine_duration_minutes": 660,
+  "estimated_daily_sunshine_minutes": 180,
+  "estimated_daily_sunshine": "3 h 00 min",
+  "sunshine_difference_minutes": 480,
+  "sunshine_consistency": "Faible"
+}

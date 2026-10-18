@@ -1,0 +1,18 @@
+{
+  "date": "1970-11-05",
+  "weather_code": 0,
+  "temp_max": 23,
+  "temp_min": 13.1,
+  "temp_mean": 18.3,
+  "precipitation": 0,
+  "sunshine": 36716.16,
+  "wind_speed_max": 11.5,
+  "sunrise": "1970-11-05T07:49",
+  "sunset": "1970-11-05T18:29",
+  "sunshine_duration_seconds": 36716.16,
+  "sunshine_duration_minutes": 612,
+  "estimated_daily_sunshine_minutes": 660,
+  "estimated_daily_sunshine": "11 h 00 min",
+  "sunshine_difference_minutes": 48,
+  "sunshine_consistency": "Faible"
+}

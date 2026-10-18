@@ -1,0 +1,18 @@
+{
+  "date": "1971-05-27",
+  "weather_code": 3,
+  "temp_max": 18.4,
+  "temp_min": 12,
+  "temp_mean": 15.7,
+  "precipitation": 0,
+  "sunshine": 47482.86,
+  "wind_speed_max": 16.1,
+  "sunrise": "1971-05-27T06:17",
+  "sunset": "1971-05-27T20:29",
+  "sunshine_duration_seconds": 47482.86,
+  "sunshine_duration_minutes": 791,
+  "estimated_daily_sunshine_minutes": 546,
+  "estimated_daily_sunshine": "9 h 06 min",
+  "sunshine_difference_minutes": 245,
+  "sunshine_consistency": "Faible"
+}

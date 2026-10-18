@@ -1,0 +1,18 @@
+{
+  "date": "1970-01-13",
+  "weather_code": 53,
+  "temp_max": 18,
+  "temp_min": 15.9,
+  "temp_mean": 16.9,
+  "precipitation": 6,
+  "sunshine": 6900.51,
+  "wind_speed_max": 33.1,
+  "sunrise": "1970-01-13T08:32",
+  "sunset": "1970-01-13T18:37",
+  "sunshine_duration_seconds": 6900.51,
+  "sunshine_duration_minutes": 115,
+  "estimated_daily_sunshine_minutes": 132,
+  "estimated_daily_sunshine": "2 h 12 min",
+  "sunshine_difference_minutes": 17,
+  "sunshine_consistency": "Moyen"
+}

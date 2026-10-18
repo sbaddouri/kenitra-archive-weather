@@ -1,0 +1,18 @@
+{
+  "date": "1972-01-13",
+  "weather_code": 2,
+  "temp_max": 14.3,
+  "temp_min": 8.3,
+  "temp_mean": 11.1,
+  "precipitation": 0,
+  "sunshine": 33268.47,
+  "wind_speed_max": 11.1,
+  "sunrise": "1972-01-13T08:32",
+  "sunset": "1972-01-13T18:36",
+  "sunshine_duration_seconds": 33268.47,
+  "sunshine_duration_minutes": 554,
+  "estimated_daily_sunshine_minutes": 480,
+  "estimated_daily_sunshine": "8 h 00 min",
+  "sunshine_difference_minutes": 74,
+  "sunshine_consistency": "Faible"
+}

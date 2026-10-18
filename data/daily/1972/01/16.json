@@ -1,0 +1,18 @@
+{
+  "date": "1972-01-16",
+  "weather_code": 63,
+  "temp_max": 14.6,
+  "temp_min": 11.2,
+  "temp_mean": 12.8,
+  "precipitation": 33.7,
+  "sunshine": 32600.91,
+  "wind_speed_max": 46.4,
+  "sunrise": "1972-01-16T08:32",
+  "sunset": "1972-01-16T18:39",
+  "sunshine_duration_seconds": 32600.91,
+  "sunshine_duration_minutes": 543,
+  "estimated_daily_sunshine_minutes": 117,
+  "estimated_daily_sunshine": "1 h 57 min",
+  "sunshine_difference_minutes": 426,
+  "sunshine_consistency": "Faible"
+}

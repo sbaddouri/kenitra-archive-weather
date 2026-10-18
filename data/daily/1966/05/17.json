@@ -1,0 +1,18 @@
+{
+  "date": "1966-05-17",
+  "weather_code": 0,
+  "temp_max": 25.5,
+  "temp_min": 16.7,
+  "temp_mean": 21.4,
+  "precipitation": 0,
+  "sunshine": 47319.06,
+  "wind_speed_max": 14.9,
+  "sunrise": "1966-05-17T06:22",
+  "sunset": "1966-05-17T20:22",
+  "sunshine_duration_seconds": 47319.06,
+  "sunshine_duration_minutes": 789,
+  "estimated_daily_sunshine_minutes": 840,
+  "estimated_daily_sunshine": "14 h 00 min",
+  "sunshine_difference_minutes": 51,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1972-03-28",
+  "weather_code": 61,
+  "temp_max": 20.6,
+  "temp_min": 12.3,
+  "temp_mean": 16.3,
+  "precipitation": 2.9,
+  "sunshine": 31666.84,
+  "wind_speed_max": 15.1,
+  "sunrise": "1972-03-28T07:19",
+  "sunset": "1972-03-28T19:44",
+  "sunshine_duration_seconds": 31666.84,
+  "sunshine_duration_minutes": 528,
+  "estimated_daily_sunshine_minutes": 75,
+  "estimated_daily_sunshine": "1 h 15 min",
+  "sunshine_difference_minutes": 453,
+  "sunshine_consistency": "Faible"
+}

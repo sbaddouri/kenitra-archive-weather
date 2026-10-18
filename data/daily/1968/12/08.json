@@ -1,0 +1,18 @@
+{
+  "date": "1968-12-08",
+  "weather_code": 55,
+  "temp_max": 14.4,
+  "temp_min": 12.4,
+  "temp_mean": 13.4,
+  "precipitation": 21.4,
+  "sunshine": 4618.5,
+  "wind_speed_max": 26.6,
+  "sunrise": "1968-12-08T08:20",
+  "sunset": "1968-12-08T18:16",
+  "sunshine_duration_seconds": 4618.5,
+  "sunshine_duration_minutes": 77,
+  "estimated_daily_sunshine_minutes": 66,
+  "estimated_daily_sunshine": "1 h 06 min",
+  "sunshine_difference_minutes": 11,
+  "sunshine_consistency": "Bon"
+}

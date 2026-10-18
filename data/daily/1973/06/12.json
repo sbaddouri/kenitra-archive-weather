@@ -1,0 +1,18 @@
+{
+  "date": "1973-06-12",
+  "weather_code": 1,
+  "temp_max": 23,
+  "temp_min": 15.7,
+  "temp_mean": 19.4,
+  "precipitation": 0,
+  "sunshine": 47628.94,
+  "wind_speed_max": 18.5,
+  "sunrise": "1973-06-12T06:13",
+  "sunset": "1973-06-12T20:38",
+  "sunshine_duration_seconds": 47628.94,
+  "sunshine_duration_minutes": 794,
+  "estimated_daily_sunshine_minutes": 765,
+  "estimated_daily_sunshine": "12 h 45 min",
+  "sunshine_difference_minutes": 29,
+  "sunshine_consistency": "Moyen"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1968-04-11",
+  "weather_code": 51,
+  "temp_max": 18.2,
+  "temp_min": 12.3,
+  "temp_mean": 15.2,
+  "precipitation": 0.1,
+  "sunshine": 41623.37,
+  "wind_speed_max": 12.2,
+  "sunrise": "1968-04-11T07:00",
+  "sunset": "1968-04-11T19:54",
+  "sunshine_duration_seconds": 41623.37,
+  "sunshine_duration_minutes": 694,
+  "estimated_daily_sunshine_minutes": 237,
+  "estimated_daily_sunshine": "3 h 57 min",
+  "sunshine_difference_minutes": 457,
+  "sunshine_consistency": "Faible"
+}

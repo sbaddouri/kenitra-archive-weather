@@ -1,0 +1,18 @@
+{
+  "date": "1971-07-09",
+  "weather_code": 1,
+  "temp_max": 26.7,
+  "temp_min": 20,
+  "temp_mean": 23.1,
+  "precipitation": 0,
+  "sunshine": 47243.51,
+  "wind_speed_max": 14.4,
+  "sunrise": "1971-07-09T06:21",
+  "sunset": "1971-07-09T20:41",
+  "sunshine_duration_seconds": 47243.51,
+  "sunshine_duration_minutes": 787,
+  "estimated_daily_sunshine_minutes": 825,
+  "estimated_daily_sunshine": "13 h 45 min",
+  "sunshine_difference_minutes": 38,
+  "sunshine_consistency": "Faible"
+}

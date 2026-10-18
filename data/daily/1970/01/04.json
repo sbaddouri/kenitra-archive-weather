@@ -1,0 +1,18 @@
+{
+  "date": "1970-01-04",
+  "weather_code": 61,
+  "temp_max": 18.5,
+  "temp_min": 15.9,
+  "temp_mean": 17.5,
+  "precipitation": 8,
+  "sunshine": 18797,
+  "wind_speed_max": 33.3,
+  "sunrise": "1970-01-04T08:33",
+  "sunset": "1970-01-04T18:29",
+  "sunshine_duration_seconds": 18797,
+  "sunshine_duration_minutes": 313,
+  "estimated_daily_sunshine_minutes": 183,
+  "estimated_daily_sunshine": "3 h 03 min",
+  "sunshine_difference_minutes": 130,
+  "sunshine_consistency": "Faible"
+}

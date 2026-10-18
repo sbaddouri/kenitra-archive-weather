@@ -1,0 +1,18 @@
+{
+  "date": "1974-12-28",
+  "weather_code": 3,
+  "temp_max": 17.2,
+  "temp_min": 10.1,
+  "temp_mean": 13.3,
+  "precipitation": 0,
+  "sunshine": 32455.8,
+  "wind_speed_max": 9.2,
+  "sunrise": "1974-12-28T08:31",
+  "sunset": "1974-12-28T18:23",
+  "sunshine_duration_seconds": 32455.8,
+  "sunshine_duration_minutes": 541,
+  "estimated_daily_sunshine_minutes": 417,
+  "estimated_daily_sunshine": "6 h 57 min",
+  "sunshine_difference_minutes": 124,
+  "sunshine_consistency": "Faible"
+}

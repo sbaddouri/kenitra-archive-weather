@@ -1,0 +1,18 @@
+{
+  "date": "1968-02-21",
+  "weather_code": 63,
+  "temp_max": 16.8,
+  "temp_min": 11.3,
+  "temp_mean": 13.6,
+  "precipitation": 7.1,
+  "sunshine": 14313.79,
+  "wind_speed_max": 24.7,
+  "sunrise": "1968-02-21T08:06",
+  "sunset": "1968-02-21T19:14",
+  "sunshine_duration_seconds": 14313.79,
+  "sunshine_duration_minutes": 239,
+  "estimated_daily_sunshine_minutes": 93,
+  "estimated_daily_sunshine": "1 h 33 min",
+  "sunshine_difference_minutes": 146,
+  "sunshine_consistency": "Faible"
+}

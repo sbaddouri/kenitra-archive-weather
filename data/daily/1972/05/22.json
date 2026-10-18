@@ -1,0 +1,18 @@
+{
+  "date": "1972-05-22",
+  "weather_code": 2,
+  "temp_max": 19,
+  "temp_min": 13.8,
+  "temp_mean": 16.4,
+  "precipitation": 0,
+  "sunshine": 46152.29,
+  "wind_speed_max": 14.5,
+  "sunrise": "1972-05-22T06:19",
+  "sunset": "1972-05-22T20:26",
+  "sunshine_duration_seconds": 46152.29,
+  "sunshine_duration_minutes": 769,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 229,
+  "sunshine_consistency": "Faible"
+}

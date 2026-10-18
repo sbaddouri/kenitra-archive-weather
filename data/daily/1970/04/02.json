@@ -1,0 +1,18 @@
+{
+  "date": "1970-04-02",
+  "weather_code": 63,
+  "temp_max": 17.8,
+  "temp_min": 12,
+  "temp_mean": 14.9,
+  "precipitation": 6.9,
+  "sunshine": 40146.32,
+  "wind_speed_max": 21.7,
+  "sunrise": "1970-04-02T07:12",
+  "sunset": "1970-04-02T19:47",
+  "sunshine_duration_seconds": 40146.32,
+  "sunshine_duration_minutes": 669,
+  "estimated_daily_sunshine_minutes": 252,
+  "estimated_daily_sunshine": "4 h 12 min",
+  "sunshine_difference_minutes": 417,
+  "sunshine_consistency": "Faible"
+}

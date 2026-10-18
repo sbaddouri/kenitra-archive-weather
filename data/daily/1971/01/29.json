@@ -1,0 +1,18 @@
+{
+  "date": "1971-01-29",
+  "weather_code": 61,
+  "temp_max": 16.7,
+  "temp_min": 9.3,
+  "temp_mean": 12.3,
+  "precipitation": 8.3,
+  "sunshine": 31505.05,
+  "wind_speed_max": 26.7,
+  "sunrise": "1971-01-29T08:26",
+  "sunset": "1971-01-29T18:52",
+  "sunshine_duration_seconds": 31505.05,
+  "sunshine_duration_minutes": 525,
+  "estimated_daily_sunshine_minutes": 369,
+  "estimated_daily_sunshine": "6 h 09 min",
+  "sunshine_difference_minutes": 156,
+  "sunshine_consistency": "Faible"
+}

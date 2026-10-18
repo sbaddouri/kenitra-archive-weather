@@ -1,0 +1,18 @@
+{
+  "date": "1966-01-05",
+  "weather_code": 3,
+  "temp_max": 18.9,
+  "temp_min": 9.5,
+  "temp_mean": 12.9,
+  "precipitation": 0,
+  "sunshine": 22042.64,
+  "wind_speed_max": 11.4,
+  "sunrise": "1966-01-05T08:33",
+  "sunset": "1966-01-05T18:30",
+  "sunshine_duration_seconds": 22042.64,
+  "sunshine_duration_minutes": 367,
+  "estimated_daily_sunshine_minutes": 186,
+  "estimated_daily_sunshine": "3 h 06 min",
+  "sunshine_difference_minutes": 181,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1966-12-21",
+  "weather_code": 1,
+  "temp_max": 15.9,
+  "temp_min": 8.4,
+  "temp_mean": 12.3,
+  "precipitation": 0,
+  "sunshine": 32876.58,
+  "wind_speed_max": 9.8,
+  "sunrise": "1966-12-21T08:28",
+  "sunset": "1966-12-21T18:20",
+  "sunshine_duration_seconds": 32876.58,
+  "sunshine_duration_minutes": 548,
+  "estimated_daily_sunshine_minutes": 555,
+  "estimated_daily_sunshine": "9 h 15 min",
+  "sunshine_difference_minutes": 7,
+  "sunshine_consistency": "Bon"
+}

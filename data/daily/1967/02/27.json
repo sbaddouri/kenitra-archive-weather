@@ -1,0 +1,18 @@
+{
+  "date": "1967-02-27",
+  "weather_code": 61,
+  "temp_max": 15.6,
+  "temp_min": 12.6,
+  "temp_mean": 13.9,
+  "precipitation": 8,
+  "sunshine": 38289.81,
+  "wind_speed_max": 20.7,
+  "sunrise": "1967-02-27T07:58",
+  "sunset": "1967-02-27T19:19",
+  "sunshine_duration_seconds": 38289.81,
+  "sunshine_duration_minutes": 638,
+  "estimated_daily_sunshine_minutes": 414,
+  "estimated_daily_sunshine": "6 h 54 min",
+  "sunshine_difference_minutes": 224,
+  "sunshine_consistency": "Faible"
+}

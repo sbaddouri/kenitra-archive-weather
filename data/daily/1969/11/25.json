@@ -1,0 +1,18 @@
+{
+  "date": "1969-11-25",
+  "weather_code": 61,
+  "temp_max": 17.5,
+  "temp_min": 15,
+  "temp_mean": 16.3,
+  "precipitation": 7,
+  "sunshine": 32761.41,
+  "wind_speed_max": 25.3,
+  "sunrise": "1969-11-25T08:08",
+  "sunset": "1969-11-25T18:17",
+  "sunshine_duration_seconds": 32761.41,
+  "sunshine_duration_minutes": 546,
+  "estimated_daily_sunshine_minutes": 120,
+  "estimated_daily_sunshine": "2 h 00 min",
+  "sunshine_difference_minutes": 426,
+  "sunshine_consistency": "Faible"
+}

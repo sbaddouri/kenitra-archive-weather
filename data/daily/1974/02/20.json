@@ -1,0 +1,18 @@
+{
+  "date": "1974-02-20",
+  "weather_code": 61,
+  "temp_max": 13.6,
+  "temp_min": 10.5,
+  "temp_mean": 11.7,
+  "precipitation": 13,
+  "sunshine": 38967.6,
+  "wind_speed_max": 20.4,
+  "sunrise": "1974-02-20T08:06",
+  "sunset": "1974-02-20T19:14",
+  "sunshine_duration_seconds": 38967.6,
+  "sunshine_duration_minutes": 649,
+  "estimated_daily_sunshine_minutes": 150,
+  "estimated_daily_sunshine": "2 h 30 min",
+  "sunshine_difference_minutes": 499,
+  "sunshine_consistency": "Faible"
+}

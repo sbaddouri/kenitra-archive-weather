@@ -1,0 +1,18 @@
+{
+  "date": "1970-12-03",
+  "weather_code": 3,
+  "temp_max": 19.3,
+  "temp_min": 11.3,
+  "temp_mean": 15.2,
+  "precipitation": 0,
+  "sunshine": 34790.87,
+  "wind_speed_max": 10.9,
+  "sunrise": "1970-12-03T08:15",
+  "sunset": "1970-12-03T18:16",
+  "sunshine_duration_seconds": 34790.87,
+  "sunshine_duration_minutes": 580,
+  "estimated_daily_sunshine_minutes": 570,
+  "estimated_daily_sunshine": "9 h 30 min",
+  "sunshine_difference_minutes": 10,
+  "sunshine_consistency": "Bon"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1974-04-12",
+  "weather_code": 63,
+  "temp_max": 13.6,
+  "temp_min": 10.8,
+  "temp_mean": 12,
+  "precipitation": 36.8,
+  "sunshine": 18838.19,
+  "wind_speed_max": 30.4,
+  "sunrise": "1974-04-12T06:59",
+  "sunset": "1974-04-12T19:55",
+  "sunshine_duration_seconds": 18838.19,
+  "sunshine_duration_minutes": 314,
+  "estimated_daily_sunshine_minutes": 69,
+  "estimated_daily_sunshine": "1 h 09 min",
+  "sunshine_difference_minutes": 245,
+  "sunshine_consistency": "Faible"
+}

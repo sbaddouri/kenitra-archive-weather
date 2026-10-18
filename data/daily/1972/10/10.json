@@ -1,0 +1,18 @@
+{
+  "date": "1972-10-10",
+  "weather_code": 3,
+  "temp_max": 21.8,
+  "temp_min": 17.5,
+  "temp_mean": 19.7,
+  "precipitation": 0,
+  "sunshine": 25246.09,
+  "wind_speed_max": 12.4,
+  "sunrise": "1972-10-10T07:27",
+  "sunset": "1972-10-10T18:58",
+  "sunshine_duration_seconds": 25246.09,
+  "sunshine_duration_minutes": 421,
+  "estimated_daily_sunshine_minutes": 90,
+  "estimated_daily_sunshine": "1 h 30 min",
+  "sunshine_difference_minutes": 331,
+  "sunshine_consistency": "Faible"
+}

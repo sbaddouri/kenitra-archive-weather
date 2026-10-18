@@ -1,0 +1,18 @@
+{
+  "date": "1966-02-15",
+  "weather_code": 55,
+  "temp_max": 19.4,
+  "temp_min": 9.8,
+  "temp_mean": 14.7,
+  "precipitation": 4.1,
+  "sunshine": 38478.53,
+  "wind_speed_max": 33.3,
+  "sunrise": "1966-02-15T08:11",
+  "sunset": "1966-02-15T19:09",
+  "sunshine_duration_seconds": 38478.53,
+  "sunshine_duration_minutes": 641,
+  "estimated_daily_sunshine_minutes": 465,
+  "estimated_daily_sunshine": "7 h 45 min",
+  "sunshine_difference_minutes": 176,
+  "sunshine_consistency": "Faible"
+}

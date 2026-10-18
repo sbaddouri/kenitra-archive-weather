@@ -1,0 +1,18 @@
+{
+  "date": "1971-05-16",
+  "weather_code": 55,
+  "temp_max": 19.4,
+  "temp_min": 14.9,
+  "temp_mean": 16.6,
+  "precipitation": 4.8,
+  "sunshine": 44449.12,
+  "wind_speed_max": 24.2,
+  "sunrise": "1971-05-16T06:23",
+  "sunset": "1971-05-16T20:21",
+  "sunshine_duration_seconds": 44449.12,
+  "sunshine_duration_minutes": 741,
+  "estimated_daily_sunshine_minutes": 375,
+  "estimated_daily_sunshine": "6 h 15 min",
+  "sunshine_difference_minutes": 366,
+  "sunshine_consistency": "Faible"
+}

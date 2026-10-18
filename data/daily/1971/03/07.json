@@ -1,0 +1,18 @@
+{
+  "date": "1971-03-07",
+  "weather_code": 55,
+  "temp_max": 15.3,
+  "temp_min": 11.8,
+  "temp_mean": 13.8,
+  "precipitation": 6.5,
+  "sunshine": 13156.75,
+  "wind_speed_max": 9.2,
+  "sunrise": "1971-03-07T07:48",
+  "sunset": "1971-03-07T19:26",
+  "sunshine_duration_seconds": 13156.75,
+  "sunshine_duration_minutes": 219,
+  "estimated_daily_sunshine_minutes": 141,
+  "estimated_daily_sunshine": "2 h 21 min",
+  "sunshine_difference_minutes": 78,
+  "sunshine_consistency": "Faible"
+}

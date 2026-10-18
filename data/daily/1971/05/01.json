@@ -1,0 +1,18 @@
+{
+  "date": "1971-05-01",
+  "weather_code": 55,
+  "temp_max": 17.1,
+  "temp_min": 13.6,
+  "temp_mean": 15.1,
+  "precipitation": 3.5,
+  "sunshine": 43200,
+  "wind_speed_max": 23.2,
+  "sunrise": "1971-05-01T06:37",
+  "sunset": "1971-05-01T20:09",
+  "sunshine_duration_seconds": 43200,
+  "sunshine_duration_minutes": 720,
+  "estimated_daily_sunshine_minutes": 180,
+  "estimated_daily_sunshine": "3 h 00 min",
+  "sunshine_difference_minutes": 540,
+  "sunshine_consistency": "Faible"
+}

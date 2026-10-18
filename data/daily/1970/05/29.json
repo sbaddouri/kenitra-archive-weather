@@ -1,0 +1,18 @@
+{
+  "date": "1970-05-29",
+  "weather_code": 3,
+  "temp_max": 23.6,
+  "temp_min": 16.2,
+  "temp_mean": 19.8,
+  "precipitation": 0,
+  "sunshine": 47460.92,
+  "wind_speed_max": 16.2,
+  "sunrise": "1970-05-29T06:16",
+  "sunset": "1970-05-29T20:31",
+  "sunshine_duration_seconds": 47460.92,
+  "sunshine_duration_minutes": 791,
+  "estimated_daily_sunshine_minutes": 756,
+  "estimated_daily_sunshine": "12 h 36 min",
+  "sunshine_difference_minutes": 35,
+  "sunshine_consistency": "Faible"
+}

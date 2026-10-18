@@ -1,0 +1,18 @@
+{
+  "date": "1971-03-22",
+  "weather_code": 55,
+  "temp_max": 13.6,
+  "temp_min": 10.4,
+  "temp_mean": 11.9,
+  "precipitation": 4.8,
+  "sunshine": 39943.33,
+  "wind_speed_max": 17.3,
+  "sunrise": "1971-03-22T07:28",
+  "sunset": "1971-03-22T19:38",
+  "sunshine_duration_seconds": 39943.33,
+  "sunshine_duration_minutes": 666,
+  "estimated_daily_sunshine_minutes": 213,
+  "estimated_daily_sunshine": "3 h 33 min",
+  "sunshine_difference_minutes": 453,
+  "sunshine_consistency": "Faible"
+}

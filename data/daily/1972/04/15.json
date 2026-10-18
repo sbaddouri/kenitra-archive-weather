@@ -1,0 +1,18 @@
+{
+  "date": "1972-04-15",
+  "weather_code": 51,
+  "temp_max": 19.8,
+  "temp_min": 14.2,
+  "temp_mean": 16.6,
+  "precipitation": 1.5,
+  "sunshine": 27986.95,
+  "wind_speed_max": 11.4,
+  "sunrise": "1972-04-15T06:55",
+  "sunset": "1972-04-15T19:58",
+  "sunshine_duration_seconds": 27986.95,
+  "sunshine_duration_minutes": 466,
+  "estimated_daily_sunshine_minutes": 159,
+  "estimated_daily_sunshine": "2 h 39 min",
+  "sunshine_difference_minutes": 307,
+  "sunshine_consistency": "Faible"
+}

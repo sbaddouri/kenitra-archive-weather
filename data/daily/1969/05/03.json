@@ -1,0 +1,18 @@
+{
+  "date": "1969-05-03",
+  "weather_code": 55,
+  "temp_max": 17.9,
+  "temp_min": 13.5,
+  "temp_mean": 15.6,
+  "precipitation": 3.4,
+  "sunshine": 46516.71,
+  "wind_speed_max": 18.8,
+  "sunrise": "1969-05-03T06:34",
+  "sunset": "1969-05-03T20:11",
+  "sunshine_duration_seconds": 46516.71,
+  "sunshine_duration_minutes": 775,
+  "estimated_daily_sunshine_minutes": 258,
+  "estimated_daily_sunshine": "4 h 18 min",
+  "sunshine_difference_minutes": 517,
+  "sunshine_consistency": "Faible"
+}

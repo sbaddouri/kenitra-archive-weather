@@ -1,0 +1,18 @@
+{
+  "date": "1968-09-24",
+  "weather_code": 2,
+  "temp_max": 27.5,
+  "temp_min": 18.7,
+  "temp_mean": 22.9,
+  "precipitation": 0,
+  "sunshine": 41730.49,
+  "wind_speed_max": 16.2,
+  "sunrise": "1968-09-24T07:15",
+  "sunset": "1968-09-24T19:20",
+  "sunshine_duration_seconds": 41730.49,
+  "sunshine_duration_minutes": 696,
+  "estimated_daily_sunshine_minutes": 705,
+  "estimated_daily_sunshine": "11 h 45 min",
+  "sunshine_difference_minutes": 9,
+  "sunshine_consistency": "Bon"
+}

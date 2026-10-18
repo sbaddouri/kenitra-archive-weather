@@ -1,0 +1,18 @@
+{
+  "date": "1972-04-30",
+  "weather_code": 63,
+  "temp_max": 17.2,
+  "temp_min": 13.6,
+  "temp_mean": 15.2,
+  "precipitation": 5.7,
+  "sunshine": 42215.19,
+  "wind_speed_max": 21.3,
+  "sunrise": "1972-04-30T06:37",
+  "sunset": "1972-04-30T20:09",
+  "sunshine_duration_seconds": 42215.19,
+  "sunshine_duration_minutes": 704,
+  "estimated_daily_sunshine_minutes": 288,
+  "estimated_daily_sunshine": "4 h 48 min",
+  "sunshine_difference_minutes": 416,
+  "sunshine_consistency": "Faible"
+}

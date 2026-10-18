@@ -1,0 +1,18 @@
+{
+  "date": "1970-01-14",
+  "weather_code": 63,
+  "temp_max": 17.8,
+  "temp_min": 13.5,
+  "temp_mean": 16.1,
+  "precipitation": 20.3,
+  "sunshine": 12967.74,
+  "wind_speed_max": 30.8,
+  "sunrise": "1970-01-14T08:32",
+  "sunset": "1970-01-14T18:38",
+  "sunshine_duration_seconds": 12967.74,
+  "sunshine_duration_minutes": 216,
+  "estimated_daily_sunshine_minutes": 99,
+  "estimated_daily_sunshine": "1 h 39 min",
+  "sunshine_difference_minutes": 117,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1966-03-23",
+  "weather_code": 2,
+  "temp_max": 17.4,
+  "temp_min": 10.1,
+  "temp_mean": 13.7,
+  "precipitation": 0,
+  "sunshine": 42094.62,
+  "wind_speed_max": 15.2,
+  "sunrise": "1966-03-23T07:26",
+  "sunset": "1966-03-23T19:39",
+  "sunshine_duration_seconds": 42094.62,
+  "sunshine_duration_minutes": 702,
+  "estimated_daily_sunshine_minutes": 675,
+  "estimated_daily_sunshine": "11 h 15 min",
+  "sunshine_difference_minutes": 27,
+  "sunshine_consistency": "Moyen"
+}

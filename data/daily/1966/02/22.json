@@ -1,0 +1,18 @@
+{
+  "date": "1966-02-22",
+  "weather_code": 63,
+  "temp_max": 16.7,
+  "temp_min": 13.3,
+  "temp_mean": 14.7,
+  "precipitation": 13.8,
+  "sunshine": 39099.5,
+  "wind_speed_max": 48.8,
+  "sunrise": "1966-02-22T08:04",
+  "sunset": "1966-02-22T19:15",
+  "sunshine_duration_seconds": 39099.5,
+  "sunshine_duration_minutes": 652,
+  "estimated_daily_sunshine_minutes": 213,
+  "estimated_daily_sunshine": "3 h 33 min",
+  "sunshine_difference_minutes": 439,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1966-02-11",
+  "weather_code": 53,
+  "temp_max": 17.8,
+  "temp_min": 11.3,
+  "temp_mean": 15.8,
+  "precipitation": 2.1,
+  "sunshine": 38042.7,
+  "wind_speed_max": 21.3,
+  "sunrise": "1966-02-11T08:15",
+  "sunset": "1966-02-11T19:05",
+  "sunshine_duration_seconds": 38042.7,
+  "sunshine_duration_minutes": 634,
+  "estimated_daily_sunshine_minutes": 540,
+  "estimated_daily_sunshine": "9 h 00 min",
+  "sunshine_difference_minutes": 94,
+  "sunshine_consistency": "Faible"
+}

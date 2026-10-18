@@ -1,0 +1,18 @@
+{
+  "date": "1971-12-03",
+  "weather_code": 63,
+  "temp_max": 15,
+  "temp_min": 12,
+  "temp_mean": 13.3,
+  "precipitation": 11.6,
+  "sunshine": 24249.41,
+  "wind_speed_max": 24.6,
+  "sunrise": "1971-12-03T08:15",
+  "sunset": "1971-12-03T18:16",
+  "sunshine_duration_seconds": 24249.41,
+  "sunshine_duration_minutes": 404,
+  "estimated_daily_sunshine_minutes": 135,
+  "estimated_daily_sunshine": "2 h 15 min",
+  "sunshine_difference_minutes": 269,
+  "sunshine_consistency": "Faible"
+}

@@ -1,0 +1,18 @@
+{
+  "date": "1967-12-24",
+  "weather_code": 61,
+  "temp_max": 15.2,
+  "temp_min": 10.3,
+  "temp_mean": 13.1,
+  "precipitation": 9.7,
+  "sunshine": 9074.01,
+  "wind_speed_max": 26.8,
+  "sunrise": "1967-12-24T08:29",
+  "sunset": "1967-12-24T18:21",
+  "sunshine_duration_seconds": 9074.01,
+  "sunshine_duration_minutes": 151,
+  "estimated_daily_sunshine_minutes": 138,
+  "estimated_daily_sunshine": "2 h 18 min",
+  "sunshine_difference_minutes": 13,
+  "sunshine_consistency": "Bon"
+}

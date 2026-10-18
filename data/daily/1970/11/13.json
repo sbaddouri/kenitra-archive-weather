@@ -1,0 +1,18 @@
+{
+  "date": "1970-11-13",
+  "weather_code": 61,
+  "temp_max": 17.9,
+  "temp_min": 14.8,
+  "temp_mean": 16.3,
+  "precipitation": 10.9,
+  "sunshine": 29854.73,
+  "wind_speed_max": 20.2,
+  "sunrise": "1970-11-13T07:57",
+  "sunset": "1970-11-13T18:23",
+  "sunshine_duration_seconds": 29854.73,
+  "sunshine_duration_minutes": 498,
+  "estimated_daily_sunshine_minutes": 246,
+  "estimated_daily_sunshine": "4 h 06 min",
+  "sunshine_difference_minutes": 252,
+  "sunshine_consistency": "Faible"
+}

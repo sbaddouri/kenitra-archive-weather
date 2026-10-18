@@ -1,0 +1,18 @@
+{
+  "date": "1965-12-08",
+  "weather_code": 63,
+  "temp_max": 12.4,
+  "temp_min": 10.6,
+  "temp_mean": 11.3,
+  "precipitation": 28.6,
+  "sunshine": 3245.6,
+  "wind_speed_max": 27.2,
+  "sunrise": "1965-12-08T08:19",
+  "sunset": "1965-12-08T18:16",
+  "sunshine_duration_seconds": 3245.6,
+  "sunshine_duration_minutes": 54,
+  "estimated_daily_sunshine_minutes": 60,
+  "estimated_daily_sunshine": "1 h 00 min",
+  "sunshine_difference_minutes": 6,
+  "sunshine_consistency": "Bon"
+}

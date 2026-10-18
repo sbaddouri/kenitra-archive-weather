@@ -1,0 +1,18 @@
+{
+  "date": "1967-04-23",
+  "weather_code": 2,
+  "temp_max": 19.3,
+  "temp_min": 12.9,
+  "temp_mean": 15.8,
+  "precipitation": 0,
+  "sunshine": 46763.83,
+  "wind_speed_max": 15.3,
+  "sunrise": "1967-04-23T06:46",
+  "sunset": "1967-04-23T20:03",
+  "sunshine_duration_seconds": 46763.83,
+  "sunshine_duration_minutes": 779,
+  "estimated_daily_sunshine_minutes": 690,
+  "estimated_daily_sunshine": "11 h 30 min",
+  "sunshine_difference_minutes": 89,
+  "sunshine_consistency": "Faible"
+}

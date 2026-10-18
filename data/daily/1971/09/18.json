@@ -1,0 +1,18 @@
+{
+  "date": "1971-09-18",
+  "weather_code": 0,
+  "temp_max": 27,
+  "temp_min": 19.5,
+  "temp_mean": 23,
+  "precipitation": 0,
+  "sunshine": 42649.52,
+  "wind_speed_max": 15.5,
+  "sunrise": "1971-09-18T07:10",
+  "sunset": "1971-09-18T19:29",
+  "sunshine_duration_seconds": 42649.52,
+  "sunshine_duration_minutes": 711,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 9,
+  "sunshine_consistency": "Bon"
+}

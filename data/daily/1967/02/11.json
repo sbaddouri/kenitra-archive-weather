@@ -1,0 +1,18 @@
+{
+  "date": "1967-02-11",
+  "weather_code": 55,
+  "temp_max": 15.3,
+  "temp_min": 8.7,
+  "temp_mean": 11.8,
+  "precipitation": 2.2,
+  "sunshine": 38380.72,
+  "wind_speed_max": 12.5,
+  "sunrise": "1967-02-11T08:16",
+  "sunset": "1967-02-11T19:05",
+  "sunshine_duration_seconds": 38380.72,
+  "sunshine_duration_minutes": 640,
+  "estimated_daily_sunshine_minutes": 357,
+  "estimated_daily_sunshine": "5 h 57 min",
+  "sunshine_difference_minutes": 283,
+  "sunshine_consistency": "Faible"
+}

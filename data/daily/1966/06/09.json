@@ -1,0 +1,18 @@
+{
+  "date": "1966-06-09",
+  "weather_code": 51,
+  "temp_max": 21.4,
+  "temp_min": 17.5,
+  "temp_mean": 19.2,
+  "precipitation": 0.4,
+  "sunshine": 36931.88,
+  "wind_speed_max": 20,
+  "sunrise": "1966-06-09T06:13",
+  "sunset": "1966-06-09T20:37",
+  "sunshine_duration_seconds": 36931.88,
+  "sunshine_duration_minutes": 616,
+  "estimated_daily_sunshine_minutes": 387,
+  "estimated_daily_sunshine": "6 h 27 min",
+  "sunshine_difference_minutes": 229,
+  "sunshine_consistency": "Faible"
+}

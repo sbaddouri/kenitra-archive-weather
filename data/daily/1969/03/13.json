@@ -1,0 +1,18 @@
+{
+  "date": "1969-03-13",
+  "weather_code": 51,
+  "temp_max": 19.7,
+  "temp_min": 12.8,
+  "temp_mean": 16.2,
+  "precipitation": 0.2,
+  "sunshine": 34024.12,
+  "wind_speed_max": 21.2,
+  "sunrise": "1969-03-13T07:39",
+  "sunset": "1969-03-13T19:32",
+  "sunshine_duration_seconds": 34024.12,
+  "sunshine_duration_minutes": 567,
+  "estimated_daily_sunshine_minutes": 72,
+  "estimated_daily_sunshine": "1 h 12 min",
+  "sunshine_difference_minutes": 495,
+  "sunshine_consistency": "Faible"
+}

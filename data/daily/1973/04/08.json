@@ -1,0 +1,18 @@
+{
+  "date": "1973-04-08",
+  "weather_code": 51,
+  "temp_max": 18.8,
+  "temp_min": 15.4,
+  "temp_mean": 17,
+  "precipitation": 1,
+  "sunshine": 43840.97,
+  "wind_speed_max": 31,
+  "sunrise": "1973-04-08T07:04",
+  "sunset": "1973-04-08T19:52",
+  "sunshine_duration_seconds": 43840.97,
+  "sunshine_duration_minutes": 731,
+  "estimated_daily_sunshine_minutes": 345,
+  "estimated_daily_sunshine": "5 h 45 min",
+  "sunshine_difference_minutes": 386,
+  "sunshine_consistency": "Faible"
+}

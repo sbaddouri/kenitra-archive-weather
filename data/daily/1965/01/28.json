@@ -1,0 +1,18 @@
+{
+  "date": "1965-01-28",
+  "weather_code": 53,
+  "temp_max": 17.2,
+  "temp_min": 12.2,
+  "temp_mean": 14.1,
+  "precipitation": 3.2,
+  "sunshine": 30847.53,
+  "wind_speed_max": 26.8,
+  "sunrise": "1965-01-28T08:26",
+  "sunset": "1965-01-28T18:51",
+  "sunshine_duration_seconds": 30847.53,
+  "sunshine_duration_minutes": 514,
+  "estimated_daily_sunshine_minutes": 132,
+  "estimated_daily_sunshine": "2 h 12 min",
+  "sunshine_difference_minutes": 382,
+  "sunshine_consistency": "Faible"
+}

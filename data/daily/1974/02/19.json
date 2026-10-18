@@ -1,0 +1,18 @@
+{
+  "date": "1974-02-19",
+  "weather_code": 63,
+  "temp_max": 12.9,
+  "temp_min": 10.6,
+  "temp_mean": 11.9,
+  "precipitation": 18.1,
+  "sunshine": 15330.31,
+  "wind_speed_max": 34.1,
+  "sunrise": "1974-02-19T08:07",
+  "sunset": "1974-02-19T19:13",
+  "sunshine_duration_seconds": 15330.31,
+  "sunshine_duration_minutes": 256,
+  "estimated_daily_sunshine_minutes": 96,
+  "estimated_daily_sunshine": "1 h 36 min",
+  "sunshine_difference_minutes": 160,
+  "sunshine_consistency": "Faible"
+}

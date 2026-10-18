@@ -1,0 +1,18 @@
+{
+  "date": "1970-03-18",
+  "weather_code": 1,
+  "temp_max": 16.9,
+  "temp_min": 8.5,
+  "temp_mean": 12.8,
+  "precipitation": 0,
+  "sunshine": 40589.47,
+  "wind_speed_max": 12,
+  "sunrise": "1970-03-18T07:33",
+  "sunset": "1970-03-18T19:35",
+  "sunshine_duration_seconds": 40589.47,
+  "sunshine_duration_minutes": 676,
+  "estimated_daily_sunshine_minutes": 675,
+  "estimated_daily_sunshine": "11 h 15 min",
+  "sunshine_difference_minutes": 1,
+  "sunshine_consistency": "Excellent"
+}

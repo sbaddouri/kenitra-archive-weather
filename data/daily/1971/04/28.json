@@ -1,0 +1,18 @@
+{
+  "date": "1971-04-28",
+  "weather_code": 63,
+  "temp_max": 17.2,
+  "temp_min": 14.1,
+  "temp_mean": 15.4,
+  "precipitation": 10.7,
+  "sunshine": 34327.35,
+  "wind_speed_max": 23.2,
+  "sunrise": "1971-04-28T06:40",
+  "sunset": "1971-04-28T20:07",
+  "sunshine_duration_seconds": 34327.35,
+  "sunshine_duration_minutes": 572,
+  "estimated_daily_sunshine_minutes": 246,
+  "estimated_daily_sunshine": "4 h 06 min",
+  "sunshine_difference_minutes": 326,
+  "sunshine_consistency": "Faible"
+}

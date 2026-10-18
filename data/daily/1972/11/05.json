@@ -1,0 +1,18 @@
+{
+  "date": "1972-11-05",
+  "weather_code": 63,
+  "temp_max": 16,
+  "temp_min": 12.6,
+  "temp_mean": 14.3,
+  "precipitation": 17.3,
+  "sunshine": 5830.72,
+  "wind_speed_max": 11.2,
+  "sunrise": "1972-11-05T07:49",
+  "sunset": "1972-11-05T18:29",
+  "sunshine_duration_seconds": 5830.72,
+  "sunshine_duration_minutes": 97,
+  "estimated_daily_sunshine_minutes": 90,
+  "estimated_daily_sunshine": "1 h 30 min",
+  "sunshine_difference_minutes": 7,
+  "sunshine_consistency": "Bon"
+}

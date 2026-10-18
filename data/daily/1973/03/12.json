@@ -1,0 +1,18 @@
+{
+  "date": "1973-03-12",
+  "weather_code": 55,
+  "temp_max": 14.8,
+  "temp_min": 10.2,
+  "temp_mean": 12.5,
+  "precipitation": 6.6,
+  "sunshine": 38550.18,
+  "wind_speed_max": 17.1,
+  "sunrise": "1973-03-12T07:41",
+  "sunset": "1973-03-12T19:31",
+  "sunshine_duration_seconds": 38550.18,
+  "sunshine_duration_minutes": 643,
+  "estimated_daily_sunshine_minutes": 288,
+  "estimated_daily_sunshine": "4 h 48 min",
+  "sunshine_difference_minutes": 355,
+  "sunshine_consistency": "Faible"
+}

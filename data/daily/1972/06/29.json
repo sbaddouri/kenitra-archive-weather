@@ -1,0 +1,18 @@
+{
+  "date": "1972-06-29",
+  "weather_code": 1,
+  "temp_max": 22.2,
+  "temp_min": 16.3,
+  "temp_mean": 18.9,
+  "precipitation": 0,
+  "sunshine": 47533.63,
+  "wind_speed_max": 15.6,
+  "sunrise": "1972-06-29T06:16",
+  "sunset": "1972-06-29T20:42",
+  "sunshine_duration_seconds": 47533.63,
+  "sunshine_duration_minutes": 792,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 72,
+  "sunshine_consistency": "Faible"
+}

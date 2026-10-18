@@ -1,0 +1,18 @@
+{
+  "date": "1973-02-28",
+  "weather_code": 3,
+  "temp_max": 21.3,
+  "temp_min": 10.1,
+  "temp_mean": 15.2,
+  "precipitation": 0,
+  "sunshine": 38221.12,
+  "wind_speed_max": 28.5,
+  "sunrise": "1973-02-28T07:56",
+  "sunset": "1973-02-28T19:21",
+  "sunshine_duration_seconds": 38221.12,
+  "sunshine_duration_minutes": 637,
+  "estimated_daily_sunshine_minutes": 384,
+  "estimated_daily_sunshine": "6 h 24 min",
+  "sunshine_difference_minutes": 253,
+  "sunshine_consistency": "Faible"
+}

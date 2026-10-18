@@ -1,0 +1,18 @@
+{
+  "date": "1966-01-07",
+  "weather_code": 1,
+  "temp_max": 16.8,
+  "temp_min": 8,
+  "temp_mean": 11.7,
+  "precipitation": 0,
+  "sunshine": 33165.96,
+  "wind_speed_max": 11.2,
+  "sunrise": "1966-01-07T08:33",
+  "sunset": "1966-01-07T18:31",
+  "sunshine_duration_seconds": 33165.96,
+  "sunshine_duration_minutes": 553,
+  "estimated_daily_sunshine_minutes": 555,
+  "estimated_daily_sunshine": "9 h 15 min",
+  "sunshine_difference_minutes": 2,
+  "sunshine_consistency": "Excellent"
+}

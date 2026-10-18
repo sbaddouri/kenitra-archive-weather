@@ -1,0 +1,18 @@
+{
+  "date": "1965-01-15",
+  "weather_code": 53,
+  "temp_max": 14.2,
+  "temp_min": 8.3,
+  "temp_mean": 11.4,
+  "precipitation": 2.8,
+  "sunshine": 8373.32,
+  "wind_speed_max": 11.9,
+  "sunrise": "1965-01-15T08:32",
+  "sunset": "1965-01-15T18:39",
+  "sunshine_duration_seconds": 8373.32,
+  "sunshine_duration_minutes": 140,
+  "estimated_daily_sunshine_minutes": 129,
+  "estimated_daily_sunshine": "2 h 09 min",
+  "sunshine_difference_minutes": 11,
+  "sunshine_consistency": "Bon"
+}

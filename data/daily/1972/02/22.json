@@ -1,0 +1,18 @@
+{
+  "date": "1972-02-22",
+  "weather_code": 61,
+  "temp_max": 12.5,
+  "temp_min": 9.2,
+  "temp_mean": 11.3,
+  "precipitation": 11.5,
+  "sunshine": 513.1,
+  "wind_speed_max": 17.1,
+  "sunrise": "1972-02-22T08:04",
+  "sunset": "1972-02-22T19:15",
+  "sunshine_duration_seconds": 513.1,
+  "sunshine_duration_minutes": 9,
+  "estimated_daily_sunshine_minutes": 153,
+  "estimated_daily_sunshine": "2 h 33 min",
+  "sunshine_difference_minutes": 144,
+  "sunshine_consistency": "Faible"
+}

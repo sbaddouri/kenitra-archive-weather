@@ -1,0 +1,18 @@
+{
+  "date": "1966-10-09",
+  "weather_code": 63,
+  "temp_max": 17.8,
+  "temp_min": 14.1,
+  "temp_mean": 15.8,
+  "precipitation": 16,
+  "sunshine": 28792.2,
+  "wind_speed_max": 19.5,
+  "sunrise": "1966-10-09T07:26",
+  "sunset": "1966-10-09T19:00",
+  "sunshine_duration_seconds": 28792.2,
+  "sunshine_duration_minutes": 480,
+  "estimated_daily_sunshine_minutes": 102,
+  "estimated_daily_sunshine": "1 h 42 min",
+  "sunshine_difference_minutes": 378,
+  "sunshine_consistency": "Faible"
+}

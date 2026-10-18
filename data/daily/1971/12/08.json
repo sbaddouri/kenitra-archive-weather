@@ -1,0 +1,18 @@
+{
+  "date": "1971-12-08",
+  "weather_code": 55,
+  "temp_max": 15.3,
+  "temp_min": 9.7,
+  "temp_mean": 12.2,
+  "precipitation": 3.6,
+  "sunshine": 32922.4,
+  "wind_speed_max": 12,
+  "sunrise": "1971-12-08T08:19",
+  "sunset": "1971-12-08T18:16",
+  "sunshine_duration_seconds": 32922.4,
+  "sunshine_duration_minutes": 549,
+  "estimated_daily_sunshine_minutes": 222,
+  "estimated_daily_sunshine": "3 h 42 min",
+  "sunshine_difference_minutes": 327,
+  "sunshine_consistency": "Faible"
+}

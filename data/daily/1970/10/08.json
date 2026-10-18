@@ -1,0 +1,18 @@
+{
+  "date": "1970-10-08",
+  "weather_code": 51,
+  "temp_max": 18.9,
+  "temp_min": 17.1,
+  "temp_mean": 18.1,
+  "precipitation": 1.9,
+  "sunshine": 39672.57,
+  "wind_speed_max": 21,
+  "sunrise": "1970-10-08T07:25",
+  "sunset": "1970-10-08T19:01",
+  "sunshine_duration_seconds": 39672.57,
+  "sunshine_duration_minutes": 661,
+  "estimated_daily_sunshine_minutes": 300,
+  "estimated_daily_sunshine": "5 h 00 min",
+  "sunshine_difference_minutes": 361,
+  "sunshine_consistency": "Faible"
+}

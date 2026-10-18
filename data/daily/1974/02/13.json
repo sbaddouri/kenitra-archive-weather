@@ -1,0 +1,18 @@
+{
+  "date": "1974-02-13",
+  "weather_code": 55,
+  "temp_max": 15.9,
+  "temp_min": 13,
+  "temp_mean": 14.9,
+  "precipitation": 4,
+  "sunshine": 32173,
+  "wind_speed_max": 27.2,
+  "sunrise": "1974-02-13T08:13",
+  "sunset": "1974-02-13T19:07",
+  "sunshine_duration_seconds": 32173,
+  "sunshine_duration_minutes": 536,
+  "estimated_daily_sunshine_minutes": 258,
+  "estimated_daily_sunshine": "4 h 18 min",
+  "sunshine_difference_minutes": 278,
+  "sunshine_consistency": "Faible"
+}

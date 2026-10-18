@@ -1,0 +1,18 @@
+{
+  "date": "1972-12-02",
+  "weather_code": 63,
+  "temp_max": 17.5,
+  "temp_min": 10.3,
+  "temp_mean": 14,
+  "precipitation": 9.9,
+  "sunshine": 25048.38,
+  "wind_speed_max": 29,
+  "sunrise": "1972-12-02T08:15",
+  "sunset": "1972-12-02T18:16",
+  "sunshine_duration_seconds": 25048.38,
+  "sunshine_duration_minutes": 417,
+  "estimated_daily_sunshine_minutes": 132,
+  "estimated_daily_sunshine": "2 h 12 min",
+  "sunshine_difference_minutes": 285,
+  "sunshine_consistency": "Faible"
+}

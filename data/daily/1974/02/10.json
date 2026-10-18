@@ -1,0 +1,18 @@
+{
+  "date": "1974-02-10",
+  "weather_code": 2,
+  "temp_max": 19.7,
+  "temp_min": 9.9,
+  "temp_mean": 13.5,
+  "precipitation": 0,
+  "sunshine": 38337.7,
+  "wind_speed_max": 13.6,
+  "sunrise": "1974-02-10T08:16",
+  "sunset": "1974-02-10T19:04",
+  "sunshine_duration_seconds": 38337.7,
+  "sunshine_duration_minutes": 639,
+  "estimated_daily_sunshine_minutes": 630,
+  "estimated_daily_sunshine": "10 h 30 min",
+  "sunshine_difference_minutes": 9,
+  "sunshine_consistency": "Bon"
+}

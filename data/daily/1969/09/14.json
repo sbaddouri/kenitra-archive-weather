@@ -1,0 +1,18 @@
+{
+  "date": "1969-09-14",
+  "weather_code": 53,
+  "temp_max": 22,
+  "temp_min": 17.1,
+  "temp_mean": 19.5,
+  "precipitation": 3.2,
+  "sunshine": 32083.55,
+  "wind_speed_max": 25.5,
+  "sunrise": "1969-09-14T07:08",
+  "sunset": "1969-09-14T19:34",
+  "sunshine_duration_seconds": 32083.55,
+  "sunshine_duration_minutes": 535,
+  "estimated_daily_sunshine_minutes": 264,
+  "estimated_daily_sunshine": "4 h 24 min",
+  "sunshine_difference_minutes": 271,
+  "sunshine_consistency": "Faible"
+}

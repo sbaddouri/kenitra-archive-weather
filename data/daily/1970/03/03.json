@@ -1,0 +1,18 @@
+{
+  "date": "1970-03-03",
+  "weather_code": 63,
+  "temp_max": 14.6,
+  "temp_min": 11.6,
+  "temp_mean": 13.4,
+  "precipitation": 15.1,
+  "sunshine": 33393.72,
+  "wind_speed_max": 23.8,
+  "sunrise": "1970-03-03T07:53",
+  "sunset": "1970-03-03T19:23",
+  "sunshine_duration_seconds": 33393.72,
+  "sunshine_duration_minutes": 557,
+  "estimated_daily_sunshine_minutes": 105,
+  "estimated_daily_sunshine": "1 h 45 min",
+  "sunshine_difference_minutes": 452,
+  "sunshine_consistency": "Faible"
+}

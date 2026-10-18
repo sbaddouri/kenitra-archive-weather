@@ -1,0 +1,18 @@
+{
+  "date": "1973-07-09",
+  "weather_code": 2,
+  "temp_max": 24.5,
+  "temp_min": 19.4,
+  "temp_mean": 21.5,
+  "precipitation": 0,
+  "sunshine": 46269.33,
+  "wind_speed_max": 19.5,
+  "sunrise": "1973-07-09T06:21",
+  "sunset": "1973-07-09T20:41",
+  "sunshine_duration_seconds": 46269.33,
+  "sunshine_duration_minutes": 771,
+  "estimated_daily_sunshine_minutes": 585,
+  "estimated_daily_sunshine": "9 h 45 min",
+  "sunshine_difference_minutes": 186,
+  "sunshine_consistency": "Faible"
+}

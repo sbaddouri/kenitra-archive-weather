@@ -1,0 +1,18 @@
+{
+  "date": "1965-09-12",
+  "weather_code": 0,
+  "temp_max": 24.2,
+  "temp_min": 16.4,
+  "temp_mean": 20.6,
+  "precipitation": 0,
+  "sunshine": 43488.34,
+  "wind_speed_max": 16.5,
+  "sunrise": "1965-09-12T07:06",
+  "sunset": "1965-09-12T19:37",
+  "sunshine_duration_seconds": 43488.34,
+  "sunshine_duration_minutes": 725,
+  "estimated_daily_sunshine_minutes": 720,
+  "estimated_daily_sunshine": "12 h 00 min",
+  "sunshine_difference_minutes": 5,
+  "sunshine_consistency": "Excellent"
+}
