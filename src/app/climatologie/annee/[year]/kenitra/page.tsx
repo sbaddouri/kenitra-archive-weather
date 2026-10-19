@@ -1,10 +1,10 @@
 import { getDailyDataForYear, listAvailableYears } from "@/lib/data";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { format, parseISO } from "date-fns";
 import { fr } from "date-fns/locale";
 import Link from "next/link";
-import { getTemperatureStyle, getPrecipitationStyle, getSunshineStyle, formatSunshineDuration } from "@/lib/weather-colors";
+import { getTemperatureStyle, getPrecipitationStyle, getSunshineStyle } from "@/lib/weather-colors";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { notFound } from "next/navigation";
@@ -132,11 +132,6 @@ export default async function YearPage({ params }: PageProps) {
   const sortedMonths = Object.keys(monthlyStats).sort();
 
   // Yearly absolute stats
-  const yearlyAbsMax = Math.max(...sortedMonths.map(m => monthlyStats[m].absMax));
-  const yearlyAbsMin = Math.min(...sortedMonths.map(m => monthlyStats[m].absMin));
-  const yearlyTotalRain = sortedMonths.reduce((acc, m) => acc + monthlyStats[m].rainSum, 0);
-  const yearlyAvgMax = sortedMonths.reduce((acc, m) => acc + monthlyStats[m].tempMaxSum, 0) / data.length;
-  const yearlyAvgMin = sortedMonths.reduce((acc, m) => acc + monthlyStats[m].tempMinSum, 0) / data.length;
   const yearlyMaxMinTemp = Math.max(...sortedMonths.map(m => monthlyStats[m].maxMinTemp));
   const yearlyMinMaxTemp = Math.min(...sortedMonths.map(m => monthlyStats[m].minMaxTemp));
   const yearlySunshineHours = sortedMonths.reduce((acc, m) => acc + monthlyStats[m].sunshineSumMinutes, 0) / 60;
@@ -144,11 +139,6 @@ export default async function YearPage({ params }: PageProps) {
 
   // Yearly totals for sunshine
   const yearlySunshineOfficialSumSeconds = sortedMonths.reduce((acc, m) => acc + monthlyStats[m].sunshineOfficialSumSeconds, 0);
-  const yearlySunshineOfficialHours = Math.floor(yearlySunshineOfficialSumSeconds / 3600);
-  const yearlySunshineOfficialMinutes = Math.floor(((yearlySunshineOfficialSumSeconds / 3600) - yearlySunshineOfficialHours) * 60);
-
-  const yearlySunshineEstimatedTotalMinutes = sortedMonths.reduce((acc, m) => acc + monthlyStats[m].sunshineSumMinutes, 0);
-  const yearlySunshineEstimatedFormatted = formatSunshineDuration(yearlySunshineEstimatedTotalMinutes);
 
   // Yearly max 5-day precip
   let yearlyMax5DayPrecip = -Infinity;
@@ -166,15 +156,6 @@ export default async function YearPage({ params }: PageProps) {
   const yearlyAvgPrecipOver1 = yearlyPrecipDaysOver1.length > 0 
     ? yearlyPrecipDaysOver1.reduce((a, b) => a + b, 0) / yearlyPrecipDaysOver1.length 
     : null;
-
-  const avgMaxColor = getTemperatureStyle(yearlyAvgMax);
-  const avgMinColor = getTemperatureStyle(yearlyAvgMin);
-  const absMaxColor = getTemperatureStyle(yearlyAbsMax);
-  const absMinColor = getTemperatureStyle(yearlyAbsMin);
-  // Le schéma « s » de Wikipédia est calibré sur des totaux mensuels :
-  // les cartes annuelles sont colorées avec la moyenne mensuelle de l'ensoleillement.
-  const yearlySunshineOfficialColor = getSunshineStyle(yearlySunshineOfficialSumSeconds / 3600 / 12);
-  const yearlySunshineEstimatedColor = getSunshineStyle(yearlySunshineEstimatedTotalMinutes / 60 / 12);
 
   return (
     <div className="space-y-8">
@@ -200,65 +181,10 @@ export default async function YearPage({ params }: PageProps) {
           </div>
         )}
         <p className="text-muted-foreground text-center">Tableau climatologique au format Wikipédia.</p>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4">
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: avgMinColor.background, color: avgMinColor.text }}>
-          <CardHeader className="pb-1 p-3">
-            <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Moyenne Min</CardTitle>
-          </CardHeader>
-          <CardContent className="p-3 pt-0">
-            <div className="text-xl font-bold">{yearlyAvgMin !== null && !isNaN(yearlyAvgMin) ? yearlyAvgMin.toFixed(1) : '-'}°C</div>
-          </CardContent>
-        </Card>
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: avgMaxColor.background, color: avgMaxColor.text }}>
-          <CardHeader className="pb-1 p-3">
-            <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Moyenne Max</CardTitle>
-          </CardHeader>
-          <CardContent className="p-3 pt-0">
-            <div className="text-xl font-bold">{yearlyAvgMax !== null && !isNaN(yearlyAvgMax) ? yearlyAvgMax.toFixed(1) : '-'}°C</div>
-          </CardContent>
-        </Card>
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: absMinColor.background, color: absMinColor.text }}>
-          <CardHeader className="pb-1 p-3">
-            <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Record Froid</CardTitle>
-          </CardHeader>
-          <CardContent className="p-3 pt-0">
-            <div className="text-xl font-bold">{yearlyAbsMin !== Infinity ? yearlyAbsMin.toFixed(1) : '-'}°C</div>
-          </CardContent>
-        </Card>
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: absMaxColor.background, color: absMaxColor.text }}>
-          <CardHeader className="pb-1 p-3">
-            <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Record Chaleur</CardTitle>
-          </CardHeader>
-          <CardContent className="p-3 pt-0">
-            <div className="text-xl font-bold">{yearlyAbsMax !== -Infinity ? yearlyAbsMax.toFixed(1) : '-'}°C</div>
-          </CardContent>
-        </Card>
-        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm bg-blue-600 text-white">
-          <CardHeader className="pb-1 p-3">
-            <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Pluie Annuelle</CardTitle>
-          </CardHeader>
-          <CardContent className="p-3 pt-0">
-            <div className="text-xl font-bold">{yearlyTotalRain !== null && !isNaN(yearlyTotalRain) ? yearlyTotalRain.toFixed(1) : '-'} mm</div>
-          </CardContent>
-        </Card>
-        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm" style={{ backgroundColor: yearlySunshineOfficialColor.background, color: yearlySunshineOfficialColor.text }}>
-          <CardHeader className="pb-1 p-3">
-            <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Ensoleillement Officiel</CardTitle>
-          </CardHeader>
-          <CardContent className="p-3 pt-0">
-            <div className="text-xl font-bold">{yearlySunshineOfficialHours}h {yearlySunshineOfficialMinutes}mn</div>
-          </CardContent>
-        </Card>
-        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm" style={{ backgroundColor: yearlySunshineEstimatedColor.background, color: yearlySunshineEstimatedColor.text }}>
-          <CardHeader className="pb-1 p-3">
-            <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Ensoleillement Estimé</CardTitle>
-          </CardHeader>
-          <CardContent className="p-3 pt-0">
-            <div className="text-xl font-bold">{yearlySunshineEstimatedFormatted}</div>
-          </CardContent>
-        </Card>
+        <p className="text-muted-foreground text-center text-sm">
+          Les valeurs annuelles (moyennes, records et cumuls de l&apos;année) figurent dans la
+          dernière colonne « Année » du tableau.
+        </p>
       </div>
 
       <Card className="overflow-hidden border-none shadow-none bg-transparent">

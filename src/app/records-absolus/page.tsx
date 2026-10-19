@@ -1087,6 +1087,12 @@ type StatCellData = {
   color?: ClimateBoxColor;
 };
 
+/** Record annuel : total de jours de pluie d'une année et année concernée. */
+type YearExtreme = {
+  count: number;
+  year: string;
+};
+
 /**
  * Tableau à 13 colonnes : Record + 12 mois + colonne de synthèse
  * (Record absolu ou Moyenne annuelle).
@@ -1322,6 +1328,12 @@ export default async function RecordsAbsolusPage() {
   const rainDayStats = await getRainDayStats();
   const rainPerMonth = rainDayStats.perMonth;
 
+  // Records annuels : seule une année dont les douze mois sont complets peut
+  // être comparée à une autre, on ne retient donc que celles-ci.
+  const completeYearEntries = Object.entries(rainDayStats.perYear).filter(
+    ([, y]) => y.monthsCounted === 12
+  );
+
   const rainMaxValues: StatCellData[] = months.map(m => {
     const s = rainPerMonth[m.num];
     if (s.maxYear === null) return { display: '—', detail: '—' };
@@ -1333,12 +1345,10 @@ export default async function RecordsAbsolusPage() {
   });
   const rainMaxDetails = months.map(m => rainPerMonth[m.num].maxYear ?? '—');
 
-  const rainMaxOverall = months.reduce<{ count: number; label: string } | null>((best, m) => {
-    const s = rainPerMonth[m.num];
-    if (s.maxYear === null) return best;
-    if (best === null || s.maxCount > best.count) {
-      return { count: s.maxCount, label: `${m.short} ${s.maxYear}` };
-    }
+  // Record absolu : l'année la plus pluvieuse de la période (1940-2026) et le
+  // nombre total de jours de pluie qu'elle a totalisés.
+  const wettestRainYear = completeYearEntries.reduce<YearExtreme | null>((best, [year, y]) => {
+    if (best === null || y.totalCount > best.count) return { count: y.totalCount, year };
     return best;
   }, null);
 
@@ -1353,12 +1363,10 @@ export default async function RecordsAbsolusPage() {
   });
   const rainMinDetails = months.map(m => rainPerMonth[m.num].minYear ?? '—');
 
-  const rainMinOverall = months.reduce<{ count: number; label: string } | null>((best, m) => {
-    const s = rainPerMonth[m.num];
-    if (s.minYear === null) return best;
-    if (best === null || s.minCount < best.count) {
-      return { count: s.minCount, label: `${m.short} ${s.minYear}` };
-    }
+  // Record absolu : l'année la plus sèche de la période (1940-2026) et le
+  // nombre total de jours de pluie qu'elle a totalisés.
+  const driestRainYear = completeYearEntries.reduce<YearExtreme | null>((best, [year, y]) => {
+    if (best === null || y.totalCount < best.count) return { count: y.totalCount, year };
     return best;
   }, null);
 
@@ -1377,7 +1385,7 @@ export default async function RecordsAbsolusPage() {
   );
 
   // Moyenne annuelle : uniquement les années dont les 12 mois sont complets.
-  const completeYears = Object.values(rainDayStats.perYear).filter(y => y.monthsCounted === 12);
+  const completeYears = completeYearEntries.map(([, y]) => y);
   const avgAnnualRainDays =
     completeYears.length > 0
       ? completeYears.reduce((sum, y) => sum + y.totalCount, 0) / completeYears.length
@@ -1450,63 +1458,6 @@ export default async function RecordsAbsolusPage() {
             record d&apos;octobre (38,0 °C), donc le résultat est identique avec ou sans cette
             exclusion.
           </p>
-        </CardContent>
-      </Card>
-
-      {/* Max Temperature Records */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Tempé. maxi extrême (°C)</CardTitle>
-        </CardHeader>
-        <CardContent className="p-0">
-          <div className="overflow-x-auto">
-            <Table className="w-full">
-              <TableHeader>
-                <TableRow className="bg-muted/50 border-b">
-                  <TableHead className="border px-3 py-2 font-bold text-left sticky left-0 z-10">Record</TableHead>
-                  {months.map(m => (
-                    <TableHead key={m.num} className="border px-2 py-2 font-bold text-center text-sm capitalize">
-                      {m.short}
-                    </TableHead>
-                  ))}
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                <TableRow>
-                  <TableCell className="border font-bold px-3 py-2 text-left bg-muted/50">Tempé. maxi extrême (°C)</TableCell>
-                  {maxTempsSafe.map((record, idx) => {
-                    if (!record) {
-                      return (
-                        <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
-                      );
-                    }
-                    const cellColor = getTemperatureStyle(record.value);
-                    return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
-                        <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
-                        <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
-                      </TableCell>
-                    );
-                  })}
-                </TableRow>
-                <TableRow>
-                  <TableCell className="border font-bold px-3 py-2 text-left bg-muted/50">Date</TableCell>
-                  {maxTempsSafe.map((record, idx) => {
-                    if (!record) {
-                      return (
-                        <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
-                      );
-                    }
-                    return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center text-[11px] text-muted-foreground">
-                        {format(parseISO(record.date), 'dd/MM/yyyy')}
-                      </TableCell>
-                    );
-                  })}
-                </TableRow>
-              </TableBody>
-            </Table>
-          </div>
         </CardContent>
       </Card>
 
@@ -2331,19 +2282,19 @@ export default async function RecordsAbsolusPage() {
         valueLabel="Jours ≥ 1mm"
         detailLabel="Mois / année du record"
         values={
-          rainMaxOverall
+          wettestRainYear
             ? [
                 ...rainMaxValues,
                 {
-                  display: String(rainMaxOverall.count),
-                  detail: rainMaxOverall.label,
-                  color: getDaysStyle(rainMaxOverall.count)
+                  display: String(wettestRainYear.count),
+                  detail: '',
+                  color: getDaysStyle(wettestRainYear.count)
                 }
               ]
             : [...rainMaxValues, { display: '—', detail: '—' }]
         }
-        details={[...rainMaxDetails, rainMaxOverall ? rainMaxOverall.label : '—']}
-        note="Pour chaque mois, le plus grand nombre de jours avec au moins 1 mm de précipitations, relevé sur la période 1940-2026. Un mois n'est retenu que si tous ses jours disposent d'une valeur de précipitation ; aucun jour manquant n'est compté. Le 1er janvier 1940, dont la précipitation est absente de l'API, est donc écarté des statistiques de janvier. Le mois d'octobre 2026, encore incomplet, est exclu de la compétition. La colonne « Record absolu » reprend le plus élevé des douze records mensuels."
+        details={[...rainMaxDetails, wettestRainYear ? wettestRainYear.year : '—']}
+        note="Pour chaque mois, le plus grand nombre de jours avec au moins 1 mm de précipitations, relevé sur la période 1940-2026. Un mois n'est retenu que si tous ses jours disposent d'une valeur de précipitation ; aucun jour manquant n'est compté. Le 1er janvier 1940, dont la précipitation est absente de l'API, est donc écarté des statistiques de janvier. Le mois d'octobre 2026, encore incomplet, est exclu de la compétition. La colonne « Record absolu » indique l'année la plus pluvieuse de la période 1940-2026 (années complètes uniquement) et le nombre total de jours de pluie qu'elle a totalisés."
       />
 
       {/* Nombre de jours de précipitations record bas (>= 1mm) */}
@@ -2353,19 +2304,19 @@ export default async function RecordsAbsolusPage() {
         valueLabel="Jours ≥ 1mm"
         detailLabel="Mois / année du record"
         values={
-          rainMinOverall
+          driestRainYear
             ? [
                 ...rainMinValues,
                 {
-                  display: String(rainMinOverall.count),
-                  detail: rainMinOverall.label,
-                  color: getDaysStyle(rainMinOverall.count)
+                  display: String(driestRainYear.count),
+                  detail: '',
+                  color: getDaysStyle(driestRainYear.count)
                 }
               ]
             : [...rainMinValues, { display: '—', detail: '—' }]
         }
-        details={[...rainMinDetails, rainMinOverall ? rainMinOverall.label : '—']}
-        note="Pour chaque mois, le plus faible nombre de jours avec au moins 1 mm de précipitations, relevé sur la période 1940-2026. Même règle d'exclusion que le tableau précédent : mois complet requis, aucune valeur manquante comblée, octobre 2026 écarté. La colonne « Record absolu » reprend le plus bas des douze records mensuels."
+        details={[...rainMinDetails, driestRainYear ? driestRainYear.year : '—']}
+        note="Pour chaque mois, le plus faible nombre de jours avec au moins 1 mm de précipitations, relevé sur la période 1940-2026. Même règle d'exclusion que le tableau précédent : mois complet requis, aucune valeur manquante comblée, octobre 2026 écarté. La colonne « Record absolu » indique l'année la plus sèche de la période 1940-2026 (années complètes uniquement) et le nombre total de jours de pluie qu'elle a totalisés."
       />
 
       {/* Nombre de jours de précipitations moyen (>= 1mm) */}
@@ -2378,7 +2329,7 @@ export default async function RecordsAbsolusPage() {
           ...rainAvgValues,
           {
             display: avgAnnualRainDays.toFixed(1),
-            detail: `sur ${completeYears.length} années complètes`,
+            detail: '',
             color: getDaysStyle(avgAnnualRainDays)
           }
         ]}
@@ -2408,7 +2359,7 @@ export default async function RecordsAbsolusPage() {
             <li>Mois le plus sec (précipitations) : mois ayant le total de précipitations le plus faible pour chaque mois sur la période 1940-2026. La 13ème colonne affiche l'année la plus sèche globalement.</li>
             <li>Moyenne mensuelle de précipitations : moyenne des totaux mensuels de précipitations pour chaque mois sur la période, avec moyenne annuelle en 13ème colonne.</li>
             <li>Hauteur quotidienne maximale de précipitations : valeur maximale de précipitation journalière pour chaque mois sur la période 1940-2026. La 13ème colonne affiche le record absolu (valeur + date) sur toute la période.</li>
-            <li>Nombre de jours de précipitations (≥ 1 mm) : record haut, record bas et moyenne mensuelle calculés sur la période 1940-2026. Un mois n&apos;est retenu que si tous ses jours disposent d&apos;une valeur de précipitation (aucun jour manquant n&apos;est compté ni remplacé) ; le mois d&apos;octobre 2026, encore incomplet, est écarté. La moyenne annuelle ne retient que les années dont les douze mois sont complets.</li>
+            <li>Nombre de jours de précipitations (≥ 1 mm) : record haut, record bas et moyenne mensuelle calculés sur la période 1940-2026. Un mois n&apos;est retenu que si tous ses jours disposent d&apos;une valeur de précipitation (aucun jour manquant n&apos;est compté ni remplacé) ; le mois d&apos;octobre 2026, encore incomplet, est écarté. La moyenne annuelle ne retient que les années dont les douze mois sont complets. Les colonnes « Record absolu » désignent l&apos;année la plus pluvieuse et l&apos;année la plus sèche de la période, accompagnées de leur total annuel de jours de pluie.</li>
             <li>Couleurs des cases : schémas de couleur des climate boxes de Wikipédia en anglais (module « Climate box color schemes »), reproduits à l&apos;identique dans src/lib/climate-box-colors.ts. Température : schéma « t », précipitations : schéma « p », ensoleillement : schéma « s », nombre de jours de pluie : schéma « d ».</li>
             <li>Modèle utilisé : ERA5-Land / best_match Open-Meteo.</li>
             <li>Les données horaires ont été utilisées pour compléter les valeurs journalières manquantes quand nécessaire</li>
