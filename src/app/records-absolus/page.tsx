@@ -2,6 +2,7 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { getDailyDataForMonth, listAvailableYears } from "@/lib/data";
 import { format, parseISO } from "date-fns";
+import Link from "next/link";
 import { getTemperatureStyle, getPrecipitationStyle, getSunshineStyle, getDaysStyle } from "@/lib/weather-colors";
 import type { ClimateBoxColor } from "@/lib/weather-colors";
 
@@ -36,6 +37,55 @@ const months = [
   { num: "11", name: "Novembre", short: "Nov" },
   { num: "12", name: "Décembre", short: "Déc" },
 ];
+
+/**
+ * Style commun des boutons de navigation vers les pages « jour » et « mois ».
+ * La bordure suit la couleur du texte de la case (currentColor) : elle reste
+ * donc lisible quelle que soit la couleur de fond donnée par le schéma
+ * Wikipédia (bleu clair, bleu foncé, blanc ou noir).
+ */
+const RECORD_LINK_CLASS =
+  "inline-flex items-center rounded border border-current px-1 py-0.5 text-[10px] font-semibold leading-tight transition-colors hover:bg-black/10 dark:hover:bg-white/10";
+
+/** Nom court français du mois à partir de son numéro ("01" -> "Jan"). */
+function monthShortName(monthNum: string): string {
+  return months.find(m => m.num === monthNum)?.short ?? monthNum;
+}
+
+/**
+ * Bouton vers la page du jour du record :
+ * /climatologie/jour/AAAA/MM/JJ/kenitra
+ */
+function DayRecordButton({ date, label }: { date: string; label?: string }) {
+  const day = parseISO(date);
+  const href = `/climatologie/jour/${format(day, "yyyy")}/${format(day, "MM")}/${format(day, "dd")}/kenitra`;
+  return (
+    <Link href={href} className={RECORD_LINK_CLASS}>
+      {label ?? `${format(day, "dd")} ${monthShortName(format(day, "MM"))} ${format(day, "yyyy")}`}
+    </Link>
+  );
+}
+
+/**
+ * Bouton vers la page du mois du record :
+ * /climatologie/mois/AAAA/MM/kenitra
+ */
+function MonthRecordButton({
+  year,
+  month,
+  label,
+}: {
+  year: string;
+  month: string;
+  label?: string;
+}) {
+  const href = `/climatologie/mois/${year}/${month}/kenitra`;
+  return (
+    <Link href={href} className={RECORD_LINK_CLASS}>
+      {label ?? `${monthShortName(month)} ${year}`}
+    </Link>
+  );
+}
 
 async function getAbsoluteMaxTempForMonth(monthNum: string): Promise<{ value: number; date: string; year: string } | null> {
   const years = listAvailableYears().sort((a, b) => parseInt(a) - parseInt(b));
@@ -1080,6 +1130,8 @@ async function getRainDayStats(): Promise<RainDayStats> {
 type StatCellData = {
   display: string;
   detail: string;
+  /** Lien vers la page du mois du record (bouton de navigation). */
+  link?: string;
   /**
    * Couleur de la case (fond + texte). Elle suit le schéma « days » des
    * climate boxes de Wikipédia en anglais, utilisé pour les jours de pluie.
@@ -1156,7 +1208,13 @@ function RainDaysStatTable({
                     <div
                       className={`text-[10px] leading-tight ${cell.color ? "opacity-80" : "text-muted-foreground"}`}
                     >
-                      {cell.detail}
+                      {cell.link ? (
+                        <Link href={cell.link} className={RECORD_LINK_CLASS}>
+                          {cell.detail}
+                        </Link>
+                      ) : (
+                        cell.detail
+                      )}
                     </div>
                   </TableCell>
                 ))}
@@ -1197,10 +1255,8 @@ function RainDaysStatTable({
  */
 function MaxRecordCell({
   record,
-  monthShort,
 }: {
   record: { value: number; date: string; year: string } | null;
-  monthShort: string;
 }) {
   if (!record) {
     return (
@@ -1216,7 +1272,10 @@ function MaxRecordCell({
     >
       <div className="font-bold leading-tight">{record.value.toFixed(1)}</div>
       <div className="text-[10px] leading-tight">
-        {format(day, 'dd')} {monthShort} {format(day, 'yyyy')}
+        <DayRecordButton
+          date={record.date}
+          label={`${format(day, 'dd')} ${monthShortName(format(day, 'MM'))} ${format(day, 'yyyy')}`}
+        />
       </div>
     </TableCell>
   );
@@ -1340,7 +1399,8 @@ export default async function RecordsAbsolusPage() {
     return {
       display: String(s.maxCount),
       detail: `${m.short} ${s.maxYear}`,
-      color: getDaysStyle(s.maxCount)
+      color: getDaysStyle(s.maxCount),
+      link: `/climatologie/mois/${s.maxYear}/${m.num}/kenitra`
     };
   });
   const rainMaxDetails = months.map(m => rainPerMonth[m.num].maxYear ?? '—');
@@ -1358,7 +1418,8 @@ export default async function RecordsAbsolusPage() {
     return {
       display: String(s.minCount),
       detail: `${m.short} ${s.minYear}`,
-      color: getDaysStyle(s.minCount)
+      color: getDaysStyle(s.minCount),
+      link: `/climatologie/mois/${s.minYear}/${m.num}/kenitra`
     };
   });
   const rainMinDetails = months.map(m => rainPerMonth[m.num].minYear ?? '—');
@@ -1432,9 +1493,9 @@ export default async function RecordsAbsolusPage() {
                     Tempé. maxi extrême (°C)
                   </TableCell>
                   {months.map((m, idx) => (
-                    <MaxRecordCell key={m.num} record={maxTempsSafe[idx] ?? null} monthShort={m.short} />
+                    <MaxRecordCell key={m.num} record={maxTempsSafe[idx] ?? null} />
                   ))}
-                  <MaxRecordCell record={overallMaxRecord} monthShort="—" />
+                  <MaxRecordCell record={overallMaxRecord} />
                 </TableRow>
                 <TableRow>
                   <TableCell className="border px-3 py-2 text-left font-bold bg-muted/50">
@@ -1507,7 +1568,10 @@ export default async function RecordsAbsolusPage() {
                     }
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center text-[11px] text-muted-foreground">
-                        {format(parseISO(record.date), 'dd/MM/yyyy')}
+                        <DayRecordButton
+                          date={record.date}
+                          label={format(parseISO(record.date), 'dd/MM/yyyy')}
+                        />
                       </TableCell>
                     );
                   })}
@@ -1564,7 +1628,10 @@ export default async function RecordsAbsolusPage() {
                     }
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center text-[11px] text-muted-foreground">
-                        {format(parseISO(record.date), 'dd/MM/yyyy')}
+                        <DayRecordButton
+                          date={record.date}
+                          label={format(parseISO(record.date), 'dd/MM/yyyy')}
+                        />
                       </TableCell>
                     );
                   })}
@@ -1621,7 +1688,10 @@ export default async function RecordsAbsolusPage() {
                     }
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center text-[11px] text-muted-foreground">
-                        {format(parseISO(record.date), 'dd/MM/yyyy')}
+                        <DayRecordButton
+                          date={record.date}
+                          label={format(parseISO(record.date), 'dd/MM/yyyy')}
+                        />
                       </TableCell>
                     );
                   })}
@@ -1663,7 +1733,13 @@ export default async function RecordsAbsolusPage() {
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
-                        <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
+                        <div className="text-[10px] text-muted-foreground/80">
+                          <MonthRecordButton
+                            year={record.year}
+                            month={months[idx].num}
+                            label={record.year}
+                          />
+                        </div>
                       </TableCell>
                     );
                   })}
@@ -1720,7 +1796,13 @@ export default async function RecordsAbsolusPage() {
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
-                        <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
+                        <div className="text-[10px] text-muted-foreground/80">
+                          <MonthRecordButton
+                            year={record.year}
+                            month={months[idx].num}
+                            label={record.year}
+                          />
+                        </div>
                       </TableCell>
                     );
                   })}
@@ -1777,7 +1859,13 @@ export default async function RecordsAbsolusPage() {
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
-                        <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
+                        <div className="text-[10px] text-muted-foreground/80">
+                          <MonthRecordButton
+                            year={record.year}
+                            month={months[idx].num}
+                            label={record.year}
+                          />
+                        </div>
                       </TableCell>
                     );
                   })}
@@ -1834,7 +1922,13 @@ export default async function RecordsAbsolusPage() {
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
-                        <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
+                        <div className="text-[10px] text-muted-foreground/80">
+                          <MonthRecordButton
+                            year={record.year}
+                            month={months[idx].num}
+                            label={record.year}
+                          />
+                        </div>
                       </TableCell>
                     );
                   })}
@@ -1982,7 +2076,13 @@ export default async function RecordsAbsolusPage() {
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
-                        <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
+                        <div className="text-[10px] text-muted-foreground/80">
+                          <MonthRecordButton
+                            year={record.year}
+                            month={months[idx].num}
+                            label={record.year}
+                          />
+                        </div>
                       </TableCell>
                     );
                   })}
@@ -2074,7 +2174,13 @@ export default async function RecordsAbsolusPage() {
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
-                        <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
+                        <div className="text-[10px] text-muted-foreground/80">
+                          <MonthRecordButton
+                            year={record.year}
+                            month={months[idx].num}
+                            label={record.year}
+                          />
+                        </div>
                       </TableCell>
                     );
                   })}
@@ -2121,7 +2227,13 @@ export default async function RecordsAbsolusPage() {
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
-                        <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
+                        <div className="text-[10px] text-muted-foreground/80">
+                          <MonthRecordButton
+                            year={record.year}
+                            month={months[idx].num}
+                            label={record.year}
+                          />
+                        </div>
                       </TableCell>
                     );
                   })}
@@ -2168,7 +2280,13 @@ export default async function RecordsAbsolusPage() {
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
-                        <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
+                        <div className="text-[10px] text-muted-foreground/80">
+                          <MonthRecordButton
+                            year={record.year}
+                            month={months[idx].num}
+                            label={record.year}
+                          />
+                        </div>
                       </TableCell>
                     );
                   })}
@@ -2260,13 +2378,25 @@ export default async function RecordsAbsolusPage() {
                     return (
                       <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
-                        <div className="text-[10px] text-muted-foreground/80">{format(parseISO(record.date), 'dd/MM/yyyy')}</div>
+                        <div className="text-[10px] text-muted-foreground/80">
+                          <DayRecordButton
+                            date={record.date}
+                            label={format(parseISO(record.date), 'dd/MM/yyyy')}
+                          />
+                        </div>
                       </TableCell>
                     );
                   })}
                   <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getPrecipitationStyle(maxDailyPrecipOverall?.value ?? 0).background, color: getPrecipitationStyle(maxDailyPrecipOverall?.value ?? 0).text }}>
                     {maxDailyPrecipOverall?.value?.toFixed(1) ?? '—'}
-                    <div className="text-[10px] text-muted-foreground/80">{maxDailyPrecipOverall ? format(parseISO(maxDailyPrecipOverall.date), 'dd/MM/yyyy') : ''}</div>
+                    <div className="text-[10px] text-muted-foreground/80">
+                      {maxDailyPrecipOverall ? (
+                        <DayRecordButton
+                          date={maxDailyPrecipOverall.date}
+                          label={format(parseISO(maxDailyPrecipOverall.date), 'dd/MM/yyyy')}
+                        />
+                      ) : null}
+                    </div>
                   </TableCell>
                 </TableRow>
               </TableBody>
