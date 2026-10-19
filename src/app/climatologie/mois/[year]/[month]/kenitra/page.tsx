@@ -5,7 +5,7 @@ import { format, parseISO, addMonths, subMonths, startOfMonth } from "date-fns";
 import { fr } from "date-fns/locale";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import { getTemperatureColor, getPrecipitationColor, getTextColor, getSunshineColor, getWeatherIcon, calculateMonthlySunshine, formatSunshineDuration } from "@/lib/weather-colors";
+import { getTemperatureStyle, getPrecipitationStyle, getSunshineStyle, getWeatherIcon, calculateMonthlySunshine, formatSunshineDuration, SUNSHINE_MONTHLY_EQUIVALENT } from "@/lib/weather-colors";
 import { Button } from "@/components/ui/button";
 import { notFound } from "next/navigation";
 
@@ -97,14 +97,14 @@ export default async function MonthPage({ params }: PageProps) {
   const totalOfficialMinutes = Math.floor((totalSunshineHours - totalOfficialHours) * 60);
 
   // Colors for the cards
-  const avgMaxColor = getTemperatureColor(avgMax);
-  const avgMinColor = getTemperatureColor(avgMin);
-  const absMaxColor = getTemperatureColor(absMax);
-  const absMinColor = getTemperatureColor(absMin);
-  const maxDailyMaxTempColor = getTemperatureColor(maxDailyMaxTemp);
-  const maxDailyMinTempColor = getTemperatureColor(maxDailyMinTemp);
-  const minDailyMinTempColor = getTemperatureColor(minDailyMinTemp);
-  const minDailyMaxTempColor = getTemperatureColor(minDailyMaxTemp);
+  const avgMaxColor = getTemperatureStyle(avgMax);
+  const avgMinColor = getTemperatureStyle(avgMin);
+  const absMaxColor = getTemperatureStyle(absMax);
+  const absMinColor = getTemperatureStyle(absMin);
+  const maxDailyMaxTempColor = getTemperatureStyle(maxDailyMaxTemp);
+  const maxDailyMinTempColor = getTemperatureStyle(maxDailyMinTemp);
+  const minDailyMinTempColor = getTemperatureStyle(minDailyMinTemp);
+  const minDailyMaxTempColor = getTemperatureStyle(minDailyMaxTemp);
 
   // Helper function for consistency colors
   const getConsistencyColor = (consistency: string | null) => {
@@ -151,7 +151,7 @@ export default async function MonthPage({ params }: PageProps) {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: avgMinColor, color: getTextColor(avgMinColor) }}>
+        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: avgMinColor.background, color: avgMinColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Moyenne Min</CardTitle>
           </CardHeader>
@@ -159,7 +159,7 @@ export default async function MonthPage({ params }: PageProps) {
             <div className="text-xl font-bold">{avgMin.toFixed(1)}°C</div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: avgMaxColor, color: getTextColor(avgMaxColor) }}>
+        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: avgMaxColor.background, color: avgMaxColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Moyenne Max</CardTitle>
           </CardHeader>
@@ -167,7 +167,7 @@ export default async function MonthPage({ params }: PageProps) {
             <div className="text-xl font-bold">{avgMax.toFixed(1)}°C</div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: absMinColor, color: getTextColor(absMinColor) }}>
+        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: absMinColor.background, color: absMinColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Record Froid</CardTitle>
           </CardHeader>
@@ -175,7 +175,7 @@ export default async function MonthPage({ params }: PageProps) {
             <div className="text-xl font-bold">{absMin.toFixed(1)}°C</div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: absMaxColor, color: getTextColor(absMaxColor) }}>
+        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: absMaxColor.background, color: absMaxColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Record Chaleur</CardTitle>
           </CardHeader>
@@ -191,7 +191,7 @@ export default async function MonthPage({ params }: PageProps) {
             <div className="text-xl font-bold">{totalRain.toFixed(1)} mm</div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm" style={{ backgroundColor: getSunshineColor(totalSunshineHours * 30), color: getTextColor(getSunshineColor(totalSunshineHours * 30)) }}>
+        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm" style={{ backgroundColor: getSunshineStyle(totalSunshineHours).background, color: getSunshineStyle(totalSunshineHours).text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Ensoleillement Officiel</CardTitle>
           </CardHeader>
@@ -199,7 +199,7 @@ export default async function MonthPage({ params }: PageProps) {
             <div className="text-xl font-bold">{totalOfficialHours}h {totalOfficialMinutes}mn</div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm" style={{ backgroundColor: getSunshineColor(((totalEstimatedMonthlyMinutes || 0) / 60) * 30), color: getTextColor(getSunshineColor(((totalEstimatedMonthlyMinutes || 0) / 60) * 30)) }}>
+        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm" style={{ backgroundColor: getSunshineStyle((totalEstimatedMonthlyMinutes || 0) / 60).background, color: getSunshineStyle((totalEstimatedMonthlyMinutes || 0) / 60).text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Ensoleillement Estimé</CardTitle>
           </CardHeader>
@@ -235,12 +235,14 @@ export default async function MonthPage({ params }: PageProps) {
                 </TableHeader>
                 <TableBody>
                   {daysWithHourly.map(({ daily: day, hourly }) => {
-                    const maxColor = getTemperatureColor(day.temp_max);
-                    const minColor = getTemperatureColor(day.temp_min);
-                    const meanColor = getTemperatureColor(day.temp_mean);
-                    const rainColor = getPrecipitationColor(day.precipitation);
+                    const maxColor = getTemperatureStyle(day.temp_max);
+                    const minColor = getTemperatureStyle(day.temp_min);
+                    const meanColor = getTemperatureStyle(day.temp_mean);
+                    const rainColor = getPrecipitationStyle(day.precipitation);
                     const sunHours = (day.sunshine_duration_seconds || 0) / 3600;
-                    const sunColor = getSunshineColor(sunHours * 30); // Multiplied by 30 to match monthly scale logic in colors.ts
+                    // Le schéma « s » est calibré sur des totaux mensuels : la durée
+                    // journalière est ramenée à son équivalent mensuel.
+                    const sunColor = getSunshineStyle(sunHours * SUNSHINE_MONTHLY_EQUIVALENT);
 
                     return (
                       <TableRow key={day.date}>
@@ -249,19 +251,19 @@ export default async function MonthPage({ params }: PageProps) {
                             {format(parseISO(day.date), "d EEE", { locale: fr })}
                           </Link>
                         </TableCell>
-                        <TableCell className="border p-0 w-[80px] whitespace-nowrap" style={{ backgroundColor: minColor, color: getTextColor(minColor) }}>
+                        <TableCell className="border p-0 w-[80px] whitespace-nowrap" style={{ backgroundColor: minColor.background, color: minColor.text }}>
                           {day.temp_min !== null ? day.temp_min.toFixed(1) : '-'}
                         </TableCell>
-                        <TableCell className="border p-0 w-[80px] whitespace-nowrap" style={{ backgroundColor: maxColor, color: getTextColor(maxColor) }}>
+                        <TableCell className="border p-0 w-[80px] whitespace-nowrap" style={{ backgroundColor: maxColor.background, color: maxColor.text }}>
                           {day.temp_max !== null ? day.temp_max.toFixed(1) : '-'}
                         </TableCell>
-                        <TableCell className="border p-0 w-[80px] whitespace-nowrap" style={{ backgroundColor: meanColor, color: getTextColor(meanColor) }}>
+                        <TableCell className="border p-0 w-[80px] whitespace-nowrap" style={{ backgroundColor: meanColor.background, color: meanColor.text }}>
                           {day.temp_mean !== null ? day.temp_mean.toFixed(1) : '-'}
                         </TableCell>
-                        <TableCell className="border p-0 w-[80px] whitespace-nowrap" style={{ backgroundColor: rainColor, color: getTextColor(rainColor) }}>
+                        <TableCell className="border p-0 w-[80px] whitespace-nowrap" style={{ backgroundColor: rainColor.background, color: rainColor.text }}>
                           {day.precipitation !== null ? day.precipitation.toFixed(1) : '-'}
                         </TableCell>
-                        <TableCell className="border p-0 w-[80px] whitespace-nowrap" style={{ backgroundColor: sunColor, color: getTextColor(sunColor) }}>
+                        <TableCell className="border p-0 w-[80px] whitespace-nowrap" style={{ backgroundColor: sunColor.background, color: sunColor.text }}>
                           {sunHours !== null ? sunHours.toFixed(1) : '-'}
                         </TableCell>
                         <TableCell className="border bg-white dark:bg-background w-[100px] whitespace-nowrap">
@@ -340,19 +342,19 @@ export default async function MonthPage({ params }: PageProps) {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               <div className="space-y-2">
                 <p className="text-sm text-muted-foreground">TNX (Temp. Min Max)</p>
-                <p className="text-xl font-bold" style={{ backgroundColor: maxDailyMinTempColor, color: getTextColor(maxDailyMinTempColor) }}>
+                <p className="text-xl font-bold" style={{ backgroundColor: maxDailyMinTempColor.background, color: maxDailyMinTempColor.text }}>
                   {maxDailyMinTemp.toFixed(1)} °C
                 </p>
               </div>
               <div className="space-y-2">
                 <p className="text-sm text-muted-foreground">TXX (Temp. Max Max)</p>
-                <p className="text-xl font-bold" style={{ backgroundColor: maxDailyMaxTempColor, color: getTextColor(maxDailyMaxTempColor) }}>
+                <p className="text-xl font-bold" style={{ backgroundColor: maxDailyMaxTempColor.background, color: maxDailyMaxTempColor.text }}>
                   {maxDailyMaxTemp.toFixed(1)} °C
                 </p>
               </div>
               <div className="space-y-2">
                 <p className="text-sm text-muted-foreground">Pluie Max/jour</p>
-                <p className="text-xl font-bold" style={{ backgroundColor: getPrecipitationColor(maxDailyRain), color: getTextColor(getPrecipitationColor(maxDailyRain)) }}>
+                <p className="text-xl font-bold" style={{ backgroundColor: getPrecipitationStyle(maxDailyRain).background, color: getPrecipitationStyle(maxDailyRain).text }}>
                   {maxDailyRain.toFixed(1)} mm/jour
                 </p>
               </div>
@@ -375,13 +377,13 @@ export default async function MonthPage({ params }: PageProps) {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <p className="text-sm text-muted-foreground">TNN (Temp. Min Min)</p>
-                <p className="text-xl font-bold" style={{ backgroundColor: minDailyMinTempColor, color: getTextColor(minDailyMinTempColor) }}>
+                <p className="text-xl font-bold" style={{ backgroundColor: minDailyMinTempColor.background, color: minDailyMinTempColor.text }}>
                   {minDailyMinTemp.toFixed(1)} °C
                 </p>
               </div>
               <div className="space-y-2">
                 <p className="text-sm text-muted-foreground">TXN (Temp. Max Min)</p>
-                <p className="text-xl font-bold" style={{ backgroundColor: minDailyMaxTempColor, color: getTextColor(minDailyMaxTempColor) }}>
+                <p className="text-xl font-bold" style={{ backgroundColor: minDailyMaxTempColor.background, color: minDailyMaxTempColor.text }}>
                   {minDailyMaxTemp.toFixed(1)} °C
                 </p>
               </div>

@@ -4,7 +4,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { format, parseISO } from "date-fns";
 import { fr } from "date-fns/locale";
 import Link from "next/link";
-import { getTemperatureColor, getPrecipitationColor, getTextColor, getSunshineColor, formatSunshineDuration } from "@/lib/weather-colors";
+import { getTemperatureStyle, getPrecipitationStyle, getSunshineStyle, formatSunshineDuration } from "@/lib/weather-colors";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { notFound } from "next/navigation";
@@ -167,12 +167,14 @@ export default async function YearPage({ params }: PageProps) {
     ? yearlyPrecipDaysOver1.reduce((a, b) => a + b, 0) / yearlyPrecipDaysOver1.length 
     : null;
 
-  const avgMaxColor = getTemperatureColor(yearlyAvgMax);
-  const avgMinColor = getTemperatureColor(yearlyAvgMin);
-  const absMaxColor = getTemperatureColor(yearlyAbsMax);
-  const absMinColor = getTemperatureColor(yearlyAbsMin);
-  const yearlySunshineOfficialColor = getSunshineColor((yearlySunshineOfficialSumSeconds / 3600) * 30);
-  const yearlySunshineEstimatedColor = getSunshineColor((yearlySunshineEstimatedTotalMinutes / 60) * 30);
+  const avgMaxColor = getTemperatureStyle(yearlyAvgMax);
+  const avgMinColor = getTemperatureStyle(yearlyAvgMin);
+  const absMaxColor = getTemperatureStyle(yearlyAbsMax);
+  const absMinColor = getTemperatureStyle(yearlyAbsMin);
+  // Le schéma « s » de Wikipédia est calibré sur des totaux mensuels :
+  // les cartes annuelles sont colorées avec la moyenne mensuelle de l'ensoleillement.
+  const yearlySunshineOfficialColor = getSunshineStyle(yearlySunshineOfficialSumSeconds / 3600 / 12);
+  const yearlySunshineEstimatedColor = getSunshineStyle(yearlySunshineEstimatedTotalMinutes / 60 / 12);
 
   return (
     <div className="space-y-8">
@@ -201,7 +203,7 @@ export default async function YearPage({ params }: PageProps) {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4">
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: avgMinColor, color: getTextColor(avgMinColor) }}>
+        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: avgMinColor.background, color: avgMinColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Moyenne Min</CardTitle>
           </CardHeader>
@@ -209,7 +211,7 @@ export default async function YearPage({ params }: PageProps) {
             <div className="text-xl font-bold">{yearlyAvgMin !== null && !isNaN(yearlyAvgMin) ? yearlyAvgMin.toFixed(1) : '-'}°C</div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: avgMaxColor, color: getTextColor(avgMaxColor) }}>
+        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: avgMaxColor.background, color: avgMaxColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Moyenne Max</CardTitle>
           </CardHeader>
@@ -217,7 +219,7 @@ export default async function YearPage({ params }: PageProps) {
             <div className="text-xl font-bold">{yearlyAvgMax !== null && !isNaN(yearlyAvgMax) ? yearlyAvgMax.toFixed(1) : '-'}°C</div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: absMinColor, color: getTextColor(absMinColor) }}>
+        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: absMinColor.background, color: absMinColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Record Froid</CardTitle>
           </CardHeader>
@@ -225,7 +227,7 @@ export default async function YearPage({ params }: PageProps) {
             <div className="text-xl font-bold">{yearlyAbsMin !== Infinity ? yearlyAbsMin.toFixed(1) : '-'}°C</div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: absMaxColor, color: getTextColor(absMaxColor) }}>
+        <Card className="col-span-1 border-none shadow-sm" style={{ backgroundColor: absMaxColor.background, color: absMaxColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Record Chaleur</CardTitle>
           </CardHeader>
@@ -241,7 +243,7 @@ export default async function YearPage({ params }: PageProps) {
             <div className="text-xl font-bold">{yearlyTotalRain !== null && !isNaN(yearlyTotalRain) ? yearlyTotalRain.toFixed(1) : '-'} mm</div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm" style={{ backgroundColor: yearlySunshineOfficialColor, color: getTextColor(yearlySunshineOfficialColor) }}>
+        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm" style={{ backgroundColor: yearlySunshineOfficialColor.background, color: yearlySunshineOfficialColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Ensoleillement Officiel</CardTitle>
           </CardHeader>
@@ -249,7 +251,7 @@ export default async function YearPage({ params }: PageProps) {
             <div className="text-xl font-bold">{yearlySunshineOfficialHours}h {yearlySunshineOfficialMinutes}mn</div>
           </CardContent>
         </Card>
-        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm" style={{ backgroundColor: yearlySunshineEstimatedColor, color: getTextColor(yearlySunshineEstimatedColor) }}>
+        <Card className="col-span-1 sm:col-span-2 md:col-span-1 border-none shadow-sm" style={{ backgroundColor: yearlySunshineEstimatedColor.background, color: yearlySunshineEstimatedColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Ensoleillement Estimé</CardTitle>
           </CardHeader>
@@ -285,9 +287,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Record de chaleur (°C)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].absMax;
-                    const bgColor = getTemperatureColor(val);
+                    const cellColor = getTemperatureStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -302,9 +304,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Moyenne des maximales (°C)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].tempMaxSum / monthlyStats[m].days;
-                    const bgColor = getTemperatureColor(val);
+                    const cellColor = getTemperatureStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -319,9 +321,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Moyenne quotidienne (°C)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].tempMeanSum / monthlyStats[m].days;
-                    const bgColor = getTemperatureColor(val);
+                    const cellColor = getTemperatureStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -336,9 +338,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Moyenne des minimales (°C)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].tempMinSum / monthlyStats[m].days;
-                    const bgColor = getTemperatureColor(val);
+                    const cellColor = getTemperatureStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -353,9 +355,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Record de froid (°C)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].absMin;
-                    const bgColor = getTemperatureColor(val);
+                    const cellColor = getTemperatureStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -370,9 +372,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Tempé. maxi maximale (°C)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].minMaxTemp;
-                    const bgColor = getTemperatureColor(val);
+                    const cellColor = getTemperatureStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -387,9 +389,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Tempé. mini minimale (°C)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].maxMinTemp;
-                    const bgColor = getTemperatureColor(val);
+                    const cellColor = getTemperatureStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -404,9 +406,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Ensoleillement Officiel (h)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].sunshineOfficialSumSeconds / 3600;
-                    const bgColor = getSunshineColor(val * 30);
+                    const cellColor = getSunshineStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -421,9 +423,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Ensoleillement Estimé (h)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].sunshineSumMinutes / 60;
-                    const bgColor = getSunshineColor(val * 30);
+                    const cellColor = getSunshineStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -438,9 +440,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Précipitations (mm)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].rainSum;
-                    const bgColor = getPrecipitationColor(val);
+                    const cellColor = getPrecipitationStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -455,9 +457,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Max en 24h de précips (mm)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].max24hPrecip;
-                    const bgColor = getPrecipitationColor(val);
+                    const cellColor = getPrecipitationStyle(val);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val.toFixed(1)}
                       </TableCell>
                     );
@@ -472,9 +474,9 @@ export default async function YearPage({ params }: PageProps) {
                   <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">Max en 5j de précips (mm)</TableCell>
                   {sortedMonths.map(m => {
                     const val = monthlyStats[m].max5DayPrecip;
-                    const bgColor = val !== null ? getPrecipitationColor(val) : 'transparent';
+                    const cellColor = getPrecipitationStyle(val ?? 0);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val !== null ? val.toFixed(1) : '-'}
                       </TableCell>
                     );
@@ -491,9 +493,9 @@ export default async function YearPage({ params }: PageProps) {
                     const val = monthlyStats[m].precipDaysOver1.length > 0 
                       ? monthlyStats[m].precipDaysOver1.reduce((a: number, b: number) => a + b, 0) / monthlyStats[m].precipDaysOver1.length 
                       : null;
-                    const bgColor = val !== null ? getPrecipitationColor(val) : 'transparent';
+                    const cellColor = getPrecipitationStyle(val ?? 0);
                     return (
-                      <TableCell key={m} className="border p-0" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={m} className="border p-0" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         {val !== null ? val.toFixed(1) : '-'}
                       </TableCell>
                     );

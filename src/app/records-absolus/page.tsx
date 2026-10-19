@@ -2,19 +2,10 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { getDailyDataForMonth, listAvailableYears } from "@/lib/data";
 import { format, parseISO } from "date-fns";
-import { getTemperatureColor, getPrecipitationColor, getSunshineColor, getTextColor } from "@/lib/weather-colors";
+import { getTemperatureStyle, getPrecipitationStyle, getSunshineStyle, getDaysStyle } from "@/lib/weather-colors";
+import type { ClimateBoxColor } from "@/lib/weather-colors";
 
 export const dynamic = 'force-dynamic';
-
-function getContrastTextColor(bgColor: string): string {
-  if (!bgColor || bgColor === 'transparent') return '#000000';
-  const hex = bgColor.replace('#', '');
-  const r = parseInt(hex.substring(0, 2), 16);
-  const g = parseInt(hex.substring(2, 4), 16);
-  const b = parseInt(hex.substring(4, 6), 16);
-  const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-  return luminance > 0.5 ? '#000000' : '#FFFFFF';
-}
 
 const CURRENT_YEAR = 2026;
 const CURRENT_MONTH = 10; // October
@@ -1089,6 +1080,11 @@ async function getRainDayStats(): Promise<RainDayStats> {
 type StatCellData = {
   display: string;
   detail: string;
+  /**
+   * Couleur de la case (fond + texte). Elle suit le schéma « days » des
+   * climate boxes de Wikipédia en anglais, utilisé pour les jours de pluie.
+   */
+  color?: ClimateBoxColor;
 };
 
 /**
@@ -1143,10 +1139,19 @@ function RainDaysStatTable({
                 {values.map((cell, idx) => (
                   <TableCell
                     key={idx}
-                    className={`border px-2 py-2 text-center ${idx === 12 ? 'bg-primary/10' : ''}`}
+                    className="border px-2 py-2 text-center"
+                    style={
+                      cell.color
+                        ? { backgroundColor: cell.color.background, color: cell.color.text }
+                        : undefined
+                    }
                   >
                     <div className="font-bold leading-tight">{cell.display}</div>
-                    <div className="text-[10px] leading-tight text-muted-foreground">{cell.detail}</div>
+                    <div
+                      className={`text-[10px] leading-tight ${cell.color ? "opacity-80" : "text-muted-foreground"}`}
+                    >
+                      {cell.detail}
+                    </div>
                   </TableCell>
                 ))}
               </TableRow>
@@ -1154,14 +1159,22 @@ function RainDaysStatTable({
                 <TableCell className="border px-3 py-2 text-left font-bold bg-muted/50">
                   {detailLabel}
                 </TableCell>
-                {details.map((detail, idx) => (
-                  <TableCell
-                    key={idx}
-                    className={`border px-2 py-2 text-center text-[11px] text-muted-foreground ${idx === 12 ? 'bg-primary/10' : ''}`}
-                  >
-                    {detail}
-                  </TableCell>
-                ))}
+                {details.map((detail, idx) => {
+                  const color = values[idx]?.color;
+                  return (
+                    <TableCell
+                      key={idx}
+                      className={`border px-2 py-2 text-center text-[11px] ${color ? "" : "text-muted-foreground"}`}
+                      style={
+                        color
+                          ? { backgroundColor: color.background, color: color.text }
+                          : undefined
+                      }
+                    >
+                      {detail}
+                    </TableCell>
+                  );
+                })}
               </TableRow>
             </TableBody>
           </Table>
@@ -1188,12 +1201,12 @@ function MaxRecordCell({
       <TableCell className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
     );
   }
-  const bgColor = getTemperatureColor(record.value);
+  const cellColor = getTemperatureStyle(record.value);
   const day = parseISO(record.date);
   return (
     <TableCell
       className="border px-2 py-2 text-center"
-      style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}
+      style={{ backgroundColor: cellColor.background, color: cellColor.text }}
     >
       <div className="font-bold leading-tight">{record.value.toFixed(1)}</div>
       <div className="text-[10px] leading-tight">
@@ -1312,7 +1325,11 @@ export default async function RecordsAbsolusPage() {
   const rainMaxValues: StatCellData[] = months.map(m => {
     const s = rainPerMonth[m.num];
     if (s.maxYear === null) return { display: '—', detail: '—' };
-    return { display: String(s.maxCount), detail: `${m.short} ${s.maxYear}` };
+    return {
+      display: String(s.maxCount),
+      detail: `${m.short} ${s.maxYear}`,
+      color: getDaysStyle(s.maxCount)
+    };
   });
   const rainMaxDetails = months.map(m => rainPerMonth[m.num].maxYear ?? '—');
 
@@ -1328,7 +1345,11 @@ export default async function RecordsAbsolusPage() {
   const rainMinValues: StatCellData[] = months.map(m => {
     const s = rainPerMonth[m.num];
     if (s.minYear === null) return { display: '—', detail: '—' };
-    return { display: String(s.minCount), detail: `${m.short} ${s.minYear}` };
+    return {
+      display: String(s.minCount),
+      detail: `${m.short} ${s.minYear}`,
+      color: getDaysStyle(s.minCount)
+    };
   });
   const rainMinDetails = months.map(m => rainPerMonth[m.num].minYear ?? '—');
 
@@ -1344,9 +1365,11 @@ export default async function RecordsAbsolusPage() {
   const rainAvgValues: StatCellData[] = months.map(m => {
     const s = rainPerMonth[m.num];
     if (s.yearsCounted === 0) return { display: '—', detail: '—' };
+    const average = s.totalCount / s.yearsCounted;
     return {
-      display: (s.totalCount / s.yearsCounted).toFixed(1),
-      detail: `sur ${s.yearsCounted} années`
+      display: average.toFixed(1),
+      detail: `sur ${s.yearsCounted} années`,
+      color: getDaysStyle(average)
     };
   });
   const rainAvgDetails = months.map(m =>
@@ -1430,53 +1453,6 @@ export default async function RecordsAbsolusPage() {
         </CardContent>
       </Card>
 
-      {/* Nombre de jours de précipitations record élevé (>= 1mm) */}
-      <RainDaysStatTable
-        title="Nombre de jours de précipitations record élevé (≥1mm) - Mensuel"
-        absoluteLabel="Record absolu"
-        valueLabel="Jours ≥ 1mm"
-        detailLabel="Mois / année du record"
-        values={
-          rainMaxOverall
-            ? [...rainMaxValues, { display: String(rainMaxOverall.count), detail: rainMaxOverall.label }]
-            : [...rainMaxValues, { display: '—', detail: '—' }]
-        }
-        details={[...rainMaxDetails, rainMaxOverall ? rainMaxOverall.label : '—']}
-        note="Pour chaque mois, le plus grand nombre de jours avec au moins 1 mm de précipitations, relevé sur la période 1940-2026. Un mois n'est retenu que si tous ses jours disposent d'une valeur de précipitation ; aucun jour manquant n'est compté. Le 1er janvier 1940, dont la précipitation est absente de l'API, est donc écarté des statistiques de janvier. Le mois d'octobre 2026, encore incomplet, est exclu de la compétition. La colonne « Record absolu » reprend le plus élevé des douze records mensuels."
-      />
-
-      {/* Nombre de jours de précipitations record bas (>= 1mm) */}
-      <RainDaysStatTable
-        title="Nombre de jours de précipitations record bas (≥1mm) - Mensuel"
-        absoluteLabel="Record absolu"
-        valueLabel="Jours ≥ 1mm"
-        detailLabel="Mois / année du record"
-        values={
-          rainMinOverall
-            ? [...rainMinValues, { display: String(rainMinOverall.count), detail: rainMinOverall.label }]
-            : [...rainMinValues, { display: '—', detail: '—' }]
-        }
-        details={[...rainMinDetails, rainMinOverall ? rainMinOverall.label : '—']}
-        note="Pour chaque mois, le plus faible nombre de jours avec au moins 1 mm de précipitations, relevé sur la période 1940-2026. Même règle d'exclusion que le tableau précédent : mois complet requis, aucune valeur manquante comblée, octobre 2026 écarté. La colonne « Record absolu » reprend le plus bas des douze records mensuels."
-      />
-
-      {/* Nombre de jours de précipitations moyen (>= 1mm) */}
-      <RainDaysStatTable
-        title="Nombre de jours de précipitations moyen (≥1mm) - Mensuel"
-        absoluteLabel="Moyenne annuelle"
-        valueLabel="Jours ≥ 1mm (moyenne)"
-        detailLabel="Années retenues"
-        values={[
-          ...rainAvgValues,
-          {
-            display: avgAnnualRainDays.toFixed(1),
-            detail: `sur ${completeYears.length} années complètes`
-          }
-        ]}
-        details={[...rainAvgDetails, `${completeYears.length} années complètes`]}
-        note="Pour chaque mois, le nombre moyen de jours avec au moins 1 mm de précipitations, calculé sur toutes les années disponibles pour ce mois. La colonne « Moyenne annuelle » est la moyenne du total annuel de jours de pluie, calculée uniquement sur les années dont les douze mois sont complets, afin de ne pas mélanger des années tronquées."
-      />
-
       {/* Max Temperature Records */}
       <Card>
         <CardHeader>
@@ -1504,9 +1480,9 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getTemperatureColor(record.value);
+                    const cellColor = getTemperatureStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
@@ -1561,9 +1537,9 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getTemperatureColor(record.value);
+                    const cellColor = getTemperatureStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
@@ -1618,9 +1594,9 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getTemperatureColor(record.value);
+                    const cellColor = getTemperatureStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
@@ -1675,9 +1651,9 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getTemperatureColor(record.value);
+                    const cellColor = getTemperatureStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
@@ -1732,9 +1708,9 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getTemperatureColor(record.value);
+                    const cellColor = getTemperatureStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
@@ -1789,9 +1765,9 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getTemperatureColor(record.value);
+                    const cellColor = getTemperatureStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
@@ -1846,9 +1822,9 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getTemperatureColor(record.value);
+                    const cellColor = getTemperatureStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
@@ -1903,9 +1879,9 @@ export default async function RecordsAbsolusPage() {
                           <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                         );
                       }
-                    const bgColor = getTemperatureColor(record.value);
+                    const cellColor = getTemperatureStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
@@ -1961,14 +1937,14 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getTemperatureColor(record.value);
+                    const cellColor = getTemperatureStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                       </TableCell>
                     );
                   })}
-                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getTemperatureColor(avgAbsMinOverall?.value ?? 0), color: getTextColor(getTemperatureColor(avgAbsMinOverall?.value ?? 0)) }}>
+                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getTemperatureStyle(avgAbsMinOverall?.value ?? 0).background, color: getTemperatureStyle(avgAbsMinOverall?.value ?? 0).text }}>
                     {avgAbsMinOverall?.value?.toFixed(1) ?? '—'}
                   </TableCell>
                 </TableRow>
@@ -2006,14 +1982,14 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getTemperatureColor(record.value);
+                    const cellColor = getTemperatureStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                       </TableCell>
                     );
                   })}
-                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getTemperatureColor(avgAbsMaxOverall?.value ?? 0), color: getTextColor(getTemperatureColor(avgAbsMaxOverall?.value ?? 0)) }}>
+                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getTemperatureStyle(avgAbsMaxOverall?.value ?? 0).background, color: getTemperatureStyle(avgAbsMaxOverall?.value ?? 0).text }}>
                     {avgAbsMaxOverall?.value?.toFixed(1) ?? '—'}
                   </TableCell>
                 </TableRow>
@@ -2051,15 +2027,15 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getSunshineColor(record.value);
+                    const cellColor = getSunshineStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getContrastTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
                     );
                   })}
-                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getSunshineColor(sunniestYear?.value ?? 0), color: getContrastTextColor(getSunshineColor(sunniestYear?.value ?? 0)) }}>
+                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getSunshineStyle(sunniestYear?.value ?? 0).background, color: getSunshineStyle(sunniestYear?.value ?? 0).text }}>
                     {sunniestYear?.value?.toFixed(1) ?? '—'}
                     <div className="text-[10px] text-muted-foreground/80">{sunniestYear?.year ?? ''}</div>
                   </TableCell>
@@ -2098,14 +2074,14 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getSunshineColor(record.value);
+                    const cellColor = getSunshineStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getContrastTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                       </TableCell>
                     );
                   })}
-                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getSunshineColor(avgSunniestYear?.value ?? 0), color: getContrastTextColor(getSunshineColor(avgSunniestYear?.value ?? 0)) }}>
+                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getSunshineStyle(avgSunniestYear?.value ?? 0).background, color: getSunshineStyle(avgSunniestYear?.value ?? 0).text }}>
                     {avgSunniestYear?.value?.toFixed(1) ?? '—'}
                   </TableCell>
                 </TableRow>
@@ -2143,15 +2119,15 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getSunshineColor(record.value);
+                    const cellColor = getSunshineStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getContrastTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
                     );
                   })}
-                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getSunshineColor(leastSunnyYear?.value ?? 0), color: getContrastTextColor(getSunshineColor(leastSunnyYear?.value ?? 0)) }}>
+                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getSunshineStyle(leastSunnyYear?.value ?? 0).background, color: getSunshineStyle(leastSunnyYear?.value ?? 0).text }}>
                     {leastSunnyYear?.value?.toFixed(1) ?? '—'}
                     <div className="text-[10px] text-muted-foreground/80">{leastSunnyYear?.year ?? ''}</div>
                   </TableCell>
@@ -2190,15 +2166,15 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getPrecipitationColor(record.value);
+                    const cellColor = getPrecipitationStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getContrastTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
                     );
                   })}
-                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getPrecipitationColor(wettestYear?.value ?? 0), color: getContrastTextColor(getPrecipitationColor(wettestYear?.value ?? 0)) }}>
+                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getPrecipitationStyle(wettestYear?.value ?? 0).background, color: getPrecipitationStyle(wettestYear?.value ?? 0).text }}>
                     {wettestYear?.value?.toFixed(1) ?? '—'}
                     <div className="text-[10px] text-muted-foreground/80">{wettestYear?.year ?? ''}</div>
                   </TableCell>
@@ -2237,15 +2213,15 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getPrecipitationColor(record.value);
+                    const cellColor = getPrecipitationStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getContrastTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{record.year}</div>
                       </TableCell>
                     );
                   })}
-                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getPrecipitationColor(driestYear?.value ?? 0), color: getContrastTextColor(getPrecipitationColor(driestYear?.value ?? 0)) }}>
+                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getPrecipitationStyle(driestYear?.value ?? 0).background, color: getPrecipitationStyle(driestYear?.value ?? 0).text }}>
                     {driestYear?.value?.toFixed(1) ?? '—'}
                     <div className="text-[10px] text-muted-foreground/80">{driestYear?.year ?? ''}</div>
                   </TableCell>
@@ -2284,14 +2260,14 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getPrecipitationColor(record.value);
+                    const cellColor = getPrecipitationStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getContrastTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                       </TableCell>
                     );
                   })}
-                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getPrecipitationColor(avgPrecipYear?.value ?? 0), color: getContrastTextColor(getPrecipitationColor(avgPrecipYear?.value ?? 0)) }}>
+                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getPrecipitationStyle(avgPrecipYear?.value ?? 0).background, color: getPrecipitationStyle(avgPrecipYear?.value ?? 0).text }}>
                     {avgPrecipYear?.value?.toFixed(1) ?? '—'}
                   </TableCell>
                 </TableRow>
@@ -2329,15 +2305,15 @@ export default async function RecordsAbsolusPage() {
                         <TableCell key={idx} className="border px-2 py-2 text-center text-muted-foreground">—</TableCell>
                       );
                     }
-                    const bgColor = getPrecipitationColor(record.value);
+                    const cellColor = getPrecipitationStyle(record.value);
                     return (
-                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: bgColor, color: getContrastTextColor(bgColor) }}>
+                      <TableCell key={idx} className="border px-2 py-2 text-center" style={{ backgroundColor: cellColor.background, color: cellColor.text }}>
                         <div className="font-bold">{record.value?.toFixed(1) ?? '-'}</div>
                         <div className="text-[10px] text-muted-foreground/80">{format(parseISO(record.date), 'dd/MM/yyyy')}</div>
                       </TableCell>
                     );
                   })}
-                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getPrecipitationColor(maxDailyPrecipOverall?.value ?? 0), color: getContrastTextColor(getPrecipitationColor(maxDailyPrecipOverall?.value ?? 0)) }}>
+                  <TableCell className="border font-bold px-3 py-2 text-center" style={{ backgroundColor: getPrecipitationStyle(maxDailyPrecipOverall?.value ?? 0).background, color: getPrecipitationStyle(maxDailyPrecipOverall?.value ?? 0).text }}>
                     {maxDailyPrecipOverall?.value?.toFixed(1) ?? '—'}
                     <div className="text-[10px] text-muted-foreground/80">{maxDailyPrecipOverall ? format(parseISO(maxDailyPrecipOverall.date), 'dd/MM/yyyy') : ''}</div>
                   </TableCell>
@@ -2347,6 +2323,68 @@ export default async function RecordsAbsolusPage() {
           </div>
         </CardContent>
       </Card>
+
+      {/* Nombre de jours de précipitations record élevé (>= 1mm) */}
+      <RainDaysStatTable
+        title="Nombre de jours de précipitations record élevé (≥1mm) - Mensuel"
+        absoluteLabel="Record absolu"
+        valueLabel="Jours ≥ 1mm"
+        detailLabel="Mois / année du record"
+        values={
+          rainMaxOverall
+            ? [
+                ...rainMaxValues,
+                {
+                  display: String(rainMaxOverall.count),
+                  detail: rainMaxOverall.label,
+                  color: getDaysStyle(rainMaxOverall.count)
+                }
+              ]
+            : [...rainMaxValues, { display: '—', detail: '—' }]
+        }
+        details={[...rainMaxDetails, rainMaxOverall ? rainMaxOverall.label : '—']}
+        note="Pour chaque mois, le plus grand nombre de jours avec au moins 1 mm de précipitations, relevé sur la période 1940-2026. Un mois n'est retenu que si tous ses jours disposent d'une valeur de précipitation ; aucun jour manquant n'est compté. Le 1er janvier 1940, dont la précipitation est absente de l'API, est donc écarté des statistiques de janvier. Le mois d'octobre 2026, encore incomplet, est exclu de la compétition. La colonne « Record absolu » reprend le plus élevé des douze records mensuels."
+      />
+
+      {/* Nombre de jours de précipitations record bas (>= 1mm) */}
+      <RainDaysStatTable
+        title="Nombre de jours de précipitations record bas (≥1mm) - Mensuel"
+        absoluteLabel="Record absolu"
+        valueLabel="Jours ≥ 1mm"
+        detailLabel="Mois / année du record"
+        values={
+          rainMinOverall
+            ? [
+                ...rainMinValues,
+                {
+                  display: String(rainMinOverall.count),
+                  detail: rainMinOverall.label,
+                  color: getDaysStyle(rainMinOverall.count)
+                }
+              ]
+            : [...rainMinValues, { display: '—', detail: '—' }]
+        }
+        details={[...rainMinDetails, rainMinOverall ? rainMinOverall.label : '—']}
+        note="Pour chaque mois, le plus faible nombre de jours avec au moins 1 mm de précipitations, relevé sur la période 1940-2026. Même règle d'exclusion que le tableau précédent : mois complet requis, aucune valeur manquante comblée, octobre 2026 écarté. La colonne « Record absolu » reprend le plus bas des douze records mensuels."
+      />
+
+      {/* Nombre de jours de précipitations moyen (>= 1mm) */}
+      <RainDaysStatTable
+        title="Nombre de jours de précipitations moyen (≥1mm) - Mensuel"
+        absoluteLabel="Moyenne annuelle"
+        valueLabel="Jours ≥ 1mm (moyenne)"
+        detailLabel="Années retenues"
+        values={[
+          ...rainAvgValues,
+          {
+            display: avgAnnualRainDays.toFixed(1),
+            detail: `sur ${completeYears.length} années complètes`,
+            color: getDaysStyle(avgAnnualRainDays)
+          }
+        ]}
+        details={[...rainAvgDetails, `${completeYears.length} années complètes`]}
+        note="Pour chaque mois, le nombre moyen de jours avec au moins 1 mm de précipitations, calculé sur toutes les années disponibles pour ce mois. La colonne « Moyenne annuelle » est la moyenne du total annuel de jours de pluie, calculée uniquement sur les années dont les douze mois sont complets, afin de ne pas mélanger des années tronquées."
+      />
 
       <Card className="text-sm text-muted-foreground">
         <CardHeader>
@@ -2370,6 +2408,8 @@ export default async function RecordsAbsolusPage() {
             <li>Mois le plus sec (précipitations) : mois ayant le total de précipitations le plus faible pour chaque mois sur la période 1940-2026. La 13ème colonne affiche l'année la plus sèche globalement.</li>
             <li>Moyenne mensuelle de précipitations : moyenne des totaux mensuels de précipitations pour chaque mois sur la période, avec moyenne annuelle en 13ème colonne.</li>
             <li>Hauteur quotidienne maximale de précipitations : valeur maximale de précipitation journalière pour chaque mois sur la période 1940-2026. La 13ème colonne affiche le record absolu (valeur + date) sur toute la période.</li>
+            <li>Nombre de jours de précipitations (≥ 1 mm) : record haut, record bas et moyenne mensuelle calculés sur la période 1940-2026. Un mois n&apos;est retenu que si tous ses jours disposent d&apos;une valeur de précipitation (aucun jour manquant n&apos;est compté ni remplacé) ; le mois d&apos;octobre 2026, encore incomplet, est écarté. La moyenne annuelle ne retient que les années dont les douze mois sont complets.</li>
+            <li>Couleurs des cases : schémas de couleur des climate boxes de Wikipédia en anglais (module « Climate box color schemes »), reproduits à l&apos;identique dans src/lib/climate-box-colors.ts. Température : schéma « t », précipitations : schéma « p », ensoleillement : schéma « s », nombre de jours de pluie : schéma « d ».</li>
             <li>Modèle utilisé : ERA5-Land / best_match Open-Meteo.</li>
             <li>Les données horaires ont été utilisées pour compléter les valeurs journalières manquantes quand nécessaire</li>
           </ol>

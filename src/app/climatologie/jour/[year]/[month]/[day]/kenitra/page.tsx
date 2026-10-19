@@ -8,7 +8,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import ExportData from "@/components/export-data";
 import { Metadata } from "next";
-import { getTemperatureColor, getPrecipitationColor, getTextColor, getWeatherIcon, getSunshineColor } from "@/lib/weather-colors";
+import { getTemperatureStyle, getPrecipitationStyle, getSunshineStyle, getWeatherIcon, SUNSHINE_MONTHLY_EQUIVALENT } from "@/lib/weather-colors";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 
@@ -70,13 +70,15 @@ export default async function DayPage({ params }: PageProps) {
   const nextMonthMonth = nextMonthDate ? format(nextMonthDate, "MM") : null;
   const nextMonthDay = nextMonthDate ? format(nextMonthDate, "dd") : null;
 
-  const maxColor = getTemperatureColor(dailyData.temp_max ?? 0);
-  const minColor = getTemperatureColor(dailyData.temp_min ?? 0);
-  const rainColor = getPrecipitationColor(dailyData.precipitation ?? 0);
+  const maxColor = getTemperatureStyle(dailyData.temp_max ?? 0);
+  const minColor = getTemperatureStyle(dailyData.temp_min ?? 0);
+  const rainColor = getPrecipitationStyle(dailyData.precipitation ?? 0);
   const officialSunshineMinutes = dailyData.sunshine_duration_minutes ?? (dailyData.sunshine !== null ? Math.round(dailyData.sunshine / 60) : null);
   const estimatedSunshineMinutes = dailyData.estimated_daily_sunshine_minutes;
-  const officialSunshineColor = getSunshineColor((officialSunshineMinutes ?? 0) / 60);
-  const estimatedSunshineColor = getSunshineColor((estimatedSunshineMinutes ?? 0) / 60);
+  // Le schéma « s » est calibré sur des totaux mensuels : les durées journalières
+  // et horaires sont ramenées à leur équivalent mensuel.
+  const officialSunshineColor = getSunshineStyle(((officialSunshineMinutes ?? 0) / 60) * SUNSHINE_MONTHLY_EQUIVALENT);
+  const estimatedSunshineColor = getSunshineStyle(((estimatedSunshineMinutes ?? 0) / 60) * SUNSHINE_MONTHLY_EQUIVALENT);
 
   return (
     <div className="space-y-8">
@@ -158,7 +160,7 @@ export default async function DayPage({ params }: PageProps) {
 
       {/* Summary Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-        <Card className="border-none shadow-sm" style={{ backgroundColor: minColor, color: getTextColor(minColor) }}>
+        <Card className="border-none shadow-sm" style={{ backgroundColor: minColor.background, color: minColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Température Min</CardTitle>
           </CardHeader>
@@ -166,7 +168,7 @@ export default async function DayPage({ params }: PageProps) {
             <div className="text-2xl font-bold">{dailyData.temp_min}°C</div>
           </CardContent>
         </Card>
-        <Card className="border-none shadow-sm" style={{ backgroundColor: maxColor, color: getTextColor(maxColor) }}>
+        <Card className="border-none shadow-sm" style={{ backgroundColor: maxColor.background, color: maxColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Température Max</CardTitle>
           </CardHeader>
@@ -174,7 +176,7 @@ export default async function DayPage({ params }: PageProps) {
             <div className="text-2xl font-bold">{dailyData.temp_max}°C</div>
           </CardContent>
         </Card>
-        <Card className="border-none shadow-sm" style={{ backgroundColor: rainColor, color: getTextColor(rainColor) }}>
+        <Card className="border-none shadow-sm" style={{ backgroundColor: rainColor.background, color: rainColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Précipitations</CardTitle>
           </CardHeader>
@@ -182,7 +184,7 @@ export default async function DayPage({ params }: PageProps) {
             <div className="text-2xl font-bold">{dailyData.precipitation} mm</div>
           </CardContent>
         </Card>
-        <Card className="border-none shadow-sm" style={{ backgroundColor: officialSunshineColor, color: getTextColor(officialSunshineColor) }}>
+        <Card className="border-none shadow-sm" style={{ backgroundColor: officialSunshineColor.background, color: officialSunshineColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Ensoleillement Officiel</CardTitle>
           </CardHeader>
@@ -190,7 +192,7 @@ export default async function DayPage({ params }: PageProps) {
             <div className="text-2xl font-bold">{officialSunshineMinutes !== null ? `${Math.floor(officialSunshineMinutes / 60)}h ${officialSunshineMinutes % 60}min` : '–'}</div>
           </CardContent>
         </Card>
-        <Card className="border-none shadow-sm" style={{ backgroundColor: estimatedSunshineColor, color: getTextColor(estimatedSunshineColor) }}>
+        <Card className="border-none shadow-sm" style={{ backgroundColor: estimatedSunshineColor.background, color: estimatedSunshineColor.text }}>
           <CardHeader className="pb-1 p-3">
             <CardTitle className="text-[10px] font-bold uppercase tracking-wider opacity-80">Ensoleillement Estimé</CardTitle>
           </CardHeader>
@@ -244,12 +246,12 @@ export default async function DayPage({ params }: PageProps) {
                 {hourlyData.map((hour) => {
                   const temp = hour.temp ?? 0;
                   const precip = hour.precipitation ?? 0;
-                  const tColor = getTemperatureColor(temp);
-                  const pColor = getPrecipitationColor(precip);
+                  const tColor = getTemperatureStyle(temp);
+                  const pColor = getPrecipitationStyle(precip);
                   const officialSunMin = hour.sunshine !== null ? Math.round(hour.sunshine / 60) : null;
                   const estSunMin = hour.estimated_hourly_sunshine_minutes;
-                  const offColor = getSunshineColor((officialSunMin ?? 0) / 60);
-                  const estColor = getSunshineColor((estSunMin ?? 0) / 60);
+                  const offColor = getSunshineStyle(((officialSunMin ?? 0) / 60) * SUNSHINE_MONTHLY_EQUIVALENT);
+                  const estColor = getSunshineStyle(((estSunMin ?? 0) / 60) * SUNSHINE_MONTHLY_EQUIVALENT);
                   const weather = getWeatherIcon(hour.weather_code ?? 0, hour.time ?? '', dailyData.sunrise, dailyData.sunset);
                   return (
                     <TableRow key={hour.time}>
@@ -269,20 +271,20 @@ export default async function DayPage({ params }: PageProps) {
                       <TableCell className="border bg-[#f2f2f2] dark:bg-muted/30 font-bold text-left px-2 py-1">
                         {format(parseISO(hour.time), "HH:mm")}
                       </TableCell>
-                      <TableCell className="border p-0" style={{ backgroundColor: tColor, color: getTextColor(tColor) }}>
+                      <TableCell className="border p-0" style={{ backgroundColor: tColor.background, color: tColor.text }}>
                         {temp.toFixed(1)}
                       </TableCell>
-                      <TableCell className="border p-0" style={{ backgroundColor: pColor, color: getTextColor(pColor) }}>
+                      <TableCell className="border p-0" style={{ backgroundColor: pColor.background, color: pColor.text }}>
                         {precip.toFixed(1)}
                       </TableCell>
                       <TableCell className="border bg-white dark:bg-background">{hour.humidity ?? '-'}%</TableCell>
                       <TableCell className="border bg-white dark:bg-background">{hour.wind_speed ?? '-'} km/h</TableCell>
                       <TableCell className="border bg-white dark:bg-background">{hour.wind_gusts ?? '-'} km/h</TableCell>
                       <TableCell className="border bg-white dark:bg-background">{hour.pressure ?? '-'} hPa</TableCell>
-                      <TableCell className="border p-0" style={{ backgroundColor: offColor, color: getTextColor(offColor) }}>
+                      <TableCell className="border p-0" style={{ backgroundColor: offColor.background, color: offColor.text }}>
                         {officialSunMin !== null ? officialSunMin : '-'}
                       </TableCell>
-                      <TableCell className="border p-0" style={{ backgroundColor: estColor, color: getTextColor(estColor) }}>
+                      <TableCell className="border p-0" style={{ backgroundColor: estColor.background, color: estColor.text }}>
                         {estSunMin !== null ? estSunMin : '-'}
                       </TableCell>
                     </TableRow>
