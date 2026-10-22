@@ -6,6 +6,7 @@ import Link from "next/link";
 import { format, parseISO } from "date-fns";
 import { fr } from "date-fns/locale";
 import { NavigationCards } from "@/components/NavigationCards";
+import HomeClient from "@/components/home-client";
 import fs from "fs";
 import path from "path";
 
@@ -138,6 +139,9 @@ export default async function Home() {
           </CardContent>
         </Card>
       </section>
+
+      {/* Map: Localisation de Kénitra */}
+      <HomeClient />
 
       {/* Links to main sections */}
       <NavigationCards />
