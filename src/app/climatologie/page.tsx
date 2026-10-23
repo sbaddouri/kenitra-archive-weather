@@ -144,6 +144,64 @@ export default function ClimatologiePage() {
           <p>Tel-Aviv (32°05′ N, 34°47′ E, 5 m) : Csa, T = 20,9 °C, P = 528 mm, moyenne des maximales d'août 30,2 °C, moyenne des minimales de janvier 9,6 °C, records 46,5 °C / 1,9 °C Wikipédia – Tel Aviv. Pluviométrie et minima hivernaux très proches, mais température annuelle 2,3 °C plus élevée et climat nettement plus chaud.</p>
         </CardContent>
       </Card>
+
+      <Card className="mb-6">
+        <CardHeader>
+          <CardTitle>PARTIE IV — ANALOGUES DES AMÉRIQUES</CardTitle>
+        </CardHeader>
+        <CardContent className="text-sm">
+          <h3 className="font-bold mb-2 mt-4">4.1. Californie et côte pacifique des États-Unis</h3>
+          <h4 className="font-semibold mb-1 mt-3">4.1.1. Los Angeles (États-Unis) — Similarité S = 48,0 % (D = 0,735 ; couverture 100 %)</h4>
+          <p>Los Angeles (34°03′ N, 118°15′ O, 93 m) : BSh (Csb sur la côte, Csa à l'intérieur), T = 18,8 °C, P = 362 mm, moyenne des maximales d'août 28,9 °C (identique à Kénitra), moyenne des minimales de décembre 9,0 °C, HR 70,8 %, ensoleillement 3 254,2 h, records 45 °C / 2 °C Wikipédia – Los Angeles. La structure thermique est superposable (ΔT = +0,2 °C, ΔTx = +0,2 °C, ΔTn = −0,2 °C), mais le déficit pluviométrique de 209 mm réduit fortement la similarité. Los Angeles est le meilleur analogue extra-méditerranéen de Kénitra sur le plan thermique, un analogue médiocre sur le plan hydrique.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">4.1.2. Santa Barbara (Californie) — Similarité S = 45,5 %</h4>
+          <p>Santa Barbara (34°25′ N, 119°42′ O, 15 m) : Csb, T = 17,0 °C, P = 482,4 mm, moyenne des maximales d'août-septembre 25,4 °C, moyenne des minimales de décembre 7,8 °C, 3 099,8 h, records 42 °C / −7 °C Wikipédia – Santa Barbara. Pluviométrie proche (482 mm), mais été 3,3 °C plus frais — l'upwelling californien est plus intense qu'à Kénitra.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">4.1.3. San Diego (Californie) — Similarité S = 30,2 %</h4>
+          <p>San Diego (32°42′ N, 117°09′ O) : BSh/Csa, T = 18,2 °C, P = 249 mm, moyenne des maximales d'août 25,2 °C, moyenne des minimales de janvier 10,2 °C, HR 69 %, 3 054,6 h, records 44 °C / 4 °C Wikipédia – San Diego. Minima hivernaux très proches (10,2 vs 9,2 °C), mais été plus frais et aridité marquée.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">4.1.4. Sacramento et Fresno (Vallée Centrale) — analogues continentaux rejetés</h4>
+          <p>Sacramento (38°34′ N, 121°29′ O) : Csa, T = 16,6 °C, P = 461 mm, moyenne des maximales de juillet 33,7 °C, moyenne des minimales de janvier 4,0 °C, 3 607,8 h, records 46,7 °C / −7,8 °C Wikipédia – Sacramento. Fresno : BSh, T = 18,3 °C, P = 279 mm, moyenne des maximales de juillet 36,5 °C, 3 550 h, records 46,1 °C / −8 °C Wikipédia – Fresno. Ces stations, souvent citées comme analogues des climats marocains, ne le sont PAS pour Kénitra : leur amplitude annuelle dépasse 29 °C (contre 11,5 °C) et leur humidité estivale est très basse. Elles constituent en revanche des analogues pertinents de Guercif.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">4.1.5. Monterey (Californie) — Similarité S = 8,9 % (analogue rejeté)</h4>
+          <p>Monterey (36°36′ N, 121°53′ O) : Csb, T = 13,3 °C, P = 435 mm, moyenne des maximales de septembre 20,1 °C, moyenne des minimales de janvier 6,2 °C Wikipédia – Monterey. Trop froid (ΔT = −5,3 °C) : la dérive froide californienne est beaucoup plus intense que l'upwelling marocain.</p>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-6">
+        <CardHeader>
+          <CardTitle>PARTIE IV — ANALOGUES DES AMÉRIQUES (suite)</CardTitle>
+        </CardHeader>
+        <CardContent className="text-sm">
+          <h3 className="font-bold mb-2 mt-4">4.2. Amérique latine</h3>
+          <h4 className="font-semibold mb-1 mt-3">4.2.1. Santiago (Chili) — Similarité S = 20,6 % (D = 1,580 ; avec correction saisonnière)</h4>
+          <p>Santiago (33°26′ S, 70°39′ O, 570 m) : BSk avec tendances Csb, P = 286,3 mm (Quinta Normal), moyenne des maximales de janvier 30,4 °C, moyenne des minimales de juillet 2,6 °C, HR 64-71 %, ensoleillement 2 888,4 h, records 39,3 °C / −6,8 °C Wikipédia – Santiago. Après inversion saisonnière (janvier ↔ juillet), la structure thermique devient comparable, mais la pluviométrie (286 mm) est inférieure de 285 mm et les minima hivernaux (2,6 °C) sont 6,6 °C plus froids que ceux de Kénitra. Santiago est un analogue thermique dégradé par l'aridité et la continentalité altitudinale.</p>
+          <p className="text-xs text-muted-foreground mt-2">Note : les fiches de Valparaíso, Buenos Aires et Montevideo n'ont pu être établies, les pages sources n'ayant pas été accessibles lors de la collecte. Elles sont signalées comme lacunes de couverture.</p>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-6">
+        <CardHeader>
+          <CardTitle>PARTIE V — ANALOGUES DE L'HÉMISPHÈRE SUD ET CORRECTION SAISONNIÈRE</CardTitle>
+        </CardHeader>
+        <CardContent className="text-sm">
+          <h3 className="font-bold mb-2 mt-4">5.1. Méthode de correction</h3>
+          <p>Pour les stations de l'hémisphère sud, la comparaison est conduite selon deux modalités : (i) comparaison calendaire brute (mois civil contre mois civil), qui mesure la ressemblance des états mensuels absolus ; (ii) comparaison après inversion saisonnière stricte (janvier ↔ juillet, février ↔ août, …, juin ↔ décembre), qui mesure la ressemblance des structures saisonnières. Conformément au mandat, le décalage n'est pas appliqué aveuglément aux régimes pluviométriques : la saisonnalité des pluies est comparée séparément, car un régime à maximum hivernal austral correspond, après inversion, à un maximum estival boréal — divergence structurelle majeure.</p>
+
+          <h3 className="font-bold mb-2 mt-4">5.2. Le Cap (Afrique du Sud) — Similarité S = 54,9 % (D = 0,600 ; couverture 90 %)</h3>
+          <p>Le Cap (33°55′ S, 18°25′ E) : Csb, T = 17,3 °C, P = 492,8 mm, moyenne des maximales de février 27,3 °C (↔ août boréal), moyenne des minimales de juillet 7,4 °C (↔ janvier boréal), ensoleillement 3 115 h, records 45,2 °C / 1,3 °C Wikipédia – Cape Town. Après inversion saisonnière, la convergence est excellente : ΔT = −1,3 °C, ΔP = −78 mm, ΔTx = −1,4 °C, ΔTn = −1,8 °C, ΔEnsoleillement = +5 h. Le Cap partage en outre le même régime pluviométrique à maximum hivernal (pluies d'hiver austral ↔ pluies d'hiver boréal pour Kénitra), ce qui est rare parmi les analogues de l'hémisphère sud et en fait l'un des meilleurs analogues planétaires. Différences : hivers plus frais, été plus court, influence de l'upwelling de Benguela.</p>
+
+          <h3 className="font-bold mb-2 mt-4">5.3. Adelaide (Australie) — Similarité S = 60,3 % (D = 0,507) — 2ᵉ rang mondial</h3>
+          <p>Adelaide (34°55′ S, 138°36′ E, 50 m) : Csa, T = 17,5 °C, P = 536,5 mm, moyenne des maximales de janvier 30,0 °C, moyenne des minimales de juillet 7,7 °C, records 47,7 °C / 0,4 °C Wikipédia – Adelaide. Après inversion saisonnière : ΔT = −1,1 °C, ΔP = −35 mm, ΔTx = +1,3 °C, ΔTn = −1,5 °C. C'est, avec Le Cap, le meilleur analogue de l'hémisphère sud. Adelaide relève de la même famille « méditerranéen austral tempéré » que Kénitra, avec une pluviométrie quasi identique (536 vs 571 mm).</p>
+
+          <h3 className="font-bold mb-2 mt-4">5.4. Perth (Australie) — Similarité S = 47,0 % (D = 0,754)</h3>
+          <p>Perth (31°57′ S, 115°51′ E) : Csa, P = 731,1 mm, moyenne des maximales de février 31,6 °C, moyenne des minimales de juillet 8,0 °C, records 46,2 °C / 0,7 °C Wikipédia – Perth. Régime pluviométrique à maximum hivernal austral, comme Le Cap : après inversion, la structure est fidèle, mais l'été est 2,9 °C plus chaud et la pluviométrie supérieure de 160 mm.</p>
+
+          <h3 className="font-bold mb-2 mt-4">5.5. Autres stations australes</h3>
+          <p>Les fiches de Sydney, Melbourne et Auckland n'ont pu être établies (pages sources inaccessibles). Sur la base des données disponibles, Auckland et la Nouvelle-Zélande ne présentent aucun analogue direct : leur climat océanique tempéré est dépourvu de sécheresse estivale marquée. Le Karoo sud-africain et le bassin de Murray-Darling (Mildura, Renmark), souvent cités comme analogues des climats semi-arides marocains, sont des analogues de Guercif, non de Kénitra : trop continentaux, trop secs en été, trop froids en hiver.</p>
+        </CardContent>
+      </Card>
+
       <Card className="mb-6">
         <CardHeader>
           <CardTitle>TABLEAU CLIMATIQUE DE RÉFÉRENCE — KÉNITRA</CardTitle>
