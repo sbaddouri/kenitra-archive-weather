@@ -125,6 +125,71 @@ export default function ClimatologiePage() {
 
       <Card className="mb-6">
         <CardHeader>
+          <CardTitle>PARTIE III — ANALOGUES DU BASSIN MÉDITERRANÉEN NORD</CardTitle>
+        </CardHeader>
+        <CardContent className="text-sm">
+          <h3 className="font-bold mb-2 mt-4">3.1. Analogues ibériques — le cœur de l'analogie européenne</h3>
+          <h4 className="font-semibold mb-1 mt-3">3.1.1. Faro (Algarve, Portugal) — Similarité S = 70,9 % (D = 0,344) — ANALOGUE N° 1 MONDIAL</h4>
+          <p>Faro (37°00′ N, 7°56′ O, 8 m) obtient le meilleur score mondial du modèle. Csa ; T = 17,5-18,5 °C ; P = 511,6 mm ; moyenne des maximales de juillet 29,2 °C ; moyenne des minimales de janvier 7,9 °C ; ensoleillement 3 044,4 h ; records 44,3 °C / 1,2 °C Wikipédia – Faro. Les écarts sont minimes : ΔT ≈ −0,6 °C, ΔP ≈ −60 mm, ΔTx ≈ +0,5 °C, ΔTn ≈ −1,3 °C, ΔEnsoleillement ≈ −66 h. Faro est un littoral atlantique méridional à été sec : exactement la même mécanique que Kénitra (océan tempéré + anticyclone subtropical + sécheresse estivale). La végétation y est dominée par le pin pignon, le caroubier, l'olivier, le figuier et l'amandier — une palette quasi superposable à celle du Gharb. La principale différence est l'intensité du refroidissement estival par upwelling : la côte algarienne est plus froide en été que Kénitra, où le plateau continental et l'orientation du trait de côte atténuent cet effet.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">3.1.2. Portimão (Algarve, Portugal) — Similarité S = 59,5 % (D = 0,520)</h4>
+          <p>Portimão (37°08′ N, 8°32′ O) : Csa, T = 17,2 °C, P = 528,1 mm, moyenne des maximales d'août 28,8 °C, moyenne des minimales de janvier 8,2 °C, ensoleillement 3 018,8 h, records 37,6 °C / −2,0 °C Wikipédia – Portimão. Convergence quasi parfaite sur la pluviométrie (528 vs 571 mm) et la moyenne des maximales d'août (28,8 vs 28,7 °C). Portimão confirme que l'Algarve occidental est le meilleur analogue européen de Kénitra.</p>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-6">
+        <CardHeader>
+          <CardTitle>PARTIE III — ANALOGUES DU BASSIN MÉDITERRANÉEN NORD (suite)</CardTitle>
+        </CardHeader>
+        <CardContent className="text-sm">
+          <h4 className="font-semibold mb-1 mt-3">3.1.3. Huelva et Jerez de la Frontera (Andalousie atlantique, Espagne)</h4>
+          <p>Huelva (37°15′ N, 6°57′ O, 54 m) : Csa, T = 18,1 °C, P = 525 mm, moyenne des maximales d'août 33,1 °C, moyenne des minimales de janvier 5,9 °C, ensoleillement 2 970 h, records 43,9 °C / −3,2 °C Wikipédia – Huelva. Jerez (36°40′ N, 6°08′ O, 56 m) : T ≈ 18 °C, P = 570 mm, moyenne des maximales d'août 34,3 °C, moyenne des minimales de janvier 5,3 °C, 2 965 h d'ensoleillement, 53 jours de pluie, 137 jours clairs Wikipédia – Jerez de la Frontera. La pluviométrie de Jerez (570 mm) est rigoureusement égale à celle de Kénitra (571 mm) — mais l'été andalou est 5,6 °C plus chaud (34,3 vs 28,7 °C) et l'hiver 3,9 °C plus froid : c'est la continentalité andalouse qui crée l'écart.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">3.1.4. Séville (Espagne) — Similarité S = 28,0 %</h4>
+          <p>Séville (37°23′ N, 5°59′ O, 7 m) : Csa, T = 19,2 °C, P = 502 mm, moyenne des maximales de juillet 36,2 °C, moyenne des minimales de janvier 6,0 °C, humidité relative 59,4 %, ensoleillement 3 279,3 h, records 46,6 °C / −5,5 °C Wikipédia – Seville. Séville est l'anti-modèle absolu de Kénitra : à pluviométrie comparable, elle cumule une humidité 17 points plus basse, un été 7,5 °C plus chaud et un hiver 3,2 °C plus froid. L'analogie est hydrique mais nullement hygrothermique.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">3.1.5. Valence et Barcelone (Espagne méditerranéenne)</h4>
+          <p>Valence (39°28′ N, 0°22′ O, 15 m) : BSh/Csa, T = 18,6 °C (identique à Kénitra), P = 459 mm, moyenne des maximales d'août 30,6 °C, moyenne des minimales de janvier 7,5 °C, 2 733 h d'ensoleillement, records 44,5 °C / −7,2 °C Wikipédia – Valencia. Barcelone (41°23′ N, 2°11′ E, 12 m) : Csa, T = 18,2 °C (jour 21,2 / nuit 15,1), P = 558,1 mm, moyenne des maximales d'août 28,9 °C, moyenne des minimales de janvier 5,5 °C, HR 68 %, 2 489 h, records 37,4 °C / −8,0 °C Wikipédia – Barcelona. Barcelone est un analogue remarquable par sa pluviométrie (558 mm) et sa moyenne des maximales d'août (28,9 °C) ; elle s'en écarte par un hiver plus froid et un ensoleillement bien moindre.</p>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-6">
+        <CardHeader>
+      <Card className="mb-6">
+        <CardHeader>
+          <CardTitle>PARTIE III — ANALOGUES DU BASSIN MÉDITERRANÉEN NORD (suite)</CardTitle>
+        </CardHeader>
+        <CardContent className="text-sm">
+          <h4 className="font-semibold mb-1 mt-3">3.1.6. Setúbal et Algeciras (péninsule Ibérique méridionale)</h4>
+          <p>Setúbal (38°31′ N, 8°53′ O) : Csa, T ≈ 16,5-17 °C, P = 703,4 mm, moyenne des maximales d'août 30,7 °C, moyenne des minimales de janvier 5,2 °C, records 45,5 °C / −5,8 °C Wikipédia – Setúbal. Algeciras (36°07′ N, 5°27′ O, 20 m) : Csa, T = 18,3 °C, P = 835,7 mm, moyenne des maximales d'août 27,8 °C, moyenne des minimales de janvier 11,1 °C Wikipédia – Algeciras. Algeciras, avec 27,8 °C de moyenne des maximales d'août et 11,1 °C de minima en janvier, est thermiquement le plus proche de Kénitra — mais sa pluviométrie de 835,7 mm l'en éloigne structurellement.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">3.1.7. Almería et Carthagène (Sud-Est espagnol) — analogues « chauds et secs » dégradés</h4>
+          <p>Almería (36°50′ N, 2°27′ O, 24 m) : BWh, T = 19,2 °C, P = 197,5 mm, moyenne des maximales d'août 31,2 °C, ensoleillement 3 095 h, records 42,0 °C / 0,1 °C Wikipédia – Almería. Carthagène (37°36′ N, 0°59′ O, 10 m) : climat de transition BSh/BWh, T = 19,2 °C, P = 260,2 mm, moyenne des maximales d'août 30,4 °C Wikipédia – Cartagena. Ces stations constituent des analogues « chauds et secs » de Kénitra, décalés vers l'aridité ; elles ne partagent ni la pluviométrie (déficit de 310 à 370 mm) ni l'humidité.</p>
+
+          <h3 className="font-bold mb-2 mt-4">3.2. Analogues italiens, maltais, croates et grecs</h3>
+          <h4 className="font-semibold mb-1 mt-3">3.2.1. Cagliari (Sardaigne, Italie) — Similarité S = 34,7 % (D = 1,058)</h4>
+          <p>Cagliari (39°13′ N, 9°06′ E, 4 m) : Csa, T = 17,3 °C, P = 413,2 mm, moyenne des maximales d'août 32,1 °C, moyenne des minimales de février 5,1 °C, 2 729,2 h, records 44,6 °C / 4,8 °C Wikipédia – Cagliari. Convergence méditerranéenne classique, dégradée par un été 3,4 °C plus chaud.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">3.2.2. La Valette (Malte) — Similarité S = 56,1 % (D = 0,578 ; couverture 54 %)</h4>
+          <p>La Valette (35°54′ N, 14°31′ E, 56 m) : Csa, P = 580,7 mm (proche de 571 mm), moyenne des maximales d'août 32,0 °C, moyenne des minimales de février 9,5 °C Wikipédia – Valletta. Pluviométrie quasi identique, minima hivernaux proches, mais été insulaire nettement plus chaud. La couverture du modèle est faible (3 variables) : le score doit être lu avec prudence.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">3.2.3. Split (Croatie) — Similarité S = 30,2 %</h4>
+          <p>Split (43°30′ N, 16°26′ E, 0 m) : Csa, T = 16,8 °C, P = 800,6 mm, moyenne des maximales de juillet 31,0 °C, moyenne des minimales de janvier 5,9 °C, 2 698,5 h, records 38,6 °C / −9,0 °C Wikipédia – Split. Trop arrosé (+230 mm) et trop froid en hiver.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">3.2.4. Héraklion (Crète, Grèce) — Similarité S = 36,5 %</h4>
+          <p>Héraklion (35°20′ N, 25°08′ E) : Csa, T = 19,6 °C, P = 318,6 mm, moyenne des maximales de juillet-août 28,3 °C (très proche de Kénitra), moyenne des minimales de janvier 10,5 °C, 2 778,6 h, records 38,3 °C / 1,4 °C Wikipédia – Heraklion. La température annuelle et les maxima estivaux sont remarquablement proches, mais la pluviométrie est inférieure de 252 mm — l'analogie est thermique et non hydrique.</p>
+
+          <h3 className="font-bold mb-2 mt-4">3.3. Analogues turcs et levantins</h3>
+          <h4 className="font-semibold mb-1 mt-3">3.3.1. Izmir (Turquie) — Similarité S = 37,1 % (D = 0,992)</h4>
+          <p>Izmir (38°25′ N, 27°08′ E, 2 m) : Csa, T = 18,4 °C, P = 730,5 mm, moyenne des maximales de juillet 33,8 °C, moyenne des minimales de janvier 6,0 °C, 2 938,5 h, records 43,2 °C / −8,2 °C Wikipédia – İzmir. Température annuelle très proche, mais été 5,1 °C plus chaud et pluviométrie supérieure.</p>
+
+          <h4 className="font-semibold mb-1 mt-3">3.3.2. Tel-Aviv (Israël) — Similarité S = 40,2 %</h4>
+          <p>Tel-Aviv (32°05′ N, 34°47′ E, 5 m) : Csa, T = 20,9 °C, P = 528 mm, moyenne des maximales d'août 30,2 °C, moyenne des minimales de janvier 9,6 °C, records 46,5 °C / 1,9 °C Wikipédia – Tel Aviv. Pluviométrie et minima hivernaux très proches, mais température annuelle 2,3 °C plus élevée et climat nettement plus chaud.</p>
+        </CardContent>
+      </Card>
+
+      <Card className="mb-6">
+        <CardHeader>
           <CardTitle>TABLEAU CLIMATIQUE DE RÉFÉRENCE — KÉNITRA</CardTitle>
           <p className="text-xs text-muted-foreground mt-1">Normales et extrêmes 1940-2025, ensoleillement 1981-2010, jours de pluie 1961-1990. Colonne de contrôle : normales OMM 1991-2020 (NOAA/NCEI, station KENITRA 60120).</p>
         </CardHeader>
