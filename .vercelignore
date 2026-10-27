@@ -1,2 +1,4 @@
 plage-spectre-temperature.json
 plage-precipitation.json
+node_modules/
+.next/

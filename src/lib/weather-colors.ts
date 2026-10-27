@@ -1,306 +1,170 @@
-/**
- * Outils météo partagés : facteur d'ensoleillement (codes WMO 4677), icônes
- * et schémas de couleur des climate boxes de Wikipédia en anglais.
- *
- * Les couleurs (fond + texte) proviennent de climate-box-colors.ts, port
- * fidèle du module Lua « Climate box color schemes » de Wikipédia en anglais.
- */
+export type WeatherColor = { background: string; color: string };
 
-/**
- * Table de correspondance complète WMO 4677 (codes 0-99) → Facteur d'ensoleillement maximal (0-1)
- * Basé sur la nébulosité et le type de phénomène météorologique
- * Groupes logiques selon la table OMM 4677 :
- * 0-3: État du ciel (nébulosité)
- * 10-19: Précipitations légères / Caractère du temps
- * 20-29: Précipitations / Neige / Grêle (non utilisées dans Open-Meteo)
- * 30-39: Tempêtes / Poussière / Sable
- * 40-49: Brouillard / Brume
- * 50-59: Bruine
- * 60-69: Pluie
- * 70-79: Neige
- * 80-89: Averses
- * 90-99: Orages
- */
-const WMO_SUNSHINE_FACTOR: Record<number, number> = {
-  // 0-3: État du ciel (Nébulosité) - Facteur basé sur l'okta de nébulosité
-  0: 1.00,  // Ciel dégagé (0 oktas)
-  1: 0.75,  // Principalement dégagé (1-2 oktas)
-  2: 0.50,  // Partiellement nuageux (3-4 oktas)
-  3: 0.10,  // Couvert (5-8 oktas)
-
-  // 10-19: Précipitations légères / Caractère du temps (Open-Meteo n'utilise pas tous)
-  10: 0.30, // Brume légère
-  11: 0.20, // Brume
-  12: 0.10, // Brume épaisse
-  13: 0.05, // Brume givrante
-  14: 0.00, // Brouillard (visible < 1km)
-  15: 0.00, // Brouillard givrant
-  16: 0.00, // Brouillard épais
-  17: 0.00, // Brouillard givrant épais
-  18: 0.20, // Précipitations légères intermittentes
-  19: 0.10, // Précipitations légères continues
-
-  // 20-29: Neige / Grêle (codes météo non standard Open-Meteo)
-  20: 0.05, 21: 0.05, 22: 0.05, 23: 0.05, 24: 0.05,
-  25: 0.05, 26: 0.05, 27: 0.05, 28: 0.05, 29: 0.05,
-
-  // 30-39: Tempêtes de poussière/sable
-  30: 0.10, 31: 0.05, 32: 0.00, 33: 0.00, 34: 0.00,
-  35: 0.00, 36: 0.00, 37: 0.00, 38: 0.00, 39: 0.00,
-
-  // 40-49: Brouillard / Brume (Open-Meteo: 45, 48)
-  40: 0.05, 41: 0.00, 42: 0.00, 43: 0.00, 44: 0.00,
-  45: 0.00,  // Brouillard
-  46: 0.00, 47: 0.00,
-  48: 0.00,  // Brouillard givrant (dépôt de givre)
-  49: 0.00,
-
-  // 50-59: Bruine (Open-Meteo: 51, 53, 55, 56, 57)
-  50: 0.20, // Bruine intermittente faible
-  51: 0.25, // Bruine faible
-  52: 0.15, // Bruine modérée
-  53: 0.15, // Bruine modérée
-  54: 0.05, // Bruine forte
-  55: 0.05, // Bruine forte
-  56: 0.00, // Bruine verglaçante faible
-  57: 0.00, // Bruine verglaçante forte
-  58: 0.00, 59: 0.00,
-
-  // 60-69: Pluie (Open-Meteo: 61, 63, 65, 66, 67)
-  60: 0.10, // Pluie intermittente faible
-  61: 0.10, // Pluie faible
-  62: 0.05, // Pluie modérée
-  63: 0.05, // Pluie modérée
-  64: 0.00, // Pluie forte
-  65: 0.00, // Pluie forte
-  66: 0.00, // Pluie verglaçante faible
-  67: 0.00, // Pluie verglaçante forte
-  68: 0.00, 69: 0.00,
-
-  // 70-79: Neige (Open-Meteo: 71, 73, 75, 77)
-  70: 0.10, // Neige intermittente faible
-  71: 0.10, // Neige faible
-  72: 0.05, // Neige modérée
-  73: 0.05, // Neige modérée
-  74: 0.00, // Neige forte
-  75: 0.00, // Neige forte
-  76: 0.00, // Grains de neige (diamond dust)
-  77: 0.00, // Grains de neige
-  78: 0.00, 79: 0.00,
-
-  // 80-89: Averses (Open-Meteo: 80, 81, 82, 85, 86)
-  80: 0.30, // Averses de pluie faibles
-  81: 0.10, // Averses de pluie modérées
-  82: 0.05, // Averses de pluie violentes
-  83: 0.20, // Averses pluie/neige mélangées faibles
-  84: 0.10, // Averses pluie/neige mélangées modérées
-  85: 0.10, // Averses de neige faibles
-  86: 0.05, // Averses de neige fortes
-  87: 0.00, 88: 0.00, 89: 0.00,
-
-  // 90-99: Orages (Open-Meteo: 95, 96, 99)
-  90: 0.05, 91: 0.05, 92: 0.05, 93: 0.05, 94: 0.05,
-  95: 0.05, // Orage faible ou modéré
-  96: 0.05, // Orage avec grêle faible
-  97: 0.00, 98: 0.00,
-  99: 0.00  // Orage avec forte grêle
-};
-
-/**
- * Calcule le facteur d'élévation solaire pour les transitions lever/coucher
- * Retourne un facteur 0-1 basé sur la position du soleil
- * AUCUN ensoleillement en dehors des heures de jour strictes (lever à coucher)
- * @param timeMinutes - Minutes depuis minuit
- * @param sunriseMinutes - Lever du soleil en minutes depuis minuit
- * @param sunsetMinutes - Coucher du soleil en minutes depuis minuit
- * @returns Facteur 0-1 pour l'ensoleillement potentiel (0 la nuit, sinusoïdal le jour)
- */
-function getSolarElevationFactor(
-  timeMinutes: number,
-  sunriseMinutes: number,
-  sunsetMinutes: number
-): number {
-  // Nuit complète - AUCUN ensoleillement avant lever ou après coucher
-  if (timeMinutes < sunriseMinutes || timeMinutes >= sunsetMinutes) {
-    return 0;
-  }
-
-  // Plein jour - calcul basé sur l'élévation solaire (courbe sinusoïdale)
-  const dayLength = sunsetMinutes - sunriseMinutes;
-  const progress = (timeMinutes - sunriseMinutes) / dayLength; // 0 à 1
-
-  // Courbe sinusoïdale pour l'élévation solaire (max à midi solaire)
-  // sin(π * progress) donne 0 au lever/coucher, 1 au midi
-  return Math.sin(Math.PI * progress);
+function clamp(v: number, min = 0, max = 255) {
+  return Math.max(min, Math.min(max, v));
 }
 
-/**
- * Calcule l'ensoleillement estimé pour une heure donnée
- * en tenant compte du code WMO, du lever/coucher du soleil, et de l'élévation solaire
- * @param code - Code WMO horaire
- * @param timeStr - Heure ISO (ex: "2025-06-15T14:00")
- * @param sunriseStr - Lever du soleil ISO
- * @param sunsetStr - Coucher du soleil ISO
- * @returns Minutes d'ensoleillement estimées pour cette heure (0-60)
- */
-export function calculateHourlySunshineWithDaylight(
-  code: number,
-  timeStr: string,
-  sunriseStr: string | null | undefined,
-  sunsetStr: string | null | undefined
-): number {
-  // Pas de données de lever/coucher = on suppose jour complet (fallback)
-  if (!sunriseStr || !sunsetStr) {
-    return Math.round((WMO_SUNSHINE_FACTOR[code] ?? 0) * 60);
-  }
+function hex(v: number) {
+  return clamp(Math.floor(v)).toString(16).toUpperCase().padStart(2, "0");
+}
 
-  const getTimeMinutes = (timeStr: string): number => {
-    if (!timeStr || !timeStr.includes('T')) return 0;
-    const timePart = timeStr.split('T')[1];
-    if (!timePart || !timePart.includes(':')) return 0;
-    const [hour, minute] = timePart.split(':').map(Number);
-    if (isNaN(hour) || isNaN(minute)) return 0;
-    return hour * 60 + minute;
+function rangePos(value: number, start: number, stop: number) {
+  if (start < stop) {
+    if (value < start) return 0;
+    if (value > stop) return 1;
+    return (value - start) / (stop - start);
+  } else {
+    if (value < stop) return 1;
+    if (value > start) return 0;
+    return (start - value) / (start - stop);
+  }
+}
+
+function fmt(bg: string, text: string): WeatherColor {
+  return { background: `#${bg}`, color: `#${text}` };
+}
+
+export function daysColor(val: number | null): WeatherColor {
+  if (val === null) return fmt("FFFFFF", "000000");
+  const item = hex(rangePos(val, 20, 0) * 255);
+  let bg = item + item;
+  const item2 = hex(rangePos(val, 40, 20) * 255);
+  bg = bg + item2;
+  const text = val >= 12 ? "FFFFFF" : "000000";
+  return fmt(bg, text);
+}
+
+export function temperatureColor(val: number | null): WeatherColor {
+  if (val === null) return fmt("FFFFFF", "000000");
+  let r: number, g: number, b: number;
+  if (val < 4.5) {
+    r = rangePos(val, -42.75, 4.5) * 255;
+  } else {
+    r = rangePos(val, 60, 41.5) * 255;
+  }
+  if (val <= 4.5) {
+    g = rangePos(val, -42.75, 4.5) * 255;
+  } else {
+    g = rangePos(val, 41.5, 4.5) * 255;
+  }
+  if (val < -42.78) {
+    b = rangePos(val, -90, -42.78) * 255;
+  } else {
+    b = rangePos(val, 23, 4.5) * 255;
+  }
+  const bg = hex(r) + hex(g) + hex(b);
+  const text = val < -23.3 || val >= 37.8 ? "FFFFFF" : "000000";
+  return fmt(bg, text);
+}
+
+export function precipitationColor(val: number | null): WeatherColor {
+  if (val === null) return fmt("FFFFFF", "000000");
+  const item = hex(rangePos(val, 165.6, 0) * 255);
+  let bg = item + item;
+  const item2 = hex(rangePos(val, 300, 165.61) * 207 + 48);
+  bg = bg + item2;
+  const text = val > 90 ? "FFFFFF" : "000000";
+  return fmt(bg, text);
+}
+
+export function humidityColor(val: number | null): WeatherColor {
+  if (val === null) return fmt("FFFFFF", "000000");
+  const item = hex(rangePos(val, 66.67, 0) * 255);
+  let bg = item + item;
+  const item2 = hex(rangePos(val, 133.33, 66.667) * 255);
+  bg = bg + item2;
+  const text = val >= 40 ? "FFFFFF" : "000000";
+  return fmt(bg, text);
+}
+
+export function sunshineColor(val: number | null): WeatherColor {
+  if (val === null) return fmt("FFFFFF", "000000");
+  let item: string;
+  if (val < 90) item = hex(rangePos(val, 0, 90) * 170);
+  else if (val < 180) item = hex(rangePos(val, 90, 180) * 42.5 + 170);
+  else item = hex(rangePos(val, 180, 360) * 42.5 + 212.5);
+  let bg = item + item;
+  if (val < 90) item = hex(rangePos(val, 0, 90) * 170);
+  else if (val < 270) item = hex(rangePos(val, 150, 90) * 170);
+  else item = hex(rangePos(val, 270, 720) * 255);
+  bg = bg + item;
+  const text = val < 80 ? "FFFFFF" : "000000";
+  return fmt(bg, text);
+}
+
+export function pastelColor(val: number | null): WeatherColor {
+  if (val === null) return fmt("FFFFFF", "000000");
+  const text = val < -15 || val >= 39 ? "FFFFFF" : "000000";
+  if (val >= 51) return fmt("EE2200", text);
+  const rounded = Math.round((val + 25.5) / 3);
+  const map: Record<number, string> = {
+    1: "BB00CC", 2: "CC00EE", 3: "CC33EE", 4: "CC55EE", 5: "DD66EE",
+    6: "DD77EE", 7: "DD99EE", 8: "DDAAEE", 9: "DDBBEE", 10: "EECCFF",
+    11: "FFDDFF", 12: "F1F1F1", 13: "FFEEBB", 14: "FFFFCC", 15: "FFFFBB",
+    16: "FFFFAA", 17: "FFFF88", 18: "FFCC33", 19: "FFBB33", 20: "FF9900",
+    21: "FF8844", 22: "FF6633", 23: "FF5522", 24: "FF4422", 25: "EE4400",
   };
+  const bg = map[rounded] ?? "AA00AA";
+  return fmt(bg, text);
+}
 
-  const timeMinutes = getTimeMinutes(timeStr);
-  const sunriseMinutes = getTimeMinutes(sunriseStr);
-  const sunsetMinutes = getTimeMinutes(sunsetStr);
+export function uvColor(val: number | null): WeatherColor {
+  if (val === null) return fmt("FFFFFF", "000000");
+  let bg: string;
+  if (val < 3) bg = "3EA72D";
+  else if (val < 6) bg = "FFF300";
+  else if (val < 8) bg = "F18B00";
+  else if (val < 11) bg = "E53210";
+  else bg = "A45693";
+  let text: string;
+  if (val < 3) text = "FFFFFF";
+  else if (val < 8) text = "000000";
+  else text = "FFFFFF";
+  return fmt(bg, text);
+}
 
-  // Facteur d'élévation solaire (0-1)
-  const elevationFactor = getSolarElevationFactor(timeMinutes, sunriseMinutes, sunsetMinutes);
+export function greenColor(val: number | null): WeatherColor {
+  if (val === null) return fmt("FFFFFF", "000000");
+  const item1 = hex(rangePos(val, 165.6, 0) * 255);
+  const item2 = hex(rangePos(val, 300, 165.61) * 207 + 48);
+  const bg = item1 + item2 + item1;
+  const text = val >= 200 ? "FFFFFF" : "000000";
+  return fmt(bg, text);
+}
 
-  // Si nuit (facteur 0), pas d'ensoleillement possible
-  if (elevationFactor <= 0) {
-    return 0;
+// Map a row label to a color function
+export function colorFor(label: string): ((v: number | null) => WeatherColor) | null {
+  const l = label.toLowerCase();
+  if (l.includes("température") || l.includes("moyenne journalière") || l.includes("point de rosée") || l.includes("record")) {
+    return temperatureColor;
   }
-
-  // Facteur météo (0-1) basé sur le code WMO
-  const weatherFactor = WMO_SUNSHINE_FACTOR[code] ?? 0;
-
-  // Ensoleillement = 60 min * facteur_météo * facteur_élévation
-  // Arrondi à la minute
-  return Math.round(60 * weatherFactor * elevationFactor);
+  if (l.includes("précipitations")) {
+    return precipitationColor;
+  }
+  if (l.includes("jours")) {
+    return daysColor;
+  }
+  if (l.includes("humidité")) {
+    return humidityColor;
+  }
+  if (l.includes("ensoleillement")) {
+    return sunshineColor;
+  }
+  if (l.includes("% ensoleillement")) {
+    return sunshineColor;
+  }
+  return null;
 }
 
-/**
- * Convertit un code WMO horaire en durée d'ensoleillement estimée en minutes (version legacy)
- * @deprecated Utiliser calculateHourlySunshineWithDaylight
- * @param code - Code WMO horaire
- * @returns Durée estimée en minutes (0 si code inconnu)
- */
-export function calculateHourlySunshine(code: number): number {
-  return Math.round((WMO_SUNSHINE_FACTOR[code] ?? 0) * 60);
+export function parseNumber(v: string): number | null {
+  if (v === "—" || v === "-" || v === "") return null;
+  // take first numeric token
+  const m = v.replace(/\s/g, "").match(/-?\d+(?:[.,]\d+)?/);
+  if (!m) return null;
+  return parseFloat(m[0].replace(",", "."));
 }
 
-export function isHourBetweenSunriseAndSunset(timeStr: string, sunriseStr: string | null | undefined, sunsetStr: string | null | undefined): boolean {
-  const getTimeMinutes = (timeStr: string) => {
-    if (!timeStr || !timeStr.includes('T')) return 0;
-    const timePart = timeStr.split('T')[1];
-    if (!timePart || !timePart.includes(':')) return 0;
-    const [hour, minute] = timePart.split(':').map(Number);
-    if (isNaN(hour) || isNaN(minute)) return 0;
-    return hour * 60 + minute;
-  };
-
-  // Si sunrise ou sunset sont manquants, on ne peut pas déterminer jour/nuit -> on retourne false (nuit)
-  // Cela évite d'afficher l'ensoleillement sans données de lever/coucher de soleil
-  if (!sunriseStr || !sunsetStr) return false;
-
-  const timeMinutes = getTimeMinutes(timeStr);
-  const sunriseMinutes = getTimeMinutes(sunriseStr);
-  const sunsetMinutes = getTimeMinutes(sunsetStr);
-
-  // Une heure (ex: 07:00 = période 07:00-08:00) est considérée "jour" 
-  // SEULEMENT si elle commence APRÈS le lever du soleil ET AVANT le coucher du soleil
-  // Cela garantit AUCUN ensoleillement pendant les heures de nuit
-  return timeMinutes >= sunriseMinutes && timeMinutes < sunsetMinutes;
-}
-
-/**
- * Agrège les valeurs horaires pour obtenir une durée journalière totale en minutes,
- * seulement pour les heures entre le lever et le coucher du soleil
- * @param hourlyData - Tableau des données horaires avec time et weather_code
- * @param sunrise - Heure du lever du soleil (format ISO)
- * @param sunset - Heure du coucher du soleil (format ISO)
- * @returns Durée journalière totale en minutes, ou null si données insuffisantes
- */
-export function calculateDailySunshine(
-  hourlyData: { time: string; weather_code: number }[],
-  sunrise: string | null | undefined,
-  sunset: string | null | undefined
-): number | null {
-  if (!hourlyData || hourlyData.length === 0) return null;
-
-  return hourlyData.reduce((total, hour) => {
-    if (isHourBetweenSunriseAndSunset(hour.time, sunrise, sunset)) {
-      return total + calculateHourlySunshine(hour.weather_code);
-    }
-    return total;
-  }, 0);
-}
-
-/**
- * Agrège les valeurs journalières pour obtenir une durée mensuelle totale en minutes
- * @param dailyMinutes - Tableau des durées journalières en minutes
- * @returns Durée mensuelle totale en minutes
- */
-export function calculateMonthlySunshine(dailyMinutes: (number | null)[]): number | null {
-  const validDays = dailyMinutes.filter((d): d is number => d !== null);
-  if (validDays.length === 0) return null;
-  return validDays.reduce((total, minutes) => total + minutes, 0);
-}
-
-/**
- * Agrège les valeurs mensuelles pour obtenir une durée annuelle totale en minutes
- * @param monthlyMinutes - Tableau des durées mensuelles en minutes
- * @returns Durée annuelle totale en minutes
- */
-export function calculateYearlySunshine(monthlyMinutes: (number | null)[]): number | null {
-  const validMonths = monthlyMinutes.filter((m): m is number => m !== null);
-  if (validMonths.length === 0) return null;
-  return validMonths.reduce((total, minutes) => total + minutes, 0);
-}
-
-/**
- * Formate une durée en minutes en chaîne de caractères "X h Y min"
- * @param totalMinutes - Durée totale en minutes
- * @returns Chaîne formatée, ou "Données indisponibles" si null
- */
-export function formatSunshineDuration(totalMinutes: number | null): string {
-  if (totalMinutes === null) return "Données indisponibles";
-  const hours = Math.floor(totalMinutes / 60);
-  const minutes = totalMinutes % 60;
-  return `${hours} h ${minutes.toString().padStart(2, '0')} min`;
-}
-
-/**
- * Calcule l'indice de cohérence entre la durée officielle et l'estimation
- * @param officialMinutes - Durée officielle en minutes
- * @param estimatedMinutes - Durée estimée en minutes
- * @returns Indice de cohérence (Excellent/Bon/Moyen/Faible), ou null si données manquantes
- */
-export function calculateSunshineConsistency(officialMinutes: number | null, estimatedMinutes: number | null): 'Excellent' | 'Bon' | 'Moyen' | 'Faible' | null {
-  if (officialMinutes === null || estimatedMinutes === null) return null;
-  const difference = Math.abs(officialMinutes - estimatedMinutes);
-  if (difference <= 5) return 'Excellent';
-  if (difference <= 15) return 'Bon';
-  if (difference <= 30) return 'Moyen';
-  return 'Faible';
-}
-
-/**
- * Convertit la durée officielle Open-Meteo (en secondes) en minutes
- * @param sunshineSeconds - Durée officielle en secondes
- * @returns Durée en minutes, ou null si valeur invalide
- */
-export function convertOfficialSunshineToMinutes(sunshineSeconds: number | null | undefined): number | null {
-  if (sunshineSeconds === null || sunshineSeconds === undefined) return null;
-  return Math.round(sunshineSeconds / 60);
-}
-
-// Couleurs des climate boxes (schémas Wikipédia en anglais) :
-// voir src/lib/climate-box-colors.ts pour le port fidèle du module Lua.
+// Re-export climate box style functions and types from climate-box-colors
 export {
   getClimateBoxColor,
   getDaysStyle,
@@ -313,136 +177,167 @@ export {
   getTemperatureStyle,
   getUvStyle,
   SUNSHINE_MONTHLY_EQUIVALENT,
-} from "./climate-box-colors";
-export type { ClimateBoxColor, ClimateBoxColorScheme } from "./climate-box-colors";
+} from "@/lib/climate-box-colors";
+export type { ClimateBoxColor, ClimateBoxColorScheme } from "@/lib/climate-box-colors";
+
+// WMO 4677 sunshine factor table (codes 0-99)
+const WMO_SUNSHINE_FACTOR: Record<number, number> = {
+  0: 1.00, 1: 0.75, 2: 0.50, 3: 0.10,
+  10: 0.30, 11: 0.20, 12: 0.10, 13: 0.05, 14: 0.00, 15: 0.00, 16: 0.00, 17: 0.00, 18: 0.20, 19: 0.10,
+  20: 0.05, 21: 0.05, 22: 0.05, 23: 0.05, 24: 0.05, 25: 0.05, 26: 0.05, 27: 0.05, 28: 0.05, 29: 0.05,
+  30: 0.10, 31: 0.05, 32: 0.00, 33: 0.00, 34: 0.00, 35: 0.00, 36: 0.00, 37: 0.00, 38: 0.00, 39: 0.00,
+  40: 0.05, 41: 0.00, 42: 0.00, 43: 0.00, 44: 0.00, 45: 0.00, 46: 0.00, 47: 0.00, 48: 0.00, 49: 0.00,
+  50: 0.20, 51: 0.25, 52: 0.15, 53: 0.15, 54: 0.05, 55: 0.05, 56: 0.00, 57: 0.00, 58: 0.00, 59: 0.00,
+  60: 0.10, 61: 0.10, 62: 0.05, 63: 0.05, 64: 0.00, 65: 0.00, 66: 0.00, 67: 0.00, 68: 0.00, 69: 0.00,
+  70: 0.10, 71: 0.10, 72: 0.05, 73: 0.05, 74: 0.00, 75: 0.00, 76: 0.00, 77: 0.00, 78: 0.00, 79: 0.00,
+  80: 0.30, 81: 0.10, 82: 0.05, 83: 0.20, 84: 0.10, 85: 0.10, 86: 0.05, 87: 0.00, 88: 0.00, 89: 0.00,
+  90: 0.05, 91: 0.05, 92: 0.05, 93: 0.05, 94: 0.05, 95: 0.05, 96: 0.05, 97: 0.00, 98: 0.00, 99: 0.00,
+};
+
+function getTimeMinutes(timeStr: string): number {
+  if (!timeStr || !timeStr.includes('T')) return 0;
+  const timePart = timeStr.split('T')[1];
+  if (!timePart || !timePart.includes(':')) return 0;
+  const [hour, minute] = timePart.split(':').map(Number);
+  if (isNaN(hour) || isNaN(minute)) return 0;
+  return hour * 60 + minute;
+}
+
+function getSolarElevationFactor(timeMinutes: number, sunriseMinutes: number, sunsetMinutes: number): number {
+  if (timeMinutes < sunriseMinutes || timeMinutes >= sunsetMinutes) return 0;
+  const dayLength = sunsetMinutes - sunriseMinutes;
+  const progress = (timeMinutes - sunriseMinutes) / dayLength;
+  return Math.sin(Math.PI * progress);
+}
+
+export function calculateHourlySunshineWithDaylight(
+  code: number,
+  timeStr: string,
+  sunriseStr: string | null | undefined,
+  sunsetStr: string | null | undefined
+): number {
+  if (!sunriseStr || !sunsetStr) {
+    return Math.round((WMO_SUNSHINE_FACTOR[code] ?? 0) * 60);
+  }
+  const timeMinutes = getTimeMinutes(timeStr);
+  const sunriseMinutes = getTimeMinutes(sunriseStr);
+  const sunsetMinutes = getTimeMinutes(sunsetStr);
+  const elevationFactor = getSolarElevationFactor(timeMinutes, sunriseMinutes, sunsetMinutes);
+  if (elevationFactor <= 0) return 0;
+  const weatherFactor = WMO_SUNSHINE_FACTOR[code] ?? 0;
+  return Math.round(60 * weatherFactor * elevationFactor);
+}
+
+export function calculateHourlySunshine(code: number): number {
+  return Math.round((WMO_SUNSHINE_FACTOR[code] ?? 0) * 60);
+}
+
+export function isHourBetweenSunriseAndSunset(
+  timeStr: string,
+  sunriseStr: string | null | undefined,
+  sunsetStr: string | null | undefined
+): boolean {
+  if (!sunriseStr || !sunsetStr) return false;
+  const timeMinutes = getTimeMinutes(timeStr);
+  const sunriseMinutes = getTimeMinutes(sunriseStr);
+  const sunsetMinutes = getTimeMinutes(sunsetStr);
+  return timeMinutes >= sunriseMinutes && timeMinutes < sunsetMinutes;
+}
+
+export function calculateDailySunshine(
+  hourlyData: { time: string; weather_code: number }[],
+  sunrise: string | null | undefined,
+  sunset: string | null | undefined
+): number | null {
+  if (!hourlyData || hourlyData.length === 0) return null;
+  return hourlyData.reduce((total, hour) => {
+    if (isHourBetweenSunriseAndSunset(hour.time, sunrise, sunset)) {
+      return total + calculateHourlySunshine(hour.weather_code);
+    }
+    return total;
+  }, 0);
+}
+
+export function calculateMonthlySunshine(dailyMinutes: (number | null)[]): number | null {
+  const validDays = dailyMinutes.filter((d): d is number => d !== null);
+  if (validDays.length === 0) return null;
+  return validDays.reduce((total, minutes) => total + minutes, 0);
+}
+
+export function formatSunshineDuration(totalMinutes: number | null): string {
+  if (totalMinutes === null) return "Données indisponibles";
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+  return `${hours} h ${minutes.toString().padStart(2, '0')} min`;
+}
+
+export function calculateSunshineConsistency(
+  officialMinutes: number | null,
+  estimatedMinutes: number | null
+): 'Excellent' | 'Bon' | 'Moyen' | 'Faible' | null {
+  if (officialMinutes === null || estimatedMinutes === null) return null;
+  const difference = Math.abs(officialMinutes - estimatedMinutes);
+  if (difference <= 5) return 'Excellent';
+  if (difference <= 15) return 'Bon';
+  if (difference <= 30) return 'Moyen';
+  return 'Faible';
+}
+
+export function convertOfficialSunshineToMinutes(
+  sunshineSeconds: number | null | undefined
+): number | null {
+  if (sunshineSeconds === null || sunshineSeconds === undefined) return null;
+  return Math.round(sunshineSeconds / 60);
+}
+
+interface WeatherIconInfo {
+  icon: string;
+  nightIcon?: string;
+  description: string;
+}
+
+const WMO_DESCRIPTIONS: Record<number, string> = {
+  0: "Ciel dégagé", 1: "Principalement dégagé", 2: "Partiellement nuageux", 3: "Couvert",
+  10: "Brume légère", 11: "Brume", 12: "Brume épaisse", 13: "Brume givrante", 14: "Brouillard",
+  15: "Brouillard givrant", 16: "Brouillard épais", 17: "Brouillard givrant épais", 18: "Précipitations légères intermittentes",
+  19: "Précipitations légères continues", 20: "Bruine ou neige en grains", 21: "Pluie",
+  22: "Neige", 23: "Pluie et neige mêlées", 24: "Bruine verglaçante", 25: "Averse de pluie",
+  26: "Averse de neige", 27: "Averse de grêle", 28: "Brouillard visibilité réduite", 29: "Orage",
+  30: "Tempête de poussière légère", 31: "Tempête de poussière", 32: "Tempête de poussière forte",
+  33: "Tempête de poussière très forte", 34: "Tempête de poussière intense", 35: "Tempête de poussière extrême",
+  36: "Poudrerie faible", 37: "Poudrerie forte", 38: "Chasse-neige élevée", 39: "Chasse-neige très élevée",
+  40: "Banc de brouillard", 41: "Brouillard par bancs", 42: "Brouillard s'éclaircissant",
+  43: "Brouillard s'éclaircissant ciel invisible", 44: "Brouillard sans changement ciel visible",
+  45: "Brouillard sans changement ciel invisible", 46: "Brouillard s'épaississant ciel visible",
+  47: "Brouillard s'épaississant ciel invisible", 48: "Brouillard givrant ciel visible",
+  49: "Brouillard givrant ciel invisible", 50: "Bruine faible intermittente",
+  51: "Bruine faible continue", 52: "Bruine modérée intermittente", 53: "Bruine modérée continue",
+  54: "Bruine forte intermittente", 55: "Bruine forte continue", 56: "Bruine verglaçante faible",
+  57: "Bruine verglaçante forte", 58: "Bruine et pluie faible", 59: "Bruine et pluie forte",
+  60: "Pluie faible intermittente", 61: "Pluie faible continue", 62: "Pluie modérée intermittente",
+  63: "Pluie modérée continue", 64: "Pluie forte intermittente", 65: "Pluie forte continue",
+  66: "Pluie verglaçante faible", 67: "Pluie verglaçante forte", 68: "Pluie et neige faible",
+  69: "Pluie et neige forte", 70: "Chute de neige faible intermittente", 71: "Chute de neige faible continue",
+  72: "Chute de neige modérée intermittente", 73: "Chute de neige modérée continue",
+  74: "Chute de neige forte intermittente", 75: "Chute de neige forte continue",
+  76: "Cristaux de glace", 77: "Neige en grains", 78: "Étoiles de neige isolées", 79: "Granules de glace",
+  80: "Averse de pluie faible", 81: "Averse de pluie modérée", 82: "Averse de pluie violente",
+  83: "Averse pluie/neige faible", 84: "Averse pluie/neige forte", 85: "Averse de neige faible",
+  86: "Averse de neige forte", 87: "Averse de grésil faible", 88: "Averse de grésil forte",
+  89: "Averse de grêle faible", 90: "Averse de grêle forte", 91: "Pluie faible orage terminé",
+  92: "Pluie forte orage terminé", 93: "Neige légère orage terminé", 94: "Neige forte orage terminé",
+  95: "Orage faible ou modéré", 96: "Orage avec grêle", 97: "Orage fort", 98: "Orage avec tempête de poussière",
+  99: "Orage violent avec grêle",
+};
 
 function getTimeHM(timeStr?: string | null): number {
-  // timeStr is like "2026-07-07T00:00" or "2026-07-07T06:08"
-  if (!timeStr || !timeStr.includes('T')) return 720; // Retourne midi par défaut (sécurité)
+  if (!timeStr || !timeStr.includes('T')) return 720;
   const timePart = timeStr.split('T')[1];
   if (!timePart || !timePart.includes(':')) return 720;
   const [hour, minute] = timePart.split(':').map(Number);
   if (isNaN(hour) || isNaN(minute)) return 720;
   return hour * 60 + minute;
 }
-
-// ============================================================
-// Correspondance code WMO → icône / description
-// Les fichiers d'icônes utilisent maintenant des noms numériques (0.png, 1.png, ... 99.png)
-// dans /public/weather-icons/day/ et /night/
-// Pour ajouter une nouvelle icône : ajoutez simplement le fichier {code}.png dans les dossiers day/ et night/
-// ============================================================
-interface WeatherIconInfo {
-  icon: string;         // Emoji de jour (fallback)
-  nightIcon?: string;   // Emoji de nuit (si différent de celui du jour)
-  description: string;
-}
-
-// Descriptions standards WMO pour les codes 0-99 (Table 4677 - Temps présent)
-// Codes 0-3 : Codes météo Open-Meteo (temps actuel) + WMO temps présent
-// Codes 4-99 : Codes temps présent WMO (table 4677)
-const WMO_DESCRIPTIONS: Record<number, string> = {
-  0:  "Ciel dégagé - Aucun nuage significatif",
-  1:  "Principalement dégagé - Peu nuageux, majorité de ciel clair",
-  2:  "Partiellement nuageux - Alternance nuages / éclaircies",
-  3:  "Couvert - Ciel très nuageux à totalement couvert",
-  4:  "Visibilité réduite par de la fumée (feux de forêts, fumée industrielle, cendres volcaniques)",
-  5:  "Brume sèche (Haze) - Obstacles à la vue consistant en lithométéores",
-  6:  "Poussière généralisée en suspension dans l'air (non soulevée par le vent près de la station)",
-  7:  "Poussière ou sable soulevé par le vent près de la station, mais pas de tourbillon ni de tempête",
-  8:  "Tourbillon de poussière ou de sable (Dust devil) observé pendant l'heure précédente ou au moment de l'observation",
-  9:  "Tempête de poussière ou de sable en vue de la station, ou trombe d'eau (trombe marine) pendant l'heure précédente",
-  10: "Brume humide (Mist) - Brouillard ou brouillard glacé, visibilité ni < 5/8 mille ni > 6 milles",
-  11: "Bancs de brouillard ou de brouillard de glace (épaisseur < 2m au sol)",
-  12: "Brouillard ou brouillard de glace plus ou moins continu (épaisseur < 2m au sol)",
-  13: "Éclairs visibles, mais aucun tonnerre entendu (au moment de l'observation ou 15 min avant)",
-  14: "Virga (précipitations n'atteignant pas le sol)",
-  15: "Précipitations atteignant le sol à distance (à plus de 5 km de la station)",
-  16: "Précipitations proches mais n'atteignant pas la station (à moins de 5 km)",
-  17: "Orage sans précipitations au moment de l'observation",
-  18: "Grains (Squalls) au moment de l'observation ou pendant l'heure précédente",
-  19: "Trombe marine ou terrestre (Tornado / Funnel cloud) observée",
-  20: "Bruine ou neige en grains (non verglaçante) au cours de l'heure précédente, pas au moment de l'observation",
-  21: "Pluie (non verglaçante) au cours de l'heure précédente, pas au moment de l'observation",
-  22: "Neige (pas sous forme d'averses) ou cristaux de glace au cours de l'heure précédente, pas au moment de l'observation",
-  23: "Pluie et neige mêlées ou granules de glace (non sous forme d'averses) au cours de l'heure précédente, pas au moment de l'observation",
-  24: "Bruine verglaçante ou pluie verglaçante au cours de l'heure précédente, pas au moment de l'observation",
-  25: "Averse(s) de pluie au cours de l'heure précédente, pas au moment de l'observation",
-  26: "Averse(s) de neige, ou de pluie et neige mêlées au cours de l'heure précédente, pas au moment de l'observation",
-  27: "Averse(s) de grêle, ou de pluie et de grêle au cours de l'heure précédente, pas au moment de l'observation",
-  28: "Brouillard ou brouillard de glace, visibilité < 5/8 mille au cours de l'heure précédente, pas au moment de l'observation",
-  29: "Orage (avec ou sans précipitations) au cours de l'heure précédente, pas au moment de l'observation",
-  30: "Tempête de poussière ou de sable, intensité diminuée, visibilité < 5/8 mille mais >= 5/16 mille",
-  31: "Tempête de poussière ou de sable, intensité inchangée, visibilité < 5/8 mille mais >= 5/16 mille",
-  32: "Tempête de poussière ou de sable, intensité augmentée, visibilité < 5/8 mille mais >= 5/16 mille",
-  33: "Tempête de poussière ou de sable, intensité diminuée, visibilité < 5/16 mille",
-  34: "Tempête de poussière ou de sable, intensité inchangée, visibilité < 5/16 mille",
-  35: "Tempête de poussière ou de sable, intensité augmentée, visibilité < 5/16 mille",
-  36: "Poudrerie (chasse-neige) basse, faible ou modérée",
-  37: "Poudrerie (chasse-neige) basse, forte",
-  38: "Chasse-neige élevée, visibilité >= 5/16 mille",
-  39: "Chasse-neige élevée, visibilité < 5/16 mille",
-  40: "Banc de brouillard ou de brouillard glacé (épaisseur > 2m) observé à distance de la station",
-  41: "Brouillard par bancs (épaisseur > 2m), visibilité dominante < 5/8 mille",
-  42: "Brouillard devenu plus mince pendant l'heure précédente (ciel visible, visibilité < 5/8 mille)",
-  43: "Brouillard devenu plus mince pendant l'heure précédente (ciel invisible, visibilité < 5/8 mille)",
-  44: "Brouillard sans changement pendant l'heure précédente (ciel visible, visibilité < 5/8 mille)",
-  45: "Brouillard sans changement pendant l'heure précédente (ciel invisible, visibilité < 5/8 mille)",
-  46: "Brouillard commençant ou devenant plus épais pendant l'heure précédente (ciel visible, visibilité < 5/8 mille)",
-  47: "Brouillard commençant ou devenant plus épais pendant l'heure précédente (ciel invisible, visibilité < 5/8 mille)",
-  48: "Brouillard givrant (déposant du givre, ciel visible, visibilité < 5/8 mille)",
-  49: "Brouillard givrant (déposant du givre, ciel invisible, visibilité < 5/8 mille)",
-  50: "Bruine faible et intermittente",
-  51: "Bruine faible et continue",
-  52: "Bruine modérée et intermittente",
-  53: "Bruine modérée et continue",
-  54: "Bruine forte mais intermittente",
-  55: "Bruine forte et continue",
-  56: "Bruine verglaçante faible",
-  57: "Bruine verglaçante modérée ou forte",
-  58: "Bruine et pluie mêlées d'intensité faible",
-  59: "Bruine et pluie mêlées d'intensité modérée ou forte",
-  60: "Pluie faible et intermittente",
-  61: "Pluie faible et continue",
-  62: "Pluie modérée et intermittente",
-  63: "Pluie modérée et continue",
-  64: "Pluie forte mais intermittente",
-  65: "Pluie forte et continue",
-  66: "Pluie verglaçante faible",
-  67: "Pluie verglaçante modérée ou forte",
-  68: "Pluie ou bruine et neige mêlées, intensité faible",
-  69: "Pluie ou bruine et neige mêlées, intensité modérée ou forte",
-  70: "Chute de neige intermittente faible",
-  71: "Chute de neige continue faible",
-  72: "Chute de neige modérée et intermittente",
-  73: "Chute de neige modérée et continue",
-  74: "Chute de neige forte mais intermittente",
-  75: "Chute de neige forte et continue",
-  76: "Cristaux de glace (poudrin de glace)",
-  77: "Neige en grains",
-  78: "Étoiles de neige isolées",
-  79: "Granules de glace (non sous forme d'averses)",
-  80: "Averse de pluie faible",
-  81: "Averse de pluie modérée ou forte",
-  82: "Averse de pluie violente (exceptionnellement forte, tropicale ou torrentielle)",
-  83: "Averse de pluie et neige mêlées faible",
-  84: "Averse de pluie et neige mêlées modérée ou forte",
-  85: "Averse de neige faible",
-  86: "Averse de neige modérée ou forte",
-  87: "Averse de grésil ou neige roulée, faible (avec ou sans pluie, ou pluie et neige mêlées)",
-  88: "Averse de grésil ou neige roulée, modérée ou forte (avec ou sans pluie, ou pluie et neige mêlées)",
-  89: "Averse de grêle faible (sans orage, avec ou sans pluie, ou pluie et neige mêlées)",
-  90: "Averse de grêle modérée ou forte (sans orage, avec ou sans pluie, ou pluie et neige mêlées)",
-  91: "Pluie faible au moment de l'observation, orage pendant l'heure précédente (terminé)",
-  92: "Pluie modérée ou forte au moment de l'observation, orage pendant l'heure précédente (terminé)",
-  93: "Neige, ou pluie et neige mêlées, ou grêle, ou granules de glace (faible), orage heure précédente (terminé)",
-  94: "Neige, ou pluie et neige mêlées, ou grêle, ou granules de glace (modéré/fort), orage heure précédente (terminé)",
-  95: "Orage faible ou modéré, avec pluie ou neige",
-  96: "Orage faible ou modéré, avec grêle, neige roulée ou granules de glace",
-  97: "Orage fort/violent, avec pluie ou neige",
-  98: "Orage combiné avec une tempête de poussière ou de sable",
-  99: "Orage fort/violent, avec grêle, neige roulée ou granules de glace"
-};
 
 export function getWeatherIcon(
   code: number,
@@ -453,30 +348,20 @@ export function getWeatherIcon(
   if (code === null || code === undefined || code < 0 || code > 99) {
     return { imagePath: null, description: "Code invalide" };
   }
-
-  // Détermination jour / nuit
   let isNight = false;
   if (time && sunrise && sunset) {
     const hourMinutes = getTimeHM(time);
     const sunriseMinutes = getTimeHM(sunrise);
     const sunsetMinutes = getTimeHM(sunset);
-    // Vérification de sécurité: éviter les inversions sunrise/sunset
     if (sunriseMinutes < sunsetMinutes) {
       isNight = hourMinutes < sunriseMinutes || hourMinutes > sunsetMinutes;
     } else {
-      // Si sunrise est après sunset (données invalides), on suppose le jour
       isNight = false;
     }
   }
-
   const period = isNight ? "night" : "day";
   const imageName = `${code}.png`;
   const imagePath = `/weather-icons/${period}/${imageName}`;
-
   const description = WMO_DESCRIPTIONS[code] ?? `Code WMO ${code} - Non défini`;
-
-  return {
-    imagePath,
-    description
-  };
+  return { imagePath, description };
 }

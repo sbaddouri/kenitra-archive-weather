@@ -185,7 +185,15 @@ export default async function YearPage({ params }: PageProps) {
           Les valeurs annuelles (moyennes, records et cumuls de l&apos;année) figurent dans la
           dernière colonne « Année » du tableau.
         </p>
-      </div>
+        </div>
+
+        <div className="flex items-center justify-center gap-2">
+          <Link href={`/climatologie/occurrences/${year}/kenitra`}>
+            <button className={cn(buttonVariants({ variant: "outline" }))}>
+              Occurrences de phénomènes
+            </button>
+          </Link>
+        </div>
 
       <Card className="overflow-hidden border-none shadow-none bg-transparent">
         <CardContent className="p-0">
