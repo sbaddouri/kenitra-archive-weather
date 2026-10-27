@@ -31,6 +31,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
+      # Synchronise avec la branche distante avant de modifier les données,
+      # afin d'éviter les conflits de rebase sur last-update-status.json
+      # (ce fichier est réécrit à chaque exécution).
+      - name: Sync with remote main
+        run: git pull --rebase origin main
+        
       - name: Fetch weather data
         id: fetch
         run: npx tsx scripts/fetch-weather.ts
@@ -87,6 +93,11 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "${{ steps.status.outputs.commit_msg }}"
-            git pull --rebase "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" main
-            git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" main
+            # On pousse ; si la branche a avancé entre-temps (course entre runs),
+            # on rebase puis on repousse. Avec le groupe de concurrence, les runs
+            # sont séquentiels, donc ce cas est rare.
+            if ! git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" main; then
+              git pull --rebase "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" main
+              git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" main
+            fi
           fi

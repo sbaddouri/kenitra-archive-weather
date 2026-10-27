@@ -115,6 +115,16 @@ async function fetchWeatherData(startDate: string, endDate: string) {
       
       console.error(`[ERROR] Failed to fetch data (status ${error.response?.status || 'N/A'}):`, errorMsg);
       
+      // Retry on transient missing-data errors (Open-Meteo may temporarily omit
+      // daily/hourly for recent dates; retrying usually resolves it)
+      const isMissingDataError = /données daily ou hourly manquantes|tableau daily.time vide|données journalières d'Open-Meteo sont vides|données horaires d'Open-Meteo sont vides/.test(error.message);
+      if (isMissingDataError && attempts < maxAttempts - 1) {
+        console.log(`[INFO] Open-Meteo temporarily missing data, retrying in 10 seconds...`);
+        await new Promise(resolve => setTimeout(resolve, 10000));
+        attempts++;
+        continue;
+      }
+      
       // Retry on 400 (data not ready) - reduce end date by 1 day
       if (error.response?.status === 400 && attempts < maxAttempts - 1) {
         console.log(`[INFO] Data not yet available for ${currentEndDate}, retrying with previous day...`);
