@@ -6,7 +6,9 @@ import ClimatologieSummaryTable from "@/components/climatologie-summary-table";
 import ClassificationsClimatiquesTable from "@/components/classifications-climatiques-table";
 import { getClimateBoxColor } from "@/lib/climate-box-colors";
 import { parseNumber } from "@/lib/weather-colors";
+import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 const months = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'];
 
@@ -49,6 +51,14 @@ export default function ClimatologiePage() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
       <ClimatologieSummaryTable />
+
+      <div className="mb-6 flex justify-center">
+        <Link href="/climatologie/occurrences/kenitra">
+          <button className={cn(buttonVariants({ variant: "outline" }))}>
+            Occurrences moyennes (moyennes 1940–2026)
+          </button>
+        </Link>
+      </div>
 
       <Card className="mb-6">
         <CardHeader className="flex flex-col items-center text-center">
