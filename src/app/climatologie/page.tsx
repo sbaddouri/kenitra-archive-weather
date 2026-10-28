@@ -7,6 +7,7 @@ import ClassificationsClimatiquesTable from "@/components/classifications-climat
 import { getClimateBoxColor } from "@/lib/climate-box-colors";
 import { parseNumber } from "@/lib/weather-colors";
 import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 
