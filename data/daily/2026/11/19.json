@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-19",
+  "weather_code": 55,
+  "temp_max": 21.4,
+  "temp_min": 15.5,
+  "temp_mean": 19.5,
+  "precipitation": 3.3,
+  "sunshine": 7901.44,
+  "wind_speed_max": 17.1,
+  "sunrise": "2026-11-19T07:03",
+  "sunset": "2026-11-19T17:19",
+  "sunshine_duration_seconds": 7901.44,
+  "sunshine_duration_minutes": 132,
+  "estimated_daily_sunshine_minutes": 96,
+  "estimated_daily_sunshine": "1 h 36 min",
+  "sunshine_difference_minutes": 36,
+  "sunshine_consistency": "Faible"
+}
