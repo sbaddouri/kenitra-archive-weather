@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-25",
+  "weather_code": 51,
+  "temp_max": 20.1,
+  "temp_min": 15,
+  "temp_mean": 17.6,
+  "precipitation": 1,
+  "sunshine": 34451.41,
+  "wind_speed_max": 27.1,
+  "sunrise": "2026-11-25T07:08",
+  "sunset": "2026-11-25T17:17",
+  "sunshine_duration_seconds": 34451.41,
+  "sunshine_duration_minutes": 574,
+  "estimated_daily_sunshine_minutes": 228,
+  "estimated_daily_sunshine": "3 h 48 min",
+  "sunshine_difference_minutes": 346,
+  "sunshine_consistency": "Faible"
+}
